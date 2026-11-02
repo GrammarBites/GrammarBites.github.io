@@ -89,7 +89,7 @@ Zápor tvoríme pomocou **don't / doesn't** a slovesa v základnom tvare.
 
 - **Po doesn't už -s nepíšeme.** Koncovku -s „zoberie“ na seba *does*: ~~He doesn't likes~~ → *He doesn't **like***.
 - Prítomný jednoduchý čas hovorí o tom, čo robíme **pravidelne**. Keď niečo robíme **práve teraz**, použijeme [prítomný priebehový čas](/lekcie/present-continuous/): *I play football on Sundays.* × *I'm playing football now.*
-- Otázky typu *Do you like…? / Does she live…?* sú v učebnici na strane 13.
+- Otázky typu *Do you like…? / Does she live…?* nájdeš v lekcii [Present simple – otázky](/lekcie/present-simple-otazky/).
 
 ## Časté chyby
 

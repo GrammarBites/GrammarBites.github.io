@@ -9,10 +9,10 @@ ucebnice:
   - { id: project-5, unit: "2" }
 temy: [podmienkove-vety, buduce-casy]
 klucoveSlova: [if, will, won't, unless, when, as soon as, podmienka, reálna podmienka, future time clauses, budúcnosť]
-# video: video.mp4
-# nahlad: nahlad.jpg
-# infografika: infografika.png
-# infografikaPdf: infografika.pdf
+video: video.mp4
+poster: poster.jpg
+infografika: infografika.jpg
+infografikaPdf: infografika.pdf
 koza: koza-premysla
 otazkaKozy: "Why do we use will here?"
 bite:

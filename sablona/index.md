@@ -18,8 +18,10 @@ temy: [pritomne-casy]                  # pritomne-casy, minule-casy, buduce-casy
 klucoveSlova: [have been, ever, never, already, yet]
 
 video: video.mp4                       # alebo namiesto toho:  youtube: ID_VIDEA
+# videoFormat: na-sirku                # len pre video 16:9 (štandard je na výšku 9:16)
+poster: poster.jpg                     # obrázok pred spustením videa
 nahlad: nahlad.jpg                     # obrázok na kartu (nepovinné)
-infografika: infografika.png
+infografika: infografika.jpg
 infografikaPdf: infografika.pdf
 
 koza: koza-zvedava                     # póza kozy: koza-zvedava, koza-premysla, koza-cita,

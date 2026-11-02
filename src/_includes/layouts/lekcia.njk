@@ -28,11 +28,11 @@ skripty: ["lekcia.js"]
   </figure>
 </header>
 
-<div class="lekcia-media">
+<div class="lekcia-media{% if videoFormat == 'na-sirku' %} lekcia-media--sirka{% endif %}">
   <section class="blok blok--video" aria-labelledby="h-video">
     <h2 id="h-video" class="blok__nadpis"><span class="blok__pismeno">A</span> Video</h2>
     {% if video %}
-      <video class="video" controls preload="metadata" playsinline {% if nahlad %}poster="{{ page.url }}{{ nahlad }}"{% endif %}>
+      <video class="video" controls preload="metadata" playsinline {% if poster or nahlad %}poster="{{ page.url }}{{ poster or nahlad }}"{% endif %}>
         <source src="{{ page.url }}{{ video }}" type="video/mp4">
         Tvoj prehliadač nevie prehrať video. <a href="{{ page.url }}{{ video }}">Stiahni si ho.</a>
       </video>
@@ -56,7 +56,7 @@ skripty: ["lekcia.js"]
         <span class="infografika__lupa"><svg width="18" height="18"><use href="#lupa"/></svg> Zväčšiť</span>
       </button>
       <p class="stiahni">
-        <a class="tlacidlo tlacidlo--tiche" href="{{ page.url }}{{ infografika }}" download>Stiahnuť obrázok (PNG)</a>
+        <a class="tlacidlo tlacidlo--tiche" href="{{ page.url }}{{ infografika }}" download>Stiahnuť obrázok</a>
         {% if infografikaPdf %}<a class="tlacidlo tlacidlo--tiche" href="{{ page.url }}{{ infografikaPdf }}" download>Stiahnuť na tlač (PDF)</a>{% endif %}
       </p>
       <dialog class="zvacsenie" aria-label="Infografika vo veľkom">

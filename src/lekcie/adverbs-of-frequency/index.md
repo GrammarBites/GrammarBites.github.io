@@ -8,11 +8,11 @@ ucebnice:
   - { id: project-2, unit: "1" }
 temy: [prislovky, pritomne-casy]
 klucoveSlova: [always, usually, often, sometimes, rarely, hardly ever, never, how often, ako často, postavenie vo vete, slovosled, present simple]
-# Súbory v tomto priečinku (doplníš, keď budú hotové):
-# video: video.mp4
-# nahlad: nahlad.jpg
-# infografika: infografika.png
-# infografikaPdf: infografika.pdf
+video: video.mp4
+videoFormat: na-sirku
+poster: poster.jpg
+infografika: infografika.jpg
+infografikaPdf: infografika.pdf
 koza: koza-zvedava
 otazkaKozy: "How often do goats eat books?"
 bite:
@@ -50,7 +50,7 @@ Adverbs of frequency tell us **how often** something happens. We usually use the
   <li style="--p:90%"><b>usually</b><span>90 %</span></li>
   <li style="--p:70%"><b>often</b><span>70 %</span></li>
   <li style="--p:50%"><b>sometimes</b><span>50 %</span></li>
-  <li style="--p:10%"><b>rarely / hardly ever</b><span>10 %</span></li>
+  <li style="--p:20%"><b>not often / rarely</b><span>20 %</span></li>
   <li style="--p:0%"><b>never</b><span>0 %</span></li>
 </ul>
 

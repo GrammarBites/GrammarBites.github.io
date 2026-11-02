@@ -200,7 +200,7 @@ a.stitok:hover { border-color: currentColor; }
 .karta__obr { display: block; text-decoration: none; aspect-ratio: 16 / 10; max-width: 100%; background: var(--blue-wash); border-bottom: 2px solid var(--ink); overflow: hidden; }
 .karta:nth-child(3n+2) .karta__obr { background: var(--terra-wash); }
 .karta:nth-child(3n) .karta__obr { background: var(--yellow-wash); }
-.karta__obr > img { width: 100%; height: 100%; object-fit: cover; }
+.karta__obr > img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
 .karta__zastupca { display: flex; align-items: flex-end; justify-content: space-between; height: 100%; padding: 14px 10px 0 18px; gap: 8px; }
 .karta__zastupca-text { font-family: var(--hand); font-size: 2rem; font-weight: 700; line-height: 1; align-self: center; color: var(--ink); }
 .karta__zastupca img { width: 42%; max-height: 100%; object-fit: contain; object-position: bottom; }
@@ -293,6 +293,8 @@ a.stitok:hover { border-color: currentColor; }
 .lekcia-media { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 32px; align-items: start; }
 .video { width: 100%; aspect-ratio: 9 / 16; max-width: 100%; max-height: 80vh; display: block; background: var(--ink); border: 3px solid var(--ink); border-radius: 22px; box-shadow: var(--tien); object-fit: contain; }
 .video--yt { overflow: hidden; }
+.lekcia-media--sirka { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); }
+.lekcia-media--sirka .video { aspect-ratio: 16 / 9; border-radius: 14px; max-height: none; }
 .video--yt iframe { width: 100%; height: 100%; border: 0; }
 .video--chyba { display: grid; place-content: center; justify-items: center; gap: 12px; text-align: center; padding: 20px; background: var(--paper-hi); border-style: dashed; border-color: var(--line); color: var(--ink-2); }
 .infografika { display: block; position: relative; width: 100%; padding: 0; cursor: zoom-in; background: var(--paper-hi); border: 2px solid var(--ink); border-radius: 10px; box-shadow: var(--tien); overflow: hidden; }
@@ -429,7 +431,7 @@ select, input, textarea { font: inherit; color: var(--ink); }
   .uvod__postavy { min-height: 0; max-width: 420px; justify-self: center; width: 100%; }
   .rozcestnik { grid-template-columns: 1fr; }
   .lekcia-media { grid-template-columns: 1fr; }
-  .blok--video { max-width: 380px; width: 100%; justify-self: center; }
+  .lekcia-media:not(.lekcia-media--sirka) .blok--video { max-width: 380px; width: 100%; justify-self: center; }
   .kontakt { grid-template-columns: 1fr; }
   .kontakt__ucitel { display: none; }
 }

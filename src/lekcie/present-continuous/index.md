@@ -107,3 +107,7 @@ Zápor tvoríme pomocou **not** za *am / is / are*.
 <tr><td>He <s>don't</s> sleeping.</td><td>He <b>isn't</b> sleeping.</td></tr>
 </tbody>
 </table>
+
+## Pokračovanie
+
+Keď zvládneš oznamovacie a záporné vety, pokračuj [otázkami a krátkymi odpoveďami](/lekcie/present-continuous-otazky/): *Is he eating? – Yes, he is.*

@@ -51,6 +51,7 @@
       if (v.success) {
         form.reset();
         ukaz("Ďakujem! Správa je odoslaná.", "ok");
+        GB.udalost("kontakt/odoslane", "Kontakt: správa odoslaná");
       } else {
         ukaz("Správu sa nepodarilo odoslať. Skús to znova o chvíľu.", "chyba");
       }

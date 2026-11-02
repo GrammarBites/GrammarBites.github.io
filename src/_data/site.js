@@ -8,5 +8,7 @@ export default {
   // Kontaktný formulár – bezplatný kľúč z https://web3forms.com (príde na e-mail).
   // Kým je prázdny, formulár ukáže upozornenie a nič neodošle.
   web3formsKey: "004953a9-b54a-49e7-8cd7-d53d748c09f5",
+  // Štatistiky návštev (GoatCounter, bez cookies) – prehľad na https://grammarbites.goatcounter.com
+  goatcounter: "https://grammarbites.goatcounter.com/count",
   rok: new Date().getFullYear()
 };

@@ -1,5 +1,21 @@
-// Mini test, zväčšenie infografiky a kopírovanie odkazu
+// Mini test, zväčšenie infografiky, kopírovanie odkazu a anonymné štatistiky
 (function () {
+  const hlava = document.querySelector("[data-lekcia]");
+  const lekcia = hlava ? hlava.dataset.lekcia : "lekcia";
+
+  // ---- Štatistiky: video, stiahnutia ----
+  const video = document.querySelector("video.video");
+  if (video) {
+    let spustene = false;
+    video.addEventListener("play", () => { if (!spustene) { spustene = true; GB.udalost("video/" + lekcia, "Video: " + lekcia); } });
+    video.addEventListener("ended", () => GB.udalost("video-dopozerane/" + lekcia, "Video dopozerané: " + lekcia));
+  }
+  document.querySelectorAll(".stiahni a").forEach((a) => {
+    a.addEventListener("click", () => {
+      const typ = /\.pdf$/i.test(a.getAttribute("href")) ? "pdf" : "obrazok";
+      GB.udalost("stiahnutie/" + lekcia + "/" + typ, "Stiahnutie " + typ + ": " + lekcia);
+    });
+  });
   // ---- Mini test ----
   document.querySelectorAll("[data-test]").forEach((form) => {
     const otazky = [...form.querySelectorAll(".otazka")];
@@ -37,6 +53,7 @@
       vysledokText.textContent =
         `Máš ${spravne} z ${n} správne. ` +
         (spravne === n ? "Výborne, gramatiku máš zahryznutú!" : dobre ? "Skvelá práca!" : "Pozri si ešte raz výklad a skús to znova.");
+      GB.udalost("test/" + lekcia + "/" + spravne + "-z-" + n, "Test " + lekcia + ": " + spravne + "/" + n);
       vysledok.querySelector("[data-obr-dobre]").hidden = !dobre;
       vysledok.querySelector("[data-obr-zle]").hidden = dobre;
       vysledok.hidden = false;
@@ -65,6 +82,7 @@
   const dlg = document.querySelector(".zvacsenie");
   if (zv && dlg) {
     zv.addEventListener("click", () => {
+      GB.udalost("infografika-zvacsena/" + lekcia, "Infografika zväčšená: " + lekcia);
       if (typeof dlg.showModal === "function") dlg.showModal();
       else window.open(zv.querySelector("img").src, "_blank");
     });

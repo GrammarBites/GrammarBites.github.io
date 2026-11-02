@@ -64,11 +64,12 @@
         <p>Small lessons. Big progress.</p>
       </div>
     </div>
-    <p class="paticka__info">Materiály pripravuje {{ site.autor }}, učiteľ angličtiny. Web nepoužíva cookies, nesleduje návštevníkov a nevyžaduje registráciu.</p>
+    <p class="paticka__info">Materiály pripravuje {{ site.autor }}, učiteľ angličtiny. Web nepoužíva cookies, nevyžaduje registráciu a počíta len anonymné návštevy (bez osobných údajov).</p>
     <p class="paticka__info">Lekcie sú doplnkom k učebniciam; názvy učebníc slúžia len na orientáciu. Všetky vysvetlenia, príklady a testy sú vlastné.</p>
   </div>
 </footer>
 <script src="/assets/js/spolocne.js" defer></script>
+{% if site.goatcounter %}<script data-goatcounter="{{ site.goatcounter }}" async src="https://gc.zgo.at/count.js"></script>{% endif %}
 {% if skripty %}{% for s in skripty %}<script src="/assets/js/{{ s }}" defer></script>{% endfor %}{% endif %}
 </body>
 </html>

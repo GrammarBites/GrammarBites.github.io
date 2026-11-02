@@ -31,5 +31,16 @@ window.GB = (function () {
     return String(t ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   }
 
-  return { root, preview, odkaz, normalizuj, data, esc };
+  // Anonymná udalosť do štatistík (GoatCounter). Ak sa skript ešte nenačítal, chvíľu počká.
+  function udalost(cesta, nazov, pokus = 0) {
+    try {
+      if (window.goatcounter && window.goatcounter.count) {
+        window.goatcounter.count({ path: cesta, title: nazov || cesta, event: true });
+      } else if (pokus < 10) {
+        setTimeout(() => udalost(cesta, nazov, pokus + 1), 500);
+      }
+    } catch (e) {}
+  }
+
+  return { root, preview, odkaz, normalizuj, data, esc, udalost };
 })();

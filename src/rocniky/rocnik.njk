@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: zoznamRocnikov
+  size: 1
+  alias: r
+permalink: "/rocniky/{{ r.cislo }}/"
+eleventyComputed:
+  title: "{{ r.nazov }}"
+---
+{% set lekcie = collections.lekcie | preRocnik(r.cislo) %}
+<nav class="omrvinky" aria-label="Kde sa nachádzaš"><a href="/">Domov</a> <span aria-hidden="true">/</span> <a href="/rocniky/">Podľa ročníka</a> <span aria-hidden="true">/</span> <span aria-current="page">{{ r.nazov }}</span></nav>
+<header class="stranka-hlava">
+  <h1 class="stranka-hlava__nadpis">{{ r.nazov }}</h1>
+  <p>Učebnice: {% for u in r.ucebnice %}<a href="/ucebnice/{{ u }}/">{{ (u | ucebnica).nazov }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+</header>
+{% if lekcie.length %}
+<div class="mriezka">
+  {% for l in lekcie %}{% include "partials/karta.njk" %}{% endfor %}
+</div>
+{% else %}
+<div class="prazdne">
+  <img src="/assets/img/postavy/koza-nechape.png" alt="" width="140">
+  <p>Pre {{ r.nazov }} tu zatiaľ nie sú žiadne lekcie. Čoskoro pribudnú!</p>
+  <p><a href="/kontakt/">Navrhni tému, ktorú by si chcel vysvetliť.</a></p>
+</div>
+{% endif %}

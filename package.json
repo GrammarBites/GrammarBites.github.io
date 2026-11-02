@@ -1,0 +1,19 @@
+{
+  "name": "grammar-bites",
+  "version": "1.0.0",
+  "description": "Grammar Bites – krátke lekcie anglickej gramatiky",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "preview": "PREVIEW=1 eleventy --output=_preview"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@fontsource/caveat": "^5.0.17",
+    "@fontsource/nunito": "^5.0.18"
+  },
+  "type": "module",
+  "private": true
+}

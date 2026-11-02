@@ -1,0 +1,54 @@
+---
+layout: layouts/base.njk
+title: Vyhľadávanie
+skripty: ["hladat.js"]
+---
+<header class="stranka-hlava">
+  <h1 class="stranka-hlava__nadpis">Vyhľadávanie</h1>
+  <p>Hľadaj po slovensky aj po anglicky: <button type="button" class="priklad-hladania" data-priklad>predprítomný čas</button>, <button type="button" class="priklad-hladania" data-priklad>First conditional</button>, <button type="button" class="priklad-hladania" data-priklad>Project 5 Unit 2</button>, <button type="button" class="priklad-hladania" data-priklad>príslovky frekvencie</button>.</p>
+</header>
+
+<form class="hladanie" role="search" data-hladanie>
+  <div class="hladanie__pole">
+    <label for="q" class="sr">Čo hľadáš?</label>
+    <svg width="22" height="22" aria-hidden="true"><use href="#lupa"/></svg>
+    <input id="q" name="q" type="search" placeholder="Napíš tému, unit alebo slovíčko…" autocomplete="off">
+  </div>
+  <div class="hladanie__filtre">
+    <label for="f-rocnik">Ročník
+      <select id="f-rocnik" name="rocnik">
+        <option value="">všetky</option>
+        {% for r in zoznamRocnikov %}<option value="{{ r.cislo }}">{{ r.nazov }}</option>{% endfor %}
+      </select>
+    </label>
+    <label for="f-ucebnica">Učebnica
+      <select id="f-ucebnica" name="ucebnica">
+        <option value="">všetky</option>
+        {% for k in zoznamUcebnic %}<option value="{{ k.id }}">{{ k.nazov }}</option>{% endfor %}
+      </select>
+    </label>
+    <label for="f-tema">Téma
+      <select id="f-tema" name="tema">
+        <option value="">všetky</option>
+        {% for t in collections.temySObsahom %}<option value="{{ t.id }}">{{ t.nazov }}</option>{% endfor %}
+      </select>
+    </label>
+  </div>
+</form>
+
+<p class="vysledky__suhrn" role="status" aria-live="polite" data-suhrn></p>
+<div class="vysledky" data-vysledky></div>
+<section class="vysledky-unity" data-unity-sekcia hidden>
+  <h2 class="sekcia__nadpis sekcia__nadpis--male">V učebniciach</h2>
+  <p class="vysledky-unity__pozn">Kde sa táto gramatika preberá. Ak k unitu ešte nie je lekcia, pripravujeme ju.</p>
+  <ul class="vysledky-unity__zoznam" data-unity></ul>
+</section>
+<div class="prazdne" data-nic hidden>
+  <img src="/assets/img/postavy/koza-nechape.png" alt="" width="130">
+  <p>Nič som nenašla. Skús iné slovo alebo <a href="/kontakt/">navrhni novú tému</a>.</p>
+</div>
+
+<script type="application/json" id="data-lekcie">{{ collections.lekcie | indexLekcii | json | safe }}</script>
+<script type="application/json" id="data-ucebnice">{{ zoznamUcebnic | json | safe }}</script>
+<script type="application/json" id="data-rocniky">{{ zoznamRocnikov | json | safe }}</script>
+<script type="application/json" id="data-slovnik">{{ slovnik.skupiny | json | safe }}</script>

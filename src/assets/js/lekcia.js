@@ -1,0 +1,90 @@
+// Mini test, zväčšenie infografiky a kopírovanie odkazu
+(function () {
+  // ---- Mini test ----
+  document.querySelectorAll("[data-test]").forEach((form) => {
+    const otazky = [...form.querySelectorAll(".otazka")];
+    const znova = form.querySelector("[data-znova]");
+    const vysledok = form.querySelector(".test__vysledok");
+    const vysledokText = vysledok.querySelector("p");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      let spravne = 0, zodpovedane = 0;
+      otazky.forEach((q) => {
+        const sprav = q.dataset.spravna;
+        const vybrana = q.querySelector("input:checked");
+        const spatna = q.querySelector(".otazka__spatna");
+        q.classList.remove("je-spravne", "je-zle");
+        q.querySelectorAll(".moznost").forEach((m) => m.classList.remove("moznost--spravna", "moznost--zla"));
+        const spravnaMoznost = q.querySelector(`input[value="${sprav}"]`).closest(".moznost");
+        spravnaMoznost.classList.add("moznost--spravna");
+        if (vybrana) zodpovedane++;
+        if (vybrana && vybrana.value === sprav) {
+          spravne++;
+          q.classList.add("je-spravne");
+          spatna.textContent = "Správne! " + spatna.dataset.ok;
+        } else {
+          q.classList.add("je-zle");
+          if (vybrana) vybrana.closest(".moznost").classList.add("moznost--zla");
+          spatna.textContent = (vybrana ? "Nie celkom. " : "Bez odpovede. ") +
+            "Správne je: „" + spravnaMoznost.textContent.trim() + "“. " + spatna.dataset.ok;
+        }
+        spatna.hidden = false;
+        q.querySelectorAll("input").forEach((i) => (i.disabled = true));
+      });
+      const n = otazky.length;
+      const dobre = spravne / n >= 0.8;
+      vysledokText.textContent =
+        `Máš ${spravne} z ${n} správne. ` +
+        (spravne === n ? "Výborne, gramatiku máš zahryznutú!" : dobre ? "Skvelá práca!" : "Pozri si ešte raz výklad a skús to znova.");
+      vysledok.querySelector("[data-obr-dobre]").hidden = !dobre;
+      vysledok.querySelector("[data-obr-zle]").hidden = dobre;
+      vysledok.hidden = false;
+      znova.hidden = false;
+      form.querySelector('button[type="submit"]').hidden = true;
+      vysledok.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "nearest" });
+    });
+
+    znova.addEventListener("click", () => {
+      form.reset();
+      otazky.forEach((q) => {
+        q.classList.remove("je-spravne", "je-zle");
+        q.querySelectorAll(".moznost").forEach((m) => m.classList.remove("moznost--spravna", "moznost--zla"));
+        q.querySelectorAll("input").forEach((i) => (i.disabled = false));
+        q.querySelector(".otazka__spatna").hidden = true;
+      });
+      vysledok.hidden = true;
+      znova.hidden = true;
+      form.querySelector('button[type="submit"]').hidden = false;
+      otazky[0].querySelector("input").focus();
+    });
+  });
+
+  // ---- Zväčšenie infografiky ----
+  const zv = document.querySelector("[data-zvacsi]");
+  const dlg = document.querySelector(".zvacsenie");
+  if (zv && dlg) {
+    zv.addEventListener("click", () => {
+      if (typeof dlg.showModal === "function") dlg.showModal();
+      else window.open(zv.querySelector("img").src, "_blank");
+    });
+    dlg.addEventListener("click", (e) => { if (e.target === dlg) dlg.close(); });
+  }
+
+  // ---- Odkaz na lekciu ----
+  const pole = document.getElementById("odkaz-lekcie");
+  if (pole) pole.value = location.href.replace(/index\.html$/, "");
+  document.querySelectorAll("[data-kopiruj]").forEach((b) => {
+    b.addEventListener("click", async () => {
+      const el = document.getElementById(b.dataset.kopiruj);
+      try {
+        await navigator.clipboard.writeText(el.value);
+        b.textContent = "Skopírované ✓";
+      } catch (e) {
+        el.select();
+        b.textContent = "Označené – stlač Ctrl+C";
+      }
+      setTimeout(() => (b.textContent = "Kopírovať odkaz"), 2500);
+    });
+  });
+})();

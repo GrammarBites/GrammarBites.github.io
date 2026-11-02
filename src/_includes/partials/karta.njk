@@ -1,0 +1,25 @@
+{# Karta lekcie – očakáva premennú "l" (položka kolekcie) #}
+<article class="karta">
+  <a class="karta__obr" href="{{ l.url }}" tabindex="-1" aria-hidden="true">
+    {% if l.data.nahlad %}
+      <img src="{{ l.url }}{{ l.data.nahlad }}" alt="" loading="lazy">
+    {% elif l.data.infografika %}
+      <img src="{{ l.url }}{{ l.data.infografika }}" alt="" loading="lazy">
+    {% else %}
+      <span class="karta__zastupca">
+        <span class="karta__zastupca-text">{{ l.data.title }}</span>
+        <img src="/assets/img/postavy/{{ l.data.koza or 'koza-cita' }}.png" alt="" loading="lazy">
+      </span>
+    {% endif %}
+  </a>
+  <div class="karta__telo">
+    <p class="karta__tema">{% for t in l.data.temy %}{{ (t | tema).nazov }}{% if not loop.last %} · {% endif %}{% endfor %}</p>
+    <h3 class="karta__nadpis"><a href="{{ l.url }}">{{ l.data.title }}</a></h3>
+    {% if l.data.nazovSk %}<p class="karta__sk">{{ l.data.nazovSk }}</p>{% endif %}
+    <p class="karta__popis">{{ l.data.popis }}</p>
+    <ul class="stitky" aria-label="Zaradenie">
+      {% for r in l.data.rocniky %}<li class="stitok stitok--rocnik">{{ r }}. roč.</li>{% endfor %}
+      {% for u in l.data.ucebnice %}<li class="stitok">{{ u | unitNazov }}</li>{% endfor %}
+    </ul>
+  </div>
+</article>

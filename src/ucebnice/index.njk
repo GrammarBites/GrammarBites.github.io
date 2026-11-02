@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+title: Podľa učebnice
+---
+<header class="stranka-hlava">
+  <h1 class="stranka-hlava__nadpis">Podľa učebnice</h1>
+  <p>Otvor si učebnicu, z ktorej sa učíš, a nájdi lekcie k jednotlivým unitom.</p>
+</header>
+<div class="knihy">
+  {% for k in zoznamUcebnic %}
+  {% set pocet = (collections.lekcie | preUcebnicu(k.id)).length %}
+  <a class="kniha kniha--{{ k.farba }}" href="/ucebnice/{{ k.id }}/">
+    <span class="kniha__chrbat" aria-hidden="true"></span>
+    <span class="kniha__nazov">{{ k.nazov }}</span>
+    <span class="kniha__popis">{{ k.popis }}</span>
+    <span class="kniha__pocet">{% if pocet == 1 %}1 lekcia{% elif pocet > 1 and pocet < 5 %}{{ pocet }} lekcie{% elif pocet >= 5 %}{{ pocet }} lekcií{% else %}lekcie pripravujeme{% endif %}</span>
+  </a>
+  {% endfor %}
+</div>

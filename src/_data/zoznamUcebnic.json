@@ -1,0 +1,81 @@
+[
+  {
+    "id": "family-and-friends-2",
+    "nazov": "Family and Friends 2",
+    "kratko": "F&F 2",
+    "farba": "yellow",
+    "popis": "Učebnica pre 4. ročník.",
+    "units": []
+  },
+  {
+    "id": "project-2",
+    "nazov": "Project 2",
+    "kratko": "P2",
+    "farba": "blue",
+    "popis": "Project 4th edition, úroveň 2.",
+    "units": [
+      { "id": "intro", "nazov": "Introduction", "gramatika": ["be", "can", "Questions", "have got"] },
+      { "id": "1", "nazov": "My life", "gramatika": ["Present simple: affirmative, negative and questions", "Ordinal numbers", "Yes / No and Wh- questions", "Adverbs of frequency"] },
+      { "id": "2", "nazov": "Animals", "gramatika": ["Present continuous: affirmative, negative and questions", "Present continuous v. present simple", "must", "Subject and object pronouns"] },
+      { "id": "3", "nazov": "Holidays", "gramatika": ["Past simple: be", "Regular verbs", "Irregular verbs", "Questions and short answers"] },
+      { "id": "4", "nazov": "Food", "gramatika": ["Countable and uncountable nouns", "a / an", "some and any", "How much / How many?", "Articles: a / an, some, the", "a little, a few"] },
+      { "id": "5", "nazov": "The world", "gramatika": ["How questions", "Comparative adjectives", "Superlative adjectives", "as … as"] },
+      { "id": "6", "nazov": "Entertainment", "gramatika": ["going to", "Adjectives and adverbs", "have to", "Making suggestions"] }
+    ]
+  },
+  {
+    "id": "project-3",
+    "nazov": "Project 3",
+    "kratko": "P3",
+    "farba": "terra",
+    "popis": "Project 4th edition, úroveň 3.",
+    "units": [
+      { "id": "intro", "nazov": "Introduction", "gramatika": ["Present simple", "Present continuous"] },
+      { "id": "1", "nazov": "My life", "gramatika": ["Past simple: be", "Regular and irregular verbs", "Past simple questions"] },
+      { "id": "2", "nazov": "The future", "gramatika": ["will for the future", "will for decisions", "going to for intentions"] },
+      { "id": "3", "nazov": "Times and places", "gramatika": ["Past continuous: affirmative, negative, questions and short answers", "Past continuous and past simple"] },
+      { "id": "4", "nazov": "Cities", "gramatika": ["The definite article the", "the, a / an"] },
+      { "id": "5", "nazov": "Experiences", "gramatika": ["Present perfect", "Present perfect questions", "ever and never"] },
+      { "id": "6", "nazov": "What's up?", "gramatika": ["should / shouldn't", "must / mustn't, don't have to"] }
+    ]
+  },
+  {
+    "id": "project-4",
+    "nazov": "Project 4",
+    "kratko": "P4",
+    "farba": "blue",
+    "popis": "Project 4th edition, úroveň 4.",
+    "units": [
+      { "id": "intro", "nazov": "Introduction", "gramatika": ["Present tenses", "Stative verbs", "will / going to"] },
+      { "id": "1", "nazov": "Past and present", "gramatika": ["Past simple and past continuous", "used to", "too / enough", "Past modals"] },
+      { "id": "2", "nazov": "Fame and fortune", "gramatika": ["Present perfect", "Present perfect v. past simple", "for / since", "been / gone", "Question tags"] },
+      { "id": "3", "nazov": "Health and safety", "gramatika": ["Relative pronouns", "should / might", "Relative clauses", "Agreeing and disagreeing"] },
+      { "id": "4", "nazov": "Heroes", "gramatika": ["Verb + -ing or infinitive", "There's someone / something + -ing", "can see / hear someone / something + -ing"] },
+      { "id": "5", "nazov": "Our environment", "gramatika": ["Passive voice: present", "Passive voice: different tenses"] },
+      { "id": "6", "nazov": "Relationships", "gramatika": ["First conditional", "Future time clauses"] }
+    ]
+  },
+  {
+    "id": "project-5",
+    "nazov": "Project 5",
+    "kratko": "P5",
+    "farba": "terra",
+    "popis": "Project 4th edition, úroveň 5.",
+    "units": [
+      { "id": "1", "nazov": "Problems", "gramatika": ["Past simple", "Past continuous", "Present perfect", "Articles"] },
+      { "id": "2", "nazov": "The future", "gramatika": ["Talking about the future", "First conditional", "Time expressions"] },
+      { "id": "3", "nazov": "Risks", "gramatika": ["would", "Second conditional", "so … that", "Reflexive pronouns"] },
+      { "id": "4", "nazov": "Can I ask …?", "gramatika": ["Question forms", "Gerunds", "Separating phrasal verbs"] },
+      { "id": "5", "nazov": "Buying and selling", "gramatika": ["Passive voice", "Modal verbs with the passive voice", "Prepositions"] },
+      { "id": "6", "nazov": "Unit 6", "gramatika": [] }
+    ]
+  },
+  {
+    "id": "vlastne",
+    "nazov": "Vlastné materiály",
+    "kratko": "Vlastné",
+    "farba": "yellow",
+    "popis": "Lekcie, ktoré nepatria ku konkrétnej učebnici.",
+    "units": []
+  }
+]

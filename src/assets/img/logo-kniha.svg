@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 60" role="img" aria-label="Grammar Bites">
+  <defs>
+    <mask id="hryz">
+      <rect width="64" height="60" fill="#fff"/>
+      <circle cx="57" cy="12" r="8" fill="#000"/>
+      <circle cx="49.5" cy="8.5" r="4.2" fill="#000"/>
+      <circle cx="61.5" cy="21" r="4.2" fill="#000"/>
+    </mask>
+    <clipPath id="kniha">
+      <path d="M3 19 Q32 12 61 19 L61 55 Q32 48 3 55 Z"/>
+    </clipPath>
+  </defs>
+  <g mask="url(#hryz)" stroke="#2b2622" stroke-width="2" stroke-linejoin="round">
+    <path d="M3 19 Q32 12 61 19 L61 55 Q32 48 3 55 Z" fill="#2f5d9e"/>
+    <path d="M7 15 Q20 9 31 15 L31 50 Q20 44 7 50 Z" fill="#fdf8ec"/>
+    <path d="M33 15 Q45 9 57 15 L57 50 Q45 44 33 50 Z" fill="#fdf8ec"/>
+    <g stroke="#c9bda5" stroke-width="1.6" fill="none" stroke-linecap="round">
+      <path d="M11 22 Q19 19 27 22"/><path d="M11 28 Q19 25 27 28"/><path d="M11 34 Q19 31 27 34"/><path d="M11 40 Q17 38 23 40"/>
+      <path d="M37 22 Q45 19 53 22"/><path d="M37 28 Q45 25 53 28"/><path d="M37 34 Q45 31 53 34"/>
+    </g>
+  </g>
+  <g clip-path="url(#kniha)" fill="none" stroke="#2b2622" stroke-width="2">
+    <circle cx="57" cy="12" r="8"/>
+    <circle cx="49.5" cy="8.5" r="4.2"/>
+    <circle cx="61.5" cy="21" r="4.2"/>
+  </g>
+  <path d="M27 51 L27 59 L30 56.5 L33 59 L33 51" fill="#c4553a" stroke="#2b2622" stroke-width="1.6" stroke-linejoin="round"/>
+  <g fill="#f2b632" stroke="#2b2622" stroke-width="1">
+    <circle cx="61" cy="30" r="1.8"/><circle cx="58" cy="34" r="1.2"/><circle cx="62.5" cy="36" r="1"/>
+  </g>
+</svg>

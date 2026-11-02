@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+title: Podľa ročníka
+---
+<header class="stranka-hlava">
+  <h1 class="stranka-hlava__nadpis">Podľa ročníka</h1>
+  <p>Vyber svoj ročník. Pri každom nájdeš lekcie a učebnice, z ktorých sa učíš.</p>
+</header>
+<div class="rocniky">
+  {% for r in zoznamRocnikov %}
+  {% set pocet = (collections.lekcie | preRocnik(r.cislo)).length %}
+  <a class="rocnik" href="/rocniky/{{ r.cislo }}/">
+    <span class="rocnik__cislo">{{ r.cislo }}.</span>
+    <span class="rocnik__nazov">ročník</span>
+    <span class="rocnik__knihy">{% for u in r.ucebnice %}{{ (u | ucebnica).nazov }}{% if not loop.last %} · {% endif %}{% endfor %}</span>
+    <span class="rocnik__pocet">{% if pocet == 1 %}1 lekcia{% elif pocet > 1 and pocet < 5 %}{{ pocet }} lekcie{% elif pocet >= 5 %}{{ pocet }} lekcií{% else %}pripravujeme{% endif %}</span>
+  </a>
+  {% endfor %}
+</div>

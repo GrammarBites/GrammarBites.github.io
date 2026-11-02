@@ -1,0 +1,73 @@
+---
+layout: layouts/base.njk
+bodyClass: stranka-domov
+skripty: ["domov.js"]
+---
+<section class="uvod">
+  <div class="uvod__text">
+    <p class="nadnadpis">Vitajte v Grammar Bites!</p>
+    <h1 class="uvod__nadpis">Small lessons.<br><span>Big progress.</span></h1>
+    <p class="uvod__perex">Krátke videá, kreslené infografiky, jasný výklad a mini testy z anglickej gramatiky. Pre žiakov 4.–9. ročníka, bez registrácie, na mobile aj na počítači.</p>
+    <p class="uvod__podpis">Let's bite into English!</p>
+    <div class="uvod__akcie">
+      <a class="tlacidlo" href="/rocniky/">Vyber si ročník <svg width="20" height="20" aria-hidden="true"><use href="#sipka"/></svg></a>
+      <a class="tlacidlo tlacidlo--tiche" href="/temy/">Prezri témy</a>
+    </div>
+  </div>
+  <div class="uvod__postavy" aria-hidden="true">
+    <img class="uvod__ucitel" src="/assets/img/postavy/ucitel.png" alt="" width="260" height="434">
+    <img class="uvod__koza" src="/assets/img/postavy/koza-cita.png" alt="" width="170" height="209">
+    <svg class="uvod__hviezda uvod__hviezda--1" width="30" height="30"><use href="#hviezda"/></svg>
+    <svg class="uvod__hviezda uvod__hviezda--2" width="20" height="20"><use href="#hviezda"/></svg>
+  </div>
+</section>
+
+{% set prvaLekcia = collections.lekcie[0] %}
+{% if prvaLekcia %}
+<section class="bite-dna" aria-labelledby="h-bite">
+  <div class="bite-dna__hlava">
+    <h2 id="h-bite" class="bite-dna__nadpis">Grammar Bite dňa</h2>
+    <p class="bite-dna__datum" data-dnes></p>
+  </div>
+  <div class="bite-dna__telo" data-bite>
+    <p class="bite-dna__tema"><a href="{{ prvaLekcia.url }}" data-bite-odkaz>{{ prvaLekcia.data.title }}</a> <span data-bite-sk>{{ prvaLekcia.data.nazovSk }}</span></p>
+    <p class="bite-dna__tip" data-bite-tip>{{ prvaLekcia.data.bite.tip }}</p>
+    <p class="bite-dna__priklad" lang="en" data-bite-priklad>{{ prvaLekcia.data.bite.priklad }}</p>
+    <a class="tlacidlo tlacidlo--male" href="{{ prvaLekcia.url }}" data-bite-odkaz>Celá lekcia <svg width="18" height="18" aria-hidden="true"><use href="#sipka"/></svg></a>
+  </div>
+  <img class="bite-dna__koza" src="/assets/img/postavy/koza-zmurka.png" alt="" width="110" height="142">
+</section>
+<script type="application/json" id="data-lekcie">{{ collections.lekcie | indexLekcii | json | safe }}</script>
+{% endif %}
+
+<section class="sekcia" aria-labelledby="h-najnovsie">
+  <h2 id="h-najnovsie" class="sekcia__nadpis">Najnovšie Grammar Bites</h2>
+  {% if collections.lekcie.length %}
+  <div class="mriezka">
+    {% for l in collections.lekcie | head(6) %}{% include "partials/karta.njk" %}{% endfor %}
+  </div>
+  {% else %}
+  <p>Prvé lekcie sú na ceste.</p>
+  {% endif %}
+</section>
+
+<section class="sekcia" aria-labelledby="h-objavuj">
+  <h2 id="h-objavuj" class="sekcia__nadpis">Objavuj gramatiku</h2>
+  <div class="rozcestnik">
+    <a class="rozcestnik__dlazdica rozcestnik__dlazdica--rocniky" href="/rocniky/">
+      <span class="rozcestnik__nazov">Podľa ročníka</span>
+      <span class="rozcestnik__cisla">{% for r in zoznamRocnikov %}<span>{{ r.cislo }}</span>{% endfor %}</span>
+      <span class="rozcestnik__popis">Čo sa učíš tento rok</span>
+    </a>
+    <a class="rozcestnik__dlazdica rozcestnik__dlazdica--ucebnice" href="/ucebnice/">
+      <span class="rozcestnik__nazov">Podľa učebnice</span>
+      <span class="rozcestnik__knihy">Family and Friends 2 · Project 2–5</span>
+      <span class="rozcestnik__popis">Nájdi svoj unit</span>
+    </a>
+    <a class="rozcestnik__dlazdica rozcestnik__dlazdica--temy" href="/temy/">
+      <span class="rozcestnik__nazov">Gramatické témy</span>
+      <span class="rozcestnik__knihy">{% for t in collections.temySObsahom | head(4) %}{{ t.nazov }}{% if not loop.last %} · {% endif %}{% endfor %}</span>
+      <span class="rozcestnik__popis">Časy, podmienky, príslovky…</span>
+    </a>
+  </div>
+</section>

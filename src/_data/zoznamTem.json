@@ -1,0 +1,11 @@
+[
+  { "id": "pritomne-casy", "nazov": "Prítomné časy", "en": "Present tenses" },
+  { "id": "minule-casy", "nazov": "Minulé časy", "en": "Past tenses" },
+  { "id": "buduce-casy", "nazov": "Budúce časy", "en": "Future forms" },
+  { "id": "podmienkove-vety", "nazov": "Podmienkové vety", "en": "Conditionals" },
+  { "id": "modalne-slovesa", "nazov": "Modálne slovesá", "en": "Modal verbs" },
+  { "id": "otazky", "nazov": "Otázky", "en": "Questions" },
+  { "id": "prislovky", "nazov": "Príslovky", "en": "Adverbs" },
+  { "id": "trpny-rod", "nazov": "Trpný rod", "en": "Passive voice" },
+  { "id": "ostatne", "nazov": "Ostatné gramatické témy", "en": "Other grammar" }
+]

@@ -1,0 +1,49 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: zoznamUcebnic
+  size: 1
+  alias: k
+permalink: "/ucebnice/{{ k.id }}/"
+eleventyComputed:
+  title: "{{ k.nazov }}"
+---
+{% set vsetky = collections.lekcie | preUcebnicu(k.id) %}
+<nav class="omrvinky" aria-label="Kde sa nachádzaš"><a href="/">Domov</a> <span aria-hidden="true">/</span> <a href="/ucebnice/">Podľa učebnice</a> <span aria-hidden="true">/</span> <span aria-current="page">{{ k.nazov }}</span></nav>
+<header class="stranka-hlava">
+  <h1 class="stranka-hlava__nadpis">{{ k.nazov }}</h1>
+  <p>{{ k.popis }}{% set rr = [] %} Používa sa v ročníkoch: {% for r in zoznamRocnikov %}{% if r.ucebnice.includes(k.id) %}<a href="/rocniky/{{ r.cislo }}/">{{ r.cislo }}.</a> {% endif %}{% endfor %}</p>
+</header>
+
+{% if k.units.length %}
+<ol class="unity">
+  {% for u in k.units %}
+  {% set lekcieUnitu = collections.lekcie | preUcebnicu(k.id, u.id) %}
+  <li class="unit" id="unit-{{ u.id }}">
+    <div class="unit__hlava">
+      <span class="unit__cislo">{% if u.id == "intro" %}Intro{% else %}{{ u.id }}{% endif %}</span>
+      <h2 class="unit__nazov">{{ u.nazov }}</h2>
+    </div>
+    {% if u.gramatika.length %}
+    <p class="unit__gramatika"><span class="unit__label">Gramatika v učebnici:</span> {% for g in u.gramatika %}<span lang="en">{{ g }}</span>{% if not loop.last %} · {% endif %}{% endfor %}</p>
+    {% endif %}
+    {% if lekcieUnitu.length %}
+    <ul class="unit__lekcie">
+      {% for l in lekcieUnitu %}
+      <li><a href="{{ l.url }}"><strong>{{ l.data.title }}</strong> <span>{{ l.data.nazovSk }}</span></a></li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="unit__nic">Lekcie k tomuto unitu pripravujeme.</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ol>
+{% elif vsetky.length %}
+<div class="mriezka">{% for l in vsetky %}{% include "partials/karta.njk" %}{% endfor %}</div>
+{% else %}
+<div class="prazdne">
+  <img src="/assets/img/postavy/koza-cita.png" alt="" width="140">
+  <p>K tejto učebnici zatiaľ nie sú lekcie. Pracujem na nich!</p>
+</div>
+{% endif %}

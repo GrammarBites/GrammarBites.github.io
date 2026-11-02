@@ -1,0 +1,8 @@
+[
+  { "cislo": 4, "nazov": "4. ročník", "ucebnice": ["family-and-friends-2"] },
+  { "cislo": 5, "nazov": "5. ročník", "ucebnice": ["project-2"] },
+  { "cislo": 6, "nazov": "6. ročník", "ucebnice": ["project-2", "project-3"] },
+  { "cislo": 7, "nazov": "7. ročník", "ucebnice": ["project-3", "project-4"] },
+  { "cislo": 8, "nazov": "8. ročník", "ucebnice": ["project-4", "project-5"] },
+  { "cislo": 9, "nazov": "9. ročník", "ucebnice": ["project-5"] }
+]

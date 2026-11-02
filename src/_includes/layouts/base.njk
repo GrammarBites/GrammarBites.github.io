@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="sk" data-root="/">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>{% if title and page.url != "/" %}{{ titleSk or title }} · {% endif %}Grammar Bites</title>
+<meta name="description" content="{{ popis or 'Krátke videá, infografiky a testy z anglickej gramatiky pre žiakov 4.–9. ročníka.' }}">
+<meta property="og:title" content="{{ title or site.nazov }}{% if nazovSk %} – {{ nazovSk }}{% endif %}">
+<meta property="og:description" content="{{ popis or site.slogan }}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sk_SK">
+{% if site.url %}
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}{{ page.url }}{{ nahlad or infografika or '' }}">
+{% endif %}
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="{{ bodyClass }}">
+<a class="skip" href="#obsah">Preskočiť na obsah</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="hviezda" viewBox="0 0 24 24"><path d="M12 2.5l2.6 6.1 6.6.5-5 4.3 1.6 6.4L12 16.3 6.2 19.8l1.6-6.4-5-4.3 6.6-.5z" fill="currentColor" stroke="var(--ink)" stroke-width="1.3" stroke-linejoin="round"/></symbol>
+  <symbol id="lupa" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M15.5 15.8l5 4.7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+  <symbol id="sipka" viewBox="0 0 24 24"><path d="M4 12.5c5-.6 10-.3 15 .2M14 7.5l5.2 5-5 4.8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="hlavicka">
+  <div class="hlavicka__in">
+    <a class="logo" href="/" aria-label="Grammar Bites – domov">
+      <img src="/assets/img/logo-kniha.svg" alt="" width="52" height="49">
+      <span class="logo__text"><span class="logo__g">Grammar</span> <span class="logo__b">Bites</span></span>
+    </a>
+    <form class="hladaj-mini" action="/hladat/" method="get" role="search">
+      <label for="q-hlavicka" class="sr">Hľadať</label>
+      <input id="q-hlavicka" name="q" type="search" placeholder="Hľadaj tému… napr. podmienkové vety" autocomplete="off">
+      <button type="submit" aria-label="Hľadať"><svg width="20" height="20"><use href="#lupa"/></svg></button>
+    </form>
+  </div>
+  <nav class="menu" aria-label="Hlavná navigácia">
+    <ul>
+      {% set sekcia = page.url | bezLomky %}
+      <li><a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Domov</a></li>
+      <li><a href="/rocniky/" {% if sekcia.startsWith("rocniky") %}aria-current="page"{% endif %}>Podľa ročníka</a></li>
+      <li><a href="/ucebnice/" {% if sekcia.startsWith("ucebnice") %}aria-current="page"{% endif %}>Podľa učebnice</a></li>
+      <li><a href="/temy/" {% if sekcia.startsWith("temy") %}aria-current="page"{% endif %}>Gramatické témy</a></li>
+      <li><a href="/hladat/" {% if sekcia.startsWith("hladat") %}aria-current="page"{% endif %}>Vyhľadávanie</a></li>
+      <li><a href="/kontakt/" {% if sekcia.startsWith("kontakt") %}aria-current="page"{% endif %}>Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="obsah" class="obsah">
+{{ content | safe }}
+</main>
+
+<footer class="paticka">
+  <div class="paticka__in">
+    <div class="paticka__znacka">
+      <img src="/assets/img/postavy/koza-zmurka.png" alt="" width="64" height="83" loading="lazy">
+      <div>
+        <p class="paticka__nazov">Grammar Bites</p>
+        <p>Small lessons. Big progress.</p>
+      </div>
+    </div>
+    <p class="paticka__info">Materiály pripravuje {{ site.autor }}, učiteľ angličtiny. Web nepoužíva cookies, nesleduje návštevníkov a nevyžaduje registráciu.</p>
+    <p class="paticka__info">Lekcie sú doplnkom k učebniciam; názvy učebníc slúžia len na orientáciu. Všetky vysvetlenia, príklady a testy sú vlastné.</p>
+  </div>
+</footer>
+<script src="/assets/js/spolocne.js" defer></script>
+{% if skripty %}{% for s in skripty %}<script src="/assets/js/{{ s }}" defer></script>{% endfor %}{% endif %}
+</body>
+</html>

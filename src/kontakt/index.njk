@@ -1,0 +1,40 @@
+---
+layout: layouts/base.njk
+title: Kontakt
+skripty: ["kontakt.js"]
+---
+<div class="kontakt">
+  <div class="kontakt__text">
+    <h1 class="stranka-hlava__nadpis">Kontakt</h1>
+    <p class="kontakt__uvod">Máš otázku k anglickej gramatike? Chceš navrhnúť novú tému alebo nám niečo oznámiť? Napíš mi!</p>
+    <p class="kontakt__pozn">Stačí prezývka. Nepíš sem priezvisko, adresu ani telefónne číslo. E-mail vyplň, len ak chceš odpoveď.</p>
+    <img class="kontakt__ucitel" src="/assets/img/postavy/ucitel.png" alt="" width="200" height="334">
+  </div>
+
+  <form class="formular" data-formular data-kluc="{{ site.web3formsKey }}" novalidate>
+    <div class="formular__riadok">
+      <label for="meno">Meno alebo prezývka</label>
+      <input id="meno" name="meno" type="text" required maxlength="40" autocomplete="nickname">
+    </div>
+    <div class="formular__riadok">
+      <label for="email">E-mail <span class="nepovinne">(nepovinné)</span></label>
+      <input id="email" name="email" type="email" maxlength="80" autocomplete="email">
+    </div>
+    <div class="formular__riadok">
+      <label for="kategoria">O čom píšeš?</label>
+      <select id="kategoria" name="kategoria">
+        <option>Otázka k gramatike</option>
+        <option>Návrh na nové video</option>
+        <option>Pripomienka k webu</option>
+        <option>Iné</option>
+      </select>
+    </div>
+    <div class="formular__riadok">
+      <label for="sprava">Správa</label>
+      <textarea id="sprava" name="sprava" rows="6" required maxlength="2000"></textarea>
+    </div>
+    <input type="checkbox" name="botcheck" class="sr" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button type="submit" class="tlacidlo">Odoslať správu</button>
+    <p class="formular__stav" role="status" aria-live="polite" data-stav hidden></p>
+  </form>
+</div>

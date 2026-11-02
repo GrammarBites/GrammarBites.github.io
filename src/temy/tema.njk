@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.temySObsahom
+  size: 1
+  alias: t
+permalink: "/temy/{{ t.id }}/"
+eleventyComputed:
+  title: "{{ t.nazov }}"
+---
+<nav class="omrvinky" aria-label="Kde sa nachádzaš"><a href="/">Domov</a> <span aria-hidden="true">/</span> <a href="/temy/">Gramatické témy</a> <span aria-hidden="true">/</span> <span aria-current="page">{{ t.nazov }}</span></nav>
+<header class="stranka-hlava">
+  <h1 class="stranka-hlava__nadpis">{{ t.nazov }}</h1>
+  <p lang="en">{{ t.en }}</p>
+</header>
+<div class="mriezka">
+  {% for l in collections.lekcie | preTemu(t.id) %}{% include "partials/karta.njk" %}{% endfor %}
+</div>

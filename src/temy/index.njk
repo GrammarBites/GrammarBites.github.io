@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+title: Gramatické témy
+---
+<header class="stranka-hlava">
+  <h1 class="stranka-hlava__nadpis">Gramatické témy</h1>
+  <p>Všetky lekcie zoradené podľa toho, čo vysvetľujú.</p>
+</header>
+<div class="temy">
+  {% for t in collections.temySObsahom %}
+  {% set lekcie = collections.lekcie | preTemu(t.id) %}
+  <section class="tema">
+    <h2 class="tema__nazov"><a href="/temy/{{ t.id }}/">{{ t.nazov }}</a> <span lang="en">{{ t.en }}</span></h2>
+    <ul class="tema__lekcie">
+      {% for l in lekcie %}<li><a href="{{ l.url }}">{{ l.data.title }}</a> <span>{{ l.data.nazovSk }}</span></li>{% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+</div>

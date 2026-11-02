@@ -168,9 +168,9 @@ a.stitok:hover { border-color: currentColor; }
 .uvod__perex { font-size: 1.15rem; max-width: 46ch; color: var(--ink-2); }
 .uvod__podpis { font-family: var(--hand); font-size: 1.75rem; transform: rotate(-2deg); background: var(--paper-hi); border: 2px solid var(--ink); padding: 2px 16px; border-radius: var(--wobbly-2); box-shadow: var(--tien); }
 .uvod__akcie { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px; }
-.uvod__postavy { position: relative; display: flex; align-items: flex-end; justify-content: center; min-height: 300px; }
-.uvod__postavy::before { content: ""; position: absolute; inset: 12% 4% 0 8%; background: var(--blue-wash); border-radius: 46% 54% 40% 60% / 55% 45% 55% 45%; z-index: 0; }
-.uvod__ucitel { position: relative; z-index: 1; width: min(260px, 52%); margin-right: -26px; }
+.uvod__postavy { position: relative; display: flex; align-items: flex-end; justify-content: center; min-height: 300px; padding-top: 36px; }
+.uvod__postavy::before { content: ""; position: absolute; inset: 0 2% 0 4%; background: var(--blue-wash); border-radius: 46% 54% 40% 60% / 55% 45% 55% 45%; z-index: 0; }
+.uvod__ucitel { position: relative; z-index: 1; width: min(290px, 56%); margin-right: -34px; }
 .uvod__koza { position: relative; z-index: 2; width: min(170px, 36%); margin-bottom: 4px; }
 .uvod__hviezda { position: absolute; color: var(--yellow); z-index: 2; }
 .uvod__hviezda--1 { top: 6%; right: 12%; transform: rotate(12deg); }

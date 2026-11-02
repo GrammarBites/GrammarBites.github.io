@@ -10,6 +10,7 @@ nazovSk: Predprítomný čas              # slovenský názov
 popis: Krátky popis po slovensky (1–2 vety), zobrazí sa na karte lekcie.
 date: 2026-11-15                       # dátum zverejnenia
 rocniky: [7, 8]                        # ročníky
+strana: 57                             # strana v učebnici – určuje poradie lekcií v rámci unitu
 ucebnice:                              # učebnice a unity (id: family-and-friends-2, project-2 … project-5, vlastne)
   - { id: project-3, unit: "5" }
   - { id: project-4, unit: "2" }

@@ -4,6 +4,7 @@ nazovSk: Predprítomný čas – oznamovacie a záporné vety
 popis: "Čo sme už zažili a čo ešte nie: I've seen a UFO. She hasn't been on TV. Have/has + 3. tvar slovesa."
 date: 2026-11-02
 rocniky: [7]
+strana: 57                      # strana v učebnici (poradie lekcií v unite)
 ucebnice:
   - { id: project-3, unit: "5" }
 temy: [pritomne-casy]

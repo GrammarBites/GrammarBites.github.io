@@ -18,7 +18,7 @@ eleventyComputed:
 {% if k.units.length %}
 <ol class="unity">
   {% for u in k.units %}
-  {% set lekcieUnitu = collections.lekcie | preUcebnicu(k.id, u.id) | reverse %}
+  {% set lekcieUnitu = collections.lekcie | preUcebnicu(k.id, u.id) | podlaStrany %}
   <li class="unit" id="unit-{{ u.id }}">
     <div class="unit__hlava">
       <span class="unit__cislo">{% if u.id == "intro" %}Intro{% else %}{{ u.id }}{% endif %}</span>

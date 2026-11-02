@@ -4,6 +4,7 @@ nazovSk: Frekvenčné príslovky
 popis: Ako často niečo robíme? Always, usually, often, sometimes, never – a hlavne kam ich vo vete postaviť.
 date: 2026-10-12
 rocniky: [5, 6]
+strana: 15                      # strana v učebnici (poradie lekcií v unite)
 ucebnice:
   - { id: project-2, unit: "1" }
 temy: [prislovky, pritomne-casy]

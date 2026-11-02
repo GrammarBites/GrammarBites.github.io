@@ -38,6 +38,10 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("preTemu", (lekcie, id) =>
     lekcie.filter((l) => (l.data.temy || []).includes(id))
   );
+  // poradie v rámci unitu: podľa strany v učebnici (strana), inak podľa dátumu
+  eleventyConfig.addFilter("podlaStrany", (lekcie) =>
+    [...lekcie].sort((a, b) => (a.data.strana ?? 999) - (b.data.strana ?? 999) || a.date - b.date)
+  );
   eleventyConfig.addFilter("bezStranky", (lekcie, url) => lekcie.filter((l) => l.url !== url));
   eleventyConfig.addFilter("head", (arr, n) => (n < 0 ? arr.slice(n) : arr.slice(0, n)));
   eleventyConfig.addFilter("tema",(id) => temy.find((t) => t.id === id) || { id, nazov: id, en: id });

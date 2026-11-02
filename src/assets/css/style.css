@@ -325,7 +325,7 @@ a.stitok:hover { border-color: currentColor; }
 .zosit em { color: var(--ink); }
 
 .skala { list-style: none; padding: 0 !important; display: grid !important; gap: 8px !important; max-width: 520px; }
-.skala li { display: grid; grid-template-columns: 11rem minmax(0, 1fr) 3.5rem; align-items: center; gap: 10px; }
+.skala li { display: grid; grid-template-columns: 11rem minmax(0, 1fr) 5.5rem; align-items: center; gap: 10px; }
 .skala li::before { content: ""; grid-column: 2; grid-row: 1; height: 16px; width: var(--p); min-width: 4px; background: var(--yellow); border: 2px solid var(--ink); border-radius: 3px 10px 8px 4px; }
 .skala b { grid-column: 1; grid-row: 1; }
 .skala span { grid-column: 3; grid-row: 1; text-align: right; font-variant-numeric: tabular-nums; color: var(--ink-2); font-size: .9rem; }
@@ -346,6 +346,8 @@ a.stitok:hover { border-color: currentColor; }
 .chyby th:last-child { color: var(--green); }
 .chyby s { text-decoration-color: var(--terra); text-decoration-thickness: 2px; color: var(--terra); }
 .chyby td b { color: var(--green); }
+.tvary th:first-child, .tvary th:last-child { color: var(--ink); }
+.tvary td b { color: var(--terra); }
 
 /* Mini test */
 .test { display: grid; gap: 16px; }
@@ -443,7 +445,7 @@ select, input, textarea { font: inherit; color: var(--ink); }
   .bite-dna__koza { width: 90px; right: 16px; }
   .lekcia-hlava { grid-template-columns: 1fr; }
   .lekcia-hlava__koza { display: none; }
-  .skala li { grid-template-columns: 8.5rem minmax(0, 1fr) 3rem; font-size: .92rem; }
+  .skala li { grid-template-columns: 8rem minmax(0, 1fr) 4.8rem; font-size: .92rem; }
   .chyby { font-size: .9rem; }
   .sekcia__nadpis { font-size: 2rem; }
 }

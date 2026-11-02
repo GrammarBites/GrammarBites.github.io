@@ -21,38 +21,38 @@ test:
   - otazka: "I ___ a UFO."
     moznosti: ["have saw", "have seen", "has seen"]
     spravna: 1
-    vysvetlenie: "With I we use have + the past participle: have seen."
+    vysvetlenie: "Pri I používame have + 3. tvar: have seen."
   - otazka: "My sister ___ a bike race."
     moznosti: ["has won", "have won", "has win"]
     spravna: 0
-    vysvetlenie: "With he/she/it we use has. The past participle of win is won."
+    vysvetlenie: "Pri he/she/it je has. Sloveso win má 3. tvar won."
   - otazka: "We ___ on TV."
     moznosti: ["hasn't been", "haven't be", "haven't been"]
     spravna: 2
-    vysvetlenie: "The negative with we is haven't + past participle: haven't been."
+    vysvetlenie: "Zápor pri we je haven't + 3. tvar: haven't been."
   - otazka: "Tom ___ a racing car."
     moznosti: ["hasn't driven", "haven't driven", "hasn't drove"]
     spravna: 0
-    vysvetlenie: "With he (Tom) we use hasn't. Drive is irregular: drive – driven."
+    vysvetlenie: "Tom = he, preto hasn't. Drive je nepravidelné: drive – driven."
   - otazka: "Which sentence is correct?"
     moznosti: ["She've visited London.", "They've visited London.", "They has visited London."]
     spravna: 1
-    vysvetlenie: "They + have = They've. She needs has (She's)."
+    vysvetlenie: "They + have = They've. Pri she by muselo byť has (She's)."
 ---
 
-## The rule
+## Pravidlo
 
-We use the present perfect to talk about **experiences up to now**. We don't say **when** they happened.
+Predprítomný čas (present perfect) používame, keď hovoríme o **skúsenostiach doteraz** – čo sme už v živote zažili alebo ešte nie. **Nehovoríme, kedy presne** sa to stalo.
 
-- <em>I<b>'ve ridden</b> a horse.</em> (sometime in my life – it isn't important when)
+- <em>I<b>'ve ridden</b> a horse.</em> – Už som jazdil na koni. (niekedy v živote, na čase nezáleží)
 
 <div class="vzorec">
 <span class="vzorec__cast vzorec__cast--if"><b>have / has</b></span>
 <span class="vzorec__ciarka">+</span>
-<span class="vzorec__cast vzorec__cast--will"><b>past participle</b> (3rd form)</span>
+<span class="vzorec__cast vzorec__cast--will"><b>3. tvar slovesa</b> (past participle)</span>
 </div>
 
-## Affirmative
+## Oznamovacia veta
 
 <div class="pravidla">
 <div class="pravidlo"><p class="pravidlo__nazov">I / you / we / they + have</p>
@@ -61,9 +61,11 @@ We use the present perfect to talk about **experiences up to now**. We don't say
 <p>She <mark>has won</mark> a race.<br>He<mark>'s done</mark> a bungee jump.</p></div>
 </div>
 
-Short forms: **I've, you've, we've, they've** · **he's, she's, it's**
+Skrátené tvary: **I've, you've, we've, they've** · **he's, she's, it's**
 
-## Negative
+## Záporná veta
+
+Zápor tvoríme pomocou **not** za *have / has*. V hovorenej reči používame skrátené tvary.
 
 <div class="pravidla">
 <div class="pravidlo"><p class="pravidlo__nazov">haven't = have not</p>
@@ -72,28 +74,28 @@ Short forms: **I've, you've, we've, they've** · **he's, she's, it's**
 <p>He <mark>hasn't driven</mark> a car.<br>My cat <mark>hasn't seen</mark> a dog.</p></div>
 </div>
 
-## The past participle
+## 3. tvar slovesa
 
-**Regular verbs** add *-ed*: visit → **visited**, play → **played**, watch → **watched**
+**Pravidelné slovesá** pridávajú *-ed* (rovnako ako v minulom čase): visit → **visited**, play → **played**, watch → **watched**
 
-**Irregular verbs** – learn them by heart:
+**Nepravidelné slovesá** majú vlastný tvar – treba sa ich naučiť naspamäť:
 
-<table class="chyby">
-<thead><tr><th scope="col">verb</th><th scope="col">past participle</th></tr></thead>
+<table class="chyby tvary">
+<thead><tr><th scope="col">sloveso</th><th scope="col">3. tvar</th><th scope="col">význam</th></tr></thead>
 <tbody>
-<tr><td>see</td><td><b>seen</b></td></tr>
-<tr><td>be</td><td><b>been</b></td></tr>
-<tr><td>do</td><td><b>done</b></td></tr>
-<tr><td>win</td><td><b>won</b></td></tr>
-<tr><td>ride</td><td><b>ridden</b></td></tr>
-<tr><td>drive</td><td><b>driven</b></td></tr>
+<tr><td>see</td><td><b>seen</b></td><td>vidieť</td></tr>
+<tr><td>be</td><td><b>been</b></td><td>byť</td></tr>
+<tr><td>do</td><td><b>done</b></td><td>robiť</td></tr>
+<tr><td>win</td><td><b>won</b></td><td>vyhrať</td></tr>
+<tr><td>ride</td><td><b>ridden</b></td><td>jazdiť (na koni, bicykli)</td></tr>
+<tr><td>drive</td><td><b>driven</b></td><td>šoférovať</td></tr>
 </tbody>
 </table>
 
-## Common mistakes
+## Časté chyby
 
 <table class="chyby">
-<thead><tr><th scope="col">✗ Wrong</th><th scope="col">✓ Right</th></tr></thead>
+<thead><tr><th scope="col">✗ Nesprávne</th><th scope="col">✓ Správne</th></tr></thead>
 <tbody>
 <tr><td>She <s>have</s> won a race.</td><td>She <b>has</b> won a race.</td></tr>
 <tr><td>I have <s>saw</s> a UFO.</td><td>I have <b>seen</b> a UFO.</td></tr>

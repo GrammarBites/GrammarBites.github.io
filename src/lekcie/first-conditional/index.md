@@ -22,59 +22,61 @@ test:
   - otazka: "If you ___ hard, you'll pass the test."
     moznosti: ["will study", "study", "studied"]
     spravna: 1
-    vysvetlenie: "After if we use the present simple: If you study…"
+    vysvetlenie: "Za if používame prítomný čas: If you study…"
   - otazka: "If it's sunny tomorrow, we ___ to the lake."
     moznosti: ["go", "will go", "went"]
     spravna: 1
-    vysvetlenie: "The result part uses will + verb: we'll go."
+    vysvetlenie: "Vo výsledku je will + sloveso: we'll go."
   - otazka: "Which sentence is correct?"
     moznosti: ["If she will call, I will answer.", "If she calls, I answer will.", "I'll answer if she calls."]
     spravna: 2
-    vysvetlenie: "The result can come first. Then we don't need a comma."
+    vysvetlenie: "Výsledok môže byť aj na začiatku – potom čiarku nepíšeme."
   - otazka: "If you don't hurry, you ___ the bus."
     moznosti: ["won't catch", "don't catch", "not catch"]
     spravna: 0
-    vysvetlenie: "The negative of will is won't."
+    vysvetlenie: "Zápor od will je won't (will not)."
   - otazka: "I'll text you as soon as I ___ home."
     moznosti: ["will get", "get", "got"]
     spravna: 1
-    vysvetlenie: "After when and as soon as we also use the present simple."
+    vysvetlenie: "Aj po when a as soon as je prítomný čas, nie will."
 ---
 
-## The rule
+## Pravidlo
 
-We use the first conditional for things that **can really happen** in the future. One thing depends on another.
+Prvú podmienkovú vetu (first conditional) používame na veci, ktoré sa v budúcnosti **naozaj môžu stať**. Jedna vec závisí od druhej.
 
 <div class="vzorec">
 <span class="vzorec__cast vzorec__cast--if"><b>If</b> + present simple</span>
 <span class="vzorec__ciarka">,</span>
-<span class="vzorec__cast vzorec__cast--will"><b>will / won't</b> + verb</span>
+<span class="vzorec__cast vzorec__cast--will"><b>will / won't</b> + sloveso</span>
 </div>
 
-- *If it **rains**, we **'ll stay** at home.*
-- *If you **don't eat** breakfast, you **'ll be** hungry.*
-- *If Mia **misses** the bus, she **won't get** to school on time.*
+Časť s **if** je podmienka (v prítomnom čase), druhá časť je výsledok (s **will**).
 
-## Two orders
+- *If it **rains**, we **'ll stay** at home.* – Ak bude pršať, zostaneme doma.
+- *If you **don't eat** breakfast, you **'ll be** hungry.* – Ak nebudeš raňajkovať, budeš hladný.
+- *If Mia **misses** the bus, she **won't get** to school on time.* – Ak Mia zmešká autobus, nepríde do školy načas.
 
-The *if* part can come first or second. When it comes first, write a **comma**.
+## Dve poradia
+
+Časť s *if* môže byť na začiatku aj na konci vety. Keď je na začiatku, píšeme **čiarku**.
 
 - *If I **finish** my homework, I **'ll play** football.*
-- *I **'ll play** football if I **finish** my homework.* (no comma)
+- *I **'ll play** football if I **finish** my homework.* (bez čiarky)
 
-## Questions
+## Otázky
 
 *What **will** you **do** if it **snows**?* – *I'**ll build** a snowman!*
 
-## Watch out
+## Pozor na to
 
-- **Never use *will* after *if*.** The *if* part is always in the present.
-- The same is true after **when**, **as soon as**, **before** and **after**: *I'll call you **when** I **arrive**.*
+- **Za *if* nikdy nedávaj *will*.** Hoci po slovensky povieme „ak *bude* pršať“, v angličtine je časť s *if* v prítomnom čase: *If it rains…*
+- To isté platí aj po **when, as soon as, before, after**: *I'll call you **when** I **arrive**.*
 
-## Common mistakes
+## Časté chyby
 
 <table class="chyby">
-<thead><tr><th scope="col">✗ Wrong</th><th scope="col">✓ Right</th></tr></thead>
+<thead><tr><th scope="col">✗ Nesprávne</th><th scope="col">✓ Správne</th></tr></thead>
 <tbody>
 <tr><td>If it <s>will be</s> cold, I'll wear a hat.</td><td>If it <b>is</b> cold, I'll wear a hat.</td></tr>
 <tr><td>If you ask him, he <s>helps</s> you.</td><td>If you ask him, he <b>will help</b> you.</td></tr>

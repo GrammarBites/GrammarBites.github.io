@@ -40,6 +40,6 @@ test:                                  # 3–5 otázok; spravna = poradie správ
 koncept: true                          # kým je true, lekcia sa na webe nezobrazí – na zverejnenie zmaž
 ---
 
-## The rule
+## Pravidlo
 
-Výklad po anglicky (Markdown). Nadpisy ## The rule, ## Examples, ## Watch out, ## Common mistakes.
+Výklad po slovensky (Markdown), príklady po anglicky. Nadpisy: ## Pravidlo, ## Oznamovacia veta, ## Pozor na to, ## Časté chyby.

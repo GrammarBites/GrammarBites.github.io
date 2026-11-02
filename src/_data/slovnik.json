@@ -1,28 +1,174 @@
 {
   "_info": "Skupiny rovnocenných výrazov pre vyhľadávanie (SK ↔ EN). Ak hľadaný text obsahuje ktorýkoľvek výraz zo skupiny, hľadá sa aj podľa ostatných.",
   "skupiny": [
-    ["present simple", "prítomný jednoduchý čas", "prítomný čas jednoduchý", "jednoduchý prítomný čas"],
-    ["present continuous", "prítomný priebehový čas", "priebehový prítomný čas"],
-    ["prítomné časy", "prítomný čas", "present tenses", "present tense"],
-    ["past simple", "minulý jednoduchý čas", "jednoduchý minulý čas", "minulý čas", "past tense"],
-    ["past continuous", "minulý priebehový čas", "priebehový minulý čas"],
-    ["present perfect", "predprítomný čas", "predprítomný"],
-    ["future", "budúci čas", "budúcnosť", "will", "going to"],
-    ["first conditional", "prvý kondicionál", "prvá podmienková veta", "podmienka typu 1", "reálna podmienka"],
-    ["second conditional", "druhý kondicionál", "druhá podmienková veta", "podmienka typu 2", "nereálna podmienka"],
-    ["conditionals", "conditional", "podmienkové vety", "podmienková veta", "kondicionál", "kondicionály"],
-    ["adverbs of frequency", "frekvenčné príslovky", "príslovky frekvencie", "príslovky častosti", "ako často", "how often"],
-    ["adverbs", "príslovky", "príslovka", "adverb"],
-    ["passive voice", "passive", "trpný rod", "trpné", "pasív"],
-    ["modal verbs", "modálne slovesá", "modálne sloveso", "must", "should", "have to", "can", "might"],
-    ["comparative", "superlative", "stupňovanie", "stupňovanie prídavných mien", "porovnávanie"],
-    ["countable", "uncountable", "počítateľné", "nepočítateľné", "some", "any", "much", "many"],
-    ["articles", "členy", "člen", "a an the"],
-    ["questions", "otázky", "otázka", "question tags", "pomocné otázky", "wh- questions"],
-    ["relative clauses", "relative pronouns", "vzťažné vety", "vzťažné zámená", "who which that"],
-    ["pronouns", "zámená", "reflexive pronouns", "zvratné zámená"],
-    ["gerunds", "gerundium", "-ing", "infinitive", "neurčitok", "infinitív"],
-    ["used to", "zvyk v minulosti"],
-    ["phrasal verbs", "frázové slovesá"]
+    [
+      "present simple",
+      "prítomný jednoduchý čas",
+      "prítomný čas jednoduchý",
+      "jednoduchý prítomný čas"
+    ],
+    [
+      "present continuous",
+      "prítomný priebehový čas",
+      "priebehový prítomný čas"
+    ],
+    [
+      "prítomné časy",
+      "prítomný čas",
+      "present tenses",
+      "present tense"
+    ],
+    [
+      "past simple",
+      "minulý jednoduchý čas",
+      "jednoduchý minulý čas",
+      "minulý čas",
+      "past tense"
+    ],
+    [
+      "past continuous",
+      "minulý priebehový čas",
+      "priebehový minulý čas"
+    ],
+    [
+      "present perfect",
+      "predprítomný čas",
+      "predprítomný"
+    ],
+    [
+      "future",
+      "budúci čas",
+      "budúcnosť",
+      "will",
+      "going to"
+    ],
+    [
+      "first conditional",
+      "prvý kondicionál",
+      "prvá podmienková veta",
+      "podmienka typu 1",
+      "reálna podmienka"
+    ],
+    [
+      "second conditional",
+      "druhý kondicionál",
+      "druhá podmienková veta",
+      "podmienka typu 2",
+      "nereálna podmienka"
+    ],
+    [
+      "conditionals",
+      "conditional",
+      "podmienkové vety",
+      "podmienková veta",
+      "kondicionál",
+      "kondicionály"
+    ],
+    [
+      "adverbs of frequency",
+      "frekvenčné príslovky",
+      "príslovky frekvencie",
+      "príslovky častosti",
+      "ako často",
+      "how often"
+    ],
+    [
+      "adverbs",
+      "príslovky",
+      "príslovka",
+      "adverb"
+    ],
+    [
+      "passive voice",
+      "passive",
+      "trpný rod",
+      "trpné",
+      "pasív"
+    ],
+    [
+      "modal verbs",
+      "modálne slovesá",
+      "modálne sloveso",
+      "must",
+      "should",
+      "have to",
+      "can",
+      "might"
+    ],
+    [
+      "comparative",
+      "superlative",
+      "stupňovanie",
+      "stupňovanie prídavných mien",
+      "porovnávanie"
+    ],
+    [
+      "countable",
+      "uncountable",
+      "počítateľné",
+      "nepočítateľné",
+      "some",
+      "any",
+      "much",
+      "many"
+    ],
+    [
+      "articles",
+      "členy",
+      "člen",
+      "a an the"
+    ],
+    [
+      "questions",
+      "otázky",
+      "otázka",
+      "question tags",
+      "pomocné otázky",
+      "wh- questions"
+    ],
+    [
+      "relative clauses",
+      "relative pronouns",
+      "vzťažné vety",
+      "vzťažné zámená",
+      "who which that"
+    ],
+    [
+      "pronouns",
+      "zámená",
+      "reflexive pronouns",
+      "zvratné zámená"
+    ],
+    [
+      "gerunds",
+      "gerundium",
+      "-ing",
+      "infinitive",
+      "neurčitok",
+      "infinitív"
+    ],
+    [
+      "used to",
+      "zvyk v minulosti"
+    ],
+    [
+      "phrasal verbs",
+      "frázové slovesá"
+    ],
+    [
+      "dates",
+      "dátumy",
+      "dátum",
+      "date",
+      "years",
+      "roky",
+      "rok",
+      "radové číslovky",
+      "ordinal numbers",
+      "months",
+      "mesiace",
+      "birthday",
+      "narodeniny"
+    ]
   ]
 }

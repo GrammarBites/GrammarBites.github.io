@@ -85,7 +85,7 @@ Väčšina názvov miest je **bez the**: mestá, krajiny, ulice, parky, námesti
 
 - **Pomôcka s „of“:** keď je v názve *of*, takmer vždy patrí pred neho *the*. Porovnaj: *Tower Bridge* (bez the) × ***the** Tower **of** London*.
 - **Mestá a krajiny sú bez the:** *I live in Martin.* Nie ~~the Martin~~.
-- Pravidlá pre *a / an* a pre *the* pri bežných podstatných menách sú na strane 47.
+- Kedy použiť *a / an* a kedy *the* pri bežných podstatných menách, nájdeš v lekcii [A / an or the?](/lekcie/a-an-the/).
 
 ## Časté chyby
 

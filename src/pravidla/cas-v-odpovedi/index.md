@@ -2,6 +2,7 @@
 cislo: 6
 title: Aký čas je v otázke, taký bude aj v odpovedi!
 popis: Vo väčšine prípadov zachovávame čas použitý v otázke aj v odpovedi.
+priklad: "What did you do? – I played football."
 lekcie: [past-simple, present-simple-otazky, present-continuous-otazky, talking-about-the-future, present-simple-vs-continuous]
 ---
 

@@ -2,6 +2,7 @@
 cislo: 7
 title: Jeden zápor stačí!
 popis: V angličtine používame vo vete len jeden zápor.
+priklad: "I don't know anything. (nie: I don't know nothing.)"
 lekcie: [somebody-anybody, must]
 ---
 

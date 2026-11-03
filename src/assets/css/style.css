@@ -483,6 +483,13 @@ select, input, textarea { font: inherit; color: var(--ink); }
 .pravidla-zoznam__text strong { font-family: var(--hand); font-size: 1.75rem; line-height: 1.1; }
 .pravidla-zoznam__text span { color: var(--ink-2); font-size: .98rem; }
 .pravidla-zoznam__sipka { color: var(--terra); }
+.pravidla-zoznam__priklad, .pravidlo-hlava__priklad { font-style: normal; font-family: var(--hand); font-size: 1.45rem; font-weight: 700; color: var(--blue); line-height: 1.15; }
+.pravidlo-hlava__priklad { font-size: 1.7rem; margin-top: 4px; }
+@media (max-width: 560px) {
+  .pravidla-zoznam__odkaz { grid-template-columns: auto minmax(0, 1fr); gap: 12px; padding: 12px; align-items: start; }
+  .pravidla-zoznam__sipka { display: none; }
+  .pravidla-zoznam__cislo { width: 44px; height: 44px; font-size: 1.6rem; }
+}
 .pravidla-stiahni { font-size: .95rem; color: var(--ink-2); }
 
 .pravidlo-hlava { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 18px; align-items: start; }

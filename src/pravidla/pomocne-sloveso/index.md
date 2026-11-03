@@ -2,6 +2,7 @@
 cislo: 4
 title: Otázka aj zápor potrebujú pomocné sloveso!
 popis: Pomocné alebo modálne sloveso nám pomáha vytvoriť otázku aj zápor. V otázke ide pred podmet, v zápore k nemu pridáme not.
+priklad: "Do you like it? – I don't like it."
 lekcie: [present-simple-otazky, present-continuous-otazky, past-simple, past-simple-be, must]
 ---
 

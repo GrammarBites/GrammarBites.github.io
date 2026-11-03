@@ -2,6 +2,7 @@
 cislo: 2
 title: Na poradí slov záleží!
 popis: V angličtine je poradie slov vo vete pomerne pevne dané a môže ovplyvniť jej význam.
+priklad: "The dog bit the man. × The man bit the dog."
 lekcie: [adverbs-of-frequency, object-pronouns, present-simple-otazky, prepositions-of-time]
 ---
 

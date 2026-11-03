@@ -2,6 +2,7 @@
 cislo: 8
 title: Pred podstatným menom niečo stojí!
 popis: Pred počítateľným podstatným menom v jednotnom čísle musí stáť a / an, the alebo slovo ako my, this, his.
+priklad: "I've got a dog. · She's a teacher."
 lekcie: [a-an, a-an-the, the-definite-article]
 ---
 

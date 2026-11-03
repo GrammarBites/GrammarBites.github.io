@@ -16,6 +16,7 @@ skripty: ["lekcia.js"]
     <p class="nadnadpis">Zlaté pravidlo č. {{ cislo }}</p>
     <h1 class="pravidlo-hlava__nadpis">{{ title }}</h1>
     <p class="pravidlo-hlava__popis">{{ popis }}</p>
+    {% if priklad %}<p class="pravidlo-hlava__priklad" lang="en">{{ priklad }}</p>{% endif %}
   </div>
 </header>
 

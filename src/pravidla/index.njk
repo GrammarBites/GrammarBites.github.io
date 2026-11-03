@@ -22,6 +22,7 @@ permalink: /pravidla/
       <span class="pravidla-zoznam__text">
         <strong>{{ p.data.title }}</strong>
         <span>{{ p.data.popis }}</span>
+        {% if p.data.priklad %}<em class="pravidla-zoznam__priklad" lang="en">{{ p.data.priklad }}</em>{% endif %}
       </span>
       <svg class="pravidla-zoznam__sipka" width="22" height="22" aria-hidden="true"><use href="#sipka"/></svg>
     </a>

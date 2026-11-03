@@ -2,6 +2,7 @@
 cislo: 5
 title: Čím sa pýtam, tým odpovedám!
 popis: Ak otázka obsahuje pomocné alebo modálne sloveso, použijeme ho aj v krátkej odpovedi.
+priklad: "Can you swim? – Yes, I can."
 lekcie: [present-simple-otazky, present-continuous-otazky, past-simple, past-simple-be, must]
 ---
 

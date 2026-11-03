@@ -4,6 +4,10 @@ title: I, dni, mesiace a jazyky píšeme veľkým písmenom!
 popis: Zámeno I, dni v týždni, mesiace, jazyky a národnosti píšeme v angličtine vždy s veľkým začiatočným písmenom.
 priklad: "I · Monday · July · English · Slovak"
 lekcie: [dates-and-years, prepositions-of-time]
+video: video.mp4
+poster: poster.jpg
+infografika: infografika.jpg
+infografikaPdf: infografika.pdf
 ---
 
 V slovenčine píšeme *pondelok, júl, angličtina, slovenský* malým písmenom. V angličtine je to naopak.

@@ -4,6 +4,10 @@ title: Jeden zápor stačí!
 popis: V angličtine používame vo vete len jeden zápor.
 priklad: "I don't know anything. (nie: I don't know nothing.)"
 lekcie: [somebody-anybody, must]
+video: video.mp4
+poster: poster.jpg
+infografika: infografika.jpg
+infografikaPdf: infografika.pdf
 ---
 
 V slovenčine môžu byť vo vete aj tri zápory: *Nikto nikdy nič nepovedal.* V angličtine stačí **jeden**.

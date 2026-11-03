@@ -8,7 +8,7 @@ strana: 61
 ucebnice:
   - { id: project-2, unit: "5" }
 temy: [ostatne]
-klucoveSlova: [superlative, superlatives, tretí stupeň, najvyšší stupeň, comparative, druhý stupeň, stupňovanie, prídavné mená, the est, the most, the best, the worst, naj, 5C]
+klucoveSlova: [irregular, nepravidelné, worst, furthest, least, less, superlative, superlatives, tretí stupeň, najvyšší stupeň, comparative, druhý stupeň, stupňovanie, prídavné mená, the est, the most, the best, the worst, naj, 5C]
 video: video.mp4
 poster: poster.jpg
 infografika: infografika.jpg
@@ -35,6 +35,10 @@ test:
     moznosti: ["goodest", "better", "best"]
     spravna: 2
     vysvetlenie: "Good je nepravidelné: good – better – the best."
+  - otazka: "That was the ___ film I have ever seen. It was terrible!"
+    moznosti: ["baddest", "worse", "worst"]
+    spravna: 2
+    vysvetlenie: "Bad je nepravidelné: bad – worse – the worst."
   - otazka: "Which is correct?"
     moznosti: ["He's the funniest in the family.", "He's funniest in the family.", "He's the most funniest in the family."]
     spravna: 0
@@ -54,12 +58,31 @@ Pri porovnávaní dvoch vecí používame [druhý stupeň](/lekcie/comparative-a
 <tr><td>thin</td><td>thi<b>nner</b></td><td><b>the</b> thi<b>nnest</b></td></tr>
 <tr><td>happy</td><td>happ<b>ier</b></td><td><b>the</b> happ<b>iest</b></td></tr>
 <tr><td>famous</td><td><b>more</b> famous</td><td><b>the most</b> famous</td></tr>
-<tr><td>good</td><td><b>better</b></td><td><b>the best</b></td></tr>
-<tr><td>bad</td><td><b>worse</b></td><td><b>the worst</b></td></tr>
 </tbody>
 </table>
 
 Pravidlá pravopisu sú rovnaké ako pri druhom stupni: kde je *-er*, tam je *-est*; kde je *more*, tam je *the most*.
+
+## Nepravidelné
+
+Tieto tvary nemajú pravidlo, treba sa ich naučiť naspamäť:
+
+<table class="chyby tvary">
+<thead><tr><th scope="col">prídavné meno</th><th scope="col">druhý stupeň</th><th scope="col">tretí stupeň</th><th scope="col">po slovensky</th></tr></thead>
+<tbody>
+<tr><td>good</td><td><b>better</b></td><td><b>the best</b></td><td>dobrý – lepší – najlepší</td></tr>
+<tr><td>bad</td><td><b>worse</b></td><td><b>the worst</b></td><td>zlý – horší – najhorší</td></tr>
+<tr><td>far</td><td><b>further</b></td><td><b>the furthest</b></td><td>ďaleko – ďalej – najďalej</td></tr>
+<tr><td>many / much</td><td><b>more</b></td><td><b>the most</b></td><td>veľa – viac – najviac</td></tr>
+<tr><td>little</td><td><b>less</b></td><td><b>the least</b></td><td>málo – menej – najmenej</td></tr>
+</tbody>
+</table>
+
+- *This is **the best** pizza in town.* – Toto je najlepšia pizza v meste.
+- *It was **the worst** day of my life.* – Bol to najhorší deň môjho života.
+- *Who has got **the most** money?* – Kto má najviac peňazí?
+
+Namiesto *further / the furthest* sa niekedy používa aj *farther / the farthest*.
 
 ## Vo vete
 

@@ -4,6 +4,10 @@ title: Prídavné meno stojí pred podstatným menom a nemení sa!
 popis: Prídavné meno dávame pred podstatné meno a v množnom čísle ani pri inej osobe sa jeho tvar nemení.
 priklad: "a big house – two big houses"
 lekcie: [a-an]
+video: video.mp4
+poster: poster.jpg
+infografika: infografika.jpg
+infografikaPdf: infografika.pdf
 ---
 
 V slovenčine prídavné meno mení koncovky: *veľký dom, veľké domy, veľkej mačke*. V angličtine **ostáva stále rovnaké**.

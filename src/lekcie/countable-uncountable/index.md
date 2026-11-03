@@ -1,14 +1,14 @@
 ---
 title: How much? How many?
-nazovSk: Počítateľné a nepočítateľné podstatné mená, much / many
-popis: "apples × cheese: čo sa dá spočítať a čo nie. Kedy many a kedy much, ako sa opýtať How many? / How much? a čo je a loaf of bread."
+nazovSk: Počítateľné a nepočítateľné podstatné mená, much / many, a few / a little
+popis: "apples × cheese: čo sa dá spočítať a čo nie. Kedy many a much, a few a a little, ako sa opýtať How many? / How much? a čo je a loaf of bread."
 date: 2026-11-03T21:15:00
 rocniky: [5, 6]
 strana: 45
 ucebnice:
   - { id: project-2, unit: "4" }
 temy: [ostatne, otazky]
-klucoveSlova: [countable, uncountable, počítateľné, nepočítateľné, much, many, how much, how many, a lot of, koľko, veľa, food, jedlo, a loaf of, a carton of, a packet of, a bottle of, a tin of, 4A, 4C]
+klucoveSlova: [a few, a little, trochu, pár, countable, uncountable, počítateľné, nepočítateľné, much, many, how much, how many, a lot of, koľko, veľa, food, jedlo, a loaf of, a carton of, a packet of, a bottle of, a tin of, 4A, 4C]
 video: video.mp4
 poster: poster.jpg
 infografika: infografika.jpg
@@ -35,6 +35,10 @@ test:
     moznosti: ["I'd like a bread.", "I'd like a loaf of bread.", "I'd like two breads."]
     spravna: 1
     vysvetlenie: "Bread je nepočítateľné. Spočítame ho cez a loaf of: a loaf of bread, two loaves of bread."
+  - otazka: "Can I have ___ milk in my tea, please?"
+    moznosti: ["a few", "a little", "many"]
+    spravna: 1
+    vysvetlenie: "Milk je nepočítateľné → a little (trochu)."
   - otazka: "I eat ___ fruit."
     moznosti: ["a lot of", "many", "a"]
     spravna: 0
@@ -57,13 +61,15 @@ Niektoré veci vieme spočítať po kusoch (*one apple, two apples*), iné nie (
 
 Viac o tom, kedy dať *a / an*, nájdeš v lekcii [A or an?](/lekcie/a-an/).
 
-## Many alebo much?
+## Veľa alebo málo? Many, much, a few, a little
 
 <table class="chyby tvary">
 <tbody>
 <tr><td><b>many</b> + počítateľné</td><td>We haven't got <b>many</b> apples. – Nemáme veľa jabĺk.</td></tr>
 <tr><td><b>much</b> + nepočítateľné</td><td>There isn't <b>much</b> milk. – Nie je tu veľa mlieka.</td></tr>
 <tr><td><b>a lot of</b> + oboje</td><td>I eat <b>a lot of</b> fruit. – Jem veľa ovocia.</td></tr>
+<tr><td><b>a few</b> + počítateľné</td><td>I have <b>a few</b> apples. – Mám pár jabĺk.</td></tr>
+<tr><td><b>a little</b> + nepočítateľné</td><td>I have <b>a little</b> cheese. – Mám trochu syra.</td></tr>
 </tbody>
 </table>
 
@@ -105,6 +111,7 @@ Množné číslo dostane obal, nie jedlo: *two bottle**s** of water, three loa**
 <tbody>
 <tr><td>How <s>much</s> apples?</td><td>How <b>many</b> apples?</td></tr>
 <tr><td>How <s>many</s> water?</td><td>How <b>much</b> water?</td></tr>
+<tr><td>I have <s>a little</s> friends.</td><td>I have <b>a few</b> friends.</td></tr>
 <tr><td>I'd like <s>a bread</s>.</td><td>I'd like <b>a loaf of bread</b>.</td></tr>
 <tr><td>two <s>milks</s></td><td>two <b>cartons of milk</b></td></tr>
 <tr><td>a bottle <s>water</s></td><td>a bottle <b>of</b> water</td></tr>

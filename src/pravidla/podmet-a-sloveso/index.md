@@ -3,6 +3,10 @@ cislo: 1
 title: Veta potrebuje podmet a sloveso!
 popis: Väčšina anglických viet obsahuje informáciu o tom, kto alebo čo niečo robí, a sloveso, ktoré vyjadruje dej alebo stav.
 lekcie: [present-simple, past-simple-be, present-continuous, object-pronouns]
+video: video.mp4
+poster: poster.jpg
+infografika: infografika.jpg
+infografikaPdf: infografika.pdf
 ---
 
 V slovenčine podmet často vynecháme, lebo ho prezradí koncovka slovesa: *Hrám futbal.* V angličtine sloveso osobu neprezradí, preto **podmet musí byť vo vete vždy**.

@@ -4,6 +4,10 @@ title: Čas nesie sloveso alebo pomocné sloveso!
 popis: Čas vyjadrujeme zmenou slovesného tvaru, pomocným slovesom alebo ich kombináciou.
 priklad: "I play → I played · I'm playing · I've played"
 lekcie: [present-simple, present-continuous, past-simple-regular, past-simple, present-perfect, talking-about-the-future]
+video: video.mp4
+poster: poster.jpg
+infografika: infografika.jpg
+infografikaPdf: infografika.pdf
 ---
 
 Či ide o prítomnosť, minulosť alebo budúcnosť, prezradí **sloveso**. Niekedy sa zmení samo, niekedy mu pomôže pomocné sloveso, niekedy oboje.

@@ -83,12 +83,21 @@ Po slovese *be* (*am, is, are*) je **prídavné meno**: *The room is **quiet**.*
 
 Pozor: *hardly* znamená „sotva, takmer vôbec“ – nie „tvrdo“.
 
-## Kam ju dáme?
+## Kam ich dáme?
 
-Príslovka ide **za sloveso**, a ak má sloveso predmet, tak **za predmet**:
+<div class="pravidla">
+<div class="pravidlo"><p class="pravidlo__nazov">prídavné meno (aký?)</p>
+<p><b>pred podstatné meno:</b> a <mark>quiet</mark> room<br><b>za sloveso be:</b> The room is <mark>quiet</mark>.</p></div>
+<div class="pravidlo"><p class="pravidlo__nazov">príslovka (ako?)</p>
+<p><b>za sloveso:</b> She speaks <mark>quietly</mark>.<br><b>za predmet:</b> She speaks English <mark>well</mark>.</p></div>
+</div>
 
+- *It's a **quiet** room.* – Je to tichá izba.
+- *The room is **quiet**.* – Izba je tichá.
 - *She sings **beautifully**.* – Spieva krásne.
 - *She speaks English **well**.* – Hovorí dobre po anglicky. (nie ~~speaks well English~~)
+
+Viac o tom, že prídavné meno stojí pred podstatným menom a nemení sa, nájdeš v [Zlatom pravidle č. 9](/pravidla/pridavne-meno/).
 
 Príslovky, ktoré hovoria *ako často* (*always, usually…*), majú iné miesto – pozri [Adverbs of frequency](/lekcie/adverbs-of-frequency/).
 

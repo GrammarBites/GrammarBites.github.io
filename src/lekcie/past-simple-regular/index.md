@@ -35,7 +35,7 @@ test:
     moznosti: ["plaied", "played", "playd"]
     spravna: 1
     vysvetlenie: "Pred y je samohláska (a), preto len + ed: played."
-  - otazka: "Vo ktorom slove vyslovíme -ed ako [id] (slabika navyše)?"
+  - otazka: "Which word ends with the sound [id]?"
     moznosti: ["walked", "played", "wanted"]
     spravna: 2
     vysvetlenie: "Po t a d vyslovujeme [id]: want-id. Walked = [t], played = [d]."

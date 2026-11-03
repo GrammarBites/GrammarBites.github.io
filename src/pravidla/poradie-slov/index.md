@@ -4,6 +4,10 @@ title: Na poradí slov záleží!
 popis: V angličtine je poradie slov vo vete pomerne pevne dané a môže ovplyvniť jej význam.
 priklad: "The dog bit the man. × The man bit the dog."
 lekcie: [adverbs-of-frequency, object-pronouns, present-simple-otazky, prepositions-of-time]
+video: video.mp4
+poster: poster.jpg
+infografika: infografika.jpg
+infografikaPdf: infografika.pdf
 ---
 
 V slovenčine môžeme slová vo vete prehadzovať, lebo význam drží pád: *Pes pohrýzol muža.* = *Muža pohrýzol pes.* V angličtine pády nemáme, a preto **o význame rozhoduje poradie**.

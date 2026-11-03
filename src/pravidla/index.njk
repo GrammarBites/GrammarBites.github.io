@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+title: Zlaté pravidlá
+popis: "Small rules. Big English. 10 pravidiel anglickej gramatiky do vrecka – platia v každej lekcii."
+bodyClass: stranka-pravidla
+permalink: /pravidla/
+---
+<nav class="omrvinky" aria-label="Kde sa nachádzaš"><a href="/">Domov</a> <span aria-hidden="true">/</span> <span aria-current="page">Zlaté pravidlá</span></nav>
+
+<header class="pravidla-hlava">
+  <p class="nadnadpis">Zlaté pravidlá</p>
+  <h1 class="pravidla-hlava__nadpis">Small rules. <span>Big English.</span></h1>
+  <p class="pravidla-hlava__podnadpis">10 pravidiel do vrecka – platia v každej lekcii.</p>
+  <img class="pravidla-hlava__koza" src="/assets/img/postavy/koza-oslavuje.png" alt="" width="130" height="150">
+</header>
+
+<ol class="pravidla-zoznam">
+  {% for p in collections.pravidla %}
+  <li>
+    <a class="pravidla-zoznam__odkaz" href="{{ p.url }}">
+      <span class="pravidla-zoznam__cislo" aria-hidden="true">{{ p.data.cislo }}</span>
+      <span class="pravidla-zoznam__text">
+        <strong>{{ p.data.title }}</strong>
+        <span>{{ p.data.popis }}</span>
+      </span>
+      <svg class="pravidla-zoznam__sipka" width="22" height="22" aria-hidden="true"><use href="#sipka"/></svg>
+    </a>
+  </li>
+  {% endfor %}
+</ol>
+
+<p class="pravidla-stiahni">
+  <a href="/pravidla/zlate-pravidla.pdf" download>Stiahnuť všetkých 10 pravidiel ako infografiku (PDF)</a>
+  · <a href="/pravidla/zlate-pravidla.jpg" download>obrázok</a>
+</p>

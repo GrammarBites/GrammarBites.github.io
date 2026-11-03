@@ -42,6 +42,7 @@
     <ul>
       {% set sekcia = page.url | bezLomky %}
       <li><a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Domov</a></li>
+      <li><a class="menu__zlate" href="/pravidla/" {% if sekcia.startsWith("pravidla") %}aria-current="page"{% endif %}><svg width="16" height="16" aria-hidden="true"><use href="#hviezda"/></svg> Zlaté pravidlá</a></li>
       <li><a href="/rocniky/" {% if sekcia.startsWith("rocniky") %}aria-current="page"{% endif %}>Podľa ročníka</a></li>
       <li><a href="/ucebnice/" {% if sekcia.startsWith("ucebnice") %}aria-current="page"{% endif %}>Podľa učebnice</a></li>
       <li><a href="/temy/" {% if sekcia.startsWith("temy") %}aria-current="page"{% endif %}>Gramatické témy</a></li>

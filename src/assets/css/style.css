@@ -449,7 +449,57 @@ select, input, textarea { font: inherit; color: var(--ink); }
   .chyby { font-size: .9rem; }
   .sekcia__nadpis { font-size: 2rem; }
 }
+
+/* ---------- Zlaté pravidlá ---------- */
+.menu a.menu__zlate {
+  display: inline-flex; align-items: center; gap: 6px; color: var(--ink);
+  background: var(--yellow); border: 2px solid var(--ink); box-shadow: 2px 2px 0 var(--ink); padding: 4px 12px;
+}
+.menu a.menu__zlate svg { color: var(--paper-hi); flex: none; }
+.menu a.menu__zlate:hover { background: #f5c552; color: var(--ink); }
+.menu a.menu__zlate[aria-current="page"] { background-color: var(--yellow); background-position: center bottom 1px; }
+
+.pravidla-hlava { position: relative; display: grid; gap: 6px; padding: 24px 22px; padding-right: 150px; background: var(--yellow-wash); border: 2px solid var(--ink); border-radius: var(--wobbly-2); box-shadow: 4px 4px 0 var(--ink); }
+.pravidla-hlava__nadpis { font-family: var(--hand); font-size: clamp(2.6rem, 7vw, 4.2rem); font-weight: 700; line-height: 1; text-wrap: balance; }
+.pravidla-hlava__nadpis span { color: var(--terra); }
+.pravidla-hlava__podnadpis { font-size: 1.15rem; font-weight: 600; color: var(--ink-2); }
+.pravidla-hlava__koza { position: absolute; right: 14px; bottom: 6px; width: 120px; height: auto; }
+@media (max-width: 560px) { .pravidla-hlava { padding-right: 22px; padding-bottom: 110px; } .pravidla-hlava__koza { width: 90px; } }
+
+.pravidla-zoznam { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.pravidla-zoznam__odkaz {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 16px;
+  padding: 14px 16px; text-decoration: none; color: var(--ink); background: var(--paper-hi);
+  border: 2px solid var(--ink); border-radius: var(--wobbly); box-shadow: 3px 3px 0 var(--line);
+  transition: transform .15s, box-shadow .15s;
+}
+.pravidla-zoznam__odkaz:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--ink); }
+.pravidla-zoznam__cislo, .pravidlo-hlava__cislo {
+  display: grid; place-items: center; width: 54px; height: 54px; border-radius: 50%;
+  font-family: var(--hand); font-weight: 700; font-size: 2rem; line-height: 1;
+  background: var(--yellow); border: 2px solid var(--ink); box-shadow: 2px 2px 0 var(--ink);
+}
+.pravidla-zoznam__text { display: grid; gap: 2px; min-width: 0; }
+.pravidla-zoznam__text strong { font-family: var(--hand); font-size: 1.75rem; line-height: 1.1; }
+.pravidla-zoznam__text span { color: var(--ink-2); font-size: .98rem; }
+.pravidla-zoznam__sipka { color: var(--terra); }
+.pravidla-stiahni { font-size: .95rem; color: var(--ink-2); }
+
+.pravidlo-hlava { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 18px; align-items: start; }
+.pravidlo-hlava__cislo { width: 76px; height: 76px; font-size: 2.8rem; }
+.pravidlo-hlava__nadpis { font-family: var(--hand); font-size: clamp(2.2rem, 5.5vw, 3.2rem); font-weight: 700; line-height: 1.05; text-wrap: balance; }
+.pravidlo-hlava__popis { color: var(--ink-2); font-size: 1.1rem; max-width: 65ch; }
+.pravidlo-dalej { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+
+.pravidla-banner { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; align-items: center; text-decoration: none; color: var(--ink);
+  padding: 18px 22px; background: var(--yellow-wash); border: 2px solid var(--ink); border-radius: var(--wobbly-2); box-shadow: 4px 4px 0 var(--ink); }
+.pravidla-banner:hover { background: #f8e6ad; }
+.pravidla-banner__nadpis { font-family: var(--hand); font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 700; line-height: 1.05; }
+.pravidla-banner__nadpis span { color: var(--terra); }
+.pravidla-banner__text { color: var(--ink-2); }
+.pravidla-banner img { width: 90px; height: auto; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; scroll-behavior: auto !important; }
-  .rozcestnik__dlazdica:hover, .kniha:hover, .tlacidlo:hover { transform: none; }
+  .rozcestnik__dlazdica:hover, .kniha:hover, .tlacidlo:hover, .pravidla-zoznam__odkaz:hover { transform: none; }
 }

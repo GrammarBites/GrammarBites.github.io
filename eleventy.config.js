@@ -10,6 +10,7 @@ const PREVIEW = process.env.PREVIEW === "1";
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy("src/lekcie/**/*.{mp4,webm,png,jpg,jpeg,webp,pdf}");
+  eleventyConfig.addPassthroughCopy("src/pravidla/**/*.{mp4,webm,png,jpg,jpeg,webp,pdf}");
   eleventyConfig.addPassthroughCopy({ "src/favicon.svg": "favicon.svg" });
   eleventyConfig.addPassthroughCopy({ "src/.nojekyll": ".nojekyll" });
 
@@ -21,6 +22,9 @@ export default function (eleventyConfig) {
       .sort((a, b) => b.date - a.date)
   );
 
+  eleventyConfig.addCollection("pravidla", (api) =>
+    api.getFilteredByGlob("src/pravidla/*/index.md").sort((a, b) => a.data.cislo - b.data.cislo)
+  );
   eleventyConfig.addCollection("temySObsahom", (api) => {
     const lekcie = api.getFilteredByGlob("src/lekcie/*/index.md").filter((l) => !l.data.koncept);
     return temy.filter((t) => lekcie.some((l) => (l.data.temy || []).includes(t.id)));

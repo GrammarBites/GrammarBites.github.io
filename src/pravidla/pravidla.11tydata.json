@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/pravidlo.njk",
+  "permalink": "/pravidla/{{ page.fileSlug }}/"
+}

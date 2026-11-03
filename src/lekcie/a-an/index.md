@@ -3,10 +3,11 @@ title: A or an?
 nazovSk: Neurčitý člen a / an
 popis: "a banana, an apple, a university, an hour. Kedy dať a / an, kedy nie (bananas, cheese) a prečo povieme I'm a teacher."
 date: 2026-11-03T17:15:00
-rocniky: [5, 6]
+rocniky: [4, 5, 6, 7, 8, 9]
 strana: 45
 ucebnice:
   - { id: project-2, unit: "4" }
+  - { id: vlastne }
 temy: [ostatne]
 klucoveSlova: [a, an, člen, neurčitý člen, indefinite article, articles, countable, uncountable, počítateľné, nepočítateľné, podstatné mená, nouns, food, jedlo, povolanie, jobs, 4A]
 video: video.mp4

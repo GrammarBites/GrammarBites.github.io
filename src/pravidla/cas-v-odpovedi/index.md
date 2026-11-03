@@ -4,6 +4,10 @@ title: Aký čas je v otázke, taký bude aj v odpovedi!
 popis: Vo väčšine prípadov zachovávame čas použitý v otázke aj v odpovedi.
 priklad: "What did you do? – I played football."
 lekcie: [past-simple, present-simple-otazky, present-continuous-otazky, talking-about-the-future, present-simple-vs-continuous]
+video: video.mp4
+poster: poster.jpg
+infografika: infografika.jpg
+infografikaPdf: infografika.pdf
 ---
 
 Otázka je ako nápoveda: ukáže, ktorý čas použiť. Stačí ho „preniesť“ do odpovede.
@@ -14,7 +18,7 @@ Otázka je ako nápoveda: ukáže, ktorý čas použiť. Stačí ho „preniesť
 <tr><td>What <b>did</b> you <b>do</b> yesterday?</td><td>I <b>played</b> football.</td><td>past simple</td></tr>
 <tr><td>What <b>do</b> you usually <b>do</b> after school?</td><td>I <b>go</b> home.</td><td>present simple</td></tr>
 <tr><td>What <b>are</b> you <b>doing</b>?</td><td>I'<b>m reading</b>.</td><td>present continuous</td></tr>
-<tr><td>What <b>are</b> you <b>going to do</b> tomorrow?</td><td>I'<b>m going to visit</b> my grandma.</td><td>going to</td></tr>
+<tr><td>What <b>are</b> you <b>going to do</b> tomorrow?</td><td>I'<b>m going to visit</b> my gran.</td><td>going to</td></tr>
 <tr><td><b>Have</b> you ever <b>seen</b> a whale?</td><td>No, I <b>haven't seen</b> one.</td><td>present perfect</td></tr>
 </tbody>
 </table>

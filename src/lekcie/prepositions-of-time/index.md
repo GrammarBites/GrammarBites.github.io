@@ -3,9 +3,8 @@ title: Prepositions of time
 nazovSk: Predložky času – at, on, in
 popis: "Kedy at, kedy on a kedy in? at 7 o'clock, on Monday, in July – a pasca at Christmas × on Christmas Day."
 date: 2026-11-03T12:15:00
-rocniky: [6, 7, 8, 9]
+rocniky: [8, 9]
 ucebnice:
-  - { id: project-3, unit: "3" }
   - { id: project-5, unit: "2" }
 temy: [ostatne]
 klucoveSlova: [prepositions of time, predložky času, predložky, prepositions, at, on, in, at night, at the weekend, on Monday, in the morning, in July, in summer, in 2026, Christmas, Christmas Day, Easter, kedy, čas, dni, mesiace, ročné obdobia, roky, storočie]

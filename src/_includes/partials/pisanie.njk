@@ -1,0 +1,37 @@
+{# Napíš sám – tvorba vlastných viet. V lekcii: pisanie: will (úlohy v src/_data/pisanieUlohy.json) #}
+<section class="blok blok--pisanie" aria-labelledby="h-pisanie">
+  <h2 id="h-pisanie" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Napíš sám</h2>
+  <p class="blok__uvod">Tu netreba nič dopĺňať – vety tvoríš ty. Nič sa nehodnotí: dostaneš tipy, ako vetu vylepšiť, a príklady na porovnanie. Svoje najlepšie vety si môžeš uložiť do zošita.</p>
+  <div class="trener pisanie" data-pisanie="{{ pisanie }}" data-lekcia="{{ page.fileSlug }}">
+    <div class="trener__cipy" data-cipy role="group" aria-label="Úroveň"></div>
+    <div class="trener__karta pis-karta-box" data-karta>
+      <div class="trener__hore"><span class="trener__stav" data-stav></span></div>
+      <p class="pis-zadanie" data-zadanie></p>
+      <div class="pis-skladanie" data-skladanie hidden>
+        <div class="pis-veta" data-veta aria-label="Tvoja veta"></div>
+        <div class="pis-banka" data-banka aria-label="Kartičky"></div>
+      </div>
+      <div class="pis-pole" data-pis>
+        <label for="pis-{{ pisanie }}" class="sr">Tvoja veta</label>
+        <textarea id="pis-{{ pisanie }}" class="pis-vstup" data-vstup rows="2" lang="en" placeholder="Napíš vetu po anglicky…" autocomplete="off" autocorrect="off" spellcheck="false" autocapitalize="sentences"></textarea>
+        <button type="button" class="tlacidlo tlacidlo--tiche tlacidlo--male pis-apos" data-apos title="Vloží apostrof, napr. do I'll alebo won't">Vložiť <span class="pis-apos__znak">'</span></button>
+      </div>
+      <div class="trener__tlacidla">
+        <button type="button" class="tlacidlo" data-over>Pozri tipy</button>
+        <button type="button" class="tlacidlo tlacidlo--tiche" data-vzory-tl>Ukáž príklady</button>
+        <button type="button" class="tlacidlo tlacidlo--tiche" data-uloz hidden>Uložiť do zošita</button>
+        <button type="button" class="tlacidlo tlacidlo--tiche" data-dalsia>Ďalšia úloha →</button>
+      </div>
+      <div class="pis-tipy" data-tipy role="status" aria-live="polite" hidden></div>
+      <div class="pis-vzory" data-vzory hidden></div>
+    </div>
+    <div class="pis-zosit" data-zosit hidden>
+      <p class="pis-zosit__nadpis">Môj zošit</p>
+      <ol class="pis-zosit__list" data-zosit-list></ol>
+      <button type="button" class="tlacidlo tlacidlo--tiche tlacidlo--male" data-kopiruj-zosit>Kopírovať všetky vety</button>
+      <p class="pis-pozn">Vety sú uložené len v tomto prehliadači.</p>
+    </div>
+  </div>
+  <script type="application/json" id="data-pisanie-{{ pisanie }}">{{ pisanieUlohy[pisanie] | json | safe }}</script>
+  <script src="/assets/js/pisanie.js" defer></script>
+</section>

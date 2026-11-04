@@ -12,6 +12,7 @@ video: video.mp4
 poster: poster.jpg
 infografika: infografika.jpg
 infografikaPdf: infografika.pdf
+pisanie: will
 koza: koza-zvedava
 otazkaKozy: "Will goats go to school in 2050?"
 bite:

@@ -434,6 +434,40 @@ a.stitok:hover { border-color: currentColor; }
 .rs-moznost--ok, .rs-moznost--ok:disabled { background: var(--green-wash); border-color: var(--green); color: var(--green); opacity: 1; }
 .rs-moznost--zle, .rs-moznost--zle:disabled { background: var(--terra-wash); border-color: var(--terra); color: #8f3522; opacity: 1; }
 
+/* Napíš sám */
+.pis-karta-box { gap: 12px; text-align: left; justify-items: stretch; }
+.pis-zadanie { font-size: 1.15rem; font-weight: 700; line-height: 1.5; }
+.pis-pozn { display: block; font-size: .9rem; font-weight: 600; color: var(--ink-2); margin-top: 2px; }
+.pis-typ { display: inline-block; font-size: .8rem; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; padding: 2px 10px; border-radius: 999px; vertical-align: middle; }
+.pis-typ--plus { background: var(--blue-wash); color: var(--blue); }
+.pis-typ--zapor { background: var(--terra-wash); color: #8f3522; }
+.pis-typ--otazka { background: var(--yellow-wash); color: #8a5a00; }
+.pis-kocka { display: block; font-family: var(--hand); font-size: 1.9rem; line-height: 1.2; margin-bottom: 4px; }
+.pis-pole { display: grid; gap: 8px; }
+.pis-vstup { width: 100%; font: inherit; font-size: 1.2rem; font-weight: 600; line-height: 1.4; padding: 10px 14px; border: 2px solid var(--ink); border-radius: 12px; background: var(--paper); color: var(--ink); resize: vertical; }
+.pis-vstup:focus { outline: 3px solid var(--yellow); outline-offset: 1px; }
+.pis-apos { justify-self: start; }
+.pis-apos__znak { font-size: 1.3rem; font-weight: 800; line-height: 1; padding: 0 4px; }
+.pis-skladanie { display: grid; gap: 12px; }
+.pis-veta { min-height: 60px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 10px; border: 2px dashed var(--line); border-radius: 12px; background: var(--paper); }
+.pis-prazdne { color: var(--ink-2); font-style: italic; }
+.pis-banka { display: flex; flex-wrap: wrap; gap: 8px; }
+.pis-karta { font: inherit; font-size: 1.15rem; font-weight: 700; padding: 8px 14px; border: 2px solid var(--ink); border-radius: 10px; background: var(--paper-hi); color: var(--ink); cursor: pointer; box-shadow: 2px 2px 0 var(--line); }
+.pis-karta:disabled { opacity: .25; cursor: default; box-shadow: none; }
+.pis-karta--vo-vete { background: var(--blue-wash); border-color: var(--blue); }
+.pis-tipy, .pis-vzory { padding: 10px 16px; border-radius: 12px; line-height: 1.55; }
+.pis-tipy { background: var(--yellow-wash); border: 2px solid var(--yellow); }
+.pis-tipy--ok { background: var(--green-wash); border-color: var(--green); color: var(--green); }
+.pis-tipy ul, .pis-vzory ul { margin: 6px 0; padding-left: 1.2em; }
+.pis-tipy s { color: var(--terra); }
+.pis-vzory { background: var(--blue-wash); border: 2px solid var(--blue); }
+.pis-vzory li { font-weight: 700; }
+.pis-zosit { display: grid; gap: 8px; padding: 14px 18px; background: var(--paper-hi); border: 2px dashed var(--ink-2); border-radius: 14px; }
+.pis-zosit__nadpis { font-family: var(--hand); font-size: 1.7rem; font-weight: 700; }
+.pis-zosit__list { margin: 0; padding-left: 1.4em; display: grid; gap: 4px; font-weight: 600; }
+.pis-zosit__list li span { margin-right: 8px; }
+.pis-zmaz { font: inherit; font-size: .85rem; border: 0; background: none; color: var(--ink-2); cursor: pointer; }
+
 .zdielaj { display: grid; gap: 8px; padding: 16px 20px; background: var(--blue-wash); border: 2px dashed var(--blue); border-radius: 14px; }
 .zdielaj p { font-weight: 800; }
 .zdielaj__riadok { display: flex; flex-wrap: wrap; gap: 10px; }

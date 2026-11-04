@@ -3,7 +3,7 @@ title: Present continuous – questions
 nazovSk: Prítomný priebehový čas – otázky a krátke odpovede
 popis: "Ako sa opýtať, čo sa deje práve teraz: Is he eating? – Yes, he is. What are you doing? – I'm reading."
 date: 2026-11-02T21:00:00
-rocniky: [5, 6]
+rocniky: [5]
 strana: 23                      # strana v učebnici (poradie lekcií v unite)
 ucebnice:
   - { id: project-2, unit: "2" }

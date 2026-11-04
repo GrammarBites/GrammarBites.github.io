@@ -12,7 +12,7 @@ eleventyComputed:
 <nav class="omrvinky" aria-label="Kde sa nachádzaš"><a href="/">Domov</a> <span aria-hidden="true">/</span> <a href="/rocniky/">Podľa ročníka</a> <span aria-hidden="true">/</span> <span aria-current="page">{{ r.nazov }}</span></nav>
 <header class="stranka-hlava">
   <h1 class="stranka-hlava__nadpis">{{ r.nazov }}</h1>
-  <p>Učebnice: {% for u in r.ucebnice %}<a href="/ucebnice/{{ u }}/">{{ (u | ucebnica).nazov }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+  <p>Preberáme: {% for z in r.rozsah %}<a href="/ucebnice/{{ z.id }}/">{{ z | rozsahText }}</a>{% if not loop.last %}, potom {% endif %}{% endfor %}</p>
 </header>
 {% if lekcie.length %}
 <div class="mriezka">

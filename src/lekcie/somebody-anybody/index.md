@@ -3,7 +3,7 @@ title: Somebody, anybody, everybody, nobody
 nazovSk: Neurčité zámená (niekto, niečo, všetci, nikto…)
 popis: "somebody × anybody, everything × nothing: kedy some-, kedy any-, prečo Everybody likes a prečo nie I don't know nothing."
 date: 2026-11-03T00:00:00
-rocniky: [6, 7]
+rocniky: [7]
 strana: 49
 ucebnice:
   - { id: project-3, unit: "4" }

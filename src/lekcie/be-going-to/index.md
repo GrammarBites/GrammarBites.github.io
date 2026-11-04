@@ -3,7 +3,7 @@ title: BE going to
 nazovSk: Plány a zámery – be going to
 popis: "I am going to watch a film. She isn't going to come. Are you going to play? Bez slovesa BE (am / is / are) to nejde!"
 date: 2026-11-03T22:20:00
-rocniky: [5, 6]
+rocniky: [6]
 strana: 69
 ucebnice:
   - { id: project-2, unit: "6" }

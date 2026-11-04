@@ -3,7 +3,7 @@ title: Talking about the future
 nazovSk: Budúcnosť – will, be going to, present continuous
 popis: "Od neistého po isté: I think it will rain. → Look at those clouds! It's going to rain. → I'm meeting Tom at 4 tomorrow."
 date: 2026-11-03T10:45:00
-rocniky: [8, 9]
+rocniky: [9]
 strana: 21
 ucebnice:
   - { id: project-5, unit: "2" }

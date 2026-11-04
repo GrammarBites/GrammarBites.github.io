@@ -9,7 +9,8 @@ title: Present perfect                 # anglický názov
 nazovSk: Predprítomný čas              # slovenský názov
 popis: Krátky popis po slovensky (1–2 vety), zobrazí sa na karte lekcie.
 date: 2026-11-15                       # dátum zverejnenia
-rocniky: [7, 8]                        # ročníky
+rocniky: [7]                           # doplní sa samo podľa učebnice a unitu (rozpis: src/_data/zoznamRocnikov.json);
+                                       # ručne len pri vlastných materiáloch (id: vlastne)
 strana: 57                             # strana v učebnici – určuje poradie lekcií v rámci unitu
 ucebnice:                              # učebnice a unity (id: family-and-friends-2, project-2 … project-5, vlastne)
   - { id: project-3, unit: "5" }

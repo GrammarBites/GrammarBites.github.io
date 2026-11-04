@@ -3,7 +3,7 @@ title: Present simple
 nazovSk: Prítomný jednoduchý čas – oznamovacie a záporné vety
 popis: "Čo robíme pravidelne: I go to school by bus. She lives in a flat. He doesn't take the bus. Pozor na -s pri he/she/it!"
 date: 2026-11-02T21:30:00
-rocniky: [5, 6]
+rocniky: [5]
 strana: 9                      # strana v učebnici (poradie lekcií v unite)
 ucebnice:
   - { id: project-2, unit: "1" }

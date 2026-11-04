@@ -3,7 +3,7 @@ title: have to · has to
 nazovSk: Have to – musieť a nemusieť
 popis: "I have to get up early. She has to feed the cat. I don't have to cook. Do you have to…? Povinnosť, zápor aj otázka s have to."
 date: 2026-11-03T23:00:00
-rocniky: [5, 6]
+rocniky: [6]
 strana: 73
 ucebnice:
   - { id: project-2, unit: "6" }

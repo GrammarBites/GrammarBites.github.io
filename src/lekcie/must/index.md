@@ -3,7 +3,7 @@ title: must · mustn't · Must I…?
 nazovSk: Modálne sloveso must – musieť, nesmieť
 popis: "I must tidy my room. You mustn't run in the corridor. Must I go now? – Yes, you must. Oznamovacia veta, zápor aj otázka s must."
 date: 2026-11-03T16:00:00
-rocniky: [5, 6]
+rocniky: [5]
 strana: 27
 ucebnice:
   - { id: project-2, unit: "2" }

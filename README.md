@@ -11,7 +11,7 @@ src/
   lekcie/<nazov-lekcie>/index.md   ← jedna lekcia = jeden priečinok (údaje, výklad, test)
   lekcie/<nazov-lekcie>/video.mp4  ← video, infografika, náhľad v tom istom priečinku
   _data/zoznamUcebnic.json         ← učebnice, unity a gramatika v nich
-  _data/zoznamRocnikov.json        ← ročník → učebnice
+  _data/zoznamRocnikov.json        ← ročník → učebnice a unity (podľa toho sa lekcii určí ročník)
   _data/zoznamTem.json             ← gramatické témy
   _data/slovnik.json               ← SK ↔ EN výrazy pre vyhľadávanie
   _data/site.js                    ← nastavenia (adresa webu, kľúč kontaktného formulára)

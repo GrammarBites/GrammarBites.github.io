@@ -3,7 +3,7 @@ title: Adjectives and adverbs
 nazovSk: Prídavné mená a príslovky – careful × carefully
 popis: "She is a careful driver. She drives carefully. Aký? × ako? Ako utvoriť príslovku s -ly a pozor na good → well."
 date: 2026-11-03T22:40:00
-rocniky: [5, 6]
+rocniky: [6]
 strana: 71
 ucebnice:
   - { id: project-2, unit: "6" }

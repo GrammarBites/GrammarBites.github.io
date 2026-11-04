@@ -61,6 +61,16 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("datum", (d) =>
     new Date(d).toLocaleDateString("sk-SK", { day: "numeric", month: "long", year: "numeric" })
   );
+  // "Project 2 · Unit 5–6" – rozsah učebnice v danom ročníku
+  eleventyConfig.addFilter("rozsahText", (z) => {
+    const kniha = ucebnice.find((k) => k.id === z.id);
+    const nazov = kniha ? kniha.nazov : z.id;
+    if (!z.units || !z.units.length) return nazov;
+    const cisla = z.units.filter((u) => u !== "intro");
+    const intro = z.units.includes("intro") ? "Introduction, " : "";
+    const rozsah = cisla.length > 1 ? `${cisla[0]}–${cisla[cisla.length - 1]}` : cisla[0];
+    return `${nazov} · ${intro}Unit ${rozsah}`;
+  });
   eleventyConfig.addFilter("isoDatum", (d) => new Date(d).toISOString().slice(0, 10));
   eleventyConfig.addFilter("json", (v) => JSON.stringify(v).replace(/</g, "\\u003c"));
   eleventyConfig.addFilter("rocnikyText", (r = []) =>

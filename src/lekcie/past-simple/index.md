@@ -3,7 +3,7 @@ title: "Past simple: positive, negative, questions"
 nazovSk: Minulý čas – oznamovacia veta, zápor a otázka
 popis: "We went to the mountains. I didn't go to school. Did you see the match? – Yes, I did. Where did you go? Minulý čas všetkých slovies, pravidelných aj nepravidelných."
 date: 2026-11-03T17:00:00
-rocniky: [5, 6]
+rocniky: [5]
 strana: 39
 ucebnice:
   - { id: project-2, unit: "3" }

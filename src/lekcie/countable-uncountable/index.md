@@ -3,7 +3,7 @@ title: How much? How many?
 nazovSk: Počítateľné a nepočítateľné podstatné mená, much / many, a few / a little
 popis: "apples × cheese: čo sa dá spočítať a čo nie. Kedy many a much, a few a a little, ako sa opýtať How many? / How much? a čo je a loaf of bread."
 date: 2026-11-03T21:15:00
-rocniky: [5, 6]
+rocniky: [5]
 strana: 45
 ucebnice:
   - { id: project-2, unit: "4" }

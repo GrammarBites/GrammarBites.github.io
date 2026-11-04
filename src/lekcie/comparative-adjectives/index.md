@@ -3,7 +3,7 @@ title: Comparative adjectives
 nazovSk: Druhý stupeň prídavných mien – bigger, more famous, better
 popis: "An elephant is bigger than a mouse. Ako porovnať dve veci: -er, more, than a nepravidelné better a worse."
 date: 2026-11-03T21:45:00
-rocniky: [5, 6]
+rocniky: [6]
 strana: 59
 ucebnice:
   - { id: project-2, unit: "5" }

@@ -3,7 +3,7 @@ title: Time expressions
 nazovSk: Časové výrazy – yesterday, this, next, last…
 popis: "yesterday morning × this morning × tomorrow morning, last week × this week × next week, a prečo sa nehovorí on last Monday."
 date: 2026-11-03T10:30:00
-rocniky: [8, 9]
+rocniky: [9]
 strana: 25
 ucebnice:
   - { id: project-5, unit: "2" }

@@ -3,7 +3,7 @@ title: Subject & object pronouns
 nazovSk: Osobné zámená – podmet a predmet (I → me, he → him…)
 popis: "I → me, he → him, she → her, we → us, they → them. Kedy povedať she a kedy her: She likes him. He likes her. Come with me!"
 date: 2026-11-03T16:15:00
-rocniky: [5, 6]
+rocniky: [5]
 strana: 27
 ucebnice:
   - { id: project-2, unit: "2" }

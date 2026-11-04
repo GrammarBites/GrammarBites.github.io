@@ -3,7 +3,7 @@ title: Future arrangements
 nazovSk: Dohodnuté plány – present continuous pre budúcnosť
 popis: "Ako povedať, čo máš v pláne a už je to dohodnuté: I'm playing football on Friday evening. What are you doing at the weekend?"
 date: 2026-11-03T00:15:00
-rocniky: [6, 7]
+rocniky: [7]
 strana: 51
 ucebnice:
   - { id: project-3, unit: "4" }

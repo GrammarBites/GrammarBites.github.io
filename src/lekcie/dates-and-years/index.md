@@ -3,7 +3,7 @@ title: Dates and years
 nazovSk: Dátumy a roky
 popis: "Ako po anglicky povedať dátum a rok: the twenty-sixth of September, twenty twenty-six. Radové číslovky, mesiace a roky."
 date: 2026-11-02T21:45:00
-rocniky: [5, 6]
+rocniky: [5]
 strana: 11
 ucebnice:
   - { id: project-2, unit: "1" }

@@ -3,7 +3,7 @@ title: Comparative & superlative adjectives
 nazovSk: Druhý a tretí stupeň prídavných mien – taller, the tallest
 popis: "high – higher – the highest. Ako povedať, že niečo je naj…: the youngest in our class, the most famous, the best."
 date: 2026-11-03T22:00:00
-rocniky: [5, 6]
+rocniky: [6]
 strana: 61
 ucebnice:
   - { id: project-2, unit: "5" }

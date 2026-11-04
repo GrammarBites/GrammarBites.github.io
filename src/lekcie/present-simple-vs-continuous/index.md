@@ -3,7 +3,7 @@ title: Present simple × present continuous
 nazovSk: Porovnanie prítomných časov
 popis: "Pravidelne alebo práve teraz? I play football every Saturday. × I'm doing my homework now. Signálne slová, zápor, otázka a slovesá bez -ing."
 date: 2026-11-03T15:00:00
-rocniky: [5, 6]
+rocniky: [5]
 strana: 25
 ucebnice:
   - { id: project-2, unit: "2" }

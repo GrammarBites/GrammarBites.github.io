@@ -12,7 +12,7 @@ title: Podľa ročníka
   <a class="rocnik" href="/rocniky/{{ r.cislo }}/">
     <span class="rocnik__cislo">{{ r.cislo }}.</span>
     <span class="rocnik__nazov">ročník</span>
-    <span class="rocnik__knihy">{% for u in r.ucebnice %}{{ (u | ucebnica).nazov }}{% if not loop.last %} · {% endif %}{% endfor %}</span>
+    <span class="rocnik__knihy">{% for z in r.rozsah %}{{ z | rozsahText }}{% if not loop.last %}<br>{% endif %}{% endfor %}</span>
     <span class="rocnik__pocet">{% if pocet == 1 %}1 lekcia{% elif pocet > 1 and pocet < 5 %}{{ pocet }} lekcie{% elif pocet >= 5 %}{{ pocet }} lekcií{% else %}pripravujeme{% endif %}</span>
   </a>
   {% endfor %}

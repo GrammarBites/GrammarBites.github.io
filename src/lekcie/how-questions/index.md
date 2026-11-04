@@ -3,7 +3,7 @@ title: How questions
 nazovSk: Otázky s How – aký vysoký, dlhý, široký, hlboký?
 popis: "How high is that hill? – It's 500 metres high. Ako sa opýtať na výšku, dĺžku, šírku a hĺbku a ako správne odpovedať."
 date: 2026-11-03T21:30:00
-rocniky: [5, 6]
+rocniky: [6]
 strana: 56
 ucebnice:
   - { id: project-2, unit: "5" }

@@ -3,7 +3,7 @@ title: The definite article
 nazovSk: Určitý člen THE
 popis: "Kedy napísať the a kedy nie: the tallest, the first, the River Thames, the Tower of London – ale Hyde Park a Tower Bridge bez the."
 date: 2026-11-02T23:30:00
-rocniky: [6, 7]
+rocniky: [7]
 strana: 45
 ucebnice:
   - { id: project-3, unit: "4" }

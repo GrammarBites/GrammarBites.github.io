@@ -3,7 +3,7 @@ title: Present continuous
 nazovSk: Prítomný priebehový čas – oznamovacie a záporné vety
 popis: "Čo sa deje práve teraz: The goat is eating a book! I'm not watching TV. Am/is/are + sloveso s -ing."
 date: 2026-11-02T20:00:00
-rocniky: [5, 6]
+rocniky: [5]
 strana: 21                      # strana v učebnici (poradie lekcií v unite)
 ucebnice:
   - { id: project-2, unit: "2" }

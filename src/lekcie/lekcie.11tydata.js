@@ -5,7 +5,7 @@ import fs from "node:fs";
 // alebo ak nemá žiadnu učebnicu z rozpisu.
 const zoznamRocnikov = JSON.parse(fs.readFileSync("src/_data/zoznamRocnikov.json", "utf8"));
 
-export function rocnikyPreUcebnice(ucebnice = []) {
+function rocnikyPreUcebnice(ucebnice = []) {
   const out = new Set();
   for (const u of ucebnice) {
     for (const r of zoznamRocnikov) {

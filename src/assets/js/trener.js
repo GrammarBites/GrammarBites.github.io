@@ -1,4 +1,4 @@
-// Tréner nepravidelných slovies: napíš minulý tvar. Pokrok (chyby, najdlhšia séria) sa pamätá len v tomto prehliadači.
+// Tréner nepravidelných slovies: napíš minulý tvar (alebo 2. aj 3. tvar pri data-tvar="pp"). Pokrok (chyby, najdlhšia séria) sa pamätá len v tomto prehliadači.
 (function () {
   // skript je v tele stránky pred spolocne.js – počkáme, kým sa načíta GB
   const start = () => document.querySelectorAll("[data-trener]").forEach(init);
@@ -6,18 +6,25 @@
 
   function init(box) {
     const kniha = box.dataset.trener;
+    const pp = box.dataset.tvar === "pp";
+    const id = kniha + (pp ? "-pp" : "");
     const lekcia = box.dataset.lekcia || "trener";
-    const rodiny = GB.data("data-trener-" + kniha) || [];
-    const vsetky = rodiny.flatMap((r) => r.slovesa.map((s) => ({ inf: s[0], past: s[1], sk: s[2], ine: s[3] || [], rodina: r })));
+    const rodiny = GB.data("data-trener-" + id) || [];
+    // ciele = správne odpovede pre každé políčko: [tvar, [iné správne tvary]]
+    const vsetky = rodiny.flatMap((r) => r.slovesa.map((s) => ({
+      inf: s[0], sk: s[2], rodina: r,
+      ciele: pp ? [[s[1], s[3] || []], [s[4], s[5] || []]] : [[s[1], s[3] || []]],
+    })));
+    vsetky.forEach((v) => (v.vzor = [v.inf, ...v.ciele.map((c) => c[0])].join(pp ? " – " : " → ")));
     if (!vsetky.length) return;
 
-    const KLUC = "gb-trener-" + kniha;
+    const KLUC = "gb-trener-" + id;
     const KOLO = 10;
     const $ = (s) => box.querySelector(s);
     const el = {
       cipy: $("[data-cipy]"), karta: $("[data-karta]"), stav: $("[data-stav]"), seria: $("[data-seria]"),
       rodina: $("[data-rodina]"), sloveso: $("[data-sloveso]"), vyznam: $("[data-vyznam]"), form: $("[data-form]"),
-      vstup: $("[data-vstup]"), over: $("[data-over]"), napoveda: $("[data-napoveda]"), neviem: $("[data-neviem]"),
+      vstupy: [...box.querySelectorAll("[data-vstup]")], over: $("[data-over]"), napoveda: $("[data-napoveda]"), neviem: $("[data-neviem]"),
       spatna: $("[data-spatna]"), koniec: $("[data-koniec]"), vysledok: $("[data-vysledok]"), zoznamChyb: $("[data-zoznam-chyb]"),
       dalsie: $("[data-dalsie]"), pomoc: $("[data-pomoc]"), lenChyby: $("[data-len-chyby]"), dobre: $("[data-obr-dobre]"), zle: $("[data-obr-zle]"),
     };
@@ -75,21 +82,21 @@
       el.vyznam.textContent = aktualne.sk;
       el.rodina.hidden = true;
       el.spatna.hidden = true; el.spatna.className = "trener__spatna";
-      el.vstup.value = ""; el.vstup.disabled = false; el.vstup.classList.remove("je-ok", "je-zle");
+      el.vstupy.forEach((i) => { i.value = ""; i.disabled = false; i.classList.remove("je-ok", "je-zle"); });
       el.over.textContent = "Skontrolovať";
       el.napoveda.disabled = false; el.neviem.disabled = false; el.pomoc.hidden = false;
-      if (fokus) el.vstup.focus({ preventScroll: true });
+      if (fokus) el.vstupy[0].focus({ preventScroll: true });
     }
 
     const norm = (t) => String(t || "").toLowerCase().replace(/[’']/g, "'").replace(/\s*[\/,]\s*/g, "/").replace(/\s+/g, " ").trim();
-    function jeSpravne(odp) {
+    function jeSpravne(odp, [tvar, ine]) {
       const o = norm(odp);
       if (!o) return false;
-      const moznosti = [aktualne.past, ...aktualne.ine].map(norm);
+      const moznosti = [tvar, ...ine].map(norm);
       if (moznosti.includes(o)) return true;
-      // be: was / were – stačí jeden aj oba v ľubovoľnom poradí
-      if (aktualne.past.includes("/")) {
-        const ok = norm(aktualne.past).split("/");
+      // be: was / were, go: gone / been – stačí jeden aj oba v ľubovoľnom poradí
+      if (tvar.includes("/")) {
+        const ok = norm(tvar).split("/");
         const ja = o.split("/").filter(Boolean);
         return ja.length > 0 && ja.every((x) => ok.includes(x));
       }
@@ -98,12 +105,13 @@
 
     function vyhodnot(neviem) {
       if (odpovedane) return dalsia();
-      const odp = el.vstup.value;
-      if (!neviem && !norm(odp)) { el.vstup.focus(); return; }
+      const prazdne = el.vstupy.find((i) => !norm(i.value));
+      if (!neviem && prazdne) { prazdne.focus(); return; }
       odpovedane = true;
-      const ok = !neviem && jeSpravne(odp);
-      const vzor = `${aktualne.inf} → ${aktualne.past}`;
-      el.vstup.disabled = true;
+      const vysl = el.vstupy.map((i, k) => !neviem && jeSpravne(i.value, aktualne.ciele[k]));
+      const ok = vysl.every(Boolean);
+      const vzor = aktualne.vzor;
+      el.vstupy.forEach((i, k) => { i.disabled = true; i.classList.add(vysl[k] ? "je-ok" : "je-zle"); });
       el.napoveda.disabled = true; el.neviem.disabled = true; el.pomoc.hidden = true;
       el.rodina.hidden = false;
       el.rodina.textContent = `Rodina: ${aktualne.rodina.nazov} · ${aktualne.rodina.vzor}`;
@@ -112,7 +120,6 @@
         seria++;
         if (seria > (pamat.najSeria || 0)) pamat.najSeria = seria;
         if (pamat.chyby[aktualne.inf]) { pamat.chyby[aktualne.inf]--; if (pamat.chyby[aktualne.inf] <= 0) delete pamat.chyby[aktualne.inf]; }
-        el.vstup.classList.add("je-ok");
         el.spatna.classList.add("trener__spatna--ok");
         el.spatna.textContent = pochvala() + " " + vzor;
       } else {
@@ -120,7 +127,6 @@
         const vrati = !aktualne._opak;
         if (vrati) { chybyKola.push(aktualne); fronta.push({ v: aktualne, opak: true }); celkom++; }
         pamat.chyby[aktualne.inf] = Math.min(3, (pamat.chyby[aktualne.inf] || 0) + 2); // musí ho 2× trafiť
-        el.vstup.classList.add("je-zle");
         el.spatna.classList.add("trener__spatna--zle");
         el.spatna.innerHTML = (neviem ? "Nevadí. " : "Nie celkom. ") + "Správne je: <b lang=\"en\">" + GB.esc(vzor) + "</b>" +
           (vrati ? " · na konci kola sa k nemu vrátime." : "");
@@ -140,7 +146,7 @@
       const dobre = spravne / Math.max(1, povodne) >= 0.8;
       el.vysledok.textContent = `Na prvý pokus ${spravne} z ${povodne}. ` +
         (spravne === povodne ? "Bez chyby, si nepravidelný majster!" : dobre ? "Skvelá práca!" : "Nevzdávaj sa, s každým kolom to pôjde lepšie.");
-      el.zoznamChyb.textContent = chybyKola.length ? "Na zopakovanie: " + chybyKola.map((v) => `${v.inf} → ${v.past}`).join(" · ") : "";
+      el.zoznamChyb.textContent = chybyKola.length ? "Na zopakovanie: " + chybyKola.map((v) => v.vzor).join(" · ") : "";
       el.dobre.hidden = !dobre; el.zle.hidden = dobre;
       el.lenChyby.hidden = !pocetChyb();
       kresliCipy();
@@ -154,8 +160,12 @@
     el.napoveda.addEventListener("click", () => {
       el.rodina.hidden = false;
       el.rodina.textContent = `Nápoveda: rodina ${aktualne.rodina.nazov} · napr. ${aktualne.rodina.vzor}`;
-      el.vstup.focus({ preventScroll: true });
+      el.vstupy[0].focus({ preventScroll: true });
     });
+    // Enter v prvom políčku presunie kurzor do druhého (2. → 3. tvar)
+    el.vstupy.slice(0, -1).forEach((i, k) => i.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && !odpovedane && !norm(el.vstupy[k + 1].value)) { e.preventDefault(); el.vstupy[k + 1].focus(); }
+    }));
     el.dalsie.addEventListener("click", () => { if (vyber === "chyby" && !pocetChyb()) vyber = "vsetky"; kresliCipy(); noveKolo(); });
     el.lenChyby.addEventListener("click", () => { vyber = "chyby"; kresliCipy(); noveKolo(); });
 

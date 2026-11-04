@@ -390,7 +390,9 @@ a.stitok:hover { border-color: currentColor; }
 .trener__sloveso { font-family: var(--hand); font-size: clamp(3rem, 12vw, 4.4rem); font-weight: 700; line-height: 1; margin-top: 6px; }
 .trener__vyznam { color: var(--ink-2); font-style: italic; }
 .trener__form { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; max-width: 460px; margin-top: 6px; }
-.trener__vstup { flex: 1 1 200px; min-width: 0; font-size: 1.35rem; font-weight: 700; text-align: center; padding: 10px 14px; border: 2px solid var(--ink); border-radius: 12px; background: var(--paper); }
+.trener__pole { flex: 1 1 200px; min-width: 0; display: grid; gap: 4px; text-align: left; }
+.trener__stitok { font-size: .85rem; font-weight: 800; color: var(--ink-2); }
+.trener__vstup { width: 100%; min-width: 0; font-size: 1.35rem; font-weight: 700; text-align: center; padding: 10px 14px; border: 2px solid var(--ink); border-radius: 12px; background: var(--paper); }
 .trener__vstup:focus { outline: 3px solid var(--yellow); outline-offset: 1px; }
 .trener__vstup.je-ok { border-color: var(--green); background: var(--green-wash); }
 .trener__vstup.je-zle { border-color: var(--terra); background: var(--terra-wash); }

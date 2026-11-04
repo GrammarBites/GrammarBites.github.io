@@ -77,6 +77,16 @@ export default function (eleventyConfig) {
       .map((r) => ({ id: r.id, nazov: r.nazov, vzor: r.vzor, slovesa: r.slovesa.filter((s) => !kniha || (s[4] || []).includes(kniha)).map((s) => s.slice(0, 4)) }))
       .filter((r) => r.slovesa.length)
   );
+  // rodiny podľa 3. tvaru: [základný, 2. tvar, význam, iné 2., 3. tvar, iné 3.]
+  eleventyConfig.addFilter("slovesaPPPreKnihu", (data, kniha) => {
+    const zakl = {};
+    (data.rodiny || []).forEach((r) => r.slovesa.forEach((s) => (zakl[s[0]] = s)));
+    return (data.rodinyPP || [])
+      .map((r) => ({ id: r.id, nazov: r.nazov, vzor: r.vzor, slovesa: r.slovesa
+        .filter((s) => !kniha || (s[3] || []).includes(kniha))
+        .map((s) => { const z = zakl[s[0]] || [s[0], "", "", []]; return [s[0], z[1], z[2], z[3] || [], s[1], s[2] || []]; }) }))
+      .filter((r) => r.slovesa.length);
+  });
   eleventyConfig.addFilter("isoDatum", (d) => new Date(d).toISOString().slice(0, 10));
   eleventyConfig.addFilter("json", (v) => JSON.stringify(v).replace(/</g, "\\u003c"));
   eleventyConfig.addFilter("rocnikyText", (r = []) =>

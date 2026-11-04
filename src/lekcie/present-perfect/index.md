@@ -79,7 +79,7 @@ Zápor tvoríme pomocou **not** za *have / has*. V hovorenej reči používame s
 
 **Pravidelné slovesá** pridávajú *-ed* (rovnako ako v minulom čase): visit → **visited**, play → **played**, watch → **watched**
 
-**Nepravidelné slovesá** majú vlastný tvar – treba sa ich naučiť naspamäť:
+**Nepravidelné slovesá** majú vlastný tvar – treba sa ich naučiť naspamäť. Všetky zo zoznamu v učebnici, zoradené po rodinách, aj s trénerom nájdeš v lekcii [Irregular verbs: past participle](/lekcie/past-participle/).
 
 <table class="chyby tvary">
 <thead><tr><th scope="col">sloveso</th><th scope="col">3. tvar</th><th scope="col">význam</th></tr></thead>

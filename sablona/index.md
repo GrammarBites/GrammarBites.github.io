@@ -26,6 +26,7 @@ nahlad: nahlad.jpg                     # obrázok na kartu (nepovinné)
 infografika: infografika.jpg
 infografikaPdf: infografika.pdf
 # trener: project-2                   # tréner nepravidelných slovies zo zoznamu danej učebnice (src/_data/nepravidelneSlovesa.json)
+# trenerTvar: pp                      # tréner na 2. aj 3. tvar (rodiny podľa 3. tvaru)
 
 koza: koza-zvedava                     # póza kozy: koza-zvedava, koza-premysla, koza-cita,
                                        # koza-oslavuje, koza-nechape, koza-zmurka

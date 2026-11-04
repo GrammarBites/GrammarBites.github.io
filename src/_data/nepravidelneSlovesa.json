@@ -1,113 +1,1591 @@
 {
   "_info": "Nepravidelné slovesá po rodinách. Každé sloveso: [základný tvar, minulý tvar, slovenský význam, (iné správne tvary)]. 'knihy' = v ktorých zoznamoch učebníc sloveso je.",
   "rodiny": [
-    { "id": "rovnake", "nazov": "Nezmenia sa", "vzor": "cut → cut", "tip": "Minulý tvar je rovnaký ako základný. Pozor: read [ríd] → read [red].",
+    {
+      "id": "rovnake",
+      "nazov": "Nezmenia sa",
+      "vzor": "cut → cut",
+      "tip": "Minulý tvar je rovnaký ako základný. Pozor: read [ríd] → read [red].",
       "slovesa": [
-        ["cut", "cut", "rezať, strihať", [], ["project-2"]],
-        ["put", "put", "položiť, dať", [], ["project-2"]],
-        ["hit", "hit", "udrieť", [], ["project-2"]],
-        ["hurt", "hurt", "zraniť, bolieť", [], ["project-2"]],
-        ["cost", "cost", "stáť (o cene)", [], ["project-2"]],
-        ["set", "set", "nastaviť, prestrieť", [], ["project-2"]],
-        ["read", "read", "čítať", [], ["project-2"]]
-      ] },
-    { "id": "koncovka-t", "nazov": "Koncovka -t", "vzor": "learn → learnt", "tip": "Namiesto -ed je -t, d na konci sa zmení na t.",
+        [
+          "cut",
+          "cut",
+          "rezať, strihať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "put",
+          "put",
+          "položiť, dať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "hit",
+          "hit",
+          "udrieť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "hurt",
+          "hurt",
+          "zraniť, bolieť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "cost",
+          "cost",
+          "stáť (o cene)",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "set",
+          "set",
+          "nastaviť, prestrieť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "read",
+          "read",
+          "čítať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "koncovka-t",
+      "nazov": "Koncovka -t",
+      "vzor": "learn → learnt",
+      "tip": "Namiesto -ed je -t, d na konci sa zmení na t.",
       "slovesa": [
-        ["learn", "learnt", "učiť sa", ["learned"], ["project-2"]],
-        ["burn", "burnt", "horieť, spáliť", ["burned"], ["project-2"]],
-        ["smell", "smelt", "voňať, cítiť (nosom)", ["smelled"], ["project-2"]],
-        ["spell", "spelt", "hláskovať", ["spelled"], ["project-2"]],
-        ["send", "sent", "poslať", [], ["project-2"]],
-        ["spend", "spent", "minúť, stráviť", [], ["project-2"]],
-        ["build", "built", "stavať", [], ["project-2"]]
-      ] },
-    { "id": "kratke-e-t", "nazov": "Krátke e + t", "vzor": "keep → kept", "tip": "Dlhá samohláska sa skráti a na koniec príde -t.",
+        [
+          "learn",
+          "learnt",
+          "učiť sa",
+          [
+            "learned"
+          ],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "burn",
+          "burnt",
+          "horieť, spáliť",
+          [
+            "burned"
+          ],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "smell",
+          "smelt",
+          "voňať, cítiť (nosom)",
+          [
+            "smelled"
+          ],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "spell",
+          "spelt",
+          "hláskovať",
+          [
+            "spelled"
+          ],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "send",
+          "sent",
+          "poslať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "spend",
+          "spent",
+          "minúť, stráviť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "build",
+          "built",
+          "stavať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "kratke-e-t",
+      "nazov": "Krátke e + t",
+      "vzor": "keep → kept",
+      "tip": "Dlhá samohláska sa skráti a na koniec príde -t.",
       "slovesa": [
-        ["feel", "felt", "cítiť sa", [], ["project-2"]],
-        ["keep", "kept", "nechať si, držať", [], ["project-2"]],
-        ["sweep", "swept", "zametať", [], ["project-2"]],
-        ["mean", "meant", "znamenať, myslieť", [], ["project-2"]],
-        ["leave", "left", "odísť, nechať", [], ["project-2"]],
-        ["lose", "lost", "stratiť, prehrať", [], ["project-2"]]
-      ] },
-    { "id": "ought", "nazov": "-ought / -aught", "vzor": "buy → bought", "tip": "Znejú rovnako [ót]. -aught majú len catch a teach.",
+        [
+          "feel",
+          "felt",
+          "cítiť sa",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "keep",
+          "kept",
+          "nechať si, držať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "sweep",
+          "swept",
+          "zametať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "mean",
+          "meant",
+          "znamenať, myslieť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "leave",
+          "left",
+          "odísť, nechať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "lose",
+          "lost",
+          "stratiť, prehrať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "ought",
+      "nazov": "-ought / -aught",
+      "vzor": "buy → bought",
+      "tip": "Znejú rovnako [ót]. -aught majú len catch a teach.",
       "slovesa": [
-        ["buy", "bought", "kúpiť", [], ["project-2"]],
-        ["bring", "brought", "priniesť", [], ["project-2"]],
-        ["think", "thought", "myslieť", [], ["project-2"]],
-        ["fight", "fought", "bojovať", [], ["project-2"]],
-        ["catch", "caught", "chytiť", [], ["project-2"]],
-        ["teach", "taught", "učiť (niekoho)", [], ["project-2"]]
-      ] },
-    { "id": "na-a", "nazov": "Zmena na a", "vzor": "sing → sang", "tip": "Samohláska sa zmení na a.",
+        [
+          "buy",
+          "bought",
+          "kúpiť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "bring",
+          "brought",
+          "priniesť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "think",
+          "thought",
+          "myslieť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "fight",
+          "fought",
+          "bojovať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "catch",
+          "caught",
+          "chytiť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "teach",
+          "taught",
+          "učiť (niekoho)",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "na-a",
+      "nazov": "Zmena na a",
+      "vzor": "sing → sang",
+      "tip": "Samohláska sa zmení na a.",
       "slovesa": [
-        ["sing", "sang", "spievať", [], ["project-2"]],
-        ["swim", "swam", "plávať", [], ["project-2"]],
-        ["drink", "drank", "piť", [], ["project-2"]],
-        ["ring", "rang", "zvoniť, zavolať", [], ["project-2"]],
-        ["sink", "sank", "potopiť sa", [], ["project-2"]],
-        ["begin", "began", "začať", [], ["project-2"]],
-        ["sit", "sat", "sedieť, sadnúť si", [], ["project-2"]],
-        ["give", "gave", "dať", [], ["project-2"]],
-        ["run", "ran", "bežať", [], ["project-2"]],
-        ["come", "came", "prísť", [], ["project-2"]],
-        ["become", "became", "stať sa", [], ["project-2"]]
-      ] },
-    { "id": "na-o", "nazov": "Zmena na o", "vzor": "write → wrote", "tip": "Samohláska sa zmení na o.",
+        [
+          "sing",
+          "sang",
+          "spievať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "swim",
+          "swam",
+          "plávať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "drink",
+          "drank",
+          "piť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "ring",
+          "rang",
+          "zvoniť, zavolať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "sink",
+          "sank",
+          "potopiť sa",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "begin",
+          "began",
+          "začať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "sit",
+          "sat",
+          "sedieť, sadnúť si",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "give",
+          "gave",
+          "dať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "run",
+          "ran",
+          "bežať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "come",
+          "came",
+          "prísť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "become",
+          "became",
+          "stať sa",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "na-o",
+      "nazov": "Zmena na o",
+      "vzor": "write → wrote",
+      "tip": "Samohláska sa zmení na o.",
       "slovesa": [
-        ["write", "wrote", "písať", [], ["project-2"]],
-        ["drive", "drove", "šoférovať", [], ["project-2"]],
-        ["ride", "rode", "jazdiť (na bicykli, koni)", [], ["project-2"]],
-        ["wake", "woke", "zobudiť sa", [], ["project-2"]],
-        ["speak", "spoke", "hovoriť", [], ["project-2"]],
-        ["steal", "stole", "ukradnúť", [], ["project-2"]],
-        ["break", "broke", "zlomiť, rozbiť", [], ["project-2"]],
-        ["get", "got", "dostať, získať", [], ["project-2"]],
-        ["win", "won", "vyhrať", [], ["project-2"]]
-      ] },
-    { "id": "ore-old", "nazov": "-ore a -old", "vzor": "wear → wore", "tip": "Dve dvojice, ktoré sa rýmujú.",
+        [
+          "write",
+          "wrote",
+          "písať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "drive",
+          "drove",
+          "šoférovať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "ride",
+          "rode",
+          "jazdiť (na bicykli, koni)",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "wake",
+          "woke",
+          "zobudiť sa",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "speak",
+          "spoke",
+          "hovoriť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "steal",
+          "stole",
+          "ukradnúť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "break",
+          "broke",
+          "zlomiť, rozbiť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "get",
+          "got",
+          "dostať, získať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "win",
+          "won",
+          "vyhrať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "ore-old",
+      "nazov": "-ore a -old",
+      "vzor": "wear → wore",
+      "tip": "Dve dvojice, ktoré sa rýmujú.",
       "slovesa": [
-        ["wear", "wore", "mať oblečené, nosiť", [], ["project-2"]],
-        ["tear", "tore", "roztrhnúť", [], ["project-2"]],
-        ["sell", "sold", "predať", [], ["project-2"]],
-        ["tell", "told", "povedať (niekomu)", [], ["project-2"]]
-      ] },
-    { "id": "ew", "nazov": "Koncovka -ew", "vzor": "fly → flew", "tip": "Na konci je -ew [jú].",
+        [
+          "wear",
+          "wore",
+          "mať oblečené, nosiť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "tear",
+          "tore",
+          "roztrhnúť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "sell",
+          "sold",
+          "predať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "tell",
+          "told",
+          "povedať (niekomu)",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "ew",
+      "nazov": "Koncovka -ew",
+      "vzor": "fly → flew",
+      "tip": "Na konci je -ew [jú].",
       "slovesa": [
-        ["fly", "flew", "letieť", [], ["project-2"]],
-        ["grow", "grew", "rásť, pestovať", [], ["project-2"]],
-        ["know", "knew", "vedieť, poznať", [], ["project-2"]],
-        ["throw", "threw", "hodiť", [], ["project-2"]],
-        ["draw", "drew", "kresliť", [], ["project-2"]]
-      ] },
-    { "id": "oo", "nazov": "Dve o: -oo-", "vzor": "take → took", "tip": "V strede sú dve o.",
+        [
+          "fly",
+          "flew",
+          "letieť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "grow",
+          "grew",
+          "rásť, pestovať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "know",
+          "knew",
+          "vedieť, poznať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "throw",
+          "threw",
+          "hodiť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "draw",
+          "drew",
+          "kresliť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "oo",
+      "nazov": "Dve o: -oo-",
+      "vzor": "take → took",
+      "tip": "V strede sú dve o.",
       "slovesa": [
-        ["take", "took", "vziať", [], ["project-2"]],
-        ["stand", "stood", "stáť", [], ["project-2"]],
-        ["understand", "understood", "rozumieť", [], ["project-2"]]
-      ] },
-    { "id": "koncovka-d", "nazov": "Na konci -d", "vzor": "make → made", "tip": "Na konci je d. Pozor na pravopis: paid, said.",
+        [
+          "take",
+          "took",
+          "vziať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "stand",
+          "stood",
+          "stáť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "understand",
+          "understood",
+          "rozumieť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "koncovka-d",
+      "nazov": "Na konci -d",
+      "vzor": "make → made",
+      "tip": "Na konci je d. Pozor na pravopis: paid, said.",
       "slovesa": [
-        ["make", "made", "urobiť, vyrobiť", [], ["project-2"]],
-        ["have", "had", "mať", [], ["project-2"]],
-        ["hear", "heard", "počuť", [], ["project-2"]],
-        ["pay", "paid", "platiť", [], ["project-2"]],
-        ["say", "said", "povedať", [], ["project-2"]]
-      ] },
-    { "id": "samotari", "nazov": "Samotári", "vzor": "go → went", "tip": "Nepatria do žiadnej rodiny. Tieto sa treba naučiť naspamäť.",
+        [
+          "make",
+          "made",
+          "urobiť, vyrobiť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "have",
+          "had",
+          "mať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "hear",
+          "heard",
+          "počuť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "pay",
+          "paid",
+          "platiť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "say",
+          "said",
+          "povedať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "samotari",
+      "nazov": "Samotári",
+      "vzor": "go → went",
+      "tip": "Nepatria do žiadnej rodiny. Tieto sa treba naučiť naspamäť.",
       "slovesa": [
-        ["be", "was / were", "byť", ["was", "were"], ["project-2"]],
-        ["go", "went", "ísť", [], ["project-2"]],
-        ["do", "did", "robiť", [], ["project-2"]],
-        ["see", "saw", "vidieť", [], ["project-2"]],
-        ["eat", "ate", "jesť", [], ["project-2"]],
-        ["can", "could", "môcť, vedieť", [], ["project-2"]],
-        ["find", "found", "nájsť", [], ["project-2"]],
-        ["fall", "fell", "spadnúť", [], ["project-2"]],
-        ["hold", "held", "držať", [], ["project-2"]],
-        ["bite", "bit", "hrýzť, uhryznúť", [], ["project-2"]],
-        ["hide", "hid", "skryť (sa)", [], ["project-2"]],
-        ["stick", "stuck", "prilepiť", [], ["project-2"]]
-      ] }
-  ]
+        [
+          "be",
+          "was / were",
+          "byť",
+          [
+            "was",
+            "were"
+          ],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "go",
+          "went",
+          "ísť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "do",
+          "did",
+          "robiť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "see",
+          "saw",
+          "vidieť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "eat",
+          "ate",
+          "jesť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "can",
+          "could",
+          "môcť, vedieť",
+          [],
+          [
+            "project-2"
+          ]
+        ],
+        [
+          "find",
+          "found",
+          "nájsť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "fall",
+          "fell",
+          "spadnúť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "hold",
+          "held",
+          "držať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "bite",
+          "bit",
+          "hrýzť, uhryznúť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "hide",
+          "hid",
+          "skryť (sa)",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "stick",
+          "stuck",
+          "prilepiť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "dig",
+          "dug",
+          "kopať",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "lie",
+          "lay",
+          "ležať",
+          [],
+          [
+            "project-3"
+          ]
+        ]
+      ]
+    }
+  ],
+  "rodinyPP": [
+    {
+      "id": "aaa",
+      "nazov": "Všetky tri rovnaké",
+      "vzor": "cut – cut – cut",
+      "typ": "A – A – A",
+      "slovesa": [
+        [
+          "cut",
+          "cut",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "put",
+          "put",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "hit",
+          "hit",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "hurt",
+          "hurt",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "cost",
+          "cost",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "set",
+          "set",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "read",
+          "read",
+          [],
+          [
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "ought",
+      "nazov": "-ought / -aught",
+      "vzor": "buy – bought – bought",
+      "typ": "A – B – B",
+      "slovesa": [
+        [
+          "buy",
+          "bought",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "bring",
+          "brought",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "think",
+          "thought",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "fight",
+          "fought",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "catch",
+          "caught",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "teach",
+          "taught",
+          [],
+          [
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "koncovka-t",
+      "nazov": "Koncovka -t",
+      "vzor": "learn – learnt – learnt",
+      "typ": "A – B – B",
+      "slovesa": [
+        [
+          "learn",
+          "learnt",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "burn",
+          "burnt",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "smell",
+          "smelt",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "spell",
+          "spelt",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "send",
+          "sent",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "spend",
+          "spent",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "build",
+          "built",
+          [],
+          [
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "kratke-e-t",
+      "nazov": "Krátke e + t",
+      "vzor": "keep – kept – kept",
+      "typ": "A – B – B",
+      "slovesa": [
+        [
+          "feel",
+          "felt",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "keep",
+          "kept",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "sweep",
+          "swept",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "mean",
+          "meant",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "leave",
+          "left",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "lose",
+          "lost",
+          [],
+          [
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "koncovka-d",
+      "nazov": "Na konci -d",
+      "vzor": "make – made – made",
+      "typ": "A – B – B",
+      "slovesa": [
+        [
+          "make",
+          "made",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "have",
+          "had",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "hear",
+          "heard",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "pay",
+          "paid",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "say",
+          "said",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "sell",
+          "sold",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "tell",
+          "told",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "stand",
+          "stood",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "understand",
+          "understood",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "find",
+          "found",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "hold",
+          "held",
+          [],
+          [
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "kratka-samohlaska",
+      "nazov": "Krátka samohláska",
+      "vzor": "sit – sat – sat",
+      "typ": "A – B – B",
+      "slovesa": [
+        [
+          "sit",
+          "sat",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "win",
+          "won",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "get",
+          "got",
+          [
+            "gotten"
+          ],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "dig",
+          "dug",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "stick",
+          "stuck",
+          [],
+          [
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "aba",
+      "nazov": "3. tvar = základný",
+      "vzor": "come – came – come",
+      "typ": "A – B – A",
+      "slovesa": [
+        [
+          "come",
+          "come",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "become",
+          "become",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "run",
+          "run",
+          [],
+          [
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "i-a-u",
+      "nazov": "i – a – u",
+      "vzor": "sing – sang – sung",
+      "typ": "A – B – C",
+      "slovesa": [
+        [
+          "sing",
+          "sung",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "swim",
+          "swum",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "drink",
+          "drunk",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "ring",
+          "rung",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "sink",
+          "sunk",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "begin",
+          "begun",
+          [],
+          [
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "ew-own",
+      "nazov": "-ew → -own",
+      "vzor": "fly – flew – flown",
+      "typ": "A – B – C",
+      "slovesa": [
+        [
+          "fly",
+          "flown",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "grow",
+          "grown",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "know",
+          "known",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "throw",
+          "thrown",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "draw",
+          "drawn",
+          [],
+          [
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "o-en",
+      "nazov": "o + (e)n",
+      "vzor": "speak – spoke – spoken",
+      "typ": "A – B – C",
+      "slovesa": [
+        [
+          "speak",
+          "spoken",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "break",
+          "broken",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "steal",
+          "stolen",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "wake",
+          "woken",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "wear",
+          "worn",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "tear",
+          "torn",
+          [],
+          [
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "i-en",
+      "nazov": "krátke i + en",
+      "vzor": "write – wrote – written",
+      "typ": "A – B – C",
+      "slovesa": [
+        [
+          "write",
+          "written",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "drive",
+          "driven",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "ride",
+          "ridden",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "bite",
+          "bitten",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "hide",
+          "hidden",
+          [],
+          [
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "zaklad-en",
+      "nazov": "základ + (e)n",
+      "vzor": "eat – ate – eaten",
+      "typ": "A – B – C",
+      "slovesa": [
+        [
+          "eat",
+          "eaten",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "give",
+          "given",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "fall",
+          "fallen",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "take",
+          "taken",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "see",
+          "seen",
+          [],
+          [
+            "project-3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "samotari",
+      "nazov": "Samotári",
+      "vzor": "go – went – gone",
+      "typ": "naspamäť",
+      "slovesa": [
+        [
+          "be",
+          "been",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "do",
+          "done",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "go",
+          "gone / been",
+          [
+            "gone",
+            "been"
+          ],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "lie",
+          "lain",
+          [],
+          [
+            "project-3"
+          ]
+        ]
+      ]
+    }
+  ],
+  "_infoPP": "rodinyPP: rodiny podľa 3. tvaru (past participle). Sloveso: [základný tvar, 3. tvar, (iné správne tvary), knihy]. 2. tvar a význam sa berú z 'rodiny'."
 }

@@ -1,9 +1,11 @@
-{# Tréner nepravidelných slovies. V lekcii: trener: project-2 (zoznam slovies z danej učebnice) #}
-{% set rodinyTrenera = nepravidelneSlovesa.rodiny | slovesaPreKnihu(trener) %}
+{# Tréner nepravidelných slovies. V lekcii: trener: project-2 (zoznam slovies z danej učebnice), trenerTvar: pp = 2. aj 3. tvar #}
+{% set pp = trenerTvar == 'pp' %}
+{% set idT = trener + ('-pp' if pp else '') %}
+{% set rodinyTrenera = (nepravidelneSlovesa | slovesaPPPreKnihu(trener)) if pp else (nepravidelneSlovesa.rodiny | slovesaPreKnihu(trener)) %}
 <section class="blok blok--trener" aria-labelledby="h-trener">
   <h2 id="h-trener" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Tréner</h2>
-  <p class="blok__uvod">Napíš minulý tvar slovesa. Kolo má 10 slovies, chyby sa ti vrátia na koniec kola. Môžeš trénovať všetky slovesá alebo len jednu rodinu.</p>
-  <div class="trener" data-trener="{{ trener }}" data-lekcia="{{ page.fileSlug }}">
+  <p class="blok__uvod">{% if pp %}Napíš 2. tvar (minulý čas) aj 3. tvar (past participle).{% else %}Napíš minulý tvar slovesa.{% endif %} Kolo má 10 slovies, chyby sa ti vrátia na koniec kola. Môžeš trénovať všetky slovesá alebo len jednu rodinu.</p>
+  <div class="trener" data-trener="{{ trener }}"{% if pp %} data-tvar="pp"{% endif %} data-lekcia="{{ page.fileSlug }}">
     <fieldset class="trener__vyber">
       <legend>Čo chceš trénovať?</legend>
       <div class="trener__cipy" data-cipy></div>
@@ -18,9 +20,13 @@
       <p class="trener__sloveso" lang="en" data-sloveso>…</p>
       <p class="trener__vyznam" data-vyznam></p>
       <form class="trener__form" data-form autocomplete="off">
-        <label for="trener-vstup-{{ trener }}" class="sr">Minulý tvar</label>
-        <input id="trener-vstup-{{ trener }}" class="trener__vstup" data-vstup type="text" lang="en" placeholder="minulý tvar…"
-          autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="done">
+        {% for v in ([['2. tvar (minulý čas)', '2. tvar…'], ['3. tvar (past participle)', '3. tvar…']] if pp else [['Minulý tvar', 'minulý tvar…']]) %}
+        <div class="trener__pole">
+        <label for="trener-vstup-{{ idT }}-{{ loop.index }}" class="{{ 'trener__stitok' if pp else 'sr' }}">{{ v[0] }}</label>
+        <input id="trener-vstup-{{ idT }}-{{ loop.index }}" class="trener__vstup" data-vstup type="text" lang="en" placeholder="{{ v[1] }}"
+          autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="{{ 'next' if (pp and loop.first) else 'done' }}">
+        </div>
+        {% endfor %}
         <button type="submit" class="tlacidlo" data-over>Skontrolovať</button>
       </form>
       <p class="trener__spatna" data-spatna role="status" aria-live="polite" hidden></p>
@@ -43,6 +49,6 @@
       </div>
     </div>
   </div>
-  <script type="application/json" id="data-trener-{{ trener }}">{{ rodinyTrenera | json | safe }}</script>
+  <script type="application/json" id="data-trener-{{ idT }}">{{ rodinyTrenera | json | safe }}</script>
   <script src="/assets/js/trener.js" defer></script>
 </section>

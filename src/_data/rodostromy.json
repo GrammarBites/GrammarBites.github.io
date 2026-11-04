@@ -1,0 +1,66 @@
+{
+  "_info": "Vymyslené rodiny pre tréner rodostromu. Osoba: id, meno, pohlavie (m/f), generácia (1–3), x (poloha v %), rodičia [id, id], manžel(ka), vek (len deti v 3. generácii). Vzťahy sa vypočítajú automaticky.",
+  "slova": {
+    "grandfather": "starý otec", "grandmother": "stará mama",
+    "father": "otec", "mother": "mama",
+    "son": "syn", "daughter": "dcéra",
+    "brother": "brat", "sister": "sestra",
+    "husband": "manžel", "wife": "manželka",
+    "uncle": "strýko, ujo", "aunt": "teta",
+    "nephew": "synovec", "niece": "neter",
+    "cousin": "bratranec, sesternica",
+    "grandson": "vnuk", "granddaughter": "vnučka"
+  },
+  "poradie": {
+    "an only child": "jedináčik",
+    "the eldest": "najstarší / najstaršia",
+    "the youngest": "najmladší / najmladšia",
+    "a middle child": "prostredné dieťa",
+    "twins": "dvojčatá"
+  },
+  "stromy": [
+    { "id": "mia", "nazov": "Mia's family", "osoby": [
+      { "id": "george", "meno": "George", "s": "m", "g": 1, "x": 40, "manzel": "rose" },
+      { "id": "rose", "meno": "Rose", "s": "f", "g": 1, "x": 60, "manzel": "george" },
+      { "id": "paul", "meno": "Paul", "s": "m", "g": 2, "x": 9, "manzel": "kate" },
+      { "id": "kate", "meno": "Kate", "s": "f", "g": 2, "x": 27, "rodicia": ["george", "rose"], "manzel": "paul" },
+      { "id": "sam", "meno": "Sam", "s": "m", "g": 2, "x": 50, "rodicia": ["george", "rose"] },
+      { "id": "anna", "meno": "Anna", "s": "f", "g": 2, "x": 73, "rodicia": ["george", "rose"], "manzel": "mark" },
+      { "id": "mark", "meno": "Mark", "s": "m", "g": 2, "x": 91, "manzel": "anna" },
+      { "id": "leo", "meno": "Leo", "s": "m", "g": 3, "x": 9, "rodicia": ["paul", "kate"], "vek": 15 },
+      { "id": "mia", "meno": "Mia", "s": "f", "g": 3, "x": 27, "rodicia": ["paul", "kate"], "vek": 12 },
+      { "id": "jack", "meno": "Jack", "s": "m", "g": 3, "x": 73, "rodicia": ["anna", "mark"], "vek": 8 },
+      { "id": "ella", "meno": "Ella", "s": "f", "g": 3, "x": 91, "rodicia": ["anna", "mark"], "vek": 8 }
+    ] },
+    { "id": "zoe", "nazov": "Zoe's family", "osoby": [
+      { "id": "ted", "meno": "Ted", "s": "m", "g": 1, "x": 12, "manzel": "jane" },
+      { "id": "jane", "meno": "Jane", "s": "f", "g": 1, "x": 28, "manzel": "ted" },
+      { "id": "bill", "meno": "Bill", "s": "m", "g": 1, "x": 58, "manzel": "sue" },
+      { "id": "sue", "meno": "Sue", "s": "f", "g": 1, "x": 74, "manzel": "bill" },
+      { "id": "lucy", "meno": "Lucy", "s": "f", "g": 2, "x": 8, "rodicia": ["ted", "jane"] },
+      { "id": "adam", "meno": "Adam", "s": "m", "g": 2, "x": 33, "rodicia": ["ted", "jane"], "manzel": "emma" },
+      { "id": "emma", "meno": "Emma", "s": "f", "g": 2, "x": 51, "rodicia": ["bill", "sue"], "manzel": "adam" },
+      { "id": "nick", "meno": "Nick", "s": "m", "g": 2, "x": 73, "rodicia": ["bill", "sue"], "manzel": "amy" },
+      { "id": "amy", "meno": "Amy", "s": "f", "g": 2, "x": 91, "manzel": "nick" },
+      { "id": "ben", "meno": "Ben", "s": "m", "g": 3, "x": 24, "rodicia": ["adam", "emma"], "vek": 14 },
+      { "id": "zoe", "meno": "Zoe", "s": "f", "g": 3, "x": 42, "rodicia": ["adam", "emma"], "vek": 11 },
+      { "id": "max", "meno": "Max", "s": "m", "g": 3, "x": 60, "rodicia": ["adam", "emma"], "vek": 9 },
+      { "id": "olivia", "meno": "Olivia", "s": "f", "g": 3, "x": 82, "rodicia": ["nick", "amy"], "vek": 6 }
+    ] },
+    { "id": "josh", "nazov": "Josh's family", "osoby": [
+      { "id": "harry", "meno": "Harry", "s": "m", "g": 1, "x": 9, "manzel": "ruth" },
+      { "id": "ruth", "meno": "Ruth", "s": "f", "g": 1, "x": 26, "manzel": "harry" },
+      { "id": "joe", "meno": "Joe", "s": "m", "g": 1, "x": 56, "manzel": "mary" },
+      { "id": "mary", "meno": "Mary", "s": "f", "g": 1, "x": 72, "manzel": "joe" },
+      { "id": "dan", "meno": "Dan", "s": "m", "g": 2, "x": 17, "rodicia": ["harry", "ruth"], "manzel": "kim" },
+      { "id": "kim", "meno": "Kim", "s": "f", "g": 2, "x": 35, "rodicia": ["joe", "mary"], "manzel": "dan" },
+      { "id": "alex", "meno": "Alex", "s": "m", "g": 2, "x": 56, "rodicia": ["joe", "mary"] },
+      { "id": "tina", "meno": "Tina", "s": "f", "g": 2, "x": 74, "rodicia": ["joe", "mary"], "manzel": "rob" },
+      { "id": "rob", "meno": "Rob", "s": "m", "g": 2, "x": 92, "manzel": "tina" },
+      { "id": "eva", "meno": "Eva", "s": "f", "g": 3, "x": 15, "rodicia": ["dan", "kim"], "vek": 16 },
+      { "id": "josh", "meno": "Josh", "s": "m", "g": 3, "x": 35, "rodicia": ["dan", "kim"], "vek": 12 },
+      { "id": "finn", "meno": "Finn", "s": "m", "g": 3, "x": 74, "rodicia": ["tina", "rob"], "vek": 7 },
+      { "id": "ruby", "meno": "Ruby", "s": "f", "g": 3, "x": 92, "rodicia": ["tina", "rob"], "vek": 4 }
+    ] }
+  ]
+}

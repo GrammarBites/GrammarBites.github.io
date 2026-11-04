@@ -408,6 +408,32 @@ a.stitok:hover { border-color: currentColor; }
 .trener__chyby:empty { display: none; }
 @media (max-width: 560px) { .trener__koniec { flex-direction: column; text-align: center; } .trener__koniec .trener__tlacidla { justify-content: center; } }
 
+/* Tréner rodostromu */
+.rs-karta { gap: 8px; }
+.rs-nazov { font-family: var(--hand); font-size: 1.3rem; color: var(--ink); }
+.rs-strom { width: calc(100% + 24px); margin: 0 -12px; max-width: 660px; height: auto; display: block; touch-action: manipulation; }
+.rs-ciara { stroke: var(--ink-2); stroke-width: 3; stroke-linecap: round; }
+.rs-kruh { fill: transparent; stroke: transparent; stroke-width: 4; }
+.rs-osoba--m .rs-telo { fill: #3f74b5; }
+.rs-osoba--f .rs-telo { fill: #e06c95; }
+.rs-meno { text-anchor: middle; font-family: var(--text); font-weight: 800; font-size: 25px; fill: var(--ink); }
+.rs-vek { text-anchor: middle; font-family: var(--text); font-weight: 700; font-size: 19px; fill: var(--ink-2); }
+.rs-osoba.je-cesta .rs-kruh { fill: var(--yellow-wash); stroke: var(--yellow); }
+.rs-osoba.je-a .rs-kruh { fill: var(--terra-wash); stroke: var(--terra); }
+.rs-osoba.je-b .rs-kruh { fill: var(--blue-wash); stroke: var(--blue); }
+.rs-osoba.je-ok .rs-kruh { fill: var(--green-wash); stroke: var(--green); }
+.rs-osoba.je-zle .rs-kruh { fill: var(--terra-wash); stroke: #8f3522; stroke-dasharray: 6 4; }
+.rs-strom--klik .rs-osoba { cursor: pointer; }
+.rs-strom--klik .rs-osoba:hover .rs-kruh { stroke: var(--ink); }
+.rs-otazka { font-size: 1.3rem; font-weight: 800; }
+.rs-otazka .rs-a { color: var(--terra); }
+.rs-otazka .rs-b { color: var(--blue); }
+.rs-moznosti { justify-content: center; }
+.rs-moznost { font-size: 1.05rem; padding: 8px 16px; }
+.rs-moznost:disabled { cursor: default; opacity: .75; }
+.rs-moznost--ok, .rs-moznost--ok:disabled { background: var(--green-wash); border-color: var(--green); color: var(--green); opacity: 1; }
+.rs-moznost--zle, .rs-moznost--zle:disabled { background: var(--terra-wash); border-color: var(--terra); color: #8f3522; opacity: 1; }
+
 .zdielaj { display: grid; gap: 8px; padding: 16px 20px; background: var(--blue-wash); border: 2px dashed var(--blue); border-radius: 14px; }
 .zdielaj p { font-weight: 800; }
 .zdielaj__riadok { display: flex; flex-wrap: wrap; gap: 10px; }

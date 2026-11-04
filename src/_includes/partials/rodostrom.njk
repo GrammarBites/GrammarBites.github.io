@@ -1,0 +1,34 @@
+{# Tréner rodostromu. V lekcii: rodostrom: true (dáta src/_data/rodostromy.json) #}
+<section class="blok blok--trener" aria-labelledby="h-rodostrom">
+  <h2 id="h-rodostrom" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Tréner: rodostrom</h2>
+  <p class="blok__uvod">Odpovedz na 10 otázok o rodine v rodostrome. Modrá postavička je muž, ružová žena. Vodorovná čiara spája manželov, zvislá vedie od rodičov k deťom. Každé kolo je nová rodina.</p>
+  <div class="trener rodostrom" data-rodostrom>
+    <fieldset class="trener__vyber">
+      <legend>Čo chceš trénovať?</legend>
+      <div class="trener__cipy" data-cipy></div>
+    </fieldset>
+    <div class="trener__karta rs-karta" data-karta>
+      <div class="trener__hore">
+        <span class="trener__stav" data-stav>1 / 10</span>
+        <span class="rs-nazov" lang="en" data-nazov></span>
+        <span class="trener__seria" data-skore>body 0</span>
+      </div>
+      <svg class="rs-strom" data-strom role="img" aria-label="Rodostrom"></svg>
+      <p class="rs-otazka" lang="en" data-otazka></p>
+      <p class="trener__vyznam" data-pokyn></p>
+      <div class="trener__cipy rs-moznosti" data-moznosti></div>
+      <p class="trener__spatna" data-spatna role="status" aria-live="polite" hidden></p>
+      <button type="button" class="tlacidlo" data-dalej hidden>Ďalšia otázka →</button>
+    </div>
+    <div class="trener__koniec" data-koniec hidden>
+      <img src="/assets/img/postavy/koza-oslavuje.png" alt="" width="100" data-obr-dobre hidden>
+      <img src="/assets/img/postavy/koza-premysla.png" alt="" width="100" data-obr-zle hidden>
+      <div>
+        <p class="trener__vysledok" data-vysledok></p>
+        <div class="trener__tlacidla"><button type="button" class="tlacidlo" data-dalsie>Ďalšie kolo – iná rodina</button></div>
+      </div>
+    </div>
+  </div>
+  <script type="application/json" id="data-rodostrom">{{ rodostromy | json | safe }}</script>
+  <script src="/assets/js/rodostrom.js" defer></script>
+</section>

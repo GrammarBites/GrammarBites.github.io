@@ -1,48 +1,129 @@
 {
-  "_info": "Úlohy 'Napíš sám' pre lekcie. Kľúč = hodnota 'pisanie' v lekcii. gramatika = sada tipov v pisanie.js. typ: '+' oznamovacia, '-' zápor, '?' otázka, '' ľubovoľná.",
+  "_info": "Úlohy 'Napíš sám' pre lekcie. Kľúč = hodnota 'pisanie' v lekcii. poskladaj = vety z kartičiek (navyse = kartička navyše), kocka = osoby/slovesá/časy/typy viet. gramatika = sada vysvetlení v pisanie.js.",
   "will": {
     "gramatika": "will",
     "poskladaj": [
-      { "veta": "I'll help you with your homework .", "navyse": ["wills"] },
-      { "veta": "It won't rain tomorrow .", "navyse": ["don't"] },
-      { "veta": "Will you come to my party ?", "navyse": ["Do"] },
-      { "veta": "I think I'll be a doctor .", "navyse": ["to"] },
-      { "veta": "She won't go to school on Saturday .", "navyse": ["goes"] },
-      { "veta": "Where will you live in ten years ?", "navyse": ["do"] },
-      { "veta": "I'll open the window .", "navyse": ["opens"] },
-      { "veta": "My brother will be twelve next year .", "navyse": ["is"] },
-      { "veta": "We won't watch TV tonight .", "navyse": ["not"] },
-      { "veta": "Will robots teach us in the future ?", "navyse": ["teaches"] }
-    ],
-    "dokonci": [
-      { "situacia": "Je zima a okno je otvorené. Rozhodni sa, čo urobíš.", "zaciatok": "It's cold. I'll", "typ": "+", "vzory": ["It's cold. I'll close the window.", "It's cold. I'll put on my jumper."] },
-      { "situacia": "Zvoní telefón. Rozhodni sa hneď teraz.", "zaciatok": "The phone is ringing. I'll", "typ": "+", "vzory": ["The phone is ringing. I'll answer it."] },
-      { "situacia": "Kamarát nemá desiatu. Ponúkni mu pomoc.", "zaciatok": "You haven't got any lunch? I'll", "typ": "+", "vzory": ["You haven't got any lunch? I'll give you my sandwich.", "You haven't got any lunch? I'll share my apple with you."] },
-      { "situacia": "Aké bude zajtra počasie? Napíš predpoveď.", "zaciatok": "I think tomorrow it will", "typ": "+", "vzory": ["I think tomorrow it will be sunny.", "I think tomorrow it will rain."] },
-      { "situacia": "Čím budeš o 15 rokov?", "zaciatok": "In 15 years I think I'll", "typ": "+", "vzory": ["In 15 years I think I'll be a vet.", "In 15 years I think I'll live in London."] },
-      { "situacia": "Si veľmi unavený. Čo dnes večer neurobíš?", "zaciatok": "I'm really tired. I won't", "typ": "-", "vzory": ["I'm really tired. I won't go to the party.", "I'm really tired. I won't play computer games tonight."] },
-      { "situacia": "Opýtaj sa kamarátky, či príde na tvoju oslavu.", "zaciatok": "Will you", "typ": "?", "vzory": ["Will you come to my party?", "Will you come to my birthday party on Saturday?"] },
-      { "situacia": "Babka nesie ťažkú tašku. Ponúkni pomoc.", "zaciatok": "That bag looks heavy. I'll", "typ": "+", "vzory": ["That bag looks heavy. I'll carry it for you.", "That bag looks heavy. I'll help you."] },
-      { "situacia": "Aký bude svet v roku 2050?", "zaciatok": "In 2050 people will", "typ": "+", "vzory": ["In 2050 people will live on Mars.", "In 2050 people will have flying cars."] },
-      { "situacia": "Opýtaj sa kamaráta, kde bude bývať, keď bude dospelý.", "zaciatok": "Where will you", "typ": "?", "vzory": ["Where will you live when you're older?", "Where will you work in the future?"] }
-    ],
-    "napis": [
-      { "situacia": "Kamarátka zabudla peračník. Ponúkni jej pomoc.", "typ": "+", "vzory": ["I'll lend you my pen.", "Don't worry, I'll give you a pencil."] },
-      { "situacia": "Čo podľa teba v roku 2100 už nebude existovať?", "typ": "-", "vzory": ["There won't be any books.", "People won't drive cars."] },
-      { "situacia": "Opýtaj sa učiteľa, či bude zajtra test.", "typ": "?", "vzory": ["Will we have a test tomorrow?", "Will there be a test tomorrow?"] },
-      { "situacia": "Mama varí a nestíha. Ponúkni sa, že niečo urobíš.", "typ": "+", "vzory": ["I'll wash the dishes.", "I'll set the table, Mum."] },
-      { "situacia": "Vonku leje. Čo dnes neurobíš?", "typ": "-", "vzory": ["I won't go to the park today.", "I won't ride my bike."] },
-      { "situacia": "Napíš predpoveď o svojom najlepšom kamarátovi o 10 rokov.", "typ": "+", "vzory": ["I think Tom will be a famous footballer.", "My best friend will live in Spain."] },
-      { "situacia": "Opýtaj sa kamaráta, čo bude robiť cez prázdniny.", "typ": "?", "vzory": ["What will you do in the summer holidays?", "Will you go to the sea in the summer?"] },
-      { "situacia": "Spolužiak nerozumie úlohe z matematiky. Ponúkni pomoc.", "typ": "+", "vzory": ["I'll explain it to you.", "I'll help you with it."] },
-      { "situacia": "Napíš, čo tento víkend určite nebudeš robiť.", "typ": "-", "vzory": ["I won't do my homework on Saturday.", "I won't get up early this weekend."] },
-      { "situacia": "Napíš svoj názor: vyhrá zajtra tvoj obľúbený tím?", "typ": "", "vzory": ["I think my team will win tomorrow.", "I don't think Slovakia will win."] }
+      {
+        "veta": "I'll help you with your homework .",
+        "navyse": [
+          "wills"
+        ]
+      },
+      {
+        "veta": "It won't rain tomorrow .",
+        "navyse": [
+          "don't"
+        ]
+      },
+      {
+        "veta": "Will you come to my party ?",
+        "navyse": [
+          "Do"
+        ]
+      },
+      {
+        "veta": "I think I'll be a doctor .",
+        "navyse": [
+          "to"
+        ]
+      },
+      {
+        "veta": "She won't go to school on Saturday .",
+        "navyse": [
+          "goes"
+        ]
+      },
+      {
+        "veta": "Where will you live in ten years ?",
+        "navyse": [
+          "do"
+        ]
+      },
+      {
+        "veta": "I'll open the window .",
+        "navyse": [
+          "opens"
+        ]
+      },
+      {
+        "veta": "My brother will be twelve next year .",
+        "navyse": [
+          "is"
+        ]
+      },
+      {
+        "veta": "We won't watch TV tonight .",
+        "navyse": [
+          "not"
+        ]
+      },
+      {
+        "veta": "Will robots teach us in the future ?",
+        "navyse": [
+          "teaches"
+        ]
+      }
     ],
     "kocka": {
-      "osoby": [["I", "I"], ["You", "you"], ["My mum", "my mum"], ["Tom", "Tom"], ["We", "we"], ["They", "they"], ["My best friend", "my best friend"], ["The teacher", "the teacher"]],
-      "slovesa": ["play football", "go to the cinema", "be famous", "live in London", "visit grandma", "have a pizza", "win the match", "learn Spanish", "buy a new phone", "watch a film"],
-      "casy": ["tomorrow", "next week", "in 2050", "tonight", "next year", "on Saturday"],
-      "typy": ["+", "-", "?"]
+      "osoby": [
+        [
+          "I",
+          "I"
+        ],
+        [
+          "You",
+          "you"
+        ],
+        [
+          "My mum",
+          "my mum"
+        ],
+        [
+          "Tom",
+          "Tom"
+        ],
+        [
+          "We",
+          "we"
+        ],
+        [
+          "They",
+          "they"
+        ],
+        [
+          "My best friend",
+          "my best friend"
+        ],
+        [
+          "The teacher",
+          "the teacher"
+        ]
+      ],
+      "slovesa": [
+        "play football",
+        "go to the cinema",
+        "be famous",
+        "live in London",
+        "visit grandma",
+        "have a pizza",
+        "win the match",
+        "learn Spanish",
+        "buy a new phone",
+        "watch a film"
+      ],
+      "casy": [
+        "tomorrow",
+        "next week",
+        "in 2050",
+        "tonight",
+        "next year",
+        "on Saturday"
+      ],
+      "typy": [
+        "+",
+        "-",
+        "?"
+      ]
     }
   }
 }

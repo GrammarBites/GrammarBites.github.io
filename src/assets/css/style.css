@@ -457,7 +457,13 @@ a.stitok:hover { border-color: currentColor; }
 .pis-karta--vo-vete { background: var(--blue-wash); border-color: var(--blue); }
 .pis-tipy, .pis-vzory { padding: 10px 16px; border-radius: 12px; line-height: 1.55; }
 .pis-tipy { background: var(--yellow-wash); border: 2px solid var(--yellow); }
-.pis-tipy--ok { background: var(--green-wash); border-color: var(--green); color: var(--green); }
+.pis-tipy--ok { background: var(--green-wash); border-color: var(--green); }
+.pis-tipy--zle { background: var(--terra-wash); border-color: var(--terra); }
+.pis-verdikt { font-size: 1.25rem; font-weight: 800; }
+.pis-tipy--ok .pis-verdikt { color: var(--green); }
+.pis-tipy--zle .pis-verdikt { color: #8f3522; }
+.pis-riesenie { margin-top: 6px; padding-top: 6px; border-top: 1.5px dashed var(--line); }
+.pis-riesenie b { font-size: 1.15rem; }
 .pis-tipy ul, .pis-vzory ul { margin: 6px 0; padding-left: 1.2em; }
 .pis-tipy s { color: var(--terra); }
 .pis-vzory { background: var(--blue-wash); border: 2px solid var(--blue); }

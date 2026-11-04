@@ -71,6 +71,12 @@ export default function (eleventyConfig) {
     const rozsah = cisla.length > 1 ? `${cisla[0]}–${cisla[cisla.length - 1]}` : cisla[0];
     return `${nazov} · ${intro}Unit ${rozsah}`;
   });
+  // nepravidelné slovesá z danej učebnice (tréner), bez prázdnych rodín
+  eleventyConfig.addFilter("slovesaPreKnihu", (rodiny, kniha) =>
+    (rodiny || [])
+      .map((r) => ({ id: r.id, nazov: r.nazov, vzor: r.vzor, slovesa: r.slovesa.filter((s) => !kniha || (s[4] || []).includes(kniha)).map((s) => s.slice(0, 4)) }))
+      .filter((r) => r.slovesa.length)
+  );
   eleventyConfig.addFilter("isoDatum", (d) => new Date(d).toISOString().slice(0, 10));
   eleventyConfig.addFilter("json", (v) => JSON.stringify(v).replace(/</g, "\\u003c"));
   eleventyConfig.addFilter("rocnikyText", (r = []) =>

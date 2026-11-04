@@ -14,6 +14,7 @@ src/
   _data/zoznamRocnikov.json        ← ročník → učebnice a unity (podľa toho sa lekcii určí ročník)
   _data/zoznamTem.json             ← gramatické témy
   _data/slovnik.json               ← SK ↔ EN výrazy pre vyhľadávanie
+  _data/nepravidelneSlovesa.json   ← nepravidelné slovesá po rodinách (pre tréner, učebnica = posledné pole)
   _data/site.js                    ← nastavenia (adresa webu, kľúč kontaktného formulára)
   assets/img/postavy/              ← koza a učiteľ (PNG s priehľadným pozadím)
 sablona/index.md                   ← šablóna novej lekcie s vysvetlivkami

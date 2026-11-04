@@ -78,9 +78,11 @@ skripty: ["lekcia.js"]
   </div>
 </section>
 
+{% if trener %}{% set pismeno = "D" %}{% include "partials/trener.njk" %}{% endif %}
+
 {% if test and test.length %}
 <section class="blok blok--test" aria-labelledby="h-test">
-  <h2 id="h-test" class="blok__nadpis"><span class="blok__pismeno">D</span> Mini test</h2>
+  <h2 id="h-test" class="blok__nadpis"><span class="blok__pismeno">{{ "E" if trener else "D" }}</span> Mini test</h2>
   <p class="blok__uvod">{{ test.length }} {% if test.length >= 5 %}otázok{% else %}otázky{% endif %} na precvičenie. Nič sa neukladá ani nehodnotí – skúšaj, koľkokrát chceš.</p>
   <form class="test" data-test novalidate>
     {% for q in test %}

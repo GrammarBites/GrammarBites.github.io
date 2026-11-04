@@ -1,0 +1,48 @@
+{# Tréner nepravidelných slovies. V lekcii: trener: project-2 (zoznam slovies z danej učebnice) #}
+{% set rodinyTrenera = nepravidelneSlovesa.rodiny | slovesaPreKnihu(trener) %}
+<section class="blok blok--trener" aria-labelledby="h-trener">
+  <h2 id="h-trener" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Tréner</h2>
+  <p class="blok__uvod">Napíš minulý tvar slovesa. Kolo má 10 slovies, chyby sa ti vrátia na koniec kola. Môžeš trénovať všetky slovesá alebo len jednu rodinu.</p>
+  <div class="trener" data-trener="{{ trener }}" data-lekcia="{{ page.fileSlug }}">
+    <fieldset class="trener__vyber">
+      <legend>Čo chceš trénovať?</legend>
+      <div class="trener__cipy" data-cipy></div>
+    </fieldset>
+
+    <div class="trener__karta" data-karta>
+      <div class="trener__hore">
+        <span class="trener__stav" data-stav>1 / 10</span>
+        <span class="trener__seria" data-seria title="Správne odpovede za sebou">séria 0</span>
+      </div>
+      <p class="trener__rodina" data-rodina hidden></p>
+      <p class="trener__sloveso" lang="en" data-sloveso>…</p>
+      <p class="trener__vyznam" data-vyznam></p>
+      <form class="trener__form" data-form autocomplete="off">
+        <label for="trener-vstup-{{ trener }}" class="sr">Minulý tvar</label>
+        <input id="trener-vstup-{{ trener }}" class="trener__vstup" data-vstup type="text" lang="en" placeholder="minulý tvar…"
+          autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="done">
+        <button type="submit" class="tlacidlo" data-over>Skontrolovať</button>
+      </form>
+      <p class="trener__spatna" data-spatna role="status" aria-live="polite" hidden></p>
+      <div class="trener__tlacidla" data-pomoc>
+        <button type="button" class="tlacidlo tlacidlo--tiche tlacidlo--male" data-napoveda>Nápoveda</button>
+        <button type="button" class="tlacidlo tlacidlo--tiche tlacidlo--male" data-neviem>Neviem</button>
+      </div>
+    </div>
+
+    <div class="trener__koniec" data-koniec hidden>
+      <img src="/assets/img/postavy/koza-oslavuje.png" alt="" width="100" data-obr-dobre hidden>
+      <img src="/assets/img/postavy/koza-premysla.png" alt="" width="100" data-obr-zle hidden>
+      <div>
+        <p class="trener__vysledok" data-vysledok></p>
+        <p class="trener__chyby" data-zoznam-chyb lang="en"></p>
+        <div class="trener__tlacidla">
+          <button type="button" class="tlacidlo" data-dalsie>Ďalšie kolo</button>
+          <button type="button" class="tlacidlo tlacidlo--tiche" data-len-chyby hidden>Precvič moje chyby</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="application/json" id="data-trener-{{ trener }}">{{ rodinyTrenera | json | safe }}</script>
+  <script src="/assets/js/trener.js" defer></script>
+</section>

@@ -25,6 +25,7 @@ poster: poster.jpg                     # obrázok pred spustením videa
 nahlad: nahlad.jpg                     # obrázok na kartu (nepovinné)
 infografika: infografika.jpg
 infografikaPdf: infografika.pdf
+# trener: project-2                   # tréner nepravidelných slovies zo zoznamu danej učebnice (src/_data/nepravidelneSlovesa.json)
 
 koza: koza-zvedava                     # póza kozy: koza-zvedava, koza-premysla, koza-cita,
                                        # koza-oslavuje, koza-nechape, koza-zmurka

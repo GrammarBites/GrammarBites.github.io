@@ -69,7 +69,7 @@ Tvar je **rovnaký pre všetky osoby**: *I went, she went, they went*.
 </tbody>
 </table>
 
-Nepravidelné slovesá sa treba naučiť naspamäť. Pomôže zoznam na konci učebnice alebo pracovného zošita.
+Nepravidelné slovesá sa treba naučiť naspamäť. Ľahšie to pôjde po rodinách – pozri lekciu [Past simple: irregular verbs](/lekcie/past-simple-irregular/), kde si ich precvičíš aj v tréneri.
 
 ## Zápor – didn't
 

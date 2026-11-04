@@ -3,10 +3,11 @@ title: "Past simple: be"
 nazovSk: Minulý čas slovesa byť – was / were
 popis: "I was at home yesterday. We weren't at school. Was it fun? – Yes, it was. Minulý čas slovesa be: veta, zápor, otázka aj there was / there were."
 date: 2026-11-03T16:30:00
-rocniky: [5]
+rocniky: [5, 6]
 strana: 33
 ucebnice:
   - { id: project-2, unit: "3" }
+  - { id: project-3, unit: "1" }
 temy: [minule-casy]
 klucoveSlova: [past simple, be, was, were, wasn't, weren't, minulý čas, byť, bol, boli, there was, there were, yesterday, last week, otázka, zápor, krátke odpovede, 3A, holidays]
 video: video.mp4

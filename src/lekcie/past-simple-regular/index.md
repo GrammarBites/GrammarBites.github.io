@@ -3,10 +3,11 @@ title: "Past simple: regular verbs"
 nazovSk: Minulý čas pravidelných slovies – pravidlá tvorenia -ed
 popis: "walk → walked, like → liked, stop → stopped, study → studied. Päť pravidiel, ako pridať -ed, a ako koncovku vysloviť: [t], [d] alebo [id]."
 date: 2026-11-03T16:45:00
-rocniky: [5]
+rocniky: [5, 6]
 strana: 34
 ucebnice:
   - { id: project-2, unit: "3" }
+  - { id: project-3, unit: "1" }
 temy: [minule-casy]
 klucoveSlova: [past simple, regular verbs, pravidelné slovesá, minulý čas, ed, -ed, spelling, pravopis, zdvojenie, ied, výslovnosť, pronunciation, walked, played, stopped, studied, 3B]
 video: video.mp4

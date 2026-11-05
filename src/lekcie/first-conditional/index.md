@@ -74,6 +74,8 @@ Prvú podmienkovú vetu (first conditional) používame na veci, ktoré sa v bud
 - **Za *if* nikdy nedávaj *will*.** Hoci po slovensky povieme „ak *bude* pršať“, v angličtine je časť s *if* v prítomnom čase: *If it rains…*
 - To isté platí aj po **when, as soon as, before, after**: *I'll call you **when** I **arrive**.*
 
+Keď si niečo len predstavujeme (*If I won, I'd…*), použijeme [second conditional](/lekcie/second-conditional/).
+
 ## Časté chyby
 
 <table class="chyby">

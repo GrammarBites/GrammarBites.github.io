@@ -1,6 +1,6 @@
 ---
-title: "Present perfect: just, for, since"
-nazovSk: Predprítomný čas – just (práve), for (ako dlho) a since (odkedy)
+title: "Present perfect: just, recently, yet, for, since"
+nazovSk: Predprítomný čas – just (práve), recently, yet, for (ako dlho) a since (odkedy)
 popis: "I've just woken up. I've lived here for five years. She has had her dog since 2022. Čo sa práve stalo a ako dlho niečo trvá."
 date: 2026-11-05T11:30:00
 rocniky: [7, 8]
@@ -59,6 +59,12 @@ Keď sa niečo stalo **pred chvíľou**, použijeme present perfect a slovo **ju
 - *She has **just** broken a glass.* – Práve rozbila pohár.
 - *Have you **just** arrived?* – Práve si prišiel?
 
+*Just* stojí rovnako ako *ever* a *never* – **medzi** *have / has* a 3. tvarom. Pozri lekciu [Present perfect: questions, ever and never](/lekcie/present-perfect-questions/).
+
+## recently a yet
+
+K *just* patria ešte dve slová, ktoré tiež hovoria o nedávnej minulosti.
+
 **recently** (v poslednom čase, nedávno) ide väčšinou na koniec vety:
 
 - *I've seen a good film **recently**.* – Nedávno som videl dobrý film.
@@ -69,7 +75,6 @@ Keď sa niečo stalo **pred chvíľou**, použijeme present perfect a slovo **ju
 - *Has the bus arrived **yet**?* – Už prišiel autobus?
 - *The bus hasn't arrived **yet**.* – Autobus ešte neprišiel.
 
-*Just* stojí rovnako ako *ever* a *never* – **medzi** *have / has* a 3. tvarom. Pozri lekciu [Present perfect: questions, ever and never](/lekcie/present-perfect-questions/).
 
 ## Ako dlho? for a since
 

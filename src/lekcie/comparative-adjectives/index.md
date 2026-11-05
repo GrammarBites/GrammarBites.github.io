@@ -80,6 +80,8 @@ Pravidlá sú podobné ako pri minulom čase s *-ed* – pozri [Past simple: reg
 - *A bike is cheaper than a car.* – Bicykel je lacnejší ako auto.
 - *This film is better than the book.* – Tento film je lepší ako kniha.
 
+Ako povedať, že dve veci sú **rovnaké** (*as tall as*), nájdeš v lekcii [as … as](/lekcie/as-as/).
+
 ## Časté chyby
 
 <table class="chyby">

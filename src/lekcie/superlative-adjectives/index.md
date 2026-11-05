@@ -99,6 +99,8 @@ Za tretím stupňom často nasleduje **in** + miesto alebo skupina:
 - *It's the longest river **in** the world.* – Je to najdlhšia rieka na svete.
 - *She's the best player **in** the team.* – Je najlepšia hráčka v tíme.
 
+Ako povedať, že dve veci sú **rovnaké** (*as tall as*), nájdeš v lekcii [as … as](/lekcie/as-as/).
+
 ## Časté chyby
 
 <table class="chyby">

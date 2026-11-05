@@ -55,6 +55,8 @@ Pri dátumoch používame **radové číslovky** (prvý, druhý, tretí…). Vä
 </tbody>
 </table>
 
+Podrobnejšie (aj pravopis a kde ešte ich použijeme) v lekcii [Ordinal numbers](/lekcie/ordinal-numbers/).
+
 ## Ako napíšeme a povieme dátum
 
 <div class="pravidla">

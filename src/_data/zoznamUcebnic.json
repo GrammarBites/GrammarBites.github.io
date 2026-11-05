@@ -62,6 +62,7 @@
     "farba": "terra",
     "popis": "Project 4th edition, úroveň 5.",
     "units": [
+      { "id": "intro", "nazov": "Introduction", "gramatika": ["Present simple", "Present continuous"] },
       { "id": "1", "nazov": "Problems", "gramatika": ["Past simple", "Past continuous", "Present perfect", "Articles"] },
       { "id": "2", "nazov": "The future", "gramatika": ["Talking about the future", "First conditional", "Time expressions"] },
       { "id": "3", "nazov": "Risks", "gramatika": ["would", "Second conditional", "so … that", "Reflexive pronouns"] },

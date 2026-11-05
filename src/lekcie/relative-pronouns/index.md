@@ -84,24 +84,42 @@ A hodí sa aj na **vysvetľovanie slov** v angličtine, keď si nespomenieš na 
 - *It's a person **who** works in a hospital.* → a doctor / a nurse
 - *It's a thing **which** you use to open doors.* → a key
 
-## Spájame dve vety (relative clauses)
+## Relative clause – spájame dve vety do jednej
 
-Dve krátke vety môžeme spojiť do jednej. Slovo, ktoré sa opakuje (*he, she, it, they*), nahradíme slovom **who / which / that**.
+Keď spojíme dve vety pomocou *who / which / that*, vznikne **relative clause** (vzťažná vedľajšia veta). Je to tá časť vety, ktorá začína slovom *who / which / that* a hovorí nám viac o niečom z prvej vety.
+
+- *This is the cake **that I made**.* – časť *that I made* je relative clause.
+
+### Ako na to – v troch krokoch
+
+<div class="vzorec">
+<span class="vzorec__cast vzorec__cast--if">This is the cake. I made <b>it</b>.</span>
+</div>
+
+1. **Nájdi slovo, ktoré sa opakuje.** *the cake* a *it* je tá istá vec.
+2. **Nahraď ho slovom who / which / that** a daj ho na **začiatok druhej vety**: *it → that*.
+3. **Pôvodné slovo vypadne.** V relative clause je opakovaná vec **len raz** – už ju zastupuje *that*. Preto tam *it* znova nepíšeme.
+
+<div class="vzorec">
+<span class="vzorec__cast vzorec__cast--will">This is the cake <b>that I made</b>.</span>
+</div>
+
+Toto platí, či je opakované slovo **podmet** (kto robí) alebo **predmet** (s čím sa niečo robí):
 
 <table class="chyby tvary">
-<thead><tr><th scope="col">dve vety</th><th scope="col">jedna veta</th></tr></thead>
+<thead><tr><th scope="col">dve vety</th><th scope="col">jedna veta s relative clause</th><th scope="col">čo vypadlo</th></tr></thead>
 <tbody>
-<tr><td>This is my uncle. <s>He</s> lives in Canada.</td><td>This is my uncle <b>who</b> lives in Canada.</td></tr>
-<tr><td>I've got a bike. <s>It</s> is very fast.</td><td>I've got a bike <b>which</b> is very fast.</td></tr>
-<tr><td>This is the cake. I made <s>it</s>.</td><td>This is the cake <b>that</b> I made.</td></tr>
-<tr><td>These are my friends. I met <s>them</s> at camp.</td><td>These are my friends <b>who</b> I met at camp.</td></tr>
+<tr><td>This is my uncle. <s>He</s> lives in Canada.</td><td>This is my uncle <b>who lives in Canada</b>.</td><td><i>he</i> – podmet</td></tr>
+<tr><td>I've got a bike. <s>It</s> is very fast.</td><td>I've got a bike <b>which is very fast</b>.</td><td><i>it</i> – podmet</td></tr>
+<tr><td>This is the cake. I made <s>it</s>.</td><td>This is the cake <b>that I made</b>.</td><td><i>it</i> – predmet</td></tr>
+<tr><td>These are my friends. I met <s>them</s> at camp.</td><td>These are my friends <b>who I met at camp</b>.</td><td><i>them</i> – predmet</td></tr>
 </tbody>
 </table>
 
 - *This is my uncle **who** lives in Canada.* – To je môj strýko, ktorý žije v Kanade.
 - *This is the cake **that** I made.* – Toto je koláč, ktorý som upiekol.
 
-**Dôležité:** pôvodné *he / it / them* už do novej vety **nepíšeme** – ich miesto zaujalo *who / which / that*.
+Pomôcka zo slovenčiny: povieme *koláč, ktorý som upiekol* – nie *koláč, ktorý som ho upiekol*. V angličtine je to rovnako: *the cake that I made* – nie ~~the cake that I made it~~.
 
 **Bonus:** keď za *that / which / who* nasleduje ďalší podmet (*I, you, we…*), môžeme ho aj vynechať: *This is the cake (that) I made.* · *The film (which) we saw was funny.* Keď za ním nasleduje sloveso, vynechať ho nemôžeme: *my uncle **who** lives in Canada*.
 

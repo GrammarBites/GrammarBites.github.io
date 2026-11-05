@@ -3,12 +3,13 @@ title: Present simple × present continuous
 nazovSk: Porovnanie prítomných časov
 popis: "Pravidelne alebo práve teraz? I play football every Saturday. × I'm doing my homework now. Signálne slová, zápor, otázka a slovesá bez -ing."
 date: 2026-11-03T15:00:00
-rocniky: [5]
+rocniky: [5, 7]
 strana: 25
 ucebnice:
   - { id: project-2, unit: "2" }
+  - { id: project-3, unit: "intro" }
 temy: [pritomne-casy]
-klucoveSlova: [present simple, present continuous, porovnanie, prítomné časy, prítomný čas, every day, now, at the moment, usually, today, signálne slová, do, does, am, is, are, ing, 2C, like, know, want]
+klucoveSlova: [regularly, in this picture, Introduction, present simple, present continuous, porovnanie, prítomné časy, prítomný čas, every day, now, at the moment, usually, today, signálne slová, do, does, am, is, are, ing, 2C, like, know, want]
 video: video.mp4
 poster: poster.jpg
 infografika: infografika.jpg
@@ -65,6 +66,7 @@ V slovenčine máme jeden prítomný čas: *hrám*. V angličtine máme dva a mu
 <tr><td>on Mondays, at the weekend</td><td>at the moment</td></tr>
 <tr><td>always, usually, often, sometimes, never</td><td>today</td></tr>
 <tr><td>in the morning, after school</td><td>Look! Listen! Shh!</td></tr>
+<tr><td>regularly</td><td>in this picture</td></tr>
 </tbody>
 </table>
 

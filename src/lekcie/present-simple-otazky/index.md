@@ -3,10 +3,11 @@ title: Present simple – questions
 nazovSk: Prítomný jednoduchý čas – otázky a krátke odpovede
 popis: "Ako sa opýtať na to, čo niekto robí pravidelne: Do you live in Martin? – Yes, I do. Where does she live? What time do you get up?"
 date: 2026-11-02T23:10:00
-rocniky: [5]
+rocniky: [5, 7]
 strana: 13
 ucebnice:
   - { id: project-2, unit: "1" }
+  - { id: project-3, unit: "intro" }
 temy: [pritomne-casy, otazky]
 klucoveSlova: [do, does, otázky, questions, short answers, krátke odpovede, yes no questions, where, when, what time, how, 1C, rozhovor, interview]
 video: video.mp4

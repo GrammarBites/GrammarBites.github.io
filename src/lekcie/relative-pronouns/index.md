@@ -1,14 +1,14 @@
 ---
-title: "Relative pronouns: who, which, that"
-nazovSk: Vzťažné zámená – ktorý, ktorá, ktoré
-popis: "A vet is a person who helps animals. A fridge is a machine which keeps food cold. The girl that sits next to me is Lucia. Who pre ľudí, which pre veci, that pre oboje."
+title: "Relative pronouns and clauses: who, which, that"
+nazovSk: Vzťažné zámená a vedľajšie vety – ktorý, ktorá, ktoré
+popis: "A vet is a person who helps animals. A fridge is a machine which keeps food cold. The girl that sits next to me is Lucia. Who pre ľudí, which pre veci, that pre oboje – a ako spojiť dve vety do jednej."
 date: 2026-11-05T16:30:00
 rocniky: [8]
 strana: 33
 ucebnice:
   - { id: project-4, unit: "3" }
 temy: [ostatne]
-klucoveSlova: [relative pronouns, relative clauses, vzťažné zámená, vedľajšie vety, who, which, that, where, ktorý, ktorá, ktoré, kde, definície, 3A]
+klucoveSlova: [spájanie viet, combine sentences, 3B, relative pronouns, relative clauses, vzťažné zámená, vedľajšie vety, who, which, that, where, ktorý, ktorá, ktoré, kde, definície, 3A]
 video: video.mp4
 poster: poster.jpg
 infografika: infografika.jpg
@@ -35,6 +35,10 @@ test:
     moznosti: ["The boy who he lives next door is funny.", "The boy who lives next door is funny.", "The boy which lives next door is funny."]
     spravna: 1
     vysvetlenie: "Who už zastupuje podmet – žiadne ďalšie he. A pri človeku je who, nie which."
+  - otazka: "Join the sentences: This is my bag. I bought it yesterday."
+    moznosti: ["This is my bag that I bought it yesterday.", "This is my bag that I bought yesterday.", "This is my bag who I bought yesterday."]
+    spravna: 1
+    vysvetlenie: "It nahradilo that, preto ho už nepíšeme. Taška je vec → that / which, nie who."
   - otazka: "That's the park ___ we play football."
     moznosti: ["which", "who", "where"]
     spravna: 2
@@ -80,6 +84,27 @@ A hodí sa aj na **vysvetľovanie slov** v angličtine, keď si nespomenieš na 
 - *It's a person **who** works in a hospital.* → a doctor / a nurse
 - *It's a thing **which** you use to open doors.* → a key
 
+## Spájame dve vety (relative clauses)
+
+Dve krátke vety môžeme spojiť do jednej. Slovo, ktoré sa opakuje (*he, she, it, they*), nahradíme slovom **who / which / that**.
+
+<table class="chyby tvary">
+<thead><tr><th scope="col">dve vety</th><th scope="col">jedna veta</th></tr></thead>
+<tbody>
+<tr><td>This is my uncle. <s>He</s> lives in Canada.</td><td>This is my uncle <b>who</b> lives in Canada.</td></tr>
+<tr><td>I've got a bike. <s>It</s> is very fast.</td><td>I've got a bike <b>which</b> is very fast.</td></tr>
+<tr><td>This is the cake. I made <s>it</s>.</td><td>This is the cake <b>that</b> I made.</td></tr>
+<tr><td>These are my friends. I met <s>them</s> at camp.</td><td>These are my friends <b>who</b> I met at camp.</td></tr>
+</tbody>
+</table>
+
+- *This is my uncle **who** lives in Canada.* – To je môj strýko, ktorý žije v Kanade.
+- *This is the cake **that** I made.* – Toto je koláč, ktorý som upiekol.
+
+**Dôležité:** pôvodné *he / it / them* už do novej vety **nepíšeme** – ich miesto zaujalo *who / which / that*.
+
+**Bonus:** keď za *that / which / who* nasleduje ďalší podmet (*I, you, we…*), môžeme ho aj vynechať: *This is the cake (that) I made.* · *The film (which) we saw was funny.* Keď za ním nasleduje sloveso, vynechať ho nemôžeme: *my uncle **who** lives in Canada*.
+
 ## Pozor: žiadne ďalšie he / she / it
 
 *Who* a *which* už zastupujú podmet. Nedávaj za ne ďalšie zámeno:
@@ -94,6 +119,7 @@ A hodí sa aj na **vysvetľovanie slov** v angličtine, keď si nespomenieš na 
 <tbody>
 <tr><td>a man <s>which</s> helps</td><td>a man <b>who</b> helps</td></tr>
 <tr><td>a pen <s>who</s> writes well</td><td>a pen <b>which / that</b> writes well</td></tr>
+<tr><td>This is the cake that I made <s>it</s>.</td><td>This is the cake that I made.</td></tr>
 <tr><td>The girl who <s>she</s> sits next to me</td><td>The girl who sits next to me</td></tr>
 <tr><td>the book <s>what</s> I read</td><td>the book <b>which / that</b> I read</td></tr>
 <tr><td>the town <s>which</s> I was born</td><td>the town <b>where</b> I was born</td></tr>

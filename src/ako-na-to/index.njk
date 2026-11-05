@@ -1,0 +1,76 @@
+---
+layout: layouts/base.njk
+title: Ako na to?
+popis: "Krátky návod, čo všetko nájdeš na Grammar Bites: lekcie podľa ročníka a učebnice, videá, infografiky, výklad, mini testy, hľadanie a Zlaté pravidlá."
+bodyClass: stranka-navod
+skripty: ["lekcia.js"]
+permalink: /ako-na-to/
+---
+<nav class="omrvinky" aria-label="Kde sa nachádzaš"><a href="/">Domov</a> <span aria-hidden="true">/</span> <span aria-current="page">Ako na to?</span></nav>
+
+<header class="lekcia-hlava" data-lekcia="ako-na-to">
+  <div class="lekcia-hlava__text">
+    <p class="nadnadpis">Návod</p>
+    <h1 class="lekcia-hlava__nadpis">Ako na Grammar Bites?</h1>
+    <p class="lekcia-hlava__popis">Za minútu zistíš, kde nájdeš svoju lekciu a čo všetko v nej je.</p>
+  </div>
+</header>
+
+<div class="lekcia-media">
+  <section class="blok blok--video" aria-labelledby="h-video">
+    <h2 id="h-video" class="blok__nadpis"><span class="blok__pismeno">A</span> Video</h2>
+    <video class="video" controls preload="metadata" playsinline poster="/ako-na-to/poster.jpg">
+      <source src="/ako-na-to/video.mp4" type="video/mp4">
+      Tvoj prehliadač nevie prehrať video. <a href="/ako-na-to/video.mp4">Stiahni si ho.</a>
+    </video>
+  </section>
+
+  <section class="blok blok--infografika" aria-labelledby="h-info">
+    <h2 id="h-info" class="blok__nadpis"><span class="blok__pismeno">B</span> Infografika</h2>
+    <button type="button" class="infografika" data-zvacsi aria-label="Zväčšiť infografiku">
+      <img src="/ako-na-to/infografika.jpg" alt="Infografika: Ako na Grammar Bites – 8 krokov" loading="lazy">
+      <span class="infografika__lupa"><svg width="18" height="18"><use href="#lupa"/></svg> Zväčšiť</span>
+    </button>
+    <p class="stiahni">
+      <a class="tlacidlo tlacidlo--tiche" href="/ako-na-to/infografika.jpg" download>Stiahnuť obrázok</a>
+      <a class="tlacidlo tlacidlo--tiche" href="/ako-na-to/infografika.pdf" download>Stiahnuť na tlač (PDF)</a>
+    </p>
+    <dialog class="zvacsenie" aria-label="Infografika vo veľkom">
+      <form method="dialog"><button class="zvacsenie__zavri" aria-label="Zavrieť">✕</button></form>
+      <img src="/ako-na-to/infografika.jpg" alt="Infografika: Ako na Grammar Bites – 8 krokov">
+    </dialog>
+  </section>
+</div>
+
+<section class="blok blok--vyklad" aria-labelledby="h-vyklad">
+  <h2 id="h-vyklad" class="blok__nadpis"><span class="blok__pismeno">C</span> Krok za krokom</h2>
+  <div class="zosit">
+    <h2>1 · Nájdi svoju lekciu</h2>
+    <p>Lekciu nájdeš tromi spôsobmi:</p>
+    <ul>
+      <li><a href="/rocniky/">Podľa ročníka</a> – čo sa učíš tento rok.</li>
+      <li><a href="/ucebnice/">Podľa učebnice</a> – otvor svoju učebnicu a nájdi unit, ktorý práve preberáte.</li>
+      <li><a href="/temy/">Gramatické témy</a> – všetky časy, príslovky, otázky… pekne pokope.</li>
+    </ul>
+
+    <h2>2 · Čo je v lekcii</h2>
+    <ul>
+      <li><b>Video</b> – krátke video s pravidlom a príkladmi. Pusti si ho aj viackrát.</li>
+      <li><b>Infografika</b> – celé učivo na jednom obrázku. Môžeš ju zväčšiť, stiahnuť alebo vytlačiť.</li>
+      <li><b>Výklad</b> – vysvetlenie po slovensky, príklady po anglicky a najčastejšie chyby.</li>
+      <li><b>Mini test</b> – 5 otázok. Po kontrole uvidíš pri každej otázke vysvetlenie. Nič sa neukladá ani nehodnotí, skúšaj, koľkokrát chceš.</li>
+    </ul>
+    <p>V niektorých lekciách je aj <b>tréner</b> alebo <b>Napíš sám</b> – vety si tam poskladáš sám a hneď sa dozvieš, či sú správne.</p>
+
+    <h2>3 · Hľadaj</h2>
+    <p>Hore je <b>lupa</b>. Hľadať môžeš po slovensky aj po anglicky, napríklad <a href="/hladat/?q=minulý čas">minulý čas</a>, <a href="/hladat/?q=past simple">past simple</a> alebo <a href="/hladat/?q=Project 2 Unit 6">Project 2 Unit 6</a>.</p>
+
+    <h2>4 · Zlaté pravidlá</h2>
+    <p><a href="/pravidla/">10 Zlatých pravidiel</a> platí v každej lekcii – napríklad že veta potrebuje podmet a sloveso. Oplatí sa ich poznať naspamäť.</p>
+
+    <h2>5 · Máš otázku?</h2>
+    <p>Napíš mi cez <a href="/kontakt/">Kontakt</a>. Stačí prezývka.</p>
+  </div>
+</section>
+
+<p class="pravidlo-dalej"><a class="tlacidlo" href="/ucebnice/">Nájdi svoju učebnicu <svg width="20" height="20" aria-hidden="true"><use href="#sipka"/></svg></a></p>

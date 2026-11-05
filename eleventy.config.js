@@ -11,6 +11,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy("src/lekcie/**/*.{mp4,webm,png,jpg,jpeg,webp,pdf}");
   eleventyConfig.addPassthroughCopy("src/pravidla/**/*.{mp4,webm,png,jpg,jpeg,webp,pdf}");
+  eleventyConfig.addPassthroughCopy("src/ako-na-to/*.{mp4,jpg,pdf}");
   eleventyConfig.addPassthroughCopy({ "src/favicon.svg": "favicon.svg" });
   eleventyConfig.addPassthroughCopy({ "src/.nojekyll": ".nojekyll" });
 

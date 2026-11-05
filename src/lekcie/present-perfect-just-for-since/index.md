@@ -9,7 +9,7 @@ ucebnice:
   - { id: project-3, unit: "5" }
   - { id: project-4, unit: "2" }
 temy: [pritomne-casy]
-klucoveSlova: [present perfect, predprítomný čas, just, práve, for, since, ako dlho, odkedy, how long, for five years, since 2020, duration, 5D, recent events, už, pred chvíľou]
+klucoveSlova: [recently, yet, nedávno, ešte nie, present perfect, predprítomný čas, just, práve, for, since, ako dlho, odkedy, how long, for five years, since 2020, duration, 5D, recent events, už, pred chvíľou]
 video: video.mp4
 poster: poster.jpg
 infografika: infografika.jpg
@@ -58,6 +58,16 @@ Keď sa niečo stalo **pred chvíľou**, použijeme present perfect a slovo **ju
 - *The bus has **just** left!* – Autobus práve odišiel!
 - *She has **just** broken a glass.* – Práve rozbila pohár.
 - *Have you **just** arrived?* – Práve si prišiel?
+
+**recently** (v poslednom čase, nedávno) ide väčšinou na koniec vety:
+
+- *I've seen a good film **recently**.* – Nedávno som videl dobrý film.
+- *Have you been to the cinema **recently**?* – Bol si v poslednom čase v kine?
+
+**yet** (už / ešte) používame v otázke a v zápore – tiež na konci vety:
+
+- *Has the bus arrived **yet**?* – Už prišiel autobus?
+- *The bus hasn't arrived **yet**.* – Autobus ešte neprišiel.
 
 *Just* stojí rovnako ako *ever* a *never* – **medzi** *have / has* a 3. tvarom. Pozri lekciu [Present perfect: questions, ever and never](/lekcie/present-perfect-questions/).
 

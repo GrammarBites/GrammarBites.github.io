@@ -3,11 +3,12 @@ title: "Present perfect: questions, ever and never"
 nazovSk: Predprítomný čas – otázky, krátke odpovede, ever a never
 popis: "Have you ever eaten sushi? – Yes, I have. / No, I haven't. Has she ever been to London? I've never seen a dolphin. Otázky o skúsenostiach."
 date: 2026-11-05T11:00:00
-rocniky: [7, 8]
+rocniky: [7, 8, 9]
 strana: 59
 ucebnice:
   - { id: project-3, unit: "5" }
   - { id: project-4, unit: "2" }
+  - { id: project-5, unit: "1" }
 temy: [pritomne-casy, otazky]
 klucoveSlova: [present perfect, predprítomný čas, otázky, questions, have you ever, has she ever, ever, never, niekedy, nikdy, krátke odpovede, short answers, yes I have, no I haven't, skúsenosti, experiences, 5B, 3. tvar]
 video: video.mp4

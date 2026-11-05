@@ -3,10 +3,11 @@ title: Present perfect × past simple
 nazovSk: Predprítomný čas alebo minulý čas? Povieš, kedy sa to stalo?
 popis: "I've been to Italy. I went there last summer. I've lost my key. When did you arrive? Kedy present perfect a kedy past simple – a všetky použitia present perfect na jednom mieste."
 date: 2026-11-05T15:30:00
-rocniky: [8]
+rocniky: [8, 9]
 strana: 21
 ucebnice:
   - { id: project-4, unit: "2" }
+  - { id: project-5, unit: "1" }
 temy: [pritomne-casy, minule-casy]
 klucoveSlova: [present perfect, past simple, present perfect vs past simple, predprítomný čas, minulý čas, ever, never, just, recently, yesterday, ago, last, when, výsledok teraz, result, experiences, skúsenosti, 2A, 2B]
 video: video.mp4

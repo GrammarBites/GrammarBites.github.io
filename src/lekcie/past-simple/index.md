@@ -3,11 +3,12 @@ title: "Past simple: positive, negative, questions"
 nazovSk: Minulý čas – oznamovacia veta, zápor a otázka
 popis: "We went to the mountains. I didn't go to school. Did you see the match? – Yes, I did. Where did you go? Minulý čas všetkých slovies, pravidelných aj nepravidelných."
 date: 2026-11-03T17:00:00
-rocniky: [5, 6]
+rocniky: [5, 6, 9]
 strana: 39
 ucebnice:
   - { id: project-2, unit: "3" }
   - { id: project-3, unit: "1" }
+  - { id: project-5, unit: "1" }
 temy: [minule-casy, otazky]
 klucoveSlova: [past simple, minulý čas, did, didn't, did not, irregular verbs, nepravidelné slovesá, went, saw, had, ate, bought, took, otázka, zápor, krátke odpovede, short answers, where did, what did, 3C, 3D]
 video: video.mp4

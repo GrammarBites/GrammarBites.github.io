@@ -3,11 +3,12 @@ title: "Present perfect: just, recently, yet, for, since"
 nazovSk: Predprítomný čas – just (práve), recently, yet, for (ako dlho) a since (odkedy)
 popis: "I've just woken up. I've lived here for five years. She has had her dog since 2022. Čo sa práve stalo a ako dlho niečo trvá."
 date: 2026-11-05T11:30:00
-rocniky: [7, 8]
+rocniky: [7, 8, 9]
 strana: 63
 ucebnice:
   - { id: project-3, unit: "5" }
   - { id: project-4, unit: "2" }
+  - { id: project-5, unit: "1" }
 temy: [pritomne-casy]
 klucoveSlova: [recently, yet, nedávno, ešte nie, present perfect, predprítomný čas, just, práve, for, since, ako dlho, odkedy, how long, for five years, since 2020, duration, 5D, recent events, už, pred chvíľou]
 video: video.mp4

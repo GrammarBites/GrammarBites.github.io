@@ -3,10 +3,11 @@ title: Past continuous
 nazovSk: Minulý priebehový čas – was / were + -ing
 popis: "At 8 o'clock I was having breakfast. They weren't watching TV. Was he reading? – Yes, he was. Čo práve prebiehalo v určitom čase v minulosti."
 date: 2026-11-05T10:00:00
-rocniky: [6, 7]
+rocniky: [6, 7, 9]
 strana: 33
 ucebnice:
   - { id: project-3, unit: "3" }
+  - { id: project-5, unit: "1" }
 temy: [minule-casy, otazky]
 klucoveSlova: [past continuous, past progressive, minulý priebehový čas, priebehový, was, were, wasn't, weren't, ing, -ing, was doing, were doing, what were you doing, minulý čas, 3A, what was happening, otázka, zápor]
 video: video.mp4

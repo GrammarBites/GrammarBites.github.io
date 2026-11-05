@@ -3,10 +3,11 @@ title: will × BE going to
 nazovSk: will alebo BE going to? Plán, rozhodnutie v tej chvíli a názor na budúcnosť
 popis: "I am going to learn Spanish. The phone's ringing – I'll answer it! I think it will be fun. Kedy will a kedy BE going to – aj so záporom a otázkou."
 date: 2026-11-05T13:30:00
-rocniky: [8]
+rocniky: [7, 8]
 strana: 7
 ucebnice:
   - { id: project-4, unit: "intro" }
+  - { id: project-3, unit: "2" }
 temy: [buduce-casy]
 klucoveSlova: [will, going to, be going to, will vs going to, budúcnosť, future, plán, zámer, intention, rozhodnutie, decision, názor, predpoveď, I think, won't, isn't going to, introduction]
 video: video.mp4

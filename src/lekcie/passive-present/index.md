@@ -3,10 +3,11 @@ title: "Passive voice: present"
 nazovSk: Trpný rod v prítomnom čase – is made, are spoken
 popis: "Honey is made by bees. English is spoken all over the world. Is French spoken in Canada? Trpný rod: am / is / are + 3. tvar slovesa."
 date: 2026-11-05T20:00:00
-rocniky: [8]
+rocniky: [8, 9]
 strana: 57
 ucebnice:
   - { id: project-4, unit: "5" }
+  - { id: project-5, unit: "5" }
 temy: [trpny-rod]
 klucoveSlova: [passive voice, passive, trpný rod, is made, are made, is spoken, by, active, činný rod, 3. tvar, past participle, present simple passive, 5A, environment]
 video: video.mp4

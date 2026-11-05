@@ -3,12 +3,13 @@ title: Past simple × past continuous
 nazovSk: Minulý čas jednoduchý a priebehový spolu – when a while
 popis: "I was having a shower when the phone rang. While we were playing football, it started to rain. Dlhý dej v pozadí a krátky dej, ktorý ho preruší."
 date: 2026-11-05T10:30:00
-rocniky: [6, 7]
+rocniky: [6, 7, 8]
 strana: 35
 ucebnice:
   - { id: project-3, unit: "3" }
+  - { id: project-4, unit: "1" }
 temy: [minule-casy]
-klucoveSlova: [past simple, past continuous, when, while, keď, kým, počas, prerušený dej, dlhý dej, krátky dej, minulý čas, priebehový, was doing, 3B, a dangerous situation, interrupted action]
+klucoveSlova: [past simple, past continuous, when, while, keď, kým, počas, prerušený dej, dlhý dej, krátky dej, minulý čas, priebehový, was doing, 3B, 1A, a dangerous situation, interrupted action, deje za sebou, completed actions]
 video: video.mp4
 poster: poster.jpg
 infografika: infografika.jpg
@@ -78,11 +79,21 @@ Keď dva deje prebiehali **súčasne**, oba sú v past continuous:
 
 - *While Mum **was cooking**, Dad **was washing** the car.* – Kým mama varila, otec umýval auto.
 
-## Krátke deje za sebou
+## Deje za sebou → oba past simple
 
-Keď sa deje stali **jeden po druhom**, oba sú v past simple:
+Keď sa deje stali **jeden po druhom** (najprv jedno, potom druhé), oba sú v **past simple**. Nič tu „neprebiehalo“ v pozadí.
 
+- *When the bell **rang**, we **stood up** and **left**.* – Keď zazvonilo, vstali sme a odišli.
 - *When I **saw** the dog, I **ran** away.* – Keď som uvidel psa, utiekol som.
+
+Porovnaj – rozdiel je len v jednom slove, ale význam je iný:
+
+<div class="pravidla">
+<div class="pravidlo"><p class="pravidlo__nazov">dej v priebehu + udalosť</p>
+<p>When Mum came home, we <mark>were cooking</mark>.<br>Keď mama prišla domov, (práve) sme varili. – varenie už prebiehalo</p></div>
+<div class="pravidlo"><p class="pravidlo__nazov">dva deje za sebou</p>
+<p>When Mum came home, we <mark>cooked</mark>.<br>Keď mama prišla domov, navarili sme. – najprv prišla, potom sme varili</p></div>
+</div>
 
 ## Otázka
 

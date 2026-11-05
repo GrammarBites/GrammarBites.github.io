@@ -4,11 +4,12 @@ nazovSk: Prvá podmienková veta
 popis: "Čo sa stane, ak…? Skutočné možnosti v budúcnosti: If it rains, we'll stay at home."
 date: 2026-10-26
 rocniky: [8, 9]
+strana: 69
 ucebnice:
   - { id: project-4, unit: "6" }
   - { id: project-5, unit: "2" }
 temy: [podmienkove-vety, buduce-casy]
-klucoveSlova: [if, will, won't, unless, when, as soon as, podmienka, reálna podmienka, future time clauses, budúcnosť]
+klucoveSlova: [if clause, main clause, 6A, if, will, won't, unless, when, as soon as, podmienka, reálna podmienka, future time clauses, budúcnosť]
 video: video.mp4
 poster: poster.jpg
 infografika: infografika.jpg
@@ -51,7 +52,7 @@ Prvú podmienkovú vetu (first conditional) používame na veci, ktoré sa v bud
 <span class="vzorec__cast vzorec__cast--will"><b>will / won't</b> + sloveso</span>
 </div>
 
-Časť s **if** je podmienka (v prítomnom čase), druhá časť je výsledok (s **will**).
+Časť s **if** je podmienka – po anglicky **'if' clause** (v prítomnom čase). Druhá časť je výsledok – **main clause** (hlavná veta, s **will**).
 
 - *If it **rains**, we **'ll stay** at home.* – Ak bude pršať, zostaneme doma.
 - *If you **don't eat** breakfast, you **'ll be** hungry.* – Ak nebudeš raňajkovať, budeš hladný.

@@ -103,6 +103,8 @@ Otázku tvoríme s **do / does** – rovnako ako v present simple.
 
 V kladnej vete znamenajú *have to* aj *must* takmer to isté (musím). V zápore je však veľký rozdiel! Viac v lekcii [must](/lekcie/must/).
 
+V minulosti povieš *had to* (musel) a *didn't have to* (nemusel) – pozri lekciu [Past modals: could, had to](/lekcie/past-modals/).
+
 ## Časté chyby
 
 <table class="chyby">

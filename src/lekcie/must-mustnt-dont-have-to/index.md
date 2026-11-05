@@ -84,6 +84,8 @@ Na otázku, či niečo musíme, sa najčastejšie pýtame s *Do / Does … have 
 
 Podrobne si jednotlivé slovesá zopakuj v lekciách [must · mustn't](/lekcie/must/) a [have to](/lekcie/have-to/). Rady s *should* nájdeš v lekcii [should · shouldn't](/lekcie/should/).
 
+V minulosti povieš *had to* (musel) a *didn't have to* (nemusel) – pozri lekciu [Past modals: could, had to](/lekcie/past-modals/).
+
 ## Časté chyby
 
 <table class="chyby">

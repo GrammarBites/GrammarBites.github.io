@@ -94,6 +94,8 @@ Zápor tvoríme pomocou **not** za *have / has*. V hovorenej reči používame s
 </tbody>
 </table>
 
+Rozdiel medzi *has been* a *has gone* nájdeš v lekcii [been · gone](/lekcie/been-gone/).
+
 ## Časté chyby
 
 <table class="chyby">

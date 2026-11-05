@@ -90,6 +90,8 @@ Keď odpovieš *Yes, I have* a chceš povedať **kedy** alebo **ako** to bolo, p
 - *Have you ever eaten sushi?* – *Yes, I have. I **ate** it last summer.* (Áno. Jedol som ho minulé leto.)
 - *Has she ever been to London?* – *Yes, she has. She **went** there in 2024.*
 
+Prečo sa pýtame *Have you ever **been** to…?* a nie *gone*, vysvetľuje lekcia [been · gone](/lekcie/been-gone/).
+
 ## Časté chyby
 
 <table class="chyby">

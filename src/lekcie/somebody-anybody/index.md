@@ -92,6 +92,8 @@ Hoci *everybody* znamená „všetci“, sloveso je v **jednotnom čísle**, ako
 - **Krátka odpoveď:** *Who's there? – <b>Nobody.</b>* · *What's in the box? – <b>Nothing.</b>*
 - Členy *a / an / the* nájdeš v lekciách [The definite article](/lekcie/the-definite-article/) a [A / an or the?](/lekcie/a-an-the/).
 
+Pravidlá pre *some* a *any* (oznamovacia veta × zápor a otázka) nájdeš v lekcii [some · any](/lekcie/some-any/).
+
 ## Časté chyby
 
 <table class="chyby">

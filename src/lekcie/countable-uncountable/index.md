@@ -104,6 +104,8 @@ Nepočítateľné veci spočítame cez obal alebo kúsok – **a … of**:
 
 Množné číslo dostane obal, nie jedlo: *two bottle**s** of water, three loa**ves** of bread*. A nezabudni na **of**!
 
+Pravidlá pre *some* a *any* (oznamovacia veta × zápor a otázka) nájdeš v lekcii [some · any](/lekcie/some-any/).
+
 ## Časté chyby
 
 <table class="chyby">

@@ -1,7 +1,7 @@
 ---
 title: Future time clauses
 nazovSk: Časové vety v budúcnosti – when, as soon as, before, after, while
-popis: "I'll call you when I arrive. As soon as it stops raining, we'll go out. Za when, as soon as, before, after a while nie je will – rovnako ako za if."
+popis: "I'll call you when I arrive. As soon as it stops raining, we'll go out. If = podmienka, when = čas. Za when, as soon as, before, after a while nie je will – rovnako ako za if."
 date: 2026-11-05T21:30:00
 rocniky: [8, 9]
 strana: 71
@@ -17,7 +17,7 @@ infografikaPdf: infografika.pdf
 koza: koza-zmurka
 otazkaKozy: "I'll eat when I find grass!"
 bite:
-  tip: "Za when, as soon as, before, after, while je present simple – nie will. Will je len v hlavnej vete."
+  tip: "If = podmienka (ak sa splní), when = čas (kedy sa to stane). Za when, as soon as, before, after, while je present simple – nie will."
   priklad: "I'll call you when I arrive. · As soon as it stops raining, we'll go out."
 test:
   - otazka: "I'll call you as soon as I ___ home."
@@ -43,6 +43,19 @@ test:
 ---
 
 Keď hovoríme o budúcnosti a spájame dve vety slovami **when, as soon as, before, after, while**, platí to isté pravidlo ako pri [first conditional](/lekcie/first-conditional/): **za týmito slovami nie je will**.
+
+## Načo to je? Podmienka × čas
+
+Future time clauses sú „súrodenci“ first conditional. Vyzerajú rovnako, ale hovoria niečo iné:
+
+<div class="pravidla">
+<div class="pravidlo"><p class="pravidlo__nazov">first conditional – if = PODMIENKA</p>
+<p>Aby sa niečo v budúcnosti stalo, <b>musí sa splniť podmienka</b>. Nie je isté, či sa splní.<br><mark>If</mark> I pass the test, I'll celebrate.<br>Ak urobím test, budem oslavovať. (možno ho neurobím)</p></div>
+<div class="pravidlo"><p class="pravidlo__nazov">future time clause – when = ČAS</p>
+<p>Vieme, že sa to stane. Časová veta nám povie, <b>kedy</b> sa to stane.<br><mark>When</mark> I finish the test, I'll go home.<br>Keď dopíšem test, pôjdem domov. (určite ho dopíšem)</p></div>
+</div>
+
+Stavba vety je v oboch prípadoch **rovnaká** – mení sa len to, či ide o podmienku (*if*), alebo o čas (*when, as soon as, before, after, while*).
 
 ## Pravidlo
 
@@ -77,11 +90,6 @@ Bonus: rovnako funguje aj **until** (až kým): *Wait here **until** I **come** 
 
 - ***When I finish**, I'll text you.* – na začiatku → **čiarka**
 - *I'll text you **when I finish**.* – na konci → bez čiarky
-
-## when × if
-
-- ***If** I see Tom, I'll tell him.* – Ak Toma uvidím, poviem mu to. (možno ho neuvidím)
-- ***When** I see Tom, I'll tell him.* – Keď Toma uvidím, poviem mu to. (určite ho uvidím)
 
 ## Časté chyby
 

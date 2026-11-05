@@ -16,7 +16,7 @@ infografikaPdf: infografika.pdf
 koza: koza-zmurka
 otazkaKozy: "Grass is eaten by goats!"
 bite:
-  tip: "Trpný rod: am / is / are + 3. tvar. Použijeme ho, keď je dôležité, čo sa deje, nie kto to robí. Kto to robí, povieme s by."
+  tip: "4 kroky: 1. predmet AV → podmet PV, 2. pridáme be (am / is / are), 3. sloveso → 3. stĺpec, 4. by + agent (nepovinné)."
   priklad: "Honey is made by bees. · English is spoken all over the world."
 test:
   - otazka: "Chocolate ___ from cocoa beans."
@@ -43,42 +43,40 @@ test:
 
 Väčšinou hovoríme, **kto** niečo robí: *Bees make honey.* (činný rod). Niekedy je však dôležitejšie, **čo sa deje** alebo **s čím** – vtedy použijeme **trpný rod** (passive voice).
 
-## Činný → trpný
-
-<div class="pravidla">
-<div class="pravidlo"><p class="pravidlo__nazov">činný rod (active)</p>
-<p><mark>Bees</mark> make honey.<br>Včely robia med.</p></div>
-<div class="pravidlo"><p class="pravidlo__nazov">trpný rod (passive)</p>
-<p>Honey <mark>is made</mark> by bees.<br>Med robia včely. (dôraz je na mede)</p></div>
-</div>
-
-Čo sa zmení:
-
-1. **Predmet** (*honey*) sa posunie **na začiatok** vety.
-2. Sloveso zmeníme na **am / is / are + 3. tvar** (*make → is made*).
-3. Kto to robí, môžeme povedať s **by** (*by bees*) – alebo to úplne vynecháme.
-
-## Vzorec
+## Činný → trpný v 4 krokoch
 
 <div class="vzorec">
-<span class="vzorec__cast vzorec__cast--if"><b>am / is / are</b></span>
-<span class="vzorec__ciarka">+</span>
-<span class="vzorec__cast vzorec__cast--will"><b>3. tvar</b> slovesa (past participle)</span>
+<span class="vzorec__cast vzorec__cast--if">AV: <b>Bees</b> (podmet) make (sloveso) <b>honey</b> (predmet).</span>
 </div>
 
-- *English **is spoken** all over the world.* – Po anglicky sa hovorí na celom svete.
-- *These phones **are made** in China.* – Tieto mobily sa vyrábajú v Číne.
-- *Rice **is grown** in Asia.* – Ryža sa pestuje v Ázii.
+<table class="chyby tvary">
+<thead><tr><th scope="col">krok</th><th scope="col">čo urobíme</th><th scope="col">veta</th></tr></thead>
+<tbody>
+<tr><td><b>1</b></td><td><b>Predmet</b> z činného rodu (AV) sa stane <b>podmetom</b> trpného rodu (PV).</td><td><b>Honey</b> …</td></tr>
+<tr><td><b>2</b></td><td>Pridáme sloveso <b>be</b> v správnom tvare – podľa nového podmetu a času (<i>am / is / are</i>).</td><td>Honey <b>is</b> …</td></tr>
+<tr><td><b>3</b></td><td>Sloveso upravíme do <b>past participle</b> (3. stĺpec): <i>make – made – <b>made</b></i>.</td><td>Honey is <b>made</b>.</td></tr>
+<tr><td><b>4</b></td><td>Agenta (kto to robí) vyjadríme cez <b>by</b> – <b>nepovinné</b>.</td><td>Honey is made <b>by bees</b>.</td></tr>
+</tbody>
+</table>
 
-Po slovensky trpný rod často prekladáme so **sa**: *vyrába sa, hovorí sa, pestuje sa*. 3. tvary nepravidelných slovies nájdeš v lekcii [Irregular verbs: past participle](/lekcie/past-participle/).
+- *Bees make honey.* → *Honey **is made** by bees.* – Med robia včely.
 
-## by = kto to robí
+## Ďalšie príklady
 
-- *My bike **is repaired by my dad**.* – Bicykel mi opravuje otec.
+V kroku 2 sa *be* riadi **novým podmetom**:
 
-Často **nevieme alebo nie je dôležité**, kto to robí – vtedy *by* vynecháme:
+- *People speak English all over the world.* → *English **is spoken** all over the world.* – Po anglicky sa hovorí na celom svete. (*English* → **is**)
+- *Workers make these phones in China.* → *These phones **are made** in China.* – Tieto mobily sa vyrábajú v Číne. (*phones* → **are**)
+- *My dad repairs my bike.* → *My bike **is repaired by my dad**.* – Bicykel mi opravuje otec.
 
-- *Cheese **is made** from milk.* – Syr sa vyrába z mlieka. (kto ho robí, nie je dôležité)
+Po slovensky trpný rod často prekladáme so **sa**: *vyrába sa, hovorí sa, pestuje sa*. Tvary z 3. stĺpca nepravidelných slovies nájdeš v lekcii [Irregular verbs: past participle](/lekcie/past-participle/).
+
+## Kedy agenta (by) vynecháme?
+
+Krok 4 je **nepovinný**. Agenta vynecháme, keď nevieme, kto to robí, alebo keď to nie je dôležité či je to jasné:
+
+- *People speak English here.* → *English is spoken here.* (*by people* netreba)
+- *Cheese **is made** from milk.* – Syr sa vyrába z mlieka.
 - *The classroom **is cleaned** every day.* – Trieda sa upratuje každý deň.
 
 ## Zápor a otázka

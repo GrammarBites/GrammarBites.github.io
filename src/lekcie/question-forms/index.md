@@ -105,6 +105,8 @@ Otázky s *how* (*How old, How far, How long…*) nájdeš v lekcii [How questio
 <p>Pridaj do / does / did.<br><mark>Does</mark> she play chess?</p></div>
 </div>
 
+Ako otázku prerozprávať (*He wants to know where the station is.*), ukazuje lekcia [Indirect questions](/lekcie/indirect-questions/).
+
 ## Časté chyby
 
 <table class="chyby">

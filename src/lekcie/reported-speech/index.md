@@ -97,6 +97,8 @@ Zopakuj si minulé tvary v lekciách [Past simple](/lekcie/past-simple/) a [Past
 
 Viac v lekcii [say × tell](/lekcie/say-tell/).
 
+Ako prerozprávať otázku (*He asked me where I lived.*), nájdeš v lekcii [Indirect questions](/lekcie/indirect-questions/).
+
 ## Časté chyby
 
 <table class="chyby">

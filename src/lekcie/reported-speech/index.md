@@ -95,6 +95,8 @@ Zopakuj si minulé tvary v lekciách [Past simple](/lekcie/past-simple/) a [Past
 - *He **said** (that) he was tired.* – za *said* nie je osoba
 - *He **told me** (that) he was tired.* – za *told* je vždy osoba (komu)
 
+Viac v lekcii [say × tell](/lekcie/say-tell/).
+
 ## Časté chyby
 
 <table class="chyby">

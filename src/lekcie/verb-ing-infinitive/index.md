@@ -94,6 +94,8 @@ Pri *stop* oba tvary existujú, ale **znamenajú niečo iné**:
 
 Neexistuje jednoduché pravidlo, treba sa slovesá naučiť. Pomôcka: slovesá s **to** často hovoria o niečom, čo **ešte len príde** – chcem, rozhodnem sa, sľúbim, ponúknem sa (*want to, decide to, promise to, offer to*).
 
+Tvar -ing aj na začiatku vety a po predložkách (*good at drawing*) vysvetľuje lekcia [Gerunds](/lekcie/gerunds/).
+
 ## Časté chyby
 
 <table class="chyby">

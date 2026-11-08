@@ -94,6 +94,8 @@ Po slovensky *might* často preložíme ako **možno** alebo **mohol by / mohlo 
 </tbody>
 </table>
 
+Vo varovaniach často počuješ zvratné zámená: *You might hurt **yourself**.* – pozri lekciu [Reflexive pronouns](/lekcie/reflexive-pronouns/).
+
 ## Časté chyby
 
 <table class="chyby">

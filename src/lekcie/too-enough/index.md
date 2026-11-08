@@ -106,6 +106,8 @@ Pri **podstatnom mene** ide *enough* **pred** neho:
 - *It's **too** hot. I can't sleep.* – Je príliš teplo. Nemôžem spať.
 - *Your drawing is **very** nice!* – Tvoja kresba je veľmi pekná! (nie ~~too nice~~)
 
+Ďalší spôsob, ako vyjadriť následok: *It was **so** cold **that** we stayed in.* – pozri lekciu [so … that](/lekcie/so-that/).
+
 ## Časté chyby
 
 <table class="chyby">

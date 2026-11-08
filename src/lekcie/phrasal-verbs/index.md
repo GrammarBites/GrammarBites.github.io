@@ -3,12 +3,13 @@ title: Phrasal verbs
 nazovSk: Frázové slovesá – get up, switch on, look for…
 popis: "Sloveso + častica = nový význam. get up, sit down, switch on, put on, look for, find out… Najčastejšie frázové slovesá s príkladmi a pozor na poradie: Switch it on."
 date: 2026-11-05T13:00:00
-rocniky: [7]
+rocniky: [7, 9]
 strana: 73
 ucebnice:
   - { id: project-3, unit: "6" }
+  - { id: project-5, unit: "4" }
 temy: [ostatne]
-klucoveSlova: [phrasal verbs, frázové slovesá, slovesá s časticou, particle, častica, get up, sit down, stand up, wake up, switch on, switch off, turn on, put on, take off, try on, look for, look at, look after, look up, find out, go out, give up, 6C, vocabulary]
+klucoveSlova: [separating phrasal verbs, oddeľovanie, 4C, phrasal verbs, frázové slovesá, slovesá s časticou, particle, častica, get up, sit down, stand up, wake up, switch on, switch off, turn on, put on, take off, try on, look for, look at, look after, look up, find out, go out, give up, 6C, vocabulary]
 video: video.mp4
 poster: poster.jpg
 infografika: infografika.jpg
@@ -119,7 +120,7 @@ Frázové slovesá sa preto učíme ako **nové slovíčka** – celé naraz, s 
 </tbody>
 </table>
 
-## Pozor na it a them!
+## Pozor na it a them! (separating phrasal verbs)
 
 Ak je predmet **podstatné meno**, môže stáť na dvoch miestach:
 

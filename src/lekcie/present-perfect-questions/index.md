@@ -93,6 +93,8 @@ Keď odpovieš *Yes, I have* a chceš povedať **kedy** alebo **ako** to bolo, p
 
 Prečo sa pýtame *Have you ever **been** to…?* a nie *gone*, vysvetľuje lekcia [been · gone](/lekcie/been-gone/).
 
+Prehľad, ako sa tvoria otázky vo všetkých časoch (tri vzory), nájdeš v lekcii [Question forms](/lekcie/question-forms/).
+
 ## Časté chyby
 
 <table class="chyby">

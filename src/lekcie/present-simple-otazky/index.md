@@ -99,6 +99,8 @@ Opytovacie slovo dáme **na začiatok**, potom pokračujeme ako pri áno/nie ot�
 - **Nezabudni na do / does.** Po slovensky stačí „Kde bývaš?“, po anglicky musí byť *Where **do** you live?*
 - Pri slovese *be* (am / is / are) a pri *can* sa do / does nepoužíva: *Are you happy? Can you swim?*
 
+Prehľad, ako sa tvoria otázky vo všetkých časoch (tri vzory), nájdeš v lekcii [Question forms](/lekcie/question-forms/).
+
 ## Časté chyby
 
 <table class="chyby">

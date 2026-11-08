@@ -83,6 +83,8 @@ Prídavné meno je v odpovedi **na konci**. Po slovensky povieme „Má 500 metr
 
 Otázky *How much? / How many?* nájdeš v lekcii [How much? How many?](/lekcie/countable-uncountable/).
 
+Prehľad, ako sa tvoria otázky vo všetkých časoch (tri vzory), nájdeš v lekcii [Question forms](/lekcie/question-forms/).
+
 ## Časté chyby
 
 <table class="chyby">

@@ -94,6 +94,8 @@ Rozhoduje miesto vo vete:
 
 Pozri aj [Zlaté pravidlo: Prídavné meno pred podstatným menom](/pravidla/pridavne-meno/).
 
+Viac o koncovkách -ous a -y a ich pravopise: lekcia [Nouns → adjectives](/lekcie/nouns-to-adjectives/).
+
 ## Časté chyby
 
 <table class="chyby">

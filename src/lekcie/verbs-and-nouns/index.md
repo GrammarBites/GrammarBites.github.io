@@ -96,6 +96,8 @@ Pozor na pravopis: *argue → argument* (e vypadne), *explain → explanation* (
 
 Podobné koncovky pri prídavných menách nájdeš v lekcii [Nouns and adjectives](/lekcie/nouns-and-adjectives/).
 
+Koncovky -ion, -ation a -ment podrobnejšie: lekcia [Verbs → nouns](/lekcie/verbs-to-nouns/).
+
 ## Časté chyby
 
 <table class="chyby">

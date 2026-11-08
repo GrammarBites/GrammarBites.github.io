@@ -71,6 +71,8 @@ Ak chceš vedieť, ako sa po anglicky číta dátum, pozri si lekciu [Dates and 
 - **Konkrétny deň + časť dňa = on.** *In the morning*, ale *on Saturday morning*.
 - **Bez predložky** pred *last, next, this, every, today, tomorrow, yesterday*: ~~on next Monday~~ → *next Monday*. Viac v lekcii [Time expressions](/lekcie/time-expressions/).
 
+Predložky pri cestovaní (*by bus, on foot, from … to, arrive in*) nájdeš v lekcii [Travel prepositions](/lekcie/prepositions-travel/).
+
 ## Časté chyby
 
 <table class="chyby">

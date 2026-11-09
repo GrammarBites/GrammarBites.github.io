@@ -742,3 +742,31 @@ button.vz-slovo:hover { border-color: var(--ink); }
 .ks-moznost:disabled { cursor: default; opacity: .75; }
 .ks-moznost--ok, .ks-moznost--ok:disabled { background: var(--green-wash); border-color: var(--green); color: var(--green); opacity: 1; }
 .ks-moznost--zle, .ks-moznost--zle:disabled { background: var(--terra-wash); border-color: var(--terra); color: #8f3522; opacity: 1; }
+
+/* ---------- Tréner: izba (predložky miesta) ---------- */
+.iz-karta { gap: 8px; }
+.iz-svg { width: calc(100% + 16px); max-width: 700px; margin: 0 -8px; height: auto; display: block; border-radius: 14px; border: 2px solid var(--ink); }
+.iz-stena { fill: #f3e6cc; }
+.iz-podlaha { fill: #d9b98a; }
+.iz-ciara { stroke: var(--ink); stroke-width: 3; stroke-linecap: round; fill: none; }
+.iz-tenka { stroke-width: 2; }
+.iz-okno { fill: var(--blue-wash); stroke: var(--ink); stroke-width: 3; }
+.iz-lampa { fill: var(--yellow); stroke: var(--ink); stroke-width: 3; stroke-linejoin: round; }
+.iz-obraz { fill: var(--paper-hi); stroke: var(--ink); stroke-width: 3; }
+.iz-obraz-hory { fill: var(--green); opacity: .7; }
+.iz-gauc { fill: #c96f5a; stroke: var(--ink); stroke-width: 3; }
+.iz-gauc--sed { fill: #d98470; }
+.iz-stol { fill: #a66b3a; stroke: var(--ink); stroke-width: 3; }
+.iz-noha { stroke: #6e4423; stroke-width: 9; stroke-linecap: round; }
+.iz-krabica { fill: #c79a5b; stroke: var(--ink); stroke-width: 3; }
+.iz-krabica--zad { fill: #a77d43; }
+.iz-koza--zle { opacity: .55; }
+.iz-spot { cursor: pointer; outline: none; }
+.iz-spot__kruh { fill: rgba(255, 255, 255, .55); stroke: var(--blue); stroke-width: 3; stroke-dasharray: 6 5; }
+.iz-spot:hover .iz-spot__kruh, .iz-spot:focus-visible .iz-spot__kruh { fill: var(--yellow-wash); stroke: var(--ink); stroke-dasharray: none; }
+.iz-moznosti { justify-content: center; }
+.iz-moznost { font-size: 1.05rem; padding: 8px 16px; }
+.iz-moznost:disabled { cursor: default; opacity: .75; }
+.iz-moznost--ok, .iz-moznost--ok:disabled { background: var(--green-wash); border-color: var(--green); color: var(--green); opacity: 1; }
+.iz-moznost--zle, .iz-moznost--zle:disabled { background: var(--terra-wash); border-color: var(--terra); color: #8f3522; opacity: 1; }
+.iz-spravne { fill: rgba(63,125,58,.18); stroke: var(--green); stroke-width: 4; stroke-dasharray: 7 5; }

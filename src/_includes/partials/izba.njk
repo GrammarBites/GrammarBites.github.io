@@ -1,0 +1,32 @@
+{# Tréner predložiek miesta. V lekcii: izba: true #}
+<section class="blok blok--trener" aria-labelledby="h-izba">
+  <h2 id="h-izba" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Tréner: Where's the goat?</h2>
+  <p class="blok__uvod">Naša koza sa skrýva po izbe. Raz povieš, kde je, inokedy ju tam pošleš sám – ťukni na krúžok v izbe. 10 úloh v kole.</p>
+  <div class="trener izba" data-izba>
+    <fieldset class="trener__vyber">
+      <legend>Čo chceš trénovať?</legend>
+      <div class="trener__cipy" data-cipy></div>
+    </fieldset>
+    <div class="trener__karta iz-karta" data-karta>
+      <div class="trener__hore">
+        <span class="trener__stav" data-stav>1 / 10</span>
+        <span class="trener__seria" data-skore>body 0</span>
+      </div>
+      <p class="hd-otazka" data-otazka></p>
+      <svg class="iz-svg" data-izba-svg viewBox="0 0 700 410" role="img" aria-label="Izba s kozou"></svg>
+      <p class="trener__vyznam" data-pokyn></p>
+      <div class="trener__cipy iz-moznosti" data-moznosti></div>
+      <p class="trener__spatna" data-spatna role="status" aria-live="polite" hidden></p>
+      <button type="button" class="tlacidlo" data-dalej hidden>Ďalej →</button>
+    </div>
+    <div class="trener__koniec" data-koniec hidden>
+      <img src="/assets/img/postavy/koza-oslavuje.png" alt="" width="100" data-obr-dobre hidden>
+      <img src="/assets/img/postavy/koza-premysla.png" alt="" width="100" data-obr-zle hidden>
+      <div>
+        <p class="trener__vysledok" data-vysledok></p>
+        <div class="trener__tlacidla"><button type="button" class="tlacidlo" data-dalsie>Ďalšie kolo</button></div>
+      </div>
+    </div>
+  </div>
+  <script src="/assets/js/izba.js" defer></script>
+</section>

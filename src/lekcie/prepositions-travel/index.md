@@ -87,6 +87,8 @@ Keď hovoríme o **konkrétnom** autobuse, vlaku alebo aute, použijeme *on* ale
 
 Pozor: **nikdy *arrive to***. Ale *go to*, *get to*, *travel to* – áno.
 
+Predložky miesta (*in, on, under, next to, between, behind, in front of*) nájdeš v lekcii [Prepositions of place](/lekcie/prepositions-of-place/).
+
 ## Časté chyby
 
 <table class="chyby">

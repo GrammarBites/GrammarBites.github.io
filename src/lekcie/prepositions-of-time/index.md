@@ -73,6 +73,8 @@ Ak chceš vedieť, ako sa po anglicky číta dátum, pozri si lekciu [Dates and 
 
 Predložky pri cestovaní (*by bus, on foot, from … to, arrive in*) nájdeš v lekcii [Travel prepositions](/lekcie/prepositions-travel/).
 
+Predložky miesta (*in, on, under, next to, between, behind, in front of*) nájdeš v lekcii [Prepositions of place](/lekcie/prepositions-of-place/).
+
 ## Časté chyby
 
 <table class="chyby">

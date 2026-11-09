@@ -1,0 +1,45 @@
+{# Tréner hodín. V lekcii: hodiny: true #}
+<section class="blok blok--trener" aria-labelledby="h-hodiny">
+  <h2 id="h-hodiny" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Tréner: What time is it?</h2>
+  <p class="blok__uvod">10 úloh v jednom kole. Raz prečítaš čas z ručičkových hodín, inokedy hodiny nastavíš sám – potiahni ručičky prstom alebo myšou, prípadne použi tlačidlá pod hodinami.</p>
+  <div class="trener hodiny" data-hodiny>
+    <fieldset class="trener__vyber">
+      <legend>Úroveň</legend>
+      <div class="trener__cipy" data-urovne></div>
+    </fieldset>
+    <fieldset class="trener__vyber">
+      <legend>Čo chceš trénovať?</legend>
+      <div class="trener__cipy" data-rezimy></div>
+    </fieldset>
+    <div class="trener__karta hd-karta" data-karta>
+      <div class="trener__hore">
+        <span class="trener__stav" data-stav>1 / 10</span>
+        <span class="trener__seria" data-skore>body 0</span>
+      </div>
+      <p class="hd-otazka" data-otazka></p>
+      <svg class="hd-hodiny" data-cifernik viewBox="0 0 300 300" role="img" aria-label="Ručičkové hodiny"></svg>
+      <div class="hd-ovladanie" data-ovladanie hidden>
+        <div class="hd-skupina"><span class="trener__stitok">Hodinová (malá)</span>
+          <button type="button" class="trener__cip" data-krok="h:-1" aria-label="Hodinová ručička späť">◀</button>
+          <button type="button" class="trener__cip" data-krok="h:1" aria-label="Hodinová ručička dopredu">▶</button></div>
+        <div class="hd-skupina"><span class="trener__stitok">Minútová (veľká)</span>
+          <button type="button" class="trener__cip" data-krok="m:-1" aria-label="Minútová ručička späť">◀</button>
+          <button type="button" class="trener__cip" data-krok="m:1" aria-label="Minútová ručička dopredu">▶</button></div>
+      </div>
+      <p class="trener__vyznam" data-pokyn></p>
+      <div class="trener__cipy hd-moznosti" data-moznosti></div>
+      <button type="button" class="tlacidlo" data-over hidden>Skontrolovať</button>
+      <p class="trener__spatna" data-spatna role="status" aria-live="polite" hidden></p>
+      <button type="button" class="tlacidlo" data-dalej hidden>Ďalšia úloha →</button>
+    </div>
+    <div class="trener__koniec" data-koniec hidden>
+      <img src="/assets/img/postavy/koza-oslavuje.png" alt="" width="100" data-obr-dobre hidden>
+      <img src="/assets/img/postavy/koza-premysla.png" alt="" width="100" data-obr-zle hidden>
+      <div>
+        <p class="trener__vysledok" data-vysledok></p>
+        <div class="trener__tlacidla"><button type="button" class="tlacidlo" data-dalsie>Ďalšie kolo</button></div>
+      </div>
+    </div>
+  </div>
+  <script src="/assets/js/hodiny.js" defer></script>
+</section>

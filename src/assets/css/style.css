@@ -618,3 +618,31 @@ select, input, textarea { font: inherit; color: var(--ink); }
 .rodiny td:last-child { line-height: 1.9; }
 .rodiny .par { white-space: nowrap; }
 .rodiny td:first-child { min-width: 7.5em; }
+
+/* ---------- Tréner: hodiny ---------- */
+.hd-karta { gap: 8px; }
+.hd-otazka { font-family: var(--hand); font-size: clamp(1.9rem, 7vw, 2.6rem); font-weight: 700; line-height: 1.1; margin: 2px 0 0; color: var(--ink); }
+.hd-hodiny { width: min(300px, 78vw); height: auto; display: block; touch-action: none; user-select: none; -webkit-user-select: none; }
+.hd-ram { fill: var(--paper); stroke: var(--ink); stroke-width: 5; }
+.hd-ciarka { stroke: var(--ink-2); stroke-width: 2; stroke-linecap: round; }
+.hd-ciarka--h { stroke: var(--ink); stroke-width: 4; }
+.hd-cislo { text-anchor: middle; font-family: var(--text); font-weight: 800; font-size: 26px; fill: var(--ink); }
+.hd-ruc { stroke-linecap: round; }
+.hd-ruc--h { stroke: var(--ink); stroke-width: 10; }
+.hd-ruc--m { stroke: var(--blue); stroke-width: 6; }
+.hd-stred { fill: var(--terra); stroke: var(--ink); stroke-width: 2; }
+.hd-duch { opacity: 0; }
+.hd-duch.je-vidno { opacity: .75; }
+.hd-duch .hd-ruc { stroke: var(--green); }
+.hd-hodiny--nastav { cursor: grab; }
+.hd-hodiny--nastav .hd-ram { fill: var(--yellow-wash); }
+.hd-hodiny--tahanie { cursor: grabbing; }
+.hd-ovladanie { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 22px; }
+.hd-ovladanie[hidden] { display: none; }
+.hd-skupina { display: flex; align-items: center; gap: 6px; }
+.hd-skupina .trener__cip { min-width: 44px; min-height: 40px; justify-content: center; }
+.hd-moznosti { justify-content: center; max-width: 560px; }
+.hd-moznost { font-size: 1.05rem; padding: 8px 16px; }
+.hd-moznost:disabled { cursor: default; opacity: .75; }
+.hd-moznost--ok, .hd-moznost--ok:disabled { background: var(--green-wash); border-color: var(--green); color: var(--green); opacity: 1; }
+.hd-moznost--zle, .hd-moznost--zle:disabled { background: var(--terra-wash); border-color: var(--terra); color: #8f3522; opacity: 1; }

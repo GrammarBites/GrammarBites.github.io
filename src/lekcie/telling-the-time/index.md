@@ -9,6 +9,10 @@ ucebnice:
 temy: [ostatne]
 klucoveSlova: [telling the time, time, hodiny, čas, koľko je hodín, what time is it, o'clock, quarter past, half past, quarter to, past, to, minutes, minúty, ručičkové hodiny, clock, tréner, trenažér]
 hodiny: true
+video: video.mp4
+poster: poster.jpg
+infografika: infografika.jpg
+infografikaPdf: infografika.pdf
 koza: koza-premysla
 otazkaKozy: "What time is it? Lunch time?"
 bite:

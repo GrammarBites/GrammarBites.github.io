@@ -9,6 +9,7 @@ ucebnice:
   - { id: project-2, unit: "5" }
 temy: [ostatne]
 klucoveSlova: [irregular, nepravidelné, worst, furthest, least, less, superlative, superlatives, tretí stupeň, najvyšší stupeň, comparative, druhý stupeň, stupňovanie, prídavné mená, the est, the most, the best, the worst, naj, 5C]
+porovnanie: sup
 video: video.mp4
 poster: poster.jpg
 infografika: infografika.jpg
@@ -68,13 +69,13 @@ Pravidlá pravopisu sú rovnaké ako pri druhom stupni: kde je *-er*, tam je *-e
 Tieto tvary nemajú pravidlo, treba sa ich naučiť naspamäť:
 
 <table class="chyby tvary">
-<thead><tr><th scope="col">prídavné meno</th><th scope="col">druhý stupeň</th><th scope="col">tretí stupeň</th><th scope="col">po slovensky</th></tr></thead>
+<thead><tr><th scope="col">prídavné meno</th><th scope="col">druhý stupeň</th><th scope="col">tretí stupeň</th></tr></thead>
 <tbody>
-<tr><td>good</td><td><b>better</b></td><td><b>the best</b></td><td>dobrý – lepší – najlepší</td></tr>
-<tr><td>bad</td><td><b>worse</b></td><td><b>the worst</b></td><td>zlý – horší – najhorší</td></tr>
-<tr><td>far</td><td><b>further</b></td><td><b>the furthest</b></td><td>ďaleko – ďalej – najďalej</td></tr>
-<tr><td>many / much</td><td><b>more</b></td><td><b>the most</b></td><td>veľa – viac – najviac</td></tr>
-<tr><td>little</td><td><b>less</b></td><td><b>the least</b></td><td>málo – menej – najmenej</td></tr>
+<tr><td>good (dobrý)</td><td><b>better</b> (lepší)</td><td><b>the best</b> (najlepší)</td></tr>
+<tr><td>bad (zlý)</td><td><b>worse</b> (horší)</td><td><b>the worst</b> (najhorší)</td></tr>
+<tr><td>far (ďaleko)</td><td><b>further</b> (ďalej)</td><td><b>the furthest</b> (najďalej)</td></tr>
+<tr><td>many / much (veľa)</td><td><b>more</b> (viac)</td><td><b>the most</b> (najviac)</td></tr>
+<tr><td>little (málo)</td><td><b>less</b> (menej)</td><td><b>the least</b> (najmenej)</td></tr>
 </tbody>
 </table>
 

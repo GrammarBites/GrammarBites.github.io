@@ -1,0 +1,32 @@
+{# Tréner súťaž kariet. V lekcii: porovnanie: comp | sup #}
+<section class="blok blok--trener" aria-labelledby="h-porovnanie">
+  <h2 id="h-porovnanie" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Tréner: súťaž kariet</h2>
+  <p class="blok__uvod">Porovnaj karty podľa čísel – zvieratá (rýchlosť, váha, výška), veci v obchode (cena) alebo výsledky testu. Raz porovnávaš dve karty, inokedy hľadáš tú „naj“. Čísla sú približné.</p>
+  <div class="trener porovnanie" data-porovnanie="{{ porovnanie }}">
+    <fieldset class="trener__vyber">
+      <legend>Čo chceš trénovať?</legend>
+      <div class="trener__cipy" data-cipy></div>
+    </fieldset>
+    <div class="trener__karta pc-karta-box" data-karta>
+      <div class="trener__hore">
+        <span class="trener__stav" data-stav>1 / 10</span>
+        <span class="trener__seria" data-skore>body 0</span>
+      </div>
+      <div class="pc-karty" data-karty></div>
+      <p class="co-veta" data-otazka></p>
+      <p class="ps-krok" data-krok></p>
+      <div class="trener__cipy pc-moznosti" data-moznosti></div>
+      <p class="trener__spatna" data-spatna role="status" aria-live="polite" hidden></p>
+      <button type="button" class="tlacidlo" data-dalej hidden>Ďalšia úloha →</button>
+    </div>
+    <div class="trener__koniec" data-koniec hidden>
+      <img src="/assets/img/postavy/koza-oslavuje.png" alt="" width="100" data-obr-dobre hidden>
+      <img src="/assets/img/postavy/koza-premysla.png" alt="" width="100" data-obr-zle hidden>
+      <div>
+        <p class="trener__vysledok" data-vysledok></p>
+        <div class="trener__tlacidla"><button type="button" class="tlacidlo" data-dalsie>Ďalšie kolo</button></div>
+      </div>
+    </div>
+  </div>
+  <script src="/assets/js/porovnanie.js" defer></script>
+</section>

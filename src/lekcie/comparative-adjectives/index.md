@@ -9,6 +9,7 @@ ucebnice:
   - { id: project-2, unit: "5" }
 temy: [ostatne]
 klucoveSlova: [comparative, comparatives, comparative adjectives, druhý stupeň, stupňovanie, prídavné mená, adjectives, than, ako, er, more, better, worse, bigger, porovnávanie, 5B]
+porovnanie: comp
 video: video.mp4
 poster: poster.jpg
 infografika: infografika.jpg

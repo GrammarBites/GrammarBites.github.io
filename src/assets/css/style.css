@@ -770,3 +770,22 @@ button.vz-slovo:hover { border-color: var(--ink); }
 .iz-moznost--ok, .iz-moznost--ok:disabled { background: var(--green-wash); border-color: var(--green); color: var(--green); opacity: 1; }
 .iz-moznost--zle, .iz-moznost--zle:disabled { background: var(--terra-wash); border-color: var(--terra); color: #8f3522; opacity: 1; }
 .iz-spravne { fill: rgba(63,125,58,.18); stroke: var(--green); stroke-width: 4; stroke-dasharray: 7 5; }
+
+/* ---------- Tréner: súťaž kariet ---------- */
+.pc-karta-box { gap: 10px; }
+.pc-karty { width: 100%; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.pc-karta { font: inherit; color: var(--ink); display: grid; justify-items: center; gap: 2px; padding: 10px 8px 12px; background: var(--paper-hi); border: 2px solid var(--ink); border-radius: 14px; box-shadow: var(--tien); min-width: 0; }
+button.pc-karta { cursor: pointer; }
+button.pc-karta:hover { transform: translateY(-2px); border-color: var(--blue); }
+button.pc-karta:focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
+.pc-karta--vitaz { background: var(--green-wash); border-color: var(--green); box-shadow: 0 0 0 3px var(--green); }
+.pc-karta--zle { background: var(--terra-wash); border-color: var(--terra); }
+.pc-emoji { font-size: 2.6rem; line-height: 1.1; }
+.pc-meno { font-family: var(--hand); font-size: 1.7rem; font-weight: 700; line-height: 1; }
+.pc-sk { font-size: .85rem; color: var(--ink-2); font-style: italic; }
+.pc-stat { font-weight: 800; font-size: 1.05rem; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.pc-bar { width: 100%; height: 10px; background: var(--paper-lo); border-radius: 999px; overflow: hidden; }
+.pc-bar > span { display: block; height: 100%; background: var(--blue); border-radius: 999px; }
+.pc-moznosti { justify-content: center; }
+.pc-moznost { font-size: 1.05rem; padding: 8px 16px; }
+.pc-moznost--zle, .pc-moznost--zle:disabled { background: var(--terra-wash); border-color: var(--terra); color: #8f3522; text-decoration: line-through; opacity: 1; }

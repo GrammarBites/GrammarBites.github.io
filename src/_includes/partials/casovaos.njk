@@ -1,0 +1,33 @@
+{# Tréner časovej osi. V lekcii: casovaOs: vs | forsince (dáta src/_data/casovaOsData.json) #}
+<section class="blok blok--trener" aria-labelledby="h-casovaos">
+  <h2 id="h-casovaos" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Tréner: časová os</h2>
+  <p class="blok__uvod">Najprv rozhodni, kam veta patrí na časovej osi – je to hotové v minulosti, alebo spojené s TERAZ? Potom vyber tvar slovesa. Pri <span lang="en">for × since</span> hľadáš, či je to začiatok, alebo dĺžka. Bod za vetu bez chyby.</p>
+  <div class="trener casovaos" data-casovaos="{{ casovaOs }}">
+    <fieldset class="trener__vyber">
+      <legend>Čo chceš trénovať?</legend>
+      <div class="trener__cipy" data-cipy></div>
+    </fieldset>
+    <div class="trener__karta co-karta" data-karta>
+      <div class="trener__hore">
+        <span class="trener__stav" data-stav>1 / 10</span>
+        <span class="trener__seria" data-skore>body 0</span>
+      </div>
+      <p class="co-veta" lang="en" data-veta></p>
+      <svg class="co-svg" data-os viewBox="0 -10 600 210" role="img" aria-label="Časová os"></svg>
+      <p class="ps-krok" data-krok></p>
+      <div class="trener__cipy co-moznosti" data-moznosti></div>
+      <p class="trener__spatna" data-spatna role="status" aria-live="polite" hidden></p>
+      <button type="button" class="tlacidlo" data-dalej hidden>Ďalšia veta →</button>
+    </div>
+    <div class="trener__koniec" data-koniec hidden>
+      <img src="/assets/img/postavy/koza-oslavuje.png" alt="" width="100" data-obr-dobre hidden>
+      <img src="/assets/img/postavy/koza-premysla.png" alt="" width="100" data-obr-zle hidden>
+      <div>
+        <p class="trener__vysledok" data-vysledok></p>
+        <div class="trener__tlacidla"><button type="button" class="tlacidlo" data-dalsie>Ďalšie kolo</button></div>
+      </div>
+    </div>
+  </div>
+  <script type="application/json" id="data-casovaos">{{ casovaOsData | json | safe }}</script>
+  <script src="/assets/js/casovaos.js" defer></script>
+</section>

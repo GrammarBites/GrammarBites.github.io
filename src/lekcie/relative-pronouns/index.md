@@ -9,6 +9,7 @@ ucebnice:
   - { id: project-4, unit: "3" }
 temy: [ostatne]
 klucoveSlova: [spájanie viet, combine sentences, 3B, relative pronouns, relative clauses, vzťažné zámená, vedľajšie vety, who, which, that, where, ktorý, ktorá, ktoré, kde, definície, 3A]
+vztazne: true
 video: video.mp4
 poster: poster.jpg
 infografika: infografika.jpg

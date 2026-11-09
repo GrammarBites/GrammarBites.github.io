@@ -1,0 +1,298 @@
+{
+ "cas": [
+  {
+   "v": "I ___ Vienna last summer.",
+   "f": [
+    "visited",
+    "have visited"
+   ],
+   "ok": 0,
+   "druh": "kedy",
+   "sig": "last summer",
+   "x": 0.35,
+   "sk": "Minulé leto som bol vo Viedni."
+  },
+  {
+   "v": "I ___ to Vienna three times.",
+   "f": [
+    "was",
+    "have been"
+   ],
+   "ok": 1,
+   "druh": "skusenost",
+   "sig": "three times",
+   "sk": "Vo Viedni som bol trikrát (doteraz)."
+  },
+  {
+   "v": "Oh no! I ___ my keys. I can't open the door.",
+   "f": [
+    "lost",
+    "have lost"
+   ],
+   "ok": 1,
+   "druh": "vysledok",
+   "sig": "I can't open the door",
+   "sk": "Stratil som kľúče – teraz nemôžem otvoriť."
+  },
+  {
+   "v": "I ___ my keys yesterday, but Mum found them.",
+   "f": [
+    "lost",
+    "have lost"
+   ],
+   "ok": 0,
+   "druh": "kedy",
+   "sig": "yesterday",
+   "x": 0.75,
+   "sk": "Včera som stratil kľúče."
+  },
+  {
+   "v": "We ___ in this flat since 2020.",
+   "f": [
+    "lived",
+    "have lived"
+   ],
+   "ok": 1,
+   "druh": "trvanie",
+   "sig": "since 2020",
+   "sk": "V tomto byte bývame od roku 2020 (a stále bývame)."
+  },
+  {
+   "v": "We ___ in Nitra from 2015 to 2020.",
+   "f": [
+    "lived",
+    "have lived"
+   ],
+   "ok": 0,
+   "druh": "kedy",
+   "sig": "from 2015 to 2020",
+   "x": 0.3,
+   "od": 0.15,
+   "sk": "V Nitre sme bývali v rokoch 2015 – 2020 (už nebývame)."
+  },
+  {
+   "v": "When ___ school?",
+   "f": [
+    "did you start",
+    "have you started"
+   ],
+   "ok": 0,
+   "druh": "kedy",
+   "sig": "When",
+   "x": 0.2,
+   "sk": "Kedy si začal chodiť do školy?"
+  },
+  {
+   "v": "Tom ___ . Call him back!",
+   "f": [
+    "just called",
+    "has just called"
+   ],
+   "ok": 1,
+   "druh": "prave",
+   "sig": "just",
+   "sk": "Tom práve volal."
+  },
+  {
+   "v": "Mozart ___ over 600 pieces of music.",
+   "f": [
+    "wrote",
+    "has written"
+   ],
+   "ok": 0,
+   "druh": "kedy",
+   "sig": "Mozart už nežije",
+   "x": 0.1,
+   "sk": "Mozart napísal vyše 600 skladieb."
+  },
+  {
+   "v": "I ___ Anna for five years.",
+   "f": [
+    "knew",
+    "have known"
+   ],
+   "ok": 1,
+   "druh": "trvanie",
+   "sig": "for five years",
+   "sk": "Annu poznám päť rokov (a stále ju poznám)."
+  },
+  {
+   "v": "The film ___ ten minutes ago.",
+   "f": [
+    "started",
+    "has started"
+   ],
+   "ok": 0,
+   "druh": "kedy",
+   "sig": "ten minutes ago",
+   "x": 0.85,
+   "sk": "Film sa začal pred desiatimi minútami."
+  },
+  {
+   "v": "I ___ my leg in 2022.",
+   "f": [
+    "broke",
+    "have broken"
+   ],
+   "ok": 0,
+   "druh": "kedy",
+   "sig": "in 2022",
+   "x": 0.5,
+   "sk": "V roku 2022 som si zlomil nohu."
+  },
+  {
+   "v": "Look! Someone ___ the window!",
+   "f": [
+    "broke",
+    "has broken"
+   ],
+   "ok": 1,
+   "druh": "vysledok",
+   "sig": "Look!",
+   "sk": "Pozri! Niekto rozbil okno!"
+  },
+  {
+   "v": "___ sushi?",
+   "f": [
+    "Did you ever eat",
+    "Have you ever eaten"
+   ],
+   "ok": 1,
+   "druh": "skusenost",
+   "sig": "ever",
+   "sk": "Jedol si niekedy sushi?"
+  },
+  {
+   "v": "I ___ sushi at a party on Saturday.",
+   "f": [
+    "ate",
+    "have eaten"
+   ],
+   "ok": 0,
+   "druh": "kedy",
+   "sig": "on Saturday",
+   "x": 0.8,
+   "sk": "V sobotu som jedol sushi na oslave."
+  },
+  {
+   "v": "She ___ her homework yet.",
+   "f": [
+    "didn't finish",
+    "hasn't finished"
+   ],
+   "ok": 1,
+   "druh": "prave",
+   "sig": "yet",
+   "sk": "Ešte nedokončila domácu úlohu."
+  },
+  {
+   "v": "My grandpa ___ in a factory when he was young.",
+   "f": [
+    "worked",
+    "has worked"
+   ],
+   "ok": 0,
+   "druh": "kedy",
+   "sig": "when he was young",
+   "x": 0.15,
+   "sk": "Dedko pracoval v továrni, keď bol mladý."
+  },
+  {
+   "v": "I ___ a horse in my life.",
+   "f": [
+    "never rode",
+    "have never ridden"
+   ],
+   "ok": 1,
+   "druh": "skusenost",
+   "sig": "never, in my life",
+   "sk": "Ešte nikdy v živote som nejazdil na koni."
+  }
+ ],
+ "forsince": [
+  {
+   "v": "I have lived here ___ 2019.",
+   "ok": "since",
+   "z": "2019",
+   "sk": "Bývam tu od roku 2019."
+  },
+  {
+   "v": "She has had her dog ___ three years.",
+   "ok": "for",
+   "z": "three years",
+   "sk": "Psa má tri roky."
+  },
+  {
+   "v": "We have known each other ___ we were six.",
+   "ok": "since",
+   "z": "we were six",
+   "sk": "Poznáme sa odvtedy, čo sme mali šesť."
+  },
+  {
+   "v": "He has been ill ___ Monday.",
+   "ok": "since",
+   "z": "Monday",
+   "sk": "Je chorý od pondelka."
+  },
+  {
+   "v": "They have been married ___ a long time.",
+   "ok": "for",
+   "z": "a long time",
+   "sk": "Sú manželia už dlho."
+  },
+  {
+   "v": "I haven't eaten ___ breakfast.",
+   "ok": "since",
+   "z": "breakfast",
+   "sk": "Od raňajok som nejedol."
+  },
+  {
+   "v": "We have waited ___ twenty minutes!",
+   "ok": "for",
+   "z": "twenty minutes",
+   "sk": "Čakáme už dvadsať minút!"
+  },
+  {
+   "v": "She has played the piano ___ she was five.",
+   "ok": "since",
+   "z": "she was five",
+   "sk": "Na klavíri hrá odvtedy, čo mala päť."
+  },
+  {
+   "v": "I haven't seen Peter ___ ages.",
+   "ok": "for",
+   "z": "ages",
+   "sk": "Petra som nevidel celú večnosť."
+  },
+  {
+   "v": "They have lived in Košice ___ last summer.",
+   "ok": "since",
+   "z": "last summer",
+   "sk": "V Košiciach bývajú od minulého leta."
+  },
+  {
+   "v": "I have had this phone ___ two months.",
+   "ok": "for",
+   "z": "two months",
+   "sk": "Tento mobil mám dva mesiace."
+  },
+  {
+   "v": "It has rained ___ 8 o'clock.",
+   "ok": "since",
+   "z": "8 o'clock",
+   "sk": "Prší od ôsmej."
+  },
+  {
+   "v": "He has worked here ___ ten years.",
+   "ok": "for",
+   "z": "ten years",
+   "sk": "Pracuje tu desať rokov."
+  },
+  {
+   "v": "We haven't had a test ___ two weeks.",
+   "ok": "for",
+   "z": "two weeks",
+   "sk": "Dva týždne sme nemali písomku."
+  }
+ ]
+}

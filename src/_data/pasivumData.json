@@ -1,0 +1,30 @@
+{
+  "vety": [
+    { "t": "ps", "s": "Bees", "v": "make", "o": "honey", "O": "Honey", "be": "is", "pp": "made", "ps": "made", "ag": "by bees", "a": "opt", "sk": "Med robia včely." },
+    { "t": "ps", "s": "People", "v": "speak", "o": "Spanish", "x": "in Mexico", "O": "Spanish", "be": "is", "pp": "spoken", "ps": "spoke", "ag": "by people", "a": "drop", "sk": "V Mexiku sa hovorí po španielsky." },
+    { "t": "ps", "s": "Farmers", "v": "grow", "o": "rice", "x": "in China", "O": "Rice", "be": "is", "pp": "grown", "ps": "grew", "ag": "by farmers", "a": "drop", "sk": "V Číne sa pestuje ryža." },
+    { "t": "ps", "s": "The postman", "v": "delivers", "o": "the letters", "O": "The letters", "be": "are", "pp": "delivered", "ps": "delivered", "ag": "by the postman", "a": "opt", "sk": "Listy roznáša poštár." },
+    { "t": "ps", "s": "Someone", "v": "cleans", "o": "the classrooms", "x": "every day", "O": "The classrooms", "be": "are", "pp": "cleaned", "ps": "cleaned", "ag": "by someone", "a": "drop", "sk": "Triedy sa upratujú každý deň." },
+    { "t": "ps", "s": "Samsung", "v": "makes", "o": "these phones", "O": "These phones", "be": "are", "pp": "made", "ps": "made", "ag": "by Samsung", "a": "need", "sk": "Tieto mobily vyrába Samsung." },
+    { "t": "ps", "s": "My grandma", "v": "bakes", "o": "the best cakes", "O": "The best cakes", "be": "are", "pp": "baked", "ps": "baked", "ag": "by my grandma", "a": "need", "sk": "Najlepšie koláče pečie moja babka." },
+    { "t": "ps", "s": "They", "v": "sell", "o": "tickets", "x": "online", "O": "Tickets", "be": "are", "pp": "sold", "ps": "sold", "ag": "by them", "a": "drop", "sk": "Lístky sa predávajú online." },
+    { "t": "ps", "s": "The teacher", "v": "checks", "o": "our homework", "O": "Our homework", "be": "is", "pp": "checked", "ps": "checked", "ag": "by the teacher", "a": "opt", "sk": "Domácu úlohu nám kontroluje učiteľ." },
+    { "t": "ps", "s": "Millions of people", "v": "watch", "o": "this show", "O": "This show", "be": "is", "pp": "watched", "ps": "watched", "ag": "by millions of people", "a": "need", "sk": "Túto šou sledujú milióny ľudí." },
+    { "t": "ps", "s": "People", "v": "write", "o": "this word", "x": "with a capital letter", "O": "This word", "be": "is", "pp": "written", "ps": "wrote", "ag": "by people", "a": "drop", "sk": "Toto slovo sa píše s veľkým písmenom." },
+    { "t": "ps", "s": "A machine", "v": "cuts", "o": "the bread", "O": "The bread", "be": "is", "pp": "cut", "ps": "cut", "ag": "by a machine", "a": "opt", "sk": "Chlieb krája stroj." },
+
+    { "t": "past", "s": "Leonardo da Vinci", "v": "painted", "o": "the Mona Lisa", "O": "The Mona Lisa", "be": "was", "pp": "painted", "ps": "painted", "base": "paint", "ag": "by Leonardo da Vinci", "a": "need", "sk": "Monu Lisu namaľoval Leonardo da Vinci." },
+    { "t": "past", "s": "Someone", "v": "stole", "o": "my bike", "x": "yesterday", "O": "My bike", "be": "was", "pp": "stolen", "ps": "stole", "base": "steal", "ag": "by someone", "a": "drop", "sk": "Včera mi ukradli bicykel." },
+    { "t": "past", "s": "They", "v": "built", "o": "this castle", "x": "in 1250", "O": "This castle", "be": "was", "pp": "built", "ps": "built", "base": "build", "ag": "by them", "a": "drop", "sk": "Tento hrad postavili v roku 1250." },
+    { "t": "past", "s": "The Romans", "v": "built", "o": "these roads", "O": "These roads", "be": "were", "pp": "built", "ps": "built", "base": "build", "ag": "by the Romans", "a": "need", "sk": "Tieto cesty postavili Rimania." },
+    { "t": "past", "s": "A dog", "v": "bit", "o": "the postman", "O": "The postman", "be": "was", "pp": "bitten", "ps": "bit", "base": "bite", "ag": "by a dog", "a": "opt", "sk": "Poštára pohrýzol pes." },
+    { "t": "pp", "s": "Someone", "v": "has eaten", "o": "my sandwich", "O": "My sandwich", "be": "has been", "pp": "eaten", "ps": "ate", "base": "eat", "ag": "by someone", "a": "drop", "sk": "Niekto mi zjedol desiatu!" },
+    { "t": "pp", "s": "They", "v": "have opened", "o": "two new shops", "O": "Two new shops", "be": "have been", "pp": "opened", "ps": "opened", "base": "open", "ag": "by them", "a": "drop", "sk": "Otvorili dva nové obchody." },
+    { "t": "pp", "s": "Our class", "v": "has planted", "o": "ten trees", "O": "Ten trees", "be": "have been", "pp": "planted", "ps": "planted", "base": "plant", "ag": "by our class", "a": "need", "sk": "Desať stromov vysadila naša trieda." },
+    { "t": "will", "s": "They", "v": "will build", "o": "a new school", "x": "next year", "O": "A new school", "be": "will be", "pp": "built", "ps": "built", "base": "build", "ag": "by them", "a": "drop", "sk": "Budúci rok postavia novú školu." },
+    { "t": "will", "s": "The mayor", "v": "will open", "o": "the new park", "O": "The new park", "be": "will be", "pp": "opened", "ps": "opened", "base": "open", "ag": "by the mayor", "a": "need", "sk": "Nový park otvorí starosta." },
+    { "t": "pc", "s": "Workers", "v": "are repairing", "o": "the road", "O": "The road", "be": "is being", "pp": "repaired", "ps": "repaired", "base": "repair", "ag": "by workers", "a": "drop", "sk": "Cesta sa práve opravuje." },
+    { "t": "pc", "s": "Two vets", "v": "are examining", "o": "the horses", "O": "The horses", "be": "are being", "pp": "examined", "ps": "examined", "base": "examine", "ag": "by two vets", "a": "opt", "sk": "Kone práve vyšetrujú dvaja veterinári." }
+  ],
+  "casy": { "ps": "present simple", "past": "past simple", "pp": "present perfect", "will": "will (budúcnosť)", "pc": "present continuous" }
+}

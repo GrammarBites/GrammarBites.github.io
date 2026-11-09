@@ -10,6 +10,7 @@ ucebnice:
   - { id: project-5, unit: "1" }
 temy: [pritomne-casy, minule-casy]
 klucoveSlova: [present perfect, past simple, present perfect vs past simple, predprítomný čas, minulý čas, ever, never, just, recently, yesterday, ago, last, when, výsledok teraz, result, experiences, skúsenosti, 2A, 2B]
+casovaOs: vs
 video: video.mp4
 poster: poster.jpg
 infografika: infografika.jpg

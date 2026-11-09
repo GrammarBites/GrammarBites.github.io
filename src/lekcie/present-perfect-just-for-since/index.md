@@ -11,6 +11,7 @@ ucebnice:
   - { id: project-5, unit: "1" }
 temy: [pritomne-casy]
 klucoveSlova: [recently, yet, nedávno, ešte nie, present perfect, predprítomný čas, just, práve, for, since, ako dlho, odkedy, how long, for five years, since 2020, duration, 5D, recent events, už, pred chvíľou]
+casovaOs: forsince
 video: video.mp4
 poster: poster.jpg
 infografika: infografika.jpg

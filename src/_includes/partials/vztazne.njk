@@ -1,0 +1,32 @@
+{# Tréner vzťažných viet. V lekcii: vztazne: true (dáta src/_data/vztazneData.json) #}
+<section class="blok blok--trener" aria-labelledby="h-vztazne">
+  <h2 id="h-vztazne" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Tréner: spoj dve vety do jednej</h2>
+  <p class="blok__uvod">Postup v troch krokoch: 1. nájdi slovo, ktoré sa opakuje, 2. nahraď ho slovom who / which / that / where, 3. vyber správnu spojenú vetu – opakované slovo musí vypadnúť. 8 dvojíc v kole, bod za dvojicu bez chyby.</p>
+  <div class="trener vztazne" data-vztazne>
+    <div class="trener__karta vz-karta" data-karta>
+      <div class="trener__hore">
+        <span class="trener__stav" data-stav>1 / 8</span>
+        <span class="trener__seria" data-skore>body 0</span>
+      </div>
+      <div class="vz-vety">
+        <p class="vz-veta" lang="en"><span class="vz-cislo">1</span> <span data-v1></span></p>
+        <p class="vz-veta" lang="en"><span class="vz-cislo">2</span> <span data-v2></span></p>
+      </div>
+      <p class="ps-krok" data-krok></p>
+      <div class="trener__cipy vz-moznosti" data-moznosti></div>
+      <p class="vz-vysl" data-vysl hidden></p>
+      <p class="trener__spatna" data-spatna role="status" aria-live="polite" hidden></p>
+      <button type="button" class="tlacidlo" data-dalej hidden>Ďalšia dvojica →</button>
+    </div>
+    <div class="trener__koniec" data-koniec hidden>
+      <img src="/assets/img/postavy/koza-oslavuje.png" alt="" width="100" data-obr-dobre hidden>
+      <img src="/assets/img/postavy/koza-premysla.png" alt="" width="100" data-obr-zle hidden>
+      <div>
+        <p class="trener__vysledok" data-vysledok></p>
+        <div class="trener__tlacidla"><button type="button" class="tlacidlo" data-dalsie>Ďalšie kolo</button></div>
+      </div>
+    </div>
+  </div>
+  <script type="application/json" id="data-vztazne">{{ vztazneData | json | safe }}</script>
+  <script src="/assets/js/vztazne.js" defer></script>
+</section>

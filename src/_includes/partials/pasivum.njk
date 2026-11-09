@@ -1,0 +1,36 @@
+{# Tréner trpného rodu. V lekcii: pasivum: present | tenses (dáta src/_data/pasivum.json) #}
+<section class="blok blok--trener" aria-labelledby="h-pasivum">
+  <h2 id="h-pasivum" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Tréner: z činného rodu trpný v 4 krokoch</h2>
+  <p class="blok__uvod">Premeň 8 viet presne podľa postupu: 1. predmet sa stane podmetom, 2. pridáš be v správnom tvare, 3. sloveso v 3. stĺpci, 4. rozhodneš, či treba agenta s by. Bod dostaneš za vetu bez jedinej chyby.</p>
+  <div class="trener pasivum" data-pasivum="{{ pasivum }}">
+    <fieldset class="trener__vyber" data-vyber>
+      <legend>Ktorý čas?</legend>
+      <div class="trener__cipy" data-cipy></div>
+    </fieldset>
+    <div class="trener__karta ps-karta" data-karta>
+      <div class="trener__hore">
+        <span class="trener__stav" data-stav>1 / 8</span>
+        <span class="ps-cas" data-cas></span>
+        <span class="trener__seria" data-skore>body 0</span>
+      </div>
+      <p class="ps-stitok">činný rod (AV)</p>
+      <p class="ps-aktiv" lang="en" data-aktiv></p>
+      <p class="ps-stitok">trpný rod (PV)</p>
+      <div class="ps-sloty" data-sloty></div>
+      <p class="ps-krok" data-krok></p>
+      <div class="trener__cipy ps-moznosti" data-moznosti></div>
+      <p class="trener__spatna" data-spatna role="status" aria-live="polite" hidden></p>
+      <button type="button" class="tlacidlo" data-dalej hidden>Ďalšia veta →</button>
+    </div>
+    <div class="trener__koniec" data-koniec hidden>
+      <img src="/assets/img/postavy/koza-oslavuje.png" alt="" width="100" data-obr-dobre hidden>
+      <img src="/assets/img/postavy/koza-premysla.png" alt="" width="100" data-obr-zle hidden>
+      <div>
+        <p class="trener__vysledok" data-vysledok></p>
+        <div class="trener__tlacidla"><button type="button" class="tlacidlo" data-dalsie>Ďalšie kolo</button></div>
+      </div>
+    </div>
+  </div>
+  <script type="application/json" id="data-pasivum">{{ pasivumData | json | safe }}</script>
+  <script src="/assets/js/pasivum.js" defer></script>
+</section>

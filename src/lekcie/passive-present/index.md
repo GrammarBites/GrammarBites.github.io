@@ -10,6 +10,7 @@ ucebnice:
   - { id: project-5, unit: "5" }
 temy: [trpny-rod]
 klucoveSlova: [passive voice, passive, trpný rod, is made, are made, is spoken, by, active, činný rod, 3. tvar, past participle, present simple passive, 5A, environment]
+pasivum: present
 video: video.mp4
 poster: poster.jpg
 infografika: infografika.jpg

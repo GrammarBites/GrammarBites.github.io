@@ -646,3 +646,70 @@ select, input, textarea { font: inherit; color: var(--ink); }
 .hd-moznost:disabled { cursor: default; opacity: .75; }
 .hd-moznost--ok, .hd-moznost--ok:disabled { background: var(--green-wash); border-color: var(--green); color: var(--green); opacity: 1; }
 .hd-moznost--zle, .hd-moznost--zle:disabled { background: var(--terra-wash); border-color: var(--terra); color: #8f3522; opacity: 1; }
+
+/* ---------- Tréner: trpný rod ---------- */
+.ps-karta, .vz-karta, .co-karta { gap: 10px; }
+.ps-cas { font-weight: 800; color: var(--blue); }
+.ps-stitok { margin: 4px 0 -4px; font-size: .8rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); }
+.ps-aktiv { font-size: 1.35rem; font-weight: 700; line-height: 1.9; }
+.ps-slovo { font: inherit; color: var(--ink); background: var(--paper); border: 2px dashed var(--line); border-radius: 10px; padding: 2px 10px; }
+button.ps-slovo { cursor: pointer; border-style: solid; }
+button.ps-slovo:hover { border-color: var(--ink); }
+.ps-slovo--o { background: var(--yellow-wash); border-color: var(--yellow); border-style: solid; }
+.ps-slovo--s { color: var(--ink-2); }
+.ps-slovo--zle { background: var(--terra-wash); border-color: var(--terra); }
+.ps-sloty { width: 100%; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+@media (max-width: 560px) { .ps-sloty { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.ps-slot { display: grid; gap: 2px; padding: 8px 6px; border: 2px dashed var(--line); border-radius: 12px; background: var(--paper); min-width: 0; }
+.ps-slot__n { font-size: .75rem; font-weight: 800; color: var(--ink-2); }
+.ps-slot__h { font-size: 1.15rem; font-weight: 800; overflow-wrap: anywhere; }
+.ps-slot--akt { border-color: var(--blue); border-style: solid; background: var(--blue-wash); }
+.ps-slot--plny { border-style: solid; border-color: var(--green); background: var(--green-wash); }
+.ps-krok { margin: 4px 0 0; }
+.ps-moznosti, .vz-moznosti, .co-moznosti { justify-content: center; }
+.ps-moznost, .vz-moznost, .co-moznost { font-size: 1.05rem; padding: 8px 16px; }
+.ps-moznost--zle, .vz-moznost--zle, .co-moznost--zle, .ps-moznost--zle:disabled, .vz-moznost--zle:disabled, .co-moznost--zle:disabled { background: var(--terra-wash); border-color: var(--terra); color: #8f3522; text-decoration: line-through; opacity: 1; }
+.vz-moznost--veta { border-radius: 14px; text-align: left; }
+
+/* ---------- Tréner: vzťažné vety ---------- */
+.vz-vety { width: 100%; display: grid; gap: 8px; text-align: left; }
+.vz-veta { margin: 0; font-size: 1.3rem; font-weight: 700; line-height: 1.9; padding: 6px 12px; background: var(--paper); border: 2px solid var(--line); border-radius: 12px; }
+.vz-cislo { display: inline-grid; place-items: center; width: 1.6em; height: 1.6em; border-radius: 50%; background: var(--ink); color: var(--paper-hi); font-size: .8rem; vertical-align: middle; }
+.vz-ant { padding: 0 4px; border-radius: 6px; }
+.vz-ant--zap { background: var(--yellow-wash); box-shadow: 0 0 0 2px var(--yellow); }
+.vz-slovo { font: inherit; color: var(--ink); background: transparent; border: 2px solid transparent; border-radius: 8px; padding: 0 4px; }
+button.vz-slovo { cursor: pointer; border-color: var(--line); background: var(--paper-hi); }
+button.vz-slovo:hover { border-color: var(--ink); }
+.vz-slovo--zle { background: var(--terra-wash) !important; border-color: var(--terra) !important; }
+.vz-slovo--opak { background: var(--yellow-wash); box-shadow: 0 0 0 2px var(--yellow); }
+.vz-slovo--von { text-decoration: line-through 3px var(--terra); opacity: .55; }
+.vz-zam { color: var(--blue); font-weight: 800; background: var(--blue-wash); border-radius: 8px; padding: 0 6px; }
+.vz-vysl { font-size: 1.3rem; font-weight: 700; margin: 0; }
+.vz-vysl mark { background: var(--yellow-wash); box-shadow: 0 0 0 2px var(--yellow); border-radius: 6px; padding: 0 4px; color: inherit; }
+
+/* ---------- Tréner: časová os ---------- */
+.co-veta { font-size: 1.35rem; font-weight: 700; margin: 4px 0 0; }
+.co-medzera { display: inline-block; min-width: 4em; border-bottom: 3px dashed var(--ink-2); color: var(--ink-2); font-size: .85em; padding: 0 6px; }
+.co-doplnene { color: var(--blue); background: var(--blue-wash); border-radius: 6px; padding: 0 6px; }
+.co-svg { width: 100%; max-width: 620px; height: auto; display: block; }
+.co-os { stroke: var(--ink); stroke-width: 4; stroke-linecap: round; }
+.co-hrot { fill: var(--ink); }
+.co-teraz { stroke: var(--terra); stroke-width: 5; stroke-linecap: round; }
+.co-popis { font-family: var(--text); font-weight: 800; font-size: 24px; fill: var(--ink-2); text-anchor: middle; }
+.co-popis--teraz { fill: var(--terra); }
+.co-stitok { font-family: var(--text); font-weight: 800; font-size: 28px; text-anchor: middle; fill: var(--ink); }
+.co-stitok--ps { fill: var(--blue); }
+.co-stitok--pp { fill: var(--green); }
+.co-mensi { font-size: 22px; fill: var(--ink-2); font-weight: 700; }
+.co-otaznik { font-size: 40px; fill: var(--green); }
+.co-bod--ps { fill: var(--blue); stroke: var(--ink); stroke-width: 2; }
+.co-bod--pp { fill: var(--green); stroke: var(--ink); stroke-width: 2; }
+.co-usek { stroke-width: 12; stroke-linecap: round; }
+.co-usek--ps { stroke: var(--blue); opacity: .55; }
+.co-usek--pp { stroke: var(--green); opacity: .6; }
+.co-usek--sivy { stroke: var(--line); }
+.co-obluk { fill: none; stroke: var(--green); stroke-width: 4; stroke-dasharray: 8 6; }
+.co-vlajka { stroke: var(--blue); stroke-width: 4; }
+.co-vlajka-plachta { fill: var(--blue); }
+.co-zatvorka { fill: none; stroke: var(--green); stroke-width: 4; }
+.co-popis--l { text-anchor: start; }

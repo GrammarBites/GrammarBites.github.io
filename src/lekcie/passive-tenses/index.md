@@ -10,6 +10,7 @@ ucebnice:
   - { id: project-5, unit: "5" }
 temy: [trpny-rod]
 klucoveSlova: [passive voice, trpný rod, different tenses, rôzne časy, was made, were made, has been made, have been made, will be made, can be, must be, modal verbs passive, modálne slovesá, past simple passive, present perfect passive, future passive, 5A, 5B]
+pasivum: tenses
 video: video.mp4
 poster: poster.jpg
 infografika: infografika.jpg

@@ -13,6 +13,7 @@ video: video.mp4
 poster: poster.jpg
 infografika: infografika.jpg
 infografikaPdf: infografika.pdf
+hraSlovesa: true
 trener: project-2
 koza: koza-cita
 otazkaKozy: "I ate a book yesterday!"

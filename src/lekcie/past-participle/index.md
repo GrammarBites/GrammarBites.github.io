@@ -13,6 +13,7 @@ video: video.mp4
 poster: poster.jpg
 infografika: infografika.jpg
 infografikaPdf: infografika.pdf
+hraSlovesa: true
 trener: project-3
 trenerTvar: pp
 koza: koza-zvedava

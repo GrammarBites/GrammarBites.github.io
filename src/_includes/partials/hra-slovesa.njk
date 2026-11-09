@@ -1,0 +1,34 @@
+{# Hra s nepravidelnými slovesami. V lekcii: hraSlovesa: true (+ trener: kniha, trenerTvar: pp) #}
+<section class="blok blok--trener" aria-labelledby="h-hra-slovesa">
+  <h2 id="h-hra-slovesa" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Hra: nepravidelné slovesá</h2>
+  <p class="blok__uvod"><b>Pexeso:</b> otáčaj karty a nájdi dvojice – základný tvar a {{ "3. tvar" if trenerTvar == "pp" else "minulý tvar" }}. <b>Rýchlik:</b> za 60 sekúnd vyber čo najviac správnych tvarov. Rekordy sa ti pamätajú.</p>
+  <div class="trener hra-slovesa" data-hra-slovesa data-kniha="{{ trener }}"{% if trenerTvar == "pp" %} data-tvar="pp"{% endif %}>
+    <fieldset class="trener__vyber">
+      <legend>Vyber hru</legend>
+      <div class="trener__cipy" data-cipy></div>
+    </fieldset>
+    <div class="trener__karta hs-box" data-pexeso>
+      <p class="hs-stav" data-pex-stav></p>
+      <div class="hs-mriezka" data-mriezka></div>
+    </div>
+    <div class="trener__karta hs-box" data-rychlik hidden>
+      <div class="hs-cas" data-cas><span></span></div>
+      <p class="trener__hore"><span></span><span class="trener__seria" data-body></span></p>
+      <p class="trener__sloveso" lang="en" data-sloveso></p>
+      <p class="trener__vyznam" data-vyznam></p>
+      <div class="trener__cipy hs-moznosti" data-moznosti></div>
+      <button type="button" class="tlacidlo" data-start>Štart!</button>
+      <p class="trener__spatna" data-spatna role="status" aria-live="polite" hidden></p>
+    </div>
+    <div class="trener__koniec" data-koniec hidden>
+      <img src="/assets/img/postavy/koza-oslavuje.png" alt="" width="100" data-obr-dobre hidden>
+      <img src="/assets/img/postavy/koza-premysla.png" alt="" width="100" data-obr-zle hidden>
+      <div>
+        <p class="trener__vysledok" data-vysledok></p>
+        <div class="trener__tlacidla"><button type="button" class="tlacidlo" data-znova>Hrať znova</button></div>
+      </div>
+    </div>
+  </div>
+  <script type="application/json" id="data-hra-slovesa">{{ nepravidelneSlovesa | json | safe }}</script>
+  <script src="/assets/js/hra-slovesa.js" defer></script>
+</section>

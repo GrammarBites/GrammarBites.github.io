@@ -1,0 +1,48 @@
+{# Tréner nákupný košík. V lekcii: kosik: true (dáta src/_data/kosikData.json) #}
+<section class="blok blok--trener" aria-labelledby="h-kosik">
+  <h2 id="h-kosik" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Tréner: nákupný košík</h2>
+  <p class="blok__uvod">Ideš nakupovať! Vlož každú vec do správneho košíka – dá sa spočítať po kusoch (<span lang="en">How many?</span>), alebo nie (<span lang="en">How much?</span>)? V druhej časti doplníš <span lang="en">much / many, a few / a little</span> a správny obal.</p>
+  <div class="trener kosik" data-kosik>
+    <fieldset class="trener__vyber">
+      <legend>Čo chceš trénovať?</legend>
+      <div class="trener__cipy" data-cipy></div>
+    </fieldset>
+    <div class="trener__karta ks-karta" data-karta>
+      <div class="trener__hore">
+        <span class="trener__stav" data-stav>1 / 12</span>
+        <span class="trener__seria" data-skore>body 0</span>
+      </div>
+      <div class="ks-vec" data-vec>
+        <span class="ks-emoji" data-emoji aria-hidden="true"></span>
+        <span class="ks-slovo" lang="en" data-slovo></span>
+        <span class="ks-sk" data-sk></span>
+      </div>
+      <p class="co-veta" lang="en" data-veta hidden></p>
+      <div class="trener__cipy ks-moznosti" data-moznosti hidden></div>
+      <div class="ks-kosiky" data-kosiky>
+        <button type="button" class="ks-kos ks-kos--c" data-kos="c">
+          <span class="ks-kos__nazov">🧺 počítateľné</span>
+          <span class="ks-kos__en" lang="en">How many?</span>
+          <span class="ks-kos__obsah" data-obsah="c"></span>
+        </button>
+        <button type="button" class="ks-kos ks-kos--u" data-kos="u">
+          <span class="ks-kos__nazov">🧺 nepočítateľné</span>
+          <span class="ks-kos__en" lang="en">How much?</span>
+          <span class="ks-kos__obsah" data-obsah="u"></span>
+        </button>
+      </div>
+      <p class="trener__spatna" data-spatna role="status" aria-live="polite" hidden></p>
+      <button type="button" class="tlacidlo" data-dalej hidden>Ďalej →</button>
+    </div>
+    <div class="trener__koniec" data-koniec hidden>
+      <img src="/assets/img/postavy/koza-oslavuje.png" alt="" width="100" data-obr-dobre hidden>
+      <img src="/assets/img/postavy/koza-premysla.png" alt="" width="100" data-obr-zle hidden>
+      <div>
+        <p class="trener__vysledok" data-vysledok></p>
+        <div class="trener__tlacidla"><button type="button" class="tlacidlo" data-dalsie>Ďalšie kolo</button></div>
+      </div>
+    </div>
+  </div>
+  <script type="application/json" id="data-kosik">{{ kosikData | json | safe }}</script>
+  <script src="/assets/js/kosik.js" defer></script>
+</section>

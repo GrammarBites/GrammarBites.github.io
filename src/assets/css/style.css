@@ -714,3 +714,31 @@ button.vz-slovo:hover { border-color: var(--ink); }
 .co-zatvorka { fill: none; stroke: var(--green); stroke-width: 4; }
 .co-popis--l { text-anchor: start; }
 .co-inf { color: var(--terra); font-weight: 800; white-space: nowrap; }
+
+/* ---------- Tréner: nákupný košík ---------- */
+.ks-karta { gap: 12px; }
+.ks-vec { display: grid; justify-items: center; gap: 2px; }
+.ks-vec[hidden] { display: none; }
+.ks-emoji { font-size: 4.2rem; line-height: 1.1; }
+.ks-slovo { font-family: var(--hand); font-size: 2.6rem; font-weight: 700; line-height: 1; }
+.ks-sk { color: var(--ink-2); font-style: italic; }
+.ks-kosiky { width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.ks-kosiky[hidden] { display: none; }
+.ks-kos { font: inherit; color: var(--ink); display: grid; align-content: start; justify-items: center; gap: 2px; min-height: 150px; padding: 12px 8px; border: 3px solid var(--ink); border-radius: 18px 18px 30px 30px; cursor: pointer; min-width: 0; }
+.ks-kos--c { background: var(--blue-wash); }
+.ks-kos--u { background: var(--yellow-wash); }
+.ks-kos:hover:not(:disabled) { transform: translateY(-2px); box-shadow: var(--tien); }
+.ks-kos:focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
+.ks-kos:disabled { cursor: default; }
+.ks-kos--ok { border-color: var(--green); box-shadow: 0 0 0 3px var(--green); }
+.ks-kos--zle { border-color: var(--terra); border-style: dashed; }
+.ks-kos__nazov { font-weight: 800; font-size: 1rem; }
+.ks-kos__en { font-family: var(--hand); font-size: 1.5rem; font-weight: 700; color: var(--blue); }
+.ks-kos--u .ks-kos__en { color: #9a6a0c; }
+.ks-kos__obsah { display: flex; flex-wrap: wrap; justify-content: center; gap: 2px; font-size: 1.6rem; margin-top: 4px; }
+.ks-polozka--zle { opacity: .45; filter: grayscale(1); }
+.ks-moznosti { justify-content: center; }
+.ks-moznost { font-size: 1.05rem; padding: 8px 16px; }
+.ks-moznost:disabled { cursor: default; opacity: .75; }
+.ks-moznost--ok, .ks-moznost--ok:disabled { background: var(--green-wash); border-color: var(--green); color: var(--green); opacity: 1; }
+.ks-moznost--zle, .ks-moznost--zle:disabled { background: var(--terra-wash); border-color: var(--terra); color: #8f3522; opacity: 1; }

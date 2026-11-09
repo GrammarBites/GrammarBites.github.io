@@ -9,6 +9,7 @@ ucebnice:
   - { id: project-2, unit: "4" }
 temy: [ostatne, otazky]
 klucoveSlova: [a few, a little, trochu, pár, countable, uncountable, počítateľné, nepočítateľné, much, many, how much, how many, a lot of, koľko, veľa, food, jedlo, a loaf of, a carton of, a packet of, a bottle of, a tin of, 4A, 4C]
+kosik: true
 video: video.mp4
 poster: poster.jpg
 infografika: infografika.jpg

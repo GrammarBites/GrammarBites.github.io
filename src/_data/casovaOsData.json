@@ -10,7 +10,8 @@
    "druh": "kedy",
    "sig": "last summer",
    "x": 0.35,
-   "sk": "Minulé leto som bol vo Viedni."
+   "sk": "Minulé leto som bol vo Viedni.",
+   "inf": "visit"
   },
   {
    "v": "I ___ to Vienna three times.",
@@ -21,7 +22,8 @@
    "ok": 1,
    "druh": "skusenost",
    "sig": "three times",
-   "sk": "Vo Viedni som bol trikrát (doteraz)."
+   "sk": "Vo Viedni som bol trikrát (doteraz).",
+   "inf": "be"
   },
   {
    "v": "Oh no! I ___ my keys. I can't open the door.",
@@ -32,7 +34,8 @@
    "ok": 1,
    "druh": "vysledok",
    "sig": "I can't open the door",
-   "sk": "Stratil som kľúče – teraz nemôžem otvoriť."
+   "sk": "Stratil som kľúče – teraz nemôžem otvoriť.",
+   "inf": "lose"
   },
   {
    "v": "I ___ my keys yesterday, but Mum found them.",
@@ -44,7 +47,8 @@
    "druh": "kedy",
    "sig": "yesterday",
    "x": 0.75,
-   "sk": "Včera som stratil kľúče."
+   "sk": "Včera som stratil kľúče.",
+   "inf": "lose"
   },
   {
    "v": "We ___ in this flat since 2020.",
@@ -55,7 +59,8 @@
    "ok": 1,
    "druh": "trvanie",
    "sig": "since 2020",
-   "sk": "V tomto byte bývame od roku 2020 (a stále bývame)."
+   "sk": "V tomto byte bývame od roku 2020 (a stále bývame).",
+   "inf": "live"
   },
   {
    "v": "We ___ in Nitra from 2015 to 2020.",
@@ -68,7 +73,8 @@
    "sig": "from 2015 to 2020",
    "x": 0.3,
    "od": 0.15,
-   "sk": "V Nitre sme bývali v rokoch 2015 – 2020 (už nebývame)."
+   "sk": "V Nitre sme bývali v rokoch 2015 – 2020 (už nebývame).",
+   "inf": "live"
   },
   {
    "v": "When ___ school?",
@@ -80,7 +86,8 @@
    "druh": "kedy",
    "sig": "When",
    "x": 0.2,
-   "sk": "Kedy si začal chodiť do školy?"
+   "sk": "Kedy si začal chodiť do školy?",
+   "inf": "you / start"
   },
   {
    "v": "Tom ___ . Call him back!",
@@ -91,7 +98,8 @@
    "ok": 1,
    "druh": "prave",
    "sig": "just",
-   "sk": "Tom práve volal."
+   "sk": "Tom práve volal.",
+   "inf": "just / call"
   },
   {
    "v": "Mozart ___ over 600 pieces of music.",
@@ -103,7 +111,8 @@
    "druh": "kedy",
    "sig": "Mozart už nežije",
    "x": 0.1,
-   "sk": "Mozart napísal vyše 600 skladieb."
+   "sk": "Mozart napísal vyše 600 skladieb.",
+   "inf": "write"
   },
   {
    "v": "I ___ Anna for five years.",
@@ -114,7 +123,8 @@
    "ok": 1,
    "druh": "trvanie",
    "sig": "for five years",
-   "sk": "Annu poznám päť rokov (a stále ju poznám)."
+   "sk": "Annu poznám päť rokov (a stále ju poznám).",
+   "inf": "know"
   },
   {
    "v": "The film ___ ten minutes ago.",
@@ -126,7 +136,8 @@
    "druh": "kedy",
    "sig": "ten minutes ago",
    "x": 0.85,
-   "sk": "Film sa začal pred desiatimi minútami."
+   "sk": "Film sa začal pred desiatimi minútami.",
+   "inf": "start"
   },
   {
    "v": "I ___ my leg in 2022.",
@@ -138,7 +149,8 @@
    "druh": "kedy",
    "sig": "in 2022",
    "x": 0.5,
-   "sk": "V roku 2022 som si zlomil nohu."
+   "sk": "V roku 2022 som si zlomil nohu.",
+   "inf": "break"
   },
   {
    "v": "Look! Someone ___ the window!",
@@ -149,7 +161,8 @@
    "ok": 1,
    "druh": "vysledok",
    "sig": "Look!",
-   "sk": "Pozri! Niekto rozbil okno!"
+   "sk": "Pozri! Niekto rozbil okno!",
+   "inf": "break"
   },
   {
    "v": "___ sushi?",
@@ -160,7 +173,8 @@
    "ok": 1,
    "druh": "skusenost",
    "sig": "ever",
-   "sk": "Jedol si niekedy sushi?"
+   "sk": "Jedol si niekedy sushi?",
+   "inf": "you / ever / eat"
   },
   {
    "v": "I ___ sushi at a party on Saturday.",
@@ -172,7 +186,8 @@
    "druh": "kedy",
    "sig": "on Saturday",
    "x": 0.8,
-   "sk": "V sobotu som jedol sushi na oslave."
+   "sk": "V sobotu som jedol sushi na oslave.",
+   "inf": "eat"
   },
   {
    "v": "She ___ her homework yet.",
@@ -183,7 +198,8 @@
    "ok": 1,
    "druh": "prave",
    "sig": "yet",
-   "sk": "Ešte nedokončila domácu úlohu."
+   "sk": "Ešte nedokončila domácu úlohu.",
+   "inf": "not / finish"
   },
   {
    "v": "My grandpa ___ in a factory when he was young.",
@@ -195,7 +211,8 @@
    "druh": "kedy",
    "sig": "when he was young",
    "x": 0.15,
-   "sk": "Dedko pracoval v továrni, keď bol mladý."
+   "sk": "Dedko pracoval v továrni, keď bol mladý.",
+   "inf": "work"
   },
   {
    "v": "I ___ a horse in my life.",
@@ -206,7 +223,8 @@
    "ok": 1,
    "druh": "skusenost",
    "sig": "never, in my life",
-   "sk": "Ešte nikdy v živote som nejazdil na koni."
+   "sk": "Ešte nikdy v živote som nejazdil na koni.",
+   "inf": "never / ride"
   }
  ],
  "forsince": [

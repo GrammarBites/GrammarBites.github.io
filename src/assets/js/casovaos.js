@@ -45,8 +45,8 @@
       if (qq.druh === "kedy") {
         if (qq.od != null) { tag("line", { x1: px(qq.od), y1: Y, x2: px(qq.x), y2: Y, class: "co-usek co-usek--ps" }, s); }
         tag("circle", { cx: px(qq.x), cy: Y, r: 11, class: "co-bod co-bod--ps" }, s);
-        text(px(qq.x), Y - 30, qq.sig, "co-stitok--ps");
-        text((px(qq.x) + XT) / 2 + 10, Y + 52, "hotovo, uzavreté", "co-mensi");
+        text(Math.min(Math.max(px(qq.x), 110), XT - 120), Y - 30, qq.sig, "co-stitok--ps");
+        text(Math.min(Math.max(px(qq.x), 120), XT - 150), Y + 86, "hotovo, uzavreté", "co-mensi");
       } else if (qq.druh === "trvanie") {
         tag("line", { x1: px(0.25), y1: Y, x2: XT, y2: Y, class: "co-usek co-usek--pp" }, s);
         tag("circle", { cx: px(0.25), cy: Y, r: 9, class: "co-bod co-bod--pp" }, s);
@@ -93,6 +93,7 @@
     function vetaHtml(vypln) {
       const gap = vypln ? `<b class="co-doplnene">${GB.esc(vypln)}</b>` : `<span class="co-medzera">${q.typ === "fs" ? "for / since" : "…"}</span>`;
       if (q.typ === "fs") return GB.esc(q.v).replace("___", gap);
+      if (!vypln) return GB.esc(q.v).replace("___", gap + ` <span class="co-inf">(${GB.esc(q.inf || "")})</span>`);
       if (vypln && vypln.includes("…")) { const [a, b] = vypln.split(" … "); return GB.esc(q.v).replace("___", `<b class="co-doplnene">${GB.esc(a)}</b>`).replace("___", `<b class="co-doplnene">${GB.esc(b)}</b>`); }
       return GB.esc(q.v).replace("___", gap);
     }

@@ -713,3 +713,4 @@ button.vz-slovo:hover { border-color: var(--ink); }
 .co-vlajka-plachta { fill: var(--blue); }
 .co-zatvorka { fill: none; stroke: var(--green); stroke-width: 4; }
 .co-popis--l { text-anchor: start; }
+.co-inf { color: var(--terra); font-weight: 800; white-space: nowrap; }

@@ -9,6 +9,8 @@ ucebnice:
 temy: [minule-casy]
 klucoveSlova: [irregular verbs, nepravidelné slovesá, tabuľka, zoznam, list, table, past simple, past participle, 2. tvar, 3. tvar, minulý čas, infinitive, základný tvar, be was were been, go went gone, tlač, print]
 tabulkaSlovies: skola
+tabulkaPdf: tabulka.pdf
+tabulkaObr: tabulka.jpg
 hraSlovesa: true
 koza: koza-zvedava
 otazkaKozy: "Eat, ate, eaten… Yum!"

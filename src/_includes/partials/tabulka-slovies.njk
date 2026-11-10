@@ -24,6 +24,8 @@
       <p class="ts__tlacidla">
         <button type="button" class="tlacidlo tlacidlo--tiche" data-odkry hidden>Odkryť všetko</button>
         <button type="button" class="tlacidlo tlacidlo--tiche" data-tlac>Vytlačiť tabuľku</button>
+        {% if tabulkaPdf %}<a class="tlacidlo" href="{{ page.url }}{{ tabulkaPdf }}" download>Kreslená tabuľka na tlač (PDF, A4)</a>{% endif %}
+        {% if tabulkaObr %}<a class="tlacidlo tlacidlo--tiche" href="{{ page.url }}{{ tabulkaObr }}" target="_blank" rel="noopener">Ukážka (obrázok)</a>{% endif %}
       </p>
     </div>
     <div class="ts__obal">

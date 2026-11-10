@@ -10,19 +10,18 @@
         <input type="search" data-hladaj placeholder="napr. buy, bought, kúpiť…" autocomplete="off">
       </label>
       <fieldset class="ts__zakry">
-        <legend>Skúšaj sa – zakry stĺpec</legend>
+        <legend>Skúšaj sa – zakry stĺpce (aj viac naraz)</legend>
         <div class="trener__cipy">
-          <button type="button" class="trener__cip" data-zakry="" aria-pressed="true">nič</button>
+          <button type="button" class="trener__cip" data-zakry="z" aria-pressed="false">základný tvar</button>
           <button type="button" class="trener__cip" data-zakry="p" aria-pressed="false">past simple</button>
           <button type="button" class="trener__cip" data-zakry="pp" aria-pressed="false">past participle</button>
-          <button type="button" class="trener__cip" data-zakry="obe" aria-pressed="false">oba tvary</button>
           <button type="button" class="trener__cip" data-zakry="sk" aria-pressed="false">význam</button>
-          <button type="button" class="trener__cip" data-zakry="z" aria-pressed="false">základný tvar</button>
         </div>
       </fieldset>
       <p class="ts__stav" data-stav aria-live="polite"></p>
       <p class="ts__tlacidla">
         <button type="button" class="tlacidlo tlacidlo--tiche" data-odkry hidden>Odkryť všetko</button>
+        <button type="button" class="tlacidlo tlacidlo--tiche" data-zrus hidden>Zrušiť zakrývanie</button>
         <button type="button" class="tlacidlo tlacidlo--tiche" data-tlac>Vytlačiť tabuľku</button>
         {% if tabulkaPdf %}<a class="tlacidlo" href="{{ page.url }}{{ tabulkaPdf }}" download>Kreslená tabuľka na tlač (PDF, A4)</a>{% endif %}
         {% if tabulkaObr %}<a class="tlacidlo tlacidlo--tiche" href="{{ page.url }}{{ tabulkaObr }}" target="_blank" rel="noopener">Ukážka (obrázok)</a>{% endif %}

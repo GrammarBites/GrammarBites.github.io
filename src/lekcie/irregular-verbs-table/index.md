@@ -54,7 +54,7 @@ V tabuľke hore je **85 nepravidelných slovies**, ktoré potrebuješ na základ
 ## Ako sa s tabuľkou učiť
 
 - **Hľadaj:** napíš anglický tvar alebo slovenské slovo (aj bez dĺžňov – *kupit* nájde *kúpiť*).
-- **Skúšaj sa:** zakry stĺpec, povedz tvar nahlas a ťukni na otáznik. Ak si sa pomýlil, sloveso si zapíš.
+- **Skúšaj sa:** zakry jeden alebo viac stĺpcov naraz (napr. oba tvary, alebo základný tvar aj význam), povedz tvar nahlas a ťukni na otáznik. Ak si sa pomýlil, sloveso si zapíš.
 - **Po kúskoch:** nie všetko naraz. Desať slovies denne stačí.
 - **Vytlač si ju** a nalep do zošita.
 

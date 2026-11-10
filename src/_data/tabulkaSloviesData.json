@@ -1,0 +1,1190 @@
+{
+ "slovesa": [
+  {
+   "z": "arise",
+   "p": "arose",
+   "pp": "arisen",
+   "sk": "vzniknúť, vyskytnúť sa",
+   "skola": false
+  },
+  {
+   "z": "awake",
+   "p": "awoke",
+   "pp": "awoken",
+   "sk": "zobudiť (sa)",
+   "skola": false
+  },
+  {
+   "z": "babysit",
+   "p": "babysat",
+   "pp": "babysat",
+   "sk": "strážiť deti",
+   "skola": false
+  },
+  {
+   "z": "be",
+   "p": "was, were",
+   "pp": "been",
+   "sk": "byť",
+   "skola": true
+  },
+  {
+   "z": "bear",
+   "p": "bore",
+   "pp": "born, borne",
+   "sk": "niesť; zniesť; (be born) narodiť sa",
+   "skola": false
+  },
+  {
+   "z": "beat",
+   "p": "beat",
+   "pp": "beaten",
+   "sk": "biť; poraziť",
+   "skola": false
+  },
+  {
+   "z": "become",
+   "p": "became",
+   "pp": "become",
+   "sk": "stať sa",
+   "skola": true
+  },
+  {
+   "z": "begin",
+   "p": "began",
+   "pp": "begun",
+   "sk": "začať",
+   "skola": true
+  },
+  {
+   "z": "bend",
+   "p": "bent",
+   "pp": "bent",
+   "sk": "ohnúť (sa)",
+   "skola": false
+  },
+  {
+   "z": "bet",
+   "p": "bet",
+   "pp": "bet",
+   "sk": "staviť sa",
+   "skola": false
+  },
+  {
+   "z": "bid",
+   "p": "bid",
+   "pp": "bid",
+   "sk": "ponúknuť (cenu)",
+   "skola": false
+  },
+  {
+   "z": "bind",
+   "p": "bound",
+   "pp": "bound",
+   "sk": "zviazať",
+   "skola": false
+  },
+  {
+   "z": "bite",
+   "p": "bit",
+   "pp": "bitten",
+   "sk": "hrýzť, uhryznúť",
+   "skola": true
+  },
+  {
+   "z": "bleed",
+   "p": "bled",
+   "pp": "bled",
+   "sk": "krvácať",
+   "skola": false
+  },
+  {
+   "z": "blow",
+   "p": "blew",
+   "pp": "blown",
+   "sk": "fúkať",
+   "skola": false
+  },
+  {
+   "z": "break",
+   "p": "broke",
+   "pp": "broken",
+   "sk": "zlomiť, rozbiť",
+   "skola": true
+  },
+  {
+   "z": "breed",
+   "p": "bred",
+   "pp": "bred",
+   "sk": "chovať, množiť sa",
+   "skola": false
+  },
+  {
+   "z": "bring",
+   "p": "brought",
+   "pp": "brought",
+   "sk": "priniesť",
+   "skola": true
+  },
+  {
+   "z": "broadcast",
+   "p": "broadcast",
+   "pp": "broadcast",
+   "sk": "vysielať",
+   "skola": false
+  },
+  {
+   "z": "build",
+   "p": "built",
+   "pp": "built",
+   "sk": "stavať, postaviť",
+   "skola": true
+  },
+  {
+   "z": "burn",
+   "p": "burnt, burned",
+   "pp": "burnt, burned",
+   "sk": "horieť, páliť",
+   "skola": true,
+   "pSkola": "burnt",
+   "ppSkola": "burnt"
+  },
+  {
+   "z": "burst",
+   "p": "burst",
+   "pp": "burst",
+   "sk": "prasknúť, vybuchnúť",
+   "skola": false
+  },
+  {
+   "z": "buy",
+   "p": "bought",
+   "pp": "bought",
+   "sk": "kúpiť",
+   "skola": true
+  },
+  {
+   "z": "cast",
+   "p": "cast",
+   "pp": "cast",
+   "sk": "hodiť; obsadiť (rolu)",
+   "skola": false
+  },
+  {
+   "z": "catch",
+   "p": "caught",
+   "pp": "caught",
+   "sk": "chytiť",
+   "skola": true
+  },
+  {
+   "z": "choose",
+   "p": "chose",
+   "pp": "chosen",
+   "sk": "vybrať si",
+   "skola": false
+  },
+  {
+   "z": "cling",
+   "p": "clung",
+   "pp": "clung",
+   "sk": "držať sa, lipnúť",
+   "skola": false
+  },
+  {
+   "z": "come",
+   "p": "came",
+   "pp": "come",
+   "sk": "prísť",
+   "skola": true
+  },
+  {
+   "z": "cost",
+   "p": "cost",
+   "pp": "cost",
+   "sk": "stáť (o cene)",
+   "skola": true
+  },
+  {
+   "z": "creep",
+   "p": "crept",
+   "pp": "crept",
+   "sk": "plaziť sa, zakrádať sa",
+   "skola": false
+  },
+  {
+   "z": "cut",
+   "p": "cut",
+   "pp": "cut",
+   "sk": "rezať, strihať",
+   "skola": true
+  },
+  {
+   "z": "deal",
+   "p": "dealt",
+   "pp": "dealt",
+   "sk": "zaoberať sa; rozdať (karty)",
+   "skola": false
+  },
+  {
+   "z": "dig",
+   "p": "dug",
+   "pp": "dug",
+   "sk": "kopať (jamu)",
+   "skola": true
+  },
+  {
+   "z": "dive",
+   "p": "dived, dove",
+   "pp": "dived",
+   "sk": "potápať sa, skočiť do vody",
+   "skola": false
+  },
+  {
+   "z": "do",
+   "p": "did",
+   "pp": "done",
+   "sk": "robiť",
+   "skola": true
+  },
+  {
+   "z": "draw",
+   "p": "drew",
+   "pp": "drawn",
+   "sk": "kresliť; ťahať",
+   "skola": true
+  },
+  {
+   "z": "dream",
+   "p": "dreamt, dreamed",
+   "pp": "dreamt, dreamed",
+   "sk": "snívať",
+   "skola": false
+  },
+  {
+   "z": "drink",
+   "p": "drank",
+   "pp": "drunk",
+   "sk": "piť",
+   "skola": true
+  },
+  {
+   "z": "drive",
+   "p": "drove",
+   "pp": "driven",
+   "sk": "šoférovať, viesť (auto)",
+   "skola": true
+  },
+  {
+   "z": "eat",
+   "p": "ate",
+   "pp": "eaten",
+   "sk": "jesť",
+   "skola": true
+  },
+  {
+   "z": "fall",
+   "p": "fell",
+   "pp": "fallen",
+   "sk": "padnúť",
+   "skola": true
+  },
+  {
+   "z": "feed",
+   "p": "fed",
+   "pp": "fed",
+   "sk": "kŕmiť",
+   "skola": false
+  },
+  {
+   "z": "feel",
+   "p": "felt",
+   "pp": "felt",
+   "sk": "cítiť (sa)",
+   "skola": true
+  },
+  {
+   "z": "fight",
+   "p": "fought",
+   "pp": "fought",
+   "sk": "bojovať, biť sa",
+   "skola": true
+  },
+  {
+   "z": "find",
+   "p": "found",
+   "pp": "found",
+   "sk": "nájsť",
+   "skola": true
+  },
+  {
+   "z": "flee",
+   "p": "fled",
+   "pp": "fled",
+   "sk": "utiecť",
+   "skola": false
+  },
+  {
+   "z": "fling",
+   "p": "flung",
+   "pp": "flung",
+   "sk": "hodiť, šmariť",
+   "skola": false
+  },
+  {
+   "z": "fly",
+   "p": "flew",
+   "pp": "flown",
+   "sk": "letieť, lietať",
+   "skola": true
+  },
+  {
+   "z": "forbid",
+   "p": "forbade",
+   "pp": "forbidden",
+   "sk": "zakázať",
+   "skola": false
+  },
+  {
+   "z": "forecast",
+   "p": "forecast",
+   "pp": "forecast",
+   "sk": "predpovedať",
+   "skola": false
+  },
+  {
+   "z": "foresee",
+   "p": "foresaw",
+   "pp": "foreseen",
+   "sk": "predvídať",
+   "skola": false
+  },
+  {
+   "z": "forget",
+   "p": "forgot",
+   "pp": "forgotten",
+   "sk": "zabudnúť",
+   "skola": false
+  },
+  {
+   "z": "forgive",
+   "p": "forgave",
+   "pp": "forgiven",
+   "sk": "odpustiť",
+   "skola": false
+  },
+  {
+   "z": "freeze",
+   "p": "froze",
+   "pp": "frozen",
+   "sk": "mrznúť, zamraziť",
+   "skola": false
+  },
+  {
+   "z": "get",
+   "p": "got",
+   "pp": "got, gotten",
+   "sk": "dostať; stať sa",
+   "skola": true,
+   "ppSkola": "got"
+  },
+  {
+   "z": "give",
+   "p": "gave",
+   "pp": "given",
+   "sk": "dať",
+   "skola": true
+  },
+  {
+   "z": "go",
+   "p": "went",
+   "pp": "gone, been",
+   "sk": "ísť",
+   "skola": true,
+   "ppSkola": "been, gone"
+  },
+  {
+   "z": "grind",
+   "p": "ground",
+   "pp": "ground",
+   "sk": "mlieť",
+   "skola": false
+  },
+  {
+   "z": "grow",
+   "p": "grew",
+   "pp": "grown",
+   "sk": "rásť; pestovať",
+   "skola": true
+  },
+  {
+   "z": "hang",
+   "p": "hung",
+   "pp": "hung",
+   "sk": "visieť, zavesiť",
+   "skola": false
+  },
+  {
+   "z": "have",
+   "p": "had",
+   "pp": "had",
+   "sk": "mať",
+   "skola": true
+  },
+  {
+   "z": "hear",
+   "p": "heard",
+   "pp": "heard",
+   "sk": "počuť",
+   "skola": true
+  },
+  {
+   "z": "hide",
+   "p": "hid",
+   "pp": "hidden",
+   "sk": "skryť (sa)",
+   "skola": true
+  },
+  {
+   "z": "hit",
+   "p": "hit",
+   "pp": "hit",
+   "sk": "udrieť, zasiahnuť",
+   "skola": true
+  },
+  {
+   "z": "hold",
+   "p": "held",
+   "pp": "held",
+   "sk": "držať",
+   "skola": true
+  },
+  {
+   "z": "hurt",
+   "p": "hurt",
+   "pp": "hurt",
+   "sk": "zraniť, bolieť",
+   "skola": true
+  },
+  {
+   "z": "keep",
+   "p": "kept",
+   "pp": "kept",
+   "sk": "nechať si, udržiavať",
+   "skola": true
+  },
+  {
+   "z": "kneel",
+   "p": "knelt, kneeled",
+   "pp": "knelt, kneeled",
+   "sk": "kľačať",
+   "skola": false
+  },
+  {
+   "z": "knit",
+   "p": "knit, knitted",
+   "pp": "knit, knitted",
+   "sk": "pliesť",
+   "skola": false
+  },
+  {
+   "z": "know",
+   "p": "knew",
+   "pp": "known",
+   "sk": "vedieť, poznať",
+   "skola": true
+  },
+  {
+   "z": "lay",
+   "p": "laid",
+   "pp": "laid",
+   "sk": "položiť; prestrieť",
+   "skola": false
+  },
+  {
+   "z": "lead",
+   "p": "led",
+   "pp": "led",
+   "sk": "viesť",
+   "skola": false
+  },
+  {
+   "z": "lean",
+   "p": "leant, leaned",
+   "pp": "leant, leaned",
+   "sk": "nakloniť sa, opierať sa",
+   "skola": false
+  },
+  {
+   "z": "leap",
+   "p": "leapt, leaped",
+   "pp": "leapt, leaped",
+   "sk": "skočiť",
+   "skola": false
+  },
+  {
+   "z": "learn",
+   "p": "learnt, learned",
+   "pp": "learnt, learned",
+   "sk": "učiť sa",
+   "skola": true,
+   "pSkola": "learnt",
+   "ppSkola": "learnt"
+  },
+  {
+   "z": "leave",
+   "p": "left",
+   "pp": "left",
+   "sk": "odísť; nechať",
+   "skola": true
+  },
+  {
+   "z": "lend",
+   "p": "lent",
+   "pp": "lent",
+   "sk": "požičať (niekomu)",
+   "skola": false
+  },
+  {
+   "z": "let",
+   "p": "let",
+   "pp": "let",
+   "sk": "nechať, dovoliť",
+   "skola": false
+  },
+  {
+   "z": "lie",
+   "p": "lay",
+   "pp": "lain",
+   "sk": "ležať",
+   "skola": true
+  },
+  {
+   "z": "light",
+   "p": "lit, lighted",
+   "pp": "lit, lighted",
+   "sk": "zapáliť, osvetliť",
+   "skola": false
+  },
+  {
+   "z": "lose",
+   "p": "lost",
+   "pp": "lost",
+   "sk": "stratiť; prehrať",
+   "skola": true
+  },
+  {
+   "z": "make",
+   "p": "made",
+   "pp": "made",
+   "sk": "robiť, vyrobiť",
+   "skola": true
+  },
+  {
+   "z": "mean",
+   "p": "meant",
+   "pp": "meant",
+   "sk": "znamenať; myslieť (tým)",
+   "skola": true
+  },
+  {
+   "z": "meet",
+   "p": "met",
+   "pp": "met",
+   "sk": "stretnúť (sa)",
+   "skola": false
+  },
+  {
+   "z": "mislead",
+   "p": "misled",
+   "pp": "misled",
+   "sk": "zviesť na scestie, oklamať",
+   "skola": false
+  },
+  {
+   "z": "mistake",
+   "p": "mistook",
+   "pp": "mistaken",
+   "sk": "pomýliť si",
+   "skola": false
+  },
+  {
+   "z": "misunderstand",
+   "p": "misunderstood",
+   "pp": "misunderstood",
+   "sk": "nepochopiť, zle pochopiť",
+   "skola": false
+  },
+  {
+   "z": "mow",
+   "p": "mowed",
+   "pp": "mown, mowed",
+   "sk": "kosiť",
+   "skola": false
+  },
+  {
+   "z": "overcome",
+   "p": "overcame",
+   "pp": "overcome",
+   "sk": "prekonať",
+   "skola": false
+  },
+  {
+   "z": "oversleep",
+   "p": "overslept",
+   "pp": "overslept",
+   "sk": "zaspať (ráno)",
+   "skola": false
+  },
+  {
+   "z": "overtake",
+   "p": "overtook",
+   "pp": "overtaken",
+   "sk": "predbehnúť",
+   "skola": false
+  },
+  {
+   "z": "pay",
+   "p": "paid",
+   "pp": "paid",
+   "sk": "platiť, zaplatiť",
+   "skola": true
+  },
+  {
+   "z": "prove",
+   "p": "proved",
+   "pp": "proved, proven",
+   "sk": "dokázať",
+   "skola": false
+  },
+  {
+   "z": "put",
+   "p": "put",
+   "pp": "put",
+   "sk": "položiť, dať",
+   "skola": true
+  },
+  {
+   "z": "quit",
+   "p": "quit",
+   "pp": "quit",
+   "sk": "prestať, skončiť",
+   "skola": false
+  },
+  {
+   "z": "read",
+   "p": "read",
+   "pp": "read",
+   "sk": "čítať",
+   "skola": true
+  },
+  {
+   "z": "rewrite",
+   "p": "rewrote",
+   "pp": "rewritten",
+   "sk": "prepísať",
+   "skola": false
+  },
+  {
+   "z": "rid",
+   "p": "rid",
+   "pp": "rid",
+   "sk": "zbaviť (sa)",
+   "skola": false
+  },
+  {
+   "z": "ride",
+   "p": "rode",
+   "pp": "ridden",
+   "sk": "jazdiť (na bicykli, koni)",
+   "skola": true
+  },
+  {
+   "z": "ring",
+   "p": "rang",
+   "pp": "rung",
+   "sk": "zvoniť; zavolať",
+   "skola": true
+  },
+  {
+   "z": "rise",
+   "p": "rose",
+   "pp": "risen",
+   "sk": "stúpať; vychádzať (slnko)",
+   "skola": false
+  },
+  {
+   "z": "run",
+   "p": "ran",
+   "pp": "run",
+   "sk": "bežať",
+   "skola": true
+  },
+  {
+   "z": "saw",
+   "p": "sawed",
+   "pp": "sawn, sawed",
+   "sk": "píliť",
+   "skola": false
+  },
+  {
+   "z": "say",
+   "p": "said",
+   "pp": "said",
+   "sk": "povedať",
+   "skola": true
+  },
+  {
+   "z": "see",
+   "p": "saw",
+   "pp": "seen",
+   "sk": "vidieť",
+   "skola": true
+  },
+  {
+   "z": "seek",
+   "p": "sought",
+   "pp": "sought",
+   "sk": "hľadať",
+   "skola": false
+  },
+  {
+   "z": "sell",
+   "p": "sold",
+   "pp": "sold",
+   "sk": "predať",
+   "skola": true
+  },
+  {
+   "z": "send",
+   "p": "sent",
+   "pp": "sent",
+   "sk": "poslať",
+   "skola": true
+  },
+  {
+   "z": "set",
+   "p": "set",
+   "pp": "set",
+   "sk": "nastaviť; prestrieť; zapadnúť (slnko)",
+   "skola": true
+  },
+  {
+   "z": "sew",
+   "p": "sewed",
+   "pp": "sewn, sewed",
+   "sk": "šiť",
+   "skola": false
+  },
+  {
+   "z": "shake",
+   "p": "shook",
+   "pp": "shaken",
+   "sk": "triasť, potriasť",
+   "skola": false
+  },
+  {
+   "z": "shed",
+   "p": "shed",
+   "pp": "shed",
+   "sk": "zhodiť, vyroniť",
+   "skola": false
+  },
+  {
+   "z": "shine",
+   "p": "shone",
+   "pp": "shone",
+   "sk": "svietiť",
+   "skola": false
+  },
+  {
+   "z": "shoot",
+   "p": "shot",
+   "pp": "shot",
+   "sk": "strieľať",
+   "skola": false
+  },
+  {
+   "z": "show",
+   "p": "showed",
+   "pp": "shown, showed",
+   "sk": "ukázať",
+   "skola": false
+  },
+  {
+   "z": "shrink",
+   "p": "shrank",
+   "pp": "shrunk",
+   "sk": "zraziť sa, zmenšiť sa",
+   "skola": false
+  },
+  {
+   "z": "shut",
+   "p": "shut",
+   "pp": "shut",
+   "sk": "zatvoriť",
+   "skola": false
+  },
+  {
+   "z": "sing",
+   "p": "sang",
+   "pp": "sung",
+   "sk": "spievať",
+   "skola": true
+  },
+  {
+   "z": "sink",
+   "p": "sank",
+   "pp": "sunk",
+   "sk": "potopiť sa, klesnúť",
+   "skola": true
+  },
+  {
+   "z": "sit",
+   "p": "sat",
+   "pp": "sat",
+   "sk": "sedieť",
+   "skola": true
+  },
+  {
+   "z": "sleep",
+   "p": "slept",
+   "pp": "slept",
+   "sk": "spať",
+   "skola": false
+  },
+  {
+   "z": "slide",
+   "p": "slid",
+   "pp": "slid",
+   "sk": "kĺzať sa",
+   "skola": false
+  },
+  {
+   "z": "smell",
+   "p": "smelt, smelled",
+   "pp": "smelt, smelled",
+   "sk": "voňať, cítiť (čuchom)",
+   "skola": true,
+   "pSkola": "smelt",
+   "ppSkola": "smelt"
+  },
+  {
+   "z": "sow",
+   "p": "sowed",
+   "pp": "sown, sowed",
+   "sk": "siať",
+   "skola": false
+  },
+  {
+   "z": "speak",
+   "p": "spoke",
+   "pp": "spoken",
+   "sk": "hovoriť",
+   "skola": true
+  },
+  {
+   "z": "speed",
+   "p": "sped, speeded",
+   "pp": "sped, speeded",
+   "sk": "uháňať",
+   "skola": false
+  },
+  {
+   "z": "spell",
+   "p": "spelt, spelled",
+   "pp": "spelt, spelled",
+   "sk": "hláskovať",
+   "skola": true,
+   "pSkola": "spelt",
+   "ppSkola": "spelt"
+  },
+  {
+   "z": "spend",
+   "p": "spent",
+   "pp": "spent",
+   "sk": "minúť; stráviť (čas)",
+   "skola": true
+  },
+  {
+   "z": "spill",
+   "p": "spilt, spilled",
+   "pp": "spilt, spilled",
+   "sk": "rozliať",
+   "skola": false
+  },
+  {
+   "z": "spin",
+   "p": "spun",
+   "pp": "spun",
+   "sk": "točiť (sa), krútiť",
+   "skola": false
+  },
+  {
+   "z": "spit",
+   "p": "spat",
+   "pp": "spat",
+   "sk": "pľuť",
+   "skola": false
+  },
+  {
+   "z": "split",
+   "p": "split",
+   "pp": "split",
+   "sk": "rozdeliť, rozštiepiť",
+   "skola": false
+  },
+  {
+   "z": "spoil",
+   "p": "spoilt, spoiled",
+   "pp": "spoilt, spoiled",
+   "sk": "pokaziť; rozmaznať",
+   "skola": false
+  },
+  {
+   "z": "spread",
+   "p": "spread",
+   "pp": "spread",
+   "sk": "rozšíriť (sa), natrieť",
+   "skola": false
+  },
+  {
+   "z": "spring",
+   "p": "sprang",
+   "pp": "sprung",
+   "sk": "vyskočiť",
+   "skola": false
+  },
+  {
+   "z": "stand",
+   "p": "stood",
+   "pp": "stood",
+   "sk": "stáť",
+   "skola": true
+  },
+  {
+   "z": "steal",
+   "p": "stole",
+   "pp": "stolen",
+   "sk": "ukradnúť",
+   "skola": true
+  },
+  {
+   "z": "stick",
+   "p": "stuck",
+   "pp": "stuck",
+   "sk": "nalepiť; zaseknúť sa",
+   "skola": true
+  },
+  {
+   "z": "sting",
+   "p": "stung",
+   "pp": "stung",
+   "sk": "pichnúť, uštipnúť",
+   "skola": false
+  },
+  {
+   "z": "stink",
+   "p": "stank",
+   "pp": "stunk",
+   "sk": "smrdieť",
+   "skola": false
+  },
+  {
+   "z": "strike",
+   "p": "struck",
+   "pp": "struck",
+   "sk": "udrieť; štrajkovať",
+   "skola": false
+  },
+  {
+   "z": "swear",
+   "p": "swore",
+   "pp": "sworn",
+   "sk": "prisahať; nadávať",
+   "skola": false
+  },
+  {
+   "z": "sweep",
+   "p": "swept",
+   "pp": "swept",
+   "sk": "zametať",
+   "skola": true
+  },
+  {
+   "z": "swell",
+   "p": "swelled",
+   "pp": "swollen",
+   "sk": "opuchnúť",
+   "skola": false
+  },
+  {
+   "z": "swim",
+   "p": "swam",
+   "pp": "swum",
+   "sk": "plávať",
+   "skola": true
+  },
+  {
+   "z": "swing",
+   "p": "swung",
+   "pp": "swung",
+   "sk": "hojdať (sa)",
+   "skola": false
+  },
+  {
+   "z": "take",
+   "p": "took",
+   "pp": "taken",
+   "sk": "vziať",
+   "skola": true
+  },
+  {
+   "z": "teach",
+   "p": "taught",
+   "pp": "taught",
+   "sk": "učiť (niekoho)",
+   "skola": true
+  },
+  {
+   "z": "tear",
+   "p": "tore",
+   "pp": "torn",
+   "sk": "roztrhnúť",
+   "skola": true
+  },
+  {
+   "z": "tell",
+   "p": "told",
+   "pp": "told",
+   "sk": "povedať, rozprávať",
+   "skola": true
+  },
+  {
+   "z": "think",
+   "p": "thought",
+   "pp": "thought",
+   "sk": "myslieť",
+   "skola": true
+  },
+  {
+   "z": "throw",
+   "p": "threw",
+   "pp": "thrown",
+   "sk": "hodiť",
+   "skola": true
+  },
+  {
+   "z": "tread",
+   "p": "trod",
+   "pp": "trodden",
+   "sk": "šliapať, stúpiť",
+   "skola": false
+  },
+  {
+   "z": "undergo",
+   "p": "underwent",
+   "pp": "undergone",
+   "sk": "podstúpiť",
+   "skola": false
+  },
+  {
+   "z": "understand",
+   "p": "understood",
+   "pp": "understood",
+   "sk": "rozumieť, pochopiť",
+   "skola": true
+  },
+  {
+   "z": "undertake",
+   "p": "undertook",
+   "pp": "undertaken",
+   "sk": "podniknúť, zaviazať sa",
+   "skola": false
+  },
+  {
+   "z": "undo",
+   "p": "undid",
+   "pp": "undone",
+   "sk": "vrátiť späť, rozopnúť",
+   "skola": false
+  },
+  {
+   "z": "upset",
+   "p": "upset",
+   "pp": "upset",
+   "sk": "rozrušiť, nahnevať",
+   "skola": false
+  },
+  {
+   "z": "wake",
+   "p": "woke",
+   "pp": "woken",
+   "sk": "zobudiť (sa)",
+   "skola": true
+  },
+  {
+   "z": "wear",
+   "p": "wore",
+   "pp": "worn",
+   "sk": "nosiť (oblečenie)",
+   "skola": true
+  },
+  {
+   "z": "weave",
+   "p": "wove",
+   "pp": "woven",
+   "sk": "tkať",
+   "skola": false
+  },
+  {
+   "z": "weep",
+   "p": "wept",
+   "pp": "wept",
+   "sk": "plakať",
+   "skola": false
+  },
+  {
+   "z": "wet",
+   "p": "wet, wetted",
+   "pp": "wet, wetted",
+   "sk": "namočiť",
+   "skola": false
+  },
+  {
+   "z": "win",
+   "p": "won",
+   "pp": "won",
+   "sk": "vyhrať",
+   "skola": true
+  },
+  {
+   "z": "wind",
+   "p": "wound",
+   "pp": "wound",
+   "sk": "navíjať; vinúť sa",
+   "skola": false
+  },
+  {
+   "z": "withdraw",
+   "p": "withdrew",
+   "pp": "withdrawn",
+   "sk": "vybrať (peniaze); stiahnuť sa",
+   "skola": false
+  },
+  {
+   "z": "wring",
+   "p": "wrung",
+   "pp": "wrung",
+   "sk": "žmýkať",
+   "skola": false
+  },
+  {
+   "z": "write",
+   "p": "wrote",
+   "pp": "written",
+   "sk": "písať",
+   "skola": true
+  }
+ ]
+}

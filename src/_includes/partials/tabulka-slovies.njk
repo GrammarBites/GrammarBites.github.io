@@ -1,0 +1,53 @@
+{# Tabuľka nepravidelných slovies. V lekcii: tabulkaSlovies: skola | vsetky #}
+{% set jeSkola = tabulkaSlovies == "skola" %}
+{% set zoznam = (tabulkaSloviesData.slovesa | selectattr("skola")) if jeSkola else tabulkaSloviesData.slovesa %}
+<section class="blok blok--tabulka" aria-labelledby="h-tabulka">
+  <h2 id="h-tabulka" class="blok__nadpis"><span class="blok__pismeno">A</span> Tabuľka: {{ zoznam.length }} slovies</h2>
+  <div class="ts" data-tabulka-slovies>
+    <div class="ts__panel">
+      <label class="ts__hladaj">
+        <span>Hľadaj</span>
+        <input type="search" data-hladaj placeholder="napr. buy, bought, kúpiť…" autocomplete="off">
+      </label>
+      <fieldset class="ts__zakry">
+        <legend>Skúšaj sa – zakry stĺpec</legend>
+        <div class="trener__cipy">
+          <button type="button" class="trener__cip" data-zakry="" aria-pressed="true">nič</button>
+          <button type="button" class="trener__cip" data-zakry="p" aria-pressed="false">past simple</button>
+          <button type="button" class="trener__cip" data-zakry="pp" aria-pressed="false">past participle</button>
+          <button type="button" class="trener__cip" data-zakry="obe" aria-pressed="false">oba tvary</button>
+          <button type="button" class="trener__cip" data-zakry="sk" aria-pressed="false">význam</button>
+          <button type="button" class="trener__cip" data-zakry="z" aria-pressed="false">základný tvar</button>
+        </div>
+      </fieldset>
+      <p class="ts__stav" data-stav aria-live="polite"></p>
+      <p class="ts__tlacidla">
+        <button type="button" class="tlacidlo tlacidlo--tiche" data-odkry hidden>Odkryť všetko</button>
+        <button type="button" class="tlacidlo tlacidlo--tiche" data-tlac>Vytlačiť tabuľku</button>
+      </p>
+    </div>
+    <div class="ts__obal">
+      <table class="ts__tab">
+        <thead><tr>
+          <th scope="col">základný tvar<br><span>infinitive</span></th>
+          <th scope="col">minulý čas<br><span>past simple</span></th>
+          <th scope="col">3. tvar<br><span>past participle</span></th>
+          <th scope="col">význam</th>
+        </tr></thead>
+        <tbody>
+        {% for s in zoznam %}
+          {% set p = (s.pSkola or s.p) if jeSkola else s.p %}{% set pp = (s.ppSkola or s.pp) if jeSkola else s.pp %}
+          <tr data-hladat="{{ s.z }} {{ s.p }} {{ s.pp }} {{ s.sk }}"{% if not jeSkola and s.skola %} class="je-skola"{% endif %}>
+            <td data-st="z" lang="en"><b>{{ s.z }}</b>{% if not jeSkola and s.skola %} <span class="ts__skola" title="je aj v školskom zozname">★</span>{% endif %}</td>
+            <td data-st="p" lang="en">{{ p }}</td>
+            <td data-st="pp" lang="en">{{ pp }}</td>
+            <td data-st="sk">{{ s.sk }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <p class="ts__nic" data-nic hidden>Také sloveso v tabuľke nie je. Možno je pravidelné (-ed)? Skús <a href="/lekcie/past-simple-regular/">pravidelné slovesá</a>.</p>
+  </div>
+  <script src="/assets/js/tabulka-slovies.js" defer></script>
+</section>

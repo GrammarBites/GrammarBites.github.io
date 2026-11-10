@@ -814,3 +814,49 @@ button.pc-karta:focus-visible { outline: 3px solid var(--yellow); outline-offset
 .hs-moznost--ok { background: var(--green-wash); border-color: var(--green); color: var(--green); }
 .hs-moznost--zle { background: var(--terra-wash); border-color: var(--terra); color: #8f3522; }
 @media (max-width: 480px) { .rodiny .par { white-space: normal; } .rodiny td:first-child { min-width: 0; } }
+
+/* ---------- Tabuľka nepravidelných slovies ---------- */
+.blok--tabulka, .ts, .ts__obal { min-width: 0; max-width: 100%; }
+.ts__panel { display: grid; gap: .8rem; margin-bottom: 1rem; }
+.ts__hladaj { display: grid; gap: .3rem; font-weight: 700; }
+.ts__hladaj input { font: inherit; font-weight: 400; padding: .6rem .8rem; border: 2px solid var(--ink); border-radius: var(--wobbly); background: var(--paper-hi); width: 100%; max-width: 26rem; }
+.ts__zakry { border: 0; padding: 0; margin: 0; min-width: 0; }
+.ts__zakry legend { font-weight: 700; margin-bottom: .4rem; }
+.ts__stav { color: var(--ink-2); margin: 0; }
+.ts__tlacidla { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0; }
+.ts__obal { overflow-x: auto; }
+.ts__tab { width: 100%; border-collapse: collapse; background: var(--paper-hi); font-size: 1.05rem; }
+.ts__tab th { position: sticky; top: 0; background: var(--yellow-wash); text-align: left; padding: .55rem .6rem; border-bottom: 2px solid var(--ink); font-size: .95rem; line-height: 1.15; }
+.ts__tab th span { font-weight: 400; color: var(--blue); font-size: .85rem; }
+.ts__tab td { padding: .45rem .6rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.ts__tab td[data-st="p"], .ts__tab td[data-st="pp"] { color: var(--terra); font-weight: 700; }
+.ts__tab td[data-st="sk"] { color: var(--ink-2); font-size: .95rem; }
+.ts__tab tbody tr:nth-child(even) { background: color-mix(in srgb, var(--paper-lo) 35%, transparent); }
+.ts__skola { color: var(--yellow); font-size: .85rem; }
+.ts__tab td.je-zakryta { color: transparent; cursor: pointer; position: relative; user-select: none; }
+.ts__tab td.je-zakryta::after { content: "?"; position: absolute; inset: .25rem .35rem; display: grid; place-items: center; background: var(--blue-wash); border: 2px dashed var(--blue); border-radius: var(--wobbly-2); color: var(--blue); font-weight: 700; }
+.ts__tab td.je-zakryta.je-odkryta { color: inherit; cursor: default; user-select: auto; }
+.ts__tab td.je-zakryta.je-odkryta[data-st="p"], .ts__tab td.je-zakryta.je-odkryta[data-st="pp"] { color: var(--green); }
+.ts__tab td.je-zakryta.je-odkryta::after { content: none; }
+.ts__tab td.je-zakryta:focus-visible { outline: 3px solid var(--terra); outline-offset: -3px; }
+.ts__nic { padding: 1rem; background: var(--terra-wash); border-radius: var(--wobbly); }
+@media (max-width: 480px) {
+  .ts__tab { font-size: .95rem; }
+  .ts__tab th, .ts__tab td { padding: .4rem .3rem; }
+  .ts__tab th span { display: none; }
+  .ts__tab thead tr, .ts__tab tbody tr { display: grid; grid-template-columns: 1.15fr 1fr 1fr; }
+  .ts__tab thead th:last-child { display: none; }
+  .ts__tab td { border-bottom: 0; overflow-wrap: anywhere; }
+  .ts__tab td[data-st="sk"] { grid-column: 1 / -1; font-size: .85rem; padding-top: 0; min-height: 1.9rem; border-bottom: 1px solid var(--line); }
+  .ts__tab td[data-st="sk"]::before { content: "= "; }
+  .ts__tab td.je-zakryta[data-st="sk"]::after { inset: 0 .35rem .25rem; }
+}
+@media print {
+  body * { visibility: hidden; }
+  .ts__obal, .ts__obal * { visibility: visible; }
+  .ts__obal { position: absolute; left: 0; top: 0; width: 100%; overflow: visible; }
+  .ts__tab { font-size: 10pt; background: none; }
+  .ts__tab th { position: static; background: #eee; }
+  .ts__tab tr { break-inside: avoid; }
+  .ts__tab td[data-st="p"], .ts__tab td[data-st="pp"] { color: #000; }
+}

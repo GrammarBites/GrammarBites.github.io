@@ -28,6 +28,11 @@ skripty: ["lekcia.js"]
   </figure>
 </header>
 
+{% if tabulkaSlovies %}
+{% include "partials/tabulka-slovies.njk" %}
+{% set pismenoVykladu = "B" %}
+{% else %}
+{% set pismenoVykladu = "C" %}
 <div class="lekcia-media{% if videoFormat == 'na-sirku' %} lekcia-media--sirka{% endif %}">
   <section class="blok blok--video" aria-labelledby="h-video">
     <h2 id="h-video" class="blok__nadpis"><span class="blok__pismeno">A</span> Video</h2>
@@ -70,18 +75,19 @@ skripty: ["lekcia.js"]
     {% endif %}
   </section>
 </div>
+{% endif %}
 
 <section class="blok blok--vyklad" aria-labelledby="h-vyklad">
-  <h2 id="h-vyklad" class="blok__nadpis"><span class="blok__pismeno">C</span> Výklad</h2>
+  <h2 id="h-vyklad" class="blok__nadpis"><span class="blok__pismeno">{{ pismenoVykladu }}</span> Výklad</h2>
   <div class="zosit">
     {{ content | safe }}
   </div>
 </section>
 
-{% set dalsiePismeno = "D" %}
+{% set dalsiePismeno = "C" if tabulkaSlovies else "D" %}
 {% if trener %}{% set pismeno = dalsiePismeno %}{% include "partials/trener.njk" %}{% set dalsiePismeno = "E" %}{% elif rodostrom %}{% set pismeno = dalsiePismeno %}{% include "partials/rodostrom.njk" %}{% set dalsiePismeno = "E" %}{% elif hodiny %}{% set pismeno = dalsiePismeno %}{% include "partials/hodiny.njk" %}{% set dalsiePismeno = "E" %}{% elif pasivum %}{% set pismeno = dalsiePismeno %}{% include "partials/pasivum.njk" %}{% set dalsiePismeno = "E" %}{% elif vztazne %}{% set pismeno = dalsiePismeno %}{% include "partials/vztazne.njk" %}{% set dalsiePismeno = "E" %}{% elif casovaOs %}{% set pismeno = dalsiePismeno %}{% include "partials/casovaos.njk" %}{% set dalsiePismeno = "E" %}{% elif kosik %}{% set pismeno = dalsiePismeno %}{% include "partials/kosik.njk" %}{% set dalsiePismeno = "E" %}{% elif izba %}{% set pismeno = dalsiePismeno %}{% include "partials/izba.njk" %}{% set dalsiePismeno = "E" %}{% elif porovnanie %}{% set pismeno = dalsiePismeno %}{% include "partials/porovnanie.njk" %}{% set dalsiePismeno = "E" %}{% endif %}
 {% if pisanie %}{% set pismeno = dalsiePismeno %}{% include "partials/pisanie.njk" %}{% set dalsiePismeno = "F" if dalsiePismeno == "E" else "E" %}{% endif %}
-{% if hraSlovesa %}{% set pismeno = dalsiePismeno %}{% include "partials/hra-slovesa.njk" %}{% set dalsiePismeno = {"D": "E", "E": "F", "F": "G"}[dalsiePismeno] %}{% endif %}
+{% if hraSlovesa %}{% set pismeno = dalsiePismeno %}{% include "partials/hra-slovesa.njk" %}{% set dalsiePismeno = {"C": "D", "D": "E", "E": "F", "F": "G"}[dalsiePismeno] %}{% endif %}
 
 {% if test and test.length %}
 <section class="blok blok--test" aria-labelledby="h-test">

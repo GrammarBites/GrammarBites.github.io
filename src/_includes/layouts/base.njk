@@ -15,7 +15,7 @@
 <meta property="og:image" content="{{ site.url }}{{ page.url }}{{ nahlad or infografika or '' }}">
 {% endif %}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/style.css?v={{ site.verzia }}">
 </head>
 <body class="{{ bodyClass }}">
 <a class="skip" href="#obsah">Preskočiť na obsah</a>
@@ -70,8 +70,8 @@
     <p class="paticka__info">Lekcie sú doplnkom k učebniciam; názvy učebníc slúžia len na orientáciu. Všetky vysvetlenia, príklady a testy sú vlastné.</p>
   </div>
 </footer>
-<script src="/assets/js/spolocne.js" defer></script>
+<script src="/assets/js/spolocne.js?v={{ site.verzia }}" defer></script>
 {% if site.goatcounter %}<script data-goatcounter="{{ site.goatcounter }}" async src="https://gc.zgo.at/count.js"></script>{% endif %}
-{% if skripty %}{% for s in skripty %}<script src="/assets/js/{{ s }}" defer></script>{% endfor %}{% endif %}
+{% if skripty %}{% for s in skripty %}<script src="/assets/js/{{ s }}?v={{ site.verzia }}" defer></script>{% endfor %}{% endif %}
 </body>
 </html>

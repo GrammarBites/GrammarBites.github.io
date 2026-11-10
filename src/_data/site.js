@@ -10,5 +10,7 @@ export default {
   web3formsKey: "004953a9-b54a-49e7-8cd7-d53d748c09f5",
   // Štatistiky návštev (GoatCounter, bez cookies) – prehľad na https://grammarbites.goatcounter.com
   goatcounter: "https://grammarbites.goatcounter.com/count",
-  rok: new Date().getFullYear()
+  rok: new Date().getFullYear(),
+  // Verzia zostavenia – pridáva sa k CSS a JS, aby prehliadač po zmene nenačítal starý súbor z cache.
+  verzia: Date.now().toString(36)
 };

@@ -76,6 +76,16 @@
             "project-2",
             "project-3"
           ]
+        ],
+        [
+          "let",
+          "let",
+          "nechať, dovoliť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
         ]
       ]
     },
@@ -162,6 +172,16 @@
             "project-2",
             "project-3"
           ]
+        ],
+        [
+          "lend",
+          "lent",
+          "požičať (niekomu)",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
         ]
       ]
     },
@@ -225,6 +245,26 @@
           "lose",
           "lost",
           "stratiť, prehrať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "meet",
+          "met",
+          "stretnúť (sa)",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "sleep",
+          "slept",
+          "spať",
           [],
           [
             "project-2",
@@ -509,6 +549,36 @@
           "win",
           "won",
           "vyhrať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "forget",
+          "forgot",
+          "zabudnúť",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "choose",
+          "chose",
+          "vybrať si",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
+        ],
+        [
+          "shine",
+          "shone",
+          "svietiť",
           [],
           [
             "project-2",
@@ -864,6 +934,16 @@
           [
             "project-3"
           ]
+        ],
+        [
+          "shoot",
+          "shot",
+          "strieľať",
+          [],
+          [
+            "project-2",
+            "project-3"
+          ]
         ]
       ]
     }
@@ -926,6 +1006,14 @@
         [
           "read",
           "read",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "let",
+          "let",
           [],
           [
             "project-3"
@@ -1050,6 +1138,14 @@
           [
             "project-3"
           ]
+        ],
+        [
+          "lend",
+          "lent",
+          [],
+          [
+            "project-3"
+          ]
         ]
       ]
     },
@@ -1102,6 +1198,22 @@
         [
           "lose",
           "lost",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "meet",
+          "met",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "sleep",
+          "slept",
           [],
           [
             "project-3"
@@ -1248,6 +1360,14 @@
         [
           "stick",
           "stuck",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "shoot",
+          "shot",
           [],
           [
             "project-3"
@@ -1444,6 +1564,22 @@
           [
             "project-3"
           ]
+        ],
+        [
+          "forget",
+          "forgotten",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "choose",
+          "chosen",
+          [],
+          [
+            "project-3"
+          ]
         ]
       ]
     },
@@ -1579,6 +1715,14 @@
         [
           "lie",
           "lain",
+          [],
+          [
+            "project-3"
+          ]
+        ],
+        [
+          "shine",
+          "shone",
           [],
           [
             "project-3"

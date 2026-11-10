@@ -1,7 +1,7 @@
 ---
 title: "Irregular verbs: past participle"
 nazovSk: 3. tvar nepravidelných slovies – go, went, gone
-popis: "buy – bought – bought, sing – sang – sung, write – wrote – written. 3. tvar 76 nepravidelných slovies z Project 3 po rodinách – a tréner na 2. aj 3. tvar."
+popis: "buy – bought – bought, sing – sang – sung, write – wrote – written. 3. tvar 84 nepravidelných slovies zo školského zoznamu po rodinách – a tréner na 2. aj 3. tvar."
 date: 2026-11-04T10:45:00
 rocniky: [7]
 strana: 58

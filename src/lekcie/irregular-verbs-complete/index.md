@@ -1,7 +1,7 @@
 ---
 title: "Irregular verbs: the big list"
-nazovSk: Nepravidelné slovesá – veľká tabuľka (168 slovies)
-popis: "Od arise po write: 168 bežných nepravidelných slovies s významom. Hviezdičkou sú označené tie zo školského zoznamu. Hľadaj, zakry stĺpec a skúšaj sa, alebo si tabuľku vytlač."
+nazovSk: Nepravidelné slovesá – veľká tabuľka (169 slovies)
+popis: "Od arise po write: 169 bežných nepravidelných slovies s významom. Hviezdičkou sú označené tie zo školského zoznamu. Hľadaj, zakry stĺpec a skúšaj sa, alebo si tabuľku vytlač."
 date: 2026-11-10T10:05:00
 rocniky: [7, 8, 9]
 ucebnice:
@@ -10,7 +10,7 @@ temy: [minule-casy]
 klucoveSlova: [irregular verbs, nepravidelné slovesá, úplný zoznam, kompletná tabuľka, complete list, veľká tabuľka, past simple, past participle, 2. tvar, 3. tvar, britská angličtina, americká angličtina, learnt learned, got gotten, tlač, print]
 tabulkaSlovies: vsetky
 koza: koza-cita
-otazkaKozy: "168 verbs? Let's go!"
+otazkaKozy: "169 verbs? Let's go!"
 bite:
   tip: "Najprv sa nauč školský zoznam (★). Ostatné slovesá sa často podobajú: understand je ako stand, forgive ako give, overtake ako take."
   priklad: "stand – stood – stood → understand – understood – understood · give – gave – given → forgive – forgave – forgiven"
@@ -45,7 +45,7 @@ test:
 - Niektoré staré tvary sa dnes takmer nepoužívajú (*smite – smote – smitten*, *cleave – clove – cloven*).
 - Pri niektorých slovesách sa britská a americká angličtina líšia, a časť ľudí už používa aj pravidelný tvar.
 
-Preto je v tabuľke **168 slovies, ktoré sa v bežnej angličtine naozaj používajú**. Staré a veľmi zriedkavé slovesá sú vynechané. Slovesá zo školského zoznamu sú označené **★**. Ak si chceš zopakovať len tie, otvor [tabuľku do školy](/lekcie/irregular-verbs-table/).
+Preto je v tabuľke **169 slovies, ktoré sa v bežnej angličtine naozaj používajú**. Staré a veľmi zriedkavé slovesá sú vynechané. Slovesá zo školského zoznamu sú označené **★**. Ak si chceš zopakovať len tie, otvor [tabuľku do školy](/lekcie/irregular-verbs-table/).
 
 ## Dva tvary v jednej bunke
 

@@ -1,7 +1,7 @@
 ---
 title: "Past simple: irregular verbs – Project 3"
 nazovSk: Nepravidelné slovesá v minulom čase – zoznam z Project 3
-popis: "go → went, buy → bought, dig → dug, lie → lay. 76 nepravidelných slovies zo zoznamu v Project 3 po rodinách – a tréner na precvičenie."
+popis: "go → went, buy → bought, dig → dug, lie → lay. 85 nepravidelných slovies zo školského zoznamu po rodinách – a tréner na precvičenie."
 date: 2026-11-04T10:30:00
 rocniky: [6]
 strana: 36

@@ -164,6 +164,13 @@
    "skola": true
   },
   {
+   "z": "can",
+   "p": "could",
+   "pp": "—",
+   "sk": "môcť, vedieť",
+   "skola": true
+  },
+  {
    "z": "cast",
    "p": "cast",
    "pp": "cast",
@@ -182,7 +189,7 @@
    "p": "chose",
    "pp": "chosen",
    "sk": "vybrať si",
-   "skola": false
+   "skola": true
   },
   {
    "z": "cling",
@@ -364,7 +371,7 @@
    "p": "forgot",
    "pp": "forgotten",
    "sk": "zabudnúť",
-   "skola": false
+   "skola": true
   },
   {
    "z": "forgive",
@@ -543,14 +550,14 @@
    "p": "lent",
    "pp": "lent",
    "sk": "požičať (niekomu)",
-   "skola": false
+   "skola": true
   },
   {
    "z": "let",
    "p": "let",
    "pp": "let",
    "sk": "nechať, dovoliť",
-   "skola": false
+   "skola": true
   },
   {
    "z": "lie",
@@ -592,7 +599,7 @@
    "p": "met",
    "pp": "met",
    "sk": "stretnúť (sa)",
-   "skola": false
+   "skola": true
   },
   {
    "z": "mislead",
@@ -795,14 +802,14 @@
    "p": "shone",
    "pp": "shone",
    "sk": "svietiť",
-   "skola": false
+   "skola": true
   },
   {
    "z": "shoot",
    "p": "shot",
    "pp": "shot",
    "sk": "strieľať",
-   "skola": false
+   "skola": true
   },
   {
    "z": "show",
@@ -851,7 +858,7 @@
    "p": "slept",
    "pp": "slept",
    "sk": "spať",
-   "skola": false
+   "skola": true
   },
   {
    "z": "slide",

@@ -1,7 +1,7 @@
 ---
 title: "Irregular verbs: the school list"
-nazovSk: Nepravidelné slovesá – tabuľka do školy (76 slovies)
-popis: "be – was/were – been, buy – bought – bought, go – went – gone… Všetkých 76 nepravidelných slovies, ktoré potrebuješ na základnej škole. Hľadaj, zakry stĺpec a skúšaj sa, alebo si tabuľku vytlač."
+nazovSk: Nepravidelné slovesá – tabuľka do školy (85 slovies)
+popis: "be – was/were – been, buy – bought – bought, go – went – gone… Všetkých 85 nepravidelných slovies, ktoré potrebuješ na základnej škole. Hľadaj, zakry stĺpec a skúšaj sa, alebo si tabuľku vytlač."
 date: 2026-11-10T10:00:00
 rocniky: [5, 6, 7, 8, 9]
 ucebnice:
@@ -40,7 +40,7 @@ test:
     vysvetlenie: "Odišiel a ešte sa nevrátil → has <b>gone</b>. Has been = bol tam a už je späť."
 ---
 
-V tabuľke hore je **76 nepravidelných slovies**, ktoré potrebuješ na základnej škole. Každé má tri tvary:
+V tabuľke hore je **85 nepravidelných slovies**, ktoré potrebuješ na základnej škole. Je to zoznam z pracovných zošitov Project doplnený o slovesá, ktoré sa v učebniciach často objavujú (forget, meet, sleep, choose, lend, let, shoot, shine). Každé má tri tvary:
 
 <div class="pravidla">
 <div class="pravidlo"><p class="pravidlo__nazov">1. základný tvar</p>
@@ -78,8 +78,9 @@ Viac skupín s tipmi nájdeš v lekcii [Past simple: irregular verbs](/lekcie/pa
 ## Pozor na tieto
 
 - **go – went – gone / been:** *She has **gone** to Prague.* (je ešte tam) · *She has **been** to Prague.* (bola tam a vrátila sa). Viac v lekcii [been / gone](/lekcie/been-gone/).
+- **can – could** nemá 3. tvar. Namiesto neho použi *been able to*: *I haven't been able to sleep.*
 - **lie – lay – lain** = ležať. Ale *lie – lied – lied* = klamať (pravidelné).
 - **burnt, learnt, smelt, spelt** sú britské tvary. Američania píšu *burned, learned, smelled, spelled* – obe sú správne.
 - **read – read – read** sa píše rovnako, ale vyslovuje inak: [riːd] – [red] – [red].
 
-Chceš ešte viac slovies? Pozri si [veľkú tabuľku so 168 slovesami](/lekcie/irregular-verbs-complete/).
+Chceš ešte viac slovies? Pozri si [veľkú tabuľku so 169 slovesami](/lekcie/irregular-verbs-complete/).

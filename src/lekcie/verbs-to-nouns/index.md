@@ -18,6 +18,7 @@ otazkaKozy: "Did you invent this? What a great invention!"
 bite:
   tip: "Zo slovesa urobíš podstatné meno koncovkou -ion / -ation (invent → invention, invite → invitation) alebo -ment (move → movement). Koncové -e vypadne."
   priklad: "They invented the phone. → The phone was a great invention."
+slovicka: verbs-to-nouns
 test:
   - otazka: "protect → ___"
     moznosti: ["protectment", "protection", "protecttion"]

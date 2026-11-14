@@ -18,6 +18,7 @@ otazkaKozy: "Is this grass dangerous?"
 bite:
   tip: "Z podstatného mena urobíš prídavné meno koncovkou -ous (danger → dangerous) alebo -y (luck → lucky). Pozor na pravopis: fury → furious, fog → foggy, ice → icy."
   priklad: "It was a dangerous trip. · It's foggy today. · I'm hungry."
+slovicka: nouns-to-adjectives
 test:
   - otazka: "mountain → ___"
     moznosti: ["mountainy", "mountainous", "mountainful"]

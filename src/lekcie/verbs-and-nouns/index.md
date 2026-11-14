@@ -18,6 +18,7 @@ otazkaKozy: "Let's have a chat about grass!"
 bite:
   tip: "Mnohé slovesá môžeme povedať aj ako have / make + podstatné meno: talk = have a talk, plan = make a plan. Have alebo make sa treba naučiť spolu so slovom."
   priklad: "Let's talk. = Let's have a talk. · I promise. = I make a promise."
+slovicka: verbs-and-nouns
 test:
   - otazka: "I'm tired. Let's ___ a rest."
     moznosti: ["make", "have", "do"]

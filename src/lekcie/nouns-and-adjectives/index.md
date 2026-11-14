@@ -18,6 +18,7 @@ otazkaKozy: "I'm not a danger. I'm dangerous!"
 bite:
   tip: "Podstatné meno + koncovka = prídavné meno: -ful, -y, -ous, -al. A naopak: prídavné meno + -ness = podstatné meno."
   priklad: "help → helpful · sun → sunny · nerve → nervous · kind → kindness"
+slovicka: nouns-and-adjectives
 test:
   - otazka: "It's a very ___ day. Let's go to the beach!"
     moznosti: ["sun", "suny", "sunny"]

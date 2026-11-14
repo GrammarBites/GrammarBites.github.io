@@ -1,0 +1,1234 @@
+{
+ "_info": "Tréner slovnej zásoby: pexeso (pary = [ľavá karta, pravá karta, slovensky]) a Doplň slovo (vety: t s ___, z = slovo v zátvorke, ok, zle = nesprávne možnosti, v = vysvetlenie).",
+ "nouns-and-adjectives": {
+  "nazov": "podstatné meno → prídavné meno",
+  "lavy": "podstatné meno",
+  "pravy": "prídavné meno",
+  "pary": [
+   [
+    "help",
+    "helpful",
+    "nápomocný"
+   ],
+   [
+    "colour",
+    "colourful",
+    "farebný"
+   ],
+   [
+    "care",
+    "careful",
+    "opatrný"
+   ],
+   [
+    "beauty",
+    "beautiful",
+    "krásny"
+   ],
+   [
+    "rain",
+    "rainy",
+    "daždivý"
+   ],
+   [
+    "cloud",
+    "cloudy",
+    "oblačný"
+   ],
+   [
+    "sun",
+    "sunny",
+    "slnečný"
+   ],
+   [
+    "noise",
+    "noisy",
+    "hlučný"
+   ],
+   [
+    "nerve",
+    "nervous",
+    "nervózny"
+   ],
+   [
+    "mystery",
+    "mysterious",
+    "záhadný"
+   ],
+   [
+    "adventure",
+    "adventurous",
+    "dobrodružný"
+   ],
+   [
+    "nature",
+    "natural",
+    "prírodný"
+   ],
+   [
+    "music",
+    "musical",
+    "hudobný"
+   ],
+   [
+    "tradition",
+    "traditional",
+    "tradičný"
+   ],
+   [
+    "kind",
+    "kindness",
+    "láskavosť"
+   ],
+   [
+    "dark",
+    "darkness",
+    "tma"
+   ],
+   [
+    "ill",
+    "illness",
+    "choroba"
+   ],
+   [
+    "sad",
+    "sadness",
+    "smútok"
+   ],
+   [
+    "use",
+    "useless",
+    "zbytočný"
+   ]
+  ],
+  "vety": [
+   {
+    "t": "It's a ___ day. Let's go to the beach.",
+    "z": "sun",
+    "ok": "sunny",
+    "zle": [
+     "suny",
+     "sun",
+     "sunful"
+    ],
+    "v": "sun → su<b>nn</b>y – zdvojená spoluhláska."
+   },
+   {
+    "t": "What a ___ girl!",
+    "z": "beauty",
+    "ok": "beautiful",
+    "zle": [
+     "beautyful",
+     "beauty",
+     "beautious"
+    ],
+    "v": "beauty → beaut<b>i</b>ful – y sa zmení na i."
+   },
+   {
+    "t": "The street is very ___.",
+    "z": "noise",
+    "ok": "noisy",
+    "zle": [
+     "noise",
+     "noisey",
+     "noiseful"
+    ],
+    "v": "Po <b>be</b> je prídavné meno. noise → nois<b>y</b> – e vypadne."
+   },
+   {
+    "t": "Be ___! The road is busy.",
+    "z": "care",
+    "ok": "careful",
+    "zle": [
+     "careless",
+     "care",
+     "carefull"
+    ],
+    "v": "<b>careful</b> = opatrný. -ful má len jedno l."
+   },
+   {
+    "t": "Thank you for your ___.",
+    "z": "kind",
+    "ok": "kindness",
+    "zle": [
+     "kind",
+     "kindful",
+     "kindy"
+    ],
+    "v": "Za <b>your</b> je podstatné meno: kind → kind<b>ness</b>."
+   },
+   {
+    "t": "I'm always ___ before a test.",
+    "z": "nerve",
+    "ok": "nervous",
+    "zle": [
+     "nervy",
+     "nerveous",
+     "nerve"
+    ],
+    "v": "nerve → nerv<b>ous</b> – e vypadne."
+   },
+   {
+    "t": "It's ___ and cold today. Take an umbrella.",
+    "z": "rain",
+    "ok": "rainy",
+    "zle": [
+     "rainful",
+     "rain",
+     "rainous"
+    ],
+    "v": "Počasie → koncovka <b>-y</b>: rainy."
+   },
+   {
+    "t": "Thanks for your help. It was very ___.",
+    "z": "use",
+    "ok": "useful",
+    "zle": [
+     "useless",
+     "usefull",
+     "use"
+    ],
+    "v": "Pomoc bola užitočná → <b>useful</b> (opak useless)."
+   },
+   {
+    "t": "This old phone is ___. It doesn't work.",
+    "z": "use",
+    "ok": "useless",
+    "zle": [
+     "useful",
+     "useles",
+     "use"
+    ],
+    "v": "Nefunguje → je zbytočný: <b>useless</b> (-less = bez)."
+   },
+   {
+    "t": "She's very ___. She plays three instruments.",
+    "z": "music",
+    "ok": "musical",
+    "zle": [
+     "musicful",
+     "musicy",
+     "music"
+    ],
+    "v": "music → music<b>al</b> (hudobný)."
+   },
+   {
+    "t": "We visited a ___ old house.",
+    "z": "mystery",
+    "ok": "mysterious",
+    "zle": [
+     "mysteryous",
+     "mystery",
+     "mysterful"
+    ],
+    "v": "mystery → myster<b>i</b>ous – y sa zmení na i."
+   },
+   {
+    "t": "I was afraid of the ___.",
+    "z": "dark",
+    "ok": "darkness",
+    "zle": [
+     "dark",
+     "darkful",
+     "darky"
+    ],
+    "v": "Za <b>the</b> je podstatné meno: dark → dark<b>ness</b>."
+   },
+   {
+    "t": "It's a ___ Slovak dish.",
+    "z": "tradition",
+    "ok": "traditional",
+    "zle": [
+     "traditionful",
+     "tradition",
+     "traditionous"
+    ],
+    "v": "tradition → tradition<b>al</b>."
+   },
+   {
+    "t": "My little sister drew a ___ picture.",
+    "z": "colour",
+    "ok": "colourful",
+    "zle": [
+     "colourfull",
+     "coloury",
+     "colour"
+    ],
+    "v": "colour → colour<b>ful</b> – jedno l."
+   }
+  ]
+ },
+ "nouns-to-adjectives": {
+  "nazov": "-ous a -y",
+  "lavy": "podstatné meno",
+  "pravy": "prídavné meno",
+  "pary": [
+   [
+    "danger",
+    "dangerous",
+    "nebezpečný"
+   ],
+   [
+    "mountain",
+    "mountainous",
+    "hornatý"
+   ],
+   [
+    "courage",
+    "courageous",
+    "odvážny"
+   ],
+   [
+    "fury",
+    "furious",
+    "zúrivý"
+   ],
+   [
+    "mystery",
+    "mysterious",
+    "záhadný"
+   ],
+   [
+    "adventure",
+    "adventurous",
+    "dobrodružný"
+   ],
+   [
+    "humour",
+    "humorous",
+    "vtipný"
+   ],
+   [
+    "luck",
+    "lucky",
+    "šťastný"
+   ],
+   [
+    "salt",
+    "salty",
+    "slaný"
+   ],
+   [
+    "wind",
+    "windy",
+    "veterný"
+   ],
+   [
+    "sleep",
+    "sleepy",
+    "ospalý"
+   ],
+   [
+    "mess",
+    "messy",
+    "neporiadny"
+   ],
+   [
+    "smell",
+    "smelly",
+    "smradľavý"
+   ],
+   [
+    "fog",
+    "foggy",
+    "hmlistý"
+   ],
+   [
+    "sun",
+    "sunny",
+    "slnečný"
+   ],
+   [
+    "ice",
+    "icy",
+    "ľadový"
+   ],
+   [
+    "noise",
+    "noisy",
+    "hlučný"
+   ],
+   [
+    "hunger",
+    "hungry",
+    "hladný"
+   ]
+  ],
+  "vety": [
+   {
+    "t": "It was a ___ trip.",
+    "z": "danger",
+    "ok": "dangerous",
+    "zle": [
+     "danger",
+     "dangery",
+     "dangerful"
+    ],
+    "v": "Pred podstatným menom (trip) je prídavné meno: danger → danger<b>ous</b>."
+   },
+   {
+    "t": "I'm ___. Is there anything to eat?",
+    "z": "hunger",
+    "ok": "hungry",
+    "zle": [
+     "hunger",
+     "hungery",
+     "hungrous"
+    ],
+    "v": "Výnimka: hunger → <b>hungry</b>."
+   },
+   {
+    "t": "It's ___. I can't see the road.",
+    "z": "fog",
+    "ok": "foggy",
+    "zle": [
+     "fogy",
+     "fog",
+     "foggous"
+    ],
+    "v": "fog → fo<b>gg</b>y – zdvojená spoluhláska."
+   },
+   {
+    "t": "The dog was ___ and started to bark.",
+    "z": "fury",
+    "ok": "furious",
+    "zle": [
+     "furyous",
+     "fury",
+     "furry"
+    ],
+    "v": "fury → fur<b>i</b>ous – y sa zmení na i."
+   },
+   {
+    "t": "She's a very ___ girl. She isn't afraid of anything.",
+    "z": "courage",
+    "ok": "courageous",
+    "zle": [
+     "couragous",
+     "courage",
+     "couragy"
+    ],
+    "v": "courage → courage<b>ous</b> – <b>e zostáva!</b>"
+   },
+   {
+    "t": "You won the lottery? You're so ___!",
+    "z": "luck",
+    "ok": "lucky",
+    "zle": [
+     "luck",
+     "luckous",
+     "luckful"
+    ],
+    "v": "luck → luck<b>y</b>."
+   },
+   {
+    "t": "Be careful, the road is ___.",
+    "z": "ice",
+    "ok": "icy",
+    "zle": [
+     "icey",
+     "ice",
+     "icous"
+    ],
+    "v": "ice → ic<b>y</b> – e vypadne."
+   },
+   {
+    "t": "This soup is too ___.",
+    "z": "salt",
+    "ok": "salty",
+    "zle": [
+     "salt",
+     "saltous",
+     "saltey"
+    ],
+    "v": "salt → salt<b>y</b>."
+   },
+   {
+    "t": "Your room is very ___. Tidy it up!",
+    "z": "mess",
+    "ok": "messy",
+    "zle": [
+     "mess",
+     "messous",
+     "mesy"
+    ],
+    "v": "mess → mess<b>y</b>."
+   },
+   {
+    "t": "Slovakia is a ___ country.",
+    "z": "mountain",
+    "ok": "mountainous",
+    "zle": [
+     "mountainy",
+     "mountain",
+     "mountanous"
+    ],
+    "v": "mountain → mountain<b>ous</b>."
+   },
+   {
+    "t": "He tells ___ stories.",
+    "z": "humour",
+    "ok": "humorous",
+    "zle": [
+     "humourous",
+     "humour",
+     "humoury"
+    ],
+    "v": "humour → hum<b>or</b>ous – our sa zmení na or."
+   },
+   {
+    "t": "I'm so ___. I want to go to bed.",
+    "z": "sleep",
+    "ok": "sleepy",
+    "zle": [
+     "sleep",
+     "sleepous",
+     "slepy"
+    ],
+    "v": "sleep → sleep<b>y</b>."
+   },
+   {
+    "t": "Take off your ___ socks!",
+    "z": "smell",
+    "ok": "smelly",
+    "zle": [
+     "smell",
+     "smelous",
+     "smely"
+    ],
+    "v": "smell → smell<b>y</b>."
+   },
+   {
+    "t": "It's very ___ today. Hold your hat!",
+    "z": "wind",
+    "ok": "windy",
+    "zle": [
+     "wind",
+     "windous",
+     "windey"
+    ],
+    "v": "wind → wind<b>y</b>."
+   }
+  ]
+ },
+ "verbs-to-nouns": {
+  "nazov": "sloveso → podstatné meno",
+  "lavy": "sloveso",
+  "pravy": "podstatné meno",
+  "pary": [
+   [
+    "invent",
+    "invention",
+    "vynález"
+   ],
+   [
+    "protect",
+    "protection",
+    "ochrana"
+   ],
+   [
+    "discuss",
+    "discussion",
+    "diskusia"
+   ],
+   [
+    "collect",
+    "collection",
+    "zbierka"
+   ],
+   [
+    "invite",
+    "invitation",
+    "pozvánka"
+   ],
+   [
+    "prepare",
+    "preparation",
+    "príprava"
+   ],
+   [
+    "organise",
+    "organisation",
+    "organizácia"
+   ],
+   [
+    "educate",
+    "education",
+    "vzdelanie"
+   ],
+   [
+    "decide",
+    "decision",
+    "rozhodnutie"
+   ],
+   [
+    "describe",
+    "description",
+    "opis"
+   ],
+   [
+    "explain",
+    "explanation",
+    "vysvetlenie"
+   ],
+   [
+    "repeat",
+    "repetition",
+    "opakovanie"
+   ],
+   [
+    "move",
+    "movement",
+    "pohyb"
+   ],
+   [
+    "agree",
+    "agreement",
+    "dohoda"
+   ],
+   [
+    "enjoy",
+    "enjoyment",
+    "potešenie"
+   ]
+  ],
+  "vety": [
+   {
+    "t": "Thanks for the ___ to your party.",
+    "z": "invite",
+    "ok": "invitation",
+    "zle": [
+     "invitement",
+     "invition",
+     "invite"
+    ],
+    "v": "invite → invit<b>ation</b> – e vypadne."
+   },
+   {
+    "t": "We made a ___.",
+    "z": "decide",
+    "ok": "decision",
+    "zle": [
+     "decide",
+     "decidation",
+     "decition"
+    ],
+    "v": "Pozor, zmena: decide → deci<b>sion</b>."
+   },
+   {
+    "t": "He gave a good ___.",
+    "z": "explain",
+    "ok": "explanation",
+    "zle": [
+     "explaination",
+     "explainment",
+     "explain"
+    ],
+    "v": "explain → expla<b>nation</b> – bez i."
+   },
+   {
+    "t": "The phone was a great ___.",
+    "z": "invent",
+    "ok": "invention",
+    "zle": [
+     "invent",
+     "inventation",
+     "inventment"
+    ],
+    "v": "invent → invent<b>ion</b>."
+   },
+   {
+    "t": "My brother has a big stamp ___.",
+    "z": "collect",
+    "ok": "collection",
+    "zle": [
+     "collect",
+     "collectment",
+     "collecture"
+    ],
+    "v": "collect → collect<b>ion</b>."
+   },
+   {
+    "t": "Can you give me a ___ of the man?",
+    "z": "describe",
+    "ok": "description",
+    "zle": [
+     "describtion",
+     "describation",
+     "describe"
+    ],
+    "v": "Pozor, zmena: describe → descri<b>ption</b>."
+   },
+   {
+    "t": "We had a long ___ about the trip.",
+    "z": "discuss",
+    "ok": "discussion",
+    "zle": [
+     "discussment",
+     "discussation",
+     "discuss"
+    ],
+    "v": "discuss → discuss<b>ion</b>."
+   },
+   {
+    "t": "A good ___ is important for your future.",
+    "z": "educate",
+    "ok": "education",
+    "zle": [
+     "educatement",
+     "educate",
+     "educaton"
+    ],
+    "v": "educate → educat<b>ion</b> – e vypadne."
+   },
+   {
+    "t": "Sun cream gives ___ from the sun.",
+    "z": "protect",
+    "ok": "protection",
+    "zle": [
+     "protectment",
+     "protect",
+     "protectation"
+    ],
+    "v": "protect → protect<b>ion</b>."
+   },
+   {
+    "t": "The doctor said I can't make any fast ___.",
+    "z": "move",
+    "ok": "movements",
+    "zle": [
+     "moves",
+     "movations",
+     "movings"
+    ],
+    "v": "move → move<b>ment</b> – e zostáva."
+   },
+   {
+    "t": "We reached an ___.",
+    "z": "agree",
+    "ok": "agreement",
+    "zle": [
+     "agreetion",
+     "agree",
+     "agreeation"
+    ],
+    "v": "agree → agree<b>ment</b>."
+   },
+   {
+    "t": "___ makes perfect.",
+    "z": "repeat",
+    "ok": "Repetition",
+    "zle": [
+     "Repeation",
+     "Repeatment",
+     "Repeat"
+    ],
+    "v": "Pozor, zmena: repeat → repe<b>tition</b>."
+   },
+   {
+    "t": "The ___ for the concert took weeks.",
+    "z": "prepare",
+    "ok": "preparation",
+    "zle": [
+     "preparement",
+     "prepareation",
+     "prepare"
+    ],
+    "v": "prepare → prepar<b>ation</b> – e vypadne."
+   },
+   {
+    "t": "UNICEF is an international ___.",
+    "z": "organise",
+    "ok": "organisation",
+    "zle": [
+     "organisement",
+     "organision",
+     "organise"
+    ],
+    "v": "organise → organis<b>ation</b> – e vypadne."
+   }
+  ]
+ },
+ "verbs-and-nouns": {
+  "nazov": "have / make a …",
+  "lavy": "sloveso",
+  "pravy": "have / make + podstatné meno",
+  "pary": [
+   [
+    "talk",
+    "have a talk",
+    "porozprávať sa"
+   ],
+   [
+    "rest",
+    "have a rest",
+    "oddýchnuť si"
+   ],
+   [
+    "chat",
+    "have a chat",
+    "pokecať"
+   ],
+   [
+    "fight",
+    "have a fight",
+    "pobiť sa"
+   ],
+   [
+    "look",
+    "have a look",
+    "pozrieť sa"
+   ],
+   [
+    "try",
+    "have a try",
+    "skúsiť"
+   ],
+   [
+    "argue",
+    "have an argument",
+    "pohádať sa"
+   ],
+   [
+    "plan",
+    "make a plan",
+    "naplánovať"
+   ],
+   [
+    "promise",
+    "make a promise",
+    "sľúbiť"
+   ],
+   [
+    "suggest",
+    "make a suggestion",
+    "navrhnúť"
+   ],
+   [
+    "complain",
+    "make a complaint",
+    "sťažovať sa"
+   ]
+  ],
+  "vety": [
+   {
+    "t": "Can I ___ a look at your photos?",
+    "z": "",
+    "ok": "have",
+    "zle": [
+     "make",
+     "do",
+     "take"
+    ],
+    "v": "Pozrieť sa = <b>have a look</b>."
+   },
+   {
+    "t": "Let's ___ a plan for Saturday.",
+    "z": "",
+    "ok": "make",
+    "zle": [
+     "have",
+     "do",
+     "give"
+    ],
+    "v": "Niečo vytvoríme → <b>make a plan</b>."
+   },
+   {
+    "t": "I'm tired. Let's ___ a rest.",
+    "z": "",
+    "ok": "have",
+    "zle": [
+     "make",
+     "do",
+     "take"
+    ],
+    "v": "Oddych → <b>have a rest</b>."
+   },
+   {
+    "t": "I'm sorry, I ___ a mistake.",
+    "z": "",
+    "ok": "made",
+    "zle": [
+     "did",
+     "had",
+     "took"
+    ],
+    "v": "Chyba = <b>make a mistake</b> → I made a mistake."
+   },
+   {
+    "t": "My parents ___ an argument last night.",
+    "z": "",
+    "ok": "had",
+    "zle": [
+     "made",
+     "did",
+     "took"
+    ],
+    "v": "Hádka → <b>have an argument</b>."
+   },
+   {
+    "t": "Can I ___ a suggestion?",
+    "z": "",
+    "ok": "make",
+    "zle": [
+     "have",
+     "do",
+     "say"
+    ],
+    "v": "Návrh → <b>make a suggestion</b>."
+   },
+   {
+    "t": "She ___ a promise to help me.",
+    "z": "",
+    "ok": "made",
+    "zle": [
+     "had",
+     "did",
+     "said"
+    ],
+    "v": "Sľub → <b>make a promise</b>."
+   },
+   {
+    "t": "I want to ___ a complaint about the food.",
+    "z": "",
+    "ok": "make",
+    "zle": [
+     "have",
+     "do",
+     "tell"
+    ],
+    "v": "Sťažnosť → <b>make a complaint</b>."
+   },
+   {
+    "t": "We need to ___ a talk about your marks.",
+    "z": "",
+    "ok": "have",
+    "zle": [
+     "make",
+     "do",
+     "say"
+    ],
+    "v": "Rozhovor → <b>have a talk</b>."
+   },
+   {
+    "t": "Let's ___ a chat after school.",
+    "z": "",
+    "ok": "have",
+    "zle": [
+     "make",
+     "do",
+     "say"
+    ],
+    "v": "Pokec → <b>have a chat</b>."
+   },
+   {
+    "t": "We had a long ___ about the holiday.",
+    "z": "argue",
+    "ok": "argument",
+    "zle": [
+     "arguement",
+     "arguation",
+     "argue"
+    ],
+    "v": "argue → argu<b>ment</b> – e vypadne."
+   },
+   {
+    "t": "He gave us a clear ___.",
+    "z": "explain",
+    "ok": "explanation",
+    "zle": [
+     "explaination",
+     "explainment",
+     "explain"
+    ],
+    "v": "explain → expla<b>nation</b> – bez i."
+   },
+   {
+    "t": "I've got a ___. Let's go to the cinema!",
+    "z": "suggest",
+    "ok": "suggestion",
+    "zle": [
+     "suggestment",
+     "suggestation",
+     "suggest"
+    ],
+    "v": "suggest → suggest<b>ion</b>."
+   },
+   {
+    "t": "Can I ___ a try?",
+    "z": "",
+    "ok": "have",
+    "zle": [
+     "make",
+     "do",
+     "take"
+    ],
+    "v": "Skúsiť = <b>have a try</b>."
+   }
+  ]
+ },
+ "phrasal-verbs": {
+  "nazov": "frázové slovesá",
+  "lavy": "frázové sloveso",
+  "pravy": "po slovensky",
+  "pary": [
+   [
+    "get up",
+    "vstať",
+    "vstať"
+   ],
+   [
+    "sit down",
+    "sadnúť si",
+    "sadnúť si"
+   ],
+   [
+    "wake up",
+    "zobudiť sa",
+    "zobudiť sa"
+   ],
+   [
+    "give up",
+    "vzdať sa",
+    "vzdať sa"
+   ],
+   [
+    "pick up",
+    "zdvihnúť",
+    "zdvihnúť"
+   ],
+   [
+    "write down",
+    "zapísať si",
+    "zapísať si"
+   ],
+   [
+    "calm down",
+    "upokojiť sa",
+    "upokojiť sa"
+   ],
+   [
+    "switch on",
+    "zapnúť",
+    "zapnúť"
+   ],
+   [
+    "switch off",
+    "vypnúť",
+    "vypnúť"
+   ],
+   [
+    "put on",
+    "obliecť si",
+    "obliecť si"
+   ],
+   [
+    "take off",
+    "vyzliecť si",
+    "vyzliecť si"
+   ],
+   [
+    "try on",
+    "vyskúšať si",
+    "vyskúšať si"
+   ],
+   [
+    "get on",
+    "nastúpiť",
+    "nastúpiť"
+   ],
+   [
+    "get off",
+    "vystúpiť",
+    "vystúpiť"
+   ],
+   [
+    "go out",
+    "ísť von",
+    "ísť von"
+   ],
+   [
+    "find out",
+    "zistiť",
+    "zistiť"
+   ],
+   [
+    "look for",
+    "hľadať",
+    "hľadať"
+   ],
+   [
+    "look after",
+    "starať sa o",
+    "starať sa o"
+   ]
+  ],
+  "vety": [
+   {
+    "t": "It's cold. ___ your hat!",
+    "z": "",
+    "ok": "Put on",
+    "zle": [
+     "Take off",
+     "Try on",
+     "Put off"
+    ],
+    "v": "<b>put on</b> = obliecť si, dať si (čiapku)."
+   },
+   {
+    "t": "___ your shoes, please.",
+    "z": "",
+    "ok": "Take off",
+    "zle": [
+     "Put on",
+     "Get off",
+     "Take out"
+    ],
+    "v": "<b>take off</b> = vyzuť si, vyzliecť si."
+   },
+   {
+    "t": "Please ___ your phone.",
+    "z": "",
+    "ok": "switch off",
+    "zle": [
+     "switch on",
+     "take off",
+     "get off"
+    ],
+    "v": "<b>switch off</b> = vypnúť."
+   },
+   {
+    "t": "I usually ___ at seven o'clock.",
+    "z": "",
+    "ok": "get up",
+    "zle": [
+     "get on",
+     "get off",
+     "give up"
+    ],
+    "v": "<b>get up</b> = vstať."
+   },
+   {
+    "t": "Don't ___! You can do it!",
+    "z": "",
+    "ok": "give up",
+    "zle": [
+     "get up",
+     "pick up",
+     "look up"
+    ],
+    "v": "<b>give up</b> = vzdať sa."
+   },
+   {
+    "t": "We ___ the bus at the station.",
+    "z": "",
+    "ok": "got off",
+    "zle": [
+     "got up",
+     "took off",
+     "got out"
+    ],
+    "v": "<b>get off</b> = vystúpiť (z autobusu)."
+   },
+   {
+    "t": "I'm ___ my keys. Have you seen them?",
+    "z": "",
+    "ok": "looking for",
+    "zle": [
+     "looking after",
+     "looking at",
+     "finding out"
+    ],
+    "v": "<b>look for</b> = hľadať."
+   },
+   {
+    "t": "She ___ her little brother after school.",
+    "z": "",
+    "ok": "looks after",
+    "zle": [
+     "looks for",
+     "looks at",
+     "picks up"
+    ],
+    "v": "<b>look after</b> = starať sa o."
+   },
+   {
+    "t": "Can I ___ this T-shirt?",
+    "z": "",
+    "ok": "try on",
+    "zle": [
+     "put on",
+     "try out",
+     "switch on"
+    ],
+    "v": "<b>try on</b> = vyskúšať si oblečenie."
+   },
+   {
+    "t": "I want to ___ more about dinosaurs.",
+    "z": "",
+    "ok": "find out",
+    "zle": [
+     "look for",
+     "go out",
+     "try on"
+    ],
+    "v": "<b>find out</b> = zistiť."
+   },
+   {
+    "t": "Are you ___ tonight?",
+    "z": "",
+    "ok": "going out",
+    "zle": [
+     "getting off",
+     "giving up",
+     "finding out"
+    ],
+    "v": "<b>go out</b> = ísť von."
+   },
+   {
+    "t": "Please ___ and open your books.",
+    "z": "",
+    "ok": "sit down",
+    "zle": [
+     "sit up",
+     "calm down",
+     "write down"
+    ],
+    "v": "<b>sit down</b> = sadnúť si."
+   },
+   {
+    "t": "___ the new words in your notebook.",
+    "z": "",
+    "ok": "Write down",
+    "zle": [
+     "Sit down",
+     "Pick up",
+     "Look after"
+    ],
+    "v": "<b>write down</b> = zapísať si."
+   },
+   {
+    "t": "Can you ___ that paper, please?",
+    "z": "",
+    "ok": "pick up",
+    "zle": [
+     "give up",
+     "wake up",
+     "take off"
+    ],
+    "v": "<b>pick up</b> = zdvihnúť."
+   },
+   {
+    "t": "It's dark. Can you ___ the light?",
+    "z": "",
+    "ok": "switch on",
+    "zle": [
+     "switch off",
+     "put on",
+     "get on"
+    ],
+    "v": "<b>switch on</b> = zapnúť."
+   }
+  ]
+ }
+}

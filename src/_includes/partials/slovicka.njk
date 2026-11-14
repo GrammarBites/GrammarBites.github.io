@@ -1,0 +1,37 @@
+{# Tréner slovnej zásoby. V lekcii: slovicka: phrasal-verbs (údaje v src/_data/slovickaData.json) #}
+{% set sv = slovickaData[slovicka] %}
+<section class="blok blok--trener" aria-labelledby="h-slovicka">
+  <h2 id="h-slovicka" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Tréner: {{ sv.nazov }}</h2>
+  <p class="blok__uvod"><b>Doplň slovo:</b> vyber správny tvar do vety a hneď uvidíš prečo. <b>Pexeso:</b> nájdi dvojice – {{ sv.lavy }} a {{ sv.pravy }}. Rekordy sa ti pamätajú.</p>
+  <div class="trener slovicka" data-slovicka="{{ slovicka }}">
+    <fieldset class="trener__vyber">
+      <legend>Vyber hru</legend>
+      <div class="trener__cipy" data-cipy></div>
+    </fieldset>
+    <div class="trener__karta" data-doplnit>
+      <div class="trener__hore">
+        <span class="trener__stav" data-stav></span>
+        <span class="trener__seria" data-skore>body 0</span>
+      </div>
+      <p class="rz-veta" data-veta lang="en"></p>
+      <div class="trener__cipy hs-moznosti" data-moznosti role="group" aria-label="Možnosti"></div>
+      <p class="trener__spatna" data-spatna role="status" aria-live="polite" hidden></p>
+      <button type="button" class="tlacidlo" data-dalej hidden>Ďalej →</button>
+    </div>
+    <div class="trener__karta hs-box" data-pexeso hidden>
+      <p class="hs-stav" data-pex-stav></p>
+      <div class="hs-mriezka" data-mriezka></div>
+    </div>
+    <div class="trener__koniec" data-koniec hidden>
+      <img src="/assets/img/postavy/koza-oslavuje.png" alt="" width="100" data-obr-dobre hidden>
+      <img src="/assets/img/postavy/koza-premysla.png" alt="" width="100" data-obr-zle hidden>
+      <div>
+        <p class="trener__vysledok" data-vysledok></p>
+        <div class="trener__chyby" data-chyby></div>
+        <div class="trener__tlacidla"><button type="button" class="tlacidlo" data-znova>Hrať znova</button></div>
+      </div>
+    </div>
+  </div>
+  <script type="application/json" id="data-slovicka-{{ slovicka }}">{{ sv | json | safe }}</script>
+  <script src="/assets/js/slovicka.js?v={{ site.verzia }}" defer></script>
+</section>

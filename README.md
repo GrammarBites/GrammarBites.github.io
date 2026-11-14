@@ -32,6 +32,10 @@ sablona/index.md                   ← šablóna novej lekcie s vysvetlivkami
 
 Výklad v lekcii je predvolene schovaný pod tlačidlom „Ukázať výklad“, aby stránka nebola príliš dlhá. Ak ho má mať niektorá lekcia stále rozbalený, pridaj do jej údajov `vykladSchovany: false`.
 
+## Poradie blokov
+
+Blok „Nájdi a oprav chybu“ (`opravChybu: true`) je predvolene za blokom „Napíš sám“. Ak má byť pred ním, pridaj do lekcie `opravPredPisanim: true`.
+
 ## Lokálne spustenie
 
 ```

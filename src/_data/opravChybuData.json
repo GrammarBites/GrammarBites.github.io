@@ -1,0 +1,16 @@
+{
+  "_info": "Nájdi a oprav chybu: vlastné vety k lekcii. Kľúč = názov priečinka lekcie. vety = [chybná veta, správna veta s {opravou} v zložených zátvorkách, vysvetlenie po slovensky (nepovinné)]. K nim sa automaticky pridajú riadky z tabuľky „Časté chyby“ v lekcii. V jednej vete má byť jedna chyba.",
+  "present-continuous": {
+    "vety": [
+      ["Look! The goat eats a book!", "Look! The goat {is eating} a book!", "Look! = práve teraz. Po slovensky povieme „žerie“, ale v angličtine tu patrí <b>is eating</b>, nie present simple."],
+      ["They are play football now.", "They are {playing} football now.", "Po <b>am / is / are</b> ide sloveso s koncovkou <b>-ing</b>: playing."],
+      ["I'm not watch TV.", "I'm not {watching} TV.", "Aj v zápore ostáva <b>-ing</b>: I'm not watching."],
+      ["She is runing in the park.", "She is {running} in the park.", "Pri <b>run</b> sa zdvojuje spoluhláska: run → ru<b>nn</b>ing."],
+      ["We are writeing a test.", "We are {writing} a test.", "Pri <b>write</b> sa pred -ing vypustí <b>e</b>: writing."],
+      ["The children is sleeping.", "The children {are} sleeping.", "<b>The children</b> = they (viac detí), preto <b>are</b>."],
+      ["He is have a shower.", "He is {having} a shower.", "Po <b>is</b> ide sloveso s -ing: have → <b>having</b> (e vypadne)."],
+      ["It isn't rain now.", "It isn't {raining} now.", "Aj po <b>isn't</b> ide sloveso s -ing: raining."],
+      ["Mia and Tom aren't listen to music.", "Mia and Tom aren't {listening} to music.", "Po <b>aren't</b> ide sloveso s -ing: listening."]
+    ]
+  }
+}

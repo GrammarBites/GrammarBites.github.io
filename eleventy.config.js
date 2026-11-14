@@ -31,6 +31,30 @@ const lekcieUnitu = (lekcie, id, unit) =>
     .sort((a, b) => (a.data.strana ?? 999) - (b.data.strana ?? 999) || a.date - b.date);
 const POCET_PRED_PISOMKOU = 20;
 
+const opravChybuData = JSON.parse(fs.readFileSync("src/_data/opravChybuData.json", "utf8"));
+
+// ---------- Nájdi a oprav chybu ----------
+// Úlohy sa berú z tabuľky „Časté chyby" v lekcii (riadok = chybná veta s <s>…</s> a správna s <b>…</b>)
+// a z vlastných viet v src/_data/opravChybuData.json. Tvar úlohy: { a: chybná veta, s: správna veta,
+// z: správna veta s <b> (zvýraznená oprava), b: opravená časť, v: vysvetlenie (nepovinné) }.
+const odTagov = (h) => String(h).replace(/<[^>]*>/g, "").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;|&#x27;/g, "'").replace(/\s+/g, " ").trim();
+const escH = (t) => String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+function ulohaZRiadku(lava, prava, v) {
+  if (!/<s>/.test(lava) || !/<b>/.test(prava) || / \/ /.test(odTagov(prava))) return null;
+  const a = odTagov(lava), s = odTagov(prava);
+  const b = (prava.match(/<b>(.*?)<\/b>/) || [, ""])[1];
+  const z = escH(s).replace(escH(odTagov(b)), `<b>${escH(odTagov(b))}</b>`);
+  return a && s && a !== s ? { a, s, z, b: odTagov(b), ...(v ? { v } : {}) } : null;
+}
+function ulohaZVety(sk) {
+  // sk = [chybná veta, správna veta so {zvýraznenou} opravou, vysvetlenie]
+  const [a, so, v] = sk;
+  const s = so.replace(/[{}]/g, "");
+  const b = (so.match(/\{(.*?)\}/) || [, ""])[1];
+  const z = escH(so).replace(/\{(.*?)\}/, "<b>$1</b>");
+  return { a, s, z, b, ...(v ? { v } : {}) };
+}
+
 // PREVIEW=1 → odkazy na priečinky dostanú "index.html" (náhľad mimo servera)
 const PREVIEW = process.env.PREVIEW === "1";
 
@@ -133,6 +157,17 @@ export default function (eleventyConfig) {
       if (units.length) knihy.push({ id: k.id, nazov: k.nazov, farba: k.farba, units });
     }
     return { pocet: POCET_PRED_PISOMKOU, knihy, lekcie: vsetky };
+  });
+  // Nájdi a oprav chybu: úlohy z tabuľky „Časté chyby" v obsahu lekcie + vlastné vety lekcie
+  eleventyConfig.addFilter("opravChybu", (obsah, slug) => {
+    const uloha = [];
+    const tab = String(obsah || "").match(/<table class="chyby">[\s\S]*?<\/table>/);
+    if (tab) for (const r of tab[0].matchAll(/<tr><td>([\s\S]*?)<\/td><td>([\s\S]*?)<\/td><\/tr>/g)) {
+      const u = ulohaZRiadku(r[1], r[2]);
+      if (u) uloha.push(u);
+    }
+    for (const v of (opravChybuData[slug] || {}).vety || []) uloha.push(ulohaZVety(v));
+    return uloha;
   });
   eleventyConfig.addFilter("bezStranky", (lekcie, url) => lekcie.filter((l) => l.url !== url));
   eleventyConfig.addFilter("head", (arr, n) => (n < 0 ? arr.slice(n) : arr.slice(0, n)));

@@ -1011,3 +1011,11 @@ button.pc-karta:focus-visible { outline: 3px solid var(--yellow); outline-offset
   .pp-vysledok img { width: 60px; }
 }
 .pp-test [data-nadpis]:focus { outline: none; }
+
+/* ---------- Nájdi a oprav chybu ---------- */
+.oc-zadanie { font-size: 1.15rem; font-weight: 700; }
+.oc-pole { width: 100%; max-width: 640px; text-align: left; }
+.oc-vysledok { max-width: 640px; text-align: left; font-weight: 600; line-height: 1.5; }
+.oc-verdikt { font-weight: 800; }
+.oc-spravne b { text-decoration: underline wavy var(--green); text-underline-offset: 4px; }
+.oc-karta [data-vstup]:disabled { opacity: .8; }

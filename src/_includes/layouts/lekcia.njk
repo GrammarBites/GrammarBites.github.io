@@ -92,6 +92,8 @@ skripty: ["lekcia.js"]
 {% if slovicka %}{% set pismeno = dalsiePismeno %}{% include "partials/slovicka.njk" %}{% set dalsiePismeno = {"C": "D", "D": "E", "E": "F", "F": "G"}[dalsiePismeno] %}{% endif %}
 {% if hraSlovesa %}{% set pismeno = dalsiePismeno %}{% include "partials/hra-slovesa.njk" %}{% set dalsiePismeno = {"C": "D", "D": "E", "E": "F", "F": "G"}[dalsiePismeno] %}{% endif %}
 
+{% if opravChybu %}{% set pismeno = dalsiePismeno %}{% include "partials/oprav-chybu.njk" %}{% set dalsiePismeno = {"C": "D", "D": "E", "E": "F", "F": "G", "G": "H"}[dalsiePismeno] %}{% endif %}
+
 {% if test and test.length %}
 <section class="blok blok--test" aria-labelledby="h-test">
   <h2 id="h-test" class="blok__nadpis"><span class="blok__pismeno">{{ dalsiePismeno }}</span> Mini test</h2>

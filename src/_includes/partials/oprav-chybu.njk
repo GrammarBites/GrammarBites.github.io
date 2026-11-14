@@ -1,0 +1,38 @@
+{# Nájdi a oprav chybu. V lekcii: opravChybu: true. Úlohy: tabuľka „Časté chyby" v lekcii + src/_data/opravChybuData.json #}
+{% set ulohy = content | opravChybu(page.fileSlug) %}
+{% if ulohy.length >= 3 %}
+<section class="blok blok--trener" aria-labelledby="h-oprav">
+  <h2 id="h-oprav" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Nájdi a oprav chybu</h2>
+  <p class="blok__uvod">Takéto chyby robia žiaci často. Ku každej vete najprv zisti, či je správna. Ak má chybu, <b>prepíš celú vetu správne</b>. Jedna veta z piatich je v poriadku – vtedy stlač <b>Veta je v poriadku</b>.</p>
+  <div class="trener oprav" data-oprav data-lekcia="{{ page.fileSlug }}">
+    <div class="trener__karta oc-karta" data-karta>
+      <div class="trener__hore">
+        <span class="trener__stav" data-stav></span>
+        <span class="trener__seria" data-skore>body 0</span>
+      </div>
+      <p class="oc-zadanie">Má táto veta chybu?</p>
+      <div class="pis-pole oc-pole">
+        <label for="oc-{{ page.fileSlug }}" class="sr">Veta – oprav ju, ak má chybu</label>
+        <textarea id="oc-{{ page.fileSlug }}" class="pis-vstup" data-vstup rows="2" lang="en" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+        <button type="button" class="tlacidlo tlacidlo--tiche tlacidlo--male pis-apos" data-apos title="Vloží apostrof, napr. do isn't alebo don't">Vložiť <span class="pis-apos__znak">'</span></button>
+      </div>
+      <p class="trener__spatna oc-vysledok" data-vysledok role="status" aria-live="polite" hidden></p>
+      <div class="trener__tlacidla">
+        <button type="button" class="tlacidlo" data-over>Skontrolovať</button>
+        <button type="button" class="tlacidlo tlacidlo--tiche" data-ok>Veta je v poriadku</button>
+        <button type="button" class="tlacidlo" data-dalej hidden>Ďalej →</button>
+      </div>
+    </div>
+    <div class="trener__koniec" data-koniec hidden>
+      <img src="/assets/img/postavy/koza-oslavuje.png" alt="" width="100" data-obr-dobre hidden>
+      <img src="/assets/img/postavy/koza-premysla.png" alt="" width="100" data-obr-zle hidden>
+      <div>
+        <p class="trener__vysledok" data-zaver></p>
+        <div class="trener__tlacidla"><button type="button" class="tlacidlo" data-dalsie>Ďalšie kolo</button></div>
+      </div>
+    </div>
+  </div>
+  <script type="application/json" id="data-oprav-{{ page.fileSlug }}">{{ ulohy | json | safe }}</script>
+  <script src="/assets/js/oprav-chybu.js?v={{ site.verzia }}" defer></script>
+</section>
+{% endif %}

@@ -23,6 +23,13 @@ function otazkyLekcie(l) {
   if (sl) for (const p of sl.vety || []) {
     x.push({ o: escHtml(p.t) + (p.z ? ` (${escHtml(p.z)})` : ""), m: [p.ok, ...p.zle].map(escHtml), s: 0, v: p.v });
   }
+  // vety z bloku „Nájdi a oprav chybu" (len lekcie, ktoré ho majú): správna a chybná veta
+  if (d.opravChybu) {
+    const uz = ulohyOprav(fs.readFileSync(l.inputPath, "utf8"), l.fileSlug);
+    if (uz.length >= 3) for (const u of uz) {
+      x.push({ k: u.a, o: "Ktorá veta je správna?", m: [escHtml(u.s), escHtml(u.a)], s: 0, v: u.v || "" });
+    }
+  }
   return { q, x: x.filter((o) => o.s >= 0) };
 }
 const lekcieUnitu = (lekcie, id, unit) =>
@@ -68,6 +75,18 @@ function ulohaZVety(sk) {
   const b = mozn[0];
   const z = escH(so.replace(/\{(.*?)\}/, () => `{${mozn.join(" / ")}}`)).replace(/\{(.*?)\}/, "<b>$1</b>");
   return { a, s, z, b, ...(n ? { n } : {}), ...(v ? { v } : {}), ...(d.length ? { d } : {}) };
+}
+
+// Úlohy „Nájdi a oprav chybu" z tabuľky „Časté chyby" v obsahu lekcie + vlastné vety lekcie
+function ulohyOprav(obsah, slug) {
+  const uloha = [];
+  const tab = String(obsah || "").match(/<table class="chyby">[\s\S]*?<\/table>/);
+  if (tab) for (const r of tab[0].matchAll(/<tr><td>([\s\S]*?)<\/td><td>([\s\S]*?)<\/td><\/tr>/g)) {
+    const u = ulohaZRiadku(r[1], r[2]);
+    if (u) uloha.push(u);
+  }
+  for (const v of (opravChybuData[slug] || {}).vety || []) uloha.push(ulohaZVety(v));
+  return uloha;
 }
 
 // PREVIEW=1 → odkazy na priečinky dostanú "index.html" (náhľad mimo servera)
@@ -174,16 +193,7 @@ export default function (eleventyConfig) {
     return { pocet: POCET_PRED_PISOMKOU, knihy, lekcie: vsetky };
   });
   // Nájdi a oprav chybu: úlohy z tabuľky „Časté chyby" v obsahu lekcie + vlastné vety lekcie
-  eleventyConfig.addFilter("opravChybu", (obsah, slug) => {
-    const uloha = [];
-    const tab = String(obsah || "").match(/<table class="chyby">[\s\S]*?<\/table>/);
-    if (tab) for (const r of tab[0].matchAll(/<tr><td>([\s\S]*?)<\/td><td>([\s\S]*?)<\/td><\/tr>/g)) {
-      const u = ulohaZRiadku(r[1], r[2]);
-      if (u) uloha.push(u);
-    }
-    for (const v of (opravChybuData[slug] || {}).vety || []) uloha.push(ulohaZVety(v));
-    return uloha;
-  });
+  eleventyConfig.addFilter("opravChybu", (obsah, slug) => ulohyOprav(obsah, slug));
   eleventyConfig.addFilter("bezStranky", (lekcie, url) => lekcie.filter((l) => l.url !== url));
   eleventyConfig.addFilter("head", (arr, n) => (n < 0 ? arr.slice(n) : arr.slice(0, n)));
   eleventyConfig.addFilter("tema",(id) => temy.find((t) => t.id === id) || { id, nazov: id, en: id });

@@ -54,7 +54,7 @@
         if (von.length >= D.pocet) break;
         const q = r.shift();
         if (!q) continue;
-        const kluc = GB.normalizuj(bezTagov(q.o));
+        const kluc = q.k ? GB.normalizuj(q.k) : GB.normalizuj(bezTagov(q.o));
         if (videne.has(kluc)) continue;
         videne.add(kluc);
         von.push(q);

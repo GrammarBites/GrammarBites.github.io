@@ -1,0 +1,53 @@
+---
+layout: layouts/base.njk
+title: Tabuľa
+titleSk: Opýtaj sa kozy – tabuľa
+popis: "Napíš, čomu nerozumieš, a tabuľa ti to vysvetlí krok po kroku."
+skripty: ["tabula.js"]
+---
+<div class="tabula-app" data-tabula-app>
+  <section class="tb-vyber" data-vyber aria-labelledby="h-tabula">
+    <header class="tb-vyber__hlava">
+      <div class="stranka-hlava">
+        <h1 id="h-tabula" class="stranka-hlava__nadpis">Opýtaj sa kozy</h1>
+        <p>Napíš, čomu nerozumieš. Koza ti to vysvetlí na tabuli krok po kroku – tempom, ktoré si určíš sám.</p>
+      </div>
+      <img src="/assets/img/postavy/koza-premysla.png" alt="" width="120">
+    </header>
+    <form class="hladanie" data-otazka-form role="search">
+      <div class="hladanie__pole">
+        <label for="tb-q" class="sr">Čomu nerozumieš?</label>
+        <svg width="22" height="22" aria-hidden="true"><use href="#lupa"/></svg>
+        <input id="tb-q" data-otazka-pole type="search" placeholder="Napr. prečo she plays a nie she play?" autocomplete="off">
+      </div>
+      <button type="submit" class="tlacidlo">Vysvetli mi to</button>
+    </form>
+    <p class="tb-nic" data-nic hidden>Na toto zatiaľ tabuľu nemám. <a href="/hladat/">Pozri sa do vyhľadávania lekcií</a> alebo vyber niektorú z otázok nižšie.</p>
+    <div class="tb-ponuka">
+      <p class="tb-ponuka__nadpis">Na tieto otázky už tabuľa vie odpovedať:</p>
+      <div class="tb-cipy" data-cipy></div>
+    </div>
+  </section>
+
+  <section class="tb-obal" data-tabula hidden aria-labelledby="h-tabula-nadpis">
+    <div class="tb-hore">
+      <button type="button" class="tlacidlo tlacidlo--tiche tlacidlo--male" data-ina>← Iná otázka</button>
+      <a class="tb-hore__lekcia" data-spat-lekcia href="/">Lekcia</a>
+    </div>
+    <div class="tb-ram" data-ram>
+      <div class="tb-doska">
+        <h2 id="h-tabula-nadpis" class="tb-nadpis" data-nadpis></h2>
+        <div class="tb-plocha" data-plocha></div>
+      </div>
+    </div>
+    <div class="tb-popis" data-popis aria-live="polite"></div>
+    <div class="tb-ovladanie">
+      <button type="button" class="tlacidlo tlacidlo--tiche" data-spat aria-label="Predchádzajúci krok">← Späť</button>
+      <span class="tb-stav" data-stav></span>
+      <button type="button" class="tlacidlo" data-dalej>Ďalej →</button>
+      <button type="button" class="tlacidlo" data-znova hidden>Ešte raz od začiatku</button>
+      <button type="button" class="tlacidlo tlacidlo--tiche tlacidlo--male tb-cela" data-cela>Na celú obrazovku</button>
+    </div>
+  </section>
+</div>
+<script type="application/json" id="data-tabule">{{ tabule | json | safe }}</script>

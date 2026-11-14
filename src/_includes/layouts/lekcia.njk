@@ -79,6 +79,7 @@ skripty: ["lekcia.js"]
 
 <section class="blok blok--vyklad" aria-labelledby="h-vyklad">
   <h2 id="h-vyklad" class="blok__nadpis"><span class="blok__pismeno">{{ pismenoVykladu }}</span> Výklad</h2>
+  {% if tabule[page.fileSlug] %}<a class="vyklad-tabula" href="/tabula/#{{ page.fileSlug }}"><span class="vyklad-tabula__doska" aria-hidden="true">a + b</span><span><b>Nerozumiem – vysvetli mi to na tabuli</b><br>{{ tabule[page.fileSlug].nazov }}</span></a>{% endif %}
   <div class="zosit">
     {{ content | safe }}
   </div>

@@ -1,0 +1,236 @@
+{
+  "lekcia": "prepositions-of-place",
+  "lekciaNazov": "Prepositions of place",
+  "nazov": "Where's the goat? Predložky miesta",
+  "otazky": [
+    "Kedy in, on a under?",
+    "Aký je rozdiel medzi behind a in front of?"
+  ],
+  "kluce": [
+    "predlozky miesta",
+    "prepositions of place",
+    "where is",
+    "where's",
+    "kde je",
+    "in",
+    "on",
+    "under",
+    "next to",
+    "between",
+    "behind",
+    "in front of",
+    "vedla",
+    "medzi",
+    "pred",
+    "za",
+    "pod",
+    "na"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "veta",
+          "id": "vz",
+          "text": "The goat is {___#m|zlta} the box."
+        },
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "Kde je koza? Odpoveď nám dá predložka miesta."
+        }
+      ],
+      "popis": "Na otázku <b>Where's the goat?</b> (Kde je koza?) odpovieme vetou s <b>predložkou miesta</b>. Predložka stojí pred vecou, ku ktorej sa koza vzťahuje: <i>the goat is</i> + <b>predložka</b> + <i>the box</i>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "mriezka",
+          "id": "g"
+        },
+        {
+          "op": "scena",
+          "do": "g",
+          "typ": "in",
+          "popis": "{in|ruzova} = v, vnútri",
+          "alt": "Koza je v krabici."
+        }
+      ],
+      "popis": "<b>in</b> = v, vnútri. <i>The goat is <b>in</b> the box.</i> Koza je vnútri krabice – vidno z nej len hlavu. Podobne: <i>in my bag, in the classroom</i>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "scena",
+          "do": "g",
+          "typ": "on",
+          "popis": "{on|ruzova} = na",
+          "alt": "Koza je na krabici."
+        }
+      ],
+      "popis": "<b>on</b> = na. <i>The goat is <b>on</b> the box.</i> Koza sedí NA krabici, dotýka sa jej. Podobne: <i>on the table, on the floor, on the wall</i>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "scena",
+          "do": "g",
+          "typ": "under",
+          "popis": "{under|ruzova} = pod",
+          "alt": "Koza je pod stolom."
+        }
+      ],
+      "popis": "<b>under</b> = pod. <i>The goat is <b>under</b> the table.</i> Je to opak slova <i>on</i>.",
+      "otazka": {
+        "text": "Koza sedí navrchu krabice. The goat is ___ the box.",
+        "moznosti": [
+          "in",
+          "on",
+          "under"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "in znamená vnútri. Koza je navrchu, nie vnútri.",
+          "2": "under znamená pod. Koza je navrchu."
+        },
+        "vysvetlenie": "Navrchu, dotýka sa krabice → on."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "scena",
+          "do": "g",
+          "typ": "next to",
+          "popis": "{next to|ruzova} = vedľa",
+          "alt": "Koza je vedľa krabice."
+        }
+      ],
+      "popis": "<b>next to</b> = vedľa. <i>The goat is <b>next to</b> the box.</i> Pozor, sú to <b>dve slová</b> – vždy s <i>to</i>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "scena",
+          "do": "g",
+          "typ": "between",
+          "popis": "{between|ruzova} = medzi",
+          "alt": "Koza je medzi dvoma krabicami."
+        }
+      ],
+      "popis": "<b>between</b> = medzi. Používame ho, keď sú po bokoch <b>dve veci</b>: <i>The goat is <b>between</b> the boxes.</i> Keď sú to dve rôzne veci, spojíme ich slovom <b>and</b>: <i>between the box <b>and</b> the bag</i>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "scena",
+          "do": "g",
+          "typ": "behind",
+          "popis": "{behind|ruzova} = za",
+          "alt": "Koza je za krabicou, vidno len hlavu."
+        }
+      ],
+      "popis": "<b>behind</b> = za. <i>The goat is <b>behind</b> the box.</i> Koza je za krabicou, ďalej od nás – preto z nej vidno len hlavu."
+    },
+    {
+      "kresli": [
+        {
+          "op": "scena",
+          "do": "g",
+          "typ": "in front of",
+          "popis": "{in front of|ruzova} = pred",
+          "alt": "Koza je pred krabicou."
+        }
+      ],
+      "popis": "<b>in front of</b> = pred. <i>The goat is <b>in front of</b> the box.</i> Koza je bližšie k nám a zakrýva krabicu. Pozor, sú to <b>tri slová</b>: in front of.",
+      "otazka": {
+        "text": "Koza je bližšie k nám, krabica je za ňou. The goat is ___ the box.",
+        "moznosti": [
+          "behind",
+          "in front of",
+          "next to"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "behind = za. Pri behind by bola koza ďalej od nás a krabica by ju zakrývala.",
+          "2": "next to = vedľa. Koza nie je vedľa, ale pred krabicou."
+        },
+        "vysvetlenie": "Bližšie k nám = pred → in front of."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "Časté chyby:"
+        },
+        {
+          "op": "pis",
+          "styl": "veta",
+          "id": "c1",
+          "text": "The lamp is {next#n} the bed."
+        },
+        {
+          "op": "pis",
+          "styl": "veta",
+          "id": "c2",
+          "text": "The car is {in front the#f} house."
+        }
+      ],
+      "popis": "Tieto dve vety píše veľa žiakov. Obe majú rovnakú chybu – <b>chýba v nich jedno malé slovo</b>. Vieš, ktoré?",
+      "otazka": {
+        "text": "Čo chýba vo vete „The lamp is next the bed.“?",
+        "moznosti": [
+          "to",
+          "of",
+          "in"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "of patrí k in front of. Pri next je iné slovo.",
+          "2": "in tam nepatrí. Vedľa sa povie next … ?"
+        },
+        "vysvetlenie": "Vedľa = next to. A pred = in front of."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "c1.n"
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "c2.f"
+        },
+        {
+          "op": "pis",
+          "styl": "veta",
+          "id": "o1",
+          "text": "The lamp is {next to#n|zlta,podciarkni} the bed."
+        },
+        {
+          "op": "pis",
+          "styl": "veta",
+          "id": "o2",
+          "text": "The car is {in front of#f|zlta,podciarkni} the house."
+        }
+      ],
+      "popis": "Opravené: <b>next to</b> má vždy dve slová a <b>in front of</b> vždy tri. Keď ich povieš nahlas niekoľkokrát za sebou, zapamätáš si ich ako jeden celok.",
+      "odkazy": [
+        {
+          "text": "Trenažér: Where's the goat?",
+          "url": "/lekcie/prepositions-of-place/#h-izba"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/prepositions-of-place/#h-test"
+        }
+      ]
+    }
+  ]
+}

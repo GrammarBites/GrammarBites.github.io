@@ -1,0 +1,98 @@
+{
+  "lekcia": "present-simple",
+  "lekciaNazov": "Present simple",
+  "nazov": "Prečo „she plays“, a nie „she play“?",
+  "otazky": ["Prečo she plays, a nie she play?", "Prečo he doesn't like, a nie he doesn't likes?"],
+  "kluce": ["present simple", "pritomny jednoduchy cas", "-s", "-es", "s na konci", "he she it", "plays", "play", "does", "doesn't", "doesnt", "likes", "kedy pridat s", "preco s", "3. osoba", "tretia osoba"],
+  "kroky": [
+    {
+      "kresli": [
+        { "op": "pis", "styl": "veta", "id": "z", "text": "She {play#v} football." }
+      ],
+      "popis": "Takúto vetu napíše veľa žiakov. Znie skoro dobre – ale je v nej chyba. Nájdeš ju?",
+      "otazka": {
+        "text": "Čo je zlé na vete „She play football.“?",
+        "moznosti": ["Pri play chýba -s.", "Namiesto she má byť her.", "Chýba tam is."],
+        "spravna": 0,
+        "napoveda": { "1": "she je správne – je to podmet (ona). Her by bolo „jej“.", "2": "is tu nepatrí. Pri bežnom slovese (play) sa is nepridáva." },
+        "vysvetlenie": "Pri she pridávame k slovesu -s: plays."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "znac", "typ": "preskrtni", "ciel": "z.v" },
+        { "op": "pis", "styl": "veta", "id": "o", "text": "{She#po} play{s#s|zlta,krouzok} football." },
+        { "op": "sipka", "od": "o.po", "k": "o.s", "text": "he / she / it → -s" }
+      ],
+      "popis": "Správne je <b>She plays football.</b> Keď je podmetom <b>he, she</b> alebo <b>it</b>, pridáme k slovesu <b>-s</b>. Šípka ukazuje, že to <i>-s</i> „zavolalo“ práve slovo <i>she</i>."
+    },
+    {
+      "kresli": [
+        { "op": "stlpce", "stlpce": [
+          { "nadpis": "po slovensky: 6 tvarov", "riadky": ["ja {hrám|ruzova}", "ty {hráš|ruzova}", "on/ona {hrá|ruzova}", "my {hráme|ruzova}", "vy {hráte|ruzova}", "oni {hrajú|ruzova}"] },
+          { "nadpis": "po anglicky: len 2 tvary", "riadky": ["I play", "you play", "he/she/it play{s|zlta}", "we play", "you play", "they play"] }
+        ] }
+      ],
+      "popis": "Dobrá správa: angličtina je tu <b>jednoduchšia</b> ako slovenčina. V slovenčine má sloveso šesť rôznych koncoviek. V angličtine sa mení <b>iba jeden tvar</b> – pri <i>he, she, it</i>. Stačí si zapamätať to jedno <b>-s</b>."
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "veta", "id": "m", "text": "{My brother#b|modra} play{s#s|zlta} football." },
+        { "op": "sipka", "od": "m.b", "k": "m.s", "text": "my brother = he" },
+        { "op": "pis", "styl": "poznamka", "text": "Anna = she · my mum = she · the dog = it" }
+      ],
+      "popis": "Pozor: <i>he, she, it</i> nie je vždy napísané. Aj <b>meno alebo vec v jednotnom čísle</b> sa správa ako <i>he, she, it</i>: <i>My brother plays… Anna likes… The dog eats…</i>",
+      "otazka": {
+        "text": "My mum ___ in a bank.",
+        "moznosti": ["work", "works"],
+        "spravna": 1,
+        "napoveda": { "0": "My mum = she. Čo pridávame pri she?" },
+        "vysvetlenie": "My mum = she, preto works."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "tabulka", "riadky": [
+          ["play → play{s|zlta}", "like → like{s|zlta}"],
+          ["go → go{es|zlta}", "watch → watch{es|zlta}"],
+          ["have → {has|ruzova}", "do → do{es|zlta}"]
+        ] }
+      ],
+      "popis": "Väčšinou stačí pridať <b>-s</b>. Ak sloveso končí na <b>-o, -sh, -ch, -ss, -x</b>, pridáme <b>-es</b> (go → goes, watch → watches). A jedno si zapamätaj zvlášť: <b>have → has</b>."
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "A čo zápor?" },
+        { "op": "pis", "styl": "veta", "id": "n", "text": "He doesn't {likes#v} fish." }
+      ],
+      "popis": "Aj tu sa často robí chyba. V zápore pri <i>he, she, it</i> použijeme <b>doesn't</b>. Koľko -s však veta potrebuje?",
+      "otazka": {
+        "text": "Ktorá veta je správne?",
+        "moznosti": ["He doesn't likes fish.", "He doesn't like fish.", "He don't like fish."],
+        "spravna": 1,
+        "napoveda": { "0": "-s je už v slove does (do → does). Druhé -s tam nepatrí.", "2": "Pri he používame doesn't, nie don't." },
+        "vysvetlenie": "-s si zoberie does. Sloveso za ním ostáva bez -s."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "znac", "typ": "preskrtni", "ciel": "n.v" },
+        { "op": "pis", "styl": "veta", "id": "d", "text": "He do{es#e|zlta,krouzok}n't {like#l|zlta,podciarkni} fish." },
+        { "op": "sipka", "od": "d.e", "k": "d.l", "text": "-s je už tu, preto like" }
+      ],
+      "popis": "<b>-s sa v jednej vete objaví len raz.</b> V zápore ho „zoberie“ <i>does</i>, a preto sloveso ostane bez -s: <i>He doesn't <b>like</b> fish.</i>"
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "nadpis2", "text": "Zapamätaj si:" },
+        { "op": "pis", "styl": "veta", "text": "he / she / it + sloveso{-s|zlta}" },
+        { "op": "pis", "styl": "veta", "text": "he / she / it + doe{s|zlta}n't + sloveso {bez -s|ruzova}" }
+      ],
+      "popis": "Hotovo! Pri <i>he, she, it</i> pridávame <b>-s</b> – ale v jednej vete len raz. Teraz si to vyskúšaj sám.",
+      "odkazy": [
+        { "text": "Napíš sám: skladanie viet", "url": "/lekcie/present-simple/#h-pisanie" },
+        { "text": "Mini test", "url": "/lekcie/present-simple/#h-test" }
+      ]
+    }
+  ]
+}

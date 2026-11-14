@@ -11,10 +11,11 @@ skripty: ["pred-pisomkou.js"]
     <header class="pp-hlava">
       <div class="stranka-hlava">
         <h1 id="h-pp" class="stranka-hlava__nadpis">Pred písomkou</h1>
-        <p>Vyber si učebnicu a unit. Dostaneš {{ pp.pocet }} náhodných otázok zo všetkých lekcií unitu – pri každom pokuse iné. Nič sa neukladá ani nikam neposiela.</p>
+        <p>Vyber si učebnicu a unit. Dostaneš {{ pp.pocet }} náhodných otázok z gramatiky – zo všetkých lekcií unitu – pri každom pokuse iné. Nič sa neukladá ani nikam neposiela.</p>
       </div>
       <img src="/assets/img/postavy/koza-cita.png" alt="" width="110" height="135">
     </header>
+    <p class="pp-oznam"><span class="pp-oznam__znak" aria-hidden="true">!</span><span><b>Tento test opakuje iba gramatiku.</b> Nie je v ňom celé učivo unitu. Na písomku sa nauč aj slovíčka, <span lang="en">Everyday English</span>, rôzne situácie, rozhovory (<span lang="en">interviews</span>) a ďalšie veci z učebnice a pracovného zošita.</span></p>
     {% for k in pp.knihy %}
     <section class="pp-kniha pp-kniha--{{ k.farba }}" aria-labelledby="h-pp-{{ k.id }}">
       <h2 id="h-pp-{{ k.id }}" class="pp-kniha__nazov">{{ k.nazov }}</h2>
@@ -38,6 +39,7 @@ skripty: ["pred-pisomkou.js"]
       <h1 id="h-pp-test" class="stranka-hlava__nadpis" tabindex="-1" data-nadpis></h1>
       <p data-uvod></p>
     </header>
+    <p class="pp-oznam"><span class="pp-oznam__znak" aria-hidden="true">!</span><span><b>Tento test opakuje iba gramatiku.</b> Nie je v ňom celé učivo unitu. Na písomku sa nauč aj slovíčka, <span lang="en">Everyday English</span>, rôzne situácie, rozhovory (<span lang="en">interviews</span>) a ďalšie veci z učebnice a pracovného zošita.</span></p>
     <p class="pp-lekcie" data-lekcie></p>
     <form class="test" data-form novalidate>
       <div class="test" data-otazky></div>
@@ -52,6 +54,7 @@ skripty: ["pred-pisomkou.js"]
         <div>
           <p data-vysledok-text></p>
           <div class="pp-zopakuj" data-zopakuj></div>
+          <p class="pp-nezabudni">Nezabudni: toto bola len gramatika. Na písomke budú aj slovíčka, <span lang="en">Everyday English</span> a ďalšie veci z učebnice.</p>
         </div>
       </div>
       <div class="test__ovladanie" data-po hidden>

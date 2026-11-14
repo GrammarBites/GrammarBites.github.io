@@ -99,7 +99,7 @@
     document.title = `Pred písomkou: ${nazov} · Grammar Bites`;
     const n = u.unit.pocet;
     el.uvod.textContent = (u.unit.id === "intro" ? "" : u.unit.nazov + (/[.?!…]$/.test(u.unit.nazov) ? " " : ". ")) +
-      `${n} ${tvar(n, "náhodná otázka", "náhodné otázky", "náhodných otázok")} z celého unitu. Nič sa neukladá – skúšaj, koľkokrát chceš.` +
+      `${n} ${tvar(n, "náhodná otázka", "náhodné otázky", "náhodných otázok")} z gramatiky celého unitu. Nič sa neukladá – skúšaj, koľkokrát chceš.` +
       (n < D.pocet ? ` (K tomuto unitu je zatiaľ len ${n} ${tvar(n, "otázka", "otázky", "otázok")}.)` : "");
     el.lekcie.innerHTML = "Otázky sú z lekcií: " + u.unit.lekcie.map((s) =>
       `<a class="stitok" href="${GB.odkaz(D.lekcie[s].url)}" lang="en">${GB.esc(D.lekcie[s].t)}</a>`).join(" ");

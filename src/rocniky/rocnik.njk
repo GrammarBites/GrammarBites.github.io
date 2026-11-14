@@ -25,7 +25,7 @@ eleventyComputed:
     {% for l in s.lekcie %}{% include "partials/karta.njk" %}{% endfor %}
   </div>
   {% if s.kniha and (collections.lekcie | pocetPredPisomkou(s.kniha, s.unit)) %}
-  <p class="rocnik-unit__pp"><a class="pred-pisomkou" href="/pred-pisomkou/#{{ s.kniha }}/{{ s.unit }}"><span class="pred-pisomkou__znak" aria-hidden="true">✓</span><span><b>Pred písomkou</b><br>{{ collections.lekcie | pocetPredPisomkou(s.kniha, s.unit) }} náhodných otázok z {{ s.nadpis }}</span></a></p>
+  <p class="rocnik-unit__pp"><a class="pred-pisomkou" href="/pred-pisomkou/#{{ s.kniha }}/{{ s.unit }}"><span class="pred-pisomkou__znak" aria-hidden="true">✓</span><span><b>Pred písomkou</b><br>{{ collections.lekcie | pocetPredPisomkou(s.kniha, s.unit) }} náhodných otázok z gramatiky · {{ s.nadpis }}</span></a></p>
   {% endif %}
 </section>
 {% endfor %}

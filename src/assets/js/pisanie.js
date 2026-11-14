@@ -40,21 +40,147 @@
       }
       return [...new Set(tipy)];
     },
+    "present-simple"(text, typ, u) {
+      const t = norm(text), w = slova(text), tipy = [], v = u.sloveso, he = u.osoba[2] === "he";
+      const z = v.z.split(" ")[0], sTvar = v.s.split(" ")[0];
+      if (/\b(am|is|are|isn't|aren't)\b/.test(t) || /\b(i'm|you're|we're|they're|he's|she's)\b/.test(t))
+        tipy.push(`V present simple pred sloveso nedávame am / is / are: <b>${esc(u.osoba[0])} ${esc(he ? v.s : v.z)}</b>.`);
+      if (typ === "+") {
+        if (/\b(don't|doesn't|not)\b/.test(t)) tipy.push("Kocka chce <b>kladnú</b> vetu – bez záporu.");
+        else if (he && !w.includes(sTvar)) tipy.push(`Pri he / she / it má sloveso koncovku -s: <b>${esc(v.s)}</b>.`);
+        else if (!he && w.includes(sTvar)) tipy.push(`Koncovka -s je len pri he / she / it. Tu je <b>${esc(v.z)}</b>.`);
+      }
+      if (typ === "-") {
+        if (!/\b(don't|doesn't|do not|does not)\b/.test(t)) tipy.push(`Kocka chce <b>zápor</b>: <b>${he ? "doesn't" : "don't"}</b> + sloveso.`);
+        else if (he && /\b(don't|do not)\b/.test(t)) tipy.push("Pri he / she / it je zápor <b>doesn't</b>.");
+        else if (!he && /\b(doesn't|does not)\b/.test(t)) tipy.push("<b>Doesn't</b> je len pri he / she / it. Tu je <b>don't</b>.");
+        if (w.includes(sTvar)) tipy.push(`Po doesn't ide základný tvar bez -s: <b>doesn't ${esc(z)}</b>.`);
+      }
+      if (typ === "?") {
+        if (!/^(do|does)\b/.test(t)) tipy.push(`Otázka začína pomocným slovesom: <b>${he ? "Does" : "Do"} ${esc(u.osoba[1])}…?</b>`);
+        else if (he && /^do\b/.test(t)) tipy.push("Pri he / she / it sa pýtame <b>Does</b>.");
+        else if (!he && /^does\b/.test(t)) tipy.push("<b>Does</b> je len pri he / she / it. Tu je <b>Do</b>.");
+        if (w.includes(sTvar)) tipy.push(`Po Does ide základný tvar bez -s: <b>${esc(z)}</b>.`);
+      }
+      return [...new Set(tipy)];
+    },
+    "present-continuous"(text, typ, u) { return tipyBe(text, typ, u, u.sloveso.ing, "present continuous"); },
+    "going-to"(text, typ, u) {
+      const t = norm(text), tipy = [];
+      if (/\b(will|won't)\b/.test(t)) tipy.push("Kocka chce <b>BE going to</b>, nie will.");
+      if (!/\bgoing\b/.test(t)) tipy.push("Chýba <b>going to</b>: BE + going to + sloveso.");
+      else if (!/\bgoing to\b/.test(t)) tipy.push("Za going patrí <b>to</b>: going <b>to</b> " + esc(u.sloveso.z.split(" ")[0]) + ".");
+      else if (/\bgoing to \w+ing\b/.test(t)) tipy.push(`Po going to ide základný tvar: <b>going to ${esc(u.sloveso.z)}</b>.`);
+      return [...new Set(tipy.concat(tipyBe(text, typ, u, "going to " + u.sloveso.z, "BE going to", true)))];
+    },
+    "past-simple"(text, typ, u) {
+      const t = norm(text), w = slova(text), tipy = [], v = u.sloveso;
+      const z = v.z.split(" ")[0], m = v.m.split(" ")[0];
+      if (/\b(was|were|wasn't|weren't)\b/.test(t)) tipy.push(`Was / were patrí len k slovesu be. Tu: <b>${esc(v.m)}</b>, <b>didn't ${esc(v.z)}</b>.`);
+      if (/\b(don't|doesn't|do|does)\b/.test(t)) tipy.push("V minulom čase je pomocné sloveso <b>did / didn't</b>, nie do / does.");
+      if (typ === "+") {
+        if (/\b(didn't|did not)\b/.test(t)) tipy.push("Kocka chce <b>kladnú</b> vetu – bez didn't.");
+        else if (!w.includes(m)) tipy.push(`Minulý tvar slovesa ${esc(z)} je <b>${esc(m)}</b>.`);
+      }
+      if (typ === "-") {
+        if (!/\b(didn't|did not)\b/.test(t)) tipy.push("Kocka chce <b>zápor</b>: <b>didn't</b> + základný tvar.");
+        if (m !== z && w.includes(m)) tipy.push(`Po didn't ide základný tvar: <b>didn't ${esc(z)}</b>, nie <s>didn't ${esc(m)}</s>.`);
+      }
+      if (typ === "?") {
+        if (!/^did\b/.test(t)) tipy.push(`Otázka začína <b>Did</b>: <b>Did ${esc(u.osoba[1])} ${esc(z)}…?</b>`);
+        if (m !== z && w.includes(m)) tipy.push(`Po Did ide základný tvar: <b>${esc(z)}</b>, nie <s>${esc(m)}</s>.`);
+      }
+      return [...new Set(tipy)];
+    },
+    "present-perfect"(text, typ, u) {
+      const t = norm(text), w = slova(text), tipy = [], v = u.sloveso, he = u.osoba[2] === "he";
+      const m = v.m.split(" ")[0], pp = v.pp.split(" ")[0];
+      const maHave = /\b(have|haven't|i've|you've|we've|they've)\b/.test(t), maHas = /\b(has|hasn't)\b/.test(t) || /'s\b/.test(t);
+      if (/\b(did|didn't)\b/.test(t)) tipy.push("V present perfect nepoužívame did: <b>have / has</b> + 3. tvar.");
+      if (!maHave && !maHas) tipy.push(`Chýba <b>${he ? "has" : "have"}</b>: ${he ? "has" : "have"} + 3. tvar.`);
+      else if (he && maHave && !maHas) tipy.push("Pri he / she / it je <b>has</b>, nie have.");
+      else if (!he && /\b(has|hasn't)\b/.test(t)) tipy.push("<b>Has</b> je len pri he / she / it. Tu je <b>have</b>.");
+      if (!w.includes(pp)) tipy.push(m !== pp && w.includes(m)
+        ? `Po have / has ide 3. tvar: <b>${esc(pp)}</b>, nie <s>${esc(m)}</s>.`
+        : `3. tvar slovesa ${esc(v.z.split(" ")[0])} je <b>${esc(pp)}</b>.`);
+      const maZapor = /n't\b|\bnot\b/.test(t);
+      if (typ === "-" && !maZapor) tipy.push(`Kocka chce <b>zápor</b>: <b>${he ? "hasn't" : "haven't"}</b>.`);
+      if (typ === "+" && maZapor) tipy.push("Kocka chce <b>kladnú</b> vetu – bez záporu.");
+      return [...new Set(tipy)];
+    },
   };
 
-  // všetky správne varianty vety z kocky (čas na konci aj na začiatku, will / 'll, won't / will not)
+  // spoločné tipy pre časy so slovesom BE (present continuous, BE going to)
+  function tipyBe(text, typ, u, zvysok, nazov, bezIng) {
+    const t = norm(text), tipy = [], o = u.osoba[2];
+    const be = { i: "am", he: "is", are: "are" }[o];
+    const najdene = [];
+    if (/\bam\b|\bi'm\b/.test(t)) najdene.push("am");
+    if (/\b(is|isn't)\b/.test(t) || /'s\b/.test(t)) najdene.push("is");
+    if (/\b(are|aren't)\b/.test(t) || /'re\b/.test(t)) najdene.push("are");
+    if (/\b(do|does|don't|doesn't|did|didn't)\b/.test(t)) tipy.push(`V ${nazov} nepoužívame do / does. Otázku aj zápor robí <b>BE</b> (am / is / are).`);
+    if (!najdene.length) tipy.push(`Chýba sloveso <b>BE</b>: <b>${esc(u.osoba[0])} ${be} ${esc(zvysok)}</b>.`);
+    else if (!najdene.includes(be)) tipy.push(`Pri <b>${esc(u.osoba[0])}</b> má BE tvar <b>${be}</b>.`);
+    if (!bezIng && !slova(text).includes(u.sloveso.ing.split(" ")[0])) tipy.push(`Sloveso potrebuje -ing: <b>${esc(u.sloveso.ing)}</b>.`);
+    const maZapor = /\bnot\b|n't\b/.test(t);
+    if (typ === "-" && !maZapor) tipy.push(`Kocka chce <b>zápor</b>: BE + <b>not</b> (${o === "i" ? "I'm not" : o === "he" ? "isn't" : "aren't"}).`);
+    if (typ === "+" && maZapor) tipy.push("Kocka chce <b>kladnú</b> vetu – bez not.");
+    if (typ === "?" && !/^(am|is|are)\b/.test(t)) tipy.push(`V otázke ide BE na začiatok: <b>${be.charAt(0).toUpperCase() + be.slice(1)} ${esc(u.osoba[1])}…?</b>`);
+    return tipy;
+  }
+
+  // všetky správne varianty vety z kocky (čas na konci aj na začiatku, dlhé aj skrátené tvary)
   const ZAMENA = ["i", "you", "we", "they", "he", "she", "it"];
-  function riesenia(u) {
-    const S = u.osoba[0], s = u.osoba[1], V = u.sloveso, C = u.cas;
-    const vel = (x) => x.charAt(0).toUpperCase() + x.slice(1);
-    if (u.typ === "?") return [`Will ${s} ${V} ${C}?`];
-    const out = [];
-    (u.typ === "+" ? ["will"] : ["won't", "will not"]).forEach((f) => {
-      out.push(`${S} ${f} ${V} ${C}.`, `${vel(C)} ${s} ${f} ${V}.`, `${vel(C)}, ${s} ${f} ${V}.`);
-      if (f === "will" && ZAMENA.includes(s.toLowerCase())) out.push(`${S}'ll ${V} ${C}.`, `${vel(C)} ${s}'ll ${V}.`, `${vel(C)}, ${s}'ll ${V}.`);
-    });
+  const vel = (x) => x.charAt(0).toUpperCase() + x.slice(1);
+  // prisudky = všetko, čo môže nasledovať hneď za podmetom (" will go", "'ll go"…)
+  function oznamovacie(u, prisudky) {
+    const S = u.osoba[0], s = u.osoba[1], C = u.cas, out = [];
+    prisudky.forEach((p) => out.push(`${S}${p} ${C}.`, `${vel(C)} ${s}${p}.`, `${vel(C)}, ${s}${p}.`));
     return out;
   }
+  const RIESENIA = {
+    will(u) {
+      const s = u.osoba[1], V = u.sloveso.z;
+      if (u.typ === "?") return [`Will ${s} ${V} ${u.cas}?`];
+      if (u.typ === "-") return oznamovacie(u, [` won't ${V}`, ` will not ${V}`]);
+      return oznamovacie(u, ZAMENA.includes(s.toLowerCase()) ? [` will ${V}`, `'ll ${V}`] : [` will ${V}`]);
+    },
+    "present-simple"(u) {
+      const he = u.osoba[2] === "he", v = u.sloveso;
+      if (u.typ === "?") return [`${he ? "Does" : "Do"} ${u.osoba[1]} ${v.z} ${u.cas}?`];
+      if (u.typ === "-") return oznamovacie(u, he ? [` doesn't ${v.z}`, ` does not ${v.z}`] : [` don't ${v.z}`, ` do not ${v.z}`]);
+      return oznamovacie(u, [` ${he ? v.s : v.z}`]);
+    },
+    "present-continuous"(u) { return sBe(u, u.sloveso.ing); },
+    "going-to"(u) { return sBe(u, "going to " + u.sloveso.z); },
+    "past-simple"(u) {
+      const v = u.sloveso;
+      if (u.typ === "?") return [`Did ${u.osoba[1]} ${v.z} ${u.cas}?`];
+      if (u.typ === "-") return oznamovacie(u, [` didn't ${v.z}`, ` did not ${v.z}`]);
+      return oznamovacie(u, [` ${v.m}`]);
+    },
+    "present-perfect"(u) {
+      const he = u.osoba[2] === "he", v = u.sloveso, have = he ? "has" : "have";
+      const skrat = he || ZAMENA.includes(u.osoba[1].toLowerCase());
+      if (u.typ === "?") return [`${vel(have)} ${u.osoba[1]} ${v.pp} ${u.cas}?`];
+      if (u.typ === "-") return oznamovacie(u, [` ${have}n't ${v.pp}`, ` ${have} not ${v.pp}`]);
+      return oznamovacie(u, skrat ? [` ${have} ${v.pp}`, `${he ? "'s" : "'ve"} ${v.pp}`] : [` ${have} ${v.pp}`]);
+    },
+  };
+  // vety so slovesom BE: am / is / are + zvyšok (playing…, going to play…)
+  function sBe(u, zvysok) {
+    const o = u.osoba[2], be = { i: "am", he: "is", are: "are" }[o], kr = { i: "'m", he: "'s", are: "'re" }[o];
+    const skrat = o === "he" || ZAMENA.includes(u.osoba[1].toLowerCase());
+    if (u.typ === "?") return [`${vel(be)} ${u.osoba[1]} ${zvysok} ${u.cas}?`];
+    if (u.typ === "-") {
+      const p = o === "i" ? [`'m not ${zvysok}`, ` am not ${zvysok}`] : [` ${be}n't ${zvysok}`, ` ${be} not ${zvysok}`];
+      if (o !== "i" && skrat) p.push(`${kr} not ${zvysok}`);
+      return oznamovacie(u, p);
+    }
+    return oznamovacie(u, skrat ? [` ${be} ${zvysok}`, `${kr} ${zvysok}`] : [` ${be} ${zvysok}`]);
+  }
+  const riesenia = (u, sada) => (RIESENIA[sada] || RIESENIA.will)(u);
+  window.GBPisanie = { riesenia, GRAMATIKA, RIESENIA }; // pre kontrolu úloh
 
   function init(box) {
     const id = box.dataset.pisanie, lekcia = box.dataset.lekcia || id;
@@ -106,12 +232,13 @@
         kresliSkladanie();
       } else {
         const k = data.kocka;
-        uloha = { osoba: nahodny(k.osoby), sloveso: nahodny(k.slovesa), cas: nahodny(k.casy), typ: nahodny(k.typy) };
+        const sl = nahodny(k.slovesa);
+        uloha = { osoba: nahodny(k.osoby), sloveso: typeof sl === "string" ? { z: sl } : sl, cas: nahodny(k.casy), typ: nahodny(k.typy) };
         el.stav.textContent = "kocka vybrala:";
         el.dalsia.textContent = "Hodiť kockou znova 🎲";
-        el.zadanie.innerHTML = `<span class="pis-kocka" lang="en"><b>${esc(uloha.osoba[0])}</b> · <b>${esc(uloha.sloveso)}</b> · <b>${esc(uloha.cas)}</b></span>` +
+        el.zadanie.innerHTML = `<span class="pis-kocka" lang="en"><b>${esc(uloha.osoba[0])}</b> · <b>${esc(uloha.sloveso.z)}</b> · <b>${esc(uloha.cas)}</b></span>` +
           `<span class="pis-typ pis-typ--${typTrieda(uloha.typ)}">${TYP[uloha.typ]}</span>` +
-          `<span class="pis-pozn">Napíš z týchto slov vetu s <i>will</i>.</span>`;
+          `<span class="pis-pozn">Napíš z týchto slov vetu ${k.pokyn || "s <i>will</i>"}.</span>`;
         el.vstup.value = ""; el.vstup.disabled = false;
       }
     }
@@ -149,21 +276,21 @@
       if (uroven === "poskladaj") {
         if (!poskladane.length) return hlaska("Najprv poskladaj vetu z kartičiek.");
         const moja = spoj(poskladane.map((k) => k.t)), spravna = spoj(uloha.veta.split(" "));
-        const ok = norm(moja) === norm(spravna);
+        const ok = [uloha.veta, ...(uloha.aj || [])].some((v) => norm(spoj(v.split(" "))) === norm(moja));
         const pocet = uloha.veta.split(" ").length, navyse = poskladane.filter((k) => k.i >= pocet).map((k) => k.t);
         const vys = [];
-        if (!ok && navyse.length) vys.push(`Kartička <b lang="en">${esc(navyse[0])}</b> do vety nepatrí.`);
+        if (!ok && navyse.length) vys.push(`Kartička <b lang="en">${esc(navyse[0])}</b> do vety nepatrí.` + (uloha.preco ? " " + uloha.preco : ""));
         else if (!ok && poskladane.length < pocet) vys.push("Niektoré kartičky ti ešte chýbali.");
-        else if (!ok) vys.push("Slová sú správne, ale poradie nie.");
+        else if (!ok) vys.push("Slová sú správne, ale poradie nie." + (uloha.tip ? " " + uloha.tip : ""));
         skontrolovane = true; kresliSkladanie();
-        vysledok(ok, spravna, vys);
-        el.over.hidden = true; poslednaVeta = spravna; el.uloz.hidden = false; el.znova.hidden = ok;
+        vysledok(ok, ok ? moja : spravna, vys);
+        el.over.hidden = true; poslednaVeta = ok ? moja : spravna; el.uloz.hidden = false; el.znova.hidden = ok;
         GB.udalost(`pisanie/${lekcia}/poskladaj/${ok ? "ok" : "chyba"}`, `Napíš sám ${lekcia}: poskladaj`);
         return;
       }
       const text = apos(el.vstup.value).trim();
       if (!text) { hlaska("Najprv napíš vetu."); el.vstup.focus(); return; }
-      const moznosti = riesenia(uloha);
+      const moznosti = riesenia(uloha, data.gramatika);
       const zhoda = moznosti.find((m) => bezInterp(m) === bezInterp(text));
       const ok = !!zhoda, drobnosti = [];
       if (ok) {
@@ -174,10 +301,16 @@
       }
       let vys = [];
       if (!ok) {
-        vys = gram(text, uloha.typ);
+        // didnt, dont, isnt… – chýba len apostrof; ostatné chyby hľadáme už v opravenej vete
+        const sApos = text.replace(/\b(did|do|does|is|are|was|were|have|has)nt\b/gi, "$1n't");
+        if (sApos !== text) vys.push("Skrátený zápor sa píše s apostrofom: <b>" + esc(sApos.match(/\b\w+n't\b/)[0]) + "</b>. Pomôže tlačidlo <b>Vložiť '</b>.");
+        vys = vys.concat(gram(sApos, uloha.typ, uloha));
         const tx = norm(text), os = uloha.osoba[1].toLowerCase();
         if (!(os === "i" ? /\bi\b|\bi'll\b/.test(tx) : tx.includes(os))) vys.push(`Chýba osoba z kocky: <b lang="en">${esc(uloha.osoba[0])}</b>.`);
-        if (!tx.includes(uloha.sloveso.toLowerCase())) vys.push(`Použi presne slová z kocky: <b lang="en">${esc(uloha.sloveso)}</b>.`);
+        // zvyšok slovného spojenia (bez prvého slova – to mení tvar) musí vo vete ostať
+        const zvysok = uloha.sloveso.z.toLowerCase().split(" ").slice(1).join(" ");
+        if (!vys.length && (zvysok ? !tx.includes(zvysok) : !Object.values(uloha.sloveso).some((f) => tx.includes(f.toLowerCase()))))
+          vys.push(`Použi presne slová z kocky: <b lang="en">${esc(uloha.sloveso.z)}</b>.`);
         if (!tx.includes(uloha.cas.toLowerCase())) vys.push(`Chýba čas z kocky: <b lang="en">${esc(uloha.cas)}</b>.`);
       }
       vysledok(ok, ok ? zhoda : moznosti[0], [...new Set(vys)], drobnosti);

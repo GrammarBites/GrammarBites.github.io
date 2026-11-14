@@ -1,129 +1,1775 @@
 {
-  "_info": "Úlohy 'Napíš sám' pre lekcie. Kľúč = hodnota 'pisanie' v lekcii. poskladaj = vety z kartičiek (navyse = kartička navyše), kocka = osoby/slovesá/časy/typy viet. gramatika = sada vysvetlení v pisanie.js.",
-  "will": {
-    "gramatika": "will",
-    "poskladaj": [
-      {
-        "veta": "I'll help you with your homework .",
-        "navyse": [
-          "wills"
-        ]
-      },
-      {
-        "veta": "It won't rain tomorrow .",
-        "navyse": [
-          "don't"
-        ]
-      },
-      {
-        "veta": "Will you come to my party ?",
-        "navyse": [
-          "Do"
-        ]
-      },
-      {
-        "veta": "I think I'll be a doctor .",
-        "navyse": [
-          "to"
-        ]
-      },
-      {
-        "veta": "She won't go to school on Saturday .",
-        "navyse": [
-          "goes"
-        ]
-      },
-      {
-        "veta": "Where will you live in ten years ?",
-        "navyse": [
-          "do"
-        ]
-      },
-      {
-        "veta": "I'll open the window .",
-        "navyse": [
-          "opens"
-        ]
-      },
-      {
-        "veta": "My brother will be twelve next year .",
-        "navyse": [
-          "is"
-        ]
-      },
-      {
-        "veta": "We won't watch TV tonight .",
-        "navyse": [
-          "not"
-        ]
-      },
-      {
-        "veta": "Will robots teach us in the future ?",
-        "navyse": [
-          "teaches"
-        ]
-      }
+ "_info": "Úlohy 'Napíš sám' pre lekcie. Kľúč = hodnota 'pisanie' v lekcii. poskladaj = vety z kartičiek (navyse = kartička navyše, preco = prečo do vety nepatrí, tip = rada pri zlom poradí, aj = ďalšie správne poradia). kocka (nepovinná) = osoby [veľké, malé, typ i/he/are], slovesá {z: základ, s: -s tvar, ing, m: minulý, pp: 3. tvar}, casy, typy viet, pokyn. gramatika = sada riešení a vysvetlení v pisanie.js.",
+ "will": {
+  "gramatika": "will",
+  "poskladaj": [
+   {
+    "veta": "I'll help you with your homework .",
+    "navyse": [
+     "wills"
+    ]
+   },
+   {
+    "veta": "It won't rain tomorrow .",
+    "navyse": [
+     "don't"
+    ]
+   },
+   {
+    "veta": "Will you come to my party ?",
+    "navyse": [
+     "Do"
+    ]
+   },
+   {
+    "veta": "I think I'll be a doctor .",
+    "navyse": [
+     "to"
+    ]
+   },
+   {
+    "veta": "She won't go to school on Saturday .",
+    "navyse": [
+     "goes"
+    ]
+   },
+   {
+    "veta": "Where will you live in ten years ?",
+    "navyse": [
+     "do"
+    ]
+   },
+   {
+    "veta": "I'll open the window .",
+    "navyse": [
+     "opens"
+    ]
+   },
+   {
+    "veta": "My brother will be twelve next year .",
+    "navyse": [
+     "is"
+    ]
+   },
+   {
+    "veta": "We won't watch TV tonight .",
+    "navyse": [
+     "not"
+    ]
+   },
+   {
+    "veta": "Will robots teach us in the future ?",
+    "navyse": [
+     "teaches"
+    ]
+   }
+  ],
+  "kocka": {
+   "osoby": [
+    [
+     "I",
+     "I"
     ],
-    "kocka": {
-      "osoby": [
-        [
-          "I",
-          "I"
-        ],
-        [
-          "You",
-          "you"
-        ],
-        [
-          "My mum",
-          "my mum"
-        ],
-        [
-          "Tom",
-          "Tom"
-        ],
-        [
-          "We",
-          "we"
-        ],
-        [
-          "They",
-          "they"
-        ],
-        [
-          "My best friend",
-          "my best friend"
-        ],
-        [
-          "The teacher",
-          "the teacher"
-        ]
-      ],
-      "slovesa": [
-        "play football",
-        "go to the cinema",
-        "be famous",
-        "live in London",
-        "visit grandma",
-        "have a pizza",
-        "win the match",
-        "learn Spanish",
-        "buy a new phone",
-        "watch a film"
-      ],
-      "casy": [
-        "tomorrow",
-        "next week",
-        "in 2050",
-        "tonight",
-        "next year",
-        "on Saturday"
-      ],
-      "typy": [
-        "+",
-        "-",
-        "?"
-      ]
-    }
+    [
+     "You",
+     "you"
+    ],
+    [
+     "My mum",
+     "my mum"
+    ],
+    [
+     "Tom",
+     "Tom"
+    ],
+    [
+     "We",
+     "we"
+    ],
+    [
+     "They",
+     "they"
+    ],
+    [
+     "My best friend",
+     "my best friend"
+    ],
+    [
+     "The teacher",
+     "the teacher"
+    ]
+   ],
+   "slovesa": [
+    "play football",
+    "go to the cinema",
+    "be famous",
+    "live in London",
+    "visit grandma",
+    "have a pizza",
+    "win the match",
+    "learn Spanish",
+    "buy a new phone",
+    "watch a film"
+   ],
+   "casy": [
+    "tomorrow",
+    "next week",
+    "in 2050",
+    "tonight",
+    "next year",
+    "on Saturday"
+   ],
+   "typy": [
+    "+",
+    "-",
+    "?"
+   ]
   }
+ },
+ "present-simple": {
+  "gramatika": "present-simple",
+  "poskladaj": [
+   {
+    "veta": "I get up at seven o'clock .",
+    "navyse": [
+     "gets"
+    ],
+    "preco": "Pri <b>I</b> je sloveso bez -s: <b>I get up</b>."
+   },
+   {
+    "veta": "My sister plays the piano .",
+    "navyse": [
+     "play"
+    ],
+    "preco": "My sister = she → sloveso má -s: <b>plays</b>."
+   },
+   {
+    "veta": "We don't go to school on Sundays .",
+    "navyse": [
+     "doesn't"
+    ],
+    "preco": "Pri <b>we</b> je zápor <b>don't</b>. Doesn't je len pri he / she / it."
+   },
+   {
+    "veta": "Tom doesn't like tomatoes .",
+    "navyse": [
+     "likes"
+    ],
+    "preco": "Po doesn't ide základný tvar bez -s: <b>doesn't like</b>."
+   },
+   {
+    "veta": "My dad works in a hospital .",
+    "navyse": [
+     "is"
+    ],
+    "preco": "V present simple pred sloveso nedávame is: <b>My dad works</b>."
+   },
+   {
+    "veta": "They live in Martin .",
+    "navyse": [
+     "lives"
+    ],
+    "preco": "Pri <b>they</b> je sloveso bez -s: <b>they live</b>."
+   },
+   {
+    "veta": "She watches TV after school .",
+    "navyse": [
+     "watch"
+    ],
+    "preco": "She → sloveso má koncovku -es: <b>watches</b>."
+   },
+   {
+    "veta": "I don't eat meat .",
+    "navyse": [
+     "not"
+    ],
+    "preco": "Zápor tvoríme pomocou <b>don't</b>: I don't eat. Samotné not nestačí."
+   },
+   {
+    "veta": "My friends play football every Saturday .",
+    "navyse": [
+     "plays"
+    ],
+    "preco": "My friends = they → bez -s: <b>play</b>."
+   },
+   {
+    "veta": "Our teacher doesn't give us homework .",
+    "navyse": [
+     "don't"
+    ],
+    "preco": "Our teacher = he / she → <b>doesn't</b>."
+   }
+  ],
+  "kocka": {
+   "pokyn": "v čase <i>present simple</i>",
+   "osoby": [
+    [
+     "I",
+     "I",
+     "i"
+    ],
+    [
+     "You",
+     "you",
+     "are"
+    ],
+    [
+     "We",
+     "we",
+     "are"
+    ],
+    [
+     "They",
+     "they",
+     "are"
+    ],
+    [
+     "He",
+     "he",
+     "he"
+    ],
+    [
+     "She",
+     "she",
+     "he"
+    ],
+    [
+     "My mum",
+     "my mum",
+     "he"
+    ],
+    [
+     "Tom",
+     "Tom",
+     "he"
+    ],
+    [
+     "My best friend",
+     "my best friend",
+     "he"
+    ],
+    [
+     "My friends",
+     "my friends",
+     "are"
+    ],
+    [
+     "The teacher",
+     "the teacher",
+     "he"
+    ]
+   ],
+   "slovesa": [
+    {
+     "z": "play football",
+     "s": "plays football"
+    },
+    {
+     "z": "watch TV",
+     "s": "watches TV"
+    },
+    {
+     "z": "go to the park",
+     "s": "goes to the park"
+    },
+    {
+     "z": "study English",
+     "s": "studies English"
+    },
+    {
+     "z": "have lunch at school",
+     "s": "has lunch at school"
+    },
+    {
+     "z": "get up early",
+     "s": "gets up early"
+    },
+    {
+     "z": "read comics",
+     "s": "reads comics"
+    },
+    {
+     "z": "listen to music",
+     "s": "listens to music"
+    },
+    {
+     "z": "tidy the room",
+     "s": "tidies the room"
+    },
+    {
+     "z": "help at home",
+     "s": "helps at home"
+    }
+   ],
+   "casy": [
+    "every day",
+    "on Saturdays",
+    "after school",
+    "at the weekend",
+    "in the morning",
+    "every week"
+   ],
+   "typy": [
+    "+",
+    "+",
+    "-"
+   ]
+  }
+ },
+ "present-simple-otazky": {
+  "gramatika": "present-simple",
+  "poskladaj": [
+   {
+    "veta": "Do you like pizza ?",
+    "navyse": [
+     "Does"
+    ],
+    "preco": "Pri <b>you</b> sa pýtame <b>Do</b>. Does je len pri he / she / it."
+   },
+   {
+    "veta": "Does your brother play football ?",
+    "navyse": [
+     "plays"
+    ],
+    "preco": "Po Does ide základný tvar bez -s: <b>Does he play?</b>"
+   },
+   {
+    "veta": "Where do you live ?",
+    "navyse": [
+     "are"
+    ],
+    "preco": "Live je plnovýznamové sloveso – pýtame sa pomocou <b>do</b>: Where do you live?"
+   },
+   {
+    "veta": "What time does the lesson start ?",
+    "navyse": [
+     "starts"
+    ],
+    "preco": "Po does ide základný tvar: <b>start</b>."
+   },
+   {
+    "veta": "Do they speak English ?",
+    "navyse": [
+     "Are"
+    ],
+    "preco": "Speak je plnovýznamové sloveso – pýtame sa <b>Do</b>, nie Are."
+   },
+   {
+    "veta": "Does she walk to school ?",
+    "navyse": [
+     "Do"
+    ],
+    "preco": "She → <b>Does</b>."
+   },
+   {
+    "veta": "What do you do at the weekend ?",
+    "navyse": [
+     "does"
+    ],
+    "preco": "Pri <b>you</b> je pomocné sloveso <b>do</b>."
+   },
+   {
+    "veta": "When does your mum get up ?",
+    "navyse": [
+     "gets"
+    ],
+    "preco": "Po does ide základný tvar: <b>get up</b>."
+   },
+   {
+    "veta": "Do your parents work on Saturdays ?",
+    "navyse": [
+     "Does"
+    ],
+    "preco": "Your parents = they → <b>Do</b>."
+   },
+   {
+    "veta": "How often do you play computer games ?",
+    "navyse": [
+     "are"
+    ],
+    "preco": "Play je plnovýznamové sloveso – pýtame sa pomocou <b>do</b>."
+   }
+  ],
+  "kocka": {
+   "pokyn": "v čase <i>present simple</i>",
+   "osoby": [
+    [
+     "You",
+     "you",
+     "are"
+    ],
+    [
+     "We",
+     "we",
+     "are"
+    ],
+    [
+     "They",
+     "they",
+     "are"
+    ],
+    [
+     "He",
+     "he",
+     "he"
+    ],
+    [
+     "She",
+     "she",
+     "he"
+    ],
+    [
+     "My mum",
+     "my mum",
+     "he"
+    ],
+    [
+     "Tom",
+     "Tom",
+     "he"
+    ],
+    [
+     "My best friend",
+     "my best friend",
+     "he"
+    ],
+    [
+     "My friends",
+     "my friends",
+     "are"
+    ],
+    [
+     "The teacher",
+     "the teacher",
+     "he"
+    ]
+   ],
+   "slovesa": [
+    {
+     "z": "play football",
+     "s": "plays football"
+    },
+    {
+     "z": "watch TV",
+     "s": "watches TV"
+    },
+    {
+     "z": "go to the park",
+     "s": "goes to the park"
+    },
+    {
+     "z": "study English",
+     "s": "studies English"
+    },
+    {
+     "z": "have lunch at school",
+     "s": "has lunch at school"
+    },
+    {
+     "z": "get up early",
+     "s": "gets up early"
+    },
+    {
+     "z": "read comics",
+     "s": "reads comics"
+    },
+    {
+     "z": "listen to music",
+     "s": "listens to music"
+    },
+    {
+     "z": "tidy the room",
+     "s": "tidies the room"
+    },
+    {
+     "z": "help at home",
+     "s": "helps at home"
+    }
+   ],
+   "casy": [
+    "every day",
+    "on Saturdays",
+    "after school",
+    "at the weekend",
+    "in the morning",
+    "every week"
+   ],
+   "typy": [
+    "?"
+   ]
+  }
+ },
+ "present-continuous": {
+  "gramatika": "present-continuous",
+  "poskladaj": [
+   {
+    "veta": "I am reading a book now .",
+    "navyse": [
+     "read"
+    ],
+    "preco": "V present continuous má sloveso -ing: <b>am reading</b>."
+   },
+   {
+    "veta": "She is watching TV at the moment .",
+    "navyse": [
+     "are"
+    ],
+    "preco": "She → <b>is</b>."
+   },
+   {
+    "veta": "We are having lunch .",
+    "navyse": [
+     "is"
+    ],
+    "preco": "We → <b>are</b>."
+   },
+   {
+    "veta": "They aren't playing football today .",
+    "navyse": [
+     "don't"
+    ],
+    "preco": "Zápor robí sloveso BE: <b>aren't playing</b>. Don't sem nepatrí."
+   },
+   {
+    "veta": "He isn't doing his homework .",
+    "navyse": [
+     "doesn't"
+    ],
+    "preco": "Zápor robí sloveso BE: <b>isn't doing</b>. Doesn't sem nepatrí."
+   },
+   {
+    "veta": "My mum is making a cake .",
+    "navyse": [
+     "makes"
+    ],
+    "preco": "Po is ide sloveso s -ing: <b>is making</b>."
+   },
+   {
+    "veta": "I'm not sleeping .",
+    "navyse": [
+     "don't"
+    ],
+    "preco": "Zápor robí sloveso BE: <b>I'm not sleeping</b>."
+   },
+   {
+    "veta": "The children are running in the park .",
+    "navyse": [
+     "is"
+    ],
+    "preco": "The children = they → <b>are</b>."
+   },
+   {
+    "veta": "It is raining again .",
+    "navyse": [
+     "rains"
+    ],
+    "preco": "Po is ide sloveso s -ing: <b>is raining</b>."
+   },
+   {
+    "veta": "My friends are waiting for me .",
+    "navyse": [
+     "wait"
+    ],
+    "preco": "Po are ide sloveso s -ing: <b>are waiting</b>."
+   }
+  ],
+  "kocka": {
+   "pokyn": "v čase <i>present continuous</i>",
+   "osoby": [
+    [
+     "I",
+     "I",
+     "i"
+    ],
+    [
+     "You",
+     "you",
+     "are"
+    ],
+    [
+     "We",
+     "we",
+     "are"
+    ],
+    [
+     "They",
+     "they",
+     "are"
+    ],
+    [
+     "He",
+     "he",
+     "he"
+    ],
+    [
+     "She",
+     "she",
+     "he"
+    ],
+    [
+     "My mum",
+     "my mum",
+     "he"
+    ],
+    [
+     "Tom",
+     "Tom",
+     "he"
+    ],
+    [
+     "My best friend",
+     "my best friend",
+     "he"
+    ],
+    [
+     "My friends",
+     "my friends",
+     "are"
+    ],
+    [
+     "The teacher",
+     "the teacher",
+     "he"
+    ]
+   ],
+   "slovesa": [
+    {
+     "z": "play football",
+     "ing": "playing football"
+    },
+    {
+     "z": "watch TV",
+     "ing": "watching TV"
+    },
+    {
+     "z": "read a book",
+     "ing": "reading a book"
+    },
+    {
+     "z": "make a sandwich",
+     "ing": "making a sandwich"
+    },
+    {
+     "z": "write an email",
+     "ing": "writing an email"
+    },
+    {
+     "z": "listen to music",
+     "ing": "listening to music"
+    },
+    {
+     "z": "run in the park",
+     "ing": "running in the park"
+    },
+    {
+     "z": "eat an apple",
+     "ing": "eating an apple"
+    },
+    {
+     "z": "swim in the pool",
+     "ing": "swimming in the pool"
+    },
+    {
+     "z": "have lunch",
+     "ing": "having lunch"
+    }
+   ],
+   "casy": [
+    "now",
+    "at the moment",
+    "right now",
+    "today"
+   ],
+   "typy": [
+    "+",
+    "+",
+    "-"
+   ]
+  }
+ },
+ "present-continuous-otazky": {
+  "gramatika": "present-continuous",
+  "poskladaj": [
+   {
+    "veta": "Are you listening to me ?",
+    "navyse": [
+     "Do"
+    ],
+    "preco": "Otázku robí sloveso BE: <b>Are you listening?</b> Do sem nepatrí."
+   },
+   {
+    "veta": "Is he doing his homework ?",
+    "navyse": [
+     "Does"
+    ],
+    "preco": "Otázku robí sloveso BE: <b>Is he doing…?</b>"
+   },
+   {
+    "veta": "What are you doing ?",
+    "navyse": [
+     "do"
+    ],
+    "preco": "Otázka: What + <b>are</b> + you + doing? Pomocné do sem nepatrí."
+   },
+   {
+    "veta": "Where is she going ?",
+    "navyse": [
+     "does"
+    ],
+    "preco": "Otázku robí sloveso BE: <b>Where is she going?</b>"
+   },
+   {
+    "veta": "Are they playing in the garden ?",
+    "navyse": [
+     "Is"
+    ],
+    "preco": "They → <b>Are</b>."
+   },
+   {
+    "veta": "Is your dad cooking dinner ?",
+    "navyse": [
+     "cooks"
+    ],
+    "preco": "Po is ide sloveso s -ing: <b>cooking</b>."
+   },
+   {
+    "veta": "Why are you laughing ?",
+    "navyse": [
+     "is"
+    ],
+    "preco": "You → <b>are</b>."
+   },
+   {
+    "veta": "Who is singing in the bathroom ?",
+    "navyse": [
+     "sings"
+    ],
+    "preco": "Po is ide sloveso s -ing: <b>singing</b>."
+   },
+   {
+    "veta": "What is the goat eating ?",
+    "navyse": [
+     "eat"
+    ],
+    "preco": "Po is ide sloveso s -ing: <b>eating</b>."
+   },
+   {
+    "veta": "Are we waiting for the bus ?",
+    "navyse": [
+     "Do"
+    ],
+    "preco": "Otázku robí sloveso BE: <b>Are we waiting…?</b>"
+   }
+  ],
+  "kocka": {
+   "pokyn": "v čase <i>present continuous</i>",
+   "osoby": [
+    [
+     "You",
+     "you",
+     "are"
+    ],
+    [
+     "We",
+     "we",
+     "are"
+    ],
+    [
+     "They",
+     "they",
+     "are"
+    ],
+    [
+     "He",
+     "he",
+     "he"
+    ],
+    [
+     "She",
+     "she",
+     "he"
+    ],
+    [
+     "My mum",
+     "my mum",
+     "he"
+    ],
+    [
+     "Tom",
+     "Tom",
+     "he"
+    ],
+    [
+     "My best friend",
+     "my best friend",
+     "he"
+    ],
+    [
+     "My friends",
+     "my friends",
+     "are"
+    ],
+    [
+     "The teacher",
+     "the teacher",
+     "he"
+    ]
+   ],
+   "slovesa": [
+    {
+     "z": "play football",
+     "ing": "playing football"
+    },
+    {
+     "z": "watch TV",
+     "ing": "watching TV"
+    },
+    {
+     "z": "read a book",
+     "ing": "reading a book"
+    },
+    {
+     "z": "make a sandwich",
+     "ing": "making a sandwich"
+    },
+    {
+     "z": "write an email",
+     "ing": "writing an email"
+    },
+    {
+     "z": "listen to music",
+     "ing": "listening to music"
+    },
+    {
+     "z": "run in the park",
+     "ing": "running in the park"
+    },
+    {
+     "z": "eat an apple",
+     "ing": "eating an apple"
+    },
+    {
+     "z": "swim in the pool",
+     "ing": "swimming in the pool"
+    },
+    {
+     "z": "have lunch",
+     "ing": "having lunch"
+    }
+   ],
+   "casy": [
+    "now",
+    "at the moment",
+    "right now",
+    "today"
+   ],
+   "typy": [
+    "?"
+   ]
+  }
+ },
+ "past-simple": {
+  "gramatika": "past-simple",
+  "poskladaj": [
+   {
+    "veta": "We visited our grandma yesterday .",
+    "navyse": [
+     "visit"
+    ],
+    "preco": "Yesterday = minulý čas: <b>visited</b>."
+   },
+   {
+    "veta": "I didn't watch TV last night .",
+    "navyse": [
+     "watched"
+    ],
+    "preco": "Po didn't ide základný tvar: <b>didn't watch</b>."
+   },
+   {
+    "veta": "Did you play football on Saturday ?",
+    "navyse": [
+     "played"
+    ],
+    "preco": "Po Did ide základný tvar: <b>Did you play?</b>"
+   },
+   {
+    "veta": "She went to the cinema last week .",
+    "navyse": [
+     "goed"
+    ],
+    "preco": "Go je nepravidelné sloveso: <b>went</b>."
+   },
+   {
+    "veta": "They didn't go to school yesterday .",
+    "navyse": [
+     "went"
+    ],
+    "preco": "Po didn't ide základný tvar: <b>didn't go</b>."
+   },
+   {
+    "veta": "Where did you go last summer ?",
+    "navyse": [
+     "went"
+    ],
+    "preco": "Po did ide základný tvar: <b>Where did you go?</b>"
+   },
+   {
+    "veta": "My dad bought a new car .",
+    "navyse": [
+     "buyed"
+    ],
+    "preco": "Buy je nepravidelné sloveso: <b>bought</b>."
+   },
+   {
+    "veta": "Did she like the film ?",
+    "navyse": [
+     "Does"
+    ],
+    "preco": "Pýtame sa na minulosť → <b>Did</b>."
+   },
+   {
+    "veta": "He didn't do his homework .",
+    "navyse": [
+     "not"
+    ],
+    "preco": "Zápor v minulom čase: <b>didn't</b> + základný tvar."
+   },
+   {
+    "veta": "What did you have for breakfast ?",
+    "navyse": [
+     "had"
+    ],
+    "preco": "Po did ide základný tvar: <b>have</b>."
+   }
+  ],
+  "kocka": {
+   "pokyn": "v čase <i>past simple</i>",
+   "osoby": [
+    [
+     "I",
+     "I",
+     "i"
+    ],
+    [
+     "You",
+     "you",
+     "are"
+    ],
+    [
+     "We",
+     "we",
+     "are"
+    ],
+    [
+     "They",
+     "they",
+     "are"
+    ],
+    [
+     "He",
+     "he",
+     "he"
+    ],
+    [
+     "She",
+     "she",
+     "he"
+    ],
+    [
+     "My mum",
+     "my mum",
+     "he"
+    ],
+    [
+     "Tom",
+     "Tom",
+     "he"
+    ],
+    [
+     "My best friend",
+     "my best friend",
+     "he"
+    ],
+    [
+     "My friends",
+     "my friends",
+     "are"
+    ],
+    [
+     "The teacher",
+     "the teacher",
+     "he"
+    ]
+   ],
+   "slovesa": [
+    {
+     "z": "play football",
+     "m": "played football"
+    },
+    {
+     "z": "visit grandma",
+     "m": "visited grandma"
+    },
+    {
+     "z": "watch a film",
+     "m": "watched a film"
+    },
+    {
+     "z": "go to the cinema",
+     "m": "went to the cinema"
+    },
+    {
+     "z": "have a pizza",
+     "m": "had a pizza"
+    },
+    {
+     "z": "buy a new phone",
+     "m": "bought a new phone"
+    },
+    {
+     "z": "see a famous singer",
+     "m": "saw a famous singer"
+    },
+    {
+     "z": "win the match",
+     "m": "won the match"
+    },
+    {
+     "z": "make a cake",
+     "m": "made a cake"
+    },
+    {
+     "z": "write a letter",
+     "m": "wrote a letter"
+    },
+    {
+     "z": "stay at home",
+     "m": "stayed at home"
+    },
+    {
+     "z": "study English",
+     "m": "studied English"
+    }
+   ],
+   "casy": [
+    "yesterday",
+    "last week",
+    "last Saturday",
+    "two days ago",
+    "last summer",
+    "in 2020"
+   ],
+   "typy": [
+    "+",
+    "-",
+    "?"
+   ]
+  }
+ },
+ "past-simple-be": {
+  "poskladaj": [
+   {
+    "veta": "I was at home yesterday .",
+    "navyse": [
+     "were"
+    ],
+    "preco": "Pri <b>I</b> je <b>was</b>."
+   },
+   {
+    "veta": "We were at school on Monday .",
+    "navyse": [
+     "was"
+    ],
+    "preco": "Pri <b>we</b> je <b>were</b>."
+   },
+   {
+    "veta": "She wasn't at the party .",
+    "navyse": [
+     "weren't"
+    ],
+    "preco": "She → <b>wasn't</b>."
+   },
+   {
+    "veta": "They weren't hungry .",
+    "navyse": [
+     "wasn't"
+    ],
+    "preco": "They → <b>weren't</b>."
+   },
+   {
+    "veta": "Were you at the cinema last night ?",
+    "navyse": [
+     "Was"
+    ],
+    "preco": "You → <b>Were</b>."
+   },
+   {
+    "veta": "Was he late for school ?",
+    "navyse": [
+     "Did"
+    ],
+    "preco": "Pri was / were nepoužívame did: <b>Was he late?</b>"
+   },
+   {
+    "veta": "Where were you yesterday ?",
+    "navyse": [
+     "did"
+    ],
+    "preco": "Pri was / were nepoužívame did: <b>Where were you?</b>"
+   },
+   {
+    "veta": "My friends were very tired .",
+    "navyse": [
+     "was"
+    ],
+    "preco": "My friends = they → <b>were</b>."
+   },
+   {
+    "veta": "It was cold last week .",
+    "navyse": [
+     "were"
+    ],
+    "preco": "It → <b>was</b>."
+   },
+   {
+    "veta": "Who was your first teacher ?",
+    "navyse": [
+     "did"
+    ],
+    "preco": "Pri was / were nepoužívame did: <b>Who was…?</b>"
+   }
+  ]
+ },
+ "be-going-to": {
+  "gramatika": "going-to",
+  "poskladaj": [
+   {
+    "veta": "I am going to visit my grandma .",
+    "navyse": [
+     "is"
+    ],
+    "preco": "I → <b>am</b>: I am going to…"
+   },
+   {
+    "veta": "She is going to buy a new bike .",
+    "navyse": [
+     "are"
+    ],
+    "preco": "She → <b>is</b>: She is going to…"
+   },
+   {
+    "veta": "We are going to play football tomorrow .",
+    "navyse": [
+     "playing"
+    ],
+    "preco": "Po going to ide základný tvar: <b>going to play</b>."
+   },
+   {
+    "veta": "They aren't going to watch TV tonight .",
+    "navyse": [
+     "don't"
+    ],
+    "preco": "Zápor robí BE: <b>aren't going to</b>."
+   },
+   {
+    "veta": "Are you going to help me ?",
+    "navyse": [
+     "Do"
+    ],
+    "preco": "Otázku robí BE: <b>Are you going to…?</b>"
+   },
+   {
+    "veta": "Is he going to be a doctor ?",
+    "navyse": [
+     "Does"
+    ],
+    "preco": "Otázku robí BE: <b>Is he going to…?</b>"
+   },
+   {
+    "veta": "What are you going to do on Saturday ?",
+    "navyse": [
+     "will"
+    ],
+    "preco": "Kartička will patrí k inému budúcemu času. Tu je <b>BE going to</b>."
+   },
+   {
+    "veta": "I'm not going to eat that .",
+    "navyse": [
+     "don't"
+    ],
+    "preco": "Zápor robí BE: <b>I'm not going to</b>."
+   },
+   {
+    "veta": "My parents are going to paint the kitchen .",
+    "navyse": [
+     "is"
+    ],
+    "preco": "My parents = they → <b>are</b>."
+   },
+   {
+    "veta": "It is going to rain .",
+    "navyse": [
+     "rains"
+    ],
+    "preco": "Po going to ide základný tvar: <b>going to rain</b>."
+   }
+  ],
+  "kocka": {
+   "pokyn": "s <i>BE going to</i>",
+   "osoby": [
+    [
+     "I",
+     "I",
+     "i"
+    ],
+    [
+     "You",
+     "you",
+     "are"
+    ],
+    [
+     "We",
+     "we",
+     "are"
+    ],
+    [
+     "They",
+     "they",
+     "are"
+    ],
+    [
+     "He",
+     "he",
+     "he"
+    ],
+    [
+     "She",
+     "she",
+     "he"
+    ],
+    [
+     "My mum",
+     "my mum",
+     "he"
+    ],
+    [
+     "Tom",
+     "Tom",
+     "he"
+    ],
+    [
+     "My best friend",
+     "my best friend",
+     "he"
+    ],
+    [
+     "My friends",
+     "my friends",
+     "are"
+    ],
+    [
+     "The teacher",
+     "the teacher",
+     "he"
+    ]
+   ],
+   "slovesa": [
+    {
+     "z": "play football"
+    },
+    {
+     "z": "go to the cinema"
+    },
+    {
+     "z": "visit grandma"
+    },
+    {
+     "z": "have a pizza"
+    },
+    {
+     "z": "buy a new phone"
+    },
+    {
+     "z": "watch a film"
+    },
+    {
+     "z": "learn Spanish"
+    },
+    {
+     "z": "make a cake"
+    },
+    {
+     "z": "stay at home"
+    },
+    {
+     "z": "tidy the room"
+    }
+   ],
+   "casy": [
+    "tomorrow",
+    "next week",
+    "tonight",
+    "on Saturday",
+    "this summer",
+    "after school"
+   ],
+   "typy": [
+    "+",
+    "-",
+    "?"
+   ]
+  }
+ },
+ "present-perfect": {
+  "gramatika": "present-perfect",
+  "poskladaj": [
+   {
+    "veta": "I have finished my homework .",
+    "navyse": [
+     "has"
+    ],
+    "preco": "Pri <b>I</b> je <b>have</b>."
+   },
+   {
+    "veta": "She has lost her keys .",
+    "navyse": [
+     "have"
+    ],
+    "preco": "She → <b>has</b>."
+   },
+   {
+    "veta": "We haven't seen that film .",
+    "navyse": [
+     "saw"
+    ],
+    "preco": "Po have ide 3. tvar: <b>seen</b>, nie saw."
+   },
+   {
+    "veta": "He hasn't read this book .",
+    "navyse": [
+     "reads"
+    ],
+    "preco": "Po has ide 3. tvar: <b>read</b>."
+   },
+   {
+    "veta": "They have bought a new house .",
+    "navyse": [
+     "buyed"
+    ],
+    "preco": "Buy je nepravidelné sloveso: buy – bought – <b>bought</b>."
+   },
+   {
+    "veta": "My mum has made a cake .",
+    "navyse": [
+     "have"
+    ],
+    "preco": "My mum = she → <b>has</b>."
+   },
+   {
+    "veta": "I haven't done my homework .",
+    "navyse": [
+     "did"
+    ],
+    "preco": "Po have ide 3. tvar: <b>done</b>, nie did."
+   },
+   {
+    "veta": "Tom has broken his leg .",
+    "navyse": [
+     "broke"
+    ],
+    "preco": "Po has ide 3. tvar: <b>broken</b>, nie broke."
+   },
+   {
+    "veta": "You have written a great story .",
+    "navyse": [
+     "wrote"
+    ],
+    "preco": "Po have ide 3. tvar: <b>written</b>, nie wrote."
+   },
+   {
+    "veta": "The goat has eaten my book .",
+    "navyse": [
+     "have"
+    ],
+    "preco": "The goat = it → <b>has</b>."
+   }
+  ],
+  "kocka": {
+   "pokyn": "v čase <i>present perfect</i>",
+   "osoby": [
+    [
+     "I",
+     "I",
+     "i"
+    ],
+    [
+     "You",
+     "you",
+     "are"
+    ],
+    [
+     "We",
+     "we",
+     "are"
+    ],
+    [
+     "They",
+     "they",
+     "are"
+    ],
+    [
+     "He",
+     "he",
+     "he"
+    ],
+    [
+     "She",
+     "she",
+     "he"
+    ],
+    [
+     "My mum",
+     "my mum",
+     "he"
+    ],
+    [
+     "Tom",
+     "Tom",
+     "he"
+    ],
+    [
+     "My best friend",
+     "my best friend",
+     "he"
+    ],
+    [
+     "My friends",
+     "my friends",
+     "are"
+    ],
+    [
+     "The teacher",
+     "the teacher",
+     "he"
+    ]
+   ],
+   "slovesa": [
+    {
+     "z": "play football",
+     "m": "played football",
+     "pp": "played football"
+    },
+    {
+     "z": "visit grandma",
+     "m": "visited grandma",
+     "pp": "visited grandma"
+    },
+    {
+     "z": "watch a film",
+     "m": "watched a film",
+     "pp": "watched a film"
+    },
+    {
+     "z": "eat pizza",
+     "m": "ate pizza",
+     "pp": "eaten pizza"
+    },
+    {
+     "z": "see a good film",
+     "m": "saw a good film",
+     "pp": "seen a good film"
+    },
+    {
+     "z": "write a test",
+     "m": "wrote a test",
+     "pp": "written a test"
+    },
+    {
+     "z": "buy new shoes",
+     "m": "bought new shoes",
+     "pp": "bought new shoes"
+    },
+    {
+     "z": "read a book",
+     "m": "read a book",
+     "pp": "read a book"
+    },
+    {
+     "z": "win a match",
+     "m": "won a match",
+     "pp": "won a match"
+    },
+    {
+     "z": "clean the kitchen",
+     "m": "cleaned the kitchen",
+     "pp": "cleaned the kitchen"
+    }
+   ],
+   "casy": [
+    "today",
+    "this week",
+    "this month",
+    "this year"
+   ],
+   "typy": [
+    "+",
+    "-"
+   ]
+  }
+ },
+ "adverbs-of-frequency": {
+  "poskladaj": [
+   {
+    "veta": "I always get up at seven .",
+    "navyse": [
+     "am"
+    ],
+    "preco": "Get up je plnovýznamové sloveso – príslovka ide pred neho a am tu nie je: <b>I always get up</b>.",
+    "tip": "Príslovka ide <b>pred</b> plnovýznamové sloveso, ale <b>za</b> sloveso be."
+   },
+   {
+    "veta": "She is never late .",
+    "navyse": [
+     "does"
+    ],
+    "preco": "Pri slovese be ide príslovka za neho: <b>is never</b>. Does sem nepatrí.",
+    "tip": "Príslovka ide <b>pred</b> plnovýznamové sloveso, ale <b>za</b> sloveso be."
+   },
+   {
+    "veta": "We often play football after school .",
+    "navyse": [
+     "plays"
+    ],
+    "preco": "Pri <b>we</b> je sloveso bez -s: <b>we often play</b>.",
+    "tip": "Príslovka ide <b>pred</b> plnovýznamové sloveso, ale <b>za</b> sloveso be."
+   },
+   {
+    "veta": "He usually goes to school by bus .",
+    "navyse": [
+     "go"
+    ],
+    "preco": "He → <b>goes</b>: he usually goes.",
+    "tip": "Príslovka ide <b>pred</b> plnovýznamové sloveso, ale <b>za</b> sloveso be."
+   },
+   {
+    "veta": "They are always happy .",
+    "navyse": [
+     "is"
+    ],
+    "preco": "They → <b>are</b>; príslovka ide za be: are always.",
+    "tip": "Príslovka ide <b>pred</b> plnovýznamové sloveso, ale <b>za</b> sloveso be."
+   },
+   {
+    "veta": "My dad sometimes cooks dinner .",
+    "navyse": [
+     "cook"
+    ],
+    "preco": "My dad = he → <b>cooks</b>.",
+    "aj": [
+     "My dad cooks dinner sometimes ."
+    ],
+    "tip": "Príslovka ide <b>pred</b> plnovýznamové sloveso, ale <b>za</b> sloveso be."
+   },
+   {
+    "veta": "Do you often go to the cinema ?",
+    "navyse": [
+     "Does"
+    ],
+    "preco": "Pri <b>you</b> sa pýtame <b>Do</b>. Príslovka ide za podmet: Do you often go…?",
+    "tip": "Príslovka ide <b>pred</b> plnovýznamové sloveso, ale <b>za</b> sloveso be."
+   },
+   {
+    "veta": "I am usually tired on Mondays .",
+    "navyse": [
+     "do"
+    ],
+    "preco": "Tu je sloveso be – príslovka ide za neho: <b>I am usually tired</b>.",
+    "tip": "Príslovka ide <b>pred</b> plnovýznamové sloveso, ale <b>za</b> sloveso be."
+   },
+   {
+    "veta": "My sister never eats meat .",
+    "navyse": [
+     "doesn't"
+    ],
+    "preco": "Never už je zápor – jeden zápor stačí: <b>never eats</b>.",
+    "tip": "Príslovka ide <b>pred</b> plnovýznamové sloveso, ale <b>za</b> sloveso be."
+   },
+   {
+    "veta": "He is hardly ever at home .",
+    "navyse": [
+     "does"
+    ],
+    "preco": "Pri slovese be ide príslovka za neho: <b>is hardly ever</b>.",
+    "tip": "Príslovka ide <b>pred</b> plnovýznamové sloveso, ale <b>za</b> sloveso be."
+   }
+  ]
+ },
+ "question-forms": {
+  "poskladaj": [
+   {
+    "veta": "Where do you live ?",
+    "navyse": [
+     "are"
+    ],
+    "preco": "Live má len jednu časť – pomôže si <b>do</b>: Where do you live?",
+    "tip": "Poradie v otázke: (otázkové slovo) + pomocné sloveso + podmet + sloveso."
+   },
+   {
+    "veta": "What did you do last weekend ?",
+    "navyse": [
+     "does"
+    ],
+    "preco": "Last weekend = minulosť → <b>did</b>.",
+    "tip": "Poradie v otázke: (otázkové slovo) + pomocné sloveso + podmet + sloveso."
+   },
+   {
+    "veta": "Have you ever been to London ?",
+    "navyse": [
+     "Did"
+    ],
+    "preco": "Sloveso má dve časti (have + been) – na začiatok ide prvá: <b>Have you…?</b>",
+    "tip": "Poradie v otázke: (otázkové slovo) + pomocné sloveso + podmet + sloveso."
+   },
+   {
+    "veta": "What are you doing now ?",
+    "navyse": [
+     "do"
+    ],
+    "preco": "Sloveso má dve časti (are + doing) – do nepotrebuješ.",
+    "tip": "Poradie v otázke: (otázkové slovo) + pomocné sloveso + podmet + sloveso."
+   },
+   {
+    "veta": "Is your brother at home ?",
+    "navyse": [
+     "Does"
+    ],
+    "preco": "Pri slovese be nepotrebujeme do / does: <b>Is your brother…?</b>",
+    "tip": "Poradie v otázke: (otázkové slovo) + pomocné sloveso + podmet + sloveso."
+   },
+   {
+    "veta": "How long have you lived here ?",
+    "navyse": [
+     "did"
+    ],
+    "preco": "Sloveso má dve časti (have + lived) – did nepotrebuješ.",
+    "tip": "Poradie v otázke: (otázkové slovo) + pomocné sloveso + podmet + sloveso."
+   },
+   {
+    "veta": "Will you help me tomorrow ?",
+    "navyse": [
+     "Do"
+    ],
+    "preco": "Will je pomocné sloveso – ide na začiatok samo: <b>Will you help…?</b>",
+    "tip": "Poradie v otázke: (otázkové slovo) + pomocné sloveso + podmet + sloveso."
+   },
+   {
+    "veta": "Can your sister swim ?",
+    "navyse": [
+     "Does"
+    ],
+    "preco": "Can je pomocné sloveso – ide na začiatok samo: <b>Can your sister swim?</b>",
+    "tip": "Poradie v otázke: (otázkové slovo) + pomocné sloveso + podmet + sloveso."
+   },
+   {
+    "veta": "Why didn't you call me ?",
+    "navyse": [
+     "called"
+    ],
+    "preco": "Po didn't ide základný tvar: <b>call</b>.",
+    "tip": "Poradie v otázke: (otázkové slovo) + pomocné sloveso + podmet + sloveso."
+   },
+   {
+    "veta": "What time does the film start ?",
+    "navyse": [
+     "starts"
+    ],
+    "preco": "Po does ide základný tvar: <b>start</b>.",
+    "tip": "Poradie v otázke: (otázkové slovo) + pomocné sloveso + podmet + sloveso."
+   }
+  ]
+ },
+ "first-conditional": {
+  "poskladaj": [
+   {
+    "veta": "If it rains , we will stay at home .",
+    "navyse": [
+     "rain"
+    ],
+    "preco": "Po if je present simple, pri it s koncovkou -s: <b>if it rains</b>.",
+    "tip": "Po <b>if</b> nie je will: if + present simple, v druhej časti will + základný tvar."
+   },
+   {
+    "veta": "If you study , you will pass the test .",
+    "navyse": [
+     "studies"
+    ],
+    "preco": "Pri <b>you</b> je sloveso bez -s: <b>if you study</b>.",
+    "tip": "Po <b>if</b> nie je will: if + present simple, v druhej časti will + základný tvar."
+   },
+   {
+    "veta": "I will call you if I have time .",
+    "navyse": [
+     "has"
+    ],
+    "preco": "Pri <b>I</b> je <b>have</b>.",
+    "tip": "Po <b>if</b> nie je will: if + present simple, v druhej časti will + základný tvar."
+   },
+   {
+    "veta": "If she doesn't hurry , she will miss the bus .",
+    "navyse": [
+     "won't"
+    ],
+    "preco": "Po if nie je will ani won't: <b>if she doesn't hurry</b>.",
+    "tip": "Po <b>if</b> nie je will: if + present simple, v druhej časti will + základný tvar."
+   },
+   {
+    "veta": "We won't go out if it is cold .",
+    "navyse": [
+     "are"
+    ],
+    "preco": "It → <b>is</b>.",
+    "tip": "Po <b>if</b> nie je will: if + present simple, v druhej časti will + základný tvar."
+   },
+   {
+    "veta": "If you eat too much , you will feel sick .",
+    "navyse": [
+     "eats"
+    ],
+    "preco": "Pri <b>you</b> je sloveso bez -s: <b>if you eat</b>.",
+    "tip": "Po <b>if</b> nie je will: if + present simple, v druhej časti will + základný tvar."
+   },
+   {
+    "veta": "What will you do if you miss the train ?",
+    "navyse": [
+     "does"
+    ],
+    "preco": "Pri <b>you</b> nie je does. Otázku tvorí <b>will</b>: What will you do…?",
+    "tip": "Po <b>if</b> nie je will: if + present simple, v druhej časti will + základný tvar."
+   },
+   {
+    "veta": "If I see Tom , I will tell him .",
+    "navyse": [
+     "saw"
+    ],
+    "preco": "Po if je present simple: <b>if I see</b>, nie minulý čas.",
+    "tip": "Po <b>if</b> nie je will: if + present simple, v druhej časti will + základný tvar."
+   },
+   {
+    "veta": "She will be angry if we are late .",
+    "navyse": [
+     "am"
+    ],
+    "preco": "We → <b>are</b>.",
+    "tip": "Po <b>if</b> nie je will: if + present simple, v druhej časti will + základný tvar."
+   },
+   {
+    "veta": "If you don't water the plants , they will die .",
+    "navyse": [
+     "doesn't"
+    ],
+    "preco": "Pri <b>you</b> je zápor <b>don't</b>.",
+    "tip": "Po <b>if</b> nie je will: if + present simple, v druhej časti will + základný tvar."
+   }
+  ]
+ }
 }

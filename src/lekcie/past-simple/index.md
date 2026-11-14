@@ -20,6 +20,7 @@ otazkaKozy: "What did you do yesterday?"
 bite:
   tip: "Vo vete 2. tvar (went, played). V zápore didn't + základný tvar, v otázke Did + podmet + základný tvar."
   priklad: "I went home. · I didn't go home. · Did you go home? – Yes, I did."
+pisanie: past-simple
 test:
   - otazka: "We ___ to the cinema last Saturday."
     moznosti: ["go", "went", "goed"]

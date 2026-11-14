@@ -20,6 +20,7 @@ otazkaKozy: "Have you ever seen a UFO?"
 bite:
   tip: "Present perfect = have/has + 3. tvar slovesa. Hovoríme o skúsenostiach a nehovoríme, kedy presne."
   priklad: "I've ridden a horse. → She hasn't been on TV."
+pisanie: present-perfect
 test:
   - otazka: "I ___ a UFO."
     moznosti: ["have saw", "have seen", "has seen"]

@@ -20,6 +20,7 @@ otazkaKozy: "Do you like books?"
 bite:
   tip: "Otázku v present simple začni Do / Does. Po does už sloveso nemá -s."
   priklad: "She plays tennis. → Does she play tennis? – Yes, she does."
+pisanie: present-simple-otazky
 test:
   - otazka: "___ you live in Martin? – Yes, I do."
     moznosti: ["Do", "Does", "Are"]

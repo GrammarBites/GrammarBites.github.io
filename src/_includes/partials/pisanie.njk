@@ -1,7 +1,7 @@
 {# Napíš sám – poskladaj vetu a kocka. V lekcii: pisanie: will (úlohy v src/_data/pisanieUlohy.json) #}
 <section class="blok blok--pisanie" aria-labelledby="h-pisanie">
   <h2 id="h-pisanie" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Napíš sám</h2>
-  <p class="blok__uvod">Vety tvoríš ty. Najprv ich skladaj z kartičiek, potom si hoď kockou a napíš celú vetu sám. Tlačidlo <b>Skontrolovať</b> ti povie, či je veta správna, a ukáže správne riešenie. Správne vety si môžeš uložiť do zošita.</p>
+  <p class="blok__uvod">Vety tvoríš ty. {% if pisanieUlohy[pisanie].kocka %}Najprv ich skladaj z kartičiek, potom si hoď kockou a napíš celú vetu sám.{% else %}Poskladaj ich z kartičiek – pozor, jedna je vždy navyše.{% endif %} Tlačidlo <b>Skontrolovať</b> ti povie, či je veta správna, a ukáže správne riešenie. Správne vety si môžeš uložiť do zošita.</p>
   <div class="trener pisanie" data-pisanie="{{ pisanie }}" data-lekcia="{{ page.fileSlug }}">
     <div class="trener__cipy" data-cipy role="group" aria-label="Úroveň"></div>
     <div class="trener__karta pis-karta-box" data-karta>

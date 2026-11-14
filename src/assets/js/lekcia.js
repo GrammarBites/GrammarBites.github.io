@@ -23,6 +23,20 @@
     const vysledok = form.querySelector(".test__vysledok");
     const vysledokText = vysledok.querySelector("p");
 
+    // Možnosti sa pri každom pokuse zamiešajú, aby správna odpoveď nebola stále na tom istom mieste.
+    // Otázka s data-nemiesaj (v lekcii: nemiesaj: true) si poradie ponechá.
+    const zamiesaj = () => otazky.forEach((q) => {
+      if (q.hasAttribute("data-nemiesaj")) return;
+      const obal = q.querySelector(".moznosti");
+      const moznosti = [...obal.querySelectorAll(".moznost")];
+      for (let i = moznosti.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [moznosti[i], moznosti[j]] = [moznosti[j], moznosti[i]];
+      }
+      moznosti.forEach((m) => obal.appendChild(m));
+    });
+    zamiesaj();
+
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       let spravne = 0, zodpovedane = 0;
@@ -73,6 +87,7 @@
       vysledok.hidden = true;
       znova.hidden = true;
       form.querySelector('button[type="submit"]').hidden = false;
+      zamiesaj();
       otazky[0].querySelector("input").focus();
     });
   });

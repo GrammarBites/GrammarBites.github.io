@@ -147,6 +147,9 @@ a.stitok:hover { border-color: currentColor; }
 .sekcia__nadpis { font-family: var(--hand); font-size: 2.4rem; font-weight: 700; display: inline-grid; justify-self: start; }
 .sekcia__nadpis::after { margin-top: 2px; opacity: .35; }
 .sekcia__nadpis--male { font-size: 1.9rem; }
+.rocnik-unit + .rocnik-unit { margin-top: 40px; }
+.rocnik-unit__tema { margin-top: -14px; color: var(--ink-2); font-weight: 700; }
+.rocnik-unit__tema a { color: inherit; }
 
 .stranka-hlava { display: grid; gap: 8px; max-width: 65ch; }
 .stranka-hlava__nadpis { font-family: var(--hand); font-size: clamp(2.6rem, 6vw, 3.6rem); font-weight: 700; }

@@ -47,6 +47,39 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("podlaStrany", (lekcie) =>
     [...lekcie].sort((a, b) => (a.data.strana ?? 999) - (b.data.strana ?? 999) || a.date - b.date)
   );
+  // stránka ročníka: lekcie v poradí, v akom sa preberajú (učebnica → unit → strana);
+  // lekcia sa ukáže len raz, pri prvom unite ročníka, ku ktorému patrí
+  eleventyConfig.addFilter("podlaUnitov", (lekcie, rocnik) => {
+    const poradie = (a, b) => (a.data.strana ?? 999) - (b.data.strana ?? 999) || a.date - b.date;
+    const pouzite = new Set();
+    const skupiny = [];
+    for (const z of rocnik.rozsah || []) {
+      const kniha = ucebnice.find((k) => k.id === z.id);
+      if (!kniha) continue;
+      const units = z.units || (kniha.units || []).map((u) => String(u.id));
+      for (const uid of units) {
+        const vUnite = lekcie
+          .filter((l) => !pouzite.has(l.url) &&
+            (l.data.ucebnice || []).some((u) => u.id === z.id && String(u.unit) === String(uid)))
+          .sort(poradie);
+        if (!vUnite.length) continue;
+        vUnite.forEach((l) => pouzite.add(l.url));
+        const unit = (kniha.units || []).find((x) => String(x.id) === String(uid));
+        skupiny.push({
+          id: `${z.id}-${uid}`,
+          nadpis: `${kniha.nazov} · ${uid === "intro" ? "Introduction" : `Unit ${uid}`}`,
+          tema: unit && uid !== "intro" ? unit.nazov : "",
+          odkaz: `/ucebnice/${z.id}/#unit-${uid}`,
+          lekcie: vUnite,
+        });
+      }
+    }
+    const zvysok = lekcie.filter((l) => !pouzite.has(l.url)).sort((a, b) => a.date - b.date);
+    if (zvysok.length) {
+      skupiny.push({ id: "dalsie", nadpis: skupiny.length ? "Hodí sa po celý rok" : "", tema: "", odkaz: "", lekcie: zvysok });
+    }
+    return skupiny;
+  });
   eleventyConfig.addFilter("bezStranky", (lekcie, url) => lekcie.filter((l) => l.url !== url));
   eleventyConfig.addFilter("head", (arr, n) => (n < 0 ? arr.slice(n) : arr.slice(0, n)));
   eleventyConfig.addFilter("tema",(id) => temy.find((t) => t.id === id) || { id, nazov: id, en: id });

@@ -15,9 +15,17 @@ eleventyComputed:
   <p>Preberáme: {% for z in r.rozsah %}<a href="/ucebnice/{{ z.id }}/">{{ z | rozsahText }}</a>{% if not loop.last %}, potom {% endif %}{% endfor %}</p>
 </header>
 {% if lekcie.length %}
-<div class="mriezka">
-  {% for l in lekcie %}{% include "partials/karta.njk" %}{% endfor %}
-</div>
+{% for s in lekcie | podlaUnitov(r) %}
+<section class="sekcia rocnik-unit"{% if s.nadpis %} aria-labelledby="h-{{ s.id }}"{% endif %}>
+  {% if s.nadpis %}
+  <h2 id="h-{{ s.id }}" class="sekcia__nadpis sekcia__nadpis--male">{{ s.nadpis }}</h2>
+  {% if s.tema %}<p class="rocnik-unit__tema"><a href="{{ s.odkaz }}">{{ s.tema }}</a></p>{% endif %}
+  {% endif %}
+  <div class="mriezka">
+    {% for l in s.lekcie %}{% include "partials/karta.njk" %}{% endfor %}
+  </div>
+</section>
+{% endfor %}
 {% else %}
 <div class="prazdne">
   <img src="/assets/img/postavy/koza-nechape.png" alt="" width="140">

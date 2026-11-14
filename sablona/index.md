@@ -37,6 +37,7 @@ bite:                                  # Grammar Bite dňa
   priklad: "Example sentence in English."
 
 test:                                  # 3–5 otázok; spravna = poradie správnej možnosti od 0
+                                       # možnosti sa na webe miešajú; ak má poradie ostať, pridaj k otázke nemiesaj: true
   - otazka: "I ___ never been to London."
     moznosti: ["has", "have", "am"]
     spravna: 1

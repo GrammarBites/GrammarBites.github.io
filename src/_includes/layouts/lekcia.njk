@@ -96,7 +96,7 @@ skripty: ["lekcia.js"]
   <form class="test" data-test novalidate>
     {% for q in test %}
     {% set qi = loop.index %}
-    <fieldset class="otazka" data-spravna="{{ q.spravna }}">
+    <fieldset class="otazka" data-spravna="{{ q.spravna }}"{% if q.nemiesaj %} data-nemiesaj{% endif %}>
       <legend><span class="otazka__cislo">{{ qi }}</span> {{ q.otazka | safe }}</legend>
       <div class="moznosti">
         {% for m in q.moznosti %}

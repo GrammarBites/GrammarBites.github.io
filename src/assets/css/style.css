@@ -103,10 +103,14 @@ p { margin: 0; }
 .hladaj-mini:focus-within { box-shadow: 0 0 0 3px var(--yellow); }
 .hladaj-mini button { border: 0; background: transparent; color: var(--ink); padding: 8px; cursor: pointer; display: grid; place-items: center; }
 
-.menu ul { list-style: none; display: flex; gap: 4px 6px; margin-block: 0; padding-block: 4px 10px; overflow-x: auto; scrollbar-width: none; }
+.menu ul { list-style: none; display: flex; gap: 4px 4px; margin-block: 0; padding-block: 4px 10px; overflow-x: auto; scrollbar-width: none; }
 .menu ul::-webkit-scrollbar { display: none; }
+/* menu pokračuje do strán: jemné vyblednutie okraja (triedy pridáva spolocne.js) */
+.menu ul.menu--dalej { -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 56px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 56px), transparent); }
+.menu ul.menu--spat { -webkit-mask-image: linear-gradient(to left, #000 calc(100% - 56px), transparent); mask-image: linear-gradient(to left, #000 calc(100% - 56px), transparent); }
+.menu ul.menu--dalej.menu--spat { -webkit-mask-image: linear-gradient(to right, transparent, #000 56px, #000 calc(100% - 56px), transparent); mask-image: linear-gradient(to right, transparent, #000 56px, #000 calc(100% - 56px), transparent); }
 .menu a {
-  display: block; white-space: nowrap; padding: 6px 12px; text-decoration: none; color: var(--ink-2);
+  display: block; white-space: nowrap; padding: 6px 11px; text-decoration: none; color: var(--ink-2);
   font-weight: 600; font-size: .98rem; border-radius: 999px;
 }
 .menu a:hover { color: var(--ink); background: var(--paper-lo); }

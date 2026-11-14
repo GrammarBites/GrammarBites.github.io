@@ -44,3 +44,23 @@ window.GB = (function () {
 
   return { root, preview, odkaz, normalizuj, data, esc, udalost };
 })();
+
+// Hlavné menu: ak sa nezmestí, vybledne na okraji a aktuálna položka sa posunie do zorného poľa.
+(function () {
+  const ul = document.querySelector(".menu ul");
+  if (!ul) return;
+  const stav = () => {
+    const viac = ul.scrollWidth - ul.clientWidth > 2;
+    ul.classList.toggle("menu--dalej", viac && ul.scrollLeft < ul.scrollWidth - ul.clientWidth - 2);
+    ul.classList.toggle("menu--spat", viac && ul.scrollLeft > 2);
+  };
+  const aktualna = ul.querySelector('[aria-current="page"]');
+  if (aktualna && ul.scrollWidth > ul.clientWidth) {
+    const li = aktualna.parentElement;
+    if (li.offsetLeft + li.offsetWidth > ul.clientWidth) ul.scrollLeft = li.offsetLeft - 24;
+  }
+  ul.addEventListener("scroll", stav, { passive: true });
+  window.addEventListener("resize", stav);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(stav);
+  stav();
+})();

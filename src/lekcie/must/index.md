@@ -18,6 +18,7 @@ otazkaKozy: "Must I do my homework?"
 bite:
   tip: "must + sloveso = musím (bez -s, bez to). mustn't = nesmieš. Otázka: Must I…?"
   priklad: "I must tidy my room. · You mustn't run in the corridor. · Must I go now? – Yes, you must."
+opravChybu: true
 test:
   - otazka: "She ___ study for the test."
     moznosti: ["musts", "must", "must to"]

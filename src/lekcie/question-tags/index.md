@@ -18,6 +18,7 @@ otazkaKozy: "Goats are cute, aren't they?"
 bite:
   tip: "Kladná veta → záporný tag, záporná veta → kladný tag. Zopakuj pomocné sloveso a zámeno; ak tam nie je, použi do / does / did."
   priklad: "It's cold, isn't it? · You aren't hungry, are you? · You like pizza, don't you?"
+opravChybu: true
 test:
   - otazka: "Your brother is twelve, ___ ?"
     moznosti: ["isn't he", "is he", "doesn't he"]

@@ -18,6 +18,7 @@ otazkaKozy: "If I had wings, I'd fly to school!"
 bite:
   tip: "would = by. Second conditional: If + past simple, would + sloveso. Hovoríme o predstavách, nie o tom, čo sa naozaj stane. V časti s if nikdy nie je would."
   priklad: "If I had a million euros, I'd buy a castle. · If I were you, I'd see a doctor."
+opravChybu: true
 test:
   - otazka: "If I ___ a lot of money, I'd travel round the world."
     moznosti: ["have", "had", "would have"]

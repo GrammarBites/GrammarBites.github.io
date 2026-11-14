@@ -18,6 +18,7 @@ otazkaKozy: "See you next week!"
 bite:
   tip: "Minulosť = last / yesterday, prítomnosť = this / today, budúcnosť = next / tomorrow. Pred last, this a next nedávame on ani in."
   priklad: "last Monday · this Monday · next Monday (nie on last Monday)"
+opravChybu: true
 test:
   - otazka: "I saw a great film ___ night."
     moznosti: ["last", "yesterday", "this"]

@@ -19,6 +19,7 @@ otazkaKozy: "How many apples can I eat?"
 bite:
   tip: "Počítateľné: many / How many…? Nepočítateľné: much / How much…? A lot of platí na oboje."
   priklad: "How many bananas do we need? · How much cheese do we need?"
+opravChybu: true
 test:
   - otazka: "How ___ eggs do you need?"
     moznosti: ["much", "many", "lot"]

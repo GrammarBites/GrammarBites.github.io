@@ -18,6 +18,7 @@ otazkaKozy: "The or no the?"
 bite:
   tip: "Pred najvyšším stupňom a radovou číslovkou je vždy the. Pri názvoch s „of“ tiež."
   priklad: "the tallest hotel · the first floor · the Tower of London (ale: Tower Bridge)"
+opravChybu: true
 test:
   - otazka: "It's ___ oldest building in our town."
     moznosti: ["a", "the", "–"]

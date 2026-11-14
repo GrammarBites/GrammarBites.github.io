@@ -18,6 +18,7 @@ otazkaKozy: "Do I have to get up early?"
 bite:
   tip: "have to = musieť. Pri he / she / it je has to. Zápor don't / doesn't have to = nemusíš. Otázka: Do / Does … have to?"
   priklad: "She has to feed the cat. · I don't have to cook. · Do you have to go? – Yes, I do."
+opravChybu: true
 test:
   - otazka: "My brother ___ to walk the dog every evening."
     moznosti: ["have", "has", "haves"]

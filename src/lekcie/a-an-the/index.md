@@ -21,6 +21,7 @@ bite:
   tip: "Keď niečo spomíname prvýkrát, použijeme a / an. Keď o tom hovoríme znova, the."
   priklad: "Go along till you come to a roundabout. Turn right at the roundabout."
 roztried: a-an-the
+opravChybu: true
 test:
   - otazka: "Is there ___ hotel near here?"
     moznosti: ["a", "an", "the"]

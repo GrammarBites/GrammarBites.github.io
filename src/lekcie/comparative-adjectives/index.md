@@ -19,6 +19,7 @@ otazkaKozy: "I'm smaller than an elephant!"
 bite:
   tip: "Krátke prídavné meno + er, dlhé more + prídavné meno. Za druhým stupňom je than (ako)."
   priklad: "An elephant is bigger than a mouse. · Maths is more difficult than Art."
+opravChybu: true
 test:
   - otazka: "My brother is ___ than me."
     moznosti: ["tall", "taller", "more tall"]

@@ -18,6 +18,7 @@ otazkaKozy: "When's your birthday?"
 bite:
   tip: "Dátum čítame s radovou číslovkou a s „the … of …“. Rok čítame po dvojčísliach."
   priklad: "26 September 2026 → the twenty-sixth of September, twenty twenty-six"
+opravChybu: true
 test:
   - otazka: "How do we say <b>3 May</b>?"
     moznosti: ["the three of May", "the third of May", "the thirdth of May"]

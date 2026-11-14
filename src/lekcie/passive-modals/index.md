@@ -19,6 +19,7 @@ bite:
   tip: "Modálne sloveso + be + 3. stĺpec. Be je vždy be – nikdy is / are. Modálne sloveso z činného rodu ostáva."
   priklad: "The room must be cleaned. · Tickets can be bought online."
 pasivum: modals
+opravChybu: true
 test:
   - otazka: "This homework ___ by Friday."
     moznosti: ["must finished", "must be finished", "must is finished"]

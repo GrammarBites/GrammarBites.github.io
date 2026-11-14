@@ -58,11 +58,16 @@ function ulohaZRiadku(lava, prava) {
 }
 function ulohaZVety(sk) {
   // sk = [chybná veta, správna veta so {zvýraznenou} opravou, vysvetlenie, nápoveda (nepovinná)]
+  // v zložených zátvorkách môže byť viac správnych možností oddelených " / " – prvá sa ukáže, ostatné sa tiež uznajú
   const [a, so, v, n] = sk;
-  const s = so.replace(/[{}]/g, "");
-  const b = (so.match(/\{(.*?)\}/) || [, ""])[1];
-  const z = escH(so).replace(/\{(.*?)\}/, "<b>$1</b>");
-  return { a, s, z, b, ...(n ? { n } : {}), ...(v ? { v } : {}) };
+  const vnutro = (so.match(/\{(.*?)\}/) || [, ""])[1];
+  const mozn = vnutro.split(" / ");
+  const sablona = (x) => so.replace(/\{(.*?)\}/, () => x);
+  const s = sablona(mozn[0]).replace(/[{}]/g, "");
+  const d = mozn.slice(1).map((x) => sablona(x));
+  const b = mozn[0];
+  const z = escH(so.replace(/\{(.*?)\}/, () => `{${mozn.join(" / ")}}`)).replace(/\{(.*?)\}/, "<b>$1</b>");
+  return { a, s, z, b, ...(n ? { n } : {}), ...(v ? { v } : {}), ...(d.length ? { d } : {}) };
 }
 
 // PREVIEW=1 → odkazy na priečinky dostanú "index.html" (náhľad mimo servera)

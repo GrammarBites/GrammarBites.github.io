@@ -19,6 +19,7 @@ otazkaKozy: "I'm the goat who eats homework!"
 bite:
   tip: "Slovenské ktorý / ktorá / ktoré: pri ľuďoch who, pri veciach a zvieratách which, pri oboch môže byť that."
   priklad: "A vet is a person who helps animals. · A fridge is a machine which keeps food cold."
+opravChybu: true
 test:
   - otazka: "A pilot is a person ___ flies planes."
     moznosti: ["which", "who", "where"]

@@ -19,6 +19,7 @@ bite:
   tip: "say something (to somebody), tell somebody something. Pomôcka: je hneď za slovesom osoba (me, us, him)? Áno → tell. Nie → say."
   priklad: "She said hello. · She told me a secret. · He said (that) he was tired. · He told us (that) he was tired."
 roztried: say-tell
+opravChybu: true
 test:
   - otazka: "She ___ me that she was busy."
     moznosti: ["said", "told", "say"]

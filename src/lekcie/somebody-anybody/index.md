@@ -18,6 +18,7 @@ otazkaKozy: "Is anybody there?"
 bite:
   tip: "some- v oznamovacej vete, any- v otázke a zápore. No- je zápor sám o sebe, preto bez not."
   priklad: "There's somebody at the door. · Is there anything in the fridge? · Nobody knows."
+opravChybu: true
 test:
   - otazka: "Listen! There's ___ in the garden."
     moznosti: ["somebody", "anybody", "nobody"]

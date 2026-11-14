@@ -18,6 +18,7 @@ otazkaKozy: "What time is it? Lunch time?"
 bite:
   tip: "Do polovice: minúty past (po) hodine. Za polovicou: minúty to (do) ďalšej hodiny. Pozor: half past three = pol štvrtej."
   priklad: "It's quarter past four. · It's half past six. · It's twenty to nine."
+opravChybu: true
 test:
   - otazka: "4:15 – It's ___ ."
     moznosti: ["quarter to four", "quarter past four", "quarter past five"]

@@ -20,6 +20,7 @@ otazkaKozy: "Grass is eaten by goats!"
 bite:
   tip: "4 kroky: 1. predmet AV → podmet PV, 2. pridáme be (am / is / are), 3. sloveso → 3. stĺpec, 4. by + agent (nepovinné)."
   priklad: "Honey is made by bees. · English is spoken all over the world."
+opravChybu: true
 test:
   - otazka: "Chocolate ___ from cocoa beans."
     moznosti: ["makes", "is made", "is make"]

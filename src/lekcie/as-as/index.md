@@ -19,6 +19,7 @@ bite:
   tip: "as + prídavné meno + as = rovnako … ako. not as … as = nie taký … ako (menej). Medzi as … as je základný tvar prídavného mena."
   priklad: "Tom is as tall as his dad. · A bike isn't as fast as a car."
 porovnanie: asas
+opravChybu: true
 test:
   - otazka: "My sister is ___ me. We're both 150 cm."
     moznosti: ["as tall as", "as taller as", "tall as"]

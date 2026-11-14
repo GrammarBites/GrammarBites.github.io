@@ -18,6 +18,7 @@ otazkaKozy: "„I'm hungry!“ – The goat said it was hungry."
 bite:
   tip: "Pri said sa čas posunie o krok späť: present → past, will → would, can → could, am going to → was going to. Zmenia sa aj zámená: I → he / she, my → his / her."
   priklad: "„I'm tired.“ → She said (that) she was tired. · „I'll help you.“ → He said he would help me."
+opravChybu: true
 test:
   - otazka: "„I play the guitar.“ → Mark said he ___ the guitar."
     moznosti: ["plays", "played", "is playing"]

@@ -18,6 +18,7 @@ otazkaKozy: "Careful! I might eat your shoes!"
 bite:
   tip: "should = mal by si (rada). might = možno (môže sa to stať). Obe + sloveso, bez to, bez -s."
   priklad: "You should take an umbrella. It might rain. · He might not come."
+opravChybu: true
 test:
   - otazka: "Take a jacket. It ___ get cold tonight."
     moznosti: ["might", "might to", "mights"]

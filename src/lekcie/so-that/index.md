@@ -18,6 +18,7 @@ otazkaKozy: "I'm so hungry that I could eat a tree!"
 bite:
   tip: "so + prídavné meno / príslovka + that = taký / tak …, že. so much + nepočítateľné, so many + množné číslo. That sa dá aj vynechať."
   priklad: "The film was so boring that I fell asleep. · There were so many people that we couldn't get in."
+opravChybu: true
 test:
   - otazka: "The soup was ___ hot that I couldn't eat it."
     moznosti: ["so", "so much", "very"]

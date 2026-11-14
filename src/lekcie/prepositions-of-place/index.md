@@ -18,6 +18,7 @@ otazkaKozy: "Where's the goat? Behind the sofa!"
 bite:
   tip: "in = v, on = na, under = pod, next to = vedľa, between = medzi (dvoma vecami), behind = za, in front of = pred."
   priklad: "The goat is in the box. · The ball is under the table. · The lamp is between the bed and the desk."
+opravChybu: true
 test:
   - otazka: "Mačka je pod posteľou. → The cat is ___ the bed."
     moznosti: ["on", "under", "in"]

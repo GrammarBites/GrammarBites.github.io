@@ -19,6 +19,7 @@ bite:
   tip: "Be ide pred podmet (Is she…?). Pri dvoch častiach slovesa ide pred podmet pomocné sloveso (Can he…? Have you…?). Pri present a past simple pridáme do / does / did (Do you…? Did they…?)."
   priklad: "Is she tired? · Can he swim? · Have you finished? · Does she play chess? · Did they win?"
 pisanie: question-forms
+opravChybu: true
 test:
   - otazka: "She is at school. → ___ at school?"
     moznosti: ["Does she be", "Is she", "She is"]

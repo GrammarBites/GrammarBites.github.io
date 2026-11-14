@@ -20,6 +20,7 @@ bite:
   tip: "Sloveso + častica (up, down, on, off, out…) = nové slovo s novým významom. Zámeno it / them ide do stredu: Switch it on."
   priklad: "I get up at seven. · Please switch off your phone. · I'm looking for my keys."
 slovicka: phrasal-verbs
+opravChybu: true
 test:
   - otazka: "It's dark in here. Can you ___ the light?"
     moznosti: ["switch on", "switch off", "put on"]

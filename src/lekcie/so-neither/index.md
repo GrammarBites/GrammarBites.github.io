@@ -18,6 +18,7 @@ otazkaKozy: "I'm hungry! – So am I!"
 bite:
   tip: "Aj ja = So + pomocné sloveso + I. Ani ja = Neither + pomocné sloveso + I. Nesúhlasím = Oh, I do / I don't."
   priklad: "I'm tired. – So am I. · I can't swim. – Neither can I. · I like spiders. – Oh, I don't."
+opravChybu: true
 test:
   - otazka: "I'm hungry. – ___ ."
     moznosti: ["So I am", "So am I", "So do I"]

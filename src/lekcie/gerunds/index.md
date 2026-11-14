@@ -18,6 +18,7 @@ otazkaKozy: "I'm good at eating!"
 bite:
   tip: "Keď hovoríme o činnosti ako o veci, použijeme -ing: na začiatku vety (Swimming is fun), po predložke (good at drawing) a po slovesách ako enjoy, love, hate, don't mind."
   priklad: "Swimming is fun. · I'm good at drawing. · I enjoy dancing."
+opravChybu: true
 test:
   - otazka: "___ is my favourite hobby."
     moznosti: ["Cook", "Cooking", "To cooking"]

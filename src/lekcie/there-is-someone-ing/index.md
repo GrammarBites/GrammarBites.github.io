@@ -18,6 +18,7 @@ otazkaKozy: "I can hear someone eating my grass!"
 bite:
   tip: "There's / There are + kto + -ing. I can see / hear / feel / smell + koho + -ing. Pri spájaní viet it's / he's vypadne."
   priklad: "There's a cat sleeping on the sofa. · I can hear someone singing."
+opravChybu: true
 test:
   - otazka: "There's a boy ___ in the garden."
     moznosti: ["is playing", "playing", "plays"]

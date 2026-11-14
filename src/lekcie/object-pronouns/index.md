@@ -18,6 +18,7 @@ otazkaKozy: "Do you like me?"
 bite:
   tip: "Pred slovesom je podmet (I, he, she…), za slovesom a po predložke predmet (me, him, her…)."
   priklad: "She likes him. He likes her. · Come with me!"
+opravChybu: true
 test:
   - otazka: "This is my grandma. I love ___ ."
     moznosti: ["she", "her", "him"]

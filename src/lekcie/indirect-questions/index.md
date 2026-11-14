@@ -18,6 +18,7 @@ otazkaKozy: "She wants to know where the grass is."
 bite:
   tip: "V nepriamej otázke je slovosled ako v oznamovacej vete (where the station is), do / does / did zmiznú. Otázky áno / nie uvedieme slovom if alebo whether (či)."
   priklad: "He wants to know where the station is. · Mum wants to know if I'm hungry. · He asked me where I lived."
+opravChybu: true
 test:
   - otazka: "„Where is the library?“ → She wants to know where ___ ."
     moznosti: ["is the library", "the library is", "does the library is"]

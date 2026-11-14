@@ -18,6 +18,7 @@ otazkaKozy: "I'm first! You are second!"
 bite:
   tip: "1st first, 2nd second, 3rd third – tieto treba vedieť naspamäť. Ostatné: číslo + th (fourth, tenth). Pozor: fifth, eighth, ninth, twelfth, twentieth."
   priklad: "It's my eleventh birthday. · We live on the third floor. · on the fifth of May"
+opravChybu: true
 test:
   - otazka: "How do we say <b>2nd</b>?"
     moznosti: ["twoth", "second", "twond"]

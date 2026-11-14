@@ -19,6 +19,7 @@ otazkaKozy: "Who is my uncle?"
 bite:
   tip: "V rodostrome: vodorovná čiara = manželia, zvislá čiara = deti. Vzťah hovoríme od druhej osoby: Sam is Mia's uncle."
   priklad: "Sam is Mia's uncle. · Mia is Sam's niece."
+opravChybu: true
 test:
   - otazka: "My mum's brother is my ___."
     moznosti: ["cousin", "uncle", "nephew"]

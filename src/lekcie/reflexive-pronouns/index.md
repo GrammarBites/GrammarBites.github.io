@@ -18,6 +18,7 @@ otazkaKozy: "I can see myself in the water!"
 bite:
   tip: "Zvratné zámeno použijeme, keď ten, kto niečo robí, to robí sám sebe: I cut myself. Jeden: -self, viacerí: -selves. by myself = sám, bez pomoci."
   priklad: "I cut myself. · You might burn yourself. · They made it by themselves."
+opravChybu: true
 test:
   - otazka: "Be careful with that knife! You might cut ___ ."
     moznosti: ["you", "yourself", "yourselves"]

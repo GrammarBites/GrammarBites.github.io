@@ -19,6 +19,7 @@ bite:
   tip: "must = musíš (je to nutné), mustn't = nesmieš (zákaz), don't have to = nemusíš (nie je to nutné). mustn't ≠ don't have to!"
   priklad: "You must buy a ticket. · You mustn't feed the animals. · Children don't have to pay."
 roztried: must-mustnt-dont-have-to
+opravChybu: true
 test:
   - otazka: "You ___ touch the paintings in the gallery. It's not allowed."
     moznosti: ["mustn't", "don't have to", "must"]

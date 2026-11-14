@@ -18,6 +18,7 @@ otazkaKozy: "This grass is too dry!"
 bite:
   tip: "too + prídavné meno = príliš (je to problém). Prídavné meno + enough = dosť – enough ide ZA prídavné meno."
   priklad: "This soup is too hot. · He isn't old enough. · I'm too tired to play."
+opravChybu: true
 test:
   - otazka: "I can't carry this bag. It's ___ ."
     moznosti: ["heavy enough", "too heavy", "enough heavy"]

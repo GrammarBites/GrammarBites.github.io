@@ -18,6 +18,7 @@ otazkaKozy: "I'm bored! What should I do?"
 bite:
   tip: "should + sloveso = mal by si (rada). shouldn't = nemal by si. Bez to, bez -s. Otázka: Should I…?"
   priklad: "You should drink more water. · You shouldn't shout. · What should I do?"
+opravChybu: true
 test:
   - otazka: "You look tired. You ___ go to sleep."
     moznosti: ["should", "should to", "shoulds"]

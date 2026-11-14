@@ -19,6 +19,7 @@ otazkaKozy: "I'm the best goat in the world!"
 bite:
   tip: "Tretí stupeň: the + -est alebo the most. Nezabudni na the!"
   priklad: "high – higher – the highest · famous – more famous – the most famous"
+opravChybu: true
 test:
   - otazka: "Tom is the ___ boy in our class."
     moznosti: ["taller", "tallest", "most tall"]

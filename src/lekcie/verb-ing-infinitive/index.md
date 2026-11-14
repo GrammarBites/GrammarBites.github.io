@@ -19,6 +19,7 @@ bite:
   tip: "enjoy, finish, imagine, don't mind + -ing. want, decide, promise, refuse, need… + to. like, love, hate, start + oboje. Pozor na stop!"
   priklad: "I enjoy reading. · I want to learn Japanese. · I love dancing = I love to dance."
 roztried: verb-ing-infinitive
+opravChybu: true
 test:
   - otazka: "My sister enjoys ___ photos."
     moznosti: ["to take", "taking", "take"]

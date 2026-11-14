@@ -20,6 +20,7 @@ otazkaKozy: "My grass was eaten!"
 bite:
   tip: "V trpnom rode sa mení len sloveso BE – dáme ho do rovnakého času ako v činnom rode. 3. stĺpec (made, built, sent) ostáva."
   priklad: "is made · was made · has been made · will be made · must be made"
+opravChybu: true
 test:
   - otazka: "AV: Someone stole my bike yesterday. → PV: My bike ___ yesterday."
     moznosti: ["is stolen", "was stolen", "has stolen"]

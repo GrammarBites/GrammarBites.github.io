@@ -18,6 +18,7 @@ otazkaKozy: "Shh! Speak quietly!"
 bite:
   tip: "Prídavné meno opisuje podstatné meno (aký?), príslovka opisuje sloveso (ako?). Väčšinou + ly, ale good → well."
   priklad: "She is a careful driver. She drives carefully. · He's a good player. He plays well."
+opravChybu: true
 test:
   - otazka: "Please speak ___ . The baby is sleeping."
     moznosti: ["quiet", "quietly", "quieter"]

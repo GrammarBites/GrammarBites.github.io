@@ -18,6 +18,7 @@ otazkaKozy: "How high is that mountain?"
 bite:
   tip: "How + prídavné meno + is…? V odpovedi zopakuj prídavné meno na konci: It's 500 metres high."
   priklad: "How long is the Danube? – It's about 2,850 kilometres long."
+opravChybu: true
 test:
   - otazka: "How ___ is the river? – It's 50 metres wide."
     moznosti: ["wide", "long", "high"]

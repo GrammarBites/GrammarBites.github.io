@@ -1,5 +1,5 @@
 {
-  "_info": "Nepravidelné slovesá po rodinách. Každé sloveso: [základný tvar, minulý tvar, slovenský význam, (iné správne tvary)]. 'knihy' = v ktorých zoznamoch učebníc sloveso je.",
+  "_info": "Nepravidelné slovesá po rodinách. Každé sloveso: [základný tvar, minulý tvar, slovenský význam, (iné správne tvary)]. 'knihy' = v ktorých zoznamoch učebníc sloveso je. Zoznam project-2 = zoznam 5. ročníka (75 slovies, podľa učebnice).",
   "rodiny": [
     {
       "id": "rovnake",
@@ -83,7 +83,6 @@
           "nechať, dovoliť",
           [],
           [
-            "project-2",
             "project-3"
           ]
         ]
@@ -179,7 +178,6 @@
           "požičať (niekomu)",
           [],
           [
-            "project-2",
             "project-3"
           ]
         ]
@@ -257,7 +255,6 @@
           "stretnúť (sa)",
           [],
           [
-            "project-2",
             "project-3"
           ]
         ],
@@ -267,7 +264,6 @@
           "spať",
           [],
           [
-            "project-2",
             "project-3"
           ]
         ]
@@ -561,7 +557,6 @@
           "zabudnúť",
           [],
           [
-            "project-2",
             "project-3"
           ]
         ],
@@ -571,7 +566,6 @@
           "vybrať si",
           [],
           [
-            "project-2",
             "project-3"
           ]
         ],
@@ -581,7 +575,6 @@
           "svietiť",
           [],
           [
-            "project-2",
             "project-3"
           ]
         ]
@@ -941,7 +934,6 @@
           "strieľať",
           [],
           [
-            "project-2",
             "project-3"
           ]
         ]

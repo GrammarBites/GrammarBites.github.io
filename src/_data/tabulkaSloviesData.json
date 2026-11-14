@@ -26,7 +26,8 @@
    "p": "was, were",
    "pp": "been",
    "sk": "byť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "bear",
@@ -47,14 +48,16 @@
    "p": "became",
    "pp": "become",
    "sk": "stať sa",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "begin",
    "p": "began",
    "pp": "begun",
    "sk": "začať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "bend",
@@ -89,7 +92,8 @@
    "p": "bit",
    "pp": "bitten",
    "sk": "hrýzť, uhryznúť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "bleed",
@@ -110,7 +114,8 @@
    "p": "broke",
    "pp": "broken",
    "sk": "zlomiť, rozbiť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "breed",
@@ -124,7 +129,8 @@
    "p": "brought",
    "pp": "brought",
    "sk": "priniesť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "broadcast",
@@ -138,7 +144,8 @@
    "p": "built",
    "pp": "built",
    "sk": "stavať, postaviť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "burn",
@@ -147,7 +154,8 @@
    "sk": "horieť, páliť",
    "skola": true,
    "pSkola": "burnt",
-   "ppSkola": "burnt"
+   "ppSkola": "burnt",
+   "r5": true
   },
   {
    "z": "burst",
@@ -161,14 +169,16 @@
    "p": "bought",
    "pp": "bought",
    "sk": "kúpiť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "can",
    "p": "could",
    "pp": "—",
    "sk": "môcť, vedieť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "cast",
@@ -182,7 +192,8 @@
    "p": "caught",
    "pp": "caught",
    "sk": "chytiť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "choose",
@@ -203,14 +214,16 @@
    "p": "came",
    "pp": "come",
    "sk": "prísť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "cost",
    "p": "cost",
    "pp": "cost",
    "sk": "stáť (o cene)",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "creep",
@@ -224,7 +237,8 @@
    "p": "cut",
    "pp": "cut",
    "sk": "rezať, strihať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "deal",
@@ -252,14 +266,16 @@
    "p": "did",
    "pp": "done",
    "sk": "robiť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "draw",
    "p": "drew",
    "pp": "drawn",
    "sk": "kresliť; ťahať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "dream",
@@ -273,28 +289,32 @@
    "p": "drank",
    "pp": "drunk",
    "sk": "piť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "drive",
    "p": "drove",
    "pp": "driven",
    "sk": "šoférovať, viesť (auto)",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "eat",
    "p": "ate",
    "pp": "eaten",
    "sk": "jesť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "fall",
    "p": "fell",
    "pp": "fallen",
    "sk": "padnúť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "feed",
@@ -308,21 +328,24 @@
    "p": "felt",
    "pp": "felt",
    "sk": "cítiť (sa)",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "fight",
    "p": "fought",
    "pp": "fought",
    "sk": "bojovať, biť sa",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "find",
    "p": "found",
    "pp": "found",
    "sk": "nájsť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "flee",
@@ -343,7 +366,8 @@
    "p": "flew",
    "pp": "flown",
    "sk": "letieť, lietať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "forbid",
@@ -393,14 +417,16 @@
    "pp": "got, gotten",
    "sk": "dostať; stať sa",
    "skola": true,
-   "ppSkola": "got"
+   "ppSkola": "got",
+   "r5": true
   },
   {
    "z": "give",
    "p": "gave",
    "pp": "given",
    "sk": "dať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "go",
@@ -408,7 +434,8 @@
    "pp": "gone, been",
    "sk": "ísť",
    "skola": true,
-   "ppSkola": "been, gone"
+   "ppSkola": "been, gone",
+   "r5": true
   },
   {
    "z": "grind",
@@ -422,7 +449,8 @@
    "p": "grew",
    "pp": "grown",
    "sk": "rásť; pestovať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "hang",
@@ -436,49 +464,56 @@
    "p": "had",
    "pp": "had",
    "sk": "mať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "hear",
    "p": "heard",
    "pp": "heard",
    "sk": "počuť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "hide",
    "p": "hid",
    "pp": "hidden",
    "sk": "skryť (sa)",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "hit",
    "p": "hit",
    "pp": "hit",
    "sk": "udrieť, zasiahnuť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "hold",
    "p": "held",
    "pp": "held",
    "sk": "držať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "hurt",
    "p": "hurt",
    "pp": "hurt",
    "sk": "zraniť, bolieť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "keep",
    "p": "kept",
    "pp": "kept",
    "sk": "nechať si, udržiavať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "kneel",
@@ -499,7 +534,8 @@
    "p": "knew",
    "pp": "known",
    "sk": "vedieť, poznať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "lay",
@@ -536,14 +572,16 @@
    "sk": "učiť sa",
    "skola": true,
    "pSkola": "learnt",
-   "ppSkola": "learnt"
+   "ppSkola": "learnt",
+   "r5": true
   },
   {
    "z": "leave",
    "p": "left",
    "pp": "left",
    "sk": "odísť; nechať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "lend",
@@ -578,21 +616,24 @@
    "p": "lost",
    "pp": "lost",
    "sk": "stratiť; prehrať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "make",
    "p": "made",
    "pp": "made",
    "sk": "robiť, vyrobiť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "mean",
    "p": "meant",
    "pp": "meant",
    "sk": "znamenať; myslieť (tým)",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "meet",
@@ -655,7 +696,8 @@
    "p": "paid",
    "pp": "paid",
    "sk": "platiť, zaplatiť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "prove",
@@ -669,7 +711,8 @@
    "p": "put",
    "pp": "put",
    "sk": "položiť, dať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "quit",
@@ -683,7 +726,8 @@
    "p": "read",
    "pp": "read",
    "sk": "čítať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "rewrite",
@@ -704,14 +748,16 @@
    "p": "rode",
    "pp": "ridden",
    "sk": "jazdiť (na bicykli, koni)",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "ring",
    "p": "rang",
    "pp": "rung",
    "sk": "zvoniť; zavolať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "rise",
@@ -725,7 +771,8 @@
    "p": "ran",
    "pp": "run",
    "sk": "bežať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "saw",
@@ -739,14 +786,16 @@
    "p": "said",
    "pp": "said",
    "sk": "povedať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "see",
    "p": "saw",
    "pp": "seen",
    "sk": "vidieť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "seek",
@@ -760,21 +809,24 @@
    "p": "sold",
    "pp": "sold",
    "sk": "predať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "send",
    "p": "sent",
    "pp": "sent",
    "sk": "poslať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "set",
    "p": "set",
    "pp": "set",
    "sk": "nastaviť; prestrieť; zapadnúť (slnko)",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "sew",
@@ -837,21 +889,24 @@
    "p": "sang",
    "pp": "sung",
    "sk": "spievať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "sink",
    "p": "sank",
    "pp": "sunk",
    "sk": "potopiť sa, klesnúť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "sit",
    "p": "sat",
    "pp": "sat",
    "sk": "sedieť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "sleep",
@@ -874,7 +929,8 @@
    "sk": "voňať, cítiť (čuchom)",
    "skola": true,
    "pSkola": "smelt",
-   "ppSkola": "smelt"
+   "ppSkola": "smelt",
+   "r5": true
   },
   {
    "z": "sow",
@@ -888,7 +944,8 @@
    "p": "spoke",
    "pp": "spoken",
    "sk": "hovoriť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "speed",
@@ -904,14 +961,16 @@
    "sk": "hláskovať",
    "skola": true,
    "pSkola": "spelt",
-   "ppSkola": "spelt"
+   "ppSkola": "spelt",
+   "r5": true
   },
   {
    "z": "spend",
    "p": "spent",
    "pp": "spent",
    "sk": "minúť; stráviť (čas)",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "spill",
@@ -967,21 +1026,24 @@
    "p": "stood",
    "pp": "stood",
    "sk": "stáť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "steal",
    "p": "stole",
    "pp": "stolen",
    "sk": "ukradnúť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "stick",
    "p": "stuck",
    "pp": "stuck",
    "sk": "nalepiť; zaseknúť sa",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "sting",
@@ -1016,7 +1078,8 @@
    "p": "swept",
    "pp": "swept",
    "sk": "zametať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "swell",
@@ -1030,7 +1093,8 @@
    "p": "swam",
    "pp": "swum",
    "sk": "plávať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "swing",
@@ -1044,42 +1108,48 @@
    "p": "took",
    "pp": "taken",
    "sk": "vziať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "teach",
    "p": "taught",
    "pp": "taught",
    "sk": "učiť (niekoho)",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "tear",
    "p": "tore",
    "pp": "torn",
    "sk": "roztrhnúť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "tell",
    "p": "told",
    "pp": "told",
    "sk": "povedať, rozprávať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "think",
    "p": "thought",
    "pp": "thought",
    "sk": "myslieť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "throw",
    "p": "threw",
    "pp": "thrown",
    "sk": "hodiť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "tread",
@@ -1100,7 +1170,8 @@
    "p": "understood",
    "pp": "understood",
    "sk": "rozumieť, pochopiť",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "undertake",
@@ -1128,14 +1199,16 @@
    "p": "woke",
    "pp": "woken",
    "sk": "zobudiť (sa)",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "wear",
    "p": "wore",
    "pp": "worn",
    "sk": "nosiť (oblečenie)",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "weave",
@@ -1163,7 +1236,8 @@
    "p": "won",
    "pp": "won",
    "sk": "vyhrať",
-   "skola": true
+   "skola": true,
+   "r5": true
   },
   {
    "z": "wind",
@@ -1191,7 +1265,8 @@
    "p": "wrote",
    "pp": "written",
    "sk": "písať",
-   "skola": true
+   "skola": true,
+   "r5": true
   }
  ]
 }

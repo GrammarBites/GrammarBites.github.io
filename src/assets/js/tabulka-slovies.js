@@ -10,18 +10,38 @@
     const zrus = box.querySelector("[data-zrus]");
     const KODY = cipy.map((c) => c.dataset.zakry);
     let zakryte = [];
+    // filter podľa ročníka: "5" = zoznam 5. ročníka, "skola" = školský zoznam, "" = všetko
+    const rocCipy = [...box.querySelectorAll("[data-rocnik]")];
+    const nicRoc = box.querySelector("[data-nic-rocnik]");
+    box.querySelector("[data-rocnik-vsetky]").addEventListener("click", () => vyberRocnik(""));
+    let rocnik = "";
+    const vRocniku = (r) => (rocnik === "5" ? r.hasAttribute("data-r5") : rocnik === "skola" ? r.hasAttribute("data-skola") : true);
 
+    let riadkyRoc = riadky.length;
+    function vyberRocnik(r) {
+      rocnik = r;
+      rocCipy.forEach((c) => c.setAttribute("aria-pressed", c.dataset.rocnik === r ? "true" : "false"));
+      try { localStorage.setItem("gb-tabulka-rocnik", r); } catch (e) {}
+      filtruj();
+    }
+    rocCipy.forEach((c) => c.addEventListener("click", () => vyberRocnik(c.dataset.rocnik)));
     function filtruj() {
       const q = bezDiakritiky(hladaj.value.trim());
       let n = 0;
-      riadky.forEach((r) => { const ok = !q || r._t.includes(q); r.hidden = !ok; if (ok) n++; });
-      nic.hidden = n > 0;
+      let vsetkych = 0, mimo = 0;
+      riadky.forEach((r) => {
+        const roc = vRocniku(r), hit = !q || r._t.includes(q), ok = roc && hit;
+        r.hidden = !ok; if (ok) n++; if (roc) vsetkych++; if (hit && !roc) mimo++;
+      });
+      riadkyRoc = vsetkych;
+      nic.hidden = n > 0 || mimo > 0;
+      nicRoc.hidden = n > 0 || mimo === 0;
       pisStav(n, q);
     }
     function pisStav(n, q) {
       const odkryte = box.querySelectorAll("td.je-zakryta.je-odkryta").length;
       const spolu = box.querySelectorAll("tr:not([hidden]) td.je-zakryta").length;
-      let t = q ? `Nájdené: ${n} z ${riadky.length}.` : `Spolu ${riadky.length} slovies.`;
+      let t = q ? `Nájdené: ${n} z ${riadkyRoc}.` : `Spolu ${riadkyRoc} slovies.`;
       if (zakryte.length) t += ` Odkryté: ${Math.min(odkryte, spolu)} / ${spolu} – najprv si tvar povedz nahlas, potom ťukni.`;
       stav.textContent = t;
     }
@@ -57,6 +77,10 @@
     });
     let ulozene = "";
     try { ulozene = localStorage.getItem("gb-tabulka-zakry") || ""; } catch (e) {}
+    let ulozenyRoc = "";
+    try { ulozenyRoc = localStorage.getItem("gb-tabulka-rocnik") || ""; } catch (e) {}
+    if (rocCipy.some((c) => c.dataset.rocnik === ulozenyRoc)) rocnik = ulozenyRoc;
+    rocCipy.forEach((c) => c.setAttribute("aria-pressed", c.dataset.rocnik === rocnik ? "true" : "false"));
     zakry(ulozene.split(",").filter((k) => KODY.includes(k)));
   });
 })();

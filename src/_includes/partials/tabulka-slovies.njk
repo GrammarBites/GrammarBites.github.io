@@ -9,6 +9,16 @@
         <span>Hľadaj</span>
         <input type="search" data-hladaj placeholder="napr. buy, bought, kúpiť…" autocomplete="off">
       </label>
+      {% set pocet5 = tabulkaSloviesData.slovesa | selectattr("r5") | length %}
+      <fieldset class="ts__zakry">
+        <legend>Ročník</legend>
+        <div class="trener__cipy" data-rocniky>
+          <button type="button" class="trener__cip" data-rocnik="5" aria-pressed="false">5. ročník <span>{{ pocet5 }}</span></button>
+          {% if jeSkola %}<button type="button" class="trener__cip" data-rocnik="" aria-pressed="true">6.–9. ročník <span>{{ zoznam.length }}</span></button>
+          {% else %}<button type="button" class="trener__cip" data-rocnik="skola" aria-pressed="false">školský zoznam (6.–9.) <span>{{ tabulkaSloviesData.slovesa | selectattr("skola") | length }}</span></button>
+          <button type="button" class="trener__cip" data-rocnik="" aria-pressed="true">všetky <span>{{ zoznam.length }}</span></button>{% endif %}
+        </div>
+      </fieldset>
       <fieldset class="ts__zakry">
         <legend>Skúšaj sa – zakry stĺpce (aj viac naraz)</legend>
         <div class="trener__cipy">
@@ -38,7 +48,7 @@
         <tbody>
         {% for s in zoznam %}
           {% set p = (s.pSkola or s.p) if jeSkola else s.p %}{% set pp = (s.ppSkola or s.pp) if jeSkola else s.pp %}
-          <tr data-hladat="{{ s.z }} {{ s.p }} {{ s.pp }} {{ s.sk }}"{% if not jeSkola and s.skola %} class="je-skola"{% endif %}>
+          <tr data-hladat="{{ s.z }} {{ s.p }} {{ s.pp }} {{ s.sk }}"{% if s.r5 %} data-r5{% endif %}{% if s.skola %} data-skola{% endif %}{% if not jeSkola and s.skola %} class="je-skola"{% endif %}>
             <td data-st="z" lang="en"><b>{{ s.z }}</b>{% if not jeSkola and s.skola %} <span class="ts__skola" title="je aj v školskom zozname">★</span>{% endif %}</td>
             <td data-st="p" lang="en">{{ p }}</td>
             <td data-st="pp" lang="en">{{ pp }}</td>
@@ -48,6 +58,7 @@
         </tbody>
       </table>
     </div>
+    <p class="ts__nic" data-nic-rocnik hidden>Toto sloveso je v tabuľke, ale nie v zozname tohto ročníka. <button type="button" class="tlacidlo tlacidlo--tiche" data-rocnik-vsetky>Ukázať všetky</button></p>
     <p class="ts__nic" data-nic hidden>Také sloveso v tabuľke nie je. Možno je pravidelné (-ed)? Skús <a href="/lekcie/past-simple-regular/">pravidelné slovesá</a>.</p>
   </div>
   <script src="/assets/js/tabulka-slovies.js?v={{ site.verzia }}" defer></script>

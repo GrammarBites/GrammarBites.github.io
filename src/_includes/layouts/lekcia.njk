@@ -80,9 +80,23 @@ skripty: ["lekcia.js"]
 <section class="blok blok--vyklad" aria-labelledby="h-vyklad">
   <h2 id="h-vyklad" class="blok__nadpis"><span class="blok__pismeno">{{ pismenoVykladu }}</span> Výklad</h2>
   {% if tabule[page.fileSlug] %}<a class="vyklad-tabula" href="/tabula/#{{ page.fileSlug }}"><span class="vyklad-tabula__doska" aria-hidden="true">a + b</span><span><b>Nerozumiem – vysvetli mi to na tabuli</b><br>{{ tabule[page.fileSlug].nazov }}</span></a>{% endif %}
+  {% if vykladSchovany %}
+  <details class="vyklad-skryty" data-vyklad>
+    <summary class="tlacidlo vyklad-skryty__tlacidlo">
+      <span class="vyklad-skryty__zobraz">Ukázať výklad</span>
+      <span class="vyklad-skryty__skry">Skryť výklad</span>
+      <span class="vyklad-skryty__hint">pravidlo, príklady a časté chyby</span>
+      <svg class="vyklad-skryty__sipka" width="18" height="18" aria-hidden="true"><use href="#sipka"/></svg>
+    </summary>
+    <div class="zosit">
+      {{ content | safe }}
+    </div>
+  </details>
+  {% else %}
   <div class="zosit">
     {{ content | safe }}
   </div>
+  {% endif %}
 </section>
 
 {% set dalsiePismeno = "C" if tabulkaSlovies else "D" %}

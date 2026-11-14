@@ -16,6 +16,22 @@
       GB.udalost("stiahnutie/" + lekcia + "/" + typ, "Stiahnutie " + typ + ": " + lekcia);
     });
   });
+  // ---- Schovaný výklad (<details data-vyklad>) ----
+  const vyklad = document.querySelector("details[data-vyklad]");
+  if (vyklad) {
+    let otvorene = false;
+    vyklad.addEventListener("toggle", () => {
+      if (vyklad.open && !otvorene) { otvorene = true; GB.udalost("vyklad/" + lekcia, "Výklad otvorený: " + lekcia); }
+    });
+    // odkaz na #h-vyklad (alebo na niečo vo výklade) ho otvorí
+    const otvorPodlaOdkazu = () => {
+      const id = decodeURIComponent(location.hash.slice(1));
+      const ciel = id && document.getElementById(id);
+      if (ciel && (id === "h-vyklad" || vyklad.contains(ciel))) { vyklad.open = true; ciel.scrollIntoView(); }
+    };
+    otvorPodlaOdkazu();
+    window.addEventListener("hashchange", otvorPodlaOdkazu);
+  }
   // ---- Mini test ----
   document.querySelectorAll("[data-test]").forEach((form) => {
     const otazky = [...form.querySelectorAll(".otazka")];

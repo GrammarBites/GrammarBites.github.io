@@ -1019,3 +1019,15 @@ button.pc-karta:focus-visible { outline: 3px solid var(--yellow); outline-offset
 .oc-verdikt { font-weight: 800; }
 .oc-spravne b { text-decoration: underline wavy var(--green); text-underline-offset: 4px; }
 .oc-karta [data-vstup]:disabled { opacity: .8; }
+
+/* ---------- Schovaný výklad ---------- */
+.vyklad-skryty { display: grid; gap: 14px; }
+.vyklad-skryty__tlacidlo { list-style: none; justify-self: start; display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; padding: 10px 20px; font-size: 1.05rem; }
+.vyklad-skryty__tlacidlo::-webkit-details-marker { display: none; }
+.vyklad-skryty__tlacidlo:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
+.vyklad-skryty__hint { font-weight: 600; font-size: .9rem; opacity: .85; }
+.vyklad-skryty__sipka { transition: transform .2s; transform: rotate(90deg); }
+.vyklad-skryty[open] .vyklad-skryty__sipka { transform: rotate(-90deg); }
+.vyklad-skryty__skry, .vyklad-skryty[open] .vyklad-skryty__zobraz { display: none; }
+.vyklad-skryty[open] .vyklad-skryty__skry { display: inline; }
+@media (prefers-reduced-motion: reduce) { .vyklad-skryty__sipka { transition: none; } }

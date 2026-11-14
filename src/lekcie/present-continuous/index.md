@@ -22,7 +22,6 @@ bite:
   priklad: "Look! The goat is eating a book! → The goats aren't sleeping."
 pisanie: present-continuous
 opravChybu: true
-vykladSchovany: true   # výklad je schovaný pod tlačidlom Ukázať výklad
 test:
   - otazka: "Look! The dog ___ in the garden."
     moznosti: ["is running", "are running", "is runing"]

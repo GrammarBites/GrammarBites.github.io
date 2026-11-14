@@ -1031,3 +1031,5 @@ button.pc-karta:focus-visible { outline: 3px solid var(--yellow); outline-offset
 .vyklad-skryty__skry, .vyklad-skryty[open] .vyklad-skryty__zobraz { display: none; }
 .vyklad-skryty[open] .vyklad-skryty__skry { display: inline; }
 @media (prefers-reduced-motion: reduce) { .vyklad-skryty__sipka { transition: none; } }
+.blok--vyklad, .vyklad-skryty, .zosit, .zosit > * { min-width: 0; }
+.zosit { overflow-wrap: break-word; }

@@ -28,6 +28,10 @@ sablona/index.md                   ← šablóna novej lekcie s vysvetlivkami
 2. Pridaj video a infografiku, vyplň údaje, zmaž riadok `koncept: true`.
 3. Nahraj na GitHub. Web sa aktualizuje približne do 2 minút.
 
+## Výklad pod tlačidlom
+
+Výklad v lekcii je predvolene schovaný pod tlačidlom „Ukázať výklad“, aby stránka nebola príliš dlhá. Ak ho má mať niektorá lekcia stále rozbalený, pridaj do jej údajov `vykladSchovany: false`.
+
 ## Lokálne spustenie
 
 ```

@@ -16,6 +16,8 @@ src/
   _data/slovnik.json               ← SK ↔ EN výrazy pre vyhľadávanie
   _data/nepravidelneSlovesa.json   ← nepravidelné slovesá po rodinách (pre tréner, učebnica = posledné pole)
   _data/site.js                    ← nastavenia (adresa webu, kľúč kontaktného formulára)
+  pred-pisomkou/index.njk          ← „Pred písomkou": 20 náhodných otázok z unitu (berie mini testy lekcií
+                                     a vety z trenažérov Roztrieď a Doplň slovo; nič sa nepíše zvlášť)
   assets/img/postavy/              ← koza a učiteľ (PNG s priehľadným pozadím)
 sablona/index.md                   ← šablóna novej lekcie s vysvetlivkami
 ```

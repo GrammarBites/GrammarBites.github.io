@@ -4,6 +4,33 @@ import fs from "node:fs";
 const temy = JSON.parse(fs.readFileSync("src/_data/zoznamTem.json", "utf8"));
 const ucebnice = JSON.parse(fs.readFileSync("src/_data/zoznamUcebnic.json", "utf8"));
 
+const roztriedData = JSON.parse(fs.readFileSync("src/_data/roztriedData.json", "utf8"));
+const slovickaData = JSON.parse(fs.readFileSync("src/_data/slovickaData.json", "utf8"));
+
+// ---------- Pred písomkou ----------
+// Otázky jednej lekcie v jednotnom tvare { o: otázka, m: možnosti, s: správna, v: vysvetlenie (HTML) }.
+// q = mini test lekcie, x = vety z trenažérov Roztrieď a Doplň slovo (ak ich lekcia má).
+const escHtml = (t) => String(t ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+function otazkyLekcie(l) {
+  const d = l.data;
+  const q = (d.test || []).map((t) => ({ o: t.otazka, m: t.moznosti, s: t.spravna, v: escHtml(t.vysvetlenie), ...(t.nemiesaj ? { n: 1 } : {}) }));
+  const x = [];
+  const rz = d.roztried && roztriedData[d.roztried];
+  if (rz) for (const p of rz.polozky) {
+    x.push({ o: escHtml(p.t) + (p.sk ? ` <span class="pp-sk">${escHtml(p.sk)}</span>` : ""), m: rz.kose.map((k) => escHtml(k.nazov)), s: rz.kose.findIndex((k) => k.id === p.k), v: p.v });
+  }
+  const sl = d.slovicka && slovickaData[d.slovicka];
+  if (sl) for (const p of sl.vety || []) {
+    x.push({ o: escHtml(p.t) + (p.z ? ` (${escHtml(p.z)})` : ""), m: [p.ok, ...p.zle].map(escHtml), s: 0, v: p.v });
+  }
+  return { q, x: x.filter((o) => o.s >= 0) };
+}
+const lekcieUnitu = (lekcie, id, unit) =>
+  lekcie
+    .filter((l) => (l.data.ucebnice || []).some((u) => u.id === id && String(u.unit) === String(unit)))
+    .sort((a, b) => (a.data.strana ?? 999) - (b.data.strana ?? 999) || a.date - b.date);
+const POCET_PRED_PISOMKOU = 20;
+
 // PREVIEW=1 → odkazy na priečinky dostanú "index.html" (náhľad mimo servera)
 const PREVIEW = process.env.PREVIEW === "1";
 
@@ -68,6 +95,8 @@ export default function (eleventyConfig) {
         const unit = (kniha.units || []).find((x) => String(x.id) === String(uid));
         skupiny.push({
           id: `${z.id}-${uid}`,
+          kniha: z.id,
+          unit: String(uid),
           nadpis: `${kniha.nazov} · ${uid === "intro" ? "Introduction" : `Unit ${uid}`}`,
           tema: unit && uid !== "intro" ? unit.nazov : "",
           odkaz: `/ucebnice/${z.id}/#unit-${uid}`,
@@ -80,6 +109,30 @@ export default function (eleventyConfig) {
       skupiny.push({ id: "dalsie", nadpis: skupiny.length ? "Hodí sa po celý rok" : "", tema: "", odkaz: "", lekcie: zvysok });
     }
     return skupiny;
+  });
+  // Pred písomkou: koľko otázok dostane žiak z daného unitu (najviac 20; 0 = tlačidlo sa neukáže)
+  eleventyConfig.addFilter("pocetPredPisomkou", (lekcie, id, unit) => {
+    const spolu = lekcieUnitu(lekcie, id, unit).reduce((n, l) => { const o = otazkyLekcie(l); return n + o.q.length + o.x.length; }, 0);
+    return Math.min(POCET_PRED_PISOMKOU, spolu);
+  });
+  // Pred písomkou: všetky otázky pre stránku /pred-pisomkou/ (unity → lekcie → otázky)
+  eleventyConfig.addFilter("predPisomkou", (lekcie) => {
+    const vsetky = {};
+    const knihy = [];
+    for (const k of ucebnice) {
+      const units = [];
+      for (const u of k.units || []) {
+        const sOtazkami = lekcieUnitu(lekcie, k.id, u.id).filter((l) => { const o = otazkyLekcie(l); return o.q.length + o.x.length; });
+        if (!sOtazkami.length) continue;
+        for (const l of sOtazkami) {
+          vsetky[l.fileSlug] ??= { t: l.data.title, sk: l.data.nazovSk || "", url: l.url.replace(/^\//, ""), ...otazkyLekcie(l) };
+        }
+        const spolu = sOtazkami.reduce((n, l) => n + vsetky[l.fileSlug].q.length + vsetky[l.fileSlug].x.length, 0);
+        units.push({ id: String(u.id), nazov: u.nazov, lekcie: sOtazkami.map((l) => l.fileSlug), pocet: Math.min(POCET_PRED_PISOMKOU, spolu) });
+      }
+      if (units.length) knihy.push({ id: k.id, nazov: k.nazov, farba: k.farba, units });
+    }
+    return { pocet: POCET_PRED_PISOMKOU, knihy, lekcie: vsetky };
   });
   eleventyConfig.addFilter("bezStranky", (lekcie, url) => lekcie.filter((l) => l.url !== url));
   eleventyConfig.addFilter("head", (arr, n) => (n < 0 ? arr.slice(n) : arr.slice(0, n)));

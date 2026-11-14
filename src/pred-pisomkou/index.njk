@@ -1,0 +1,65 @@
+---
+layout: layouts/base.njk
+title: Pred písomkou
+popis: "Vyber si učebnicu a unit a zopakuj si celý unit na 20 náhodných otázkach."
+skripty: ["pred-pisomkou.js"]
+---
+{% set pp = collections.lekcie | predPisomkou %}
+<div class="pp" data-pp>
+  <section class="pp-vyber" data-vyber aria-labelledby="h-pp">
+    <nav class="omrvinky" aria-label="Kde sa nachádzaš"><a href="/">Domov</a> <span aria-hidden="true">/</span> <span aria-current="page">Pred písomkou</span></nav>
+    <header class="pp-hlava">
+      <div class="stranka-hlava">
+        <h1 id="h-pp" class="stranka-hlava__nadpis">Pred písomkou</h1>
+        <p>Vyber si učebnicu a unit. Dostaneš {{ pp.pocet }} náhodných otázok zo všetkých lekcií unitu – pri každom pokuse iné. Nič sa neukladá ani nikam neposiela.</p>
+      </div>
+      <img src="/assets/img/postavy/koza-cita.png" alt="" width="110" height="135">
+    </header>
+    {% for k in pp.knihy %}
+    <section class="pp-kniha pp-kniha--{{ k.farba }}" aria-labelledby="h-pp-{{ k.id }}">
+      <h2 id="h-pp-{{ k.id }}" class="pp-kniha__nazov">{{ k.nazov }}</h2>
+      <ul class="pp-unity">
+        {% for u in k.units %}
+        <li><a class="pp-unit" href="#{{ k.id }}/{{ u.id }}">
+          <span class="unit__cislo" aria-hidden="true">{% if u.id == "intro" %}Intro{% else %}{{ u.id }}{% endif %}</span>
+          <span class="pp-unit__text"><b><span class="sr">{% if u.id != "intro" %}Unit {{ u.id }}: {% endif %}</span>{{ u.nazov }}</b>
+          <span>{{ u.pocet }} {% if u.pocet >= 5 %}otázok{% else %}otázky{% endif %} · {{ u.lekcie.length }} {% if u.lekcie.length == 1 %}lekcia{% elif u.lekcie.length < 5 %}lekcie{% else %}lekcií{% endif %}</span></span>
+        </a></li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endfor %}
+  </section>
+
+  <section class="pp-test" data-test-obal hidden aria-labelledby="h-pp-test">
+    <nav class="omrvinky" aria-label="Kde sa nachádzaš"><a href="/">Domov</a> <span aria-hidden="true">/</span> <a href="#" data-spat>Pred písomkou</a> <span aria-hidden="true">/</span> <span aria-current="page" data-omrvinka></span></nav>
+    <header class="stranka-hlava">
+      <p class="nadnadpis">Pred písomkou</p>
+      <h1 id="h-pp-test" class="stranka-hlava__nadpis" tabindex="-1" data-nadpis></h1>
+      <p data-uvod></p>
+    </header>
+    <p class="pp-lekcie" data-lekcie></p>
+    <form class="test" data-form novalidate>
+      <div class="test" data-otazky></div>
+      <p class="pp-chyba" data-chyba role="status" aria-live="polite" hidden></p>
+      <div class="test__ovladanie">
+        <button type="submit" class="tlacidlo" data-skontroluj>Skontrolovať odpovede</button>
+        <span class="pp-stav" data-stav></span>
+      </div>
+      <div class="test__vysledok pp-vysledok" role="status" aria-live="polite" data-vysledok hidden>
+        <img src="/assets/img/postavy/koza-oslavuje.png" alt="" width="90" data-obr-dobre hidden>
+        <img src="/assets/img/postavy/koza-premysla.png" alt="" width="90" data-obr-zle hidden>
+        <div>
+          <p data-vysledok-text></p>
+          <div class="pp-zopakuj" data-zopakuj></div>
+        </div>
+      </div>
+      <div class="test__ovladanie" data-po hidden>
+        <button type="button" class="tlacidlo" data-nove>Nové otázky</button>
+        <a class="tlacidlo tlacidlo--tiche" href="#" data-spat>Iný unit</a>
+        <a class="tlacidlo tlacidlo--tiche" href="/" data-na-unit>Lekcie unitu</a>
+      </div>
+    </form>
+  </section>
+</div>
+<script type="application/json" id="data-pred-pisomkou">{{ pp | json | safe }}</script>

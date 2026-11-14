@@ -1,0 +1,30 @@
+{# Tréner Roztrieď. V lekcii: roztried: some-any (údaje v src/_data/roztriedData.json) #}
+{% set rz = roztriedData[roztried] %}
+<section class="blok blok--trener" aria-labelledby="h-roztried">
+  <h2 id="h-roztried" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Tréner: <span lang="en">{{ rz.nadpis }}</span></h2>
+  <p class="blok__uvod">Ku každej vete vyber, čo patrí do medzery. Po každej odpovedi uvidíš, prečo je to tak. {{ 10 if rz.polozky.length > 10 else rz.polozky.length }} viet v kole.</p>
+  <div class="trener roztried" data-roztried="{{ roztried }}" data-lekcia="{{ page.fileSlug }}">
+    <div class="trener__karta rz-karta" data-karta>
+      <div class="trener__hore">
+        <span class="trener__stav" data-stav></span>
+        <span class="trener__seria" data-skore>body 0</span>
+      </div>
+      <p class="rz-veta" data-veta lang="en"></p>
+      <p class="trener__vyznam" data-sk hidden></p>
+      <div class="rz-kose" data-moznosti role="group" aria-label="Možnosti"></div>
+      <p class="trener__spatna" data-spatna role="status" aria-live="polite" hidden></p>
+      <button type="button" class="tlacidlo" data-dalej hidden>Ďalej →</button>
+    </div>
+    <div class="trener__koniec" data-koniec hidden>
+      <img src="/assets/img/postavy/koza-oslavuje.png" alt="" width="100" data-obr-dobre hidden>
+      <img src="/assets/img/postavy/koza-premysla.png" alt="" width="100" data-obr-zle hidden>
+      <div>
+        <p class="trener__vysledok" data-vysledok></p>
+        <div class="trener__chyby" data-chyby></div>
+        <div class="trener__tlacidla"><button type="button" class="tlacidlo" data-dalsie>Ďalšie kolo</button></div>
+      </div>
+    </div>
+  </div>
+  <script type="application/json" id="data-roztried-{{ roztried }}">{{ rz | json | safe }}</script>
+  <script src="/assets/js/roztried.js?v={{ site.verzia }}" defer></script>
+</section>

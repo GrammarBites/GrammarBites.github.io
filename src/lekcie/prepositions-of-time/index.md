@@ -18,6 +18,7 @@ otazkaKozy: "On Monday, in Monday or at Monday?"
 bite:
   tip: "at = presný čas a sviatky, on = dni a dátumy, in = časti dňa, mesiace, ročné obdobia a roky."
   priklad: "at 7 o'clock · on Friday · in July"
+roztried: prepositions-of-time
 test:
   - otazka: "The film starts ___ half past eight."
     moznosti: ["in", "on", "at"]

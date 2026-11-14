@@ -1,0 +1,1170 @@
+{
+ "_info": "Tréner Roztrieď: kľúč = hodnota 'roztried' v lekcii. kose = možnosti (id, nazov, popis, vlozit = čo sa doplní do medzery), polozky: t = veta s ___, k = správny kôš, v = vysvetlenie, o = presný tvar do medzery (nepovinné), sk = preklad/nápoveda (nepovinné).",
+ "some-any": {
+  "nadpis": "some, alebo any?",
+  "kose": [
+   {
+    "id": "some",
+    "nazov": "some",
+    "popis": "oznamovacia veta · ponuka a prosba"
+   },
+   {
+    "id": "any",
+    "nazov": "any",
+    "popis": "zápor a otázka"
+   }
+  ],
+  "polozky": [
+   {
+    "t": "I've got ___ apples.",
+    "k": "some",
+    "v": "Oznamovacia veta → <b>some</b>."
+   },
+   {
+    "t": "There isn't ___ milk in the fridge.",
+    "k": "any",
+    "v": "Zápor (isn't) → <b>any</b>."
+   },
+   {
+    "t": "Are there ___ eggs?",
+    "k": "any",
+    "v": "Otázka → <b>any</b>."
+   },
+   {
+    "t": "We've got ___ bread for breakfast.",
+    "k": "some",
+    "v": "Oznamovacia veta → <b>some</b>."
+   },
+   {
+    "t": "I haven't got ___ brothers.",
+    "k": "any",
+    "v": "Zápor (haven't) → <b>any</b>. Jeden zápor stačí."
+   },
+   {
+    "t": "Would you like ___ tea?",
+    "k": "some",
+    "v": "Ponuka → <b>some</b> aj v otázke. Čakáme odpoveď áno."
+   },
+   {
+    "t": "Can I have ___ water, please?",
+    "k": "some",
+    "v": "Prosba → <b>some</b> aj v otázke."
+   },
+   {
+    "t": "Is there ___ cheese?",
+    "k": "any",
+    "v": "Otázka → <b>any</b>."
+   },
+   {
+    "t": "There are ___ books on the desk.",
+    "k": "some",
+    "v": "Oznamovacia veta → <b>some</b>."
+   },
+   {
+    "t": "She doesn't have ___ pets.",
+    "k": "any",
+    "v": "Zápor (doesn't) → <b>any</b>."
+   },
+   {
+    "t": "Have you got ___ homework today?",
+    "k": "any",
+    "v": "Otázka → <b>any</b>."
+   },
+   {
+    "t": "I'd like ___ chips, please.",
+    "k": "some",
+    "v": "Prosba (I'd like…) → <b>some</b>."
+   },
+   {
+    "t": "There's ___ juice in the bottle.",
+    "k": "some",
+    "v": "Oznamovacia veta → <b>some</b>."
+   },
+   {
+    "t": "We didn't buy ___ bananas.",
+    "k": "any",
+    "v": "Zápor (didn't) → <b>any</b>."
+   },
+   {
+    "t": "Are there ___ biscuits left?",
+    "k": "any",
+    "v": "Otázka → <b>any</b>."
+   },
+   {
+    "t": "My dad bought ___ flowers for Mum.",
+    "k": "some",
+    "v": "Oznamovacia veta → <b>some</b>."
+   }
+  ]
+ },
+ "a-an": {
+  "nadpis": "a, alebo an?",
+  "kose": [
+   {
+    "id": "a",
+    "nazov": "a",
+    "popis": "slovo začína spoluhláskou"
+   },
+   {
+    "id": "an",
+    "nazov": "an",
+    "popis": "slovo začína samohláskou"
+   }
+  ],
+  "polozky": [
+   {
+    "t": "It's ___ apple.",
+    "k": "an",
+    "v": "<b>apple</b> začína samohláskou → <b>an</b>."
+   },
+   {
+    "t": "It's ___ banana.",
+    "k": "a",
+    "v": "<b>banana</b> začína spoluhláskou → <b>a</b>."
+   },
+   {
+    "t": "I've got ___ egg.",
+    "k": "an",
+    "v": "<b>egg</b> začína samohláskou → <b>an</b>."
+   },
+   {
+    "t": "She's eating ___ orange.",
+    "k": "an",
+    "v": "<b>orange</b> začína samohláskou → <b>an</b>."
+   },
+   {
+    "t": "We've got ___ dog.",
+    "k": "a",
+    "v": "<b>dog</b> začína spoluhláskou → <b>a</b>."
+   },
+   {
+    "t": "Look! ___ elephant!",
+    "k": "an",
+    "v": "<b>elephant</b> začína samohláskou → <b>an</b>.",
+    "o": "An"
+   },
+   {
+    "t": "Take ___ umbrella.",
+    "k": "an",
+    "v": "<b>umbrella</b> začína samohláskou → <b>an</b>."
+   },
+   {
+    "t": "They live in ___ big house.",
+    "k": "a",
+    "v": "Rozhoduje slovo hneď za členom: <b>big</b> začína spoluhláskou → <b>a</b>."
+   },
+   {
+    "t": "We waited for ___ hour.",
+    "k": "an",
+    "v": "V slove <b>hour</b> sa h nevyslovuje, znie ako „aur“ → <b>an</b>."
+   },
+   {
+    "t": "My sister goes to ___ university.",
+    "k": "a",
+    "v": "<b>university</b> znie „ju…“ – začína spoluhláskovým zvukom → <b>a</b>."
+   },
+   {
+    "t": "I'd like ___ ice cream.",
+    "k": "an",
+    "v": "<b>ice cream</b> začína samohláskou → <b>an</b>."
+   },
+   {
+    "t": "Can I borrow ___ pencil?",
+    "k": "a",
+    "v": "<b>pencil</b> začína spoluhláskou → <b>a</b>."
+   },
+   {
+    "t": "My grandpa has got ___ old car.",
+    "k": "an",
+    "v": "Rozhoduje slovo hneď za členom: <b>old</b> začína samohláskou → <b>an</b>."
+   },
+   {
+    "t": "It's ___ insect.",
+    "k": "an",
+    "v": "<b>insect</b> začína samohláskou → <b>an</b>."
+   },
+   {
+    "t": "My mum is ___ teacher.",
+    "k": "a",
+    "v": "Pri povolaní dávame a / an. <b>teacher</b> začína spoluhláskou → <b>a</b>."
+   },
+   {
+    "t": "I can see ___ owl in the tree.",
+    "k": "an",
+    "v": "<b>owl</b> začína samohláskou → <b>an</b>."
+   }
+  ]
+ },
+ "a-an-the": {
+  "nadpis": "a, an, alebo the?",
+  "kose": [
+   {
+    "id": "a",
+    "nazov": "a",
+    "popis": "prvýkrát, spoluhláska"
+   },
+   {
+    "id": "an",
+    "nazov": "an",
+    "popis": "prvýkrát, samohláska"
+   },
+   {
+    "id": "the",
+    "nazov": "the",
+    "popis": "už vieme ktorý · jediný · poloha"
+   }
+  ],
+  "polozky": [
+   {
+    "t": "I saw ___ dog in the park.",
+    "k": "a",
+    "v": "Psa spomíname <b>prvýkrát</b> → <b>a</b>."
+   },
+   {
+    "t": "I saw a dog in the park. ___ dog was very big.",
+    "k": "the",
+    "v": "Toho psa už poznáme – spomíname ho <b>znova</b> → <b>the</b>.",
+    "o": "The"
+   },
+   {
+    "t": "Is there ___ hotel near here?",
+    "k": "a",
+    "v": "Po <b>Is there…?</b> ide a / an. <b>hotel</b> začína spoluhláskou → <b>a</b>."
+   },
+   {
+    "t": "There's ___ old church in the town.",
+    "k": "an",
+    "v": "Po <b>There's…</b> ide a / an. <b>old</b> začína samohláskou → <b>an</b>."
+   },
+   {
+    "t": "The bank is on ___ left.",
+    "k": "the",
+    "v": "Pri polohe vždy <b>the</b>: on the left, on the right."
+   },
+   {
+    "t": "The café is on ___ corner.",
+    "k": "the",
+    "v": "Pri polohe vždy <b>the</b>: on the corner."
+   },
+   {
+    "t": "Go along this road till you come to ___ roundabout.",
+    "k": "a",
+    "v": "Kruhový objazd spomíname <b>prvýkrát</b> → <b>a</b>."
+   },
+   {
+    "t": "There's a roundabout. Turn right at ___ roundabout.",
+    "k": "the",
+    "v": "Ten kruhový objazd už poznáme → <b>the</b>."
+   },
+   {
+    "t": "Excuse me, is there ___ bank near here?",
+    "k": "a",
+    "v": "Po <b>Is there…?</b> ide a / an → <b>a bank</b>."
+   },
+   {
+    "t": "Where's ___ police station?",
+    "k": "the",
+    "v": "V meste je len jedna policajná stanica → <b>the</b>."
+   },
+   {
+    "t": "There's ___ café next to the museum.",
+    "k": "a",
+    "v": "Po <b>There's…</b> ide a / an → <b>a café</b>."
+   },
+   {
+    "t": "Meet me at ___ bus station.",
+    "k": "the",
+    "v": "V meste je len jedna autobusová stanica → <b>the</b>."
+   },
+   {
+    "t": "My dad is ___ engineer.",
+    "k": "an",
+    "v": "Pri povolaní dávame a / an. <b>engineer</b> začína samohláskou → <b>an</b>."
+   },
+   {
+    "t": "We walked along ___ river.",
+    "k": "the",
+    "v": "Rieka v meste je len jedna → <b>the</b>."
+   },
+   {
+    "t": "The museum is ___ hour from here.",
+    "k": "an",
+    "v": "V slove <b>hour</b> sa h nevyslovuje → <b>an</b>."
+   },
+   {
+    "t": "She's ___ university student.",
+    "k": "a",
+    "v": "<b>university</b> znie „ju…“ → <b>a</b>."
+   }
+  ]
+ },
+ "ed-ing-adjectives": {
+  "nadpis": "-ed, alebo -ing?",
+  "kose": [
+   {
+    "id": "ed",
+    "nazov": "-ed",
+    "popis": "ako sa cítim",
+    "vlozit": "ed"
+   },
+   {
+    "id": "ing",
+    "nazov": "-ing",
+    "popis": "aké to je · čo pocit spôsobuje",
+    "vlozit": "ing"
+   }
+  ],
+  "polozky": [
+   {
+    "t": "I'm bor___. Let's do something!",
+    "k": "ed",
+    "v": "Opisujem, ako sa <b>cítim</b> → <b>bored</b> (nudím sa)."
+   },
+   {
+    "t": "This film is really bor___.",
+    "k": "ing",
+    "v": "Opisujem, aký je <b>film</b> → <b>boring</b> (nudný)."
+   },
+   {
+    "t": "The trip was very tir___.",
+    "k": "ing",
+    "v": "Opisujem, aký bol <b>výlet</b> → <b>tiring</b> (únavný)."
+   },
+   {
+    "t": "After the trip we were tir___.",
+    "k": "ed",
+    "v": "Opisujem, ako sme sa <b>cítili</b> → <b>tired</b> (unavení)."
+   },
+   {
+    "t": "I'm interest___ in music.",
+    "k": "ed",
+    "v": "Ako sa cítim → <b>interested</b>. Za ním ide <b>in</b>."
+   },
+   {
+    "t": "History is interest___.",
+    "k": "ing",
+    "v": "Opisujem <b>dejepis</b> → <b>interesting</b> (zaujímavý)."
+   },
+   {
+    "t": "The question is confus___.",
+    "k": "ing",
+    "v": "Opisujem <b>otázku</b> → <b>confusing</b> (mätúca)."
+   },
+   {
+    "t": "We're confus___. Can you explain it again?",
+    "k": "ed",
+    "v": "Ako sa <b>cítime</b> → <b>confused</b> (zmätení)."
+   },
+   {
+    "t": "Everyone was shock___ by the news.",
+    "k": "ed",
+    "v": "Ako sa ľudia <b>cítili</b> → <b>shocked</b>."
+   },
+   {
+    "t": "The news was shock___.",
+    "k": "ing",
+    "v": "Opisujem <b>správu</b> → <b>shocking</b> (šokujúca)."
+   },
+   {
+    "t": "I was really excit___ about the holiday.",
+    "k": "ed",
+    "v": "Ako som sa <b>cítil</b> → <b>excited</b> (nadšený)."
+   },
+   {
+    "t": "The match was very excit___!",
+    "k": "ing",
+    "v": "Opisujem <b>zápas</b> → <b>exciting</b> (napínavý)."
+   },
+   {
+    "t": "Spiders are frighten___.",
+    "k": "ing",
+    "v": "Opisujem <b>pavúky</b>, ktoré strach spôsobujú → <b>frightening</b>."
+   },
+   {
+    "t": "My little brother is frighten___ of dogs.",
+    "k": "ed",
+    "v": "Ako sa brat <b>cíti</b> → <b>frightened</b> (vystrašený)."
+   },
+   {
+    "t": "I was so embarrass___ – I fell in front of the class!",
+    "k": "ed",
+    "v": "Ako som sa <b>cítil</b> → <b>embarrassed</b> (bolo mi trápne)."
+   },
+   {
+    "t": "It was an amaz___ concert.",
+    "k": "ing",
+    "v": "Opisujem <b>koncert</b> → <b>amazing</b> (úžasný)."
+   },
+   {
+    "t": "We were amaz___ by the view.",
+    "k": "ed",
+    "v": "Ako sme sa <b>cítili</b> → <b>amazed</b> (ohromení)."
+   }
+  ]
+ },
+ "verb-ing-infinitive": {
+  "nadpis": "-ing, alebo to?",
+  "kose": [
+   {
+    "id": "ing",
+    "nazov": "-ing",
+    "popis": "enjoy, finish, don't mind, imagine…"
+   },
+   {
+    "id": "to",
+    "nazov": "to + sloveso",
+    "popis": "want, decide, promise, need…"
+   }
+  ],
+  "polozky": [
+   {
+    "t": "I enjoy ___ comics. (read)",
+    "k": "ing",
+    "v": "Po <b>enjoy</b> ide -ing → <b>reading</b>.",
+    "o": "reading"
+   },
+   {
+    "t": "Have you finished ___? (eat)",
+    "k": "ing",
+    "v": "Po <b>finish</b> ide -ing → <b>eating</b>.",
+    "o": "eating"
+   },
+   {
+    "t": "I don't mind ___. (wait)",
+    "k": "ing",
+    "v": "Po <b>don't mind</b> ide -ing → <b>waiting</b>.",
+    "o": "waiting"
+   },
+   {
+    "t": "I can't imagine ___ without music. (live)",
+    "k": "ing",
+    "v": "Po <b>imagine</b> ide -ing → <b>living</b>.",
+    "o": "living"
+   },
+   {
+    "t": "My dad finished ___ the car. (wash)",
+    "k": "ing",
+    "v": "Po <b>finish</b> ide -ing → <b>washing</b>.",
+    "o": "washing"
+   },
+   {
+    "t": "Do you enjoy ___? (swim)",
+    "k": "ing",
+    "v": "Po <b>enjoy</b> ide -ing → <b>swimming</b>.",
+    "o": "swimming"
+   },
+   {
+    "t": "I want ___ Japanese. (learn)",
+    "k": "to",
+    "v": "Po <b>want</b> ide to + sloveso → <b>to learn</b>.",
+    "o": "to learn"
+   },
+   {
+    "t": "We decided ___ at home. (stay)",
+    "k": "to",
+    "v": "Po <b>decide</b> ide to + sloveso → <b>to stay</b>.",
+    "o": "to stay"
+   },
+   {
+    "t": "She promised ___ me. (help)",
+    "k": "to",
+    "v": "Po <b>promise</b> ide to + sloveso → <b>to help</b>.",
+    "o": "to help"
+   },
+   {
+    "t": "The dog refused ___ out. (go)",
+    "k": "to",
+    "v": "Po <b>refuse</b> ide to + sloveso → <b>to go</b>.",
+    "o": "to go"
+   },
+   {
+    "t": "He agreed ___ with us. (come)",
+    "k": "to",
+    "v": "Po <b>agree</b> ide to + sloveso → <b>to come</b>.",
+    "o": "to come"
+   },
+   {
+    "t": "Tom offered ___ my bag. (carry)",
+    "k": "to",
+    "v": "Po <b>offer</b> ide to + sloveso → <b>to carry</b>.",
+    "o": "to carry"
+   },
+   {
+    "t": "I need ___ a new pen. (buy)",
+    "k": "to",
+    "v": "Po <b>need</b> ide to + sloveso → <b>to buy</b>.",
+    "o": "to buy"
+   },
+   {
+    "t": "Don't forget ___ Grandma. (call)",
+    "k": "to",
+    "v": "Po <b>forget</b> ide to + sloveso → <b>to call</b>.",
+    "o": "to call"
+   },
+   {
+    "t": "I stopped ___ sweets. (eat)",
+    "k": "ing",
+    "v": "<b>stop + -ing</b> = prestať niečo robiť → <b>eating</b>.",
+    "o": "eating",
+    "sk": "Prestal som jesť sladkosti."
+   },
+   {
+    "t": "On the way home we stopped ___ an ice cream. (buy)",
+    "k": "to",
+    "v": "<b>stop + to</b> = zastaviť sa, aby… → <b>to buy</b>.",
+    "o": "to buy",
+    "sk": "Cestou domov sme zastavili, aby sme si kúpili zmrzlinu."
+   }
+  ]
+ },
+ "say-tell": {
+  "nadpis": "say, alebo tell?",
+  "kose": [
+   {
+    "id": "say",
+    "nazov": "say",
+    "popis": "za slovesom nie je osoba"
+   },
+   {
+    "id": "tell",
+    "nazov": "tell",
+    "popis": "za slovesom je osoba (me, us…)"
+   }
+  ],
+  "polozky": [
+   {
+    "t": "She ___ me a secret.",
+    "k": "tell",
+    "v": "Za slovesom je osoba (<b>me</b>) → <b>tell</b>: told me.",
+    "o": "told"
+   },
+   {
+    "t": "He ___ hello.",
+    "k": "say",
+    "v": "Pevné spojenie <b>say hello</b>.",
+    "o": "said"
+   },
+   {
+    "t": "Can you ___ me your name?",
+    "k": "tell",
+    "v": "Za slovesom je osoba (<b>me</b>) → <b>tell</b>.",
+    "o": "tell"
+   },
+   {
+    "t": "He ___ that he was tired.",
+    "k": "say",
+    "v": "Za slovesom nie je osoba → <b>say</b>: He said (that)…",
+    "o": "said"
+   },
+   {
+    "t": "He ___ us that he was tired.",
+    "k": "tell",
+    "v": "Za slovesom je osoba (<b>us</b>) → <b>tell</b>: He told us (that)…",
+    "o": "told"
+   },
+   {
+    "t": "Please ___ the truth.",
+    "k": "tell",
+    "v": "Pevné spojenie <b>tell the truth</b>.",
+    "o": "tell"
+   },
+   {
+    "t": "Don't ___ lies!",
+    "k": "tell",
+    "v": "Pevné spojenie <b>tell a lie</b>.",
+    "o": "tell"
+   },
+   {
+    "t": "She ___ sorry to me.",
+    "k": "say",
+    "v": "Pevné spojenie <b>say sorry</b>. Komu – cez <b>to</b>: say sorry to me.",
+    "o": "said"
+   },
+   {
+    "t": "My grandpa ___ great stories.",
+    "k": "tell",
+    "v": "Pevné spojenie <b>tell a story</b>.",
+    "o": "tells"
+   },
+   {
+    "t": "What did you ___?",
+    "k": "say",
+    "v": "Za slovesom nie je osoba → <b>say</b>.",
+    "o": "say"
+   },
+   {
+    "t": "___ goodbye to your friends.",
+    "k": "say",
+    "v": "Pevné spojenie <b>say goodbye</b>.",
+    "o": "Say"
+   },
+   {
+    "t": "Can your little brother ___ the time?",
+    "k": "tell",
+    "v": "Pevné spojenie <b>tell the time</b>.",
+    "o": "tell"
+   },
+   {
+    "t": "Did he ___ you about the party?",
+    "k": "tell",
+    "v": "Za slovesom je osoba (<b>you</b>) → <b>tell</b>.",
+    "o": "tell"
+   },
+   {
+    "t": "I always ___ please and thank you.",
+    "k": "say",
+    "v": "Pevné spojenie <b>say please / thank you</b>.",
+    "o": "say"
+   },
+   {
+    "t": "Our teacher ___ a funny joke.",
+    "k": "tell",
+    "v": "Pevné spojenie <b>tell a joke</b>.",
+    "o": "told"
+   },
+   {
+    "t": "She ___ yes!",
+    "k": "say",
+    "v": "Pevné spojenie <b>say yes / no</b>.",
+    "o": "said"
+   }
+  ]
+ },
+ "must-mustnt-dont-have-to": {
+  "nadpis": "must, mustn't, alebo don't have to?",
+  "kose": [
+   {
+    "id": "must",
+    "nazov": "must",
+    "popis": "musíš – povinnosť"
+   },
+   {
+    "id": "mustnt",
+    "nazov": "mustn't",
+    "popis": "nesmieš – zakázané"
+   },
+   {
+    "id": "dont",
+    "nazov": "don't have to",
+    "popis": "nemusíš – nie je to nutné"
+   }
+  ],
+  "polozky": [
+   {
+    "t": "You ___ buy a ticket.",
+    "k": "must",
+    "v": "Povinnosť → <b>must</b>.",
+    "sk": "Musíš si kúpiť lístok."
+   },
+   {
+    "t": "You ___ feed the animals.",
+    "k": "mustnt",
+    "v": "Je to zakázané → <b>mustn't</b>.",
+    "sk": "Nesmieš kŕmiť zvieratá."
+   },
+   {
+    "t": "Children ___ pay.",
+    "k": "dont",
+    "v": "Nie je to nutné → <b>don't have to</b>.",
+    "sk": "Deti nemusia platiť."
+   },
+   {
+    "t": "You ___ come if you're busy.",
+    "k": "dont",
+    "v": "Nie je to nutné → <b>don't have to</b>.",
+    "sk": "Nemusíš prísť, ak nemáš čas."
+   },
+   {
+    "t": "You ___ use your phone in the test.",
+    "k": "mustnt",
+    "v": "Je to zakázané → <b>mustn't</b>.",
+    "sk": "V teste nesmieš používať mobil."
+   },
+   {
+    "t": "We ___ wear a uniform at our school.",
+    "k": "dont",
+    "v": "Nie je to nutné → <b>don't have to</b>.",
+    "sk": "V našej škole nemusíme nosiť uniformu."
+   },
+   {
+    "t": "You ___ be quiet in the library.",
+    "k": "must",
+    "v": "Povinnosť → <b>must</b>.",
+    "sk": "V knižnici musíš byť ticho."
+   },
+   {
+    "t": "You ___ run in the corridor.",
+    "k": "mustnt",
+    "v": "Je to zakázané → <b>mustn't</b>.",
+    "sk": "Na chodbe nesmieš behať."
+   },
+   {
+    "t": "I ___ get up early tomorrow – it's Saturday!",
+    "k": "dont",
+    "v": "Nie je to nutné → <b>don't have to</b>.",
+    "sk": "Zajtra nemusím skoro vstávať – je sobota!"
+   },
+   {
+    "t": "You ___ do your homework.",
+    "k": "must",
+    "v": "Povinnosť → <b>must</b>.",
+    "sk": "Musíš si urobiť úlohu."
+   },
+   {
+    "t": "You ___ touch that – it's hot!",
+    "k": "mustnt",
+    "v": "Je to zakázané (nebezpečné) → <b>mustn't</b>.",
+    "sk": "Nesmieš sa toho dotknúť – je to horúce!"
+   },
+   {
+    "t": "You ___ bring food – lunch is free.",
+    "k": "dont",
+    "v": "Nie je to nutné → <b>don't have to</b>.",
+    "sk": "Nemusíš si nosiť jedlo – obed je zadarmo."
+   },
+   {
+    "t": "You ___ wear a helmet on your bike.",
+    "k": "must",
+    "v": "Povinnosť → <b>must</b>.",
+    "sk": "Na bicykli musíš mať prilbu."
+   },
+   {
+    "t": "You ___ cross the road when the light is red.",
+    "k": "mustnt",
+    "v": "Je to zakázané → <b>mustn't</b>.",
+    "sk": "Nesmieš prechádzať cez cestu na červenú."
+   },
+   {
+    "t": "You ___ help me – I can do it myself.",
+    "k": "dont",
+    "v": "Nie je to nutné → <b>don't have to</b>.",
+    "sk": "Nemusíš mi pomáhať – zvládnem to sám."
+   }
+  ]
+ },
+ "stative-verbs": {
+  "nadpis": "Simple, alebo continuous?",
+  "kose": [
+   {
+    "id": "simple",
+    "nazov": "present simple",
+    "popis": "zvyčajne · stavové slovesá"
+   },
+   {
+    "id": "cont",
+    "nazov": "present continuous",
+    "popis": "práve teraz – činnosť"
+   }
+  ],
+  "polozky": [
+   {
+    "t": "I ___ the answer! (know)",
+    "k": "simple",
+    "v": "<b>know</b> je stavové sloveso – nikdy nie I'm knowing.",
+    "o": "know"
+   },
+   {
+    "t": "Look! It ___. (snow)",
+    "k": "cont",
+    "v": "<b>Look!</b> = práve teraz, činnosť → present continuous.",
+    "o": "'s snowing"
+   },
+   {
+    "t": "Right now I ___ your help. (need)",
+    "k": "simple",
+    "v": "<b>need</b> je stavové sloveso – aj pri right now ostáva present simple.",
+    "o": "need"
+   },
+   {
+    "t": "She usually ___ to school. (walk)",
+    "k": "simple",
+    "v": "<b>usually</b> = zvyčajne → present simple.",
+    "o": "walks"
+   },
+   {
+    "t": "Today she ___ by bus. (go)",
+    "k": "cont",
+    "v": "<b>Today</b> – dnes je to inak ako zvyčajne → present continuous.",
+    "o": "'s going"
+   },
+   {
+    "t": "I ___ this song. (like)",
+    "k": "simple",
+    "v": "<b>like</b> je stavové sloveso (city) → present simple.",
+    "o": "like"
+   },
+   {
+    "t": "We ___ a test at the moment. (write)",
+    "k": "cont",
+    "v": "<b>at the moment</b> = práve teraz → present continuous.",
+    "o": "'re writing"
+   },
+   {
+    "t": "This bag ___ to me. (belong)",
+    "k": "simple",
+    "v": "<b>belong</b> je stavové sloveso (vlastníctvo) → present simple.",
+    "o": "belongs"
+   },
+   {
+    "t": "I ___ what you mean. (understand)",
+    "k": "simple",
+    "v": "<b>understand</b> je stavové sloveso (myseľ) → present simple.",
+    "o": "understand"
+   },
+   {
+    "t": "Shh! The baby ___. (sleep)",
+    "k": "cont",
+    "v": "<b>Shh!</b> – deje sa to práve teraz → present continuous.",
+    "o": "'s sleeping"
+   },
+   {
+    "t": "He ___ football every Saturday. (play)",
+    "k": "simple",
+    "v": "<b>every Saturday</b> = pravidelne → present simple.",
+    "o": "plays"
+   },
+   {
+    "t": "I ___ a new phone. (want)",
+    "k": "simple",
+    "v": "<b>want</b> je stavové sloveso → present simple.",
+    "o": "want"
+   },
+   {
+    "t": "My brother ___ a computer game at the moment. (play)",
+    "k": "cont",
+    "v": "<b>at the moment</b> = práve teraz → present continuous.",
+    "o": "'s playing"
+   },
+   {
+    "t": "I ___ it's a good idea. (think)",
+    "k": "simple",
+    "v": "<b>think</b> = mať názor je stavové sloveso → present simple.",
+    "o": "think"
+   },
+   {
+    "t": "Listen! Somebody ___ at the door. (knock)",
+    "k": "cont",
+    "v": "<b>Listen!</b> = práve teraz → present continuous.",
+    "o": "'s knocking"
+   },
+   {
+    "t": "We ___ Maths on Fridays. (have)",
+    "k": "simple",
+    "v": "<b>on Fridays</b> = pravidelne → present simple.",
+    "o": "have"
+   }
+  ]
+ },
+ "prepositions-of-time": {
+  "nadpis": "at, on, in – alebo nič?",
+  "kose": [
+   {
+    "id": "at",
+    "nazov": "at",
+    "popis": "presný čas · sviatky · night"
+   },
+   {
+    "id": "on",
+    "nazov": "on",
+    "popis": "dni a dátumy"
+   },
+   {
+    "id": "in",
+    "nazov": "in",
+    "popis": "dlhšie obdobia"
+   },
+   {
+    "id": "nic",
+    "nazov": "bez predložky",
+    "popis": "next, last, this, every…",
+    "vlozit": ""
+   }
+  ],
+  "polozky": [
+   {
+    "t": "I get up ___ seven o'clock.",
+    "k": "at",
+    "v": "Presný čas → <b>at</b>."
+   },
+   {
+    "t": "We have English ___ Tuesdays.",
+    "k": "on",
+    "v": "Dni → <b>on</b>."
+   },
+   {
+    "t": "It often snows ___ winter.",
+    "k": "in",
+    "v": "Ročné obdobie (dlhšie obdobie) → <b>in</b>."
+   },
+   {
+    "t": "We visit our grandparents ___ Christmas.",
+    "k": "at",
+    "v": "Sviatky ako celok → <b>at</b> Christmas."
+   },
+   {
+    "t": "It's my birthday ___ 8 April.",
+    "k": "on",
+    "v": "Dátum → <b>on</b>."
+   },
+   {
+    "t": "I was born ___ 2012.",
+    "k": "in",
+    "v": "Rok → <b>in</b>."
+   },
+   {
+    "t": "I do my homework ___ the evening.",
+    "k": "in",
+    "v": "Časť dňa → <b>in</b> the evening."
+   },
+   {
+    "t": "I can't sleep ___ night.",
+    "k": "at",
+    "v": "Výnimka: <b>at night</b> (ale in the morning, in the evening)."
+   },
+   {
+    "t": "We're going to the cinema ___ Saturday morning.",
+    "k": "on",
+    "v": "Konkrétny deň + časť dňa → <b>on</b> Saturday morning."
+   },
+   {
+    "t": "See you ___ next Monday!",
+    "k": "nic",
+    "v": "Pred <b>next</b> nedávame predložku → next Monday."
+   },
+   {
+    "t": "I went to London ___ last summer.",
+    "k": "nic",
+    "v": "Pred <b>last</b> nedávame predložku → last summer."
+   },
+   {
+    "t": "My birthday is ___ March.",
+    "k": "in",
+    "v": "Mesiac → <b>in</b>."
+   },
+   {
+    "t": "We open our presents ___ Christmas Day.",
+    "k": "on",
+    "v": "Jeden konkrétny deň → <b>on</b> Christmas Day."
+   },
+   {
+    "t": "What do you do ___ the weekend?",
+    "k": "at",
+    "v": "<b>at</b> the weekend."
+   },
+   {
+    "t": "I play tennis ___ every Friday.",
+    "k": "nic",
+    "v": "Pred <b>every</b> nedávame predložku → every Friday."
+   },
+   {
+    "t": "The film starts ___ 10.45.",
+    "k": "at",
+    "v": "Presný čas → <b>at</b>."
+   },
+   {
+    "t": "I'll call you ___ tomorrow.",
+    "k": "nic",
+    "v": "Pred <b>tomorrow</b> nedávame predložku."
+   },
+   {
+    "t": "We moved here ___ 2020.",
+    "k": "in",
+    "v": "Rok → <b>in</b>."
+   }
+  ]
+ },
+ "prepositions-travel": {
+  "nadpis": "by, on, alebo in?",
+  "kose": [
+   {
+    "id": "by",
+    "nazov": "by",
+    "popis": "čím cestujem – bez člena"
+   },
+   {
+    "id": "on",
+    "nazov": "on",
+    "popis": "v autobuse, vlaku, lietadle · na bicykli · pešo"
+   },
+   {
+    "id": "in",
+    "nazov": "in",
+    "popis": "v aute, v taxíku"
+   }
+  ],
+  "polozky": [
+   {
+    "t": "I go to school ___ bus.",
+    "k": "by",
+    "v": "Dopravný prostriedok (čím) → <b>by</b> bez člena: by bus."
+   },
+   {
+    "t": "I'm ___ the bus now.",
+    "k": "on",
+    "v": "V konkrétnom autobuse → <b>on</b> the bus."
+   },
+   {
+    "t": "She left her bag ___ the car.",
+    "k": "in",
+    "v": "Auto → <b>in</b> the car."
+   },
+   {
+    "t": "I go to school ___ foot.",
+    "k": "on",
+    "v": "Výnimka: pešo = <b>on foot</b>, nie by foot."
+   },
+   {
+    "t": "We went to Italy ___ plane.",
+    "k": "by",
+    "v": "Dopravný prostriedok (čím) → <b>by</b> plane."
+   },
+   {
+    "t": "Hurry up! Get ___ the train!",
+    "k": "on",
+    "v": "Nastúpiť do vlaku → get <b>on</b> the train."
+   },
+   {
+    "t": "Get ___ the car, please.",
+    "k": "in",
+    "v": "Nasadnúť do auta → get <b>in</b> the car."
+   },
+   {
+    "t": "There were a lot of people ___ the plane.",
+    "k": "on",
+    "v": "V lietadle → <b>on</b> the plane."
+   },
+   {
+    "t": "My dad goes to work ___ car.",
+    "k": "by",
+    "v": "Dopravný prostriedok (čím) → <b>by</b> car, bez člena."
+   },
+   {
+    "t": "We sat ___ a taxi for an hour.",
+    "k": "in",
+    "v": "Taxík → <b>in</b> a taxi."
+   },
+   {
+    "t": "They came ___ train.",
+    "k": "by",
+    "v": "Dopravný prostriedok (čím) → <b>by</b> train."
+   },
+   {
+    "t": "I left my phone ___ the bus!",
+    "k": "on",
+    "v": "V autobuse → <b>on</b> the bus."
+   },
+   {
+    "t": "He goes everywhere ___ his bike.",
+    "k": "on",
+    "v": "Na bicykli → <b>on</b> my / his bike."
+   },
+   {
+    "t": "Let's travel ___ boat.",
+    "k": "by",
+    "v": "Dopravný prostriedok (čím) → <b>by</b> boat."
+   },
+   {
+    "t": "Is your sister ___ the car?",
+    "k": "in",
+    "v": "Auto → <b>in</b> the car."
+   }
+  ]
+ },
+ "for-since": {
+  "nadpis": "for, alebo since?",
+  "kose": [
+   {
+    "id": "for",
+    "nazov": "for",
+    "popis": "ako dlho? (dĺžka času)"
+   },
+   {
+    "id": "since",
+    "nazov": "since",
+    "popis": "odkedy? (začiatok)"
+   }
+  ],
+  "polozky": [
+   {
+    "t": "I've lived here ___ five years.",
+    "k": "for",
+    "v": "Päť rokov je <b>dĺžka</b> času → <b>for</b>."
+   },
+   {
+    "t": "I've lived here ___ 2015.",
+    "k": "since",
+    "v": "Rok 2015 je <b>začiatok</b> → <b>since</b>."
+   },
+   {
+    "t": "She's been ill ___ Monday.",
+    "k": "since",
+    "v": "Pondelok je <b>začiatok</b> → <b>since</b>."
+   },
+   {
+    "t": "We've known each other ___ a long time.",
+    "k": "for",
+    "v": "Dlhý čas je <b>dĺžka</b> → <b>for</b>."
+   },
+   {
+    "t": "He's had his dog ___ two months.",
+    "k": "for",
+    "v": "Dva mesiace sú <b>dĺžka</b> → <b>for</b>."
+   },
+   {
+    "t": "I've been at this school ___ September.",
+    "k": "since",
+    "v": "September je <b>začiatok</b> → <b>since</b>."
+   },
+   {
+    "t": "They've been married ___ 20 years.",
+    "k": "for",
+    "v": "20 rokov je <b>dĺžka</b> → <b>for</b>."
+   },
+   {
+    "t": "I haven't seen him ___ last summer.",
+    "k": "since",
+    "v": "Minulé leto je <b>začiatok</b> → <b>since</b>."
+   },
+   {
+    "t": "We've waited ___ an hour!",
+    "k": "for",
+    "v": "Hodina je <b>dĺžka</b> → <b>for</b>."
+   },
+   {
+    "t": "It has rained ___ yesterday.",
+    "k": "since",
+    "v": "Včera je <b>začiatok</b> → <b>since</b>."
+   },
+   {
+    "t": "My mum has worked there ___ 2019.",
+    "k": "since",
+    "v": "Rok 2019 je <b>začiatok</b> → <b>since</b>."
+   },
+   {
+    "t": "I've learned English ___ six years.",
+    "k": "for",
+    "v": "Šesť rokov je <b>dĺžka</b> → <b>for</b>."
+   },
+   {
+    "t": "She hasn't eaten anything ___ breakfast.",
+    "k": "since",
+    "v": "Raňajky sú <b>začiatok</b> → <b>since</b>."
+   },
+   {
+    "t": "We've had this car ___ ages.",
+    "k": "for",
+    "v": "Celú večnosť (ages) je <b>dĺžka</b> → <b>for</b>."
+   },
+   {
+    "t": "I've been here ___ 8 o'clock.",
+    "k": "since",
+    "v": "8 hodín je <b>začiatok</b> → <b>since</b>."
+   },
+   {
+    "t": "He's played the guitar ___ three weeks.",
+    "k": "for",
+    "v": "Tri týždne sú <b>dĺžka</b> → <b>for</b>."
+   }
+  ]
+ }
+}

@@ -20,6 +20,7 @@ otazkaKozy: "Is there a bank near here?"
 bite:
   tip: "Keď niečo spomíname prvýkrát, použijeme a / an. Keď o tom hovoríme znova, the."
   priklad: "Go along till you come to a roundabout. Turn right at the roundabout."
+roztried: a-an-the
 test:
   - otazka: "Is there ___ hotel near here?"
     moznosti: ["a", "an", "the"]

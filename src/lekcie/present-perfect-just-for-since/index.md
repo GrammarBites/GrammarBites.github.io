@@ -21,6 +21,7 @@ otazkaKozy: "I've just eaten your homework!"
 bite:
   tip: "just = práve (medzi have a 3. tvar). for = ako dlho (dĺžka), since = odkedy (začiatok). Bývam tu 5 rokov = I've lived here for five years."
   priklad: "I've just woken up. · I've lived here for five years / since 2021."
+roztried: for-since
 test:
   - otazka: "Where's Tom? – He ___ gone home."
     moznosti: ["has just", "just has", "is just"]

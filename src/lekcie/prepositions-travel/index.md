@@ -18,6 +18,7 @@ otazkaKozy: "I go to school on foot!"
 bite:
   tip: "by bus / train / car (bez the), ale on foot. On the bus / train, in the car. From … to … Arrive in (mesto, krajina), arrive at (stanica, letisko), nikdy arrive to."
   priklad: "I go to school by bus. · The train goes from Žilina to Košice. · We arrived in Paris at 6."
+roztried: prepositions-travel
 test:
   - otazka: "My dad goes to work ___ car."
     moznosti: ["by", "on", "with"]

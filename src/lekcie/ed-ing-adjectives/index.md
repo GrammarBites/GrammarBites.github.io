@@ -18,6 +18,7 @@ otazkaKozy: "I'm boring…? No! I'm bored!"
 bite:
   tip: "-ed = ako sa cítim (I'm bored). -ing = aké je to, čo ten pocit spôsobuje (The film is boring)."
   priklad: "I'm bored. · The film is boring. · I'm interested in history. History is interesting."
+roztried: ed-ing-adjectives
 test:
   - otazka: "This book is really ___ . I can't stop reading."
     moznosti: ["interested", "interesting"]

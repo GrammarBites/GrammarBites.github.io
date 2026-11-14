@@ -18,6 +18,7 @@ otazkaKozy: "Have you got any grass?"
 bite:
   tip: "some = v oznamovacej vete, any = v zápore a v otázke. Obe s množným číslom a nepočítateľnými podstatnými menami. Pri ponuke aj v otázke some."
   priklad: "I've got some apples. · I haven't got any milk. · Would you like some tea?"
+roztried: some-any
 test:
   - otazka: "There are ___ biscuits on the table."
     moznosti: ["some", "any", "a"]

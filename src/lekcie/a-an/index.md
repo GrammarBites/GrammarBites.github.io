@@ -19,6 +19,7 @@ otazkaKozy: "Can I have an apple?"
 bite:
   tip: "a / an len pred jednou vecou (počítateľné, jednotné číslo). An pred samohláskou – rozhoduje výslovnosť."
   priklad: "a banana · an apple · a university · an hour · I like bananas (bez člena)"
+roztried: a-an
 test:
   - otazka: "I've got ___ egg for breakfast."
     moznosti: ["a", "an", "–"]

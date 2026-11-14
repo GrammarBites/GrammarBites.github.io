@@ -3,7 +3,7 @@
   const bezDiakritiky = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
   document.querySelectorAll("[data-tabulka-slovies]").forEach((box) => {
     const riadky = [...box.querySelectorAll("tbody tr")];
-    riadky.forEach((r) => { r._t = bezDiakritiky(r.dataset.hladat); });
+    riadky.forEach((r) => { r._t = bezDiakritiky(r.dataset.hladat); r._t5 = bezDiakritiky(r.dataset.hladat5 || r.dataset.hladat); });
     const hladaj = box.querySelector("[data-hladaj]"), stav = box.querySelector("[data-stav]");
     const nic = box.querySelector("[data-nic]"), odkry = box.querySelector("[data-odkry]");
     const cipy = [...box.querySelectorAll("[data-zakry]")];
@@ -20,9 +20,14 @@
     let riadkyRoc = riadky.length;
     function vyberRocnik(r) {
       rocnik = r;
+      box.classList.toggle("ts--bez-pp", r === "5");
+      if (r === "5" && zakryte.includes("pp")) return zakry(zakryte.filter((x) => x !== "pp")), ulozRoc();
       rocCipy.forEach((c) => c.setAttribute("aria-pressed", c.dataset.rocnik === r ? "true" : "false"));
-      try { localStorage.setItem("gb-tabulka-rocnik", r); } catch (e) {}
-      filtruj();
+      ulozRoc(); filtruj();
+    }
+    function ulozRoc() {
+      rocCipy.forEach((c) => c.setAttribute("aria-pressed", c.dataset.rocnik === rocnik ? "true" : "false"));
+      try { localStorage.setItem("gb-tabulka-rocnik", rocnik); } catch (e) {}
     }
     rocCipy.forEach((c) => c.addEventListener("click", () => vyberRocnik(c.dataset.rocnik)));
     function filtruj() {
@@ -30,7 +35,8 @@
       let n = 0;
       let vsetkych = 0, mimo = 0;
       riadky.forEach((r) => {
-        const roc = vRocniku(r), hit = !q || r._t.includes(q), ok = roc && hit;
+        // v 5. ročníku sa 3. tvar neučí – nehľadáme v ňom
+        const roc = vRocniku(r), hit = !q || (rocnik === "5" ? r._t5 : r._t).includes(q), ok = roc && hit;
         r.hidden = !ok; if (ok) n++; if (roc) vsetkych++; if (hit && !roc) mimo++;
       });
       riadkyRoc = vsetkych;
@@ -40,7 +46,7 @@
     }
     function pisStav(n, q) {
       const odkryte = box.querySelectorAll("td.je-zakryta.je-odkryta").length;
-      const spolu = box.querySelectorAll("tr:not([hidden]) td.je-zakryta").length;
+      const spolu = box.querySelectorAll("tr:not([hidden]) td.je-zakryta").length - (rocnik === "5" ? box.querySelectorAll("tr:not([hidden]) td.je-zakryta[data-st=pp]").length : 0);
       let t = q ? `Nájdené: ${n} z ${riadkyRoc}.` : `Spolu ${riadkyRoc} slovies.`;
       if (zakryte.length) t += ` Odkryté: ${Math.min(odkryte, spolu)} / ${spolu} – najprv si tvar povedz nahlas, potom ťukni.`;
       stav.textContent = t;
@@ -80,7 +86,8 @@
     let ulozenyRoc = "";
     try { ulozenyRoc = localStorage.getItem("gb-tabulka-rocnik") || ""; } catch (e) {}
     if (rocCipy.some((c) => c.dataset.rocnik === ulozenyRoc)) rocnik = ulozenyRoc;
+    box.classList.toggle("ts--bez-pp", rocnik === "5");
     rocCipy.forEach((c) => c.setAttribute("aria-pressed", c.dataset.rocnik === rocnik ? "true" : "false"));
-    zakry(ulozene.split(",").filter((k) => KODY.includes(k)));
+    zakry(ulozene.split(",").filter((k) => KODY.includes(k) && !(rocnik === "5" && k === "pp")));
   });
 })();

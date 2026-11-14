@@ -42,13 +42,13 @@
         <thead><tr>
           <th scope="col">základný tvar<br><span>infinitive</span></th>
           <th scope="col">minulý čas<br><span>past simple</span></th>
-          <th scope="col">3. tvar<br><span>past participle</span></th>
+          <th scope="col" data-st="pp">3. tvar<br><span>past participle</span></th>
           <th scope="col">význam</th>
         </tr></thead>
         <tbody>
         {% for s in zoznam %}
           {% set p = (s.pSkola or s.p) if jeSkola else s.p %}{% set pp = (s.ppSkola or s.pp) if jeSkola else s.pp %}
-          <tr data-hladat="{{ s.z }} {{ s.p }} {{ s.pp }} {{ s.sk }}"{% if s.r5 %} data-r5{% endif %}{% if s.skola %} data-skola{% endif %}{% if not jeSkola and s.skola %} class="je-skola"{% endif %}>
+          <tr data-hladat="{{ s.z }} {{ s.p }} {{ s.pp }} {{ s.sk }}" data-hladat5="{{ s.z }} {{ s.p }} {{ s.sk }}"{% if s.r5 %} data-r5{% endif %}{% if s.skola %} data-skola{% endif %}{% if not jeSkola and s.skola %} class="je-skola"{% endif %}>
             <td data-st="z" lang="en"><b>{{ s.z }}</b>{% if not jeSkola and s.skola %} <span class="ts__skola" title="je aj v školskom zozname">★</span>{% endif %}</td>
             <td data-st="p" lang="en">{{ p }}</td>
             <td data-st="pp" lang="en">{{ pp }}</td>

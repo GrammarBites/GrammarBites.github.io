@@ -21,6 +21,7 @@ otazkaKozy: "Have you ever eaten a book?"
 bite:
   tip: "Pri polovici nepravidelných slovies je 3. tvar rovnaký ako 2.: buy – bought – bought. Stačí vedieť minulý čas!"
   priklad: "I have bought · I have seen · I have written"
+opravChybu: true
 test:
   - otazka: "I have never ___ a horse."
     moznosti: ["rode", "ridden", "ride"]

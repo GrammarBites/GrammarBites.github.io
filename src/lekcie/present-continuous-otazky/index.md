@@ -21,6 +21,7 @@ bite:
   tip: "V otázke ide am / is / are pred podmet. Pri -ing nikdy nepoužívaj do / does."
   priklad: "He is eating. → Is he eating? – Yes, he is."
 pisanie: present-continuous-otazky
+opravChybu: true
 test:
   - otazka: "___ she reading a magazine? – Yes, she is."
     moznosti: ["Does", "Is", "Are"]

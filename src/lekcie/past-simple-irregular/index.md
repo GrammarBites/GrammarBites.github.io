@@ -20,6 +20,7 @@ otazkaKozy: "I ate a book yesterday!"
 bite:
   tip: "Nepravidelné slovesá nemajú -ed. Uč sa ich po rodinách: buy → bought, bring → brought, think → thought."
   priklad: "I went to school. · She bought a cake. · We sang a song."
+opravChybu: true
 test:
   - otazka: "Yesterday I ___ to the cinema."
     moznosti: ["goed", "went", "go"]

@@ -26,17 +26,23 @@
     const $ = (s) => root.querySelector(s);
     const el = {
       karta: $("[data-karta]"), stav: $("[data-stav]"), skore: $("[data-skore]"), vstup: $("[data-vstup]"), apos: $("[data-apos]"),
-      vysledok: $("[data-vysledok]"), over: $("[data-over]"), ok: $("[data-ok]"), dalej: $("[data-dalej]"),
+      pozn: $("[data-pozn]"), vysledok: $("[data-vysledok]"), over: $("[data-over]"), ok: $("[data-ok]"), dalej: $("[data-dalej]"),
       koniec: $("[data-koniec]"), zaver: $("[data-zaver]"), dalsie: $("[data-dalsie]"),
     };
     let kolo = [], i = 0, body = 0, hotovo = false;
 
     function noveKolo() {
       const mix = zamiesaj(ulohy);
-      const sChybou = mix.slice(0, Math.min(POCET - 1, mix.length - 1));
-      // veta bez chyby = správna verzia úlohy, ktorá v tomto kole nie je, aby nikdy neprezradila inú vetu
-      const zvysok = mix.slice(sChybou.length);
-      const spravna = zvysok.length ? { ...zvysok[0], bezChyby: true, a: zvysok[0].s } : null;
+      // vety s chybou: každá chybná veta v kole najviac raz (niektoré riadky tabuľky majú rovnakú vetu s rôznou nápovedou)
+      const videne = new Set(), sChybou = [];
+      for (const u of mix) {
+        if (sChybou.length >= POCET - 1) break;
+        if (!videne.has(u.a)) { videne.add(u.a); sChybou.push(u); }
+      }
+      // veta bez chyby = správna verzia úlohy, ktorá v tomto kole nie je; bez nápovedy a nikdy dvojička vety s chybou v kole
+      const spravneVKole = new Set(sChybou.map((u) => norm(u.s)));
+      const kandidat = mix.find((u) => !sChybou.includes(u) && !u.n && !spravneVKole.has(norm(u.s)));
+      const spravna = kandidat ? { ...kandidat, bezChyby: true, a: kandidat.s, n: "" } : null;
       kolo = zamiesaj(spravna ? [...sChybou, spravna] : sChybou);
       i = 0; body = 0;
       el.koniec.hidden = true;
@@ -50,6 +56,8 @@
       el.stav.textContent = `Veta ${i + 1} z ${kolo.length}`;
       el.skore.textContent = `body ${body}`;
       el.vstup.value = u.a;
+      el.pozn.hidden = !u.n;
+      el.pozn.textContent = u.n ? "Nápoveda: " + u.n : "";
       el.vstup.disabled = false;
       el.vysledok.hidden = true;
       el.vysledok.className = "trener__spatna oc-vysledok";
@@ -75,7 +83,7 @@
       const u = kolo[i];
       const text = apos(el.vstup.value).trim();
       if (!text) { el.vstup.focus(); return; }
-      const zhoda = norm(text) === norm(u.s);
+      const zhoda = [u.s, ...(u.d || [])].some((x) => norm(text) === norm(x));
       if (u.bezChyby) {
         // veta bola správna: žiak ju buď nechal, alebo „opravil“
         return zhoda ? ukazVysledok(true, "Presne, táto veta bola v poriadku.", u) : ukazVysledok(false, "Táto veta bola správna – opravovať sa v nej nič nemalo.", u);

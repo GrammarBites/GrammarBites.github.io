@@ -19,6 +19,7 @@ otazkaKozy: "I'll eat when I find grass!"
 bite:
   tip: "If = podmienka (ak sa splní), when = čas (kedy sa to stane). Za when, as soon as, before, after, while je present simple – nie will."
   priklad: "I'll call you when I arrive. · As soon as it stops raining, we'll go out."
+opravChybu: true
 test:
   - otazka: "I'll call you as soon as I ___ home."
     moznosti: ["will get", "get", "got"]

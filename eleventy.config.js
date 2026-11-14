@@ -39,20 +39,30 @@ const opravChybuData = JSON.parse(fs.readFileSync("src/_data/opravChybuData.json
 // z: správna veta s <b> (zvýraznená oprava), b: opravená časť, v: vysvetlenie (nepovinné) }.
 const odTagov = (h) => String(h).replace(/<[^>]*>/g, "").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;|&#x27;/g, "'").replace(/\s+/g, " ").trim();
 const escH = (t) => String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-function ulohaZRiadku(lava, prava, v) {
-  if (!/<s>/.test(lava) || !/<b>/.test(prava) || / \/ /.test(odTagov(prava))) return null;
-  const a = odTagov(lava), s = odTagov(prava);
-  const b = (prava.match(/<b>(.*?)<\/b>/) || [, ""])[1];
-  const z = escH(s).replace(escH(odTagov(b)), `<b>${escH(odTagov(b))}</b>`);
-  return a && s && a !== s ? { a, s, z, b: odTagov(b), ...(v ? { v } : {}) } : null;
+function ulohaZRiadku(lava, prava) {
+  if (!/<s>/.test(lava) || !/<b>/.test(prava)) return null;
+  let a = odTagov(lava), n = "";
+  // slovenská poznámka v zátvorke na konci chybnej vety, napr. „(je ešte tam)“, sa nezobrazí vo vete, ale ako nápoveda
+  const poz = a.match(/\s*\(([^)]*)\)\s*$/);
+  if (poz) { n = poz[1]; a = a.slice(0, poz.index).trim(); }
+  if (!/[.?!]$/.test(a)) return null; // len celé vety, nie útržky ako „since two years“
+  const casti = prava.split(" / "); // dve správne verzie: prvá je hlavná, ostatné sa tiež uznajú
+  const prva = odTagov(casti[0]);
+  const b = odTagov((casti[0].match(/<b>(.*?)<\/b>/) || [, ""])[1]);
+  const volitelne = /\([^)]*\)/.test(prva); // napr. „She has (got) a brother.“ – uznáme s aj bez (got)
+  const s = volitelne ? prva.replace(/\s*\([^)]*\)/g, "") : prva;
+  const d = casti.slice(1).map(odTagov);
+  if (volitelne) d.push(prva.replace(/\(([^)]*)\)/g, "$1"));
+  const z = escH(prva).replace(escH(b), `<b>${escH(b)}</b>`);
+  return a && s && a !== s ? { a, s, z, b, ...(n ? { n } : {}), ...(d.length ? { d } : {}) } : null;
 }
 function ulohaZVety(sk) {
-  // sk = [chybná veta, správna veta so {zvýraznenou} opravou, vysvetlenie]
-  const [a, so, v] = sk;
+  // sk = [chybná veta, správna veta so {zvýraznenou} opravou, vysvetlenie, nápoveda (nepovinná)]
+  const [a, so, v, n] = sk;
   const s = so.replace(/[{}]/g, "");
   const b = (so.match(/\{(.*?)\}/) || [, ""])[1];
   const z = escH(so).replace(/\{(.*?)\}/, "<b>$1</b>");
-  return { a, s, z, b, ...(v ? { v } : {}) };
+  return { a, s, z, b, ...(n ? { n } : {}), ...(v ? { v } : {}) };
 }
 
 // PREVIEW=1 → odkazy na priečinky dostanú "index.html" (náhľad mimo servera)

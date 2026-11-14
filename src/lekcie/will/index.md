@@ -18,6 +18,7 @@ otazkaKozy: "Will goats go to school in 2050?"
 bite:
   tip: "Po will ide vždy základný tvar slovesa, bez -s: she will go, nie she will goes."
   priklad: "I think I'll be a vet. · I'll help you. · It won't rain."
+opravChybu: true
 test:
   - otazka: "I think it ___ sunny tomorrow."
     moznosti: ["will be", "wills be", "will is"]

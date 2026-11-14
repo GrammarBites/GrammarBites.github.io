@@ -18,6 +18,7 @@ otazkaKozy: "Are you free on Saturday?"
 bite:
   tip: "Keď je plán už dohodnutý (máš ho v diári), použi present continuous a pridaj, kedy to bude."
   priklad: "I'm playing football on Friday evening. · What are you doing at the weekend?"
+opravChybu: true
 test:
   - otazka: "I ___ my grandma on Sunday. It's in my diary."
     moznosti: ["visit", "am visiting", "visited"]

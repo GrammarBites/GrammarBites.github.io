@@ -20,6 +20,7 @@ otazkaKozy: "What are you doing?"
 bite:
   tip: "Present simple = pravidelne a fakty (every day, usually). Present continuous = práve teraz (now, at the moment, Look!)."
   priklad: "Tom usually walks to school. But today he's going by bus."
+opravChybu: true
 test:
   - otazka: "My sister ___ the piano every afternoon."
     moznosti: ["plays", "is playing", "play"]

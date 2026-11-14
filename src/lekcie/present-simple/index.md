@@ -21,6 +21,7 @@ bite:
   tip: "Pri he / she / it pridávame k slovesu -s. Po doesn't už -s nepíšeme."
   priklad: "She lives in a flat. → She doesn't live in a house."
 pisanie: present-simple
+opravChybu: true
 test:
   - otazka: "My brother ___ football every Saturday."
     moznosti: ["play", "plays", "playes"]

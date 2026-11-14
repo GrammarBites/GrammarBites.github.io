@@ -20,6 +20,7 @@ otazkaKozy: "I've eaten… yesterday?"
 bite:
   tip: "Nepovieš kedy (ever, never, just, recently) → present perfect. Povieš kedy (yesterday, last week, ago, in 2020) → past simple."
   priklad: "I've been to Italy. · I went there last summer. · When did you arrive?"
+opravChybu: true
 test:
   - otazka: "I ___ my grandparents last weekend."
     moznosti: ["have visited", "visited", "has visited"]

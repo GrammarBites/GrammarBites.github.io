@@ -18,6 +18,7 @@ otazkaKozy: "Where has my farmer gone?"
 bite:
   tip: "has been to = bol tam a vrátil sa (je späť). has gone to = išiel tam a ešte je tam (nie je tu). Pri skúsenostiach (ever, never) vždy been."
   priklad: "I've been to the bakery. · Mum's gone to the post office. · Have you ever been to London?"
+opravChybu: true
 test:
   - otazka: "Where's Peter? – He's ___ to the dentist. He'll be back at five."
     moznosti: ["been", "gone", "go"]

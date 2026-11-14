@@ -18,6 +18,7 @@ otazkaKozy: "I couldn't sleep. I had to eat!"
 bite:
   tip: "can → could (vedel, mohol), must / have to → had to (musel), don't have to → didn't have to (nemusel)."
   priklad: "I could swim when I was five. · I had to get up at six. · I didn't have to go to school."
+opravChybu: true
 test:
   - otazka: "When I was three, I ___ read."
     moznosti: ["can't", "couldn't", "didn't can"]

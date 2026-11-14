@@ -18,6 +18,7 @@ otazkaKozy: "What are you going to do tomorrow?"
 bite:
   tip: "will = názor alebo rozhodnutie hneď teraz, be going to = zámer alebo predpoveď podľa toho, čo vidím, present continuous = dohodnuté s časom."
   priklad: "I think it will rain. · Look at those clouds! It's going to rain. · I'm meeting Tom at 4 tomorrow."
+opravChybu: true
 test:
   - otazka: "I've decided. I ___ learn to play the drums."
     moznosti: ["will", "'m going to", "'m learning"]

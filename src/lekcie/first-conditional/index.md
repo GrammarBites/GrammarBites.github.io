@@ -20,6 +20,7 @@ bite:
   tip: "Za if nikdy nedávaj will – v časti s if je vždy prítomný čas."
   priklad: "If it rains, we'll stay at home. (nie: If it will rain…)"
 pisanie: first-conditional
+opravChybu: true
 test:
   - otazka: "If you ___ hard, you'll pass the test."
     moznosti: ["will study", "study", "studied"]

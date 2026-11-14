@@ -20,6 +20,7 @@ bite:
   tip: "Frekvenčná príslovka stojí pred plnovýznamovým slovesom, ale za slovesom be."
   priklad: "She always smiles. → She is always happy."
 pisanie: adverbs-of-frequency
+opravChybu: true
 test:
   - otazka: "Which sentence is correct?"
     moznosti: ["I go always to school by bus.", "I always go to school by bus.", "Always I go to school by bus."]

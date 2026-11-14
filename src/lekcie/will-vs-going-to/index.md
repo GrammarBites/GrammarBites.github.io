@@ -19,6 +19,7 @@ otazkaKozy: "Will or BE going to? I don't know!"
 bite:
   tip: "BE going to = plán (rozhodol som sa skôr) – nezabudni na am / is / are. will = rozhodnutie v tej chvíli alebo môj názor (I think it will…)."
   priklad: "I am going to learn Spanish. · The phone's ringing – I'll answer it! · I think it will be fun."
+opravChybu: true
 test:
   - otazka: "I've decided. I ___ buy a new bike this summer."
     moznosti: ["'ll", "'m going to", "going to"]

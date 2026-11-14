@@ -17,6 +17,7 @@ otazkaKozy: "Are you a goat too?"
 bite:
   tip: "I → am, he / she / it → is, we / you / they → are. Zápor: be + not (isn't, aren't). Otázka: am / is / are na začiatok. Krátka odpoveď: Yes, I am. – No, I'm not."
   priklad: "I'm twelve. · He isn't tall. · Are you hungry? – Yes, I am."
+opravChybu: true
 test:
   - otazka: "My brother ___ in the garden."
     moznosti: ["am", "is", "are"]

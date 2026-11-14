@@ -20,6 +20,7 @@ bite:
   tip: "I / he / she / it → was. We / you / they → were. Zápor wasn't / weren't, otázka Was…? / Were…?"
   priklad: "I was at home. · We weren't at school. · Was it fun? – Yes, it was."
 pisanie: past-simple-be
+opravChybu: true
 test:
   - otazka: "My parents ___ in Italy last summer."
     moznosti: ["was", "were", "are"]

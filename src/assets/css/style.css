@@ -1033,3 +1033,4 @@ button.pc-karta:focus-visible { outline: 3px solid var(--yellow); outline-offset
 @media (prefers-reduced-motion: reduce) { .vyklad-skryty__sipka { transition: none; } }
 .blok--vyklad, .vyklad-skryty, .zosit, .zosit > * { min-width: 0; }
 .zosit { overflow-wrap: break-word; }
+.oc-pozn { padding: 4px 12px; background: var(--yellow-wash); border-radius: 8px; font-weight: 700; color: var(--ink-2); }

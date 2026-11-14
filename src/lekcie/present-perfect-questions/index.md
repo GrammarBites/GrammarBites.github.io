@@ -20,6 +20,7 @@ otazkaKozy: "Have you ever seen a goat on a bike?"
 bite:
   tip: "Otázka: Have / Has + podmet + (ever) + 3. tvar? Odpoveď: Yes, I have. / No, I haven't. Never = nikdy, bez not."
   priklad: "Have you ever eaten sushi? – Yes, I have. · I've never seen a dolphin."
+opravChybu: true
 test:
   - otazka: "___ your brother ever been to Italy?"
     moznosti: ["Have", "Has", "Did"]

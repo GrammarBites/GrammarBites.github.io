@@ -2,15 +2,1028 @@
   "_info": "Nájdi a oprav chybu: vlastné vety k lekcii. Kľúč = názov priečinka lekcie. vety = [chybná veta, správna veta s {opravou} v zložených zátvorkách, vysvetlenie po slovensky (nepovinné)]. K nim sa automaticky pridajú riadky z tabuľky „Časté chyby“ v lekcii. V jednej vete má byť jedna chyba.",
   "present-continuous": {
     "vety": [
-      ["Look! The goat eats a book!", "Look! The goat {is eating} a book!", "Look! = práve teraz. Po slovensky povieme „žerie“, ale v angličtine tu patrí <b>is eating</b>, nie present simple."],
-      ["They are play football now.", "They are {playing} football now.", "Po <b>am / is / are</b> ide sloveso s koncovkou <b>-ing</b>: playing."],
-      ["I'm not watch TV.", "I'm not {watching} TV.", "Aj v zápore ostáva <b>-ing</b>: I'm not watching."],
-      ["She is runing in the park.", "She is {running} in the park.", "Pri <b>run</b> sa zdvojuje spoluhláska: run → ru<b>nn</b>ing."],
-      ["We are writeing a test.", "We are {writing} a test.", "Pri <b>write</b> sa pred -ing vypustí <b>e</b>: writing."],
-      ["The children is sleeping.", "The children {are} sleeping.", "<b>The children</b> = they (viac detí), preto <b>are</b>."],
-      ["He is have a shower.", "He is {having} a shower.", "Po <b>is</b> ide sloveso s -ing: have → <b>having</b> (e vypadne)."],
-      ["It isn't rain now.", "It isn't {raining} now.", "Aj po <b>isn't</b> ide sloveso s -ing: raining."],
-      ["Mia and Tom aren't listen to music.", "Mia and Tom aren't {listening} to music.", "Po <b>aren't</b> ide sloveso s -ing: listening."]
+      [
+        "Look! The goat eats a book!",
+        "Look! The goat {is eating} a book!",
+        "Look! = práve teraz. Po slovensky povieme „žerie“, ale v angličtine tu patrí <b>is eating</b>, nie present simple."
+      ],
+      [
+        "They are play football now.",
+        "They are {playing} football now.",
+        "Po <b>am / is / are</b> ide sloveso s koncovkou <b>-ing</b>: playing."
+      ],
+      [
+        "I'm not watch TV.",
+        "I'm not {watching} TV.",
+        "Aj v zápore ostáva <b>-ing</b>: I'm not watching."
+      ],
+      [
+        "She is runing in the park.",
+        "She is {running} in the park.",
+        "Pri <b>run</b> sa zdvojuje spoluhláska: run → ru<b>nn</b>ing."
+      ],
+      [
+        "We are writeing a test.",
+        "We are {writing} a test.",
+        "Pri <b>write</b> sa pred -ing vypustí <b>e</b>: writing."
+      ],
+      [
+        "The children is sleeping.",
+        "The children {are} sleeping.",
+        "<b>The children</b> = they (viac detí), preto <b>are</b>."
+      ],
+      [
+        "He is have a shower.",
+        "He is {having} a shower.",
+        "Po <b>is</b> ide sloveso s -ing: have → <b>having</b> (e vypadne)."
+      ],
+      [
+        "It isn't rain now.",
+        "It isn't {raining} now.",
+        "Aj po <b>isn't</b> ide sloveso s -ing: raining."
+      ],
+      [
+        "Mia and Tom aren't listen to music.",
+        "Mia and Tom aren't {listening} to music.",
+        "Po <b>aren't</b> ide sloveso s -ing: listening."
+      ]
+    ]
+  },
+  "adverbs-of-frequency": {
+    "vety": [
+      [
+        "We go often to the cinema.",
+        "We {often go} to the cinema.",
+        "Príslovka frekvencie ide <b>pred</b> obyčajné sloveso: <b>often go</b>."
+      ],
+      [
+        "My brother never is late.",
+        "My brother {is never} late.",
+        "Pri slovese <b>be</b> ide príslovka <b>za</b> ním: <b>is never</b>."
+      ],
+      [
+        "She plays sometimes chess.",
+        "She {sometimes plays} chess.",
+        "Príslovka patrí pred sloveso: <b>sometimes plays</b>."
+      ],
+      [
+        "Do you play often tennis?",
+        "Do you {often play} tennis?",
+        "V otázke ide príslovka pred základné sloveso: <b>Do you often play…?</b>"
+      ],
+      [
+        "Tom doesn't usually plays video games.",
+        "Tom doesn't usually {play} video games.",
+        "Po <b>doesn't</b> ide základný tvar bez -s: <b>play</b>."
+      ],
+      [
+        "Always I get up at seven.",
+        "{I always get} up at seven.",
+        "<b>Always</b> nedávame na začiatok vety. Ide pred sloveso: <b>I always get</b>."
+      ]
+    ]
+  },
+  "be-going-to": {
+    "vety": [
+      [
+        "We are going to playing football.",
+        "We are going to {play} football.",
+        "Po <b>going to</b> ide základný tvar slovesa, bez -ing."
+      ],
+      [
+        "She's going watch a film.",
+        "She's going {to watch} a film.",
+        "Za <b>going</b> patrí <b>to</b>: going to + sloveso."
+      ],
+      [
+        "I not going to sleep.",
+        "{I'm not} going to sleep.",
+        "V zápore dáme <b>not</b> za sloveso BE: <b>I'm not going to</b>."
+      ],
+      [
+        "What you are going to do?",
+        "What {are you} going to do?",
+        "V otázke ide BE pred podmet: <b>What are you going to do?</b>"
+      ],
+      [
+        "Tom and Ben is going to play.",
+        "Tom and Ben {are} going to play.",
+        "<b>Tom and Ben</b> = they, preto <b>are</b>."
+      ],
+      [
+        "He's go to buy a bike.",
+        "He's {going to} buy a bike.",
+        "Plán vyjadrujeme <b>going to</b>, nie <i>go to</i>."
+      ]
+    ]
+  },
+  "been-gone": {
+    "vety": [
+      [
+        "My sister has gone to Spain three times.",
+        "My sister has {been} to Spain three times.",
+        "Už sa vrátila a je to skúsenosť (trikrát) = <b>been</b>."
+      ],
+      [
+        "Have you ever been in Prague?",
+        "Have you ever been {to} Prague?",
+        "Po <b>been</b> ide <b>to</b>: been <b>to</b> Prague."
+      ],
+      [
+        "Where are the children? They've been to the playground.",
+        "Where are the children? They've {gone} to the playground.",
+        "Sú tam ešte teraz (nie sú doma) = <b>gone</b>."
+      ],
+      [
+        "I've never gone to Italy.",
+        "I've never {been} to Italy.",
+        "Skúsenosť „bol som tam“ = <b>been</b>."
+      ],
+      [
+        "Mia isn't at home. She has been to the dentist.",
+        "Mia isn't at home. She has {gone} to the dentist.",
+        "Nie je doma, je ešte u zubára = <b>gone</b>."
+      ]
+    ]
+  },
+  "first-conditional": {
+    "vety": [
+      [
+        "If it rains tomorrow, we don't go to the park.",
+        "If it rains tomorrow, we {won't go} to the park.",
+        "Vo výsledku ide <b>will / won't</b>: <b>won't go</b>."
+      ],
+      [
+        "What will you do if you will miss the bus?",
+        "What will you do if you {miss} the bus?",
+        "Za <b>if</b> nikdy nedávame will: <b>if you miss</b>."
+      ],
+      [
+        "If she studies hard, she will passes the test.",
+        "If she studies hard, she will {pass} the test.",
+        "Po <b>will</b> ide základný tvar bez -s: <b>will pass</b>."
+      ],
+      [
+        "I'll go out unless it doesn't rain.",
+        "I'll go out unless it {rains}.",
+        "<b>Unless</b> = if not. Už obsahuje zápor, preto je sloveso kladné: <b>unless it rains</b>."
+      ],
+      [
+        "If you don't hurry, you'll to miss the bus.",
+        "If you don't hurry, you'll {miss} the bus.",
+        "Po <b>'ll</b> (will) ide sloveso bez <i>to</i>."
+      ],
+      [
+        "If I'll have time, I'll call you.",
+        "If {I have} time, I'll call you.",
+        "V časti s <b>if</b> je prítomný čas, nie will: <b>If I have</b>."
+      ]
+    ]
+  },
+  "future-arrangements": {
+    "vety": [
+      [
+        "We play tennis with Mia on Saturday.",
+        "We {are playing} tennis with Mia on Saturday.",
+        "Dohodnutý plán = <b>present continuous</b>: <b>are playing</b>."
+      ],
+      [
+        "What time you are meeting Tom?",
+        "What time {are you} meeting Tom?",
+        "V otázke ide <b>are</b> pred podmet: <b>What time are you meeting…?</b>"
+      ],
+      [
+        "He is coming not tonight.",
+        "He {isn't coming} tonight.",
+        "Zápor: <b>isn't</b> pred slovesom s -ing: <b>He isn't coming</b>."
+      ],
+      [
+        "They aren't come to the party.",
+        "They aren't {coming} to the party.",
+        "Po <b>aren't</b> ide sloveso s <b>-ing</b>: coming."
+      ],
+      [
+        "I'm go to the dentist on Monday.",
+        "I'm {going} to the dentist on Monday.",
+        "Po <b>I'm</b> ide sloveso s -ing: <b>going</b>."
+      ],
+      [
+        "Shall we going to the park?",
+        "Shall we {go} to the park?",
+        "Po <b>shall</b> ide základný tvar slovesa: <b>Shall we go…?</b>"
+      ]
+    ]
+  },
+  "future-time-clauses": {
+    "vety": [
+      [
+        "I'll wait here until you will come back.",
+        "I'll wait here until you {come} back.",
+        "Po <b>until</b> nedávame will: <b>until you come</b>."
+      ],
+      [
+        "As soon as I will get the money, I'll buy a bike.",
+        "As soon as I {get} the money, I'll buy a bike.",
+        "Po <b>as soon as</b> ide prítomný čas: <b>I get</b>."
+      ],
+      [
+        "When she will be ready, we'll leave.",
+        "When she {is} ready, we'll leave.",
+        "Po <b>when</b> ide prítomný čas: <b>When she is ready</b>."
+      ],
+      [
+        "After we'll have dinner, we'll watch TV.",
+        "After {we have} dinner, we'll watch TV.",
+        "Po <b>after</b> ide prítomný čas: <b>After we have</b>."
+      ],
+      [
+        "Before we start, I tell you the rules.",
+        "Before we start, {I'll tell} you the rules.",
+        "V hlavnej vete hovoríme o budúcnosti: <b>I'll tell</b>.",
+        "o chvíľu"
+      ]
+    ]
+  },
+  "past-continuous": {
+    "vety": [
+      [
+        "She was runing in the park.",
+        "She was {running} in the park.",
+        "Pri <b>run</b> sa pred -ing zdvojí spoluhláska: ru<b>nn</b>ing."
+      ],
+      [
+        "What were you do at nine o'clock?",
+        "What were you {doing} at nine o'clock?",
+        "Po <b>were you</b> ide sloveso s -ing: <b>doing</b>."
+      ],
+      [
+        "I were reading a book.",
+        "I {was} reading a book.",
+        "K <b>I</b> patrí <b>was</b>, nie were."
+      ],
+      [
+        "My sister were cooking dinner.",
+        "My sister {was} cooking dinner.",
+        "<b>My sister</b> = she, preto <b>was</b>."
+      ],
+      [
+        "Were you working? – Yes, I wasn't.",
+        "Were you working? – Yes, I {was}.",
+        "Kladná odpoveď: <b>Yes, I was.</b> Záporná: No, I wasn't."
+      ],
+      [
+        "He was writeing a letter.",
+        "He was {writing} a letter.",
+        "Pri <b>write</b> sa pred -ing vypustí <b>e</b>: writing."
+      ]
+    ]
+  },
+  "past-modals": {
+    "vety": [
+      [
+        "When I was five, I can swim.",
+        "When I was five, I {could} swim.",
+        "V minulosti: <b>can → could</b>."
+      ],
+      [
+        "I had to went to school yesterday.",
+        "I had to {go} to school yesterday.",
+        "Po <b>had to</b> ide základný tvar slovesa: <b>go</b>."
+      ],
+      [
+        "She didn't had to wake up early.",
+        "She didn't {have} to wake up early.",
+        "Po <b>didn't</b> ide základný tvar: <b>didn't have to</b>."
+      ],
+      [
+        "He couldn't came to the party.",
+        "He couldn't {come} to the party.",
+        "Po <b>couldn't</b> ide základný tvar: <b>come</b>."
+      ],
+      [
+        "Yesterday I must go to the dentist.",
+        "Yesterday I {had to} go to the dentist.",
+        "<b>must</b> nemá minulý čas. V minulosti použijeme <b>had to</b>."
+      ],
+      [
+        "Did you could swim at six?",
+        "{Could you} swim at six?",
+        "Otázka s <b>could</b> sa tvorí bez <i>did</i>: <b>Could you…?</b>"
+      ]
+    ]
+  },
+  "past-participle": {
+    "vety": [
+      [
+        "I have broke my phone.",
+        "I have {broken} my phone.",
+        "3. tvar od <b>break</b> je <b>broken</b>."
+      ],
+      [
+        "She has spoke to the teacher.",
+        "She has {spoken} to the teacher.",
+        "3. tvar od <b>speak</b> je <b>spoken</b>."
+      ],
+      [
+        "We have drank all the juice.",
+        "We have {drunk} all the juice.",
+        "3. tvar od <b>drink</b> je <b>drunk</b> (drink – drank – drunk)."
+      ],
+      [
+        "Have you ever flew in a plane?",
+        "Have you ever {flown} in a plane?",
+        "3. tvar od <b>fly</b> je <b>flown</b> (fly – flew – flown)."
+      ],
+      [
+        "He has took my pen.",
+        "He has {taken} my pen.",
+        "3. tvar od <b>take</b> je <b>taken</b> (take – took – taken)."
+      ],
+      [
+        "She has never sang on stage.",
+        "She has never {sung} on stage.",
+        "3. tvar od <b>sing</b> je <b>sung</b> (sing – sang – sung)."
+      ]
+    ]
+  },
+  "past-simple-be": {
+    "vety": [
+      [
+        "The film were boring.",
+        "The film {was} boring.",
+        "<b>The film</b> = it, preto <b>was</b>."
+      ],
+      [
+        "I weren't at school on Monday.",
+        "I {wasn't} at school on Monday.",
+        "K <b>I</b> patrí <b>wasn't</b>."
+      ],
+      [
+        "Was she happy? – Yes, she wasn't.",
+        "Was she happy? – Yes, she {was}.",
+        "Kladná odpoveď: <b>Yes, she was.</b>"
+      ],
+      [
+        "There was two dogs in the garden.",
+        "There {were} two dogs in the garden.",
+        "Dva psy (množné číslo) = <b>There were</b>."
+      ],
+      [
+        "Where you were last night?",
+        "Where {were you} last night?",
+        "V otázke ide <b>were</b> pred podmet: <b>Where were you…?</b>"
+      ],
+      [
+        "Was they at home?",
+        "{Were they} at home?",
+        "K <b>they</b> patrí <b>were</b>."
+      ]
+    ]
+  },
+  "past-simple-irregular": {
+    "vety": [
+      [
+        "We eated pizza for dinner.",
+        "We {ate} pizza for dinner.",
+        "<b>eat</b> je nepravidelné: eat – <b>ate</b>."
+      ],
+      [
+        "He taked my bag.",
+        "He {took} my bag.",
+        "<b>take</b> je nepravidelné: take – <b>took</b>."
+      ],
+      [
+        "I didn't went to school.",
+        "I didn't {go} to school.",
+        "Po <b>didn't</b> ide základný tvar: <b>go</b>."
+      ],
+      [
+        "She comed home late.",
+        "She {came} home late.",
+        "<b>come</b> je nepravidelné: come – <b>came</b>."
+      ],
+      [
+        "Did he gave you a present?",
+        "Did he {give} you a present?",
+        "Po <b>Did</b> ide základný tvar: <b>give</b>."
+      ],
+      [
+        "They maked a cake.",
+        "They {made} a cake.",
+        "<b>make</b> je nepravidelné: make – <b>made</b>."
+      ],
+      [
+        "Yesterday we see a funny film.",
+        "Yesterday we {saw} a funny film.",
+        "<b>Yesterday</b> = minulosť, preto <b>saw</b> (see – saw)."
+      ]
+    ]
+  },
+  "past-simple-irregular-3": {
+    "vety": [
+      [
+        "She writed a long email.",
+        "She {wrote} a long email.",
+        "write – <b>wrote</b>."
+      ],
+      [
+        "We swimmed in the sea.",
+        "We {swam} in the sea.",
+        "swim – <b>swam</b>."
+      ],
+      [
+        "He winned the race.",
+        "He {won} the race.",
+        "win – <b>won</b>."
+      ],
+      [
+        "They runned very fast.",
+        "They {ran} very fast.",
+        "run – <b>ran</b>."
+      ],
+      [
+        "Did you drove to Žilina?",
+        "Did you {drive} to Žilina?",
+        "Po <b>Did</b> ide základný tvar: <b>drive</b>."
+      ],
+      [
+        "I meeted her at school.",
+        "I {met} her at school.",
+        "meet – <b>met</b>."
+      ],
+      [
+        "I didn't wrote the answer.",
+        "I didn't {write} the answer.",
+        "Po <b>didn't</b> ide základný tvar: <b>write</b>."
+      ]
+    ]
+  },
+  "past-simple-regular": {
+    "vety": [
+      [
+        "I didn't played football yesterday.",
+        "I didn't {play} football yesterday.",
+        "Po <b>didn't</b> ide základný tvar: <b>play</b>."
+      ],
+      [
+        "She danceed at the party.",
+        "She {danced} at the party.",
+        "Ak sloveso končí na <b>-e</b>, pridáme len <b>-d</b>: dance → danced."
+      ],
+      [
+        "We planed a trip.",
+        "We {planned} a trip.",
+        "Krátke sloveso s jednou samohláskou zdvojí spoluhlásku: plan → pla<b>nn</b>ed."
+      ],
+      [
+        "He cryed all night.",
+        "He {cried} all night.",
+        "Spoluhláska + <b>y</b> → <b>-ied</b>: cry → cried."
+      ],
+      [
+        "They visit us last Sunday.",
+        "They {visited} us last Sunday.",
+        "<b>Last Sunday</b> = minulosť, preto <b>visited</b>."
+      ],
+      [
+        "She opend the door.",
+        "She {opened} the door.",
+        "Pri <b>-ed</b> nevynechaj <b>e</b>: open → opened."
+      ]
+    ]
+  },
+  "past-simple-vs-past-continuous": {
+    "vety": [
+      [
+        "While I was walk home, it started to rain.",
+        "While I was {walking} home, it started to rain.",
+        "Po <b>was</b> ide sloveso s -ing: walking."
+      ],
+      [
+        "They was playing when the rain started.",
+        "They {were} playing when the rain started.",
+        "K <b>they</b> patrí <b>were</b>."
+      ],
+      [
+        "Was you sleeping when I called?",
+        "{Were you} sleeping when I called?",
+        "K <b>you</b> patrí <b>were</b>."
+      ],
+      [
+        "He didn't was listening to me.",
+        "He {wasn't} listening to me.",
+        "Zápor v past continuous: <b>wasn't</b> + sloveso s -ing."
+      ],
+      [
+        "I was seeing a UFO yesterday.",
+        "I {saw} a UFO yesterday.",
+        "Krátky dej, ktorý netrvá dlho = <b>past simple</b>: saw."
+      ]
+    ]
+  },
+  "past-simple": {
+    "vety": [
+      [
+        "She not liked the film.",
+        "She {didn't like} the film.",
+        "Zápor v minulom čase: <b>didn't</b> + základný tvar: <b>didn't like</b>."
+      ],
+      [
+        "I didn't saw him yesterday.",
+        "I didn't {see} him yesterday.",
+        "Po <b>didn't</b> ide základný tvar: <b>see</b>."
+      ],
+      [
+        "What did you bought?",
+        "What did you {buy}?",
+        "Po <b>did you</b> ide základný tvar: <b>buy</b>."
+      ],
+      [
+        "We play football yesterday.",
+        "We {played} football yesterday.",
+        "<b>Yesterday</b> = minulosť: <b>played</b>."
+      ],
+      [
+        "Did she went home?",
+        "Did she {go} home?",
+        "Po <b>Did</b> ide základný tvar: <b>go</b>."
+      ],
+      [
+        "Yesterday I am at the cinema.",
+        "Yesterday I {was} at the cinema.",
+        "<b>Yesterday</b> = minulosť: <b>was</b>."
+      ]
+    ]
+  },
+  "present-continuous-otazky": {
+    "vety": [
+      [
+        "What you are doing?",
+        "What {are you} doing?",
+        "V otázke ide <b>are</b> pred podmet: <b>What are you doing?</b>"
+      ],
+      [
+        "Is she play tennis?",
+        "Is she {playing} tennis?",
+        "Po <b>is she</b> ide sloveso s -ing: <b>playing</b>."
+      ],
+      [
+        "Are you listen to me?",
+        "Are you {listening} to me?",
+        "Po <b>are you</b> ide sloveso s -ing: <b>listening</b>."
+      ],
+      [
+        "Is it raining? – Yes, it rains.",
+        "Is it raining? – Yes, it {is}.",
+        "Krátka odpoveď: <b>Yes, it is.</b>"
+      ],
+      [
+        "Am I disturb you?",
+        "Am I {disturbing} you?",
+        "Po <b>Am I</b> ide sloveso s -ing: <b>disturbing</b>."
+      ],
+      [
+        "Where are you go?",
+        "Where are you {going}?",
+        "Po <b>are you</b> ide sloveso s -ing: <b>going</b>."
+      ]
+    ]
+  },
+  "present-perfect-just-for-since": {
+    "vety": [
+      [
+        "I haven't seen him since three weeks.",
+        "I haven't seen him {for} three weeks.",
+        "Tri týždne = <b>dĺžka</b> času → <b>for</b>."
+      ],
+      [
+        "They've played tennis for Monday.",
+        "They've played tennis {since} Monday.",
+        "Pondelok = <b>začiatok</b> → <b>since</b>."
+      ],
+      [
+        "We have just arrive.",
+        "We have just {arrived}.",
+        "Po <b>have</b> ide 3. tvar slovesa: arrived."
+      ],
+      [
+        "I have yet not finished.",
+        "{I haven't finished yet}.",
+        "<b>Yet</b> ide na koniec vety: <b>I haven't finished yet.</b>"
+      ],
+      [
+        "How long do you know Mia?",
+        "How long {have you known} Mia?",
+        "Trvá to doteraz = <b>present perfect</b>: <b>How long have you known…?</b>"
+      ],
+      [
+        "He has just went home.",
+        "He has just {gone} home.",
+        "3. tvar od <b>go</b> je <b>gone</b>."
+      ],
+      [
+        "She has lived here since ten years.",
+        "She has lived here {for} ten years.",
+        "Desať rokov = <b>dĺžka</b> času → <b>for</b>."
+      ]
+    ]
+  },
+  "present-perfect-questions": {
+    "vety": [
+      [
+        "Has you ever been to London?",
+        "{Have you} ever been to London?",
+        "K <b>you</b> patrí <b>have</b>."
+      ],
+      [
+        "Have they ever win a prize?",
+        "Have they ever {won} a prize?",
+        "Po <b>have</b> ide 3. tvar: win – won – <b>won</b>."
+      ],
+      [
+        "She has never not seen snow.",
+        "She has {never seen} snow.",
+        "Stačí jeden zápor: <b>never</b>. Dva zápory nedávame."
+      ],
+      [
+        "Have you ever seen a whale? – No, I haven't never.",
+        "Have you ever seen a whale? – No, I {haven't}.",
+        "Stačí jeden zápor: <b>No, I haven't.</b>"
+      ],
+      [
+        "Ever have you eaten sushi?",
+        "{Have you ever} eaten sushi?",
+        "Poradie: <b>Have you ever + 3. tvar</b>."
+      ],
+      [
+        "Have you ever swam in the sea?",
+        "Have you ever {swum} in the sea?",
+        "3. tvar od <b>swim</b> je <b>swum</b> (swim – swam – swum)."
+      ]
+    ]
+  },
+  "present-perfect-vs-past-simple": {
+    "vety": [
+      [
+        "We have visited the museum last week.",
+        "We {visited} the museum last week.",
+        "<b>Last week</b> = konkrétny čas → <b>past simple</b>: visited."
+      ],
+      [
+        "Have you seen him yesterday?",
+        "{Did you see} him yesterday?",
+        "<b>Yesterday</b> = konkrétny čas → <b>past simple</b>: Did you see…?"
+      ],
+      [
+        "I didn't see this film yet.",
+        "I {haven't seen} this film yet.",
+        "<b>Yet</b> = doteraz, bez konkrétneho času → <b>present perfect</b>: haven't seen."
+      ],
+      [
+        "She has visited Rome in 2019.",
+        "She {visited} Rome in 2019.",
+        "<b>In 2019</b> = konkrétny čas → past simple."
+      ],
+      [
+        "Did you finish your homework yet?",
+        "{Have you finished} your homework yet?",
+        "<b>Yet</b> = doteraz → <b>present perfect</b>: Have you finished…?"
+      ],
+      [
+        "I have lost my phone last night.",
+        "I {lost} my phone last night.",
+        "<b>Last night</b> = konkrétny čas → past simple."
+      ]
+    ]
+  },
+  "present-perfect": {
+    "vety": [
+      [
+        "I have finish my homework.",
+        "I have {finished} my homework.",
+        "Po <b>have</b> ide 3. tvar: finished."
+      ],
+      [
+        "They has arrived.",
+        "They {have} arrived.",
+        "K <b>they</b> patrí <b>have</b>."
+      ],
+      [
+        "She haven't called me.",
+        "She {hasn't} called me.",
+        "K <b>she</b> patrí <b>hasn't</b>."
+      ],
+      [
+        "My brother has broke his leg.",
+        "My brother has {broken} his leg.",
+        "3. tvar od <b>break</b> je <b>broken</b>."
+      ],
+      [
+        "I have already did my homework.",
+        "I have already {done} my homework.",
+        "3. tvar od <b>do</b> je <b>done</b>."
+      ],
+      [
+        "Have she tidied her room?",
+        "{Has} she tidied her room?",
+        "K <b>she</b> patrí <b>has</b>."
+      ]
+    ]
+  },
+  "present-simple-be": {
+    "vety": [
+      [
+        "She am my sister.",
+        "She {is} my sister.",
+        "K <b>she</b> patrí <b>is</b>."
+      ],
+      [
+        "We is friends.",
+        "We {are} friends.",
+        "K <b>we</b> patrí <b>are</b>."
+      ],
+      [
+        "They isn't at home.",
+        "They {aren't} at home.",
+        "K <b>they</b> patrí <b>aren't</b>."
+      ],
+      [
+        "Where is my keys?",
+        "Where {are} my keys?",
+        "<b>Keys</b> je množné číslo: <b>are</b>."
+      ],
+      [
+        "How old you are?",
+        "How old {are you}?",
+        "BE ide pred podmet: <b>How old are you?</b>"
+      ],
+      [
+        "I am have a dog.",
+        "I {have} a dog.",
+        "Nepoužívame <b>am</b> a <b>have</b> spolu: <b>I have a dog.</b>"
+      ],
+      [
+        "Is you tired?",
+        "{Are you} tired?",
+        "K <b>you</b> patrí <b>are</b>."
+      ]
+    ]
+  },
+  "present-simple-otazky": {
+    "vety": [
+      [
+        "Do she like music?",
+        "{Does she} like music?",
+        "K <b>she</b> patrí <b>does</b>."
+      ],
+      [
+        "Where do he live?",
+        "Where {does} he live?",
+        "K <b>he</b> patrí <b>does</b>."
+      ],
+      [
+        "What you do after school?",
+        "What {do you do} after school?",
+        "Otázka potrebuje pomocné sloveso: <b>What do you do…?</b>"
+      ],
+      [
+        "Do you can swim?",
+        "{Can you} swim?",
+        "<b>can</b> tvorí otázku bez do: <b>Can you swim?</b>"
+      ],
+      [
+        "Do they like football? – No, they doesn't.",
+        "Do they like football? – No, they {don't}.",
+        "K <b>they</b> patrí <b>don't</b>."
+      ],
+      [
+        "When your lesson starts?",
+        "When {does your lesson start}?",
+        "Pomocné <b>does</b> a sloveso bez -s: <b>When does your lesson start?</b>"
+      ]
+    ]
+  },
+  "present-simple-vs-continuous": {
+    "vety": [
+      [
+        "I am playing tennis every Saturday.",
+        "I {play} tennis every Saturday.",
+        "<b>Every Saturday</b> = pravidelne → <b>present simple</b>."
+      ],
+      [
+        "Be quiet! The baby sleeps.",
+        "Be quiet! The baby {is sleeping}.",
+        "Deje sa to práve teraz → <b>present continuous</b>: is sleeping."
+      ],
+      [
+        "She is wearing glasses every day.",
+        "She {wears} glasses every day.",
+        "<b>Every day</b> = pravidelne → <b>present simple</b>: wears."
+      ],
+      [
+        "Listen! Someone plays the piano.",
+        "Listen! Someone {is playing} the piano.",
+        "<b>Listen!</b> = práve teraz → <b>present continuous</b>."
+      ],
+      [
+        "Mum cooks dinner now.",
+        "Mum {is cooking} dinner now.",
+        "<b>Now</b> = práve teraz → <b>present continuous</b>."
+      ],
+      [
+        "I'm not playing football on Sundays.",
+        "{I don't play} football on Sundays.",
+        "<b>On Sundays</b> = pravidelne → <b>present simple</b>: don't play."
+      ]
+    ]
+  },
+  "present-simple": {
+    "vety": [
+      [
+        "My cat sleep all day.",
+        "My cat {sleeps} all day.",
+        "<b>My cat</b> = it → koncovka <b>-s</b>: sleeps."
+      ],
+      [
+        "He watch TV every evening.",
+        "He {watches} TV every evening.",
+        "Po <b>-ch</b> pridáme <b>-es</b>: watches."
+      ],
+      [
+        "She studys English.",
+        "She {studies} English.",
+        "Spoluhláska + <b>y</b> → <b>-ies</b>: study → studies."
+      ],
+      [
+        "Tom don't play football.",
+        "Tom {doesn't} play football.",
+        "K <b>Tom</b> (he) patrí <b>doesn't</b>."
+      ],
+      [
+        "My parents works in a bank.",
+        "My parents {work} in a bank.",
+        "<b>My parents</b> = they → bez -s: work."
+      ],
+      [
+        "The shop open at nine.",
+        "The shop {opens} at nine.",
+        "<b>The shop</b> = it → koncovka <b>-s</b>: opens."
+      ]
+    ]
+  },
+  "stative-verbs": {
+    "vety": [
+      [
+        "He is needing help.",
+        "He {needs} help.",
+        "<b>need</b> je stavové sloveso – nepoužívame ho s -ing."
+      ],
+      [
+        "We are hating Mondays.",
+        "We {hate} Mondays.",
+        "<b>hate</b> je stavové sloveso – nepoužívame ho s -ing."
+      ],
+      [
+        "I'm believing you.",
+        "{I believe} you.",
+        "<b>believe</b> je stavové sloveso – nepoužívame ho s -ing."
+      ],
+      [
+        "Are you remembering his name?",
+        "{Do you remember} his name?",
+        "<b>remember</b> je stavové sloveso: <b>Do you remember…?</b>"
+      ],
+      [
+        "This soup is tasting great.",
+        "This soup {tastes} great.",
+        "Keď opisujem chuť, použijem present simple: <b>tastes</b>."
+      ],
+      [
+        "This bag is belonging to me.",
+        "This bag {belongs} to me.",
+        "<b>belong</b> je stavové sloveso – nepoužívame ho s -ing."
+      ]
+    ]
+  },
+  "talking-about-the-future": {
+    "vety": [
+      [
+        "Look at those clouds! It will rain.",
+        "Look at those clouds! It {is going to} rain.",
+        "Vidíme dôkaz (mraky) → <b>be going to</b>."
+      ],
+      [
+        "We meet Tom at six tomorrow.",
+        "We {are meeting} Tom at six tomorrow.",
+        "Dohodnuté na presný čas → <b>present continuous</b>.",
+        "dohodnuté"
+      ],
+      [
+        "Tomorrow I will playing football.",
+        "Tomorrow I will {play} football.",
+        "Po <b>will</b> ide základný tvar: <b>play</b>."
+      ],
+      [
+        "Oh no, I forgot my book! – I'm going to lend you mine.",
+        "Oh no, I forgot my book! – {I'll lend} you mine.",
+        "Rozhodnutie v tej chvíli → <b>will</b>.",
+        "rozhodol som sa práve teraz"
+      ],
+      [
+        "We are going to being late.",
+        "We are going to {be} late.",
+        "Po <b>going to</b> ide základný tvar: <b>be</b>."
+      ]
+    ]
+  },
+  "used-to": {
+    "vety": [
+      [
+        "I used to played football.",
+        "I used to {play} football.",
+        "Po <b>used to</b> ide základný tvar: <b>play</b>."
+      ],
+      [
+        "My grandma was used to cook for us.",
+        "My grandma {used to} cook for us.",
+        "Kedysi = <b>used to</b> + základný tvar. <i>Was used to</i> znamená niečo iné."
+      ],
+      [
+        "I used to going to school by bus.",
+        "I used to {go} to school by bus.",
+        "Po <b>used to</b> ide základný tvar: <b>go</b>."
+      ],
+      [
+        "He used to be a student last year.",
+        "He {was} a student last year.",
+        "Pri konkrétnom čase (<b>last year</b>) použijeme past simple."
+      ]
+    ]
+  },
+  "will-vs-going-to": {
+    "vety": [
+      [
+        "Watch out! You will fall!",
+        "Watch out! You {are going to} fall!",
+        "Vidím, že sa to stane → <b>be going to</b>.",
+        "vidím, že spadne"
+      ],
+      [
+        "I'm going to help you with your bag.",
+        "{I'll help} you with your bag.",
+        "Rozhodnutie v tej chvíli → <b>will</b>.",
+        "rozhodol som sa práve teraz"
+      ],
+      [
+        "I will have a party on Saturday.",
+        "I {am going to} have a party on Saturday.",
+        "Plán, ktorý už mám pripravený → <b>be going to</b>.",
+        "už mám všetko pripravené"
+      ],
+      [
+        "I don't going to tell anyone.",
+        "I {am not} going to tell anyone.",
+        "Zápor ide k slovesu BE: <b>I'm not going to</b>."
+      ]
+    ]
+  },
+  "will": {
+    "vety": [
+      [
+        "She wills come to the party.",
+        "She {will} come to the party.",
+        "<b>will</b> sa nemení: nie wills."
+      ],
+      [
+        "Will you to help me?",
+        "Will you {help} me?",
+        "Po <b>will</b> ide základný tvar bez <i>to</i>."
+      ],
+      [
+        "It will rains tomorrow.",
+        "It will {rain} tomorrow.",
+        "Po <b>will</b> ide základný tvar bez -s: <b>rain</b>."
+      ],
+      [
+        "I don't will go there.",
+        "I {won't} go there.",
+        "Zápor od will je <b>won't</b>."
+      ],
+      [
+        "Maybe I'll am late.",
+        "Maybe I'll {be} late.",
+        "Po <b>will</b> ide základný tvar: <b>be</b>."
+      ],
+      [
+        "Tomorrow it will sunny.",
+        "Tomorrow it {will be} sunny.",
+        "Pred <i>sunny</i> chýba sloveso <b>be</b>: <b>will be</b> sunny."
+      ],
+      [
+        "I wont tell anyone.",
+        "I {won't} tell anyone.",
+        "Zápor sa píše <b>won't</b> – s apostrofom. Pomôže tlačidlo <b>Vložiť '</b>."
+      ]
     ]
   }
 }

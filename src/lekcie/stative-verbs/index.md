@@ -19,6 +19,7 @@ bite:
   tip: "Present simple = zvyčajne, present continuous = práve teraz. Stavové slovesá (like, want, need, know…) nemajú -ing, ani keď hovoríme o teraz."
   priklad: "I usually walk to school. · Today I'm going by bus. · I know the answer."
 roztried: stative-verbs
+opravChybu: true
 test:
   - otazka: "My dad ___ coffee every morning."
     moznosti: ["drinks", "is drinking", "drink"]

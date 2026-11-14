@@ -19,6 +19,7 @@ otazkaKozy: "What were you doing at 8 o'clock?"
 bite:
   tip: "was / were + sloveso s -ing. Otázka: Was / Were na začiatok. Odpoveď: Yes, I was. / No, they weren't."
   priklad: "At 8 o'clock I was having breakfast. · Were they playing? – Yes, they were."
+opravChybu: true
 test:
   - otazka: "At 7 o'clock my brother ___ playing computer games."
     moznosti: ["were", "was", "is"]

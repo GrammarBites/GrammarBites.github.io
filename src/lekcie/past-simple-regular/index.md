@@ -19,6 +19,7 @@ otazkaKozy: "I played all day!"
 bite:
   tip: "Väčšina slovies + ed, na -e len + d, krátka samohláska + spoluhláska → zdvoj, spoluhláska + y → ied."
   priklad: "walk → walked · like → liked · stop → stopped · study → studied"
+opravChybu: true
 test:
   - otazka: "dance → ?"
     moznosti: ["danceed", "danced", "dancied"]

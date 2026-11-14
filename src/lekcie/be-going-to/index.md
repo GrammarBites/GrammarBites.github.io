@@ -20,6 +20,7 @@ bite:
   tip: "BE (am / is / are) + going to + sloveso. Najčastejšia chyba je zabudnúť na BE!"
   priklad: "I'm going to watch a film. · Are you going to play? – Yes, I am."
 pisanie: be-going-to
+opravChybu: true
 test:
   - otazka: "I ___ going to visit my grandma tomorrow."
     moznosti: ["–", "am", "is"]

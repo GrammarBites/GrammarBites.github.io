@@ -1,18 +1,18 @@
 ---
 layout: layouts/base.njk
 title: Tabuľa
-titleSk: Opýtaj sa kozy – tabuľa
-popis: "Napíš, čomu nerozumieš, a tabuľa ti to vysvetlí krok po kroku."
+titleSk: Vysvetli mi to na tabuli
+popis: "Napíš, čomu nerozumieš, a vysvetlím ti to na tabuli krok po kroku."
 skripty: ["tabula.js"]
 ---
 <div class="tabula-app" data-tabula-app>
   <section class="tb-vyber" data-vyber aria-labelledby="h-tabula">
     <header class="tb-vyber__hlava">
       <div class="stranka-hlava">
-        <h1 id="h-tabula" class="stranka-hlava__nadpis">Opýtaj sa kozy</h1>
-        <p>Napíš, čomu nerozumieš. Koza ti to vysvetlí na tabuli krok po kroku – tempom, ktoré si určíš sám.</p>
+        <h1 id="h-tabula" class="stranka-hlava__nadpis">Vysvetli mi to na tabuli</h1>
+        <p>Napíš, čomu nerozumieš. Vysvetlím ti to na tabuli krok po kroku – tempom, ktoré si určíš sám.</p>
       </div>
-      <img src="/assets/img/postavy/koza-premysla.png" alt="" width="120">
+      <img class="tb-ucitel" src="/assets/img/postavy/ucitel.png" alt="" width="110" height="184">
     </header>
     <form class="hladanie" data-otazka-form role="search">
       <div class="hladanie__pole">
@@ -24,7 +24,7 @@ skripty: ["tabula.js"]
     </form>
     <p class="tb-nic" data-nic hidden>Na toto zatiaľ tabuľu nemám. <a href="/hladat/">Pozri sa do vyhľadávania lekcií</a> alebo vyber niektorú z otázok nižšie.</p>
     <div class="tb-ponuka">
-      <p class="tb-ponuka__nadpis">Na tieto otázky už tabuľa vie odpovedať:</p>
+      <p class="tb-ponuka__nadpis">Na tieto otázky už mám pripravenú tabuľu:</p>
       <div class="tb-cipy" data-cipy></div>
     </div>
   </section>
@@ -46,6 +46,7 @@ skripty: ["tabula.js"]
       <span class="tb-stav" data-stav></span>
       <button type="button" class="tlacidlo" data-dalej>Ďalej →</button>
       <button type="button" class="tlacidlo" data-znova hidden>Ešte raz od začiatku</button>
+      <button type="button" class="tlacidlo tlacidlo--tiche tlacidlo--male tb-zvuk" data-zvuk hidden aria-pressed="true">🔊 Zvuk</button>
       <button type="button" class="tlacidlo tlacidlo--tiche tlacidlo--male tb-cela" data-cela>Na celú obrazovku</button>
     </div>
   </section>

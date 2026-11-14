@@ -890,7 +890,7 @@ button.pc-karta:focus-visible { outline: 3px solid var(--yellow); outline-offset
 .tabula-app { display: grid; gap: 24px; min-width: 0; --krieda: #f4f1e6; --k-zlta: #f5d66a; --k-ruzova: #f7a1bb; --k-modra: #a9d6ee; --doska: #223d31; }
 .tb-vyber { display: grid; gap: 20px; }
 .tb-vyber__hlava { display: flex; align-items: end; justify-content: space-between; gap: 16px; }
-.tb-vyber__hlava img { width: 110px; flex: none; }
+.tb-vyber__hlava img { width: 110px; flex: none; margin-bottom: -6px; transform: scaleX(-1); }
 .tabula-app .hladanie { grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
 .tb-nic { font-weight: 700; color: #8f3522; background: var(--terra-wash); padding: 10px 14px; border-radius: 10px; }
 .tb-ponuka { display: grid; gap: 10px; }
@@ -954,7 +954,10 @@ button.pc-karta:focus-visible { outline: 3px solid var(--yellow); outline-offset
 .tb-odkazy { display: flex; flex-wrap: wrap; gap: 10px; }
 .tb-ovladanie { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin-top: 18px; }
 .tb-stav { font: 700 1.5rem var(--hand); color: var(--ink-2); min-width: 56px; text-align: center; }
-.tb-cela { margin-left: auto; }
+.tb-zvuk { margin-left: auto; }
+.tb-zvuk + .tb-cela, .tb-zvuk[hidden] + .tb-cela { margin-left: 0; }
+.tb-zvuk[hidden] + .tb-cela { margin-left: auto; }
+.tb-zvuk[aria-pressed="false"] { opacity: .65; }
 .tb-ovladanie .tlacidlo:disabled { cursor: not-allowed; }
 .vyklad-tabula { justify-self: start; display: inline-flex; align-items: center; gap: 12px; padding: 8px 16px 8px 8px; color: var(--ink); text-decoration: none; background: var(--paper-hi); border: 2px solid var(--ink); border-radius: 14px; box-shadow: 2px 2px 0 var(--line); line-height: 1.3; }
 .vyklad-tabula:hover { background: var(--yellow-wash); color: var(--ink); }

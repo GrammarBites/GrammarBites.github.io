@@ -35,3 +35,10 @@ Všetky tabule sú na stránke `/tabula/`.
 
 `{slovo}` – bez zmeny, `{slovo#id}` – slovo, na ktoré sa dá neskôr odkázať (`blok.id`),
 `{slovo|zlta}` – farba (`zlta`, `ruzova`, `modra`), `{slovo#id|zlta,krouzok}` – farba aj značka hneď pri písaní.
+
+## Hlas (doplní sa neskôr)
+
+1. Ku každému kroku pridaj `"hovor": "text, ktorý sa prečíta"` (hovorená podoba, bez symbolov a skratiek).
+2. Skript vygeneruje zvuk do `src/tabula/zvuk/<lekcia>/krok-01.mp3`, `krok-02.mp3` …
+3. Do hlavičky receptu pridaj `"hlas": true`. Tabuľa potom pri každom kroku prehrá zvuk
+   a pod tabuľou sa objaví tlačidlo Zvuk / Bez zvuku. Bez `"hlas": true` funguje tabuľa bez zvuku ako doteraz.

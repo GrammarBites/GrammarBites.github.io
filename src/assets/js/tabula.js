@@ -60,11 +60,29 @@
     const el = {
       vyber: $("[data-vyber]"), form: $("[data-otazka-form]"), pole: $("[data-otazka-pole]"), cipy: $("[data-cipy]"), nic: $("[data-nic]"),
       tabula: $("[data-tabula]"), ram: $("[data-ram]"), plocha: $("[data-plocha]"), nadpis: $("[data-nadpis]"), cap: $("[data-popis]"),
-      spat: $("[data-spat]"), dalej: $("[data-dalej]"), stav: $("[data-stav]"), znova: $("[data-znova]"), cela: $("[data-cela]"), ina: $("[data-ina]"),
+      spat: $("[data-spat]"), dalej: $("[data-dalej]"), stav: $("[data-stav]"), znova: $("[data-znova]"), cela: $("[data-cela]"), ina: $("[data-ina]"), zvuk: $("[data-zvuk]"),
     };
     const zoznam = Object.entries(recepty).map(([id, r]) => ({ id, ...r }));
     let r = null, krok = 0, znacky = [], zodpovedane = new Set(), casovace = [];
     let svg = null;
+
+    // ---------- hlas (ak má tabuľa v recepte "hlas": true, prehrá src/tabula/zvuk/<id>/krok-01.mp3 …) ----------
+    const prehravac = new Audio();
+    let zvukZap = true;
+    try { zvukZap = localStorage.getItem("gb-tabula-zvuk") !== "0"; } catch (e) {}
+    const nastavZvuk = () => { el.zvuk.setAttribute("aria-pressed", String(zvukZap)); el.zvuk.textContent = zvukZap ? "🔊 Zvuk" : "🔇 Bez zvuku"; };
+    nastavZvuk();
+    el.zvuk.addEventListener("click", () => {
+      zvukZap = !zvukZap; nastavZvuk();
+      try { localStorage.setItem("gb-tabula-zvuk", zvukZap ? "1" : "0"); } catch (e) {}
+      if (!zvukZap) prehravac.pause(); else hovor();
+    });
+    function hovor() {
+      prehravac.pause();
+      if (!r || !r.hlas || !zvukZap) return;
+      prehravac.src = GB.odkaz(`tabula/zvuk/${r.id}/krok-${String(krok + 1).padStart(2, "0")}.mp3`);
+      prehravac.play().catch(() => {});
+    }
 
     // ---------- výber otázky ----------
     el.cipy.innerHTML = zoznam.flatMap((x) => (x.otazky || [x.nazov]).slice(0, 2).map((q) =>
@@ -94,6 +112,8 @@
     // ---------- otvorenie tabule ----------
     function otvor(id, zapisHash) {
       r = recepty[id]; if (!r) return;
+      r.id = id;
+      el.zvuk.hidden = !r.hlas;
       if (zapisHash && location.hash !== "#" + id) history.pushState(null, "", "#" + id);
       el.vyber.hidden = true; el.tabula.hidden = false;
       el.nadpis.textContent = r.nazov;
@@ -107,7 +127,7 @@
       GB.udalost("tabula/" + id, "Tabuľa: " + r.nazov);
     }
     function zatvor() {
-      stopni(); r = null;
+      stopni(); prehravac.pause(); r = null;
       el.tabula.hidden = true; el.vyber.hidden = false;
       if (location.hash) history.pushState(null, "", location.pathname + location.search);
     }
@@ -131,6 +151,7 @@
       });
       prekresliZnacky(false);
       popis();
+      hovor();
       if (anim && !MALO_POHYBU) {
         const novy = el.plocha.querySelectorAll(".tb-novy");
         const posledny = novy[novy.length - 1];

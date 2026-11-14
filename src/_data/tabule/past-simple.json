@@ -1,0 +1,107 @@
+{
+  "lekcia": "past-simple",
+  "lekciaNazov": "Past simple",
+  "nazov": "Prečo „Did you go?“, a nie „Did you went?“",
+  "otazky": ["Prečo Did you go?, a nie Did you went?", "Prečo He didn't come, a nie He didn't came?"],
+  "kluce": ["past simple", "minuly cas", "did", "didn't", "didnt", "did you", "went", "go", "came", "come", "otazka v minulom case", "zapor v minulom case", "yes i did"],
+  "kroky": [
+    {
+      "kresli": [
+        { "op": "pis", "id": "z", "text": "Did you {went#v} to school?" }
+      ],
+      "popis": "<i>Went</i> je minulý čas od <i>go</i> a otázka je v minulosti… tak prečo je táto veta zle?",
+      "otazka": {
+        "text": "Čo je zlé na otázke „Did you went to school?“",
+        "moznosti": ["Namiesto went má byť go.", "Namiesto Did má byť Do.", "Chýba tam was."],
+        "spravna": 0,
+        "napoveda": { "1": "Do je prítomný čas. Pýtame sa na minulosť, preto je Did správne.", "2": "was tu nepatrí – go je bežné sloveso, otázku robíme s did." },
+        "vysvetlenie": "Po did ide sloveso v základnom tvare: Did you go?"
+      }
+    },
+    {
+      "kresli": [
+        { "op": "znac", "typ": "preskrtni", "ciel": "z.v" },
+        { "op": "pis", "id": "o", "text": "You {went#m|zlta,krouzok} to school." },
+        { "op": "pis", "id": "q", "text": "{Did#d|zlta} you {go#g|podciarkni} to school?" },
+        { "op": "sipka", "od": "o.m", "k": "q.d", "text": "minulosť ide do did" }
+      ],
+      "popis": "Minulý čas v otázke <b>nesie did</b>. Sloveso <i>go</i> preto ostane v základnom tvare. Minulosť je vo vete <b>len raz</b> – buď v slovese (<i>went</i>), alebo v <i>did</i>, nikdy nie dvakrát."
+    },
+    {
+      "kresli": [
+        { "op": "stlpce", "stlpce": [
+          { "nadpis": "present simple", "riadky": ["Doe{s|zlta} she play?", "She doe{s|zlta}n't play."] },
+          { "nadpis": "past simple", "riadky": ["{Did|zlta} she play?", "She {did|zlta}n't play."] }
+        ] }
+      ],
+      "popis": "Je to rovnaký trik ako v prítomnom čase. Tam si -s zoberie <i>does</i>, tu si minulosť zoberie <i>did</i>. Hlavné sloveso (<i>play</i>) je v otázke aj zápore <b>v základnom tvare</b>. Zlaté pravidlo: <b>čas nesie sloveso alebo pomocné sloveso – nie obe.</b>"
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "A zápor?" },
+        { "op": "pis", "id": "n", "text": "He didn't {came#c}." }
+      ],
+      "popis": "Rovnaká chyba sa objavuje aj v zápore. Už vieš, ako ju opraviť?",
+      "otazka": {
+        "text": "I didn't ___ the film.",
+        "moznosti": ["liked", "like"],
+        "spravna": 1,
+        "napoveda": { "0": "Minulosť už nesie didn't. Sloveso za ním je v základnom tvare." },
+        "vysvetlenie": "didn't + základný tvar: I didn't like the film."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "znac", "typ": "preskrtni", "ciel": "n.c" },
+        { "op": "pis", "id": "m", "text": "He {didn't#d|zlta,krouzok} {come#k|podciarkni}." },
+        { "op": "sipka", "od": "m.d", "k": "m.k", "text": "minulosť je už tu" }
+      ],
+      "popis": "<i>didn't</i> = <i>did not</i>. Minulosť je v ňom, preto <i>come</i> ostane v základnom tvare: <i>He didn't <b>come</b>.</i>"
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "Krátka odpoveď:" },
+        { "op": "pis", "id": "k", "text": "Did you see the match? – Yes, I {saw#s}." }
+      ],
+      "popis": "V krátkej odpovedi neopakujeme hlavné sloveso. <b>Čím sa pýtam, tým odpovedám</b> – pýtali sme sa s <i>did</i>.",
+      "otazka": {
+        "text": "Did they win? – Yes, they ___.",
+        "moznosti": ["won", "did", "win"],
+        "spravna": 1,
+        "napoveda": { "0": "Hlavné sloveso v krátkej odpovedi neopakujeme. Pýtali sme sa s did.", "2": "Hlavné sloveso v krátkej odpovedi neopakujeme. Pýtali sme sa s did." },
+        "vysvetlenie": "Did…? – Yes, they did. / No, they didn't."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "znac", "typ": "preskrtni", "ciel": "k.s" },
+        { "op": "pis", "text": "Yes, I {did|zlta}. · No, I {didn't|zlta}." },
+        { "op": "pis", "styl": "poznamka", "text": "Pozor: pri was / were did nepoužívame!" },
+        { "op": "pis", "id": "w", "text": "{Did you be#x} at home? → {Were#r|zlta} you at home?" },
+        { "op": "znac", "typ": "preskrtni", "ciel": "w.x" }
+      ],
+      "popis": "Jedna výnimka: sloveso <i>be</i> (<i>was / were</i>) si otázku aj zápor urobí samo, bez <i>did</i>: <i>Were you at home? I wasn't at home.</i>",
+      "otazka": {
+        "text": "___ you at the cinema yesterday?",
+        "moznosti": ["Did", "Were"],
+        "spravna": 1,
+        "napoveda": { "0": "Vo vete nie je iné sloveso – je to otázka so slovesom be. Tá sa robí bez did." },
+        "vysvetlenie": "be → Were you at the cinema?"
+      }
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "nadpis2", "text": "Zapamätaj si:" },
+        { "op": "pis", "text": "{Did|zlta} + podmet + základný tvar ?" },
+        { "op": "pis", "text": "{didn't|zlta} + základný tvar" },
+        { "op": "pis", "styl": "poznamka", "text": "Minulosť len raz: buď went, alebo did … go." }
+      ],
+      "popis": "Hotovo! V otázke aj zápore minulosť nesie <i>did / didn't</i> a sloveso ostane v základnom tvare. Teraz si to vyskúšaj.",
+      "odkazy": [
+        { "text": "Nájdi a oprav chybu", "url": "/lekcie/past-simple/#h-oprav" },
+        { "text": "Napíš sám", "url": "/lekcie/past-simple/#h-pisanie" },
+        { "text": "Mini test", "url": "/lekcie/past-simple/#h-test" }
+      ]
+    }
+  ]
+}

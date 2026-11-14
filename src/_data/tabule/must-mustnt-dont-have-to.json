@@ -1,0 +1,101 @@
+{
+  "lekcia": "must-mustnt-dont-have-to",
+  "lekciaNazov": "must · mustn't · don't have to",
+  "nazov": "mustn't, alebo don't have to?",
+  "otazky": ["Aký je rozdiel medzi mustn't a don't have to?", "Kedy must a kedy have to?"],
+  "kluce": ["must", "mustn't", "mustnt", "don't have to", "dont have to", "have to", "has to", "nesmies", "nemusis", "musis", "zakazane", "povinnost"],
+  "kroky": [
+    {
+      "kresli": [
+        { "op": "pis", "id": "z", "text": "Children {mustn't#m} pay." },
+        { "op": "pis", "styl": "poznamka", "text": "Pani pokladníčka chcela povedať: Deti nemusia platiť." }
+      ],
+      "popis": "Vyzerá to ako správna veta – a gramaticky aj je. Lenže hovorí niečo úplne iné, než pokladníčka chcela.",
+      "otazka": {
+        "text": "Čo naozaj znamená „Children mustn't pay.“?",
+        "moznosti": ["Deti nesmú platiť.", "Deti nemusia platiť."],
+        "spravna": 0,
+        "napoveda": { "1": "Takto by to chcela povedať pokladníčka. Mustn't však znamená niečo iné." },
+        "vysvetlenie": "mustn't = nesmú. Platiť by bolo pre deti zakázané!"
+      }
+    },
+    {
+      "kresli": [
+        { "op": "stlpce", "stlpce": [
+          { "nadpis": "musíš – povinnosť", "riadky": ["{must|zlta}", "You must buy a ticket."] },
+          { "nadpis": "nesmieš – zákaz", "riadky": ["{mustn't|ruzova}", "You mustn't feed the animals."] },
+          { "nadpis": "nemusíš – netreba", "riadky": ["{don't have to|modra}", "You don't have to pay."] }
+        ] }
+      ],
+      "popis": "Tri výrazy, tri rôzne významy. <i>Mustn't</i> vyzerá ako zápor od <i>must</i>, ale neznamená „nemusíš“. Znamená <b>nesmieš – je to zakázané</b>. Keď niečo <b>nie je nutné</b>, povieme <i>don't have to</i>."
+    },
+    {
+      "kresli": [
+        { "op": "pis", "text": "{nesmieš|ruzova} → mustn't" },
+        { "op": "pis", "text": "{nemusíš|modra} → don't have to" }
+      ],
+      "popis": "<b>Pomôcka:</b> povedz si to najprv po slovensky. Ak povieš <b>nesmieš</b>, je to <i>mustn't</i>. Ak povieš <b>nemusíš</b>, je to <i>don't have to</i>. V slovenčine si tieto dve slová nikdy nepomýliš – tak nech ti pomôžu aj v angličtine.",
+      "otazka": {
+        "text": "Pri písomke: You ___ use your phone. (Nesmieš.)",
+        "moznosti": ["mustn't", "don't have to"],
+        "spravna": 0,
+        "napoveda": { "1": "don't have to = nemusíš. Pri písomke je mobil zakázaný – nesmieš." },
+        "vysvetlenie": "nesmieš → You mustn't use your phone."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "znac", "typ": "preskrtni", "ciel": "z.m" },
+        { "op": "pis", "text": "Children {don't have to|modra,podciarkni} pay." }
+      ],
+      "popis": "Teraz už pokladníčka povedala, čo chcela: <i>Children don't have to pay.</i> – Deti nemusia platiť (môžu, ale nie je to nutné).",
+      "otazka": {
+        "text": "V sobotu: You ___ get up early. (Nemusíš.)",
+        "moznosti": ["mustn't", "don't have to"],
+        "spravna": 1,
+        "napoveda": { "0": "mustn't = nesmieš. Vstať skoro v sobotu nie je zakázané, len to netreba." },
+        "vysvetlenie": "nemusíš → You don't have to get up early."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "A pri he / she / it?" },
+        { "op": "pis", "id": "a", "text": "She {musts#x} go." },
+        { "op": "pis", "id": "b", "text": "She {don't#y} have to go." }
+      ],
+      "popis": "Pri <i>he, she, it</i> sa robia ďalšie dve chyby. <i>Must</i> sa správa inak ako <i>have to</i>.",
+      "otazka": {
+        "text": "Ktorá veta je správne?",
+        "moznosti": ["She musts go.", "She must go.", "She must to go."],
+        "spravna": 1,
+        "napoveda": { "0": "must sa nikdy nemení – žiadne -s.", "2": "Po must nie je to: must go, must help." },
+        "vysvetlenie": "must je pre všetky osoby rovnaké a ide za ním sloveso bez to."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "znac", "typ": "preskrtni", "ciel": "a.x" },
+        { "op": "znac", "typ": "preskrtni", "ciel": "b.y" },
+        { "op": "tabulka", "riadky": [
+          ["She {must|zlta} go.", "= She {has to|zlta} go."],
+          ["She {mustn't|ruzova} go.", ""],
+          ["She {doesn't|modra} have to go.", ""]
+        ] }
+      ],
+      "popis": "<b>must / mustn't</b> sa nemenia: <i>I must, she must</i>. Ale <b>have to</b> je normálne sloveso, takže pri <i>he, she, it</i> je <i>has to</i> a v zápore <i>doesn't have to</i> – presne ako <i>she doesn't play</i>."
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "nadpis2", "text": "Zapamätaj si:" },
+        { "op": "pis", "text": "{must|zlta} = musíš · {mustn't|ruzova} = nesmieš" },
+        { "op": "pis", "text": "{don't have to|modra} = nemusíš" }
+      ],
+      "popis": "Hotovo! Najprv si to povedz po slovensky – <b>nesmieš</b>, alebo <b>nemusíš</b>? Potom už vieš, ktorý výraz použiť.",
+      "odkazy": [
+        { "text": "Trenažér: Roztrieď", "url": "/lekcie/must-mustnt-dont-have-to/#h-roztried" },
+        { "text": "Nájdi a oprav chybu", "url": "/lekcie/must-mustnt-dont-have-to/#h-oprav" },
+        { "text": "Mini test", "url": "/lekcie/must-mustnt-dont-have-to/#h-test" }
+      ]
+    }
+  ]
+}

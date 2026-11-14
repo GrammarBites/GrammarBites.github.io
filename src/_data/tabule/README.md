@@ -9,6 +9,7 @@ Všetky tabule sú na stránke `/tabula/`.
 - `lekcia`, `lekciaNazov` – kam vedie odkaz „Lekcia“
 - `nazov` – nadpis na tabuli
 - `otazky` – 1–2 otázky, ktoré sa ukážu ako tlačidlá na stránke /tabula/
+- `aj` (nepovinné) – ďalšie lekcie, pri ktorých sa má ukázať tlačidlo tabule, napr. `["passive-tenses"]`
 - `kluce` – slová, podľa ktorých sa tabuľa nájde, keď žiak napíše vlastnú otázku (bez diakritiky)
 - `kroky` – zoznam krokov
 
@@ -26,7 +27,7 @@ Všetky tabule sú na stránke `/tabula/`.
 |---|---|---|
 | `pis` | napíše riadok; `styl`: `veta` (predvolené), `nadpis2`, `poznamka` | `{ "op": "pis", "id": "z", "text": "She {play#v} football." }` |
 | `znac` | dodatočne označí slovo: `preskrtni`, `podciarkni`, `krouzok` | `{ "op": "znac", "typ": "preskrtni", "ciel": "z.v" }` |
-| `sipka` | šípka od slova k slovu s popisom | `{ "op": "sipka", "od": "o.po", "k": "o.s", "text": "he/she/it → -s" }` |
+| `sipka` | šípka od slova k slovu s popisom (aj z jedného riadku do druhého) | `{ "op": "sipka", "od": "o.po", "k": "o.s", "text": "he/she/it → -s" }` |
 | `stlpce` | dva (či viac) stĺpcov vedľa seba | pozri present-simple.json |
 | `tabulka` | tabuľka; `hlavicka: true` = prvý riadok je hlavička | |
 | `mriezka` + `scena` | obrázkové scény s kozou: `in`, `on`, `under`, `next to`, `between`, `behind`, `in front of`, `above` | pozri prepositions-of-place.json |

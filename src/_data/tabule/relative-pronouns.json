@@ -1,0 +1,213 @@
+{
+  "lekcia": "relative-pronouns",
+  "lekciaNazov": "Relative pronouns and clauses",
+  "nazov": "Prečo nie „the cake that I made it“?",
+  "otazky": [
+    "Prečo nie the cake that I made it?",
+    "Kedy who a kedy which?"
+  ],
+  "kluce": [
+    "relative clauses",
+    "relative pronouns",
+    "vztazne vety",
+    "vztazna veta",
+    "who",
+    "which",
+    "that",
+    "ktory",
+    "ktora",
+    "ktore",
+    "spajanie viet",
+    "made it",
+    "who he"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "This is the cake that I made {it#i}."
+        }
+      ],
+      "popis": "Takúto vetu napíše veľa žiakov – zdá sa logická. Je v nej však jedno slovo navyše.",
+      "otazka": {
+        "text": "Ktoré slovo je vo vete navyše?",
+        "moznosti": [
+          "it",
+          "that",
+          "is"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "that spája dve vety – bez neho to nejde.",
+          "2": "This is the cake – to je v poriadku."
+        },
+        "vysvetlenie": "it je navyše. Prečo, to si ukážeme krok po kroku."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "a",
+          "text": "{1.|modra} This is {the cake#c|zlta,krouzok}. I made {it#i|zlta,krouzok}."
+        }
+      ],
+      "popis": "Vznikla z dvoch viet: <i>This is the cake. I made it.</i> <b>Krok 1:</b> nájdi slovo, ktoré sa opakuje. <i>The cake</i> a <i>it</i> je tá istá vec – ten istý koláč."
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "b",
+          "text": "{2.|modra} This is the cake {that#t|zlta} I made {it#i}."
+        },
+        {
+          "op": "sipka",
+          "od": "a.i",
+          "k": "b.t",
+          "text": "it → that"
+        }
+      ],
+      "popis": "<b>Krok 2:</b> opakované slovo nahradíme slovom <b>that</b> (pri veciach aj <i>which</i>, pri ľuďoch <i>who</i>) a dáme ho na <b>začiatok druhej vety</b>, hneď za <i>the cake</i>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "b.i"
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.i"
+        },
+        {
+          "op": "pis",
+          "text": "{3.|modra} This is the cake {that|zlta} I made."
+        }
+      ],
+      "popis": "<b>Krok 3:</b> pôvodné <i>it</i> vypadne – koláč už zastupuje <i>that</i> a vo vete má byť <b>len raz</b>. V slovenčine je to rovnako: povieme <i>koláč, ktorý som upiekol</i>, nie <i>koláč, ktorý som <s>ho</s> upiekol</i>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "človek",
+              "riadky": [
+                "{who|zlta} / that",
+                "the man who lives here"
+              ]
+            },
+            {
+              "nadpis": "vec, zviera",
+              "riadky": [
+                "{which|zlta} / that",
+                "the bike which I bought"
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "Ktoré slovo zvoliť? <b>who</b> pri ľuďoch, <b>which</b> pri veciach a zvieratách. <b>that</b> sa hodí na oboje.",
+      "otazka": {
+        "text": "I've got a friend ___ speaks three languages.",
+        "moznosti": [
+          "who",
+          "which"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "which je pre veci a zvieratá. Kamarát je človek."
+        },
+        "vysvetlenie": "friend = človek → who (alebo that)."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "To isté platí, keď sa opakuje podmet:"
+        },
+        {
+          "op": "pis",
+          "id": "u",
+          "text": "This is my uncle. {He#h|zlta,krouzok} lives in Canada."
+        },
+        {
+          "op": "pis",
+          "id": "v",
+          "text": "This is my uncle who {he#x} lives in Canada."
+        }
+      ],
+      "popis": "Teraz sa opakuje <i>my uncle</i> a <i>he</i>. Ten istý postup: <i>he</i> nahradí <i>who</i> – a <i>he</i> potom vo vete nemá čo robiť.",
+      "otazka": {
+        "text": "The bus which ___ to Žilina is late.",
+        "moznosti": [
+          "it goes",
+          "goes"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "Autobus už zastupuje which. Druhé it je navyše."
+        },
+        "vysvetlenie": "which už zastupuje the bus → which goes."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "v.x"
+        },
+        {
+          "op": "pis",
+          "text": "This is my uncle {who|zlta} lives in Canada."
+        }
+      ],
+      "popis": "<i>Who</i> už zastupuje strýka, preto za ním hneď ide sloveso: <i>who <b>lives</b></i>. Žiadne ďalšie <i>he, she, it</i>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "1. nájdi opakované slovo"
+        },
+        {
+          "op": "pis",
+          "text": "2. nahraď ho {who / which / that|zlta}"
+        },
+        {
+          "op": "pis",
+          "text": "3. pôvodné slovo {vypadne|ruzova}"
+        }
+      ],
+      "popis": "Hotovo! Opakovaná vec je vo vete <b>len raz</b> – zastupuje ju <i>who, which</i> alebo <i>that</i>.",
+      "odkazy": [
+        {
+          "text": "Trenažér: spájanie viet",
+          "url": "/lekcie/relative-pronouns/#h-vztazne"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/relative-pronouns/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/relative-pronouns/#h-test"
+        }
+      ]
+    }
+  ]
+}

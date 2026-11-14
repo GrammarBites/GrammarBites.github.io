@@ -85,7 +85,7 @@
     }
 
     // ---------- výber otázky ----------
-    el.cipy.innerHTML = zoznam.flatMap((x) => (x.otazky || [x.nazov]).slice(0, 2).map((q) =>
+    el.cipy.innerHTML = zoznam.flatMap((x) => (x.otazky || [x.nazov]).slice(0, 1).map((q) =>
       `<button type="button" class="tb-cip" data-id="${x.id}">${esc(q)}</button>`)).join("");
     el.cipy.addEventListener("click", (e) => { const b = e.target.closest("[data-id]"); if (b) otvor(b.dataset.id, true); });
     el.form.addEventListener("submit", (e) => {
@@ -187,8 +187,9 @@
         }
         case "znac": return pridajZnacky([{ typ: op.typ, ciel: op.ciel, text: op.text }], t);
         case "sipka": {
-          const b = el.plocha.querySelector(`[data-blok="${String(op.od).split(".")[0]}"]`);
-          if (b) b.classList.add("tb-pod-sipkou");
+          const odB = String(op.od).split(".")[0], kB = String(op.k).split(".")[0];
+          const b = el.plocha.querySelector(`[data-blok="${odB}"]`);
+          if (b) b.classList.add(odB === kB ? "tb-pod-sipkou" : "tb-nad-sipkou");
           return pridajZnacky([{ typ: "sipka", od: op.od, k: op.k, text: op.text }], t);
         }
         case "tabulka": {
@@ -241,6 +242,16 @@
         let d = "", cls = "tb-z", popisok = null;
         if (z.typ === "sipka") {
           const a = box(z.od), b = box(z.k); if (!a || !b) return;
+          if (b.y > a.y + a.h * 0.8 || a.y > b.y + b.h * 0.8) {
+            // šípka do ďalšieho riadku (zdrojový riadok má pod sebou voľné miesto)
+            const x1 = a.x + a.w / 2, x2 = b.x + b.w / 2;
+            const y1 = a.y + a.h - 1, y2 = b.y + 5;
+            d = `M${x1} ${y1}Q${(x1 + x2) / 2 + 18} ${(y1 + y2) / 2} ${x2} ${y2}`;
+            const uhol = Math.atan2(y2 - (y1 + y2) / 2, x2 - ((x1 + x2) / 2 + 18)), l = 11;
+            d += `M${x2 - l * Math.cos(uhol - 0.5)} ${y2 - l * Math.sin(uhol - 0.5)}L${x2} ${y2}L${x2 - l * Math.cos(uhol + 0.5)} ${y2 - l * Math.sin(uhol + 0.5)}`;
+            cls += " tb-z--sipka";
+            if (z.text) popisok = { x: Math.max(x1, x2) + 26, y: (y1 + y2) / 2 + 7, text: z.text, vlavo: true };
+          } else {
           const x1 = a.x + a.w / 2, x2 = b.x + b.w / 2, y = Math.max(a.y + a.h, b.y + b.h) + 2;
           const hlbka = Math.min(46, 18 + Math.abs(x2 - x1) * 0.12);
           d = `M${x1} ${a.y + a.h}Q${(x1 + x2) / 2} ${y + hlbka} ${x2} ${b.y + b.h + 2}`;
@@ -249,10 +260,11 @@
           d += `M${hx - l * Math.cos(uhol - 0.5)} ${hy - l * Math.sin(uhol - 0.5)}L${hx} ${hy}L${hx - l * Math.cos(uhol + 0.5)} ${hy - l * Math.sin(uhol + 0.5)}`;
           cls += " tb-z--sipka";
           if (z.text) popisok = { x: Math.max(60, (x1 + x2) / 2), y: y + hlbka / 2 + 26, text: z.text };
+          }
         } else {
           const b = box(z.ciel); if (!b) return;
           if (z.typ === "podciarkni") { const y = b.y + b.h - 2; d = `M${b.x - 2} ${y}Q${b.x + b.w / 2} ${y + 6} ${b.x + b.w + 3} ${y - 1}`; cls += " tb-z--zlta"; }
-          else if (z.typ === "krouzok") { const cx = b.x + b.w / 2, cy = b.y + b.h * 0.56, rx = b.w / 2 + 7, ry = b.h * 0.36;
+          else if (z.typ === "krouzok") { const cx = b.x + b.w / 2, cy = b.y + b.h * 0.56, rx = Math.max(b.w / 2 + 8, 17), ry = Math.max(b.h * 0.4, 15);
             d = `M${cx - rx} ${cy}A${rx} ${ry} 0 1 1 ${cx + rx * 0.98} ${cy + 3}A${rx} ${ry} 0 0 1 ${cx - rx + 6} ${cy - ry * 0.6}`; cls += " tb-z--zlta"; }
           else if (z.typ === "preskrtni") { d = `M${b.x - 4} ${b.y + b.h * 0.62}L${b.x + b.w + 4} ${b.y + b.h * 0.42}`; cls += " tb-z--ruzova"; }
           else return;
@@ -263,7 +275,7 @@
         let txt = null;
         if (popisok) {
           txt = document.createElementNS(NS, "text");
-          txt.setAttribute("x", popisok.x); txt.setAttribute("y", popisok.y); txt.setAttribute("class", "tb-z-text");
+          txt.setAttribute("x", popisok.x); txt.setAttribute("y", popisok.y); txt.setAttribute("class", "tb-z-text" + (popisok.vlavo ? " tb-z-text--vlavo" : ""));
           txt.textContent = popisok.text; svg.append(txt);
         }
         if (z.anim && !okamzite) {

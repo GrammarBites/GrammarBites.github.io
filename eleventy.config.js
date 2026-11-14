@@ -118,6 +118,12 @@ export default function (eleventyConfig) {
   });
 
   // ---------- Filtre ----------
+  // Tabuľa pre lekciu: vlastná (src/_data/tabule/<lekcia>.json) alebo cudzia, ktorá ju uvádza v "aj"
+  eleventyConfig.addFilter("tabulaPre", (tabule, slug) => {
+    if (!tabule) return "";
+    if (tabule[slug]) return slug;
+    return Object.keys(tabule).find((id) => (tabule[id].aj || []).includes(slug)) || "";
+  });
   eleventyConfig.addFilter("preRocnik", (lekcie, cislo) =>
     lekcie.filter((l) => (l.data.rocniky || []).includes(Number(cislo)))
   );

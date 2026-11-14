@@ -1,0 +1,234 @@
+{
+  "lekcia": "present-simple-otazky",
+  "lekciaNazov": "Present simple – questions",
+  "nazov": "Prečo „Does she play?“, a nie „Does she plays?“",
+  "otazky": [
+    "Prečo Does she play?, a nie Does she plays?",
+    "Ako odpoviem na otázku s do / does?"
+  ],
+  "kluce": [
+    "present simple otazky",
+    "present simple questions",
+    "otazka",
+    "otazky",
+    "do",
+    "does",
+    "does she",
+    "do you",
+    "yes i do",
+    "kratka odpoved",
+    "short answers",
+    "where do you"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "Does she {plays#v}?"
+        }
+      ],
+      "popis": "Takúto otázku napíše veľa žiakov. Chyba je malá, ale je tam. Nájdeš ju?",
+      "otazka": {
+        "text": "Čo je zlé na otázke „Does she plays?“",
+        "moznosti": [
+          "Pri plays je -s navyše.",
+          "Namiesto Does má byť Do.",
+          "Chýba tam is."
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Pri she je Does správne. Chyba je inde.",
+          "2": "is tu nepatrí – play je bežné sloveso, otázku robíme s does."
+        },
+        "vysvetlenie": "Po does už sloveso -s nemá: Does she play?"
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.v"
+        },
+        {
+          "op": "pis",
+          "id": "o",
+          "text": "She play{s#s|zlta,krouzok} tennis."
+        },
+        {
+          "op": "pis",
+          "id": "q",
+          "text": "{Does#d|zlta} she {play#p|podciarkni} tennis?"
+        },
+        {
+          "op": "sipka",
+          "od": "o.s",
+          "k": "q.d",
+          "text": "-s ide do does"
+        }
+      ],
+      "popis": "Pozri, kam sa -s podelo. V oznamovacej vete je pri slovese: <i>She play<b>s</b>.</i> V otázke ho <b>zoberie does</b> (do + es) a sloveso <i>play</i> ostane bez -s. To isté už poznáš zo záporu: <i>She doesn't play.</i>"
+    },
+    {
+      "kresli": [
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "I / you / we / they",
+              "riadky": [
+                "{Do|zlta} you live in Martin?",
+                "{Do|zlta} they like pizza?"
+              ]
+            },
+            {
+              "nadpis": "he / she / it",
+              "riadky": [
+                "{Does|zlta} she live in Martin?",
+                "{Does|zlta} he like pizza?"
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "Otázku začneme slovom <b>Do</b> alebo <b>Does</b>. <i>Does</i> je len pri <i>he, she, it</i> (a pri mene alebo veci v jednotnom čísle). Sloveso za ním je vždy v <b>základnom tvare</b>.",
+      "otazka": {
+        "text": "___ your brother play football?",
+        "moznosti": [
+          "Do",
+          "Does"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "your brother = he. Čo dávame pri he?"
+        },
+        "vysvetlenie": "your brother = he → Does your brother play football?"
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "Krátka odpoveď:"
+        },
+        {
+          "op": "pis",
+          "id": "k",
+          "text": "Do you like Maths? – Yes, I {like#l}."
+        }
+      ],
+      "popis": "Na otázku s <i>do / does</i> odpovedáme krátko. Lenže čo zopakujeme – sloveso <i>like</i>, alebo niečo iné?",
+      "otazka": {
+        "text": "Does he play the piano? – Yes, he ___.",
+        "moznosti": [
+          "plays",
+          "does",
+          "play"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "V krátkej odpovedi neopakujeme hlavné sloveso. Zopakujeme to, čím sa pýtame.",
+          "2": "V krátkej odpovedi neopakujeme hlavné sloveso. Zopakujeme to, čím sa pýtame."
+        },
+        "vysvetlenie": "Čím sa pýtam, tým odpovedám: Does…? – Yes, he does."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "k.l"
+        },
+        {
+          "op": "pis",
+          "text": "Yes, I {do|zlta}. · No, I {don't|zlta}."
+        },
+        {
+          "op": "pis",
+          "text": "Yes, she {does|zlta}. · No, she {doesn't|zlta}."
+        }
+      ],
+      "popis": "<b>Čím sa pýtam, tým odpovedám.</b> Pýtame sa slovom <i>do / does</i>, tak ho zopakujeme aj v odpovedi: <i>Yes, I do. No, she doesn't.</i>"
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "Kde bývaš?"
+        },
+        {
+          "op": "pis",
+          "id": "w",
+          "text": "{Where you live?#c}"
+        }
+      ],
+      "popis": "Po slovensky stačí „Kde bývaš?“ – a preto žiaci často napíšu <i>Where you live?</i> Niečo tam však chýba.",
+      "otazka": {
+        "text": "Ktorá otázka je správne?",
+        "moznosti": [
+          "Where you live?",
+          "Where do you live?",
+          "Where does you live?"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "Chýba pomocné sloveso. Po anglicky ho otázka potrebuje.",
+          "2": "does je len pri he / she / it. Pri you je do."
+        },
+        "vysvetlenie": "Opytovacie slovo + do / does + podmet + sloveso."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "w.c"
+        },
+        {
+          "op": "pis",
+          "id": "s",
+          "text": "{Where#q|modra} {do#d|zlta,krouzok} you live?"
+        }
+      ],
+      "popis": "Opytovacie slovo (<i>Where, What, When…</i>) dáme na začiatok a potom pokračujeme ako pri obyčajnej otázke: <b>do / does + podmet + sloveso</b>. Výnimka: pri <i>be</i> a <i>can</i> sa <i>do</i> nepoužíva – <i>Are you happy? Can you swim?</i>"
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "Do / Doe{s|zlta} + podmet + sloveso {bez -s|ruzova} ?"
+        },
+        {
+          "op": "pis",
+          "text": "Yes, I {do|zlta}. · No, she {doesn't|zlta}."
+        }
+      ],
+      "popis": "Hotovo! -s si v otázke zoberie <i>does</i> a v krátkej odpovedi zopakujeme <i>do / does</i>. Teraz si to vyskúšaj.",
+      "odkazy": [
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/present-simple-otazky/#h-oprav"
+        },
+        {
+          "text": "Napíš sám",
+          "url": "/lekcie/present-simple-otazky/#h-pisanie"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/present-simple-otazky/#h-test"
+        }
+      ]
+    }
+  ]
+}

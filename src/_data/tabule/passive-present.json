@@ -1,0 +1,254 @@
+{
+  "lekcia": "passive-present",
+  "lekciaNazov": "Passive voice: present",
+  "aj": [
+    "passive-tenses"
+  ],
+  "nazov": "Ako urobím trpný rod? 4 kroky",
+  "otazky": [
+    "Ako urobím trpný rod?",
+    "Prečo The cake was made, a nie The cake was make?"
+  ],
+  "kluce": [
+    "passive",
+    "passive voice",
+    "trpny rod",
+    "pasivum",
+    "is made",
+    "was made",
+    "by",
+    "cinny rod",
+    "past participle",
+    "3. stlpec",
+    "honey is made"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "Činný rod (AV): vieme, kto to robí"
+        },
+        {
+          "op": "pis",
+          "id": "av",
+          "text": "{AV:|modra} {Bees#p|modra} {make#s} {honey#o|zlta}."
+        }
+      ],
+      "popis": "V činnom rode (AV) hovoríme, <b>kto</b> niečo robí: <i>Bees make honey.</i> – Včely robia med. Niekedy je však dôležitejšie, <b>čo sa deje s medom</b>. Vtedy použijeme trpný rod (PV). Urobíme ho v <b>4 krokoch</b>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "k1",
+          "text": "{1.|modra} {Honey#h|zlta} …"
+        },
+        {
+          "op": "sipka",
+          "od": "av.o",
+          "k": "k1.h",
+          "text": "predmet → podmet"
+        }
+      ],
+      "popis": "<b>Krok 1:</b> predmet z činného rodu (<i>honey</i>) sa stane <b>podmetom</b> trpného rodu. Veta teraz začína medom."
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "k2",
+          "text": "{2.|modra} Honey {is#b|ruzova,krouzok} …"
+        }
+      ],
+      "popis": "<b>Krok 2:</b> pridáme sloveso <b>be</b>. Jeho tvar sa riadi <b>novým podmetom</b> a časom. <i>Honey</i> = it → <b>is</b>. Keby bol podmet v množnom čísle (<i>these phones</i>), bolo by <b>are</b>.",
+      "otazka": {
+        "text": "These phones ___ made in China.",
+        "moznosti": [
+          "is",
+          "are"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "Pozri sa na nový podmet: these phones – je ich viac."
+        },
+        "vysvetlenie": "these phones = they → are."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "k3",
+          "text": "{3.|modra} Honey is {made#m|zlta,podciarkni}."
+        },
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "make – made – made (3. stĺpec)"
+        }
+      ],
+      "popis": "<b>Krok 3:</b> sloveso dáme do <b>3. stĺpca</b> (past participle). Pri pravidelných slovesách je to tvar s <i>-ed</i> (<i>wash → washed</i>), pri nepravidelných ho nájdeš v tabuľke slovies.",
+      "otazka": {
+        "text": "The car is ___ every day.",
+        "moznosti": [
+          "wash",
+          "washed",
+          "washing"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "Po be v trpnom rode ide 3. stĺpec, nie základný tvar.",
+          "2": "-ing patrí do present continuous. V trpnom rode je 3. stĺpec."
+        },
+        "vysvetlenie": "is + 3. stĺpec → is washed."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "k4",
+          "text": "{4.|modra} Honey is made {by bees#a|modra}."
+        },
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "by + kto to robí – nepovinné"
+        }
+      ],
+      "popis": "<b>Krok 4:</b> ak chceme povedať, kto to robí (agent), použijeme <b>by</b>. Tento krok je <b>nepovinný</b> – vynecháme ho, keď to nevieme alebo to nie je dôležité: <i>English is spoken here.</i>"
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "Časté chyby:"
+        },
+        {
+          "op": "pis",
+          "id": "c1",
+          "text": "Honey {made#x} by bees."
+        },
+        {
+          "op": "pis",
+          "id": "c2",
+          "text": "The cake was {make#y}."
+        }
+      ],
+      "popis": "Pri týchto vetách niekto preskočil jeden zo 4 krokov. Ktorý?",
+      "otazka": {
+        "text": "Čo chýba vo vete „Honey made by bees.“?",
+        "moznosti": [
+          "is (krok 2)",
+          "by (krok 4)",
+          "the (pred honey)"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "by tam je. Chýba iný krok.",
+          "2": "Pred honey člen nepotrebujeme. Chýba jeden zo 4 krokov."
+        },
+        "vysvetlenie": "Bez be to nie je trpný rod → Honey is made by bees."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "c1.x"
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "c2.y"
+        },
+        {
+          "op": "pis",
+          "text": "Honey {is made|zlta} by bees. · The cake was {made|zlta}."
+        }
+      ],
+      "popis": "V prvej vete chýbalo <b>be</b> (krok 2), v druhej bolo sloveso v zlom tvare – <i>make</i> namiesto 3. stĺpca <i>made</i> (krok 3)."
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "A v iných časoch? Mení sa len be!"
+        },
+        {
+          "op": "tabulka",
+          "riadky": [
+            [
+              "Grandma makes the cake.",
+              "The cake {is|ruzova} made."
+            ],
+            [
+              "Grandma made the cake.",
+              "The cake {was|ruzova} made."
+            ],
+            [
+              "Grandma has made the cake.",
+              "The cake {has been|ruzova} made."
+            ],
+            [
+              "Grandma will make the cake.",
+              "The cake {will be|ruzova} made."
+            ]
+          ]
+        }
+      ],
+      "popis": "V ostatných časoch platia tie isté 4 kroky. <b>Jediná zmena:</b> sloveso <b>be</b> dáme do toho istého času, v akom bola veta v činnom rode. <i>Made</i> (3. stĺpec) je v každom riadku rovnaké.",
+      "otazka": {
+        "text": "AV: They built the bridge in 1900. → PV: The bridge ___ built in 1900.",
+        "moznosti": [
+          "is",
+          "was",
+          "were"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "built je minulý čas, preto aj be musí byť v minulom čase.",
+          "2": "were je pre množné číslo. The bridge je jeden most."
+        },
+        "vysvetlenie": "AV v past simple → be v past simple: was built."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "1. predmet → podmet · 2. {be|ruzova}"
+        },
+        {
+          "op": "pis",
+          "text": "3. {3. stĺpec|zlta} · 4. ({by|modra} …)"
+        }
+      ],
+      "popis": "Hotovo! Trpný rod = 4 kroky. V rôznych časoch meníš len <b>be</b>, 3. stĺpec ostáva.",
+      "odkazy": [
+        {
+          "text": "Trenažér: trpný rod",
+          "url": "/lekcie/passive-present/#h-pasivum"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/passive-present/#h-oprav"
+        },
+        {
+          "text": "Lekcia: trpný rod v rôznych časoch",
+          "url": "/lekcie/passive-tenses/"
+        }
+      ]
+    }
+  ]
+}

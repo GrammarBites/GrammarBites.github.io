@@ -5,47 +5,65 @@
       [
         "Look! The goat eats a book!",
         "Look! The goat {is eating} a book!",
-        "Look! = práve teraz. Po slovensky povieme „žerie“, ale v angličtine tu patrí <b>is eating</b>, nie present simple."
+        "Look! = práve teraz. Po slovensky povieme „žerie“, ale v angličtine tu patrí <b>is eating</b>, nie present simple.",
+        "",
+        "Look! The goat is eat a book!"
       ],
       [
         "They are play football now.",
         "They are {playing} football now.",
-        "Po <b>am / is / are</b> ide sloveso s koncovkou <b>-ing</b>: playing."
+        "Po <b>am / is / are</b> ide sloveso s koncovkou <b>-ing</b>: playing.",
+        "",
+        "They are played football now."
       ],
       [
         "I'm not watch TV.",
         "I'm not {watching} TV.",
-        "Aj v zápore ostáva <b>-ing</b>: I'm not watching."
+        "Aj v zápore ostáva <b>-ing</b>: I'm not watching.",
+        "",
+        "I'm not watched TV."
       ],
       [
         "She is runing in the park.",
         "She is {running} in the park.",
-        "Pri <b>run</b> sa zdvojuje spoluhláska: run → ru<b>nn</b>ing."
+        "Pri <b>run</b> sa zdvojuje spoluhláska: run → ru<b>nn</b>ing.",
+        "",
+        "She is ran in the park."
       ],
       [
         "We are writeing a test.",
         "We are {writing} a test.",
-        "Pri <b>write</b> sa pred -ing vypustí <b>e</b>: writing."
+        "Pri <b>write</b> sa pred -ing vypustí <b>e</b>: writing.",
+        "",
+        "We are writting a test."
       ],
       [
         "The children is sleeping.",
         "The children {are} sleeping.",
-        "<b>The children</b> = they (viac detí), preto <b>are</b>."
+        "<b>The children</b> = they (viac detí), preto <b>are</b>.",
+        "",
+        "The children be sleeping."
       ],
       [
         "He is have a shower.",
         "He is {having} a shower.",
-        "Po <b>is</b> ide sloveso s -ing: have → <b>having</b> (e vypadne)."
+        "Po <b>is</b> ide sloveso s -ing: have → <b>having</b> (e vypadne).",
+        "",
+        "He is haveing a shower."
       ],
       [
         "It isn't rain now.",
         "It isn't {raining} now.",
-        "Aj po <b>isn't</b> ide sloveso s -ing: raining."
+        "Aj po <b>isn't</b> ide sloveso s -ing: raining.",
+        "",
+        "It isn't rains now."
       ],
       [
         "Mia and Tom aren't listen to music.",
         "Mia and Tom aren't {listening} to music.",
-        "Po <b>aren't</b> ide sloveso s -ing: listening."
+        "Po <b>aren't</b> ide sloveso s -ing: listening.",
+        "",
+        "Mia and Tom aren't listens to music."
       ]
     ]
   },
@@ -54,32 +72,44 @@
       [
         "We go often to the cinema.",
         "We {often go} to the cinema.",
-        "Príslovka frekvencie ide <b>pred</b> obyčajné sloveso: <b>often go</b>."
+        "Príslovka frekvencie ide <b>pred</b> obyčajné sloveso: <b>often go</b>.",
+        "",
+        "We go to often the cinema."
       ],
       [
         "My brother never is late.",
         "My brother {is never} late.",
-        "Pri slovese <b>be</b> ide príslovka <b>za</b> ním: <b>is never</b>."
+        "Pri slovese <b>be</b> ide príslovka <b>za</b> ním: <b>is never</b>.",
+        "",
+        "My brother is late never."
       ],
       [
         "She plays sometimes chess.",
         "She {sometimes plays} chess.",
-        "Príslovka patrí pred sloveso: <b>sometimes plays</b>."
+        "Príslovka patrí pred sloveso: <b>sometimes plays</b>.",
+        "",
+        "She sometimes play chess."
       ],
       [
         "Do you play often tennis?",
         "Do you {often play} tennis?",
-        "V otázke ide príslovka pred základné sloveso: <b>Do you often play…?</b>"
+        "V otázke ide príslovka pred základné sloveso: <b>Do you often play…?</b>",
+        "",
+        "Do often you play tennis?"
       ],
       [
         "Tom doesn't usually plays video games.",
         "Tom doesn't usually {play} video games.",
-        "Po <b>doesn't</b> ide základný tvar bez -s: <b>play</b>."
+        "Po <b>doesn't</b> ide základný tvar bez -s: <b>play</b>.",
+        "",
+        "Tom don't usually play video games."
       ],
       [
         "Always I get up at seven.",
         "{I always get} up at seven.",
-        "<b>Always</b> nedávame na začiatok vety. Ide pred sloveso: <b>I always get</b>."
+        "<b>Always</b> nedávame na začiatok vety. Ide pred sloveso: <b>I always get</b>.",
+        "",
+        "I get always up at seven."
       ]
     ]
   },
@@ -88,32 +118,44 @@
       [
         "We are going to playing football.",
         "We are going to {play} football.",
-        "Po <b>going to</b> ide základný tvar slovesa, bez -ing."
+        "Po <b>going to</b> ide základný tvar slovesa, bez -ing.",
+        "",
+        "We are going to played football."
       ],
       [
         "She's going watch a film.",
         "She's going {to watch} a film.",
-        "Za <b>going</b> patrí <b>to</b>: going to + sloveso."
+        "Za <b>going</b> patrí <b>to</b>: going to + sloveso.",
+        "",
+        "She's go to watch a film."
       ],
       [
         "I not going to sleep.",
         "{I'm not} going to sleep.",
-        "V zápore dáme <b>not</b> za sloveso BE: <b>I'm not going to</b>."
+        "V zápore dáme <b>not</b> za sloveso BE: <b>I'm not going to</b>.",
+        "",
+        "I don't going to sleep."
       ],
       [
         "What you are going to do?",
         "What {are you} going to do?",
-        "V otázke ide BE pred podmet: <b>What are you going to do?</b>"
+        "V otázke ide BE pred podmet: <b>What are you going to do?</b>",
+        "",
+        "What you going to do?"
       ],
       [
         "Tom and Ben is going to play.",
         "Tom and Ben {are} going to play.",
-        "<b>Tom and Ben</b> = they, preto <b>are</b>."
+        "<b>Tom and Ben</b> = they, preto <b>are</b>.",
+        "",
+        "Tom and Ben am going to play."
       ],
       [
         "He's go to buy a bike.",
         "He's {going to} buy a bike.",
-        "Plán vyjadrujeme <b>going to</b>, nie <i>go to</i>."
+        "Plán vyjadrujeme <b>going to</b>, nie <i>go to</i>.",
+        "",
+        "He's going buy a bike."
       ]
     ]
   },
@@ -122,27 +164,37 @@
       [
         "My sister has gone to Spain three times.",
         "My sister has {been} to Spain three times.",
-        "Už sa vrátila a je to skúsenosť (trikrát) = <b>been</b>."
+        "Už sa vrátila a je to skúsenosť (trikrát) = <b>been</b>.",
+        "",
+        "My sister has went to Spain three times."
       ],
       [
         "Have you ever been in Prague?",
         "Have you ever been {to} Prague?",
-        "Po <b>been</b> ide <b>to</b>: been <b>to</b> Prague."
+        "Po <b>been</b> ide <b>to</b>: been <b>to</b> Prague.",
+        "",
+        "Have you ever been at Prague?"
       ],
       [
         "Where are the children? They've been to the playground.",
         "Where are the children? They've {gone} to the playground.",
-        "Sú tam ešte teraz (nie sú doma) = <b>gone</b>."
+        "Sú tam ešte teraz (nie sú doma) = <b>gone</b>.",
+        "",
+        "They've be to the playground."
       ],
       [
         "I've never gone to Italy.",
         "I've never {been} to Italy.",
-        "Skúsenosť „bol som tam“ = <b>been</b>."
+        "Skúsenosť „bol som tam“ = <b>been</b>.",
+        "",
+        "I've never go to Italy."
       ],
       [
         "Mia isn't at home. She has been to the dentist.",
         "Mia isn't at home. She has {gone} to the dentist.",
-        "Nie je doma, je ešte u zubára = <b>gone</b>."
+        "Nie je doma, je ešte u zubára = <b>gone</b>.",
+        "",
+        "She have gone to the dentist."
       ]
     ]
   },
@@ -151,32 +203,44 @@
       [
         "If it rains tomorrow, we don't go to the park.",
         "If it rains tomorrow, we {won't go} to the park.",
-        "Vo výsledku ide <b>will / won't</b>: <b>won't go</b>."
+        "Vo výsledku ide <b>will / won't</b>: <b>won't go</b>.",
+        "",
+        "If it rains tomorrow, we not go to the park."
       ],
       [
         "What will you do if you will miss the bus?",
         "What will you do if you {miss} the bus?",
-        "Za <b>if</b> nikdy nedávame will: <b>if you miss</b>."
+        "Za <b>if</b> nikdy nedávame will: <b>if you miss</b>.",
+        "",
+        "What will you do if you missed the bus?"
       ],
       [
         "If she studies hard, she will passes the test.",
         "If she studies hard, she will {pass} the test.",
-        "Po <b>will</b> ide základný tvar bez -s: <b>will pass</b>."
+        "Po <b>will</b> ide základný tvar bez -s: <b>will pass</b>.",
+        "",
+        "If she studies hard, she will passed the test."
       ],
       [
         "I'll go out unless it doesn't rain.",
         "I'll go out unless it {rains}.",
-        "<b>Unless</b> = if not. Už obsahuje zápor, preto je sloveso kladné: <b>unless it rains</b>."
+        "<b>Unless</b> = if not. Už obsahuje zápor, preto je sloveso kladné: <b>unless it rains</b>.",
+        "",
+        "I'll go out unless it don't rain."
       ],
       [
         "If you don't hurry, you'll to miss the bus.",
         "If you don't hurry, you'll {miss} the bus.",
-        "Po <b>'ll</b> (will) ide sloveso bez <i>to</i>."
+        "Po <b>'ll</b> (will) ide sloveso bez <i>to</i>.",
+        "",
+        "If you don't hurry, you'll missed the bus."
       ],
       [
         "If I'll have time, I'll call you.",
         "If {I have} time, I'll call you.",
-        "V časti s <b>if</b> je prítomný čas, nie will: <b>If I have</b>."
+        "V časti s <b>if</b> je prítomný čas, nie will: <b>If I have</b>.",
+        "",
+        "If I would have time, I'll call you."
       ]
     ]
   },
@@ -185,32 +249,44 @@
       [
         "We play tennis with Mia on Saturday.",
         "We {are playing} tennis with Mia on Saturday.",
-        "Dohodnutý plán = <b>present continuous</b>: <b>are playing</b>."
+        "Dohodnutý plán = <b>present continuous</b>: <b>are playing</b>.",
+        "",
+        "We playing tennis with Mia on Saturday."
       ],
       [
         "What time you are meeting Tom?",
         "What time {are you} meeting Tom?",
-        "V otázke ide <b>are</b> pred podmet: <b>What time are you meeting…?</b>"
+        "V otázke ide <b>are</b> pred podmet: <b>What time are you meeting…?</b>",
+        "",
+        "What time are you meet Tom?"
       ],
       [
         "He is coming not tonight.",
         "He {isn't coming} tonight.",
-        "Zápor: <b>isn't</b> pred slovesom s -ing: <b>He isn't coming</b>."
+        "Zápor: <b>isn't</b> pred slovesom s -ing: <b>He isn't coming</b>.",
+        "",
+        "He isn't come tonight."
       ],
       [
         "They aren't come to the party.",
         "They aren't {coming} to the party.",
-        "Po <b>aren't</b> ide sloveso s <b>-ing</b>: coming."
+        "Po <b>aren't</b> ide sloveso s <b>-ing</b>: coming.",
+        "",
+        "They don't coming to the party."
       ],
       [
         "I'm go to the dentist on Monday.",
         "I'm {going} to the dentist on Monday.",
-        "Po <b>I'm</b> ide sloveso s -ing: <b>going</b>."
+        "Po <b>I'm</b> ide sloveso s -ing: <b>going</b>.",
+        "",
+        "I'm goes to the dentist on Monday."
       ],
       [
         "Shall we going to the park?",
         "Shall we {go} to the park?",
-        "Po <b>shall</b> ide základný tvar slovesa: <b>Shall we go…?</b>"
+        "Po <b>shall</b> ide základný tvar slovesa: <b>Shall we go…?</b>",
+        "",
+        "Shall we to go to the park?"
       ]
     ]
   },
@@ -219,28 +295,37 @@
       [
         "I'll wait here until you will come back.",
         "I'll wait here until you {come} back.",
-        "Po <b>until</b> nedávame will: <b>until you come</b>."
+        "Po <b>until</b> nedávame will: <b>until you come</b>.",
+        "",
+        "I'll wait here until you will came back."
       ],
       [
         "As soon as I will get the money, I'll buy a bike.",
         "As soon as I {get} the money, I'll buy a bike.",
-        "Po <b>as soon as</b> ide prítomný čas: <b>I get</b>."
+        "Po <b>as soon as</b> ide prítomný čas: <b>I get</b>.",
+        "",
+        "As soon as I'll get the money, I'll buy a bike."
       ],
       [
         "When she will be ready, we'll leave.",
         "When she {is} ready, we'll leave.",
-        "Po <b>when</b> ide prítomný čas: <b>When she is ready</b>."
+        "Po <b>when</b> ide prítomný čas: <b>When she is ready</b>.",
+        "",
+        "When she be ready, we'll leave."
       ],
       [
         "After we'll have dinner, we'll watch TV.",
         "After {we have} dinner, we'll watch TV.",
-        "Po <b>after</b> ide prítomný čas: <b>After we have</b>."
+        "Po <b>after</b> ide prítomný čas: <b>After we have</b>.",
+        "",
+        "After we're have dinner, we'll watch TV."
       ],
       [
         "Before we start, I tell you the rules.",
         "Before we start, {I'll tell} you the rules.",
         "V hlavnej vete hovoríme o budúcnosti: <b>I'll tell</b>.",
-        "o chvíľu"
+        "o chvíľu",
+        "Before we'll start, I'll tell you the rules."
       ]
     ]
   },
@@ -249,32 +334,44 @@
       [
         "She was runing in the park.",
         "She was {running} in the park.",
-        "Pri <b>run</b> sa pred -ing zdvojí spoluhláska: ru<b>nn</b>ing."
+        "Pri <b>run</b> sa pred -ing zdvojí spoluhláska: ru<b>nn</b>ing.",
+        "",
+        "She was runned in the park."
       ],
       [
         "What were you do at nine o'clock?",
         "What were you {doing} at nine o'clock?",
-        "Po <b>were you</b> ide sloveso s -ing: <b>doing</b>."
+        "Po <b>were you</b> ide sloveso s -ing: <b>doing</b>.",
+        "",
+        "What was you doing at nine o'clock?"
       ],
       [
         "I were reading a book.",
         "I {was} reading a book.",
-        "K <b>I</b> patrí <b>was</b>, nie were."
+        "K <b>I</b> patrí <b>was</b>, nie were.",
+        "",
+        "I was readed a book."
       ],
       [
         "My sister were cooking dinner.",
         "My sister {was} cooking dinner.",
-        "<b>My sister</b> = she, preto <b>was</b>."
+        "<b>My sister</b> = she, preto <b>was</b>.",
+        "",
+        "My sister was cook dinner."
       ],
       [
         "Were you working? – Yes, I wasn't.",
         "Were you working? – Yes, I {was}.",
-        "Kladná odpoveď: <b>Yes, I was.</b> Záporná: No, I wasn't."
+        "Kladná odpoveď: <b>Yes, I was.</b> Záporná: No, I wasn't.",
+        "",
+        "Were you working? – Yes, I weren't."
       ],
       [
         "He was writeing a letter.",
         "He was {writing} a letter.",
-        "Pri <b>write</b> sa pred -ing vypustí <b>e</b>: writing."
+        "Pri <b>write</b> sa pred -ing vypustí <b>e</b>: writing.",
+        "",
+        "He was writting a letter."
       ]
     ]
   },
@@ -283,32 +380,44 @@
       [
         "When I was five, I can swim.",
         "When I was five, I {could} swim.",
-        "V minulosti: <b>can → could</b>."
+        "V minulosti: <b>can → could</b>.",
+        "",
+        "When I was five, I can swam."
       ],
       [
         "I had to went to school yesterday.",
         "I had to {go} to school yesterday.",
-        "Po <b>had to</b> ide základný tvar slovesa: <b>go</b>."
+        "Po <b>had to</b> ide základný tvar slovesa: <b>go</b>.",
+        "",
+        "I had to goed to school yesterday."
       ],
       [
         "She didn't had to wake up early.",
         "She didn't {have} to wake up early.",
-        "Po <b>didn't</b> ide základný tvar: <b>didn't have to</b>."
+        "Po <b>didn't</b> ide základný tvar: <b>didn't have to</b>.",
+        "",
+        "She didn't has to wake up early."
       ],
       [
         "He couldn't came to the party.",
         "He couldn't {come} to the party.",
-        "Po <b>couldn't</b> ide základný tvar: <b>come</b>."
+        "Po <b>couldn't</b> ide základný tvar: <b>come</b>.",
+        "",
+        "He couldn't to come to the party."
       ],
       [
         "Yesterday I must go to the dentist.",
         "Yesterday I {had to} go to the dentist.",
-        "<b>must</b> nemá minulý čas. V minulosti použijeme <b>had to</b>."
+        "<b>must</b> nemá minulý čas. V minulosti použijeme <b>had to</b>.",
+        "",
+        "Yesterday I musted go to the dentist."
       ],
       [
         "Did you could swim at six?",
         "{Could you} swim at six?",
-        "Otázka s <b>could</b> sa tvorí bez <i>did</i>: <b>Could you…?</b>"
+        "Otázka s <b>could</b> sa tvorí bez <i>did</i>: <b>Could you…?</b>",
+        "",
+        "Could you to swim at six?"
       ]
     ]
   },
@@ -317,32 +426,44 @@
       [
         "I have broke my phone.",
         "I have {broken} my phone.",
-        "3. tvar od <b>break</b> je <b>broken</b>."
+        "3. tvar od <b>break</b> je <b>broken</b>.",
+        "",
+        "I have breaked my phone."
       ],
       [
         "She has spoke to the teacher.",
         "She has {spoken} to the teacher.",
-        "3. tvar od <b>speak</b> je <b>spoken</b>."
+        "3. tvar od <b>speak</b> je <b>spoken</b>.",
+        "",
+        "She has speaked to the teacher."
       ],
       [
         "We have drank all the juice.",
         "We have {drunk} all the juice.",
-        "3. tvar od <b>drink</b> je <b>drunk</b> (drink – drank – drunk)."
+        "3. tvar od <b>drink</b> je <b>drunk</b> (drink – drank – drunk).",
+        "",
+        "We have drinked all the juice."
       ],
       [
         "Have you ever flew in a plane?",
         "Have you ever {flown} in a plane?",
-        "3. tvar od <b>fly</b> je <b>flown</b> (fly – flew – flown)."
+        "3. tvar od <b>fly</b> je <b>flown</b> (fly – flew – flown).",
+        "",
+        "Have you ever flied in a plane?"
       ],
       [
         "He has took my pen.",
         "He has {taken} my pen.",
-        "3. tvar od <b>take</b> je <b>taken</b> (take – took – taken)."
+        "3. tvar od <b>take</b> je <b>taken</b> (take – took – taken).",
+        "",
+        "He has taked my pen."
       ],
       [
         "She has never sang on stage.",
         "She has never {sung} on stage.",
-        "3. tvar od <b>sing</b> je <b>sung</b> (sing – sang – sung)."
+        "3. tvar od <b>sing</b> je <b>sung</b> (sing – sang – sung).",
+        "",
+        "She has never singed on stage."
       ]
     ]
   },
@@ -351,32 +472,44 @@
       [
         "The film were boring.",
         "The film {was} boring.",
-        "<b>The film</b> = it, preto <b>was</b>."
+        "<b>The film</b> = it, preto <b>was</b>.",
+        "",
+        "The film be boring."
       ],
       [
         "I weren't at school on Monday.",
         "I {wasn't} at school on Monday.",
-        "K <b>I</b> patrí <b>wasn't</b>."
+        "K <b>I</b> patrí <b>wasn't</b>.",
+        "",
+        "I am not at school on Monday."
       ],
       [
         "Was she happy? – Yes, she wasn't.",
         "Was she happy? – Yes, she {was}.",
-        "Kladná odpoveď: <b>Yes, she was.</b>"
+        "Kladná odpoveď: <b>Yes, she was.</b>",
+        "",
+        "Was she happy? – Yes, she were."
       ],
       [
         "There was two dogs in the garden.",
         "There {were} two dogs in the garden.",
-        "Dva psy (množné číslo) = <b>There were</b>."
+        "Dva psy (množné číslo) = <b>There were</b>.",
+        "",
+        "There is two dogs in the garden."
       ],
       [
         "Where you were last night?",
         "Where {were you} last night?",
-        "V otázke ide <b>were</b> pred podmet: <b>Where were you…?</b>"
+        "V otázke ide <b>were</b> pred podmet: <b>Where were you…?</b>",
+        "",
+        "Where you was last night?"
       ],
       [
         "Was they at home?",
         "{Were they} at home?",
-        "K <b>they</b> patrí <b>were</b>."
+        "K <b>they</b> patrí <b>were</b>.",
+        "",
+        "Did they be at home?"
       ]
     ]
   },
@@ -385,37 +518,51 @@
       [
         "We eated pizza for dinner.",
         "We {ate} pizza for dinner.",
-        "<b>eat</b> je nepravidelné: eat – <b>ate</b>."
+        "<b>eat</b> je nepravidelné: eat – <b>ate</b>.",
+        "",
+        "We have ate pizza for dinner."
       ],
       [
         "He taked my bag.",
         "He {took} my bag.",
-        "<b>take</b> je nepravidelné: take – <b>took</b>."
+        "<b>take</b> je nepravidelné: take – <b>took</b>.",
+        "",
+        "He tooked my bag."
       ],
       [
         "I didn't went to school.",
         "I didn't {go} to school.",
-        "Po <b>didn't</b> ide základný tvar: <b>go</b>."
+        "Po <b>didn't</b> ide základný tvar: <b>go</b>.",
+        "",
+        "I didn't going to school."
       ],
       [
         "She comed home late.",
         "She {came} home late.",
-        "<b>come</b> je nepravidelné: come – <b>came</b>."
+        "<b>come</b> je nepravidelné: come – <b>came</b>.",
+        "",
+        "She camed home late."
       ],
       [
         "Did he gave you a present?",
         "Did he {give} you a present?",
-        "Po <b>Did</b> ide základný tvar: <b>give</b>."
+        "Po <b>Did</b> ide základný tvar: <b>give</b>.",
+        "",
+        "Did he gives you a present?"
       ],
       [
         "They maked a cake.",
         "They {made} a cake.",
-        "<b>make</b> je nepravidelné: make – <b>made</b>."
+        "<b>make</b> je nepravidelné: make – <b>made</b>.",
+        "",
+        "They did made a cake."
       ],
       [
         "Yesterday we see a funny film.",
         "Yesterday we {saw} a funny film.",
-        "<b>Yesterday</b> = minulosť, preto <b>saw</b> (see – saw)."
+        "<b>Yesterday</b> = minulosť, preto <b>saw</b> (see – saw).",
+        "",
+        "Yesterday we seen a funny film."
       ]
     ]
   },
@@ -424,37 +571,51 @@
       [
         "She writed a long email.",
         "She {wrote} a long email.",
-        "write – <b>wrote</b>."
+        "write – <b>wrote</b>.",
+        "",
+        "She writted a long email."
       ],
       [
         "We swimmed in the sea.",
         "We {swam} in the sea.",
-        "swim – <b>swam</b>."
+        "swim – <b>swam</b>.",
+        "",
+        "We swum in the sea."
       ],
       [
         "He winned the race.",
         "He {won} the race.",
-        "win – <b>won</b>."
+        "win – <b>won</b>.",
+        "",
+        "He wined the race."
       ],
       [
         "They runned very fast.",
         "They {ran} very fast.",
-        "run – <b>ran</b>."
+        "run – <b>ran</b>.",
+        "",
+        "They runed very fast."
       ],
       [
         "Did you drove to Žilina?",
         "Did you {drive} to Žilina?",
-        "Po <b>Did</b> ide základný tvar: <b>drive</b>."
+        "Po <b>Did</b> ide základný tvar: <b>drive</b>.",
+        "",
+        "Did you drives to Žilina?"
       ],
       [
         "I meeted her at school.",
         "I {met} her at school.",
-        "meet – <b>met</b>."
+        "meet – <b>met</b>.",
+        "",
+        "I metted her at school."
       ],
       [
         "I didn't wrote the answer.",
         "I didn't {write} the answer.",
-        "Po <b>didn't</b> ide základný tvar: <b>write</b>."
+        "Po <b>didn't</b> ide základný tvar: <b>write</b>.",
+        "",
+        "I didn't written the answer."
       ]
     ]
   },
@@ -463,32 +624,44 @@
       [
         "I didn't played football yesterday.",
         "I didn't {play} football yesterday.",
-        "Po <b>didn't</b> ide základný tvar: <b>play</b>."
+        "Po <b>didn't</b> ide základný tvar: <b>play</b>.",
+        "",
+        "I didn't playing football yesterday."
       ],
       [
         "She danceed at the party.",
         "She {danced} at the party.",
-        "Ak sloveso končí na <b>-e</b>, pridáme len <b>-d</b>: dance → danced."
+        "Ak sloveso končí na <b>-e</b>, pridáme len <b>-d</b>: dance → danced.",
+        "",
+        "She dancd at the party."
       ],
       [
         "We planed a trip.",
         "We {planned} a trip.",
-        "Krátke sloveso s jednou samohláskou zdvojí spoluhlásku: plan → pla<b>nn</b>ed."
+        "Krátke sloveso s jednou samohláskou zdvojí spoluhlásku: plan → pla<b>nn</b>ed.",
+        "",
+        "We planing a trip."
       ],
       [
         "He cryed all night.",
         "He {cried} all night.",
-        "Spoluhláska + <b>y</b> → <b>-ied</b>: cry → cried."
+        "Spoluhláska + <b>y</b> → <b>-ied</b>: cry → cried.",
+        "",
+        "He crid all night."
       ],
       [
         "They visit us last Sunday.",
         "They {visited} us last Sunday.",
-        "<b>Last Sunday</b> = minulosť, preto <b>visited</b>."
+        "<b>Last Sunday</b> = minulosť, preto <b>visited</b>.",
+        "",
+        "They visits us last Sunday."
       ],
       [
         "She opend the door.",
         "She {opened} the door.",
-        "Pri <b>-ed</b> nevynechaj <b>e</b>: open → opened."
+        "Pri <b>-ed</b> nevynechaj <b>e</b>: open → opened.",
+        "",
+        "She openned the door."
       ]
     ]
   },
@@ -497,27 +670,37 @@
       [
         "While I was walk home, it started to rain.",
         "While I was {walking} home, it started to rain.",
-        "Po <b>was</b> ide sloveso s -ing: walking."
+        "Po <b>was</b> ide sloveso s -ing: walking.",
+        "",
+        "While I was walks home, it started to rain."
       ],
       [
         "They was playing when the rain started.",
         "They {were} playing when the rain started.",
-        "K <b>they</b> patrí <b>were</b>."
+        "K <b>they</b> patrí <b>were</b>.",
+        "",
+        "They were played when the rain started."
       ],
       [
         "Was you sleeping when I called?",
         "{Were you} sleeping when I called?",
-        "K <b>you</b> patrí <b>were</b>."
+        "K <b>you</b> patrí <b>were</b>.",
+        "",
+        "Are you sleeping when I called?"
       ],
       [
         "He didn't was listening to me.",
         "He {wasn't} listening to me.",
-        "Zápor v past continuous: <b>wasn't</b> + sloveso s -ing."
+        "Zápor v past continuous: <b>wasn't</b> + sloveso s -ing.",
+        "",
+        "He wasn't listened to me."
       ],
       [
         "I was seeing a UFO yesterday.",
         "I {saw} a UFO yesterday.",
-        "Krátky dej, ktorý netrvá dlho = <b>past simple</b>: saw."
+        "Krátky dej, ktorý netrvá dlho = <b>past simple</b>: saw.",
+        "",
+        "I was seen a UFO yesterday."
       ]
     ]
   },
@@ -526,32 +709,44 @@
       [
         "She not liked the film.",
         "She {didn't like} the film.",
-        "Zápor v minulom čase: <b>didn't</b> + základný tvar: <b>didn't like</b>."
+        "Zápor v minulom čase: <b>didn't</b> + základný tvar: <b>didn't like</b>.",
+        "",
+        "She didn't liked the film."
       ],
       [
         "I didn't saw him yesterday.",
         "I didn't {see} him yesterday.",
-        "Po <b>didn't</b> ide základný tvar: <b>see</b>."
+        "Po <b>didn't</b> ide základný tvar: <b>see</b>.",
+        "",
+        "I didn't seen him yesterday."
       ],
       [
         "What did you bought?",
         "What did you {buy}?",
-        "Po <b>did you</b> ide základný tvar: <b>buy</b>."
+        "Po <b>did you</b> ide základný tvar: <b>buy</b>.",
+        "",
+        "What did you buyed?"
       ],
       [
         "We play football yesterday.",
         "We {played} football yesterday.",
-        "<b>Yesterday</b> = minulosť: <b>played</b>."
+        "<b>Yesterday</b> = minulosť: <b>played</b>.",
+        "",
+        "We are play football yesterday."
       ],
       [
         "Did she went home?",
         "Did she {go} home?",
-        "Po <b>Did</b> ide základný tvar: <b>go</b>."
+        "Po <b>Did</b> ide základný tvar: <b>go</b>.",
+        "",
+        "Did she goes home?"
       ],
       [
         "Yesterday I am at the cinema.",
         "Yesterday I {was} at the cinema.",
-        "<b>Yesterday</b> = minulosť: <b>was</b>."
+        "<b>Yesterday</b> = minulosť: <b>was</b>.",
+        "",
+        "Yesterday I were at the cinema."
       ]
     ]
   },
@@ -560,32 +755,44 @@
       [
         "What you are doing?",
         "What {are you} doing?",
-        "V otázke ide <b>are</b> pred podmet: <b>What are you doing?</b>"
+        "V otázke ide <b>are</b> pred podmet: <b>What are you doing?</b>",
+        "",
+        "What do you doing?"
       ],
       [
         "Is she play tennis?",
         "Is she {playing} tennis?",
-        "Po <b>is she</b> ide sloveso s -ing: <b>playing</b>."
+        "Po <b>is she</b> ide sloveso s -ing: <b>playing</b>.",
+        "",
+        "Is she plays tennis?"
       ],
       [
         "Are you listen to me?",
         "Are you {listening} to me?",
-        "Po <b>are you</b> ide sloveso s -ing: <b>listening</b>."
+        "Po <b>are you</b> ide sloveso s -ing: <b>listening</b>.",
+        "",
+        "Are you listens to me?"
       ],
       [
         "Is it raining? – Yes, it rains.",
         "Is it raining? – Yes, it {is}.",
-        "Krátka odpoveď: <b>Yes, it is.</b>"
+        "Krátka odpoveď: <b>Yes, it is.</b>",
+        "",
+        "Is it raining? – Yes, it isn't."
       ],
       [
         "Am I disturb you?",
         "Am I {disturbing} you?",
-        "Po <b>Am I</b> ide sloveso s -ing: <b>disturbing</b>."
+        "Po <b>Am I</b> ide sloveso s -ing: <b>disturbing</b>.",
+        "",
+        "Do I disturbing you?"
       ],
       [
         "Where are you go?",
         "Where are you {going}?",
-        "Po <b>are you</b> ide sloveso s -ing: <b>going</b>."
+        "Po <b>are you</b> ide sloveso s -ing: <b>going</b>.",
+        "",
+        "Where you are going?"
       ]
     ]
   },
@@ -594,37 +801,51 @@
       [
         "I haven't seen him since three weeks.",
         "I haven't seen him {for} three weeks.",
-        "Tri týždne = <b>dĺžka</b> času → <b>for</b>."
+        "Tri týždne = <b>dĺžka</b> času → <b>for</b>.",
+        "",
+        "I haven't seen him from three weeks."
       ],
       [
         "They've played tennis for Monday.",
         "They've played tennis {since} Monday.",
-        "Pondelok = <b>začiatok</b> → <b>since</b>."
+        "Pondelok = <b>začiatok</b> → <b>since</b>.",
+        "",
+        "They've played tennis from Monday."
       ],
       [
         "We have just arrive.",
         "We have just {arrived}.",
-        "Po <b>have</b> ide 3. tvar slovesa: arrived."
+        "Po <b>have</b> ide 3. tvar slovesa: arrived.",
+        "",
+        "We have just arrives."
       ],
       [
         "I have yet not finished.",
         "{I haven't finished yet}.",
-        "<b>Yet</b> ide na koniec vety: <b>I haven't finished yet.</b>"
+        "<b>Yet</b> ide na koniec vety: <b>I haven't finished yet.</b>",
+        "",
+        "I haven't yet finish."
       ],
       [
         "How long do you know Mia?",
         "How long {have you known} Mia?",
-        "Trvá to doteraz = <b>present perfect</b>: <b>How long have you known…?</b>"
+        "Trvá to doteraz = <b>present perfect</b>: <b>How long have you known…?</b>",
+        "",
+        "How long you have known Mia?"
       ],
       [
         "He has just went home.",
         "He has just {gone} home.",
-        "3. tvar od <b>go</b> je <b>gone</b>."
+        "3. tvar od <b>go</b> je <b>gone</b>.",
+        "",
+        "He has just goed home."
       ],
       [
         "She has lived here since ten years.",
         "She has lived here {for} ten years.",
-        "Desať rokov = <b>dĺžka</b> času → <b>for</b>."
+        "Desať rokov = <b>dĺžka</b> času → <b>for</b>.",
+        "",
+        "She has lived here from ten years."
       ]
     ]
   },
@@ -633,32 +854,44 @@
       [
         "Has you ever been to London?",
         "{Have you} ever been to London?",
-        "K <b>you</b> patrí <b>have</b>."
+        "K <b>you</b> patrí <b>have</b>.",
+        "",
+        "Do you ever been to London?"
       ],
       [
         "Have they ever win a prize?",
         "Have they ever {won} a prize?",
-        "Po <b>have</b> ide 3. tvar: win – won – <b>won</b>."
+        "Po <b>have</b> ide 3. tvar: win – won – <b>won</b>.",
+        "",
+        "Have they ever wined a prize?"
       ],
       [
         "She has never not seen snow.",
         "She has {never seen} snow.",
-        "Stačí jeden zápor: <b>never</b>. Dva zápory nedávame."
+        "Stačí jeden zápor: <b>never</b>. Dva zápory nedávame.",
+        "",
+        "She hasn't never seen snow."
       ],
       [
         "Have you ever seen a whale? – No, I haven't never.",
         "Have you ever seen a whale? – No, I {haven't}.",
-        "Stačí jeden zápor: <b>No, I haven't.</b>"
+        "Stačí jeden zápor: <b>No, I haven't.</b>",
+        "",
+        "Have you ever seen a whale? – No, I have not never."
       ],
       [
         "Ever have you eaten sushi?",
         "{Have you ever} eaten sushi?",
-        "Poradie: <b>Have you ever + 3. tvar</b>."
+        "Poradie: <b>Have you ever + 3. tvar</b>.",
+        "",
+        "Have ever you eaten sushi?"
       ],
       [
         "Have you ever swam in the sea?",
         "Have you ever {swum} in the sea?",
-        "3. tvar od <b>swim</b> je <b>swum</b> (swim – swam – swum)."
+        "3. tvar od <b>swim</b> je <b>swum</b> (swim – swam – swum).",
+        "",
+        "Have you ever swimmed in the sea?"
       ]
     ]
   },
@@ -667,32 +900,44 @@
       [
         "We have visited the museum last week.",
         "We {visited} the museum last week.",
-        "<b>Last week</b> = konkrétny čas → <b>past simple</b>: visited."
+        "<b>Last week</b> = konkrétny čas → <b>past simple</b>: visited.",
+        "",
+        "We visit the museum last week."
       ],
       [
         "Have you seen him yesterday?",
         "{Did you see} him yesterday?",
-        "<b>Yesterday</b> = konkrétny čas → <b>past simple</b>: Did you see…?"
+        "<b>Yesterday</b> = konkrétny čas → <b>past simple</b>: Did you see…?",
+        "",
+        "Did you have seen him yesterday?"
       ],
       [
         "I didn't see this film yet.",
         "I {haven't seen} this film yet.",
-        "<b>Yet</b> = doteraz, bez konkrétneho času → <b>present perfect</b>: haven't seen."
+        "<b>Yet</b> = doteraz, bez konkrétneho času → <b>present perfect</b>: haven't seen.",
+        "",
+        "I haven't saw this film yet."
       ],
       [
         "She has visited Rome in 2019.",
         "She {visited} Rome in 2019.",
-        "<b>In 2019</b> = konkrétny čas → past simple."
+        "<b>In 2019</b> = konkrétny čas → past simple.",
+        "",
+        "She has visit Rome in 2019."
       ],
       [
         "Did you finish your homework yet?",
         "{Have you finished} your homework yet?",
-        "<b>Yet</b> = doteraz → <b>present perfect</b>: Have you finished…?"
+        "<b>Yet</b> = doteraz → <b>present perfect</b>: Have you finished…?",
+        "",
+        "Have you finish your homework yet?"
       ],
       [
         "I have lost my phone last night.",
         "I {lost} my phone last night.",
-        "<b>Last night</b> = konkrétny čas → past simple."
+        "<b>Last night</b> = konkrétny čas → past simple.",
+        "",
+        "I have lose my phone last night."
       ]
     ]
   },
@@ -701,32 +946,44 @@
       [
         "I have finish my homework.",
         "I have {finished} my homework.",
-        "Po <b>have</b> ide 3. tvar: finished."
+        "Po <b>have</b> ide 3. tvar: finished.",
+        "",
+        "I has finished my homework."
       ],
       [
         "They has arrived.",
         "They {have} arrived.",
-        "K <b>they</b> patrí <b>have</b>."
+        "K <b>they</b> patrí <b>have</b>.",
+        "",
+        "They have arrive."
       ],
       [
         "She haven't called me.",
         "She {hasn't} called me.",
-        "K <b>she</b> patrí <b>hasn't</b>."
+        "K <b>she</b> patrí <b>hasn't</b>.",
+        "",
+        "She hasn't call me."
       ],
       [
         "My brother has broke his leg.",
         "My brother has {broken} his leg.",
-        "3. tvar od <b>break</b> je <b>broken</b>."
+        "3. tvar od <b>break</b> je <b>broken</b>.",
+        "",
+        "My brother have broken his leg."
       ],
       [
         "I have already did my homework.",
         "I have already {done} my homework.",
-        "3. tvar od <b>do</b> je <b>done</b>."
+        "3. tvar od <b>do</b> je <b>done</b>.",
+        "",
+        "I have already doed my homework."
       ],
       [
         "Have she tidied her room?",
         "{Has} she tidied her room?",
-        "K <b>she</b> patrí <b>has</b>."
+        "K <b>she</b> patrí <b>has</b>.",
+        "",
+        "Did she tidied her room?"
       ]
     ]
   },
@@ -735,37 +992,51 @@
       [
         "She am my sister.",
         "She {is} my sister.",
-        "K <b>she</b> patrí <b>is</b>."
+        "K <b>she</b> patrí <b>is</b>.",
+        "",
+        "She are my sister."
       ],
       [
         "We is friends.",
         "We {are} friends.",
-        "K <b>we</b> patrí <b>are</b>."
+        "K <b>we</b> patrí <b>are</b>.",
+        "",
+        "We am friends."
       ],
       [
         "They isn't at home.",
         "They {aren't} at home.",
-        "K <b>they</b> patrí <b>aren't</b>."
+        "K <b>they</b> patrí <b>aren't</b>.",
+        "",
+        "They not at home."
       ],
       [
         "Where is my keys?",
         "Where {are} my keys?",
-        "<b>Keys</b> je množné číslo: <b>are</b>."
+        "<b>Keys</b> je množné číslo: <b>are</b>.",
+        "",
+        "Where am my keys?"
       ],
       [
         "How old you are?",
         "How old {are you}?",
-        "BE ide pred podmet: <b>How old are you?</b>"
+        "BE ide pred podmet: <b>How old are you?</b>",
+        "",
+        "How old do you are?"
       ],
       [
         "I am have a dog.",
         "I {have} a dog.",
-        "Nepoužívame <b>am</b> a <b>have</b> spolu: <b>I have a dog.</b>"
+        "Nepoužívame <b>am</b> a <b>have</b> spolu: <b>I have a dog.</b>",
+        "",
+        "I has a dog."
       ],
       [
         "Is you tired?",
         "{Are you} tired?",
-        "K <b>you</b> patrí <b>are</b>."
+        "K <b>you</b> patrí <b>are</b>.",
+        "",
+        "Do you tired?"
       ]
     ]
   },
@@ -774,32 +1045,44 @@
       [
         "Do she like music?",
         "{Does she} like music?",
-        "K <b>she</b> patrí <b>does</b>."
+        "K <b>she</b> patrí <b>does</b>.",
+        "",
+        "Does she likes music?"
       ],
       [
         "Where do he live?",
         "Where {does} he live?",
-        "K <b>he</b> patrí <b>does</b>."
+        "K <b>he</b> patrí <b>does</b>.",
+        "",
+        "Where do he lives?"
       ],
       [
         "What you do after school?",
         "What {do you do} after school?",
-        "Otázka potrebuje pomocné sloveso: <b>What do you do…?</b>"
+        "Otázka potrebuje pomocné sloveso: <b>What do you do…?</b>",
+        "",
+        "What you doing after school?"
       ],
       [
         "Do you can swim?",
         "{Can you} swim?",
-        "<b>can</b> tvorí otázku bez do: <b>Can you swim?</b>"
+        "<b>can</b> tvorí otázku bez do: <b>Can you swim?</b>",
+        "",
+        "Can you to swim?"
       ],
       [
         "Do they like football? – No, they doesn't.",
         "Do they like football? – No, they {don't}.",
-        "K <b>they</b> patrí <b>don't</b>."
+        "K <b>they</b> patrí <b>don't</b>.",
+        "",
+        "Do they like football? – No, they aren't."
       ],
       [
         "When your lesson starts?",
         "When {does your lesson start}?",
-        "Pomocné <b>does</b> a sloveso bez -s: <b>When does your lesson start?</b>"
+        "Pomocné <b>does</b> a sloveso bez -s: <b>When does your lesson start?</b>",
+        "",
+        "When your lesson start?"
       ]
     ]
   },
@@ -808,32 +1091,44 @@
       [
         "I am playing tennis every Saturday.",
         "I {play} tennis every Saturday.",
-        "<b>Every Saturday</b> = pravidelne → <b>present simple</b>."
+        "<b>Every Saturday</b> = pravidelne → <b>present simple</b>.",
+        "",
+        "I am play tennis every Saturday."
       ],
       [
         "Be quiet! The baby sleeps.",
         "Be quiet! The baby {is sleeping}.",
-        "Deje sa to práve teraz → <b>present continuous</b>: is sleeping."
+        "Deje sa to práve teraz → <b>present continuous</b>: is sleeping.",
+        "",
+        "Be quiet! The baby is sleep."
       ],
       [
         "She is wearing glasses every day.",
         "She {wears} glasses every day.",
-        "<b>Every day</b> = pravidelne → <b>present simple</b>: wears."
+        "<b>Every day</b> = pravidelne → <b>present simple</b>: wears.",
+        "",
+        "She is wear glasses every day."
       ],
       [
         "Listen! Someone plays the piano.",
         "Listen! Someone {is playing} the piano.",
-        "<b>Listen!</b> = práve teraz → <b>present continuous</b>."
+        "<b>Listen!</b> = práve teraz → <b>present continuous</b>.",
+        "",
+        "Listen! Someone play the piano."
       ],
       [
         "Mum cooks dinner now.",
         "Mum {is cooking} dinner now.",
-        "<b>Now</b> = práve teraz → <b>present continuous</b>."
+        "<b>Now</b> = práve teraz → <b>present continuous</b>.",
+        "",
+        "Mum cooking dinner now."
       ],
       [
         "I'm not playing football on Sundays.",
         "{I don't play} football on Sundays.",
-        "<b>On Sundays</b> = pravidelne → <b>present simple</b>: don't play."
+        "<b>On Sundays</b> = pravidelne → <b>present simple</b>: don't play.",
+        "",
+        "I don't playing football on Sundays."
       ]
     ]
   },
@@ -842,32 +1137,44 @@
       [
         "My cat sleep all day.",
         "My cat {sleeps} all day.",
-        "<b>My cat</b> = it → koncovka <b>-s</b>: sleeps."
+        "<b>My cat</b> = it → koncovka <b>-s</b>: sleeps.",
+        "",
+        "My cat sleepes all day."
       ],
       [
         "He watch TV every evening.",
         "He {watches} TV every evening.",
-        "Po <b>-ch</b> pridáme <b>-es</b>: watches."
+        "Po <b>-ch</b> pridáme <b>-es</b>: watches.",
+        "",
+        "He watchs TV every evening."
       ],
       [
         "She studys English.",
         "She {studies} English.",
-        "Spoluhláska + <b>y</b> → <b>-ies</b>: study → studies."
+        "Spoluhláska + <b>y</b> → <b>-ies</b>: study → studies.",
+        "",
+        "She studyes English."
       ],
       [
         "Tom don't play football.",
         "Tom {doesn't} play football.",
-        "K <b>Tom</b> (he) patrí <b>doesn't</b>."
+        "K <b>Tom</b> (he) patrí <b>doesn't</b>.",
+        "",
+        "Tom doesn't plays football."
       ],
       [
         "My parents works in a bank.",
         "My parents {work} in a bank.",
-        "<b>My parents</b> = they → bez -s: work."
+        "<b>My parents</b> = they → bez -s: work.",
+        "",
+        "My parents workes in a bank."
       ],
       [
         "The shop open at nine.",
         "The shop {opens} at nine.",
-        "<b>The shop</b> = it → koncovka <b>-s</b>: opens."
+        "<b>The shop</b> = it → koncovka <b>-s</b>: opens.",
+        "",
+        "The shop openes at nine."
       ]
     ]
   },
@@ -876,32 +1183,44 @@
       [
         "He is needing help.",
         "He {needs} help.",
-        "<b>need</b> je stavové sloveso – nepoužívame ho s -ing."
+        "<b>need</b> je stavové sloveso – nepoužívame ho s -ing.",
+        "",
+        "He are needing help."
       ],
       [
         "We are hating Mondays.",
         "We {hate} Mondays.",
-        "<b>hate</b> je stavové sloveso – nepoužívame ho s -ing."
+        "<b>hate</b> je stavové sloveso – nepoužívame ho s -ing.",
+        "",
+        "We are hate Mondays."
       ],
       [
         "I'm believing you.",
         "{I believe} you.",
-        "<b>believe</b> je stavové sloveso – nepoužívame ho s -ing."
+        "<b>believe</b> je stavové sloveso – nepoužívame ho s -ing.",
+        "",
+        "I'm believe you."
       ],
       [
         "Are you remembering his name?",
         "{Do you remember} his name?",
-        "<b>remember</b> je stavové sloveso: <b>Do you remember…?</b>"
+        "<b>remember</b> je stavové sloveso: <b>Do you remember…?</b>",
+        "",
+        "Do you remembering his name?"
       ],
       [
         "This soup is tasting great.",
         "This soup {tastes} great.",
-        "Keď opisujem chuť, použijem present simple: <b>tastes</b>."
+        "Keď opisujem chuť, použijem present simple: <b>tastes</b>.",
+        "",
+        "This soup tasting great."
       ],
       [
         "This bag is belonging to me.",
         "This bag {belongs} to me.",
-        "<b>belong</b> je stavové sloveso – nepoužívame ho s -ing."
+        "<b>belong</b> je stavové sloveso – nepoužívame ho s -ing.",
+        "",
+        "This bag is belong to me."
       ]
     ]
   },
@@ -910,29 +1229,37 @@
       [
         "Look at those clouds! It will rain.",
         "Look at those clouds! It {is going to} rain.",
-        "Vidíme dôkaz (mraky) → <b>be going to</b>."
+        "Vidíme dôkaz (mraky) → <b>be going to</b>.",
+        "",
+        "Look at those clouds! It is going rain."
       ],
       [
         "We meet Tom at six tomorrow.",
         "We {are meeting} Tom at six tomorrow.",
         "Dohodnuté na presný čas → <b>present continuous</b>.",
-        "dohodnuté"
+        "dohodnuté",
+        "We will meeting Tom at six tomorrow."
       ],
       [
         "Tomorrow I will playing football.",
         "Tomorrow I will {play} football.",
-        "Po <b>will</b> ide základný tvar: <b>play</b>."
+        "Po <b>will</b> ide základný tvar: <b>play</b>.",
+        "",
+        "Tomorrow I will to play football."
       ],
       [
         "Oh no, I forgot my book! – I'm going to lend you mine.",
         "Oh no, I forgot my book! – {I'll lend} you mine.",
         "Rozhodnutie v tej chvíli → <b>will</b>.",
-        "rozhodol som sa práve teraz"
+        "rozhodol som sa práve teraz",
+        "Oh no, I forgot my book! – I lend you mine."
       ],
       [
         "We are going to being late.",
         "We are going to {be} late.",
-        "Po <b>going to</b> ide základný tvar: <b>be</b>."
+        "Po <b>going to</b> ide základný tvar: <b>be</b>.",
+        "",
+        "We are going to are late."
       ]
     ]
   },
@@ -941,22 +1268,30 @@
       [
         "I used to played football.",
         "I used to {play} football.",
-        "Po <b>used to</b> ide základný tvar: <b>play</b>."
+        "Po <b>used to</b> ide základný tvar: <b>play</b>.",
+        "",
+        "I use to played football."
       ],
       [
         "My grandma was used to cook for us.",
         "My grandma {used to} cook for us.",
-        "Kedysi = <b>used to</b> + základný tvar. <i>Was used to</i> znamená niečo iné."
+        "Kedysi = <b>used to</b> + základný tvar. <i>Was used to</i> znamená niečo iné.",
+        "",
+        "My grandma used to cooked for us."
       ],
       [
         "I used to going to school by bus.",
         "I used to {go} to school by bus.",
-        "Po <b>used to</b> ide základný tvar: <b>go</b>."
+        "Po <b>used to</b> ide základný tvar: <b>go</b>.",
+        "",
+        "I used to went to school by bus."
       ],
       [
         "He used to be a student last year.",
         "He {was} a student last year.",
-        "Pri konkrétnom čase (<b>last year</b>) použijeme past simple."
+        "Pri konkrétnom čase (<b>last year</b>) použijeme past simple.",
+        "",
+        "He was be a student last year."
       ]
     ]
   },
@@ -966,24 +1301,29 @@
         "Watch out! You will fall!",
         "Watch out! You {are going to} fall!",
         "Vidím, že sa to stane → <b>be going to</b>.",
-        "vidím, že spadne"
+        "vidím, že spadne",
+        "Watch out! You are fall!"
       ],
       [
         "I'm going to help you with your bag.",
         "{I'll help} you with your bag.",
         "Rozhodnutie v tej chvíli → <b>will</b>.",
-        "rozhodol som sa práve teraz"
+        "rozhodol som sa práve teraz",
+        "I'll to help you with your bag."
       ],
       [
         "I will have a party on Saturday.",
         "I {am going to} have a party on Saturday.",
         "Plán, ktorý už mám pripravený → <b>be going to</b>.",
-        "už mám všetko pripravené"
+        "už mám všetko pripravené",
+        "I will to have a party on Saturday."
       ],
       [
         "I don't going to tell anyone.",
         "I {am not} going to tell anyone.",
-        "Zápor ide k slovesu BE: <b>I'm not going to</b>."
+        "Zápor ide k slovesu BE: <b>I'm not going to</b>.",
+        "",
+        "I not going to tell anyone."
       ]
     ]
   },
@@ -992,37 +1332,51 @@
       [
         "She wills come to the party.",
         "She {will} come to the party.",
-        "<b>will</b> sa nemení: nie wills."
+        "<b>will</b> sa nemení: nie wills.",
+        "",
+        "She will comes to the party."
       ],
       [
         "Will you to help me?",
         "Will you {help} me?",
-        "Po <b>will</b> ide základný tvar bez <i>to</i>."
+        "Po <b>will</b> ide základný tvar bez <i>to</i>.",
+        "",
+        "Will you helps me?"
       ],
       [
         "It will rains tomorrow.",
         "It will {rain} tomorrow.",
-        "Po <b>will</b> ide základný tvar bez -s: <b>rain</b>."
+        "Po <b>will</b> ide základný tvar bez -s: <b>rain</b>.",
+        "",
+        "It will raining tomorrow."
       ],
       [
         "I don't will go there.",
         "I {won't} go there.",
-        "Zápor od will je <b>won't</b>."
+        "Zápor od will je <b>won't</b>.",
+        "",
+        "I won't to go there."
       ],
       [
         "Maybe I'll am late.",
         "Maybe I'll {be} late.",
-        "Po <b>will</b> ide základný tvar: <b>be</b>."
+        "Po <b>will</b> ide základný tvar: <b>be</b>.",
+        "",
+        "Maybe I'll are late."
       ],
       [
         "Tomorrow it will sunny.",
         "Tomorrow it {will be} sunny.",
-        "Pred <i>sunny</i> chýba sloveso <b>be</b>: <b>will be</b> sunny."
+        "Pred <i>sunny</i> chýba sloveso <b>be</b>: <b>will be</b> sunny.",
+        "",
+        "Tomorrow it will being sunny."
       ],
       [
         "I wont tell anyone.",
         "I {won't} tell anyone.",
-        "Zápor sa píše <b>won't</b> – s apostrofom. Pomôže tlačidlo <b>Vložiť '</b>."
+        "Zápor sa píše <b>won't</b> – s apostrofom. Pomôže tlačidlo <b>Vložiť '</b>.",
+        "",
+        "I willn't tell anyone."
       ]
     ]
   },
@@ -1031,33 +1385,44 @@
       [
         "I saw a elephant at the zoo.",
         "I saw {an} elephant at the zoo.",
-        "Pred samohláskovým zvukom ide <b>an</b>: an elephant."
+        "Pred samohláskovým zvukom ide <b>an</b>: an elephant.",
+        "",
+        "I saw a elephants at the zoo."
       ],
       [
         "Can you close window, please?",
         "Can you close {the window}, please?",
         "Ide o konkrétne okno, o ktorom obaja vieme → <b>the window</b>.",
-        "o konkrétnom okne"
+        "o konkrétnom okne",
+        "Can you close an window, please?"
       ],
       [
         "He has a dog. A dog is very big.",
         "He has a dog. {The} dog is very big.",
-        "Druhýkrát hovoríme o tom istom psovi, ktorého už poznáme → <b>the</b>."
+        "Druhýkrát hovoríme o tom istom psovi, ktorého už poznáme → <b>the</b>.",
+        "",
+        "He has a dog. An dog is very big."
       ],
       [
         "My mum is the nurse.",
         "My mum is {a} nurse.",
-        "Povolanie vyjadrujeme s <b>a / an</b>: She is a nurse."
+        "Povolanie vyjadrujeme s <b>a / an</b>: She is a nurse.",
+        "",
+        "My mum is an nurse."
       ],
       [
         "I play the football every day.",
         "I play {football} every day.",
-        "Pri športoch člen nepoužívame: <b>play football</b>."
+        "Pri športoch člen nepoužívame: <b>play football</b>.",
+        "",
+        "I play a football every day."
       ],
       [
         "She is an university student.",
         "She is {a} university student.",
-        "<i>University</i> sa začína zvukom <b>/j/</b> (ako spoluhláska), preto <b>a</b>."
+        "<i>University</i> sa začína zvukom <b>/j/</b> (ako spoluhláska), preto <b>a</b>.",
+        "",
+        "She is some university student."
       ]
     ]
   },
@@ -1066,32 +1431,44 @@
       [
         "My dad is engineer.",
         "My dad is {an engineer}.",
-        "Povolanie vyjadrujeme s <b>a / an</b>; engineer začína samohláskou → <b>an</b>."
+        "Povolanie vyjadrujeme s <b>a / an</b>; engineer začína samohláskou → <b>an</b>.",
+        "",
+        "My dad is a engineer."
       ],
       [
         "I eat a egg every morning.",
         "I eat {an} egg every morning.",
-        "Pred samohláskovým zvukom ide <b>an</b>."
+        "Pred samohláskovým zvukom ide <b>an</b>.",
+        "",
+        "I eat the egg every morning."
       ],
       [
         "We have a hour for lunch.",
         "We have {an} hour for lunch.",
-        "<i>Hour</i> sa začína samohláskovým zvukom (h sa nevyslovuje) → <b>an</b>."
+        "<i>Hour</i> sa začína samohláskovým zvukom (h sa nevyslovuje) → <b>an</b>.",
+        "",
+        "We have a hours for lunch."
       ],
       [
         "I need an pencil.",
         "I need {a} pencil.",
-        "Pred spoluhláskovým zvukom ide <b>a</b>."
+        "Pred spoluhláskovým zvukom ide <b>a</b>.",
+        "",
+        "I need pencil an."
       ],
       [
         "She has a brothers.",
         "She has {a brother}.",
-        "<b>A</b> ide len s jednotným číslom: a brother."
+        "<b>A</b> ide len s jednotným číslom: a brother.",
+        "",
+        "She has an brother."
       ],
       [
         "It's an useful book.",
         "It's {a} useful book.",
-        "<i>Useful</i> sa začína zvukom /j/ → <b>a</b>."
+        "<i>Useful</i> sa začína zvukom /j/ → <b>a</b>.",
+        "",
+        "It's the useful book an."
       ]
     ]
   },
@@ -1100,32 +1477,44 @@
       [
         "He drives very slow.",
         "He drives very {slowly}.",
-        "Sloveso opisuje príslovka (<b>-ly</b>): drives slowly."
+        "Sloveso opisuje príslovka (<b>-ly</b>): drives slowly.",
+        "",
+        "He drives very slowing."
       ],
       [
         "My sister dances very good.",
         "My sister dances very {well}.",
-        "Príslovka od <b>good</b> je <b>well</b>."
+        "Príslovka od <b>good</b> je <b>well</b>.",
+        "",
+        "My sister dances very goodly."
       ],
       [
         "We did the test quick.",
         "We did the test {quickly}.",
-        "Opisujeme, ako sme to robili → príslovka <b>quickly</b>."
+        "Opisujeme, ako sme to robili → príslovka <b>quickly</b>.",
+        "",
+        "We did the test quickyly."
       ],
       [
         "Our team played bad yesterday.",
         "Our team played {badly} yesterday.",
-        "Za slovesom hrať treba príslovku: <b>badly</b>."
+        "Za slovesom hrať treba príslovku: <b>badly</b>.",
+        "",
+        "Our team played baddly yesterday."
       ],
       [
         "The dog looks happily.",
         "The dog looks {happy}.",
-        "Po <b>look / feel / be</b> ide prídavné meno: looks <b>happy</b>."
+        "Po <b>look / feel / be</b> ide prídavné meno: looks <b>happy</b>.",
+        "",
+        "The dog looks happyly."
       ],
       [
         "Please speak quiet.",
         "Please speak {quietly}.",
-        "Ako hovoriť? → príslovka <b>quietly</b>."
+        "Ako hovoriť? → príslovka <b>quietly</b>.",
+        "",
+        "Please speak quietely."
       ]
     ]
   },
@@ -1134,27 +1523,37 @@
       [
         "My bag is as heavy than yours.",
         "My bag is as heavy {as} yours.",
-        "Porovnanie „rovnaký ako“: <b>as … as</b>."
+        "Porovnanie „rovnaký ako“: <b>as … as</b>.",
+        "",
+        "My bag is as heavier as yours."
       ],
       [
         "Tom is as tall like Peter.",
         "Tom is as tall {as} Peter.",
-        "Po <b>as + prídavné meno</b> ide druhé <b>as</b>, nie like."
+        "Po <b>as + prídavné meno</b> ide druhé <b>as</b>, nie like.",
+        "",
+        "Tom is as taller as Peter."
       ],
       [
         "This book is as more interesting as that one.",
         "This book is as {interesting} as that one.",
-        "Medzi <b>as … as</b> je základný tvar, bez more."
+        "Medzi <b>as … as</b> je základný tvar, bez more.",
+        "",
+        "This book is as interestinger as that one."
       ],
       [
         "I'm not as better as you at maths.",
         "I'm not as {good} as you at maths.",
-        "Medzi <b>as … as</b> je základný tvar: <b>good</b>."
+        "Medzi <b>as … as</b> je základný tvar: <b>good</b>.",
+        "",
+        "I'm not as gooder as you at maths."
       ],
       [
         "My room is small as yours.",
         "My room is {as small as} yours.",
-        "Treba oba členy: <b>as small as</b>."
+        "Treba oba členy: <b>as small as</b>.",
+        "",
+        "My room is as small than yours."
       ]
     ]
   },
@@ -1163,32 +1562,44 @@
       [
         "My brother is more old than me.",
         "My brother is {older} than me.",
-        "Krátke prídavné meno + <b>-er</b>: older."
+        "Krátke prídavné meno + <b>-er</b>: older.",
+        "",
+        "My brother is oldest than me."
       ],
       [
         "This test is more easy than the last one.",
         "This test is {easier} than the last one.",
-        "Easy → <b>easier</b> (y → ier)."
+        "Easy → <b>easier</b> (y → ier).",
+        "",
+        "This test is easyer than the last one."
       ],
       [
         "Today is more hot than yesterday.",
         "Today is {hotter} than yesterday.",
-        "Hot → <b>hotter</b> (zdvojí sa spoluhláska)."
+        "Hot → <b>hotter</b> (zdvojí sa spoluhláska).",
+        "",
+        "Today is hoter than yesterday."
       ],
       [
         "English is more interesting that maths.",
         "English is more interesting {than} maths.",
-        "Pri porovnaní používame <b>than</b>."
+        "Pri porovnaní používame <b>than</b>.",
+        "",
+        "English is more interesting as maths."
       ],
       [
         "My cat is more good than your dog.",
         "My cat is {better} than your dog.",
-        "Good → <b>better</b> (nepravidelné)."
+        "Good → <b>better</b> (nepravidelné).",
+        "",
+        "My cat is gooder than your dog."
       ],
       [
         "Her bag is heavyer than mine.",
         "Her bag is {heavier} than mine.",
-        "Heavy → <b>heavier</b> (y → ier)."
+        "Heavy → <b>heavier</b> (y → ier).",
+        "",
+        "Her bag is more heavy than mine."
       ]
     ]
   },
@@ -1197,32 +1608,44 @@
       [
         "There isn't many water in the bottle.",
         "There isn't {much} water in the bottle.",
-        "Voda sa nedá počítať → <b>much</b>."
+        "Voda sa nedá počítať → <b>much</b>.",
+        "",
+        "There isn't a few water in the bottle."
       ],
       [
         "I need some advices.",
         "I need some {advice}.",
-        "<b>Advice</b> je nepočitateľné, nemá množné číslo."
+        "<b>Advice</b> je nepočitateľné, nemá množné číslo.",
+        "",
+        "I need an advice."
       ],
       [
         "How much students are in your class?",
         "How {many} students are in your class?",
-        "Študentov vieme spočítať → <b>many</b>."
+        "Študentov vieme spočítať → <b>many</b>.",
+        "",
+        "How a lot of students are in your class?"
       ],
       [
         "We have too much homeworks.",
         "We have too much {homework}.",
-        "<b>Homework</b> je nepočitateľné, bez -s."
+        "<b>Homework</b> je nepočitateľné, bez -s.",
+        "",
+        "We have too many homework."
       ],
       [
         "I eat a few rice every day.",
         "I eat {a little} rice every day.",
-        "Ryža je nepočitateľná → <b>a little</b>."
+        "Ryža je nepočitateľná → <b>a little</b>.",
+        "",
+        "I eat a little rices every day."
       ],
       [
         "There are a lot of furnitures in the room.",
         "There {is a lot of furniture} in the room.",
-        "<b>Furniture</b> je nepočitateľné: There <b>is</b> a lot of furniture."
+        "<b>Furniture</b> je nepočitateľné: There <b>is</b> a lot of furniture.",
+        "",
+        "There are a lot of furniture in the room."
       ]
     ]
   },
@@ -1231,32 +1654,44 @@
       [
         "My birthday is at 5 May.",
         "My birthday is {on} 5 May.",
-        "Pri konkrétnom dni ide <b>on</b>."
+        "Pri konkrétnom dni ide <b>on</b>.",
+        "",
+        "My birthday is in 5 May."
       ],
       [
         "It's the thirty of May.",
         "It's the {thirtieth} of May.",
-        "Dátum je radová číslovka: <b>thirtieth</b>."
+        "Dátum je radová číslovka: <b>thirtieth</b>.",
+        "",
+        "It's the thirtyth of May."
       ],
       [
         "He was born in one thousand nine hundred ninety.",
         "He was born in {nineteen ninety}.",
-        "Roky čítame po dvojiciach: <b>nineteen ninety</b>."
+        "Roky čítame po dvojiciach: <b>nineteen ninety</b>.",
+        "",
+        "He was born in nineteen and ninety."
       ],
       [
         "School starts in the first of September.",
         "School starts {on the first} of September.",
-        "Pri dátume ide <b>on</b>: on the first of September."
+        "Pri dátume ide <b>on</b>: on the first of September.",
+        "",
+        "School starts at the first of September."
       ],
       [
         "My birthday is on march.",
         "My birthday is on {March}.",
-        "Mesiace píšeme s veľkým začiatočným písmenom."
+        "Mesiace píšeme s veľkým začiatočným písmenom.",
+        "",
+        "My birthday is on Marth."
       ],
       [
         "Valentine's Day is on the fourteen of February.",
         "Valentine's Day is on the {fourteenth} of February.",
-        "Dátum je radová číslovka: <b>fourteenth</b>."
+        "Dátum je radová číslovka: <b>fourteenth</b>.",
+        "",
+        "Valentine's Day is on the fourteenth of february."
       ]
     ]
   },
@@ -1265,32 +1700,44 @@
       [
         "The film was very bored.",
         "The film was very {boring}.",
-        "Film je nudný (spôsobuje nudu) → <b>-ing</b>."
+        "Film je nudný (spôsobuje nudu) → <b>-ing</b>.",
+        "",
+        "The film was very bore."
       ],
       [
         "I'm exciting about the trip.",
         "I'm {excited} about the trip.",
-        "Ja sa teším (môj pocit) → <b>-ed</b>."
+        "Ja sa teším (môj pocit) → <b>-ed</b>.",
+        "",
+        "I'm excite about the trip."
       ],
       [
         "She was surprising by the news.",
         "She was {surprised} by the news.",
-        "Jej pocit → <b>surprised</b>."
+        "Jej pocit → <b>surprised</b>.",
+        "",
+        "She was surprise by the news."
       ],
       [
         "The long walk was very tired.",
         "The long walk was very {tiring}.",
-        "Prechádzka unavuje → <b>tiring</b>."
+        "Prechádzka unavuje → <b>tiring</b>.",
+        "",
+        "The long walk was very tiredly."
       ],
       [
         "We were shocking when we heard it.",
         "We were {shocked} when we heard it.",
-        "Pocit ľudí → <b>shocked</b>."
+        "Pocit ľudí → <b>shocked</b>.",
+        "",
+        "We were shock when we heard it."
       ],
       [
         "I'm frightening of spiders.",
         "I'm {frightened} of spiders.",
-        "Mám strach (môj pocit) → <b>frightened</b>."
+        "Mám strach (môj pocit) → <b>frightened</b>.",
+        "",
+        "I'm frighten of spiders."
       ]
     ]
   },
@@ -1299,27 +1746,37 @@
       [
         "My mother's mother is my grandfather.",
         "My mother's mother is my {grandmother}.",
-        "Mamina mama = <b>grandmother</b>."
+        "Mamina mama = <b>grandmother</b>.",
+        "",
+        "My mother's mother is my aunt."
       ],
       [
         "My uncle's son is my brother.",
         "My uncle's son is my {cousin}.",
-        "Syn strýka je <b>cousin</b> (bratranec)."
+        "Syn strýka je <b>cousin</b> (bratranec).",
+        "",
+        "My uncle's son is my nephew."
       ],
       [
         "My parents' brother is my aunt.",
         "My parents' brother is my {uncle}.",
-        "Brat rodiča je <b>uncle</b>."
+        "Brat rodiča je <b>uncle</b>.",
+        "",
+        "My parents' brother is my cousin."
       ],
       [
         "I have two sister and one brother.",
         "I have two {sisters} and one brother.",
-        "Dve sestry → množné číslo <b>sisters</b>."
+        "Dve sestry → množné číslo <b>sisters</b>.",
+        "",
+        "I have two sistres and one brother."
       ],
       [
         "My sister's daughter is my nephew.",
         "My sister's daughter is my {niece}.",
-        "Dcéra sestry je <b>niece</b>, syn je nephew."
+        "Dcéra sestry je <b>niece</b>, syn je nephew.",
+        "",
+        "My sister's daughter is my aunt."
       ]
     ]
   },
@@ -1328,32 +1785,44 @@
       [
         "She's afraid of fly.",
         "She's afraid of {flying}.",
-        "Po predložke ide tvar na <b>-ing</b>."
+        "Po predložke ide tvar na <b>-ing</b>.",
+        "",
+        "She's afraid of to fly."
       ],
       [
         "I'm interested in learn English.",
         "I'm interested in {learning} English.",
-        "Po predložke <b>in</b> ide <b>-ing</b>."
+        "Po predložke <b>in</b> ide <b>-ing</b>.",
+        "",
+        "I'm interested in to learn English."
       ],
       [
         "Thank you for come.",
         "Thank you for {coming}.",
-        "Po predložke <b>for</b> ide <b>-ing</b>."
+        "Po predložke <b>for</b> ide <b>-ing</b>.",
+        "",
+        "Thank you for to come."
       ],
       [
         "Running are good for you.",
         "Running {is} good for you.",
-        "Činnosť ako podmet je 3. osoba jednotného čísla → <b>is</b>."
+        "Činnosť ako podmet je 3. osoba jednotného čísla → <b>is</b>.",
+        "",
+        "Running be good for you."
       ],
       [
         "I'm tired of wait.",
         "I'm tired of {waiting}.",
-        "Po predložke <b>of</b> ide <b>-ing</b>."
+        "Po predložke <b>of</b> ide <b>-ing</b>.",
+        "",
+        "I'm tired of to wait."
       ],
       [
         "Eat vegetables is healthy.",
         "{Eating} vegetables is healthy.",
-        "Ako podmet ide gerundium: <b>Eating</b>."
+        "Ako podmet ide gerundium: <b>Eating</b>.",
+        "",
+        "Eats vegetables is healthy."
       ]
     ]
   },
@@ -1362,32 +1831,44 @@
       [
         "Do you have go to school on Saturday?",
         "Do you have {to go} to school on Saturday?",
-        "Povinnosť: <b>have to</b> + základný tvar."
+        "Povinnosť: <b>have to</b> + základný tvar.",
+        "",
+        "Do you have to goes to school on Saturday?"
       ],
       [
         "My brother have to wear a uniform.",
         "My brother {has} to wear a uniform.",
-        "K <b>he / she / it</b> patrí <b>has to</b>."
+        "K <b>he / she / it</b> patrí <b>has to</b>.",
+        "",
+        "My brother haves to wear a uniform."
       ],
       [
         "We don't has to wear a uniform.",
         "We don't {have} to wear a uniform.",
-        "Po <b>don't</b> ide základný tvar: have to."
+        "Po <b>don't</b> ide základný tvar: have to.",
+        "",
+        "We doesn't have to wear a uniform."
       ],
       [
         "Yesterday I have to clean my room.",
         "Yesterday I {had to} clean my room.",
-        "Minulosť: <b>had to</b>."
+        "Minulosť: <b>had to</b>.",
+        "",
+        "Yesterday I has to clean my room."
       ],
       [
         "Tom hasn't to work today.",
         "Tom {doesn't have to} work today.",
-        "Zápor: <b>doesn't have to</b>."
+        "Zápor: <b>doesn't have to</b>.",
+        "",
+        "Tom doesn't has to work today."
       ],
       [
         "She has to goes home.",
         "She has to {go} home.",
-        "Po <b>to</b> ide základný tvar bez -s."
+        "Po <b>to</b> ide základný tvar bez -s.",
+        "",
+        "She has to going home."
       ]
     ]
   },
@@ -1396,27 +1877,37 @@
       [
         "How many years is your brother?",
         "How {old} is your brother?",
-        "Vek sa pýtame <b>How old</b>."
+        "Vek sa pýtame <b>How old</b>.",
+        "",
+        "How many old is your brother?"
       ],
       [
         "How much brothers have you got?",
         "How {many} brothers have you got?",
-        "Súrodencov vieme spočítať → <b>many</b>."
+        "Súrodencov vieme spočítať → <b>many</b>.",
+        "",
+        "How many brother have you got?"
       ],
       [
         "How tall is the river?",
         "How {long} is the river?",
-        "Dĺžka rieky = <b>long</b>. <b>Tall</b> je pre ľudí a budovy."
+        "Dĺžka rieky = <b>long</b>. <b>Tall</b> je pre ľudí a budovy.",
+        "",
+        "How high is the river?"
       ],
       [
         "How often you go to the cinema?",
         "How often {do you go} to the cinema?",
-        "Otázka potrebuje <b>do</b>: How often <b>do you go</b>…?"
+        "Otázka potrebuje <b>do</b>: How often <b>do you go</b>…?",
+        "",
+        "How often do you to go to the cinema?"
       ],
       [
         "How far you live from school?",
         "How far {do you live} from school?",
-        "Otázka potrebuje <b>do</b>: How far <b>do you live</b>…?"
+        "Otázka potrebuje <b>do</b>: How far <b>do you live</b>…?",
+        "",
+        "How far you do live from school?"
       ]
     ]
   },
@@ -1425,32 +1916,44 @@
       [
         "Can you tell me where is the station?",
         "Can you tell me where {the station is}?",
-        "V nepriamej otázke je normálny slovosled: <b>where the station is</b>."
+        "V nepriamej otázke je normálny slovosled: <b>where the station is</b>.",
+        "",
+        "Can you tell me where does the station is?"
       ],
       [
         "Do you know what time does the film start?",
         "Do you know what time {the film starts}?",
-        "Bez pomocného <b>does</b>: the film starts."
+        "Bez pomocného <b>does</b>: the film starts.",
+        "",
+        "Do you know what time the film does start?"
       ],
       [
         "I don't know where does she live.",
         "I don't know where {she lives}.",
-        "Nepriama otázka nemá <b>does</b>: where she lives."
+        "Nepriama otázka nemá <b>does</b>: where she lives.",
+        "",
+        "I don't know where she does live."
       ],
       [
         "Could you tell me how much is it?",
         "Could you tell me how much {it is}?",
-        "Normálny slovosled: how much <b>it is</b>."
+        "Normálny slovosled: how much <b>it is</b>.",
+        "",
+        "Could you tell me how is much it?"
       ],
       [
         "I wonder what is her name.",
         "I wonder what {her name is}.",
-        "Normálny slovosled: what <b>her name is</b>."
+        "Normálny slovosled: what <b>her name is</b>.",
+        "",
+        "I wonder what is name her."
       ],
       [
         "She asked me where did I buy it.",
         "She asked me where {I bought it}.",
-        "Bez <b>did</b>, sloveso v minulom čase: where I bought it."
+        "Bez <b>did</b>, sloveso v minulom čase: where I bought it.",
+        "",
+        "She asked me where I did buy it."
       ]
     ]
   },
@@ -1459,32 +1962,44 @@
       [
         "You mustn't wear a uniform. It's not necessary.",
         "You {don't have to} wear a uniform. It's not necessary.",
-        "Nie je to nutné = <b>don't have to</b>. <b>Mustn't</b> je zákaz."
+        "Nie je to nutné = <b>don't have to</b>. <b>Mustn't</b> je zákaz.",
+        "",
+        "You don't must wear a uniform. It's not necessary."
       ],
       [
         "Tomorrow is Sunday. We mustn't go to school.",
         "Tomorrow is Sunday. We {don't have to} go to school.",
-        "Nemusíme = <b>don't have to</b>."
+        "Nemusíme = <b>don't have to</b>.",
+        "",
+        "Tomorrow is Sunday. We must not to go to school."
       ],
       [
         "You don't have to run here. It's dangerous!",
         "You {mustn't} run here. It's dangerous!",
-        "Zákaz = <b>mustn't</b>."
+        "Zákaz = <b>mustn't</b>.",
+        "",
+        "You don't must run here. It's dangerous!"
       ],
       [
         "He doesn't must wait.",
         "He {doesn't have to} wait.",
-        "Must nemá <b>doesn't must</b>. Zápor: doesn't have to."
+        "Must nemá <b>doesn't must</b>. Zápor: doesn't have to.",
+        "",
+        "He don't have to wait."
       ],
       [
         "You mustn't pay. It's free.",
         "You {don't have to} pay. It's free.",
-        "Nemusíš platiť = <b>don't have to</b>."
+        "Nemusíš platiť = <b>don't have to</b>.",
+        "",
+        "You mustn't to pay. It's free."
       ],
       [
         "Visitors don't have to touch the paintings.",
         "Visitors {mustn't} touch the paintings.",
-        "Zákaz = <b>mustn't</b>."
+        "Zákaz = <b>mustn't</b>.",
+        "",
+        "Visitors haven't to touch the paintings."
       ]
     ]
   },
@@ -1493,32 +2008,44 @@
       [
         "I must to do my homework.",
         "I must {do} my homework.",
-        "Po <b>must</b> ide základný tvar bez <i>to</i>."
+        "Po <b>must</b> ide základný tvar bez <i>to</i>.",
+        "",
+        "I must doing my homework."
       ],
       [
         "She musts be at school at eight.",
         "She {must} be at school at eight.",
-        "<b>Must</b> sa nemení, nemá -s."
+        "<b>Must</b> sa nemení, nemá -s.",
+        "",
+        "She must is at school at eight."
       ],
       [
         "Must you to go now?",
         "Must you {go} now?",
-        "Po <b>must</b> ide základný tvar bez <i>to</i>."
+        "Po <b>must</b> ide základný tvar bez <i>to</i>.",
+        "",
+        "Must you going now?"
       ],
       [
         "Does he must wear glasses?",
         "{Must he} wear glasses?",
-        "Otázka s <b>must</b> bez <i>does</i>: Must he…?"
+        "Otázka s <b>must</b> bez <i>does</i>: Must he…?",
+        "",
+        "Do he must wear glasses?"
       ],
       [
         "We mustn't to be late.",
         "We {mustn't} be late.",
-        "Po <b>mustn't</b> ide základný tvar bez <i>to</i>."
+        "Po <b>mustn't</b> ide základný tvar bez <i>to</i>.",
+        "",
+        "We don't must be late."
       ],
       [
         "You musn't forget your key.",
         "You {mustn't} forget your key.",
-        "Správne sa píše <b>mustn't</b> (must + not)."
+        "Správne sa píše <b>mustn't</b> (must + not).",
+        "",
+        "You mustn't to forget your key."
       ]
     ]
   },
@@ -1527,32 +2054,44 @@
       [
         "He is a famouse singer.",
         "He is a {famous} singer.",
-        "Prídavné meno <b>famous</b> sa končí na -ous."
+        "Prídavné meno <b>famous</b> sa končí na -ous.",
+        "",
+        "He is a famus singer."
       ],
       [
         "What a wonderfull day!",
         "What a {wonderful} day!",
-        "Prípona <b>-ful</b> má jedno l."
+        "Prípona <b>-ful</b> má jedno l.",
+        "",
+        "What a wonderfuly day!"
       ],
       [
         "The weather is cloud today.",
         "The weather is {cloudy} today.",
-        "Z podstatného mena cloud vznikne <b>cloudy</b>."
+        "Z podstatného mena cloud vznikne <b>cloudy</b>.",
+        "",
+        "The weather is cloudey today."
       ],
       [
         "She is a very help girl.",
         "She is a very {helpful} girl.",
-        "Z help vznikne <b>helpful</b>."
+        "Z help vznikne <b>helpful</b>.",
+        "",
+        "She is a very helpy girl."
       ],
       [
         "My grandpa is very health.",
         "My grandpa is very {healthy}.",
-        "Z health vznikne <b>healthy</b>."
+        "Z health vznikne <b>healthy</b>.",
+        "",
+        "My grandpa is very healty."
       ],
       [
         "It's very wind today.",
         "It's very {windy} today.",
-        "Z wind vznikne <b>windy</b>."
+        "Z wind vznikne <b>windy</b>.",
+        "",
+        "It's very windly today."
       ]
     ]
   },
@@ -1561,32 +2100,44 @@
       [
         "She is a very care driver.",
         "She is a very {careful} driver.",
-        "Z care vznikne <b>careful</b>."
+        "Z care vznikne <b>careful</b>.",
+        "",
+        "She is a very carefull driver."
       ],
       [
         "It was a very colour picture.",
         "It was a very {colourful} picture.",
-        "Z colour vznikne <b>colourful</b>."
+        "Z colour vznikne <b>colourful</b>.",
+        "",
+        "It was a very colourfull picture."
       ],
       [
         "This mushroom is poison.",
         "This mushroom is {poisonous}.",
-        "Z poison vznikne <b>poisonous</b>."
+        "Z poison vznikne <b>poisonous</b>.",
+        "",
+        "This mushroom is poisonus."
       ],
       [
         "My cousin is very music.",
         "My cousin is very {musical}.",
-        "Z music vznikne <b>musical</b>."
+        "Z music vznikne <b>musical</b>.",
+        "",
+        "My cousin is very musicful."
       ],
       [
         "I'm very thirst.",
         "I'm very {thirsty}.",
-        "Z thirst vznikne <b>thirsty</b>."
+        "Z thirst vznikne <b>thirsty</b>.",
+        "",
+        "I'm very thirsti."
       ],
       [
         "I'm very luck.",
         "I'm very {lucky}.",
-        "Z luck vznikne <b>lucky</b>."
+        "Z luck vznikne <b>lucky</b>.",
+        "",
+        "I'm very luckey."
       ]
     ]
   },
@@ -1595,32 +2146,44 @@
       [
         "Give the book to he.",
         "Give the book to {him}.",
-        "Po predložke ide predmetový tvar: <b>him</b>."
+        "Po predložke ide predmetový tvar: <b>him</b>.",
+        "",
+        "Give the book to his."
       ],
       [
         "Please help I with my homework.",
         "Please help {me} with my homework.",
-        "Po slovese ide predmetový tvar: <b>me</b>."
+        "Po slovese ide predmetový tvar: <b>me</b>.",
+        "",
+        "Please help my with my homework."
       ],
       [
         "Look at they!",
         "Look at {them}!",
-        "Po predložke ide <b>them</b>."
+        "Po predložke ide <b>them</b>.",
+        "",
+        "Look at their!"
       ],
       [
         "Tom and me are friends.",
         "Tom and {I} are friends.",
-        "Ako podmet ide <b>I</b>: Tom and I."
+        "Ako podmet ide <b>I</b>: Tom and I.",
+        "",
+        "Tom and my are friends."
       ],
       [
         "Can you show we the way?",
         "Can you show {us} the way?",
-        "Po slovese ide <b>us</b>."
+        "Po slovese ide <b>us</b>.",
+        "",
+        "Can you show our the way?"
       ],
       [
         "Me and Tom play football.",
         "{Tom and I} play football.",
-        "Ako podmet ide <b>I</b> a zdvorilo dávame druhého na začiatok."
+        "Ako podmet ide <b>I</b> a zdvorilo dávame druhého na začiatok.",
+        "",
+        "Tom and me plays football."
       ]
     ]
   },
@@ -1629,32 +2192,44 @@
       [
         "My birthday is on the twoth of May.",
         "My birthday is on the {second} of May.",
-        "2. = <b>second</b>."
+        "2. = <b>second</b>.",
+        "",
+        "My birthday is on the two of May."
       ],
       [
         "She lives on the threeth floor.",
         "She lives on the {third} floor.",
-        "3. = <b>third</b>."
+        "3. = <b>third</b>.",
+        "",
+        "She lives on the three floor."
       ],
       [
         "It's his 21th birthday.",
         "It's his {21st} birthday.",
-        "21. = <b>21st</b>."
+        "21. = <b>21st</b>.",
+        "",
+        "It's his 21rd birthday."
       ],
       [
         "Today is the twelveth of June.",
         "Today is the {twelfth} of June.",
-        "12. = <b>twelfth</b> (v → f)."
+        "12. = <b>twelfth</b> (v → f).",
+        "",
+        "Today is the twelve of June."
       ],
       [
         "He finished fiveth.",
         "He finished {fifth}.",
-        "5. = <b>fifth</b>."
+        "5. = <b>fifth</b>.",
+        "",
+        "He finished five."
       ],
       [
         "It's my nineth birthday.",
         "It's my {ninth} birthday.",
-        "9. = <b>ninth</b> (bez e)."
+        "9. = <b>ninth</b> (bez e).",
+        "",
+        "It's my nine birthday."
       ]
     ]
   },
@@ -1663,32 +2238,44 @@
       [
         "The window can opened.",
         "The window can {be opened}.",
-        "Trpný rod s modálnym slovesom: <b>can be</b> + 3. tvar."
+        "Trpný rod s modálnym slovesom: <b>can be</b> + 3. tvar.",
+        "",
+        "The window can is opened."
       ],
       [
         "Homework must be do today.",
         "Homework must be {done} today.",
-        "Po <b>be</b> ide 3. tvar: do – did – <b>done</b>."
+        "Po <b>be</b> ide 3. tvar: do – did – <b>done</b>.",
+        "",
+        "Homework must be did today."
       ],
       [
         "Should the room cleaned?",
         "Should the room {be cleaned}?",
-        "Po <b>should</b> ide <b>be</b> + 3. tvar."
+        "Po <b>should</b> ide <b>be</b> + 3. tvar.",
+        "",
+        "Should the room being cleaned?"
       ],
       [
         "This can't fixed.",
         "This can't {be fixed}.",
-        "Trpný rod: <b>can't be</b> + 3. tvar."
+        "Trpný rod: <b>can't be</b> + 3. tvar.",
+        "",
+        "This can't be fix."
       ],
       [
         "The tickets can bought online.",
         "The tickets can {be bought} online.",
-        "Trpný rod: <b>can be</b> + 3. tvar."
+        "Trpný rod: <b>can be</b> + 3. tvar.",
+        "",
+        "The tickets can be buy online."
       ],
       [
         "Can this be repair?",
         "Can this be {repaired}?",
-        "Po <b>be</b> ide 3. tvar: <b>repaired</b>."
+        "Po <b>be</b> ide 3. tvar: <b>repaired</b>.",
+        "",
+        "Can this be repairing?"
       ]
     ]
   },
@@ -1697,32 +2284,44 @@
       [
         "English speaks in many countries.",
         "English {is spoken} in many countries.",
-        "Trpný rod: <b>is / are</b> + 3. tvar."
+        "Trpný rod: <b>is / are</b> + 3. tvar.",
+        "",
+        "English is speak in many countries."
       ],
       [
         "Rice are grown in Asia.",
         "Rice {is} grown in Asia.",
-        "<b>Rice</b> je nepočitateľné → <b>is</b>."
+        "<b>Rice</b> je nepočitateľné → <b>is</b>.",
+        "",
+        "Rice be grown in Asia."
       ],
       [
         "The shops is closed on Sunday.",
         "The shops {are} closed on Sunday.",
-        "<b>Shops</b> je množné číslo → <b>are</b>."
+        "<b>Shops</b> je množné číslo → <b>are</b>.",
+        "",
+        "The shops be closed on Sunday."
       ],
       [
         "Letters are delivering every day.",
         "Letters are {delivered} every day.",
-        "Trpný rod potrebuje 3. tvar: <b>delivered</b>."
+        "Trpný rod potrebuje 3. tvar: <b>delivered</b>.",
+        "",
+        "Letters are deliver every day."
       ],
       [
         "Is the homework check by the teacher?",
         "Is the homework {checked} by the teacher?",
-        "Trpný rod potrebuje 3. tvar: <b>checked</b>."
+        "Trpný rod potrebuje 3. tvar: <b>checked</b>.",
+        "",
+        "Does the homework checked by the teacher?"
       ],
       [
         "This cheese is make in Slovakia.",
         "This cheese is {made} in Slovakia.",
-        "3. tvar od make je <b>made</b>."
+        "3. tvar od make je <b>made</b>.",
+        "",
+        "This cheese is maked in Slovakia."
       ]
     ]
   },
@@ -1731,32 +2330,44 @@
       [
         "The window was break yesterday.",
         "The window was {broken} yesterday.",
-        "Po <b>was</b> ide 3. tvar: <b>broken</b>."
+        "Po <b>was</b> ide 3. tvar: <b>broken</b>.",
+        "",
+        "The window was broke yesterday."
       ],
       [
         "The song will sung tonight.",
         "The song will {be sung} tonight.",
-        "Budúci trpný rod: <b>will be</b> + 3. tvar."
+        "Budúci trpný rod: <b>will be</b> + 3. tvar.",
+        "",
+        "The song will be sing tonight."
       ],
       [
         "The bridge has built.",
         "The bridge has {been built}.",
-        "Perfektum trpný: <b>has been</b> + 3. tvar."
+        "Perfektum trpný: <b>has been</b> + 3. tvar.",
+        "",
+        "The bridge has been build."
       ],
       [
         "My phone was steal.",
         "My phone was {stolen}.",
-        "3. tvar od steal je <b>stolen</b>."
+        "3. tvar od steal je <b>stolen</b>.",
+        "",
+        "My phone was stoled."
       ],
       [
         "These cakes were baking by my gran.",
         "These cakes were {baked} by my gran.",
-        "Trpný rod: <b>were baked</b>."
+        "Trpný rod: <b>were baked</b>.",
+        "",
+        "These cakes were bake by my gran."
       ],
       [
         "The room is being clean now.",
         "The room is being {cleaned} now.",
-        "Priebehový trpný rod: <b>is being cleaned</b>."
+        "Priebehový trpný rod: <b>is being cleaned</b>.",
+        "",
+        "The room is being cleans now."
       ]
     ]
   },
@@ -1765,32 +2376,44 @@
       [
         "Turn off it, please.",
         "Turn {it off}, please.",
-        "Zámeno ide <b>doprostred</b>: turn it off."
+        "Zámeno ide <b>doprostred</b>: turn it off.",
+        "",
+        "Turn it of, please."
       ],
       [
         "I'm looking forward see you.",
         "I'm looking forward {to seeing} you.",
-        "<b>Look forward to</b> + <b>-ing</b>."
+        "<b>Look forward to</b> + <b>-ing</b>.",
+        "",
+        "I'm looking forward seeing you."
       ],
       [
         "Please take of your shoes.",
         "Please take {off} your shoes.",
-        "Zloženina je <b>take off</b> (nie of)."
+        "Zloženina je <b>take off</b> (nie of).",
+        "",
+        "Please take away your shoes."
       ],
       [
         "Pick up it, please.",
         "Pick {it up}, please.",
-        "Zámeno ide <b>doprostred</b>: pick it up."
+        "Zámeno ide <b>doprostred</b>: pick it up.",
+        "",
+        "Pick it on, please."
       ],
       [
         "She grew in a small town.",
         "She {grew up} in a small town.",
-        "Vyrastať = <b>grow up</b>."
+        "Vyrastať = <b>grow up</b>.",
+        "",
+        "She grew on in a small town."
       ],
       [
         "Don't give down! Try again.",
         "Don't give {up}! Try again.",
-        "Vzdať sa = <b>give up</b>."
+        "Vzdať sa = <b>give up</b>.",
+        "",
+        "Don't give out! Try again."
       ]
     ]
   },
@@ -1799,27 +2422,37 @@
       [
         "The cat is under of the table.",
         "The cat is under {the} table.",
-        "Po <b>under</b> nejde <i>of</i>."
+        "Po <b>under</b> nejde <i>of</i>.",
+        "",
+        "The cat is on of the table."
       ],
       [
         "I live at Bratislava.",
         "I live {in} Bratislava.",
-        "Pri meste ide <b>in</b>."
+        "Pri meste ide <b>in</b>.",
+        "",
+        "I live on Bratislava."
       ],
       [
         "We are sitting next of the window.",
         "We are sitting next {to} the window.",
-        "Vedľa = <b>next to</b>."
+        "Vedľa = <b>next to</b>.",
+        "",
+        "We are sitting next from the window."
       ],
       [
         "The book is in the table.",
         "The book is {on} the table.",
-        "Na povrchu = <b>on</b>."
+        "Na povrchu = <b>on</b>.",
+        "",
+        "The book is between the table."
       ],
       [
         "The lamp is above of the bed.",
         "The lamp is above {the} bed.",
-        "Po <b>above</b> nejde <i>of</i>."
+        "Po <b>above</b> nejde <i>of</i>.",
+        "",
+        "The lamp is above from the bed."
       ]
     ]
   },
@@ -1828,32 +2461,44 @@
       [
         "My birthday is on June.",
         "My birthday is {in} June.",
-        "Mesiace → <b>in</b>."
+        "Mesiace → <b>in</b>.",
+        "",
+        "My birthday is at June."
       ],
       [
         "The film starts in 7 p.m.",
         "The film starts {at} 7 p.m.",
-        "Presný čas → <b>at</b>."
+        "Presný čas → <b>at</b>.",
+        "",
+        "The film starts on 7 p.m."
       ],
       [
         "I was born at 2013.",
         "I was born {in} 2013.",
-        "Roky → <b>in</b>."
+        "Roky → <b>in</b>.",
+        "",
+        "I was born on 2013."
       ],
       [
         "We have English in Tuesday.",
         "We have English {on} Tuesday.",
-        "Dni → <b>on</b>."
+        "Dni → <b>on</b>.",
+        "",
+        "We have English at Tuesday."
       ],
       [
         "I always eat breakfast on the morning.",
         "I always eat breakfast {in} the morning.",
-        "Časť dňa → <b>in the morning</b>."
+        "Časť dňa → <b>in the morning</b>.",
+        "",
+        "I always eat breakfast at the morning."
       ],
       [
         "The shop is closed at Sundays.",
         "The shop is closed {on} Sundays.",
-        "Dni → <b>on</b>."
+        "Dni → <b>on</b>.",
+        "",
+        "The shop is closed in Sundays."
       ]
     ]
   },
@@ -1862,32 +2507,44 @@
       [
         "I go to school with bus.",
         "I go to school {by} bus.",
-        "Dopravný prostriedok → <b>by</b>."
+        "Dopravný prostriedok → <b>by</b>.",
+        "",
+        "I go to school on bus."
       ],
       [
         "We travelled to Spain by the plane.",
         "We travelled to Spain by {plane}.",
-        "Pri <b>by</b> nedávame člen: by plane."
+        "Pri <b>by</b> nedávame člen: by plane.",
+        "",
+        "We travelled to Spain by a plane."
       ],
       [
         "My dad goes to work on car.",
         "My dad goes to work {by} car.",
-        "Autom = <b>by car</b>."
+        "Autom = <b>by car</b>.",
+        "",
+        "My dad goes to work with car."
       ],
       [
         "They arrived at London yesterday.",
         "They arrived {in} London yesterday.",
-        "K mestu: <b>arrive in</b>."
+        "K mestu: <b>arrive in</b>.",
+        "",
+        "They arrived to London yesterday."
       ],
       [
         "Get out the bus at the next stop.",
         "Get {off} the bus at the next stop.",
-        "Z autobusu vystúpiš = <b>get off</b>."
+        "Z autobusu vystúpiš = <b>get off</b>.",
+        "",
+        "Get down the bus at the next stop."
       ],
       [
         "Mum drives me to school in car.",
         "Mum drives me to school {by} car.",
-        "Autom = <b>by car</b>."
+        "Autom = <b>by car</b>.",
+        "",
+        "Mum drives me to school with car."
       ]
     ]
   },
@@ -1896,32 +2553,44 @@
       [
         "What you want for lunch?",
         "What {do you want} for lunch?",
-        "Otázka potrebuje <b>do</b>: What <b>do you want</b>…?"
+        "Otázka potrebuje <b>do</b>: What <b>do you want</b>…?",
+        "",
+        "What do you wants for lunch?"
       ],
       [
         "Where does he lives?",
         "Where does he {live}?",
-        "Po <b>does</b> ide základný tvar bez -s."
+        "Po <b>does</b> ide základný tvar bez -s.",
+        "",
+        "Where do he live?"
       ],
       [
         "Did she wrote the email?",
         "Did she {write} the email?",
-        "Po <b>did</b> ide základný tvar."
+        "Po <b>did</b> ide základný tvar.",
+        "",
+        "Did she writes the email?"
       ],
       [
         "Is you hungry?",
         "{Are you} hungry?",
-        "K <b>you</b> patrí <b>are</b>."
+        "K <b>you</b> patrí <b>are</b>.",
+        "",
+        "Do you hungry?"
       ],
       [
         "Why you are late?",
         "Why {are you} late?",
-        "Pri BE ide sloveso pred podmet: <b>are you</b>."
+        "Pri BE ide sloveso pred podmet: <b>are you</b>.",
+        "",
+        "Why do you are late?"
       ],
       [
         "Do they are at home?",
         "{Are they} at home?",
-        "S <b>be</b> netvoríme otázku cez do."
+        "S <b>be</b> netvoríme otázku cez do.",
+        "",
+        "Does they are at home?"
       ]
     ]
   },
@@ -1930,32 +2599,44 @@
       [
         "They can swim, can they?",
         "They can swim, {can't they}?",
-        "Kladná veta → záporná otázka: <b>can't they</b>."
+        "Kladná veta → záporná otázka: <b>can't they</b>.",
+        "",
+        "They can swim, can't it?"
       ],
       [
         "You haven't got a pen, haven't you?",
         "You haven't got a pen, {have you}?",
-        "Záporná veta → kladná otázka: <b>have you</b>."
+        "Záporná veta → kladná otázka: <b>have you</b>.",
+        "",
+        "You haven't got a pen, don't you?"
       ],
       [
         "Tom was ill, wasn't Tom?",
         "Tom was ill, {wasn't he}?",
-        "V otázke použijeme zámeno: <b>wasn't he</b>."
+        "V otázke použijeme zámeno: <b>wasn't he</b>.",
+        "",
+        "Tom was ill, isn't he?"
       ],
       [
         "You like tea, don't it?",
         "You like tea, {don't you}?",
-        "K <b>you</b> patrí <b>don't you</b>."
+        "K <b>you</b> patrí <b>don't you</b>.",
+        "",
+        "You like tea, aren't you?"
       ],
       [
         "It isn't far, isn't it?",
         "It isn't far, {is it}?",
-        "Záporná veta → kladná otázka: <b>is it</b>."
+        "Záporná veta → kladná otázka: <b>is it</b>.",
+        "",
+        "It isn't far, doesn't it?"
       ],
       [
         "She can't drive, can't she?",
         "She can't drive, {can she}?",
-        "Záporná veta → kladná otázka: <b>can she</b>."
+        "Záporná veta → kladná otázka: <b>can she</b>.",
+        "",
+        "She can't drive, don't she?"
       ]
     ]
   },
@@ -1964,32 +2645,44 @@
       [
         "I cut me with a knife.",
         "I cut {myself} with a knife.",
-        "Keď robím niečo sebe, používam <b>myself</b>."
+        "Keď robím niečo sebe, používam <b>myself</b>.",
+        "",
+        "I cut meself with a knife."
       ],
       [
         "He taught hisself to play the guitar.",
         "He taught {himself} to play the guitar.",
-        "Správne je <b>himself</b>."
+        "Správne je <b>himself</b>.",
+        "",
+        "He taught himselfs to play the guitar."
       ],
       [
         "We enjoyed us at the party.",
         "We enjoyed {ourselves} at the party.",
-        "Správne je <b>ourselves</b>."
+        "Správne je <b>ourselves</b>.",
+        "",
+        "We enjoyed ourself at the party."
       ],
       [
         "Mia and Eva made the cake themself.",
         "Mia and Eva made the cake {themselves}.",
-        "Množné číslo: <b>themselves</b>."
+        "Množné číslo: <b>themselves</b>.",
+        "",
+        "Mia and Eva made the cake themselfs."
       ],
       [
         "The cat washed itselfs.",
         "The cat washed {itself}.",
-        "Správne je <b>itself</b>."
+        "Správne je <b>itself</b>.",
+        "",
+        "The cat washed itsself."
       ],
       [
         "Tom, don't blame yourselves!",
         "Tom, don't blame {yourself}!",
-        "Jedna osoba → <b>yourself</b>."
+        "Jedna osoba → <b>yourself</b>.",
+        "",
+        "Tom, don't blame yourselfs!"
       ]
     ]
   },
@@ -1998,27 +2691,37 @@
       [
         "I know a boy which plays chess.",
         "I know a boy {who / that} plays chess.",
-        "Pre osobu ide <b>who</b> (alebo that)."
+        "Pre osobu ide <b>who</b> (alebo that).",
+        "",
+        "I know a boy whose plays chess."
       ],
       [
         "The film who we saw was boring.",
         "The film {which / that} we saw was boring.",
-        "Pre vec ide <b>which</b> (alebo that)."
+        "Pre vec ide <b>which</b> (alebo that).",
+        "",
+        "The film where we saw was boring."
       ],
       [
         "This is the place what I was born.",
         "This is the place {where} I was born.",
-        "Pre miesto ide <b>where</b>."
+        "Pre miesto ide <b>where</b>.",
+        "",
+        "This is the place which I was born."
       ],
       [
         "The pen that I bought it is red.",
         "The pen {that I bought} is red.",
-        "Nehovoríme <i>it</i> navyše, <b>that</b> už nahrádza predmet."
+        "Nehovoríme <i>it</i> navyše, <b>that</b> už nahrádza predmet.",
+        "",
+        "The pen what I bought is red."
       ],
       [
         "That's the boy which father is a pilot.",
         "That's the boy {whose} father is a pilot.",
-        "Vlastníctvo = <b>whose</b>."
+        "Vlastníctvo = <b>whose</b>.",
+        "",
+        "That's the boy who father is a pilot."
       ]
     ]
   },
@@ -2027,32 +2730,44 @@
       [
         "She said me that she was tired.",
         "She {told} me that she was tired.",
-        "Po <b>said</b> nejde <i>me</i>. Používame <b>told me</b>."
+        "Po <b>said</b> nejde <i>me</i>. Používame <b>told me</b>.",
+        "",
+        "She told that she was tired."
       ],
       [
         "Tom said that he is hungry.",
         "Tom said that he {was} hungry.",
-        "V nepriamej reči sa čas posúva: is → <b>was</b>."
+        "V nepriamej reči sa čas posúva: is → <b>was</b>.",
+        "",
+        "Tom said that he were hungry."
       ],
       [
         "I told her I will call her.",
         "I told her I {would} call her.",
-        "V nepriamej reči: will → <b>would</b>."
+        "V nepriamej reči: will → <b>would</b>.",
+        "",
+        "I told her I would to call her."
       ],
       [
         "She said she has finished.",
         "She said she {had} finished.",
-        "V nepriamej reči: has finished → <b>had finished</b>."
+        "V nepriamej reči: has finished → <b>had finished</b>.",
+        "",
+        "She said she have finished."
       ],
       [
         "He asked me where did I live.",
         "He asked me where {I lived}.",
-        "Nepriama otázka: normálny slovosled, minulý čas."
+        "Nepriama otázka: normálny slovosled, minulý čas.",
+        "",
+        "He asked me where do I lived."
       ],
       [
         "Mia told that she liked pizza.",
         "Mia {said / told me} that she liked pizza.",
-        "Po <b>told</b> musí byť osoba: told <b>me</b>, alebo použijeme said."
+        "Po <b>told</b> musí byť osoba: told <b>me</b>, alebo použijeme said.",
+        "",
+        "Mia said me that she liked pizza."
       ]
     ]
   },
@@ -2061,27 +2776,37 @@
       [
         "She said me a joke.",
         "She {told} me a joke.",
-        "S osobou používame <b>tell</b>."
+        "S osobou používame <b>tell</b>.",
+        "",
+        "She told to me a joke."
       ],
       [
         "Tell hello to your mum.",
         "{Say} hello to your mum.",
-        "Pozdrav = <b>say hello</b>."
+        "Pozdrav = <b>say hello</b>.",
+        "",
+        "Tell hello your mum."
       ],
       [
         "He told goodbye and left.",
         "He {said} goodbye and left.",
-        "Pozdrav = <b>said goodbye</b>."
+        "Pozdrav = <b>said goodbye</b>.",
+        "",
+        "He told to goodbye and left."
       ],
       [
         "Can you say me the time?",
         "Can you {tell} me the time?",
-        "Povedať čas = <b>tell the time</b>."
+        "Povedať čas = <b>tell the time</b>.",
+        "",
+        "Can you said me the time?"
       ],
       [
         "The teacher said us to be quiet.",
         "The teacher {told} us to be quiet.",
-        "Pokyn osobe = <b>told us to</b>."
+        "Pokyn osobe = <b>told us to</b>.",
+        "",
+        "The teacher said us be quiet."
       ]
     ]
   },
@@ -2090,32 +2815,44 @@
       [
         "If I would win a million, I'd buy a house.",
         "If I {won} a million, I'd buy a house.",
-        "Za <b>if</b> ide minulý čas, nie would."
+        "Za <b>if</b> ide minulý čas, nie would.",
+        "",
+        "If I winned a million, I'd buy a house."
       ],
       [
         "If she studied more, she will pass.",
         "If she studied more, she {would} pass.",
-        "Vo výsledku ide <b>would</b>."
+        "Vo výsledku ide <b>would</b>.",
+        "",
+        "If she studied more, she would passes."
       ],
       [
         "What would you do if you will find a wallet?",
         "What would you do if you {found} a wallet?",
-        "Za <b>if</b> ide minulý čas: found."
+        "Za <b>if</b> ide minulý čas: found.",
+        "",
+        "What would you do if you would find a wallet?"
       ],
       [
         "If we had more time, we would visited it.",
         "If we had more time, we would {visit} it.",
-        "Po <b>would</b> ide základný tvar."
+        "Po <b>would</b> ide základný tvar.",
+        "",
+        "If we have more time, we would visit it."
       ],
       [
         "If I had a dog, I would to walk it.",
         "If I had a dog, I would {walk} it.",
-        "Po <b>would</b> ide základný tvar bez to."
+        "Po <b>would</b> ide základný tvar bez to.",
+        "",
+        "If I had a dog, I would walking it."
       ],
       [
         "If I were rich, I will travel round the world.",
         "If I were rich, I {would} travel round the world.",
-        "Vo výsledku ide <b>would</b>."
+        "Vo výsledku ide <b>would</b>.",
+        "",
+        "If I were rich, I would travelled round the world."
       ]
     ]
   },
@@ -2124,27 +2861,37 @@
       [
         "You should eating more fruit.",
         "You should {eat} more fruit.",
-        "Po <b>should</b> ide základný tvar."
+        "Po <b>should</b> ide základný tvar.",
+        "",
+        "You should to eat more fruit."
       ],
       [
         "Tom might be at home. Or he might goes to the shop.",
         "Tom might be at home. Or he might {go} to the shop.",
-        "Po <b>might</b> ide základný tvar bez -s."
+        "Po <b>might</b> ide základný tvar bez -s.",
+        "",
+        "Tom might be at home. Or he might to go to the shop."
       ],
       [
         "Should I to call him?",
         "Should I {call} him?",
-        "Po <b>should</b> ide základný tvar bez to."
+        "Po <b>should</b> ide základný tvar bez to.",
+        "",
+        "Should I calling him?"
       ],
       [
         "She might not comes.",
         "She might not {come}.",
-        "Po <b>might not</b> ide základný tvar."
+        "Po <b>might not</b> ide základný tvar.",
+        "",
+        "She might not to come."
       ],
       [
         "You should going to bed.",
         "You should {go} to bed.",
-        "Po <b>should</b> ide základný tvar."
+        "Po <b>should</b> ide základný tvar.",
+        "",
+        "You should to go to bed."
       ]
     ]
   },
@@ -2153,27 +2900,37 @@
       [
         "He should studies more.",
         "He should {study} more.",
-        "Po <b>should</b> ide základný tvar bez -s."
+        "Po <b>should</b> ide základný tvar bez -s.",
+        "",
+        "He should to study more."
       ],
       [
         "Should he comes?",
         "Should he {come}?",
-        "Po <b>should</b> ide základný tvar."
+        "Po <b>should</b> ide základný tvar.",
+        "",
+        "Should he to come?"
       ],
       [
         "You don't should eat so much.",
         "You {shouldn't} eat so much.",
-        "Zápor od should je <b>shouldn't</b>."
+        "Zápor od should je <b>shouldn't</b>.",
+        "",
+        "You shouldn't to eat so much."
       ],
       [
         "I think you should to say sorry.",
         "I think you should {say} sorry.",
-        "Po <b>should</b> nejde to."
+        "Po <b>should</b> nejde to.",
+        "",
+        "I think you should saying sorry."
       ],
       [
         "Do you think I should buying it?",
         "Do you think I should {buy} it?",
-        "Po <b>should</b> ide základný tvar."
+        "Po <b>should</b> ide základný tvar.",
+        "",
+        "Do you think I should to buy it?"
       ]
     ]
   },
@@ -2182,32 +2939,44 @@
       [
         "I'm hungry. – So I am.",
         "I'm hungry. – {So am I}.",
-        "<b>So</b> + pomocné sloveso + podmet: So am I."
+        "<b>So</b> + pomocné sloveso + podmet: So am I.",
+        "",
+        "I'm hungry. – So do I."
       ],
       [
         "I don't like spiders. – So do I.",
         "I don't like spiders. – {Neither do I}.",
-        "Záporná veta → <b>Neither do I</b>."
+        "Záporná veta → <b>Neither do I</b>.",
+        "",
+        "I don't like spiders. – So don't I."
       ],
       [
         "I can swim. – Neither can I.",
         "I can swim. – {So can I}.",
-        "Kladná veta → <b>So can I</b>."
+        "Kladná veta → <b>So can I</b>.",
+        "",
+        "I can swim. – So do I."
       ],
       [
         "I have never been there. – So have I.",
         "I have never been there. – {Neither have I}.",
-        "Záporná veta → <b>Neither have I</b>."
+        "Záporná veta → <b>Neither have I</b>.",
+        "",
+        "I have never been there. – Neither don't I."
       ],
       [
         "I'll go. – So I will.",
         "I'll go. – {So will I}.",
-        "<b>So</b> + pomocné sloveso + podmet: So will I."
+        "<b>So</b> + pomocné sloveso + podmet: So will I.",
+        "",
+        "I'll go. – So do I."
       ],
       [
         "I was late. – So I was.",
         "I was late. – {So was I}.",
-        "<b>So</b> + pomocné sloveso + podmet: So was I."
+        "<b>So</b> + pomocné sloveso + podmet: So was I.",
+        "",
+        "I was late. – So did I."
       ]
     ]
   },
@@ -2216,32 +2985,44 @@
       [
         "It was such cold that we went home.",
         "It was {so} cold that we went home.",
-        "Pred prídavným menom ide <b>so</b>."
+        "Pred prídavným menom ide <b>so</b>.",
+        "",
+        "It was such cold than we went home."
       ],
       [
         "He is so a good player that we always win.",
         "He is {such a} good player that we always win.",
-        "Pred podstatným menom ide <b>such a</b>."
+        "Pred podstatným menom ide <b>such a</b>.",
+        "",
+        "He is such good player that we always win."
       ],
       [
         "It was such a good film so we watched it twice.",
         "It was such a good film {that} we watched it twice.",
-        "Dôsledok uvádza <b>that</b>."
+        "Dôsledok uvádza <b>that</b>.",
+        "",
+        "It was such a good film what we watched it twice."
       ],
       [
         "I was so hungry that I can eat a horse.",
         "I was so hungry that I {could} eat a horse.",
-        "V minulosti: can → <b>could</b>."
+        "V minulosti: can → <b>could</b>.",
+        "",
+        "I was so hungry that I could to eat a horse."
       ],
       [
         "There were so much people that we couldn't move.",
         "There were so {many} people that we couldn't move.",
-        "Ľudia sa dajú spočítať → <b>many</b>."
+        "Ľudia sa dajú spočítať → <b>many</b>.",
+        "",
+        "There were such many people that we couldn't move."
       ],
       [
         "He talked so fast what nobody understood.",
         "He talked so fast {that} nobody understood.",
-        "Dôsledok uvádza <b>that</b>."
+        "Dôsledok uvádza <b>that</b>.",
+        "",
+        "He talked so fast than nobody understood."
       ]
     ]
   },
@@ -2250,27 +3031,37 @@
       [
         "Is there some milk in the fridge?",
         "Is there {any} milk in the fridge?",
-        "V otázke ide <b>any</b>."
+        "V otázke ide <b>any</b>.",
+        "",
+        "Are there any milk in the fridge?"
       ],
       [
         "There aren't some apples left.",
         "There aren't {any} apples left.",
-        "V zápore ide <b>any</b>."
+        "V zápore ide <b>any</b>.",
+        "",
+        "There isn't no apples left."
       ],
       [
         "Can I have any water, please?",
         "Can I have {some} water, please?",
-        "Pri zdvorilej žiadosti ide <b>some</b>."
+        "Pri zdvorilej žiadosti ide <b>some</b>.",
+        "",
+        "Can I have some waters, please?"
       ],
       [
         "He didn't eat nothing.",
         "He didn't eat {anything}.",
-        "Stačí jeden zápor: <b>didn't … anything</b>."
+        "Stačí jeden zápor: <b>didn't … anything</b>.",
+        "",
+        "He didn't eat some."
       ],
       [
         "We've got any eggs, so I'll make an omelette.",
         "We've got {some} eggs, so I'll make an omelette.",
-        "V kladnej vete ide <b>some</b>."
+        "V kladnej vete ide <b>some</b>.",
+        "",
+        "We've got somes eggs, so I'll make an omelette."
       ]
     ]
   },
@@ -2279,32 +3070,44 @@
       [
         "I didn't see somebody there.",
         "I didn't see {anybody} there.",
-        "V zápore ide <b>anybody</b>."
+        "V zápore ide <b>anybody</b>.",
+        "",
+        "I didn't see nobody there."
       ],
       [
         "Nobody are at home.",
         "Nobody {is} at home.",
-        "Nobody → 3. osoba jednotného čísla: <b>is</b>."
+        "Nobody → 3. osoba jednotného čísla: <b>is</b>.",
+        "",
+        "Nobody am at home."
       ],
       [
         "Everybody are happy.",
         "Everybody {is} happy.",
-        "Everybody → <b>is</b>."
+        "Everybody → <b>is</b>.",
+        "",
+        "Everybody am happy."
       ],
       [
         "I'm so hungry. I need to eat anything.",
         "I'm so hungry. I need to eat {something}.",
-        "Ide o potrebu v kladnej vete → <b>something</b>."
+        "Ide o potrebu v kladnej vete → <b>something</b>.",
+        "",
+        "I'm so hungry. I need to eat nothing."
       ],
       [
         "Does anybody knows the answer?",
         "Does anybody {know} the answer?",
-        "Po <b>does</b> ide základný tvar."
+        "Po <b>does</b> ide základný tvar.",
+        "",
+        "Does anybody knew the answer?"
       ],
       [
         "Nobody wasn't there.",
         "Nobody {was} there.",
-        "Nobody je už záporné, sloveso je kladné."
+        "Nobody je už záporné, sloveso je kladné.",
+        "",
+        "Nobody weren't there."
       ]
     ]
   },
@@ -2313,32 +3116,44 @@
       [
         "She is the most smart girl in our class.",
         "She is the {smartest} girl in our class.",
-        "Krátke prídavné meno + <b>-est</b>."
+        "Krátke prídavné meno + <b>-est</b>.",
+        "",
+        "She is the smartiest girl in our class."
       ],
       [
         "This is the most good pizza ever.",
         "This is the {best} pizza ever.",
-        "Good → <b>best</b>."
+        "Good → <b>best</b>.",
+        "",
+        "This is the goodest pizza ever."
       ],
       [
         "It's the baddest film.",
         "It's the {worst} film.",
-        "Bad → <b>worst</b>."
+        "Bad → <b>worst</b>.",
+        "",
+        "It's the worstest film."
       ],
       [
         "Mount Everest is the highest mountain of the world.",
         "Mount Everest is the highest mountain {in} the world.",
-        "Po superlatíve ide <b>in the world</b>."
+        "Po superlatíve ide <b>in the world</b>.",
+        "",
+        "Mount Everest is the highest mountain on the world."
       ],
       [
         "Which is the more expensive phone in the shop?",
         "Which is the {most} expensive phone in the shop?",
-        "Dlhé prídavné meno → <b>the most</b>."
+        "Dlhé prídavné meno → <b>the most</b>.",
+        "",
+        "Which is the expensivest phone in the shop?"
       ],
       [
         "That was the happyest day of my life.",
         "That was the {happiest} day of my life.",
-        "Happy → <b>happiest</b> (y → iest)."
+        "Happy → <b>happiest</b> (y → iest).",
+        "",
+        "That was the happyiest day of my life."
       ]
     ]
   },
@@ -2347,27 +3162,37 @@
       [
         "8:15 – It's quarter to eight.",
         "8:15 – It's quarter {past} eight.",
-        "O 15 minút po hodine = <b>quarter past</b>."
+        "O 15 minút po hodine = <b>quarter past</b>.",
+        "",
+        "8:15 – It's quarter on eight."
       ],
       [
         "6:30 – It's half to seven.",
         "6:30 – It's half {past six}.",
-        "Pol = <b>half past</b> + predchádzajúca hodina."
+        "Pol = <b>half past</b> + predchádzajúca hodina.",
+        "",
+        "6:30 – It's half past seven."
       ],
       [
         "10:00 – It's ten hours.",
         "10:00 – It's {ten o'clock}.",
-        "Celá hodina = <b>o'clock</b>."
+        "Celá hodina = <b>o'clock</b>.",
+        "",
+        "10:00 – It's ten o'clocks."
       ],
       [
         "5:50 – It's ten past six.",
         "5:50 – It's ten {to} six.",
-        "Pred celou hodinou = <b>to</b>."
+        "Pred celou hodinou = <b>to</b>.",
+        "",
+        "5:50 – It's ten from six."
       ],
       [
         "What's the hour?",
         "What's the {time}?",
-        "Pýtame sa <b>What's the time?</b>"
+        "Pýtame sa <b>What's the time?</b>",
+        "",
+        "What's the clock?"
       ]
     ]
   },
@@ -2376,27 +3201,37 @@
       [
         "The Slovakia is a beautiful country.",
         "{Slovakia} is a beautiful country.",
-        "Pri väčšine krajín člen nepoužívame."
+        "Pri väčšine krajín člen nepoužívame.",
+        "",
+        "A Slovakia is a beautiful country."
       ],
       [
         "I like the music.",
         "I like {music}.",
-        "Hovoríme o hudbe všeobecne → bez člena."
+        "Hovoríme o hudbe všeobecne → bez člena.",
+        "",
+        "I like a music."
       ],
       [
         "Pacific Ocean is very big.",
         "{The Pacific Ocean} is very big.",
-        "Pred oceánmi ide <b>the</b>."
+        "Pred oceánmi ide <b>the</b>.",
+        "",
+        "A Pacific Ocean is very big."
       ],
       [
         "Sun rises in the east.",
         "{The sun} rises in the east.",
-        "Jediné také teleso → <b>the sun</b>."
+        "Jediné také teleso → <b>the sun</b>.",
+        "",
+        "A sun rises in the east."
       ],
       [
         "Can you pass me salt?",
         "Can you pass me {the salt}?",
-        "Je to konkrétna soľ na stole → <b>the</b>."
+        "Je to konkrétna soľ na stole → <b>the</b>.",
+        "",
+        "Can you pass me the salts?"
       ]
     ]
   },
@@ -2405,27 +3240,37 @@
       [
         "I can see some children plays in the park.",
         "I can see some children {playing} in the park.",
-        "Po osobe ide tvar na <b>-ing</b>."
+        "Po osobe ide tvar na <b>-ing</b>.",
+        "",
+        "I can see some children played in the park."
       ],
       [
         "There is a boy sit on the bench.",
         "There is a boy {sitting} on the bench.",
-        "Opis práve prebiehajúceho deja → <b>-ing</b>."
+        "Opis práve prebiehajúceho deja → <b>-ing</b>.",
+        "",
+        "There is a boy to sit on the bench."
       ],
       [
         "I can hear someone to sing.",
         "I can hear someone {singing}.",
-        "Po <b>hear someone</b> ide <b>-ing</b>."
+        "Po <b>hear someone</b> ide <b>-ing</b>.",
+        "",
+        "I can hear someone sings."
       ],
       [
         "There are two dogs are fighting.",
         "There are two dogs {fighting}.",
-        "Nepoužívame dvakrát sloveso: <b>dogs fighting</b>."
+        "Nepoužívame dvakrát sloveso: <b>dogs fighting</b>.",
+        "",
+        "There are two dogs they fighting."
       ],
       [
         "Look! There's a bird sits on the roof.",
         "Look! There's a bird {sitting} on the roof.",
-        "Opis práve prebiehajúceho deja → <b>sitting</b>."
+        "Opis práve prebiehajúceho deja → <b>sitting</b>.",
+        "",
+        "Look! There's a bird to sit on the roof."
       ]
     ]
   },
@@ -2434,33 +3279,44 @@
       [
         "She called me at yesterday.",
         "She called me {yesterday}.",
-        "Pred <b>yesterday</b> nedávame predložku."
+        "Pred <b>yesterday</b> nedávame predložku.",
+        "",
+        "She called me on yesterday."
       ],
       [
         "I'll see you in next week.",
         "I'll see you {next week}.",
-        "Pred <b>next</b> nedávame predložku."
+        "Pred <b>next</b> nedávame predložku.",
+        "",
+        "I'll see you on next week."
       ],
       [
         "We went to Spain on last summer.",
         "We went to Spain {last summer}.",
-        "Pred <b>last</b> nedávame predložku."
+        "Pred <b>last</b> nedávame predložku.",
+        "",
+        "We went to Spain in last summer."
       ],
       [
         "I was born before 12 years.",
         "I was born {12 years ago}.",
-        "Pred koľkými rokmi = <b>ago</b>."
+        "Pred koľkými rokmi = <b>ago</b>.",
+        "",
+        "I was born 12 years before."
       ],
       [
         "I'll finish it after two hours.",
         "I'll finish it {in two hours}.",
         "Za dve hodiny = <b>in two hours</b>.",
-        "za dve hodiny"
+        "za dve hodiny",
+        "I'll finish it on two hours."
       ],
       [
         "See you at tomorrow!",
         "See you {tomorrow}!",
-        "Pred <b>tomorrow</b> nedávame predložku."
+        "Pred <b>tomorrow</b> nedávame predložku.",
+        "",
+        "See you in tomorrow!"
       ]
     ]
   },
@@ -2469,27 +3325,37 @@
       [
         "The soup is too much salty.",
         "The soup is too {salty}.",
-        "<b>Too</b> + prídavné meno, bez much."
+        "<b>Too</b> + prídavné meno, bez much.",
+        "",
+        "The soup is enough salty."
       ],
       [
         "I'm not enough tall.",
         "I'm not {tall enough}.",
-        "<b>Enough</b> ide za prídavné meno."
+        "<b>Enough</b> ide za prídavné meno.",
+        "",
+        "I'm enough not tall."
       ],
       [
         "She's too young to driving.",
         "She's too young to {drive}.",
-        "Po <b>to</b> ide základný tvar."
+        "Po <b>to</b> ide základný tvar.",
+        "",
+        "She's too young to drives."
       ],
       [
         "Is it enough warm to swim?",
         "Is it {warm enough} to swim?",
-        "<b>Enough</b> ide za prídavné meno."
+        "<b>Enough</b> ide za prídavné meno.",
+        "",
+        "Is it warm enough to swimming?"
       ],
       [
         "The bag is too heavy to carry it.",
         "The bag is too heavy to {carry}.",
-        "Nehovoríme <i>it</i> navyše: to carry."
+        "Nehovoríme <i>it</i> navyše: to carry.",
+        "",
+        "The bag is too heavy for carry."
       ]
     ]
   },
@@ -2498,27 +3364,37 @@
       [
         "She wants going to the cinema.",
         "She wants {to go} to the cinema.",
-        "Po <b>want</b> ide <b>to + základný tvar</b>."
+        "Po <b>want</b> ide <b>to + základný tvar</b>.",
+        "",
+        "She wants to going to the cinema."
       ],
       [
         "I'm looking forward to see you.",
         "I'm looking forward to {seeing} you.",
-        "Po <b>look forward to</b> ide <b>-ing</b>."
+        "Po <b>look forward to</b> ide <b>-ing</b>.",
+        "",
+        "I'm looking forward seeing you."
       ],
       [
         "He avoids to talk to me.",
         "He avoids {talking} to me.",
-        "Po <b>avoid</b> ide <b>-ing</b>."
+        "Po <b>avoid</b> ide <b>-ing</b>.",
+        "",
+        "He avoids to talking to me."
       ],
       [
         "We hope seeing you soon.",
         "We hope {to see} you soon.",
-        "Po <b>hope</b> ide <b>to</b> + základný tvar."
+        "Po <b>hope</b> ide <b>to</b> + základný tvar.",
+        "",
+        "We hope see you soon."
       ],
       [
         "I'd like going to Italy.",
         "I'd like {to go} to Italy.",
-        "Po <b>I'd like</b> ide <b>to</b> + základný tvar."
+        "Po <b>I'd like</b> ide <b>to</b> + základný tvar.",
+        "",
+        "I'd like go to Italy."
       ]
     ]
   },
@@ -2527,32 +3403,44 @@
       [
         "Can you make me a favour?",
         "Can you {do} me a favour?",
-        "Láskavosť = <b>do a favour</b>."
+        "Láskavosť = <b>do a favour</b>.",
+        "",
+        "Can you make me a favours?"
       ],
       [
         "I did a cake for you.",
         "I {made} a cake for you.",
-        "Koláč = <b>make a cake</b>."
+        "Koláč = <b>make a cake</b>.",
+        "",
+        "I maked a cake for you."
       ],
       [
         "We did a lot of mistakes.",
         "We {made} a lot of mistakes.",
-        "Chybu = <b>make a mistake</b>."
+        "Chybu = <b>make a mistake</b>.",
+        "",
+        "We took a lot of mistakes."
       ],
       [
         "He made his homework.",
         "He {did} his homework.",
-        "Domáca úloha = <b>do homework</b>."
+        "Domáca úloha = <b>do homework</b>.",
+        "",
+        "He made his homeworks."
       ],
       [
         "Please make attention!",
         "Please {pay} attention!",
-        "Dávať pozor = <b>pay attention</b>."
+        "Dávať pozor = <b>pay attention</b>.",
+        "",
+        "Please pay an attention!"
       ],
       [
         "Let's do a break.",
         "Let's {take / have} a break.",
-        "Prestávka = <b>take / have a break</b>."
+        "Prestávka = <b>take / have a break</b>.",
+        "",
+        "Let's make a break."
       ]
     ]
   },
@@ -2561,32 +3449,44 @@
       [
         "We need more informations.",
         "We need more {information}.",
-        "<b>Information</b> je nepočitateľné."
+        "<b>Information</b> je nepočitateľné.",
+        "",
+        "We need more informationes."
       ],
       [
         "It was a hard decide.",
         "It was a hard {decision}.",
-        "Z decide vznikne <b>decision</b>."
+        "Z decide vznikne <b>decision</b>.",
+        "",
+        "It was a hard decidion."
       ],
       [
         "Her explain was very clear.",
         "Her {explanation} was very clear.",
-        "Z explain vznikne <b>explanation</b>."
+        "Z explain vznikne <b>explanation</b>.",
+        "",
+        "Her explaination was very clear."
       ],
       [
         "I'm waiting for his answering.",
         "I'm waiting for his {answer}.",
-        "Podstatné meno je <b>answer</b>."
+        "Podstatné meno je <b>answer</b>.",
+        "",
+        "I'm waiting for his answerment."
       ],
       [
         "The discussing was long.",
         "The {discussion} was long.",
-        "Z discuss vznikne <b>discussion</b>."
+        "Z discuss vznikne <b>discussion</b>.",
+        "",
+        "The discussment was long."
       ],
       [
         "Thank you for your invite.",
         "Thank you for your {invitation}.",
-        "Z invite vznikne <b>invitation</b>."
+        "Z invite vznikne <b>invitation</b>.",
+        "",
+        "Thank you for your invitement."
       ]
     ]
   }

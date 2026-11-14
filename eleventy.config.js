@@ -27,7 +27,7 @@ function otazkyLekcie(l) {
   if (d.opravChybu) {
     const uz = ulohyOprav(fs.readFileSync(l.inputPath, "utf8"), l.fileSlug);
     if (uz.length >= 3) for (const u of uz) {
-      x.push({ k: u.a, o: "Ktorá veta je správna?", m: [escHtml(u.s), escHtml(u.a)], s: 0, v: u.v || "" });
+      x.push({ k: u.a, o: "Ktorá veta je správna?", m: [u.s, u.a, ...(u.y ? [u.y] : [])].map(escHtml), s: 0, v: u.v || "" });
     }
   }
   return { q, x: x.filter((o) => o.s >= 0) };
@@ -66,7 +66,7 @@ function ulohaZRiadku(lava, prava) {
 function ulohaZVety(sk) {
   // sk = [chybná veta, správna veta so {zvýraznenou} opravou, vysvetlenie, nápoveda (nepovinná)]
   // v zložených zátvorkách môže byť viac správnych možností oddelených " / " – prvá sa ukáže, ostatné sa tiež uznajú
-  const [a, so, v, n] = sk;
+  const [a, so, v, n, y] = sk;
   const vnutro = (so.match(/\{(.*?)\}/) || [, ""])[1];
   const mozn = vnutro.split(" / ");
   const sablona = (x) => so.replace(/\{(.*?)\}/, () => x);
@@ -74,7 +74,7 @@ function ulohaZVety(sk) {
   const d = mozn.slice(1).map((x) => sablona(x));
   const b = mozn[0];
   const z = escH(so.replace(/\{(.*?)\}/, () => `{${mozn.join(" / ")}}`)).replace(/\{(.*?)\}/, "<b>$1</b>");
-  return { a, s, z, b, ...(n ? { n } : {}), ...(v ? { v } : {}), ...(d.length ? { d } : {}) };
+  return { a, s, z, b, ...(n ? { n } : {}), ...(v ? { v } : {}), ...(d.length ? { d } : {}), ...(y ? { y } : {}) };
 }
 
 // Úlohy „Nájdi a oprav chybu" z tabuľky „Časté chyby" v obsahu lekcie + vlastné vety lekcie

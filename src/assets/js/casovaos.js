@@ -16,7 +16,8 @@
 
   function init(box) {
     const data = GB.data("data-casovaos") || {};
-    const zaklad = box.dataset.casovaos === "forsince" ? "forsince" : "cas";
+    const zaklad = ["forsince", "pspc"].includes(box.dataset.casovaos) ? box.dataset.casovaos : "cas";
+    if (zaklad === "pspc") box.querySelector("[data-vyber]").hidden = true; // len jeden režim
     const KOLO = 10, KLUC = "gb-casovaos";
     const $ = (s) => box.querySelector(s);
     const el = {
@@ -61,6 +62,17 @@
         text(px(0.6), Y - 40, qq.druh === "prave" ? qq.sig + " → teraz" : "výsledok vidno teraz", "co-stitok--pp");
       }
     }
+    // past continuous (dlhý dej = úsek) × past simple (krátky dej = bod, ktorý ho preruší)
+    function kresliPC(qq) {
+      os(); const s = el.svg, a = px(0.12), b = px(0.78), bod = px(0.52);
+      const dlhy = qq.d[qq.dlhy], kratky = qq.d[1 - qq.dlhy];
+      tag("line", { x1: a, y1: Y, x2: b, y2: Y, class: "co-usek co-usek--pp" }, s);
+      text((a + b) / 2, Y - 60, dlhy, "co-stitok--pp");
+      text((a + b) / 2, Y - 34, "dlhý dej → past continuous", "co-mensi");
+      tag("circle", { cx: bod, cy: Y, r: 11, class: "co-bod co-bod--ps" }, s);
+      text(bod, Y + 52, kratky, "co-stitok--ps");
+      text(bod, Y + 74, "krátky dej → past simple", "co-mensi");
+    }
     function kresliFS(qq, odhal) {
       os(); const s = el.svg, a = px(0.4);
       if (!odhal) { tag("line", { x1: a, y1: Y, x2: XT, y2: Y, class: "co-usek co-usek--sivy" }, s); return; }
@@ -93,6 +105,7 @@
     function vetaHtml(vypln) {
       const gap = vypln ? `<b class="co-doplnene">${GB.esc(vypln)}</b>` : `<span class="co-medzera">${q.typ === "fs" ? "for / since" : "…"}</span>`;
       if (q.typ === "fs") return GB.esc(q.v).replace("___", gap);
+      if (q.typ === "pc" && !vypln) { let i = 0; return GB.esc(q.v).replace(/___/g, () => gap + ` <span class="co-inf">(${GB.esc(q.inf[i++])})</span>`); }
       if (!vypln) return GB.esc(q.v).replace("___", gap + ` <span class="co-inf">(${GB.esc(q.inf || "")})</span>`);
       if (vypln && vypln.includes("…")) { const [a, b] = vypln.split(" … "); return GB.esc(q.v).replace("___", `<b class="co-doplnene">${GB.esc(a)}</b>`).replace("___", `<b class="co-doplnene">${GB.esc(b)}</b>`); }
       return GB.esc(q.v).replace("___", gap);
@@ -108,6 +121,7 @@
         }, false);
         return;
       }
+      if (q.typ === "pc") return ukazPC();
       os();
       if (krok === 0) {
         el.krok.innerHTML = "<b>Krok 1:</b> Kam to patrí na časovej osi?";
@@ -118,6 +132,20 @@
         }, false);
       }
     }
+    function ukazPC() {
+      os();
+      el.krok.innerHTML = "<b>Krok 1:</b> Ktorý dej trval <b>dlhšie</b> – bol v pozadí a ten druhý ho prerušil?";
+      tlacidla(q.d.map((t, i) => [i, GB.esc(t)]), (i, b) => {
+        if (i !== q.dlhy) return zle(b, "Tento dej je krátky – stal sa naraz a prerušil ten druhý.");
+        krok = 1; kresliPC(q);
+        hlasenie("Áno. Dlhý dej → <b>past continuous</b> (was / were + -ing), krátky dej → <b>past simple</b>.", true);
+        el.krok.innerHTML = "<b>Krok 2:</b> Vyber správne tvary slovies.";
+        tlacidla(zamiesaj(q.f.map((f, j) => [j, GB.esc(f)])), (j, b2) => {
+          if (j !== q.ok) return zle(b2, q.z[j] || "Opačne: dlhý dej je v past continuous, krátky v past simple.");
+          hotovo(q.f[q.ok]);
+        });
+      }, true);
+    }
     function ukaz2() {
       el.krok.innerHTML = "<b>Krok 2:</b> Vyber správny tvar slovesa.";
       tlacidla(q.f.map((f, i) => [i, GB.esc(f)]), (i, b) => {
@@ -127,7 +155,7 @@
     }
     function hotovo(vypln) {
       if (!chyba) body++;
-      if (q.typ === "fs") kresliFS(q, true); else kresliCas(q);
+      if (q.typ === "fs") kresliFS(q, true); else if (q.typ === "pc") kresliPC(q); else kresliCas(q);
       el.veta.innerHTML = vetaHtml(vypln);
       el.moznosti.textContent = ""; el.krok.innerHTML = "";
       hlasenie(`${chyba ? "Hotovo." : "Výborne, bez chyby!"} ${GB.esc(q.sk)}`, !chyba);
@@ -145,7 +173,7 @@
     }
     function noveKolo() {
       const c = (data.cas || []).map((x) => ({ ...x, typ: "cas" })), f = (data.forsince || []).map((x) => ({ ...x, typ: "fs" }));
-      ulohy = rezim === "cas" ? zamiesaj(c).slice(0, KOLO) : rezim === "forsince" ? zamiesaj(f).slice(0, KOLO) : zamiesaj([...zamiesaj(c).slice(0, 6), ...zamiesaj(f).slice(0, 4)]);
+      ulohy = rezim === "pspc" ? zamiesaj((data.pspc || []).map((x) => ({ ...x, typ: "pc" }))).slice(0, KOLO) : rezim === "cas" ? zamiesaj(c).slice(0, KOLO) : rezim === "forsince" ? zamiesaj(f).slice(0, KOLO) : zamiesaj([...zamiesaj(c).slice(0, 6), ...zamiesaj(f).slice(0, 4)]);
       ix = 0; body = 0; el.koniec.hidden = true; el.karta.hidden = false; dalsia();
     }
     function koniec() {
@@ -171,6 +199,7 @@
     }
     el.dalej.addEventListener("click", () => { ix++; dalsia(); });
     el.dalsie.addEventListener("click", noveKolo);
-    kresliCipy(); noveKolo();
+    if (zaklad !== "pspc") kresliCipy();
+    noveKolo();
   }
 })();

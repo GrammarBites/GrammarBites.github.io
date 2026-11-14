@@ -18,6 +18,7 @@ otazkaKozy: "I used to be a baby goat!"
 bite:
   tip: "used to + sloveso = kedysi áno, teraz už nie. Zápor didn't use to a otázka Did you use to…? – bez -d!"
   priklad: "I used to have long hair. · She didn't use to like broccoli. · Did you use to watch cartoons?"
+roztried: used-to
 test:
   - otazka: "When I was small, I ___ play with dolls."
     moznosti: ["use to", "used to", "was used to"]

@@ -1,7 +1,7 @@
-{# Tréner súťaž kariet. V lekcii: porovnanie: comp | sup #}
+{# Tréner súťaž kariet. V lekcii: porovnanie: comp | sup | asas #}
 <section class="blok blok--trener" aria-labelledby="h-porovnanie">
   <h2 id="h-porovnanie" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Tréner: súťaž kariet</h2>
-  <p class="blok__uvod">Porovnaj karty podľa čísel – zvieratá (rýchlosť, váha, výška), veci v obchode (cena) alebo výsledky testu. Raz porovnávaš dve karty, inokedy hľadáš tú „naj“. Čísla sú približné.</p>
+  {% if porovnanie == "asas" %}<p class="blok__uvod">Porovnaj dve karty podľa čísel: ak sú rovnaké, povieš <span lang="en">as … as</span>, ak má prvá menej, povieš <span lang="en">isn't as … as</span>. Čísla sú približné.</p>{% else %}<p class="blok__uvod">Porovnaj karty podľa čísel – zvieratá (rýchlosť, váha, výška), veci v obchode (cena) alebo výsledky testu. Raz porovnávaš dve karty, inokedy hľadáš tú „naj“. Čísla sú približné.</p>{% endif %}
   <div class="trener porovnanie" data-porovnanie="{{ porovnanie }}">
     <fieldset class="trener__vyber">
       <legend>Čo chceš trénovať?</legend>

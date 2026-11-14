@@ -17,8 +17,9 @@
   function init(box) {
     const data = GB.data("data-pasivum") || {};
     const vsetky = data.vety || [], CASY = data.casy || {};
-    const len = box.dataset.pasivum === "present";
-    const KOLO = 8, KLUC = "gb-pasivum" + (len ? "-p" : "");
+    const pevny = { present: "ps", modals: "mod" }[box.dataset.pasivum] || null; // lekcia s jediným druhom viet
+    const len = pevny === "ps";
+    const KOLO = 8, KLUC = "gb-pasivum" + (len ? "-p" : pevny === "mod" ? "-mod" : "");
     const $ = (s) => box.querySelector(s);
     const el = {
       cipy: $("[data-cipy]"), vyber: $("[data-vyber]"), karta: $("[data-karta]"), stav: $("[data-stav]"), skore: $("[data-skore]"),
@@ -31,7 +32,7 @@
     const uloz = () => { try { localStorage.setItem(KLUC, JSON.stringify(pamat)); } catch (e) {} };
 
     let rezim = "mix", vety = [], ix = 0, body = 0, q = null, krok = 0, chyba = false, agent = null;
-    if (len) el.vyber.hidden = true;
+    if (pevny) el.vyber.hidden = true;
 
     const NAZVY = ["Predmet → podmet", "be", "3. stĺpec", "by + agent"];
     function sloty() {
@@ -51,7 +52,7 @@
       el.aktiv.append(".");
     }
     function noveKolo() {
-      const zdroj = vsetky.filter((v) => (len ? v.t === "ps" : rezim === "mix" || v.t === rezim));
+      const zdroj = vsetky.filter((v) => (pevny ? v.t === pevny : rezim === "mix" ? v.t !== "mod" : v.t === rezim));
       vety = zamiesaj(zdroj).slice(0, KOLO); ix = 0; body = 0;
       el.koniec.hidden = true; el.karta.hidden = false; dalsia();
     }
@@ -84,6 +85,11 @@
       el.moznosti.textContent = "";
       if (krok === 0) {
         el.krok.innerHTML = "<b>Krok 1:</b> Ťukni na <b>predmet</b> činnej vety – čo / koho sa niečo robí.";
+      } else if (krok === 1 && q.t === "mod") {
+        el.krok.innerHTML = `<b>Krok 2:</b> Modálne sloveso <b lang="en">${GB.esc(q.m)}</b> ostáva – pridaj k nemu <b>be</b>. Nový podmet je <b lang="en">${GB.esc(q.O)}</b>.`;
+        const tvarBe = /s$/.test(q.O) && !/ss$/.test(q.O) ? "are" : "is";
+        const opts = [q.be, `${q.m} ${tvarBe}`, `${q.m} been`, tvarBe];
+        tlacidla(zamiesaj(opts), q.be, (t, b) => (t === q.be ? dalejKrok(`<span lang="en">${GB.esc(q.O)} <b>${GB.esc(q.be)}</b></span> – po modálnom slovese je vždy <b>be</b> v základnom tvare.`) : zle(b, t === tvarBe ? "Modálne sloveso z činnej vety ostáva – nevyhadzuj ho." : "Po modálnom slovese je vždy <b>be</b> – nikdy is, are ani been.")));
       } else if (krok === 1) {
         el.krok.innerHTML = `<b>Krok 2:</b> Pridaj <b>be</b> v správnom tvare. Nový podmet je <b lang="en">${GB.esc(q.O)}</b>` + (len ? "." : `, čas: <b>${GB.esc(CASY[q.t])}</b>.`);
         let opts;

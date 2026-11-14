@@ -37,6 +37,7 @@
         { en: "laptop", sk: "notebook", e: "💻", cena: 900 },
         { en: "car", sk: "auto", e: "🚗", cena: 18000 },
         { en: "guitar", sk: "gitara", e: "🎸", cena: 200 },
+        { en: "skateboard", sk: "skejtboard", e: "🛹", cena: 25 },
       ],
       vlastnosti: [
         { k: "cena", jed: "€", ikona: "🏷️", hore: ["expensive", "more expensive", "the most expensive"], dole: ["cheap", "cheaper", "the cheapest"] },
@@ -50,6 +51,7 @@
         { en: "Jake", sk: "Jake", e: "🧒", body: 45, osoba: true },
         { en: "Lucy", sk: "Lucy", e: "👩‍🦰", body: 62, osoba: true },
         { en: "Max", sk: "Max", e: "🧑", body: 30, osoba: true },
+        { en: "Emma", sk: "Emma", e: "👱‍♀️", body: 80, osoba: true },
       ],
       vlastnosti: [
         { k: "body", jed: "bodov", ikona: "📝", hore: ["good", "better", "the best"], dole: ["bad", "worse", "the worst"], veta: true },
@@ -83,7 +85,8 @@
     let pamat = {};
     try { pamat = JSON.parse(localStorage.getItem(KLUC)) || {}; } catch (e) {}
     const uloz = () => { try { localStorage.setItem(KLUC, JSON.stringify(pamat)); } catch (e) {} };
-    let rezim = box.dataset.porovnanie === "comp" ? "comp" : "mix", ulohy = [], ix = 0, body = 0, q = null, krok = 0, chyba = false;
+    const asLekcia = box.dataset.porovnanie === "asas";
+    let rezim = box.dataset.porovnanie === "comp" ? "comp" : asLekcia ? "asas" : "mix", ulohy = [], ix = 0, body = 0, q = null, krok = 0, chyba = false;
 
     const hlasenie = (t, ok) => { el.spatna.className = "trener__spatna " + (ok ? "trener__spatna--ok" : "trener__spatna--zle"); el.spatna.innerHTML = t; el.spatna.hidden = false; };
     const skore = () => { el.skore.textContent = `body ${body}` + (pamat["r-" + rezim] ? ` · rekord ${pamat["r-" + rezim]}` : ""); };
@@ -126,6 +129,22 @@
         if (t === ok) return hotovo(`<b lang="en">${GB.esc(subj)} is ${GB.esc(ok)} ${GB.esc(obj)}.</b>`);
         if (t === opak) return zle(b, `Pozri na čísla: ${GB.esc(cislo(A[q.v.k], q.v.jed))} × ${GB.esc(cislo(B[q.v.k], q.v.jed))}.`);
         zle(b, pravidlo((vacsie ? q.v.hore : q.v.dole), true));
+      });
+    }
+    // as … as: rovnaké čísla → is as … as, inak menšia karta prvá → isn't as … as
+    function ukazAsas() {
+      const [A, B] = q.karty, rovnake = A[q.v.k] === B[q.v.k];
+      const [adj, comp] = q.v.hore;
+      const ok = (rovnake ? "is" : "isn't") + ` as ${adj} as`, opak = (rovnake ? "isn't" : "is") + ` as ${adj} as`;
+      const zlyStupen = ok.replace(` as ${adj} as`, ` as ${comp} as`), zlyThan = ok.replace(/ as$/, " than");
+      const subj = A.osoba ? `${A.en}'s result` : Meno(A), obj = A.osoba ? `${B.en}'s` : meno(B);
+      el.otazka.innerHTML = `<span lang="en">${GB.esc(subj)} <span class="co-medzera">…</span> ${GB.esc(obj)}.</span>`;
+      el.krok.innerHTML = "Pozri sa na čísla: sú <b>rovnaké</b>, alebo je prvá karta <b>menej</b>?";
+      tlacidla(zamiesaj([ok, opak, zlyStupen, zlyThan]), (t, b) => {
+        if (t === ok) return hotovo(`<b lang="en">${GB.esc(subj)} ${GB.esc(ok)} ${GB.esc(obj)}.</b>`);
+        if (t === opak) return zle(b, `Pozri na čísla: ${GB.esc(cislo(A[q.v.k], q.v.jed))} × ${GB.esc(cislo(B[q.v.k], q.v.jed))}. ` + (rovnake ? "Sú rovnaké → <b>is as … as</b>." : "Prvá karta má menej → <b>isn't as … as</b>."));
+        if (t === zlyStupen) return zle(b, `Medzi as … as je základný tvar: <b lang="en">as ${GB.esc(adj)} as</b>.`);
+        zle(b, "Na konci je <b>as</b>, nie than: <b lang=\"en\">as … as</b>.");
       });
     }
     function pravidlo(tvary, druhy) {
@@ -175,17 +194,24 @@
       q = ulohy[ix]; krok = 0; chyba = false;
       el.stav.textContent = `${ix + 1} / ${ulohy.length}`; skore();
       el.spatna.hidden = true; el.dalej.hidden = true;
-      if (q.typ === "comp") { kresliKarty(false); ukazComp(); } else ukazSup();
+      if (q.typ === "comp") { kresliKarty(false); ukazComp(); } else if (q.typ === "asas") { kresliKarty(false); ukazAsas(); } else ukazSup();
     }
     function uloha(typ) {
       const bk = zamiesaj(Object.keys(BALICKY).filter((k) => k !== "test" || Math.random() < 0.5))[0], bal = BALICKY[bk];
-      const v = zamiesaj(bal.vlastnosti)[0], n = typ === "comp" ? 2 : 4;
+      const v = zamiesaj(bal.vlastnosti)[0], n = typ === "sup" ? 4 : 2;
       let karty;
+      if (typ === "asas") {
+        // asi tretina úloh s rovnakými číslami (ak taká dvojica v balíčku je)
+        const pary = bal.karty.flatMap((a, i) => bal.karty.slice(i + 1).map((b) => [a, b]));
+        const rovne = pary.filter(([a, b]) => a[v.k] === b[v.k]), rozne = pary.filter(([a, b]) => a[v.k] !== b[v.k]);
+        karty = zamiesaj(rovne.length && Math.random() < 0.35 ? zamiesaj(rovne)[0] : zamiesaj(rozne)[0]).sort((a, b) => a[v.k] - b[v.k]);
+        return { typ, bal, v, karty, osoba: !!karty[0].osoba };
+      }
       for (let i = 0; i < 30; i++) { karty = zamiesaj(bal.karty).slice(0, n); const h = karty.map((k) => k[v.k]); if (new Set(h).size === h.length) break; }
       return { typ, bal, v, karty, smer: Math.random() < 0.5 ? "hore" : "dole", osoba: !!karty[0].osoba };
     }
     function noveKolo() {
-      ulohy = Array.from({ length: KOLO }, (_, i) => uloha(rezim === "mix" ? (i % 2 ? "sup" : "comp") : rezim));
+      ulohy = Array.from({ length: KOLO }, (_, i) => uloha(rezim === "mix" ? (i % 2 ? "sup" : "comp") : rezim === "mixas" ? (i % 2 ? "comp" : "asas") : rezim));
       ix = 0; body = 0; el.koniec.hidden = true; el.karta.hidden = false; dalsia();
     }
     function koniec() {
@@ -198,7 +224,8 @@
       if (GB.udalost) GB.udalost(`porovnanie/${rezim}/${body}-z-${n}`, `Porovnanie: ${body}/${n}`);
       el.dalsie.focus({ preventScroll: true });
     }
-    const REZIMY = [["comp", "Porovnaj dve (-er, more)"], ["sup", "Kto je naj? (-est, most)"], ["mix", "Všetko"]];
+    const REZIMY = asLekcia ? [["asas", "as … as"], ["comp", "Porovnaj dve (-er, more)"], ["mixas", "Všetko"]]
+      : [["comp", "Porovnaj dve (-er, more)"], ["sup", "Kto je naj? (-est, most)"], ["mix", "Všetko"]];
     function kresliCipy() {
       el.cipy.textContent = "";
       REZIMY.forEach(([id, t]) => {

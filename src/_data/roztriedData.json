@@ -1166,5 +1166,92 @@
     "v": "Tri týždne sú <b>dĺžka</b> → <b>for</b>."
    }
   ]
+ },
+ "used-to": {
+  "nadpis": "used to, alebo use to?",
+  "kose": [
+   {
+    "id": "used",
+    "nazov": "used to",
+    "popis": "oznamovacia veta – kedysi áno"
+   },
+   {
+    "id": "use",
+    "nazov": "use to",
+    "popis": "po did / didn't – bez -d"
+   }
+  ],
+  "polozky": [
+   {
+    "t": "I ___ have long hair.",
+    "k": "used",
+    "v": "Oznamovacia veta → <b>used to</b>."
+   },
+   {
+    "t": "She didn't ___ like broccoli.",
+    "k": "use",
+    "v": "Po <b>didn't</b> ide <b>use to</b> – bez -d, minulý čas už ukazuje did."
+   },
+   {
+    "t": "Did you ___ watch cartoons?",
+    "k": "use",
+    "v": "Po <b>Did</b> ide <b>use to</b> – bez -d, minulý čas už ukazuje did."
+   },
+   {
+    "t": "We ___ live in Žilina.",
+    "k": "used",
+    "v": "Oznamovacia veta → <b>used to</b>."
+   },
+   {
+    "t": "He didn't ___ wear glasses.",
+    "k": "use",
+    "v": "Po <b>didn't</b> ide <b>use to</b> – bez -d, minulý čas už ukazuje did."
+   },
+   {
+    "t": "My grandpa ___ walk to school every day.",
+    "k": "used",
+    "v": "Oznamovacia veta → <b>used to</b>."
+   },
+   {
+    "t": "What did you ___ eat for breakfast?",
+    "k": "use",
+    "v": "Po <b>did</b> ide <b>use to</b> – bez -d, minulý čas už ukazuje did."
+   },
+   {
+    "t": "There ___ be a cinema in our town.",
+    "k": "used",
+    "v": "Oznamovacia veta → <b>used to</b>."
+   },
+   {
+    "t": "Did your dad ___ play football?",
+    "k": "use",
+    "v": "Po <b>Did</b> ide <b>use to</b> – bez -d, minulý čas už ukazuje did."
+   },
+   {
+    "t": "I ___ be afraid of the dark.",
+    "k": "used",
+    "v": "Oznamovacia veta → <b>used to</b>."
+   },
+   {
+    "t": "We didn't ___ have a car.",
+    "k": "use",
+    "v": "Po <b>didn't</b> ide <b>use to</b> – bez -d, minulý čas už ukazuje did."
+   },
+   {
+    "t": "My sister ___ cry a lot when she was a baby.",
+    "k": "used",
+    "v": "Oznamovacia veta → <b>used to</b>."
+   },
+   {
+    "t": "Where did they ___ live?",
+    "k": "use",
+    "v": "Po <b>did</b> ide <b>use to</b> – bez -d, minulý čas už ukazuje did."
+   },
+   {
+    "t": "Our school ___ be smaller.",
+    "k": "used",
+    "v": "Oznamovacia veta → <b>used to</b>."
+   }
+  ]
  }
 }

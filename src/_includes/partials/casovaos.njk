@@ -1,9 +1,9 @@
-{# Tréner časovej osi. V lekcii: casovaOs: vs | forsince (dáta src/_data/casovaOsData.json) #}
+{# Tréner časovej osi. V lekcii: casovaOs: vs | forsince | pspc (dáta src/_data/casovaOsData.json) #}
 <section class="blok blok--trener" aria-labelledby="h-casovaos">
   <h2 id="h-casovaos" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Tréner: časová os</h2>
-  <p class="blok__uvod">Najprv rozhodni, kam veta patrí na časovej osi – je to hotové v minulosti, alebo spojené s TERAZ? Potom vyber tvar slovesa. Pri <span lang="en">for × since</span> hľadáš, či je to začiatok, alebo dĺžka. Bod za vetu bez chyby.</p>
+  {% if casovaOs == "pspc" %}<p class="blok__uvod">Dva deje v minulosti: jeden trvá dlhšie, druhý je krátky a ten dlhý preruší. Najprv nájdi dlhý dej na časovej osi, potom vyber tvary slovies. Bod za vetu bez chyby.</p>{% else %}<p class="blok__uvod">Najprv rozhodni, kam veta patrí na časovej osi – je to hotové v minulosti, alebo spojené s TERAZ? Potom vyber tvar slovesa. Pri <span lang="en">for × since</span> hľadáš, či je to začiatok, alebo dĺžka. Bod za vetu bez chyby.</p>{% endif %}
   <div class="trener casovaos" data-casovaos="{{ casovaOs }}">
-    <fieldset class="trener__vyber">
+    <fieldset class="trener__vyber" data-vyber>
       <legend>Čo chceš trénovať?</legend>
       <div class="trener__cipy" data-cipy></div>
     </fieldset>

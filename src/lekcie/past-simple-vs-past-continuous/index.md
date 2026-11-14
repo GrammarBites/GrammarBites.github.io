@@ -20,6 +20,7 @@ otazkaKozy: "What were you doing when I called?"
 bite:
   tip: "Dlhý dej v pozadí = past continuous (was / were + -ing). Krátky dej, ktorý ho preruší = past simple. while + dlhý dej, when + krátky dej."
   priklad: "I was having a shower when the phone rang. · While we were playing, it started to rain."
+casovaOs: pspc
 test:
   - otazka: "I ___ TV when my friend called."
     moznosti: ["watched", "was watching", "were watching"]

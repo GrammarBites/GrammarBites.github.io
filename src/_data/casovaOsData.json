@@ -312,5 +312,295 @@
    "z": "two weeks",
    "sk": "Dva týždne sme nemali písomku."
   }
+ ],
+ "pspc": [
+  {
+   "v": "I ___ a shower when the phone ___.",
+   "inf": [
+    "have",
+    "ring"
+   ],
+   "d": [
+    "have a shower",
+    "the phone rings"
+   ],
+   "dlhy": 0,
+   "f": [
+    "was having … rang",
+    "had … was ringing",
+    "were having … rang"
+   ],
+   "ok": 0,
+   "z": [
+    "",
+    "",
+    "Pri <b>I</b> je <b>was</b>, nie were."
+   ],
+   "sk": "Sprchoval som sa, keď zazvonil telefón."
+  },
+  {
+   "v": "They ___ when the storm ___.",
+   "inf": [
+    "sleep",
+    "start"
+   ],
+   "d": [
+    "sleep",
+    "the storm starts"
+   ],
+   "dlhy": 0,
+   "f": [
+    "were sleeping … started",
+    "slept … was starting",
+    "was sleeping … started"
+   ],
+   "ok": 0,
+   "z": [
+    "",
+    "",
+    "Pri <b>they</b> je <b>were</b>."
+   ],
+   "sk": "Spali, keď sa začala búrka."
+  },
+  {
+   "v": "While we ___ football, it ___ to rain.",
+   "inf": [
+    "play",
+    "start"
+   ],
+   "d": [
+    "play football",
+    "it starts to rain"
+   ],
+   "dlhy": 0,
+   "f": [
+    "were playing … started",
+    "played … was starting",
+    "was playing … started"
+   ],
+   "ok": 0,
+   "z": [
+    "",
+    "",
+    "Pri <b>we</b> je <b>were</b>."
+   ],
+   "sk": "Kým sme hrali futbal, začalo pršať."
+  },
+  {
+   "v": "When the bell ___, we ___ a test.",
+   "inf": [
+    "ring",
+    "write"
+   ],
+   "d": [
+    "the bell rings",
+    "write a test"
+   ],
+   "dlhy": 1,
+   "f": [
+    "rang … were writing",
+    "was ringing … wrote",
+    "rang … were write"
+   ],
+   "ok": 0,
+   "z": [
+    "",
+    "",
+    "Past continuous potrebuje -ing: <b>were writing</b>."
+   ],
+   "sk": "Keď zazvonilo, práve sme písali test."
+  },
+  {
+   "v": "I ___ my friend while I ___ to school.",
+   "inf": [
+    "see",
+    "walk"
+   ],
+   "d": [
+    "see my friend",
+    "walk to school"
+   ],
+   "dlhy": 1,
+   "f": [
+    "saw … was walking",
+    "was seeing … walked",
+    "seed … was walking"
+   ],
+   "ok": 0,
+   "z": [
+    "",
+    "",
+    "<b>see</b> je nepravidelné: see – <b>saw</b>."
+   ],
+   "sk": "Keď som išiel do školy, uvidel som kamaráta."
+  },
+  {
+   "v": "She ___ her leg while she ___.",
+   "inf": [
+    "break",
+    "ski"
+   ],
+   "d": [
+    "break her leg",
+    "ski"
+   ],
+   "dlhy": 1,
+   "f": [
+    "broke … was skiing",
+    "was breaking … skied",
+    "broke … were skiing"
+   ],
+   "ok": 0,
+   "z": [
+    "",
+    "",
+    "Pri <b>she</b> je <b>was</b>."
+   ],
+   "sk": "Zlomila si nohu, keď lyžovala."
+  },
+  {
+   "v": "Mum ___ dinner when Dad ___ home.",
+   "inf": [
+    "cook",
+    "come"
+   ],
+   "d": [
+    "cook dinner",
+    "Dad comes home"
+   ],
+   "dlhy": 0,
+   "f": [
+    "was cooking … came",
+    "cooked … was coming",
+    "was cooking … comed"
+   ],
+   "ok": 0,
+   "z": [
+    "",
+    "",
+    "<b>come</b> je nepravidelné: come – <b>came</b>."
+   ],
+   "sk": "Mama varila večeru, keď prišiel otec domov."
+  },
+  {
+   "v": "When I ___ the classroom, everybody ___.",
+   "inf": [
+    "enter",
+    "laugh"
+   ],
+   "d": [
+    "I enter the classroom",
+    "everybody laughs"
+   ],
+   "dlhy": 1,
+   "f": [
+    "entered … was laughing",
+    "was entering … laughed",
+    "entered … was laugh"
+   ],
+   "ok": 0,
+   "z": [
+    "",
+    "",
+    "Past continuous potrebuje -ing: <b>was laughing</b>."
+   ],
+   "sk": "Keď som vošiel do triedy, všetci sa smiali."
+  },
+  {
+   "v": "The children ___ in the garden when it ___ to snow.",
+   "inf": [
+    "play",
+    "begin"
+   ],
+   "d": [
+    "play in the garden",
+    "it begins to snow"
+   ],
+   "dlhy": 0,
+   "f": [
+    "were playing … began",
+    "played … was beginning",
+    "were playing … begined"
+   ],
+   "ok": 0,
+   "z": [
+    "",
+    "",
+    "<b>begin</b> je nepravidelné: begin – <b>began</b>."
+   ],
+   "sk": "Deti sa hrali v záhrade, keď začalo snežiť."
+  },
+  {
+   "v": "While I ___ my homework, the lights ___ out.",
+   "inf": [
+    "do",
+    "go"
+   ],
+   "d": [
+    "do my homework",
+    "the lights go out"
+   ],
+   "dlhy": 0,
+   "f": [
+    "was doing … went",
+    "did … were going",
+    "was doing … goed"
+   ],
+   "ok": 0,
+   "z": [
+    "",
+    "",
+    "<b>go</b> je nepravidelné: go – <b>went</b>."
+   ],
+   "sk": "Kým som robil úlohu, zhaslo svetlo."
+  },
+  {
+   "v": "Tom ___ off his bike while he ___ down the hill.",
+   "inf": [
+    "fall",
+    "ride"
+   ],
+   "d": [
+    "fall off his bike",
+    "ride down the hill"
+   ],
+   "dlhy": 1,
+   "f": [
+    "fell … was riding",
+    "was falling … rode",
+    "fell … was ride"
+   ],
+   "ok": 0,
+   "z": [
+    "",
+    "",
+    "Past continuous potrebuje -ing: <b>was riding</b>."
+   ],
+   "sk": "Tom spadol z bicykla, keď sa viezol dolu kopcom."
+  },
+  {
+   "v": "We ___ TV when we ___ a strange noise.",
+   "inf": [
+    "watch",
+    "hear"
+   ],
+   "d": [
+    "watch TV",
+    "hear a strange noise"
+   ],
+   "dlhy": 0,
+   "f": [
+    "were watching … heard",
+    "watched … were hearing",
+    "was watching … heard"
+   ],
+   "ok": 0,
+   "z": [
+    "",
+    "",
+    "Pri <b>we</b> je <b>were</b>."
+   ],
+   "sk": "Pozerali sme telku, keď sme začuli zvláštny zvuk."
+  }
  ]
 }

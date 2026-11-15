@@ -1,7 +1,7 @@
 # Tabule – recepty
 
 Jeden súbor = jedna tabuľa. Názov súboru = priečinok lekcie (`present-simple.json` → `src/lekcie/present-simple/`).
-Ak lekcia má tabuľu, pri nadpise **Výklad** sa automaticky objaví tlačidlo „Nerozumiem – vysvetli mi to na tabuli“.
+Ak lekcia má tabuľu, pri nadpise **Výklad** sa automaticky objaví tlačidlo „Nerozumiem – vysvetli mi to na Magickej tabuli“.
 Všetky tabule sú na stránke `/tabula/`.
 
 ## Hlavička

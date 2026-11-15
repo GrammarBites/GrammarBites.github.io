@@ -80,7 +80,7 @@ skripty: ["lekcia.js"]
 <section class="blok blok--vyklad" aria-labelledby="h-vyklad">
   <h2 id="h-vyklad" class="blok__nadpis"><span class="blok__pismeno">{{ pismenoVykladu }}</span> Výklad</h2>
   {% set tabulaId = tabule | tabulaPre(page.fileSlug) %}
-  {% if tabulaId %}<a class="vyklad-tabula" href="/tabula/#{{ tabulaId }}"><span class="vyklad-tabula__doska" aria-hidden="true">a + b</span><span><b>Nerozumiem – vysvetli mi to na tabuli</b><br>{{ tabule[tabulaId].nazov }}</span></a>{% endif %}
+  {% if tabulaId %}<a class="vyklad-tabula" href="/tabula/#{{ tabulaId }}"><span class="vyklad-tabula__doska" aria-hidden="true">a + b</span><span><b>Nerozumiem – vysvetli mi to na Magickej tabuli</b><br>{{ tabule[tabulaId].nazov }}</span></a>{% endif %}
   {% if vykladSchovany != false %}
   <details class="vyklad-skryty" data-vyklad>
     <summary class="tlacidlo vyklad-skryty__tlacidlo">

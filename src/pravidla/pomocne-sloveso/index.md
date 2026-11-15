@@ -1,13 +1,13 @@
 ---
 cislo: 4
 title: Otázka aj zápor potrebujú pomocné sloveso!
-popis: Pomocné alebo modálne sloveso nám pomáha vytvoriť otázku aj zápor. V otázke ide pred podmet, v zápore k nemu pridáme not.
+popis: Pomocné alebo modálne sloveso nám pomáha vytvoriť otázku aj zápor. V otázke ide pred podmet, v zápore k nemu pridáme not. Sloveso be a modálne slovesá si poradia samy – do k nim nepridávame.
 priklad: "Do you like it? – I don't like it."
 lekcie: [present-simple-otazky, present-continuous-otazky, past-simple, past-simple-be, must]
 video: video.mp4
 poster: poster.jpg
-infografika: infografika.jpg
-infografikaPdf: infografika.pdf
+infografika: infografika.jpg?v=2
+infografikaPdf: infografika.pdf?v=2
 ---
 
 V slovenčine stačí zmeniť intonáciu (*Bývaš v Martine?*) alebo pridať *ne-* (*nebývam*). V angličtine potrebujeme **pomocné sloveso**.
@@ -33,6 +33,11 @@ V slovenčine stačí zmeniť intonáciu (*Bývaš v Martine?*) alebo pridať *n
 
 Ak vo vete nie je žiadne pomocné sloveso, „požičiame“ si **do / does / did**.
 
+**Pozor na sloveso be:** *am, is, are, was, were* je pomocným slovesom **samo sebe**. Otázku aj zápor si urobí samo, *do* k nemu nikdy nepridávame. Rovnako modálne slovesá *can, must, should, will*.
+
+- *<b>Are</b> you hungry?* – nie ~~Do you are hungry?~~
+- *I'm <b>not</b> hungry.* – nie ~~I don't be hungry.~~
+
 ## Časté chyby
 
 <table class="chyby">
@@ -41,5 +46,7 @@ Ak vo vete nie je žiadne pomocné sloveso, „požičiame“ si **do / does / d
 <tr><td><s>You like</s> pizza?</td><td><b>Do you like</b> pizza?</td></tr>
 <tr><td>I <s>not like</s> it.</td><td>I <b>don't like</b> it.</td></tr>
 <tr><td><s>Do you can</s> swim?</td><td><b>Can you</b> swim?</td></tr>
+<tr><td><s>Do you are</s> hungry?</td><td><b>Are you</b> hungry?</td></tr>
+<tr><td>I <s>don't am</s> tired.</td><td>I'<b>m not</b> tired.</td></tr>
 </tbody>
 </table>

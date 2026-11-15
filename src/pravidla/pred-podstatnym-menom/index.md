@@ -6,11 +6,13 @@ priklad: "I've got a dog. · She's a teacher."
 lekcie: [a-an, a-an-the, the-definite-article]
 video: video.mp4
 poster: poster.jpg
-infografika: infografika.jpg
-infografikaPdf: infografika.pdf
+infografika: infografika.jpg?v=2
+infografikaPdf: infografika.pdf?v=2
 ---
 
 V slovenčine členy nemáme: *Mám psa.* V angličtine podstatné meno v jednotnom čísle **nikdy nestojí samo**.
+
+**Pozor:** pravidlo platí len pre **jednu vec, ktorú vieme spočítať** (*a dog, a bag, a teacher*). Pred množné číslo (*dogs*) a pred nepočítateľné veci (*milk, music, bread*) *a / an* nedávame.
 
 <table class="chyby tvary">
 <thead><tr><th scope="col">čo môže stáť pred podstatným menom</th><th scope="col">príklad</th></tr></thead>
@@ -38,5 +40,7 @@ Bez člena môžu byť len:
 <tr><td>I've got <s>dog</s>.</td><td>I've got <b>a dog</b>.</td></tr>
 <tr><td>She's <s>teacher</s>.</td><td>She's <b>a teacher</b>.</td></tr>
 <tr><td>Where is <s>bag</s>?</td><td>Where is <b>my bag</b>?</td></tr>
+<tr><td>I like <s>a milk</s>.</td><td>I like <b>milk</b>. (nepočítateľné – bez a)</td></tr>
+<tr><td>I've got <s>a dogs</s>.</td><td>I've got <b>dogs</b>. (množné číslo – bez a)</td></tr>
 </tbody>
 </table>

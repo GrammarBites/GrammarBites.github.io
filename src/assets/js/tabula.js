@@ -209,8 +209,16 @@
     }
 
     // ---------- výber otázky ----------
-    el.cipy.innerHTML = zoznam.flatMap((x) => (x.otazky || [x.nazov]).slice(0, 1).map((q) =>
-      `<button type="button" class="tb-cip" data-id="${x.id}">${esc(q)}</button>`)).join("");
+    // otázky sú zoskupené podľa témy ("skupina" v recepte); poradie a názvy skupín sú v SKUPINY
+    const SKUPINY = [["pritomny", "Prítomný čas"], ["minuly", "Minulý a predprítomný čas"], ["buducnost", "Budúcnosť"], ["otazky", "Otázky"],
+      ["vety", "Slovesá a vety"], ["mnozstvo", "Členy, množstvo a zámená"], ["pridavne", "Prídavné mená a príslovky"], ["cas", "Hodiny a predložky"], ["", "Ďalšie"]];
+    const znama = (x) => SKUPINY.some(([k]) => k && k === x.skupina);
+    el.cipy.innerHTML = SKUPINY.map(([kluc, nazov]) => {
+      const v = zoznam.filter((x) => kluc ? x.skupina === kluc : !znama(x));
+      if (!v.length) return "";
+      return `<section class="tb-skupina"><h2 class="tb-skupina__nadpis">${esc(nazov)}</h2><div class="tb-cipy">${v.map((x) =>
+        `<button type="button" class="tb-cip" data-id="${x.id}">${esc((x.otazky || [x.nazov])[0])}</button>`).join("")}</div></section>`;
+    }).join("");
     el.cipy.addEventListener("click", (e) => { const b = e.target.closest("[data-id]"); if (b) otvor(b.dataset.id, true); });
     el.form.addEventListener("submit", (e) => {
       e.preventDefault();

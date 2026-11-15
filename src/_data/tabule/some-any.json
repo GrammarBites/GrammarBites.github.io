@@ -2,6 +2,7 @@
   "lekcia": "some-any",
   "lekciaNazov": "some · any",
   "nazov": "Kedy some a kedy any?",
+  "skupina": "mnozstvo",
   "otazky": ["Kedy some a kedy any?", "Prečo Would you like some tea?, keď je to otázka?"],
   "kluce": ["some", "any", "some any", "nejaky", "ziadny", "trochu", "would you like some", "haven't got any"],
   "kroky": [

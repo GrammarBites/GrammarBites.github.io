@@ -8,6 +8,7 @@ Všetky tabule sú na stránke `/tabula/`.
 
 - `lekcia`, `lekciaNazov` – kam vedie odkaz „Lekcia“
 - `nazov` – nadpis na tabuli
+- `skupina` – pod ktorým nadpisom sa otázka ukáže na stránke /tabula/: `pritomny`, `minuly`, `buducnost`, `otazky`, `vety`, `mnozstvo`, `pridavne`, `cas` (názvy a poradie sú v `SKUPINY` v `src/assets/js/tabula.js`; bez skupiny ide tabuľa do „Ďalšie“)
 - `otazky` – 1–2 otázky, ktoré sa ukážu ako tlačidlá na stránke /tabula/
 - `aj` (nepovinné) – ďalšie lekcie, pri ktorých sa má ukázať tlačidlo tabule, napr. `["passive-tenses"]`
 - `kluce` – slová, podľa ktorých sa tabuľa nájde, keď žiak napíše vlastnú otázku (bez diakritiky)

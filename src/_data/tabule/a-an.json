@@ -2,6 +2,7 @@
   "lekcia": "a-an",
   "lekciaNazov": "A or an?",
   "nazov": "Prečo „an hour“, ale „a university“?",
+  "skupina": "mnozstvo",
   "otazky": ["Prečo an hour, ale a university?", "Kedy a a kedy an?"],
   "kluce": ["a an", "a or an", "clen", "neurcity clen", "an apple", "an hour", "a university", "samohlaska", "spoluhlaska", "i'm a teacher"],
   "kroky": [

@@ -2,6 +2,7 @@
   "lekcia": "must-mustnt-dont-have-to",
   "lekciaNazov": "must · mustn't · don't have to",
   "nazov": "mustn't, alebo don't have to?",
+  "skupina": "vety",
   "otazky": ["Aký je rozdiel medzi mustn't a don't have to?", "Kedy must a kedy have to?"],
   "kluce": ["must", "mustn't", "mustnt", "don't have to", "dont have to", "have to", "has to", "nesmies", "nemusis", "musis", "zakazane", "povinnost"],
   "kroky": [

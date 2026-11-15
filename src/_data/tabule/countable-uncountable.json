@@ -1,0 +1,216 @@
+{
+  "lekcia": "countable-uncountable",
+  "lekciaNazov": "How much? How many?",
+  "nazov": "much, alebo many?",
+  "otazky": [
+    "Kedy much a kedy many?",
+    "Prečo How much milk, ale How many apples?"
+  ],
+  "kluce": [
+    "much",
+    "many",
+    "how much",
+    "how many",
+    "kolko",
+    "pocitatelne",
+    "nepocitatelne",
+    "countable",
+    "uncountable",
+    "a few",
+    "a little",
+    "a lot of",
+    "vela",
+    "trochu",
+    "par",
+    "money"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "How {much#m} apples have we got?"
+        }
+      ],
+      "popis": "Po slovensky sa pýtame vždy rovnako: <i>Koľko?</i> Angličtina má dve slová – a rozhoduje, či sa vec dá spočítať.",
+      "otazka": {
+        "text": "Dajú sa jablká spočítať? (one apple, two apples…)",
+        "moznosti": [
+          "Áno",
+          "Nie"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Skús to: jedno jablko, dve jablká, tri jablká… ide to."
+        },
+        "vysvetlenie": "Jablká sa dajú spočítať – sú počítateľné."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.m"
+        },
+        {
+          "op": "pis",
+          "text": "How {many|zlta} apples have we got?"
+        },
+        {
+          "op": "mriezka",
+          "id": "g",
+          "velke": true
+        },
+        {
+          "op": "scena",
+          "do": "g",
+          "typ": "jablka",
+          "popis": "{many|zlta} apples",
+          "alt": "Koza a sedem jabĺk.",
+          "pocet": 7
+        }
+      ],
+      "popis": "Čo sa dá <b>spočítať po kusoch</b> a má množné číslo (<i>apple<b>s</b>, egg<b>s</b>, banana<b>s</b></i>), je <b>počítateľné</b>. Pýtame sa <b>How many…?</b>"
+    },
+    {
+      "kresli": [
+        {
+          "op": "scena",
+          "do": "g",
+          "typ": "mlieko",
+          "popis": "{much|modra} milk",
+          "alt": "Koza a plný pohár mlieka.",
+          "plne": 0.85
+        },
+        {
+          "op": "pis",
+          "text": "How {much|modra} milk have we got?"
+        }
+      ],
+      "popis": "Mlieko sa po kusoch spočítať nedá – nepovieme <i>dve mlieka</i>, ale <i>dva poháre mlieka</i>. Je <b>nepočítateľné</b> a nemá množné číslo: <i>milk, cheese, bread, water, sugar</i>. Pýtame sa <b>How much…?</b>",
+      "otazka": {
+        "text": "How ___ cheese do we need?",
+        "moznosti": [
+          "much",
+          "many"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Cheese nemá množné číslo – nepovieme two cheeses. Je nepočítateľné."
+        },
+        "vysvetlenie": "cheese je nepočítateľné → much."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "scena",
+          "do": "g",
+          "typ": "jablka",
+          "popis": "{a few|zlta} apples = pár",
+          "alt": "Koza a dve jablká.",
+          "pocet": 2
+        },
+        {
+          "op": "scena",
+          "do": "g",
+          "typ": "mlieko",
+          "popis": "{a little|modra} milk = trochu",
+          "alt": "Koza a pohár s trochou mlieka.",
+          "plne": 0.15
+        }
+      ],
+      "popis": "Rovnako je to s <b>malým množstvom</b>: <b>a few</b> pri počítateľných (pár jabĺk), <b>a little</b> pri nepočítateľných (trochu mlieka).",
+      "otazka": {
+        "text": "There's ___ juice in the fridge.",
+        "moznosti": [
+          "a few",
+          "a little"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "Juice sa po kusoch nepočíta. A few je len pre počítateľné."
+        },
+        "vysvetlenie": "juice je nepočítateľné → a little."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "Na veľa stačí jedno slovo pre oboje:"
+        },
+        {
+          "op": "pis",
+          "text": "{a lot of|ruzova} apples  ·  {a lot of|ruzova} milk"
+        },
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "Pozor na peniaze:"
+        },
+        {
+          "op": "pis",
+          "id": "c",
+          "text": "How {many#m} money have you got?"
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "c.m"
+        },
+        {
+          "op": "pis",
+          "text": "How {much|modra} money have you got?"
+        }
+      ],
+      "popis": "<b>A lot of</b> funguje pri oboch. A pasca: po slovensky peniaze počítame, ale <i>money</i> je <b>nepočítateľné</b> – počítame eurá, nie „peniaze“. Preto <i>How much money?</i> aj <i>How much is it?</i>"
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "dá sa spočítať (apples, eggs)",
+              "riadky": [
+                "How {many|zlta}…?",
+                "{many|zlta} · {a few|zlta}"
+              ]
+            },
+            {
+              "nadpis": "nedá sa spočítať (milk, money)",
+              "riadky": [
+                "How {much|modra}…?",
+                "{much|modra} · {a little|modra}"
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "Pred každou vetou sa opýtaj: <b>dá sa to spočítať po kusoch?</b> Áno → many. Nie → much.",
+      "odkazy": [
+        {
+          "text": "Tréner: nákupný košík",
+          "url": "/lekcie/countable-uncountable/#h-kosik"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/countable-uncountable/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/countable-uncountable/#h-test"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "lekcia": "past-simple-vs-past-continuous",
+  "lekciaNazov": "Past simple × past continuous",
+  "nazov": "was doing, alebo did? (when a while)",
+  "otazky": [
+    "Kedy was doing a kedy did?",
+    "Aký je rozdiel medzi when a while?"
+  ],
+  "kluce": [
+    "past simple",
+    "past continuous",
+    "minuly cas priebehovy",
+    "was doing",
+    "were doing",
+    "when",
+    "while",
+    "ked",
+    "kym",
+    "dlhy dej",
+    "kratky dej",
+    "preruseny dej",
+    "was having",
+    "rang"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "I {had#h} a shower when the phone rang."
+        }
+      ],
+      "popis": "Vo vete sú <b>dva deje</b>: sprchovanie a zazvonenie telefónu. Takto napísaná veta znamená, že telefón zazvonil a <i>potom</i> som sa išiel osprchovať. My však chceme povedať, že zazvonil <b>počas</b> sprchovania.",
+      "otazka": {
+        "text": "Ktorý dej trval dlhšie?",
+        "moznosti": [
+          "sprchovanie",
+          "zazvonenie telefónu"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Telefón zazvoní za sekundu. Sprcha trvá niekoľko minút."
+        },
+        "vysvetlenie": "Sprchovanie je dlhý dej, zazvonenie krátky."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.h"
+        },
+        {
+          "op": "pis",
+          "text": "I {was having|modra} a shower when the phone rang."
+        },
+        {
+          "op": "os",
+          "id": "o",
+          "teraz": 90,
+          "alt": "Časová os: dlhá vlnovka v minulosti – I was having a shower.",
+          "znacky": [
+            {
+              "typ": "vlna",
+              "od": 18,
+              "do": 62,
+              "text": "I was having a shower",
+              "farba": "modra"
+            }
+          ]
+        }
+      ],
+      "popis": "<b>Dlhý dej v pozadí</b> – niečo práve prebiehalo – je <b>past continuous</b>: <i>was / were</i> + sloveso s <i>-ing</i>. Na osi ho kreslíme ako vlnovku."
+    },
+    {
+      "kresli": [
+        {
+          "op": "naos",
+          "os": "o",
+          "znacky": [
+            {
+              "typ": "bod",
+              "x": 44,
+              "farba": "ruzova",
+              "pod": "the phone rang"
+            }
+          ]
+        }
+      ],
+      "popis": "<b>Krátky dej</b>, ktorý ten dlhý <b>preruší</b>, je <b>past simple</b>: <i>the phone <b>rang</b></i>. Na osi je to jeden krížik uprostred vlnovky.",
+      "otazka": {
+        "text": "While we ___ football, it started to rain.",
+        "moznosti": [
+          "played",
+          "were playing"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "Futbal je tu dlhý dej v pozadí – dážď ho prerušil."
+        },
+        "vysvetlenie": "Dlhý dej v pozadí → were playing."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "{while|modra} + dlhý dej  (was / were + -ing)"
+        },
+        {
+          "op": "pis",
+          "text": "{While|modra} I was having a shower, the phone rang."
+        },
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "{when|ruzova} + krátky dej  (past simple)"
+        },
+        {
+          "op": "pis",
+          "text": "I was having a shower {when|ruzova} the phone rang."
+        }
+      ],
+      "popis": "Obe vety hovoria to isté. <b>while</b> (kým, počas toho ako) stojí pred <b>dlhým</b> dejom, <b>when</b> (keď) pred <b>krátkym</b>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "When I came home, I had dinner."
+        },
+        {
+          "op": "os",
+          "id": "o2",
+          "teraz": 90,
+          "alt": "Časová os: dva krížiky za sebou – came home, had dinner.",
+          "znacky": [
+            {
+              "typ": "bod",
+              "x": 30,
+              "text": "came home",
+              "farba": "ruzova"
+            },
+            {
+              "typ": "bod",
+              "x": 58,
+              "text": "had dinner",
+              "farba": "ruzova"
+            }
+          ]
+        }
+      ],
+      "popis": "A keď idú <b>dva krátke deje po sebe</b>? Vtedy sú oba v <b>past simple</b> – prišiel som domov a potom som večeral. Žiadna vlnovka, len dva krížiky.",
+      "otazka": {
+        "text": "What ___ when I called?  (Čo si práve robil?)",
+        "moznosti": [
+          "did you do",
+          "were you doing"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "What did you do when I called? = Čo si urobil potom, ako som zavolal. My sa pýtame, čo práve prebiehalo."
+        },
+        "vysvetlenie": "Pýtame sa na dej, ktorý práve prebiehal → were you doing."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "dlhý dej v pozadí → {was / were + -ing|modra}"
+        },
+        {
+          "op": "pis",
+          "text": "krátky dej, ktorý ho preruší → {past simple|ruzova}"
+        }
+      ],
+      "popis": "Pri každej vete si predstav časovú os: <b>vlnovka</b> = past continuous, <b>krížik</b> = past simple.",
+      "odkazy": [
+        {
+          "text": "Trenažér: časová os",
+          "url": "/lekcie/past-simple-vs-past-continuous/#h-casovaos"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/past-simple-vs-past-continuous/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/past-simple-vs-past-continuous/#h-test"
+        }
+      ]
+    }
+  ]
+}

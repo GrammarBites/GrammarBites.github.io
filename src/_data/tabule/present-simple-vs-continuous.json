@@ -1,0 +1,210 @@
+{
+  "lekcia": "present-simple-vs-continuous",
+  "lekciaNazov": "Present simple × present continuous",
+  "nazov": "Pravidelne, alebo práve teraz?",
+  "otazky": [
+    "Kedy I play a kedy I'm playing?",
+    "Present simple, alebo present continuous?"
+  ],
+  "kluce": [
+    "present simple",
+    "present continuous",
+    "pritomny cas",
+    "priebehovy",
+    "pravidelne",
+    "prave teraz",
+    "now",
+    "every day",
+    "usually",
+    "at the moment",
+    "i play",
+    "i'm playing",
+    "i am playing",
+    "look",
+    "rozdiel pritomne casy"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "Look! Tom {plays#p} football."
+        }
+      ],
+      "popis": "<i>Look!</i> znamená <i>Pozri!</i> – ukazujeme na niečo, čo vidíme. V slovenčine povieme <i>hrá</i> v oboch prípadoch, angličtina má dva prítomné časy.",
+      "otazka": {
+        "text": "Kedy Tom hrá futbal?",
+        "moznosti": [
+          "každú sobotu",
+          "práve teraz, pozeráme sa naňho"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "Look! – niekomu to ukazujeme. Deje sa to pred našimi očami."
+        },
+        "vysvetlenie": "Práve teraz – vidíme ho."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.p"
+        },
+        {
+          "op": "pis",
+          "text": "Look! Tom {is playing|ruzova} football."
+        },
+        {
+          "op": "os",
+          "id": "o",
+          "teraz": 50,
+          "alt": "Časová os: krátka vlnovka okolo bodu teraz – is playing.",
+          "znacky": [
+            {
+              "typ": "vlna",
+              "od": 41,
+              "do": 59,
+              "text": "is playing",
+              "farba": "ruzova"
+            }
+          ]
+        }
+      ],
+      "popis": "Čo sa deje <b>práve teraz</b>, je <b>present continuous</b>: <i>am / is / are</i> + sloveso s <i>-ing</i>. Na osi je to krátka vlnovka okolo bodu TERAZ – začalo sa to pred chvíľou a o chvíľu sa to skončí."
+    },
+    {
+      "kresli": [
+        {
+          "op": "naos",
+          "os": "o",
+          "znacky": [
+            {
+              "typ": "body",
+              "od": 8,
+              "do": 92,
+              "text": "plays (every Saturday)",
+              "farba": "zlta",
+              "riadok": 2,
+              "pocet": 7
+            }
+          ]
+        },
+        {
+          "op": "pis",
+          "text": "Tom {plays|zlta} football every Saturday."
+        }
+      ],
+      "popis": "Čo sa <b>opakuje</b> – každý deň, každú sobotu, zvyčajne – je <b>present simple</b>. Na osi sú to krížiky, ktoré idú pravidelne za sebou: bolo to tak minulý týždeň a bude aj budúci. Patria sem aj <b>fakty</b>: <i>Cows eat grass.</i>",
+      "otazka": {
+        "text": "My mum usually ___ to work by car.",
+        "moznosti": [
+          "goes",
+          "is going"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "usually = zvyčajne. Opakuje sa to, nie je to len teraz."
+        },
+        "vysvetlenie": "usually → pravidelne → present simple."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "present simple – pravidelne",
+              "riadky": [
+                "{always|zlta} · {usually|zlta} · {often|zlta}",
+                "{every|zlta} day · {on|zlta} Mondays",
+                "{never|zlta}"
+              ]
+            },
+            {
+              "nadpis": "present continuous – teraz",
+              "riadky": [
+                "{now|ruzova} · {at the moment|ruzova}",
+                "{today|ruzova}",
+                "{Look!|ruzova} · {Listen!|ruzova}"
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "Napovedia ti <b>signálne slová</b>. Keď ich vo vete nájdeš, vieš, ktorý čas použiť.",
+      "otazka": {
+        "text": "Listen! Somebody ___ .",
+        "moznosti": [
+          "sings",
+          "is singing"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "Listen! = Počúvaj! Deje sa to práve teraz."
+        },
+        "vysvetlenie": "Listen! → práve teraz → is singing."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "Pozor – niektoré slovesá -ing nemajú:"
+        },
+        {
+          "op": "pis",
+          "id": "c",
+          "text": "I {am liking#l} pizza."
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "c.l"
+        },
+        {
+          "op": "pis",
+          "text": "I {like|zlta} pizza."
+        },
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "like · love · hate · want · know · need · understand"
+        }
+      ],
+      "popis": "Slovesá, ktoré hovoria o <b>pocitoch a myslení</b> (nie o činnosti), sú vždy v present simple – aj keď hovoríme o tejto chvíli: <i>I <b>want</b> an ice cream now.</i>"
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "Tom usually {walks|zlta} to school."
+        },
+        {
+          "op": "pis",
+          "text": "But today he{'s going|ruzova} by bus."
+        }
+      ],
+      "popis": "<b>Pravidelne</b> → present simple (krížiky). <b>Práve teraz</b> alebo <b>výnimočne dnes</b> → present continuous (vlnovka).",
+      "odkazy": [
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/present-simple-vs-continuous/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/present-simple-vs-continuous/#h-test"
+        }
+      ]
+    }
+  ]
+}

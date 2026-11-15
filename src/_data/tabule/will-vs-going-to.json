@@ -1,0 +1,233 @@
+{
+  "lekcia": "will-vs-going-to",
+  "lekciaNazov": "will × BE going to",
+  "nazov": "will, alebo BE going to?",
+  "otazky": [
+    "Kedy will a kedy BE going to?",
+    "Prečo I'll answer it, a nie I'm going to answer it?"
+  ],
+  "kluce": [
+    "will",
+    "going to",
+    "be going to",
+    "buducnost",
+    "buduci cas",
+    "future",
+    "plan",
+    "rozhodnutie",
+    "i'll",
+    "i think",
+    "nazor",
+    "will vs going to",
+    "i'm going to"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "I {am|zlta} going to paint my room."
+        },
+        {
+          "op": "os",
+          "id": "o",
+          "teraz": 42,
+          "alt": "Časová os: rozhodnutie v minulosti, oblúk plán vedie do budúcnosti k paint my room.",
+          "znacky": [
+            {
+              "typ": "bod",
+              "x": 14,
+              "text": "rozhodol som sa",
+              "farba": "modra"
+            },
+            {
+              "typ": "skok",
+              "od": 14,
+              "k": 80,
+              "text": "plán",
+              "farba": "modra",
+              "riadok": 1
+            },
+            {
+              "typ": "bod",
+              "x": 80,
+              "text": "paint my room",
+              "farba": "zlta"
+            }
+          ]
+        }
+      ],
+      "popis": "<b>BE going to</b> = <b>plán</b>. Rozhodol som sa <b>už predtým</b> (kúpil som farbu, premyslel som si to) a teraz o pláne hovorím. Nezabudni na <b>BE</b>: <i>I <b>am</b> / she <b>is</b> / we <b>are</b> going to…</i>"
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "The phone's ringing. – {I'll|ruzova} answer it!"
+        },
+        {
+          "op": "os",
+          "id": "o2",
+          "teraz": 42,
+          "alt": "Časová os: oblúk sa začína presne v bode teraz a vedie k answer.",
+          "znacky": [
+            {
+              "typ": "skok",
+              "od": 42,
+              "k": 66,
+              "text": "rozhodnutie práve teraz",
+              "farba": "ruzova",
+              "riadok": 1
+            },
+            {
+              "typ": "bod",
+              "x": 66,
+              "text": "answer",
+              "farba": "ruzova"
+            }
+          ]
+        }
+      ],
+      "popis": "<b>will</b> = rozhodnem sa <b>v tej chvíli</b>, keď hovorím. Nič som neplánoval – telefón zazvonil a ja reagujem. Oblúk sa začína presne v bode TERAZ.",
+      "otazka": {
+        "text": "Tea or juice? – I ___ have juice, please.",
+        "moznosti": [
+          "'ll",
+          "'m going to"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Vyberáš si až teraz, keď sa ťa pýtajú. Nebol to plán."
+        },
+        "vysvetlenie": "Rozhodnutie v tej chvíli → I'll."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "Phone! – I{'m going to#g} answer it!"
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.g"
+        },
+        {
+          "op": "pis",
+          "text": "Phone! – I{'ll|ruzova} answer it!"
+        }
+      ],
+      "popis": "Typická chyba. Telefón zazvonil <b>teraz</b> – nemohol som si vopred naplánovať, že ho zdvihnem. Preto <i>will</i>, nie <i>going to</i>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "will = aj to, čo si o budúcnosti myslím:"
+        },
+        {
+          "op": "pis",
+          "text": "{I think|modra} it {will|ruzova} be fun."
+        },
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "I think · probably · maybe · I hope  + will"
+        }
+      ],
+      "popis": "Keď hovorím svoj <b>názor</b> alebo <b>odhad</b>, čo sa stane, použijem tiež <i>will</i> – často za <i>I think</i>.",
+      "otazka": {
+        "text": "I've bought the tickets. We ___ see the film on Friday.",
+        "moznosti": [
+          "will",
+          "are going to"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "Lístky sú už kúpené – rozhodli sme sa skôr. Je to plán."
+        },
+        "vysvetlenie": "Lístky sú kúpené = plán → are going to."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "Pozor na tvar:"
+        },
+        {
+          "op": "pis",
+          "id": "c1",
+          "text": "I {going to#g} learn Spanish."
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "c1.g"
+        },
+        {
+          "op": "pis",
+          "text": "I {am|zlta,krouzok} going to learn Spanish."
+        },
+        {
+          "op": "pis",
+          "id": "c2",
+          "text": "I will {to#t} help you."
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "c2.t"
+        },
+        {
+          "op": "pis",
+          "text": "I will help you."
+        }
+      ],
+      "popis": "Pri <i>going to</i> nesmie chýbať <b>BE</b> (<i>am / is / are</i>). A za <i>will</i> ide sloveso <b>bez to</b>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "BE going to",
+              "riadky": [
+                "{plán|zlta}",
+                "rozhodol som sa skôr"
+              ]
+            },
+            {
+              "nadpis": "will",
+              "riadky": [
+                "{rozhodnutie teraz|ruzova}",
+                "{názor|ruzova}: I think…"
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "Opýtaj sa: <b>kedy som sa rozhodol?</b> Skôr → BE going to. Práve teraz → will.",
+      "odkazy": [
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/will-vs-going-to/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/will-vs-going-to/#h-test"
+        }
+      ]
+    }
+  ]
+}

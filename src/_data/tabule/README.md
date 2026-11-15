@@ -31,6 +31,30 @@ Všetky tabule sú na stránke `/tabula/`.
 | `stlpce` | dva (či viac) stĺpcov vedľa seba | pozri present-simple.json |
 | `tabulka` | tabuľka; `hlavicka: true` = prvý riadok je hlavička | |
 | `mriezka` + `scena` | obrázkové scény s kozou: `in`, `on`, `under`, `next to`, `between`, `behind`, `in front of`, `above` | pozri prepositions-of-place.json |
+| `os` | časová os; `teraz` = poloha bodu TERAZ (0–100), `znacky` = čo je na osi | pozri present-perfect-just-for-since.json |
+| `naos` | dokreslí ďalšie značky do osi, ktorá už na tabuli je | `{ "op": "naos", "os": "o", "znacky": [...] }` |
+| `hodiny` | ručičkové hodiny (do `mriezka`); `zvyrazni`: `past` / `to` vyfarbí polovicu, `obluk` pridá šípku | `{ "op": "hodiny", "do": "g", "cas": "3:30", "zvyrazni": "past", "obluk": true, "popis": "…" }` |
+| `lievik` | jeden pás lievika (`uroven` 0–2), pásy idú pod seba | pozri prepositions-of-time.json |
+
+`mriezka` s `"velke": true` má väčšie obrázky (hodí sa pri 2–5 scénach). Scéna so `"siroka": true` zaberie celý riadok.
+
+### Značky na časovej osi (`znacky`)
+
+Polohy `x`, `od`, `do`, `k` sú čísla 0–100 (zľava doprava). Každá značka môže mať `text` (nad osou), `pod` (pod osou),
+`farba` (`zlta`, `ruzova`, `modra`) a `riadok` (1, 2, 3 = vyššie nad osou, aby sa popisy neprekrývali).
+
+| typ | čo kreslí | kedy |
+|---|---|---|
+| `bod` (`x`) | krížik | jeden krátky dej: *saw him yesterday* |
+| `usek` (`od`, `do`) | zátvorka nad osou; `sipka: true` = šípka až po koniec, `ciarky: true` = čiarkovane | trvanie: *for five years*; „niekedy, nevieme kedy“ |
+| `vlna` (`od`, `do`) | vlnovka | dej, ktorý práve prebieha(l): *was having a shower* |
+| `body` (`od`, `do`, `pocet`) | rad krížikov | opakovaný dej: *plays every Saturday* |
+| `skok` (`od`, `k`) | oblúk so šípkou | plán do budúcnosti, krok späť v nepriamej reči |
+
+### Ďalšie scény (`scena`)
+
+`jablka` (`pocet`), `mlieko` (`plne` 0–1), `kozy` (`kozy: [{ "w": 44, "text": "Bibi" }, …]` – kozy rôznej veľkosti),
+`bus`, `auto`, `peso`, `mesto`, `stanica`.
 
 ## Značky v texte
 

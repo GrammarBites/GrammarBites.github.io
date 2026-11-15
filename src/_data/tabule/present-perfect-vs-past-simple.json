@@ -1,0 +1,221 @@
+{
+  "lekcia": "present-perfect-vs-past-simple",
+  "lekciaNazov": "Present perfect × past simple",
+  "nazov": "Present perfect, alebo past simple?",
+  "otazky": [
+    "Prečo nie I've seen him yesterday?",
+    "Kedy present perfect a kedy past simple?"
+  ],
+  "kluce": [
+    "present perfect",
+    "past simple",
+    "predpritomny cas",
+    "minuly cas",
+    "have seen",
+    "saw",
+    "yesterday",
+    "ago",
+    "last week",
+    "ever",
+    "never",
+    "kedy sa to stalo",
+    "i've been",
+    "went",
+    "rozdiel present perfect past simple"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "I {have seen#h} him {yesterday#y}."
+        }
+      ],
+      "popis": "Takúto vetu napíše veľa žiakov. V slovenčine máme jeden minulý čas (<i>videl som</i>), v angličtine si treba vybrať. Rozhoduje jedno slovo vo vete.",
+      "otazka": {
+        "text": "Ktoré slovo hovorí, KEDY sa to stalo?",
+        "moznosti": [
+          "have",
+          "seen",
+          "yesterday"
+        ],
+        "spravna": 2,
+        "napoveda": {
+          "0": "have je pomocné sloveso. Hľadáme slovo, ktoré hovorí kedy.",
+          "1": "seen hovorí, čo sa stalo. Hľadáme slovo, ktoré hovorí kedy."
+        },
+        "vysvetlenie": "yesterday = včera. Vieme presne, kedy to bolo."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.h"
+        },
+        {
+          "op": "pis",
+          "text": "I {saw|ruzova} him {yesterday|ruzova,podciarkni}."
+        },
+        {
+          "op": "os",
+          "id": "o",
+          "teraz": 76,
+          "alt": "Časová os: bod v minulosti s nápisom saw him, yesterday.",
+          "znacky": [
+            {
+              "typ": "bod",
+              "x": 42,
+              "text": "saw him",
+              "farba": "ruzova",
+              "pod": "yesterday"
+            }
+          ]
+        }
+      ],
+      "popis": "<i>Yesterday</i> je na časovej osi <b>jeden konkrétny bod</b>. Keď povieme, <b>kedy</b> sa niečo stalo, použijeme <b>past simple</b>: <i>I <b>saw</b> him yesterday.</i>"
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "I{'ve seen|zlta} that film."
+        },
+        {
+          "op": "naos",
+          "os": "o",
+          "znacky": [
+            {
+              "typ": "usek",
+              "od": 6,
+              "do": 76,
+              "text": "niekedy predtým – kedy? nepovieme",
+              "farba": "zlta",
+              "riadok": 1,
+              "ciarky": true
+            }
+          ]
+        }
+      ],
+      "popis": "<b>Present perfect</b> (<i>have / has</i> + 3. tvar) použijeme, keď <b>nehovoríme kedy</b>. Stalo sa to niekedy pred dneškom – dôležité je len to, <b>že</b> sa to stalo. Film som videl, poznám ho.",
+      "otazka": {
+        "text": "I ___ to Italy last summer.",
+        "moznosti": [
+          "have been",
+          "went"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "Pozri sa na koniec vety: last summer hovorí kedy."
+        },
+        "vysvetlenie": "last summer = vieme kedy → past simple."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "povieš KEDY → past simple",
+              "riadky": [
+                "{yesterday|ruzova} · {last|ruzova} week",
+                "two days {ago|ruzova} · {in 2020|ruzova}",
+                "{When|ruzova} did you…?"
+              ]
+            },
+            {
+              "nadpis": "nepovieš kedy → present perfect",
+              "riadky": [
+                "{ever|zlta} · {never|zlta}",
+                "{just|zlta} · {already|zlta} · {yet|zlta}",
+                "Have you ever…?"
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "Pomôžu ti <b>signálne slová</b>. Vľavo sú slová, ktoré ukazujú na konkrétny čas – s nimi je vždy past simple. Vpravo slová, ktoré čas nepovedia.",
+      "otazka": {
+        "text": "I've ___ been to London.",
+        "moznosti": [
+          "never",
+          "yesterday",
+          "last year"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "yesterday hovorí kedy – s ním by bolo I went.",
+          "2": "last year hovorí kedy – s ním by bolo I went."
+        },
+        "vysvetlenie": "never nepovie kedy → present perfect."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "Rozhovor často začne v present perfect a pokračuje v past simple:"
+        },
+        {
+          "op": "pis",
+          "text": "{Have|zlta} you ever {been|zlta} to Italy?"
+        },
+        {
+          "op": "pis",
+          "text": "Yes, I have. I {went|ruzova} there {last summer|ruzova}."
+        }
+      ],
+      "popis": "Najprv sa pýtame na <b>skúsenosť</b> (kedykoľvek v živote) – present perfect. Len čo povieme podrobnosti a <b>kedy</b> to bolo, prejdeme do past simple.",
+      "otazka": {
+        "text": "___ did you go there?  (Kedy si tam išiel?)",
+        "moznosti": [
+          "When have you gone",
+          "When did you go",
+          "When you went"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "When sa pýta na konkrétny čas. S When nie je present perfect.",
+          "2": "V otázke potrebujeme pomocné sloveso did."
+        },
+        "vysvetlenie": "When…? sa pýta na konkrétny čas → past simple: When did you go?"
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "povieš kedy → {past simple|ruzova}"
+        },
+        {
+          "op": "pis",
+          "text": "nepovieš kedy → {present perfect|zlta}"
+        }
+      ],
+      "popis": "Pred každou vetou sa opýtaj: <b>hovorím, kedy sa to stalo?</b> Ak áno – past simple. Ak nie – present perfect.",
+      "odkazy": [
+        {
+          "text": "Trenažér: časová os",
+          "url": "/lekcie/present-perfect-vs-past-simple/#h-casovaos"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/present-perfect-vs-past-simple/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/present-perfect-vs-past-simple/#h-test"
+        }
+      ]
+    }
+  ]
+}

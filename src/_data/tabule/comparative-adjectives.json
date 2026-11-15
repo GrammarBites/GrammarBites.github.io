@@ -1,0 +1,268 @@
+{
+  "lekcia": "comparative-adjectives",
+  "lekciaNazov": "Comparative adjectives",
+  "nazov": "bigger, the biggest – porovnávame kozy",
+  "otazky": [
+    "Kedy -er a kedy more?",
+    "Prečo nie more bigger?"
+  ],
+  "aj": [
+    "superlative-adjectives"
+  ],
+  "kluce": [
+    "comparative",
+    "superlative",
+    "druhy stupen",
+    "treti stupen",
+    "stupnovanie",
+    "pridavne mena",
+    "bigger",
+    "biggest",
+    "more",
+    "most",
+    "than",
+    "er",
+    "est",
+    "better",
+    "best",
+    "worse",
+    "more bigger",
+    "the most"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "Gigi is {more big#m} than Bibi."
+        }
+      ],
+      "popis": "Chceme povedať, že koza Gigi je <b>väčšia</b> ako koza Bibi. Žiaci často siahnu po slove <i>more</i> (viac) – to však patrí len k dlhým slovám.",
+      "otazka": {
+        "text": "Koľko slabík má slovo big?",
+        "moznosti": [
+          "jednu",
+          "dve",
+          "tri"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Skús si ho vytlieskať: big. Jedno tlesknutie.",
+          "2": "Skús si ho vytlieskať: big. Jedno tlesknutie."
+        },
+        "vysvetlenie": "big je krátke slovo – jedna slabika."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.m"
+        },
+        {
+          "op": "pis",
+          "text": "Gigi is {bigger|zlta} {than|modra} Bibi."
+        },
+        {
+          "op": "mriezka",
+          "id": "g",
+          "velke": true
+        },
+        {
+          "op": "scena",
+          "do": "g",
+          "typ": "kozy",
+          "popis": "bigg{er|zlta} {than|modra} = väčšia ako",
+          "alt": "Malá koza Bibi a väčšia koza Gigi.",
+          "kozy": [
+            {
+              "w": 44,
+              "text": "Bibi"
+            },
+            {
+              "w": 74,
+              "text": "Gigi"
+            }
+          ],
+          "siroka": true
+        }
+      ],
+      "popis": "<b>Krátke</b> prídavné mená dostanú koncovku <b>-er</b>: <i>small<b>er</b>, tall<b>er</b>, bigg<b>er</b></i> (g sa zdvojí). Za nimi ide <b>than</b> = ako. Nie <i>as</i>, nie <i>like</i>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "Dlhé slová (2 a viac slabík) → more:"
+        },
+        {
+          "op": "pis",
+          "text": "famous → {more|ruzova} famous"
+        },
+        {
+          "op": "pis",
+          "text": "beautiful → {more|ruzova} beautiful"
+        },
+        {
+          "op": "pis",
+          "id": "c",
+          "text": "{more bigger#x}"
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "c.x"
+        }
+      ],
+      "popis": "Pred <b>dlhé</b> prídavné mená dáme <b>more</b> a slovo sa nemení. Nikdy nie oboje naraz – buď <i>-er</i>, alebo <i>more</i>. (Slová na <i>-y</i>: <i>happy → happ<b>ier</b></i>.)",
+      "otazka": {
+        "text": "Maths is ___ than Art.",
+        "moznosti": [
+          "difficulter",
+          "more difficult",
+          "more difficulter"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "difficult má tri slabiky – je to dlhé slovo, -er nedostane.",
+          "2": "Nikdy nie more a -er naraz."
+        },
+        "vysvetlenie": "Dlhé slovo → more difficult."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "scena",
+          "do": "g",
+          "typ": "kozy",
+          "popis": "{the|zlta} bigg{est|zlta} = najväčšia",
+          "alt": "Tri kozy od najmenšej po najväčšiu: big, bigger, the biggest.",
+          "kozy": [
+            {
+              "w": 32,
+              "text": "big"
+            },
+            {
+              "w": 52,
+              "text": "bigger"
+            },
+            {
+              "w": 80,
+              "text": "the biggest",
+              "farba": "zlta"
+            }
+          ],
+          "siroka": true
+        },
+        {
+          "op": "pis",
+          "text": "big – bigger – {the biggest|zlta}"
+        },
+        {
+          "op": "pis",
+          "text": "famous – more famous – {the most|ruzova} famous"
+        }
+      ],
+      "popis": "Keď porovnávame <b>tri a viac</b> a jedna je „naj“, použijeme <b>tretí stupeň</b>: <b>the</b> + <b>-est</b> pri krátkych, <b>the most</b> pri dlhých. Nezabudni na <b>the</b>!",
+      "otazka": {
+        "text": "Gigi is ___ goat in the world.",
+        "moznosti": [
+          "the biggest",
+          "biggest",
+          "the most big"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Chýba the. Pred tretím stupňom je vždy the.",
+          "2": "big je krátke slovo – dostane -est, nie most."
+        },
+        "vysvetlenie": "Krátke slovo: the + -est → the biggest."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "Tri slová si robia, čo chcú:"
+        },
+        {
+          "op": "tabulka",
+          "riadky": [
+            [
+              "good",
+              "{better|zlta}",
+              "the {best|zlta}"
+            ],
+            [
+              "bad",
+              "{worse|ruzova}",
+              "the {worst|ruzova}"
+            ],
+            [
+              "far",
+              "{further|modra}",
+              "the {furthest|modra}"
+            ]
+          ]
+        },
+        {
+          "op": "pis",
+          "id": "c",
+          "text": "{gooder#g} · {more good#m}"
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "c.g"
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "c.m"
+        }
+      ],
+      "popis": "<i>Good, bad</i> a <i>far</i> sú <b>nepravidelné</b> – treba sa ich naučiť naspamäť. <i>I'm the <b>best</b> goat in the world!</i>"
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "krátke:  {-er|zlta} than  ·  the {-est|zlta}"
+        },
+        {
+          "op": "pis",
+          "text": "dlhé:  {more|ruzova} … than  ·  the {most|ruzova} …"
+        }
+      ],
+      "popis": "Najprv si slovo <b>vytlieskaj</b>. Jedna slabika → koncovka. Dve a viac → <i>more / the most</i>.",
+      "odkazy": [
+        {
+          "text": "Tréner: súťaž kariet",
+          "url": "/lekcie/comparative-adjectives/#h-porovnanie"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/comparative-adjectives/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/comparative-adjectives/#h-test"
+        },
+        {
+          "text": "Lekcia: tretí stupeň",
+          "url": "/lekcie/superlative-adjectives/"
+        }
+      ]
+    }
+  ]
+}

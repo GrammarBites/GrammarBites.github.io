@@ -1,0 +1,214 @@
+{
+  "lekcia": "used-to",
+  "lekciaNazov": "used to",
+  "nazov": "used to – kedysi áno, teraz už nie",
+  "otazky": [
+    "Čo znamená used to?",
+    "Prečo didn't use to bez -d?"
+  ],
+  "kluce": [
+    "used to",
+    "use to",
+    "didn't use to",
+    "did you use to",
+    "kedysi",
+    "zvykol som",
+    "minule zvyky",
+    "didn't used to",
+    "i use to"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "I {used to|zlta} have long hair."
+        },
+        {
+          "op": "os",
+          "id": "o",
+          "teraz": 76,
+          "alt": "Časová os: dlhý úsek v minulosti – used to have long hair – a pred bodom teraz úsek už nie.",
+          "znacky": [
+            {
+              "typ": "usek",
+              "od": 8,
+              "do": 48,
+              "text": "used to have long hair",
+              "farba": "zlta"
+            },
+            {
+              "typ": "usek",
+              "od": 54,
+              "do": 76,
+              "text": "už nie",
+              "farba": "ruzova",
+              "ciarky": true
+            }
+          ]
+        }
+      ],
+      "popis": "<b>used to</b> + sloveso = <b>kedysi to tak bolo, teraz už nie</b>. Po slovensky: <i>Kedysi som mal dlhé vlasy.</i> Na osi je to úsek, ktorý sa skončil ešte pred bodom TERAZ.",
+      "otazka": {
+        "text": "I used to have long hair. – Mám teraz dlhé vlasy?",
+        "moznosti": [
+          "Áno",
+          "Nie"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "used to hovorí o tom, čo bolo kedysi a už neplatí."
+        },
+        "vysvetlenie": "Kedysi áno, teraz už nie."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "We {used to|zlta} go there every summer."
+        },
+        {
+          "op": "os",
+          "id": "o2",
+          "teraz": 86,
+          "alt": "Časová os: päť krížikov v minulosti – used to go, každé leto.",
+          "znacky": [
+            {
+              "typ": "body",
+              "od": 8,
+              "do": 46,
+              "text": "used to go (každé leto)",
+              "farba": "zlta",
+              "pocet": 5
+            }
+          ]
+        }
+      ],
+      "popis": "<i>Used to</i> hovorí aj o <b>zvykoch</b> – o tom, čo sme kedysi robili <b>opakovane</b>. <i>Kedysi sme tam chodievali každé leto.</i> <i>Used to</i> je pre všetky osoby rovnaké."
+    },
+    {
+      "kresli": [
+        {
+          "op": "naos",
+          "os": "o2",
+          "znacky": [
+            {
+              "typ": "bod",
+              "x": 63,
+              "text": "went",
+              "farba": "ruzova",
+              "pod": "last summer"
+            }
+          ]
+        },
+        {
+          "op": "pis",
+          "text": "I {went|ruzova} there last summer."
+        }
+      ],
+      "popis": "Keď sa niečo stalo <b>len raz</b> a povieme kedy, <i>used to</i> nepoužijeme. Jeden krížik = <b>past simple</b>.",
+      "otazka": {
+        "text": "I ___ to Paris last summer.",
+        "moznosti": [
+          "used to go",
+          "went"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "last summer – stalo sa to raz, v konkrétnom čase. To nie je zvyk."
+        },
+        "vysvetlenie": "Raz, konkrétne → past simple: went."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "I didn't {used#u} to like it."
+        }
+      ],
+      "popis": "Teraz zápor. Túto vetu píše veľa žiakov – a je v nej jedno písmeno navyše.",
+      "otazka": {
+        "text": "Ktoré slovo už ukazuje minulý čas?",
+        "moznosti": [
+          "didn't",
+          "like",
+          "it"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "like je v základnom tvare.",
+          "2": "it je zámeno, čas neukazuje."
+        },
+        "vysvetlenie": "didn't = minulý čas od don't. Čas už nesie ono."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.u"
+        },
+        {
+          "op": "pis",
+          "text": "I {didn't|modra} {use|zlta} to like it."
+        },
+        {
+          "op": "pis",
+          "text": "{Did|modra} you {use|zlta} to watch cartoons?"
+        }
+      ],
+      "popis": "Minulý čas už ukazuje <b>did / didn't</b>, preto je za ním <b>use to</b> – <b>bez -d</b>. Je to rovnaké ako <i>Did you <b>go</b>?</i> (nie <i>Did you went?</i>)."
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "A čo robím pravidelne teraz?"
+        },
+        {
+          "op": "pis",
+          "id": "c",
+          "text": "I {use to#x} play tennis on Fridays."
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "c.x"
+        },
+        {
+          "op": "pis",
+          "text": "I {usually|zlta} play tennis on Fridays."
+        },
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "{used to|zlta} · {didn't use to|modra} · {Did … use to|modra}?"
+        }
+      ],
+      "popis": "<i>Used to</i> je <b>len pre minulosť</b>. O tom, čo robím pravidelne teraz, hovorím v present simple so slovom <i>usually</i>.",
+      "odkazy": [
+        {
+          "text": "Trenažér: Roztrieď",
+          "url": "/lekcie/used-to/#h-roztried"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/used-to/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/used-to/#h-test"
+        }
+      ]
+    }
+  ]
+}

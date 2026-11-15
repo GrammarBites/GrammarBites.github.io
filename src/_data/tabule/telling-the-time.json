@@ -1,0 +1,215 @@
+{
+  "lekcia": "telling-the-time",
+  "lekciaNazov": "What time is it?",
+  "nazov": "pol štvrtej = half past three",
+  "otazky": [
+    "Ako poviem „pol štvrtej“ po anglicky?",
+    "Kedy past a kedy to?"
+  ],
+  "kluce": [
+    "hodiny",
+    "cas",
+    "kolko je hodin",
+    "what time is it",
+    "half past",
+    "quarter past",
+    "quarter to",
+    "past",
+    "to",
+    "o'clock",
+    "pol stvrtej",
+    "stvrt",
+    "tristvrte",
+    "telling the time"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "3:30 – It's {half four#h}."
+        }
+      ],
+      "popis": "<i>Pol štvrtej</i> – a žiak preloží slovo za slovom: <i>half four</i>. Angličan však počíta inak než my.",
+      "otazka": {
+        "text": "Je 3:30. Ktorá celá hodina už bola?",
+        "moznosti": [
+          "tri",
+          "štyri"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Štyri hodiny ešte len budú – o pol hodiny."
+        },
+        "vysvetlenie": "Tri hodiny už boli. Štyri ešte len prídu."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.h"
+        },
+        {
+          "op": "pis",
+          "text": "It's {half past three|zlta}."
+        },
+        {
+          "op": "mriezka",
+          "id": "g",
+          "velke": true
+        },
+        {
+          "op": "hodiny",
+          "do": "g",
+          "cas": "3:00",
+          "popis": "3:00 – three {o'clock|zlta}",
+          "alt": "Hodiny ukazujú tri hodiny."
+        },
+        {
+          "op": "hodiny",
+          "do": "g",
+          "cas": "3:30",
+          "popis": "3:30 – {half past|ruzova} three",
+          "alt": "Hodiny ukazujú pol štvrtej, pravá polovica je zvýraznená.",
+          "zvyrazni": "past",
+          "obluk": true
+        }
+      ],
+      "popis": "My sa pozeráme <b>dopredu</b>: pol <i>štvrtej</i>. Angličan sa pozerá <b>späť</b>: je <b>pol hodiny po tretej</b> – <i>half <b>past</b> three</i>. <i>Past</i> = po."
+    },
+    {
+      "kresli": [
+        {
+          "op": "hodiny",
+          "do": "g",
+          "cas": "3:15",
+          "popis": "3:15 – {quarter past|ruzova} three",
+          "alt": "Hodiny ukazujú štvrť na štyri.",
+          "zvyrazni": "past",
+          "obluk": true
+        }
+      ],
+      "popis": "Kým je veľká ručička v <b>pravej polovici</b>, hovoríme, koľko minút je <b>past</b> (po) hodine, ktorá už bola: <i>five past, ten past, quarter past, twenty past…</i>",
+      "otazka": {
+        "text": "3:10 = It's ten ___ three.",
+        "moznosti": [
+          "past",
+          "to"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Veľká ručička je vpravo – desať minút PO tretej."
+        },
+        "vysvetlenie": "Pravá polovica → past."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "hodiny",
+          "do": "g",
+          "cas": "3:45",
+          "popis": "3:45 – {quarter to|modra} four",
+          "alt": "Hodiny ukazujú trištvrte na štyri, ľavá polovica je zvýraznená.",
+          "zvyrazni": "to",
+          "obluk": true
+        },
+        {
+          "op": "hodiny",
+          "do": "g",
+          "cas": "3:40",
+          "popis": "3:40 – {twenty to|modra} four",
+          "alt": "Hodiny ukazujú 3:40.",
+          "zvyrazni": "to",
+          "obluk": true
+        }
+      ],
+      "popis": "Keď veľká ručička prejde do <b>ľavej polovice</b>, hovoríme, koľko minút chýba <b>to</b> (do) <b>ďalšej</b> hodiny: <i>quarter to <b>four</b></i> = štvrť hodiny do štvrtej.",
+      "otazka": {
+        "text": "3:50 = It's ten to ___ .",
+        "moznosti": [
+          "three",
+          "four"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "Pri to hovoríme hodinu, ktorá ešte len príde."
+        },
+        "vysvetlenie": "Chýba desať minút DO štvrtej → ten to four."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "Časté chyby:"
+        },
+        {
+          "op": "pis",
+          "id": "c1",
+          "text": "3:45 – It's quarter {past#p} four."
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "c1.p"
+        },
+        {
+          "op": "pis",
+          "text": "3:45 – It's quarter {to|modra} four."
+        },
+        {
+          "op": "pis",
+          "id": "c2",
+          "text": "It's {a#a} half past six."
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "c2.a"
+        }
+      ],
+      "popis": "Ľavá polovica = <b>to</b>, nie <i>past</i>. A pred <i>half past</i> nedávame <i>a</i>: jednoducho <i>It's half past six.</i>"
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "pravá polovica → {past|ruzova} + hodina, ktorá bola"
+        },
+        {
+          "op": "pis",
+          "text": "ľavá polovica → {to|modra} + hodina, ktorá príde"
+        },
+        {
+          "op": "pis",
+          "text": "pol štvrtej = {half past three|zlta}"
+        }
+      ],
+      "popis": "Vždy sa najprv pozri, <b>v ktorej polovici</b> je veľká ručička. A teraz si to vyskúšaj na hodinách, ktoré si nastavíš sám.",
+      "odkazy": [
+        {
+          "text": "Tréner s hodinami",
+          "url": "/lekcie/telling-the-time/#h-hodiny"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/telling-the-time/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/telling-the-time/#h-test"
+        }
+      ]
+    }
+  ]
+}

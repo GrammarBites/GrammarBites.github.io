@@ -1,0 +1,233 @@
+{
+  "lekcia": "reported-speech",
+  "lekciaNazov": "Reported speech",
+  "nazov": "Nepriama reč – čas o krok späť",
+  "otazky": [
+    "Prečo He said he lived, a nie he lives?",
+    "Ako sa mení čas v nepriamej reči?"
+  ],
+  "kluce": [
+    "reported speech",
+    "nepriama rec",
+    "priama rec",
+    "he said",
+    "said that",
+    "posun casov",
+    "backshift",
+    "would",
+    "could",
+    "said told",
+    "povedal ze",
+    "she said she"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "p",
+          "text": "„I {live#l} in Martin.“"
+        },
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "He said he {lives#l} in Martin."
+        }
+      ],
+      "popis": "Po slovensky: <i>Povedal, že <b>býva</b> v Martine.</i> Čas sa nemení. V angličtine to po <i>said</i> takto nejde.",
+      "otazka": {
+        "text": "V akom čase je sloveso said?",
+        "moznosti": [
+          "v prítomnom",
+          "v minulom"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "Prítomný čas je say / says. Said je minulý čas."
+        },
+        "vysvetlenie": "said = minulý čas. Povedal to už predtým."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.l"
+        },
+        {
+          "op": "pis",
+          "text": "He said he {lived|zlta} in Martin."
+        },
+        {
+          "op": "os",
+          "id": "o",
+          "teraz": 80,
+          "alt": "Časová os: z bodu teraz vedie oblúk späť do chvíle, keď to povedal.",
+          "znacky": [
+            {
+              "typ": "bod",
+              "x": 40,
+              "text": "„I live…“",
+              "farba": "ruzova",
+              "pod": "vtedy to povedal"
+            },
+            {
+              "typ": "skok",
+              "od": 80,
+              "k": 40,
+              "text": "o krok späť",
+              "farba": "modra",
+              "riadok": 1
+            }
+          ]
+        }
+      ],
+      "popis": "Keď niečo prerozprávam, pozerám sa z bodu TERAZ <b>späť</b> do chvíle, keď to povedal. Preto sa sloveso <b>posunie o krok do minulosti</b>: <i>live</i> → <i>lived</i>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "tabulka",
+          "id": "t",
+          "hlavicka": true,
+          "riadky": [
+            [
+              "priama reč",
+              "po said"
+            ],
+            [
+              "{live|ruzova}",
+              "→ {lived|zlta}"
+            ],
+            [
+              "{is|ruzova} watching",
+              "→ {was|zlta} watching"
+            ],
+            [
+              "{will|ruzova}",
+              "→ {would|zlta}"
+            ],
+            [
+              "{can|ruzova}",
+              "→ {could|zlta}"
+            ],
+            [
+              "{is|ruzova} going to",
+              "→ {was|zlta} going to"
+            ]
+          ]
+        }
+      ],
+      "popis": "Každý tvar má svoj „krok späť“. Všetky už poznáš – sú to minulé tvary: <i>is → was</i>, <i>will → would</i>, <i>can → could</i>.",
+      "otazka": {
+        "text": "„I'll call you.“ → He said he ___ call me.",
+        "moznosti": [
+          "will",
+          "would",
+          "called"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "Po said sa will posunie o krok späť.",
+          "2": "Posúva sa will, nie call. Za would ide základný tvar."
+        },
+        "vysvetlenie": "will → would."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "Menia sa aj zámená:"
+        },
+        {
+          "op": "pis",
+          "id": "a",
+          "text": "„{I#i|ruzova} love {my#m|ruzova} dog.“"
+        },
+        {
+          "op": "pis",
+          "id": "b",
+          "text": "Anna said {she#s|zlta} loved {her#h|zlta} dog."
+        },
+        {
+          "op": "sipka",
+          "od": "a.i",
+          "k": "b.s"
+        }
+      ],
+      "popis": "Mysli na to, <b>kto hovorí</b>. Anna povedala „ja“ a „môj“ – keď to prerozprávam ja, musím povedať <b>she</b> a <b>her</b>. Inak by to znamenalo, že jej psa ľúbim ja.",
+      "otazka": {
+        "text": "Tom: „I'm hungry.“ → Tom said ___ was hungry.",
+        "moznosti": [
+          "I",
+          "he"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "Tom said I was hungry by znamenalo, že hladný som ja. Hladný bol Tom."
+        },
+        "vysvetlenie": "Hovoríme o Tomovi → he."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "c",
+          "text": "He said {me#m} that he was ill."
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "c.m"
+        },
+        {
+          "op": "pis",
+          "text": "He {told me|zlta} that he was ill."
+        },
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "said (that)…  ·  told + komu (me, him, us…)"
+        }
+      ],
+      "popis": "Za <b>said</b> nie je osoba. Keď chcem povedať, <b>komu</b> to povedal, použijem <b>told</b>: <i>told me, told her</i>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "says (prítomný čas) → čas sa nemení:"
+        },
+        {
+          "op": "pis",
+          "text": "Anna {says|modra} she{'s|modra} tired."
+        },
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "{said|zlta} → čas o krok späť, zámená podľa toho, kto hovorí"
+        }
+      ],
+      "popis": "Krok späť robíme len po <b>said / told</b> (minulý čas). Po <i>says</i> ostáva čas rovnaký – mení sa iba osoba.",
+      "odkazy": [
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/reported-speech/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/reported-speech/#h-test"
+        }
+      ]
+    }
+  ]
+}

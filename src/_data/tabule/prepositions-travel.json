@@ -1,0 +1,245 @@
+{
+  "lekcia": "prepositions-travel",
+  "lekciaNazov": "Travel prepositions",
+  "nazov": "by bus, on foot, arrive in",
+  "otazky": [
+    "Prečo by bus, ale on foot?",
+    "arrive in, alebo arrive at?"
+  ],
+  "kluce": [
+    "by bus",
+    "by car",
+    "by train",
+    "on foot",
+    "peso",
+    "autobusom",
+    "predlozky cestovanie",
+    "travel",
+    "arrive in",
+    "arrive at",
+    "arrive to",
+    "on the bus",
+    "in the car",
+    "get on",
+    "get off",
+    "by foot",
+    "from to",
+    "doprava"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "I go to school {by the#b} bus."
+        }
+      ],
+      "popis": "<i>Chodím do školy autobusom.</i> Slovenčina na to má 7. pád, angličtina predložku <b>by</b>. Vo vete je však jedno slovo navyše.",
+      "otazka": {
+        "text": "O čom veta hovorí?",
+        "moznosti": [
+          "o jednom konkrétnom autobuse",
+          "o spôsobe, akým cestujem"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "Nehovoríme o konkrétnom autobuse (napr. o tom červenom), ale o tom, čím chodím do školy."
+        },
+        "vysvetlenie": "O spôsobe dopravy – čím cestujem."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.b"
+        },
+        {
+          "op": "pis",
+          "text": "I go to school {by|zlta} bus."
+        },
+        {
+          "op": "mriezka",
+          "id": "g",
+          "velke": true
+        },
+        {
+          "op": "scena",
+          "do": "g",
+          "typ": "bus",
+          "popis": "{by|zlta} bus · {by|zlta} train",
+          "alt": "Koza sa vezie v autobuse."
+        },
+        {
+          "op": "scena",
+          "do": "g",
+          "typ": "auto",
+          "popis": "{by|zlta} car · {by|zlta} plane",
+          "alt": "Koza sa vezie v aute."
+        }
+      ],
+      "popis": "Keď hovoríme, <b>čím</b> cestujeme, je to <b>by</b> + dopravný prostriedok – <b>bez the</b> a bez <i>a</i>: <i>by bus, by train, by car, by bike, by plane</i>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "scena",
+          "do": "g",
+          "typ": "peso",
+          "popis": "{on|ruzova} foot = pešo",
+          "alt": "Koza ide pešo."
+        },
+        {
+          "op": "pis",
+          "id": "f",
+          "text": "I go {by#b} foot."
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "f.b"
+        }
+      ],
+      "popis": "Jedna výnimka: <b>pešo</b> je <b>on foot</b>. Nohy nie sú dopravný prostriedok – <i>by foot</i> nepovieme.",
+      "otazka": {
+        "text": "We went to Italy ___ plane.",
+        "moznosti": [
+          "by",
+          "on",
+          "with"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "on je len pri on foot. Lietadlo je dopravný prostriedok.",
+          "2": "Po slovensky „lietadlom“, ale with znamená „spolu s“. Čím cestujem = by."
+        },
+        "vysvetlenie": "Dopravný prostriedok → by plane."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "A keď som práve vnútri konkrétneho autobusu či auta?"
+        },
+        {
+          "op": "pis",
+          "text": "I'm {on|ruzova} the bus.  ·  She's {in|modra} the car."
+        },
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "on: bus, train, plane, bike  ·  in: car, taxi"
+        },
+        {
+          "op": "pis",
+          "text": "get {on|ruzova} / {off|ruzova} the bus  ·  get {in|modra} / {out of|modra} the car"
+        }
+      ],
+      "popis": "Teraz už hovoríme o <b>konkrétnom</b> autobuse, preto je tam <i>the</i>. Do autobusu, vlaku a lietadla sa dá nastúpiť a prejsť sa po nich → <b>on</b>. Do auta a taxíka si len sadneme → <b>in</b>.",
+      "otazka": {
+        "text": "Quick! Get ___ the bus!",
+        "moznosti": [
+          "in",
+          "on"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "in je pre auto a taxík. Do autobusu sa nastupuje inak."
+        },
+        "vysvetlenie": "Autobus → get on."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "mriezka",
+          "id": "g2",
+          "velke": true
+        },
+        {
+          "op": "scena",
+          "do": "g2",
+          "typ": "mesto",
+          "popis": "arrive {in|modra} London",
+          "alt": "Koza prichádza do mesta."
+        },
+        {
+          "op": "scena",
+          "do": "g2",
+          "typ": "stanica",
+          "popis": "arrive {at|zlta} the station",
+          "alt": "Koza prichádza na stanicu."
+        },
+        {
+          "op": "pis",
+          "id": "c",
+          "text": "We arrived {to#t} Paris."
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "c.t"
+        },
+        {
+          "op": "pis",
+          "text": "We arrived {in|modra} Paris."
+        }
+      ],
+      "popis": "<i>Prišli sme <b>do</b> Paríža</i> – a žiak napíše <i>arrived <b>to</b></i>. Sloveso <i>arrive</i> však <i>to</i> nikdy nemá: <b>arrive in</b> + mesto alebo krajina, <b>arrive at</b> + budova alebo miesto (stanica, letisko, škola).",
+      "otazka": {
+        "text": "We arrived ___ the airport at six.",
+        "moznosti": [
+          "to",
+          "in",
+          "at"
+        ],
+        "spravna": 2,
+        "napoveda": {
+          "0": "Za arrive nikdy nie je to.",
+          "1": "in je pre mestá a krajiny. Letisko je miesto / budova."
+        },
+        "vysvetlenie": "Letisko = miesto → arrive at."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "The train goes {from|zlta} Žilina {to|zlta} Košice."
+        },
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "{by|zlta} bus, ale {on|ruzova} foot"
+        },
+        {
+          "op": "pis",
+          "text": "go {to|zlta} · get {to|zlta} · arrive {in / at|modra}"
+        }
+      ],
+      "popis": "Odkiaľ – kam je <b>from … to</b>. Slovesá <i>go, get, travel</i> majú <i>to</i>; len <i>arrive</i> má <i>in</i> alebo <i>at</i>.",
+      "odkazy": [
+        {
+          "text": "Trenažér: Roztrieď",
+          "url": "/lekcie/prepositions-travel/#h-roztried"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/prepositions-travel/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/prepositions-travel/#h-test"
+        }
+      ]
+    }
+  ]
+}

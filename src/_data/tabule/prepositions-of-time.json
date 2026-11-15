@@ -1,0 +1,189 @@
+{
+  "lekcia": "prepositions-of-time",
+  "lekciaNazov": "Prepositions of time",
+  "nazov": "at, on, in – lievik času",
+  "otazky": [
+    "Kedy at, on a in pri čase?",
+    "Prečo on Monday, ale in July?"
+  ],
+  "kluce": [
+    "predlozky casu",
+    "prepositions of time",
+    "at on in",
+    "on monday",
+    "in july",
+    "at night",
+    "at the weekend",
+    "in the morning",
+    "at christmas",
+    "v pondelok",
+    "kedy at",
+    "kedy on",
+    "kedy in",
+    "in monday"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "I play football {in#i} Monday."
+        }
+      ],
+      "popis": "<i><b>V</b> pondelok</i> – a tak žiak napíše <i><b>in</b> Monday</i>. Anglické predložky času sa však neriadia slovenčinou, ale tým, <b>aký dlhý</b> je čas, o ktorom hovoríme. Pomôže nám lievik.",
+      "otazka": {
+        "text": "Čo trvá dlhšie?",
+        "moznosti": [
+          "mesiac",
+          "deň",
+          "hodina"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Deň je kratší ako mesiac.",
+          "2": "Hodina je z nich najkratšia."
+        },
+        "vysvetlenie": "Mesiac je najdlhší – patrí do najširšej časti lievika."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "lievik",
+          "uroven": 0,
+          "text": "{in|ruzova}",
+          "popis": "mesiac · ročné obdobie · rok",
+          "priklady": "in July, in winter, in 2026"
+        }
+      ],
+      "popis": "Hore je lievik najširší – sem patria <b>dlhé obdobia</b>: mesiace, ročné obdobia, roky. Predložka <b>in</b>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.i"
+        },
+        {
+          "op": "lievik",
+          "uroven": 1,
+          "text": "{on|zlta}",
+          "popis": "deň · dátum",
+          "priklady": "on Monday, on 1 May, on my birthday"
+        }
+      ],
+      "popis": "V strede sú <b>dni a dátumy</b> – jeden konkrétny deň. Predložka <b>on</b>. Preto <i><b>on</b> Monday</i>.",
+      "otazka": {
+        "text": "My birthday is ___ 8 April.",
+        "moznosti": [
+          "in",
+          "on",
+          "at"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "8 April je jeden konkrétny deň, nie celý mesiac. In April, ale … 8 April.",
+          "2": "at je pre presný čas na hodinách."
+        },
+        "vysvetlenie": "Dátum = jeden deň → on."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "lievik",
+          "uroven": 2,
+          "text": "{at|modra}",
+          "popis": "presný čas",
+          "priklady": "at 7 o'clock, at midnight"
+        }
+      ],
+      "popis": "Dole je lievik najužší – sem patrí <b>presný čas</b> na hodinách. Predložka <b>at</b>. Čím kratší a presnejší čas, tým nižšie v lieviku.",
+      "otazka": {
+        "text": "The lesson starts ___ 8 o'clock.",
+        "moznosti": [
+          "in",
+          "on",
+          "at"
+        ],
+        "spravna": 2,
+        "napoveda": {
+          "0": "in je pre dlhé obdobia – mesiace, roky.",
+          "1": "on je pre dni a dátumy."
+        },
+        "vysvetlenie": "Presný čas → at."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "I play football {on|zlta} Monday."
+        },
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "Výnimky, ktoré sa treba naučiť:"
+        },
+        {
+          "op": "pis",
+          "text": "{at|modra} night · {at|modra} the weekend · {at|modra} Christmas"
+        },
+        {
+          "op": "pis",
+          "text": "{in|ruzova} the morning, ale {on|zlta} Saturday morning"
+        }
+      ],
+      "popis": "Niekoľko spojení do lievika nezapadá: <i>at night, at the weekend, at Christmas</i> (sviatky ako celok). Časti dňa majú <i>in</i> (<i>in the morning</i>), no len čo pridáme konkrétny deň, vyhráva <i>on</i>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "A niekedy predložka nie je vôbec:"
+        },
+        {
+          "op": "pis",
+          "id": "c",
+          "text": "{on#o} next Monday"
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "c.o"
+        },
+        {
+          "op": "pis",
+          "text": "{next|zlta} Monday · {last|zlta} week · {this|zlta} year · {every|zlta} day"
+        },
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "{in|ruzova} dlhé obdobie › {on|zlta} deň › {at|modra} presný čas"
+        }
+      ],
+      "popis": "Pred <i>next, last, this, every</i> predložku <b>nedávame</b>. A lievik si zapamätaj zhora nadol: <b>in › on › at</b>.",
+      "odkazy": [
+        {
+          "text": "Trenažér: Roztrieď",
+          "url": "/lekcie/prepositions-of-time/#h-roztried"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/prepositions-of-time/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/prepositions-of-time/#h-test"
+        }
+      ]
+    }
+  ]
+}

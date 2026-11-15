@@ -54,6 +54,130 @@
     above: () => zem() + krabica(70, 60, 36) + `<rect class="tk tk-f" pathLength="1" x="36" y="62" width="128" height="6"/>` + koza(100, 62, 58),
   };
 
+  // ---------- Ďalšie scény s kozou: množstvo, porovnanie, cestovanie ----------
+  const kruh = (x, y, r, k = "") => `<circle class="tk ${k}" pathLength="1" cx="${x}" cy="${y}" r="${r}"/>`;
+  const napis = (x, y, text, k = "") => `<text class="tk-text ${k}" x="${x}" y="${y}">${esc(text)}</text>`;
+  Object.assign(SCENY, {
+    // jablká v radoch po 4 (počítateľné): { "typ": "jablka", "pocet": 7 }
+    jablka: (op) => {
+      const n = Math.max(1, Math.min(12, op.pocet || 6)); let h = zem();
+      for (let i = 0; i < n; i++) {
+        const x = 22 + (i % 4) * 24, y = 139 - Math.floor(i / 4) * 24;
+        h += kruh(x, y, 10, "tk-f") + L(x, y - 10, x + 4, y - 16);
+      }
+      return h + koza(156, 150, 62);
+    },
+    // pohár mlieka (nepočítateľné): { "typ": "mlieko", "plne": 0.8 }
+    mlieko: (op) => {
+      const pl = Math.max(0.05, Math.min(0.95, op.plne == null ? 0.8 : op.plne));
+      const hore = 62, dole = 150, y = dole - (dole - hore) * pl;
+      const xl = (yy) => 30 + (yy - hore) * 0.1, xr = (yy) => 98 - (yy - hore) * 0.1;
+      return zem() + `<path class="tk tk-biela" pathLength="1" d="M${xl(y)} ${y}L${xr(y)} ${y}L${xr(dole)} ${dole}L${xl(dole)} ${dole}Z"/>` +
+        `<path class="tk" pathLength="1" d="M${xl(hore)} ${hore}L${xl(dole)} ${dole}L${xr(dole)} ${dole}L${xr(hore)} ${hore}"/>` + koza(156, 150, 62);
+    },
+    // kozy rôznej veľkosti: { "typ": "kozy", "kozy": [{ "w": 36, "text": "big" }, { "w": 56, "text": "bigger" }] }
+    kozy: (op) => {
+      const zoz = op.kozy || [{ w: 40 }, { w: 64 }], medzera = 10;
+      const spolu = zoz.reduce((a, k) => a + k.w, 0) + medzera * (zoz.length - 1);
+      let x = (200 - spolu) / 2, h = L(6, 138, 194, 138, "tk-zem");
+      zoz.forEach((k) => {
+        h += koza(x + k.w / 2, 138, k.w) + (k.text ? napis(x + k.w / 2, 157, k.text, k.farba ? "tb-" + k.farba : "") : "");
+        x += k.w + medzera;
+      });
+      return h;
+    },
+    // autobus / vlak (by bus, on the bus)
+    bus: () => zem() + koza(100, 130, 56) + `<rect class="tk tk-f" pathLength="1" x="28" y="104" width="144" height="34" rx="4"/>` +
+      `<path class="tk" pathLength="1" d="M28 104L28 62Q28 54 36 54L164 54Q172 54 172 62L172 104"/>` + L(64, 54, 64, 104) + L(136, 54, 136, 104) +
+      kruh(60, 140, 10, "tk-f") + kruh(140, 140, 10, "tk-f"),
+    // auto (by car, in the car)
+    auto: () => zem() + koza(106, 126, 46) + `<rect class="tk tk-f" pathLength="1" x="36" y="106" width="136" height="30" rx="8"/>` +
+      `<path class="tk" pathLength="1" d="M66 106Q72 72 96 72L124 72Q144 74 152 106"/>` + kruh(68, 138, 11, "tk-f") + kruh(142, 138, 11, "tk-f"),
+    // pešo (on foot)
+    peso: () => zem() + L(22, 104, 44, 104) + L(14, 120, 42, 120) + L(22, 136, 44, 136) + koza(112, 150, 74),
+    // mesto (arrive in)
+    mesto: () => zem() + `<rect class="tk tk-f" pathLength="1" x="14" y="84" width="30" height="66"/>` + `<rect class="tk tk-f" pathLength="1" x="48" y="56" width="34" height="94"/>` +
+      `<rect class="tk tk-f" pathLength="1" x="86" y="96" width="30" height="54"/>` + L(56, 72, 74, 72) + L(56, 90, 74, 90) + L(56, 108, 74, 108) + L(22, 100, 36, 100) + L(22, 118, 36, 118) + L(94, 112, 108, 112) + koza(158, 150, 56),
+    // stanica (arrive at)
+    stanica: () => zem() + `<rect class="tk tk-f" pathLength="1" x="22" y="88" width="100" height="62"/>` + `<path class="tk tk-f" pathLength="1" d="M14 88L72 58L130 88Z"/>` +
+      `<rect class="tk" pathLength="1" x="62" y="120" width="20" height="30"/>` + napis(72, 110, "STATION") + koza(162, 150, 56),
+  });
+
+  // ---------- Časová os ----------
+  // x: 0–100 (0 = dávna minulosť, 100 = budúcnosť); "riadok": 0, 1, 2 = o koľko vyššie je značka nad osou
+  const OS_Y = 100, osX = (p) => 16 + p * 2.88;
+  const gT = (x, y, text, k = "") => `<text class="tg-t tg-novy ${k}" x="${x}" y="${y}">${esc(text)}</text>`;
+  const gP = (d, k = "") => `<path class="tg tg-novy ${k}" pathLength="1" d="${d}"/>`;
+  const hrot = (x, y, uhol, l = 8) => `M${x - l * Math.cos(uhol - 0.5)} ${y - l * Math.sin(uhol - 0.5)}L${x} ${y}L${x - l * Math.cos(uhol + 0.5)} ${y - l * Math.sin(uhol + 0.5)}`;
+  function osZnacky(zoz) {
+    let h = "", minY = 60;
+    (zoz || []).forEach((z) => {
+      const f = z.farba ? " tg-" + z.farba : "", r = (z.riadok || 0) * 20;
+      let cx = 0, ty = 0;
+      if (z.typ === "bod") {
+        const x = osX(z.x); cx = x; ty = OS_Y - 15 - r;
+        h += gP(`M${x - 6} ${OS_Y - 6}L${x + 6} ${OS_Y + 6}M${x + 6} ${OS_Y - 6}L${x - 6} ${OS_Y + 6}`, "tg-hruba" + f);
+        if (r) h += gP(`M${x} ${OS_Y - 10}L${x} ${ty + 4}`, "tg-tenka" + f);
+      } else if (z.typ === "usek") {
+        const x1 = osX(z.od), x2 = osX(z.do), y0 = OS_Y - 13 - r; cx = (x1 + x2) / 2; ty = y0 - 6;
+        const d = z.sipka ? `M${x1} ${y0 + 7}L${x1} ${y0}L${x2} ${y0}` + hrot(x2, y0, 0) : `M${x1} ${y0 + 7}L${x1} ${y0}L${x2} ${y0}L${x2} ${y0 + 7}`;
+        h += z.ciarky ? `<path class="tg tg-ciarky tg-novy${f}" d="${d}"/>` : gP(d, f);
+      } else if (z.typ === "vlna") {
+        const x1 = osX(z.od), x2 = osX(z.do), y0 = OS_Y - 14 - r; cx = (x1 + x2) / 2; ty = y0 - 9;
+        let d = `M${x1} ${y0}`;
+        for (let x = x1, i = 0; x < x2 - 0.5; x += 8, i++) d += `Q${x + 4} ${y0 + (i % 2 ? 6 : -6)} ${Math.min(x + 8, x2)} ${y0}`;
+        h += gP(d, f);
+      } else if (z.typ === "body") {
+        const x1 = osX(z.od), x2 = osX(z.do), n = Math.max(2, z.pocet || 4); cx = (x1 + x2) / 2; ty = OS_Y - 15 - r;
+        let d = "";
+        for (let i = 0; i < n; i++) { const x = x1 + (x2 - x1) * i / (n - 1); d += `M${x - 4.5} ${OS_Y - 4.5}L${x + 4.5} ${OS_Y + 4.5}M${x + 4.5} ${OS_Y - 4.5}L${x - 4.5} ${OS_Y + 4.5}`; }
+        h += gP(d, "tg-hruba" + f);
+      } else if (z.typ === "skok") {
+        const x1 = osX(z.od), x2 = osX(z.k), ya = OS_Y - 14 - r, mx = (x1 + x2) / 2; cx = mx; ty = ya - 27;
+        h += gP(`M${x1} ${ya}Q${mx} ${ya - 40} ${x2} ${ya}` + hrot(x2, ya, Math.atan2(40, x2 - mx)), f);
+      } else return;
+      if (z.text) { h += gT(cx, ty, z.text, f); minY = Math.min(minY, ty - 16); }
+      if (z.pod) h += gT(cx, OS_Y + 21 + (z.podRiadok || 0) * 14, z.pod, "tg-t--mala" + f);
+    });
+    return { h, minY };
+  }
+  function osSvg(op) {
+    const teraz = op.teraz === false ? null : osX(op.teraz == null ? 70 : op.teraz);
+    let h = gP(`M8 ${OS_Y}L312 ${OS_Y}` + hrot(312, OS_Y, 0));
+    if (teraz != null) h += gP(`M${teraz} ${OS_Y - 13}L${teraz} ${OS_Y + 13}`, "tg-hruba tg-zlta") + gT(teraz, OS_Y + 29, op.terazText || "TERAZ", "tg-t--mala tg-zlta");
+    if (op.popisky !== false) h += gT(8, OS_Y + 46, "minulosť", "tg-t--roh tg-t--vlavo") + gT(312, OS_Y + 46, "budúcnosť", "tg-t--roh tg-t--vpravo");
+    const z = osZnacky(op.znacky);
+    return `<svg viewBox="0 ${z.minY} 320 ${152 - z.minY}" data-min="${z.minY}" role="img" aria-label="${esc(op.alt || "Časová os")}">${h}${z.h}</svg>`;
+  }
+
+  // ---------- Hodiny ----------
+  // { "op": "hodiny", "cas": "3:30", "zvyrazni": "past" | "to", "obluk": true, "popis": "..." }
+  function hodinySvg(op) {
+    const [hod, min] = String(op.cas || "3:00").split(":").map(Number);
+    const cx = 100, cy = 84, R = 58, rad = Math.PI / 180;
+    const bod = (uhol, r) => [cx + r * Math.sin(uhol * rad), cy - r * Math.cos(uhol * rad)];
+    const f2 = (a) => a.map((n) => n.toFixed(1)).join(" ");
+    let h = "";
+    if (op.zvyrazni) {
+      const past = op.zvyrazni === "past";
+      h += `<path class="tg-plocha tg-novy tg-plocha--${past ? "ruzova" : "modra"}" d="M${cx} ${cy - R}A${R} ${R} 0 0 ${past ? 1 : 0} ${cx} ${cy + R}Z"/>`;
+    }
+    h += `<circle class="tg tg-novy" pathLength="1" cx="${cx}" cy="${cy}" r="${R}"/>`;
+    let ciarky = "";
+    for (let i = 0; i < 12; i++) ciarky += `M${f2(bod(i * 30, R - (i % 3 ? 5 : 8)))}L${f2(bod(i * 30, R))}`;
+    h += gP(ciarky, "tg-tenka");
+    [[12, 0], [3, 90], [6, 180], [9, 270]].forEach(([c, u]) => { const b = bod(u, R - 17); h += gT(b[0], b[1] + 5, c, "tg-t--cislo"); });
+    if (op.obluk) {
+      const od = op.zvyrazni === "to" ? min * 6 : 0, po = op.zvyrazni === "to" ? 360 : min * 6, ro = R + 8;
+      const a = bod(od, ro), b = bod(po === 360 ? 359.5 : po, ro);
+      h += gP(`M${f2(a)}A${ro} ${ro} 0 ${po - od > 180 ? 1 : 0} 1 ${f2(b)}` + hrot(b[0], b[1], Math.atan2(Math.sin(po * rad), Math.cos(po * rad))), op.zvyrazni === "to" ? "tg-modra" : "tg-ruzova");
+    }
+    h += gP(`M${cx} ${cy}L${f2(bod((hod % 12 + min / 60) * 30, 30))}`, "tg-ruc");
+    h += gP(`M${cx} ${cy}L${f2(bod(min * 6, 46))}`, "tg-hruba tg-zlta");
+    h += `<circle class="tg-stred tg-novy" cx="${cx}" cy="${cy}" r="4"/>`;
+    return `<svg viewBox="24 10 152 148" role="img" aria-label="${esc(op.alt || "Hodiny: " + op.cas)}">${h}</svg>`;
+  }
+
   function init(app) {
     const recepty = GB.data("data-tabule") || {};
     const $ = (s) => app.querySelector(s);
@@ -161,6 +285,7 @@
 
     // vráti čas (s), kedy skončí táto operácia
     function vykonaj(op, anim, t) {
+      ozivGraf.anim = anim;
       const blok = (cls, html, id) => {
         const d = document.createElement("div");
         d.className = "tb-blok " + cls + (anim ? " tb-novy" : "");
@@ -211,21 +336,61 @@
           d.querySelectorAll(".tb-stlpec").forEach((s) => { s.style.setProperty("--d", tt + "s"); s.style.setProperty("--trv", "1.1s"); s.classList.add("tb-pise"); tt += 1.1; });
           return tt + 0.2;
         }
-        case "mriezka": blok("tb-mriezka", "", op.id); return t;
+        case "mriezka": blok("tb-mriezka" + (op.velke ? " tb-mriezka--velke" : ""), "", op.id); return t;
         case "scena": {
           const kresba = SCENY[op.typ];
-          const d = blok("tb-scena", `<svg viewBox="0 0 200 165" role="img" aria-label="${esc(op.alt || op.typ)}">${kresba ? kresba() : ""}</svg><p>${htmlTextu(op.popis || op.typ, "p")}</p>`);
+          const d = blok("tb-scena" + (op.siroka ? " tb-scena--siroka" : ""), `<svg viewBox="${op.typ === "kozy" ? "0 48 200 117" : "0 0 200 165"}" role="img" aria-label="${esc(op.alt || op.typ)}">${kresba ? kresba(op) : ""}</svg><p>${htmlTextu(op.popis || op.typ, "p")}</p>`);
           const tahy = [...d.querySelectorAll(".tk")];
           if (!anim) { d.classList.add("tb-hotovo"); return t; }
           tahy.forEach((p, i) => p.style.transitionDelay = (t + i * 0.12) + "s");
           const koniec = t + tahy.length * 0.12 + 0.4;
-          d.querySelectorAll(".tb-koza").forEach((im) => im.style.transitionDelay = koniec + "s");
+          d.querySelectorAll(".tb-koza, .tk-text").forEach((im) => im.style.transitionDelay = koniec + "s");
           d.querySelector("p").style.transitionDelay = (koniec + 0.2) + "s";
           requestAnimationFrame(() => requestAnimationFrame(() => d.classList.add("tb-kresli")));
           return koniec + 0.6;
         }
+        case "os": {
+          const d = blok("tb-os", osSvg(op), op.id);
+          return ozivGraf(d, t);
+        }
+        case "naos": {
+          // dokreslí značky do časovej osi, ktorá už na tabuli je: { "op": "naos", "os": "o", "znacky": [...] }
+          const sv = el.plocha.querySelector(`[data-blok="${op.os}"] svg`);
+          if (!sv) return t;
+          const z = osZnacky(op.znacky), min = Math.min(Number(sv.dataset.min), z.minY);
+          sv.dataset.min = min; sv.setAttribute("viewBox", `0 ${min} 320 ${152 - min}`);
+          sv.insertAdjacentHTML("beforeend", z.h);
+          return ozivGraf(sv, t);
+        }
+        case "hodiny": {
+          const d = blok("tb-scena tb-hodiny tb-hotovo", hodinySvg(op) + `<p>${htmlTextu(op.popis || op.cas, "p")}</p>`, op.id);
+          const kon = ozivGraf(d, t);
+          if (anim) { const p = d.querySelector("p"); p.style.opacity = "0"; casovace.push(setTimeout(() => { p.style.transition = "opacity .4s"; p.style.opacity = ""; }, kon * 1000 - 300)); }
+          return kon;
+        }
+        case "lievik": {
+          // pás lievika: { "op": "lievik", "uroven": 0–2, "text": "{in|ruzova}", "popis": "mesiac · rok", "priklady": "in July, in 2026" }; pásy idú pod seba
+          let obal = [...el.plocha.children].reverse().find((x) => x.classList && x.classList.contains("tb-lievik"));
+          if (!obal || op.novy) { obal = document.createElement("div"); obal.className = "tb-blok tb-lievik"; el.plocha.insertBefore(obal, svg); }
+          const u = Math.max(0, Math.min(2, op.uroven || 0)), sir = [100, 74, 48, 22], a = (100 - sir[u]) / 2, b = (100 - sir[u + 1]) / 2;
+          const d = document.createElement("div");
+          d.className = "tb-lievik__rad" + (anim ? " tb-novy" : "");
+          d.innerHTML = `<div class="tb-lievik__pas"><svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path d="M${a} 0L${100 - a} 0L${100 - b} 40L${b} 40Z"/></svg><span>${htmlTextu(op.text || "", "l")}</span></div><p>${htmlTextu(op.popis || "", "l")}${op.priklady ? `<small>${htmlTextu(op.priklady, "l")}</small>` : ""}</p>`;
+          obal.append(d);
+          return odhal(d, 0.9);
+        }
         default: return t;
       }
+    }
+
+    // nové čiary a texty v grafike (.tg-novy) sa postupne dokreslia
+    function ozivGraf(d, t) {
+      const anim = ozivGraf.anim;
+      const prvky = [...d.querySelectorAll(".tg-novy")];
+      if (!anim) { prvky.forEach((p) => p.classList.remove("tg-novy")); return t; }
+      prvky.forEach((p, i) => { p.classList.add("tg-cak"); p.style.transitionDelay = (t + i * 0.16) + "s"; });
+      requestAnimationFrame(() => requestAnimationFrame(() => prvky.forEach((p) => p.classList.remove("tg-cak", "tg-novy"))));
+      return t + prvky.length * 0.16 + 0.6;
     }
 
     // ---------- značky nad textom (podčiarknutie, krúžok, prečiarknutie, šípka) ----------

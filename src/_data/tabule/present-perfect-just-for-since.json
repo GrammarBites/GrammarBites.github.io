@@ -1,0 +1,221 @@
+{
+  "lekcia": "present-perfect-just-for-since",
+  "lekciaNazov": "Present perfect: just, recently, yet, for, since",
+  "nazov": "for, alebo since?",
+  "otazky": [
+    "Kedy for a kedy since?",
+    "Ako poviem „Bývam tu päť rokov“?"
+  ],
+  "kluce": [
+    "for",
+    "since",
+    "for since",
+    "ako dlho",
+    "odkedy",
+    "how long",
+    "byvam tu",
+    "i've lived",
+    "for five years",
+    "since 2021",
+    "present perfect",
+    "predpritomny cas",
+    "i live here five years"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "I {live#l} here {five years#f}."
+        }
+      ],
+      "popis": "<i>Bývam tu päť rokov.</i> Po slovensky prítomný čas – a tak to veľa žiakov napíše aj po anglicky. Vo vete sú však dve chyby. Začnime slovesom.",
+      "otazka": {
+        "text": "Kedy sa to bývanie začalo?",
+        "moznosti": [
+          "pred piatimi rokmi a trvá doteraz",
+          "práve teraz",
+          "už sa skončilo"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Päť rokov – začalo sa to už dávno.",
+          "2": "Bývam tu stále, neskončilo sa to."
+        },
+        "vysvetlenie": "Začalo sa v minulosti a trvá až doteraz."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.l"
+        },
+        {
+          "op": "pis",
+          "text": "I{'ve lived|zlta} here …"
+        },
+        {
+          "op": "os",
+          "id": "o",
+          "teraz": 80,
+          "alt": "Časová os: dej sa začal v roku 2021 a šípka vedie až po teraz.",
+          "znacky": [
+            {
+              "typ": "bod",
+              "x": 24,
+              "pod": "2021"
+            },
+            {
+              "typ": "usek",
+              "od": 24,
+              "do": 80,
+              "text": "I've lived here",
+              "farba": "zlta",
+              "sipka": true
+            }
+          ]
+        }
+      ],
+      "popis": "Dej sa <b>začal v minulosti</b> a siaha <b>až po TERAZ</b>. Na to má angličtina <b>present perfect</b>: <i>have / has</i> + 3. tvar. <i>I<b>'ve lived</b> here…</i>"
+    },
+    {
+      "kresli": [
+        {
+          "op": "naos",
+          "os": "o",
+          "znacky": [
+            {
+              "typ": "usek",
+              "od": 24,
+              "do": 80,
+              "text": "for five years",
+              "farba": "ruzova",
+              "riadok": 1
+            }
+          ]
+        },
+        {
+          "op": "pis",
+          "text": "I've lived here {for|ruzova} five years."
+        }
+      ],
+      "popis": "<b>for</b> = <b>ako dlho</b>. Za <i>for</i> ide <b>celá dĺžka</b> – na osi je to celý úsek od začiatku až po teraz: <i>for five years, for two weeks, for a long time</i>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "naos",
+          "os": "o",
+          "znacky": [
+            {
+              "typ": "bod",
+              "x": 24,
+              "text": "since 2021",
+              "farba": "modra",
+              "riadok": 3
+            }
+          ]
+        },
+        {
+          "op": "pis",
+          "text": "I've lived here {since|modra} 2021."
+        }
+      ],
+      "popis": "<b>since</b> = <b>odkedy</b>. Za <i>since</i> ide <b>začiatok</b> – na osi je to jeden bod, kde sa to celé začalo: <i>since 2021, since Monday, since I was six</i>.",
+      "otazka": {
+        "text": "She has had her dog ___ 2022.",
+        "moznosti": [
+          "for",
+          "since"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "2022 nie je dĺžka, je to bod, kedy sa to začalo."
+        },
+        "vysvetlenie": "2022 = začiatok → since."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "for + ako dlho (dĺžka)",
+              "riadky": [
+                "{for|ruzova} five years",
+                "{for|ruzova} two weeks",
+                "{for|ruzova} a long time"
+              ]
+            },
+            {
+              "nadpis": "since + odkedy (začiatok)",
+              "riadky": [
+                "{since|modra} 2021",
+                "{since|modra} Monday",
+                "{since|modra} I was six"
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "Pomôcka: ak sa dá povedať <b>„už … (rokov, dní, minút)“</b>, je to dĺžka → <i>for</i>. Ak sa dá povedať <b>„od …“</b>, je to začiatok → <i>since</i>.",
+      "otazka": {
+        "text": "We've been friends ___ a long time.",
+        "moznosti": [
+          "for",
+          "since"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "a long time (dlhý čas) je dĺžka, nie začiatok."
+        },
+        "vysvetlenie": "a long time = dĺžka → for."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "Otázka: Ako dlho…?"
+        },
+        {
+          "op": "pis",
+          "text": "{How long|zlta} have you lived here?"
+        },
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "{for|ruzova} = ako dlho  ·  {since|modra} = odkedy"
+        }
+      ],
+      "popis": "Na dĺžku sa pýtame <b>How long…?</b> – tiež v present perfect. A opravená veta zo začiatku: <i>I<b>'ve lived</b> here <b>for</b> five years.</i>",
+      "odkazy": [
+        {
+          "text": "Trenažér: Roztrieď",
+          "url": "/lekcie/present-perfect-just-for-since/#h-roztried"
+        },
+        {
+          "text": "Trenažér: časová os",
+          "url": "/lekcie/present-perfect-just-for-since/#h-casovaos"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/present-perfect-just-for-since/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/present-perfect-just-for-since/#h-test"
+        }
+      ]
+    }
+  ]
+}

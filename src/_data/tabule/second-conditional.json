@@ -1,0 +1,256 @@
+{
+  "lekcia": "second-conditional",
+  "lekciaNazov": "would · Second conditional",
+  "nazov": "1., alebo 2. podmienková veta?",
+  "skupina": "buducnost",
+  "otazky": [
+    "Aký je rozdiel medzi 1. a 2. podmienkovou vetou?",
+    "Prečo If I had, keď nehovorím o minulosti?"
+  ],
+  "kluce": [
+    "second conditional",
+    "first conditional",
+    "podmienkova veta",
+    "druha podmienkova",
+    "prva podmienkova",
+    "1. a 2. podmienkova",
+    "keby",
+    "ak",
+    "would",
+    "if i had",
+    "if i were",
+    "if i won",
+    "rozdiel podmienkove vety",
+    "conditionals",
+    "if i would"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "a",
+          "text": "If I {win|zlta}, I{'ll buy|zlta} a bike."
+        },
+        {
+          "op": "pis",
+          "id": "b",
+          "text": "If I {won|ruzova}, I{'d buy|ruzova} a plane."
+        }
+      ],
+      "popis": "Dve vety, ktoré vyzerajú skoro rovnako. Po slovensky je medzi nimi rozdiel jedného slova: <b>ak</b> vyhrám… a <b>keby</b> som vyhral…",
+      "otazka": {
+        "text": "Ktorá veta hovorí o niečom, čo sa naozaj môže stať?",
+        "moznosti": [
+          "If I win, I'll buy a bike.",
+          "If I won, I'd buy a plane."
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "I'd = I would = kúpil BY som. To je len predstava."
+        },
+        "vysvetlenie": "Ak vyhrám… – som v súťaži a môže sa to stať."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "1. podmienková – môže sa to stať",
+              "riadky": [
+                "{ak|zlta} …, …",
+                "If + {present simple|zlta}",
+                "{will|zlta} + sloveso"
+              ]
+            },
+            {
+              "nadpis": "2. podmienková – iba si to predstavujem",
+              "riadky": [
+                "{keby|ruzova} …, … {by|ruzova}",
+                "If + {past simple|ruzova}",
+                "{would|ruzova} + sloveso"
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "<b>Prvá</b> podmienková veta je o <b>skutočnej možnosti</b>: som v súťaži, môžem vyhrať. <b>Druhá</b> je len <b>predstava</b>: do žiadnej súťaže som sa neprihlásil, iba snívam. Podľa toho sa mení tvar <b>oboch</b> častí vety."
+    },
+    {
+      "kresli": [
+        {
+          "op": "tabulka",
+          "id": "t",
+          "hlavicka": true,
+          "riadky": [
+            [
+              "",
+              "časť s if",
+              "výsledok"
+            ],
+            [
+              "1.",
+              "If I {win#a|zlta}",
+              "I {will#b|zlta} buy…"
+            ],
+            [
+              "2.",
+              "If I {won#a|ruzova}",
+              "I {would#b|ruzova} buy…"
+            ]
+          ]
+        },
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "win → won  ·  will → would:  obe slovesá idú o krok späť"
+        }
+      ],
+      "popis": "Pri druhej podmienkovej vete sa <b>obe slovesá posunú o krok späť</b>: <i>win → won</i>, <i>will → would</i>. Tvar je minulý, ale <b>nehovoríme o minulosti</b> – krok späť tu znamená „ďalej od skutočnosti“.",
+      "otazka": {
+        "text": "If I ___ a million euros, I'd buy a castle.",
+        "moznosti": [
+          "have",
+          "had",
+          "would have"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "Vo výsledku je I'd (would) – je to druhá podmienková veta. Časť s if musí ísť tiež o krok späť.",
+          "2": "V časti s if would nikdy nie je."
+        },
+        "vysvetlenie": "Iba predstava → If + past simple: had."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "If I {would have#w} a dog, I'd walk it."
+        }
+      ],
+      "popis": "<i>Keby som <b>mal</b> psa, venčil <b>by</b> som ho.</i> V slovenčine je <i>by</i> v oboch častiach – a tak ho žiaci dajú dvakrát aj po anglicky.",
+      "otazka": {
+        "text": "V ktorej časti vety smie byť would?",
+        "moznosti": [
+          "v časti s if",
+          "vo výsledku",
+          "v oboch"
+        ],
+        "spravna": 1,
+        "napoveda": {
+          "0": "Za if would nikdy nedávame – rovnako ako pri prvej podmienkovej nedávame will.",
+          "2": "Would je vo vete len raz."
+        },
+        "vysvetlenie": "Would patrí len do výsledku. Za if ide past simple."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.w"
+        },
+        {
+          "op": "pis",
+          "text": "If I {had|ruzova} a dog, I{'d|ruzova} walk it."
+        },
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "A nemiešaj dve podmienkové vety dokopy:"
+        },
+        {
+          "op": "pis",
+          "id": "c",
+          "text": "If I had time, I {will#w} help you."
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "c.w"
+        },
+        {
+          "op": "pis",
+          "text": "If I had time, I {would|ruzova} help you."
+        }
+      ],
+      "popis": "Platí to isté, čo pri prvej podmienkovej: <b>za if nie je will ani would</b>. A dvojice patria k sebe: <i>present + will</i>, alebo <i>past + would</i>. Nikdy krížom."
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "Ako sa rozhodnúť? Opýtaj sa: môže sa to naozaj stať?"
+        },
+        {
+          "op": "pis",
+          "text": "It's cloudy. If it {rains|zlta}, we{'ll|zlta} stay at home."
+        },
+        {
+          "op": "pis",
+          "text": "I haven't got a dog. If I {had|ruzova} one, I{'d|ruzova} call it Rex."
+        }
+      ],
+      "popis": "Je zamračené – dážď je <b>skutočná možnosť</b> → prvá. Psa nemám a len si to predstavujem → druhá.",
+      "otazka": {
+        "text": "Zajtra píšeme test a učím sa: If I ___ hard, I'll pass.",
+        "moznosti": [
+          "study",
+          "studied"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Vo výsledku je I'll (will) a test naozaj píšeš – je to skutočná možnosť."
+        },
+        "vysvetlenie": "Skutočná možnosť → present simple + will."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "Rada kamarátovi je vždy druhá podmienková:"
+        },
+        {
+          "op": "pis",
+          "text": "If I {were|ruzova} you, I{'d|ruzova} see a doctor."
+        },
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "{ak|zlta} – môže sa stať → {present|zlta} + {will|zlta}"
+        },
+        {
+          "op": "pis",
+          "text": "{keby|ruzova} – iba predstava → {past|ruzova} + {would|ruzova}"
+        }
+      ],
+      "popis": "<i>If I were you</i> = na tvojom mieste (tebou byť nemôžem, je to len predstava). Po <i>if</i> sa tu hovorí <b>were</b> aj pri <i>I</i>.",
+      "odkazy": [
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/second-conditional/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/second-conditional/#h-test"
+        },
+        {
+          "text": "Lekcia: First conditional",
+          "url": "/lekcie/first-conditional/"
+        }
+      ]
+    }
+  ]
+}

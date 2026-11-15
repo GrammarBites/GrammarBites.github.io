@@ -210,7 +210,7 @@
 
     // ---------- výber otázky ----------
     // otázky sú zoskupené podľa témy ("skupina" v recepte); poradie a názvy skupín sú v SKUPINY
-    const SKUPINY = [["pritomny", "Prítomný čas"], ["minuly", "Minulý a predprítomný čas"], ["buducnost", "Budúcnosť"], ["otazky", "Otázky"],
+    const SKUPINY = [["pritomny", "Prítomný čas"], ["minuly", "Minulý a predprítomný čas"], ["buducnost", "Budúcnosť a podmienkové vety"], ["otazky", "Otázky"],
       ["vety", "Slovesá a vety"], ["mnozstvo", "Členy, množstvo a zámená"], ["pridavne", "Prídavné mená a príslovky"], ["cas", "Hodiny a predložky"], ["", "Ďalšie"]];
     const znama = (x) => SKUPINY.some(([k]) => k && k === x.skupina);
     el.cipy.innerHTML = SKUPINY.map(([kluc, nazov]) => {

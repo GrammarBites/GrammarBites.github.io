@@ -24,22 +24,37 @@ test:
     moznosti: ["visit", "am visiting", "visited"]
     spravna: 1
     vysvetlenie: "Dohodnutý plán v budúcnosti → present continuous: I'm visiting."
+    zle:
+      0: "Present simple používame na pravidelné veci. Dohodnutý plán je present continuous."
+      2: "Visited je minulý čas. Návšteva bude v nedeľu."
   - otazka: "What ___ you doing after school?"
     moznosti: ["are", "do", "is"]
     spravna: 0
     vysvetlenie: "Otázka v present continuous: What are you doing…?"
+    zle:
+      1: "Do by sa hodilo k What do you do? (pravidelne). Je tu doing → present continuous s are."
+      2: "Is patrí k he / she / it. Pri you je are."
   - otazka: "Tom ___ to the party tomorrow. He's ill."
     moznosti: ["isn't coming", "don't come", "aren't coming"]
     spravna: 0
     vysvetlenie: "Tom = he → isn't coming."
+    zle:
+      1: "Don't come je present simple a navyše pri he je doesn't. Plán → isn't coming."
+      2: "Aren't patrí k you / we / they. Tom = he → isn't."
   - otazka: "___ we go swimming on Saturday?"
     moznosti: ["Shall", "Are", "What about"]
     spravna: 0
     vysvetlenie: "Návrh začína Shall we…? (Čo keby sme…?)"
+    zle:
+      1: "Are we go…? nie je správne. Návrh začína Shall we…?"
+      2: "What about je tiež návrh, ale pokračuje -ing: What about going…? Tu je go."
   - otazka: "Which sentence talks about the future?"
     moznosti: ["I'm playing tennis now.", "I'm playing tennis next week.", "I play tennis every day."]
     spravna: 1
     vysvetlenie: "Budúcnosť prezrádza časový výraz next week. Now = práve teraz, every day = pravidelne."
+    zle:
+      0: "Now znamená práve teraz – to nie je budúcnosť."
+      2: "Every day hovorí o pravidelnej činnosti, nie o budúcnosti."
 ---
 
 Present continuous už poznáš ako čas pre to, čo sa deje [práve teraz](/lekcie/present-continuous/). Ten istý tvar však používame aj pre **budúcnosť**, keď je plán **už dohodnutý**: je v diári, v kalendári, máme lístky alebo sme sa s niekým dohodli.

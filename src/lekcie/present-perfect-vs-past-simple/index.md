@@ -26,22 +26,37 @@ test:
     moznosti: ["have visited", "visited", "has visited"]
     spravna: 1
     vysvetlenie: "Last weekend = konkrétny čas v minulosti → past simple: visited."
+    zle:
+      0: "Last weekend je konkrétny čas v minulosti – present perfect sa s ním nespája."
+      2: "Has patrí k he / she / it a navyše last weekend si žiada past simple."
   - otazka: "Have you ever ___ a horror film?"
     moznosti: ["watched", "watch", "did watch"]
     spravna: 0
     vysvetlenie: "Ever, bez konkrétneho času → present perfect: have watched."
+    zle:
+      1: "Za have je 3. tvar, nie základný."
+      2: "Za have je 3. tvar. Did watch sem nepatrí."
   - otazka: "When ___ the film start?"
     moznosti: ["has", "did", "have"]
     spravna: 1
     vysvetlenie: "Otázka When…? sa pýta na čas → past simple: When did…?"
+    zle:
+      0: "When sa pýta na konkrétny čas – present perfect sa s ním nespája."
+      2: "When sa pýta na konkrétny čas → past simple: did."
   - otazka: "Oh no! I ___ my phone. I can't find it anywhere."
     moznosti: ["lost", "have lost", "was losing"]
     spravna: 1
     vysvetlenie: "Výsledok vidno teraz (nemám telefón) a nehovoríme kedy → I've lost."
+    zle:
+      0: "Lost by hovoril o ukončenej minulosti. Tu je výsledok teraz – telefón nemám → have lost."
+      2: "Was losing je dlhý dej v minulosti. Tu ide o výsledok teraz."
   - otazka: "Which is correct?"
     moznosti: ["She has bought a new bike two days ago.", "She bought a new bike two days ago.", "She buyed a new bike two days ago."]
     spravna: 1
     vysvetlenie: "Two days ago = konkrétny čas → past simple: bought (nepravidelné sloveso)."
+    zle:
+      0: "Two days ago je konkrétny čas – present perfect sa s ním nespája."
+      2: "Buy je nepravidelné – buyed neexistuje."
 ---
 
 Oba časy hovoria o niečom, čo sa už stalo. Rozdiel je v jednej otázke: **povieš, KEDY sa to stalo?**

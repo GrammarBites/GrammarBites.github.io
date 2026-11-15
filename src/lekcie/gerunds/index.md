@@ -24,22 +24,37 @@ test:
     moznosti: ["Cook", "Cooking", "To cooking"]
     spravna: 1
     vysvetlenie: "Činnosť ako podmet vety → -ing: Cooking is my favourite hobby."
+    zle:
+      0: "Cook je sloveso (variť) alebo kuchár. Činnosť ako podmet má -ing."
+      2: "To cooking nie je správny tvar. Na začiatku vety je Cooking."
   - otazka: "My sister is very good at ___ ."
     moznosti: ["sing", "to sing", "singing"]
     spravna: 2
     vysvetlenie: "Po predložke (at) je vždy -ing."
+    zle:
+      0: "Za predložkou (at) nemôže byť základný tvar – je tam -ing."
+      1: "Za predložkou (at) to + sloveso nedávame – je tam -ing."
   - otazka: "Thank you for ___ me."
     moznosti: ["invite", "inviting", "invited"]
     spravna: 1
     vysvetlenie: "Po predložke for → -ing."
+    zle:
+      0: "Za predložkou (for) nemôže byť základný tvar – je tam -ing."
+      2: "Invited je minulý čas. Za predložkou je -ing."
   - otazka: "I don't mind ___ the dishes."
     moznosti: ["doing", "to do", "do"]
     spravna: 0
     vysvetlenie: "Po don't mind ide -ing."
+    zle:
+      1: "Po don't mind sa to + sloveso nepoužíva – je tam -ing."
+      2: "Po don't mind nemôže byť základný tvar – je tam -ing."
   - otazka: "swim + ing = ___"
     moznosti: ["swiming", "swimming", "swimeing"]
     spravna: 1
     vysvetlenie: "Krátke slovo na spoluhlásku → zdvojenie: swimming."
+    zle:
+      0: "Pri swim sa m zdvojí: swimming."
+      2: "Swim nemá na konci e – nič nepridávame, len zdvojíme m."
 ---
 
 **Gerundium** (*gerund*) je tvar slovesa s **-ing**, ktorý sa správa ako **podstatné meno** – je to **názov činnosti**. Používame ho, keď o činnosti hovoríme ako o veci.

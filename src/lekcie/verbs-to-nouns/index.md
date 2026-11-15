@@ -25,22 +25,37 @@ test:
     moznosti: ["protectment", "protection", "protecttion"]
     spravna: 1
     vysvetlenie: "Pridáme -ion: protection."
+    zle:
+      0: "Protectment neexistuje."
+      2: "T sa nezdvojuje: protection."
   - otazka: "Thank you for the ___ to your party!"
     moznosti: ["invite", "invitation", "invitement"]
     spravna: 1
     vysvetlenie: "Po the treba podstatné meno: invite → invitation."
+    zle:
+      0: "Invite je sloveso. Po the je podstatné meno: invitation."
+      2: "Invitement neexistuje."
   - otazka: "decide → ___"
     moznosti: ["decidion", "decision", "decition"]
     spravna: 1
     vysvetlenie: "decide → decision – zmena de → sion."
+    zle:
+      0: "Decidion neexistuje. Rozhodnutie = decision."
+      2: "Pozor na pravopis: decision (s, nie t)."
   - otazka: "We came to an ___ . We'll go to the lake."
     moznosti: ["agreement", "agreetion", "agree"]
     spravna: 0
     vysvetlenie: "agree + ment = agreement (dohoda)."
+    zle:
+      1: "Agreetion neexistuje."
+      2: "Agree je sloveso. Za an je podstatné meno: agreement."
   - otazka: "Can you give me some ___ about the trip?"
     moznosti: ["informations", "information", "inform"]
     spravna: 1
     vysvetlenie: "Information je nepočítateľné – nemá množné číslo."
+    zle:
+      0: "Information je nepočítateľné – nemá množné číslo."
+      2: "Inform je sloveso. Za some je podstatné meno."
 ---
 
 Veľa anglických podstatných mien vzniká zo slovies pridaním koncovky. Keď poznáš sloveso, ľahko odhadneš aj podstatné meno – a naopak.

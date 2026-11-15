@@ -24,22 +24,37 @@ test:
     moznosti: ["she", "her", "him"]
     spravna: 1
     vysvetlenie: "Za slovesom love je predmet: she → her."
+    zle:
+      0: "She je podmet (stojí pred slovesom). Za love je predmet."
+      2: "Him je predmet pre muža (he). Grandma je žena → her."
   - otazka: "Tom and Eva are my friends. I play with ___ every day."
     moznosti: ["they", "them", "us"]
     spravna: 1
     vysvetlenie: "Po predložke with je predmet: they → them."
+    zle:
+      0: "They je podmet. Za predložkou with je predmet."
+      2: "Us znamená nás. Tom a Eva = oni → them."
   - otazka: "___ is my brother. He's twelve."
     moznosti: ["Him", "He", "His"]
     spravna: 1
     vysvetlenie: "Na začiatku vety pred slovesom je podmet: He is my brother."
+    zle:
+      0: "Him je predmet (jeho, mu). Na začiatku pred slovesom je podmet."
+      2: "His znamená jeho (čí?). Tu potrebujeme podmet: He is…"
   - otazka: "Can you help ___ ? We can't open the door."
     moznosti: ["we", "us", "our"]
     spravna: 1
     vysvetlenie: "Za slovesom help je predmet: we → us."
+    zle:
+      0: "We je podmet. Za help je predmet."
+      2: "Our znamená náš (čí?). Za help je predmet: us."
   - otazka: "Where's my phone? I can't find ___ ."
     moznosti: ["it", "him", "them"]
     spravna: 0
     vysvetlenie: "Telefón je vec → it. Pri it je podmet aj predmet rovnaký."
+    zle:
+      1: "Him je pre muža alebo chlapca. Telefón je vec → it."
+      2: "Them je množné číslo. Telefón je jeden → it."
 ---
 
 V angličtine má väčšina osobných zámen **dva tvary**. Jeden používame ako **podmet** (kto to robí?), druhý ako **predmet** (koho? komu?). Podobne je to v slovenčine: *on* × *ho / jeho / mu*.

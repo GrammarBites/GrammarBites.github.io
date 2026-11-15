@@ -25,22 +25,37 @@ test:
     moznosti: ["as tall as", "as taller as", "tall as"]
     spravna: 0
     vysvetlenie: "Rovnako vysoká → as + základný tvar + as: as tall as."
+    zle:
+      1: "Medzi as … as je vždy základný tvar, nie taller."
+      2: "Chýba prvé as: as tall as."
   - otazka: "This film isn't ___ the book."
     moznosti: ["as good as", "as better as", "good as"]
     spravna: 0
     vysvetlenie: "Medzi as … as je základný tvar: good (nie better)."
+    zle:
+      1: "Medzi as … as je základný tvar: good, nie better."
+      2: "Chýba prvé as: as good as."
   - otazka: "I'm as old ___ you."
     moznosti: ["like", "than", "as"]
     spravna: 2
     vysvetlenie: "Druhé slovo je tiež as – nie like ani than."
+    zle:
+      0: "Like tu nepatrí. Porovnanie začalo as, tak aj končí as."
+      1: "Than patrí k 2. stupňu (older than). Pri as old … je druhé slovo tiež as."
   - otazka: "A cat isn't as big as a dog. = A dog is ___ a cat."
     moznosti: ["bigger than", "as big as", "the biggest"]
     spravna: 0
     vysvetlenie: "Pes je väčší → bigger than."
+    zle:
+      1: "As big as by znamenalo rovnako veľký. Pes je však väčší."
+      2: "The biggest je 3. stupeň (najväčší zo všetkých). Porovnávame len dve zvieratá."
   - otazka: "Maths is ___ English for me. I like both."
     moznosti: ["as interesting as", "as more interesting as", "more interesting as"]
     spravna: 0
     vysvetlenie: "Aj pri dlhých prídavných menách je medzi as … as základný tvar – bez more."
+    zle:
+      1: "Pri as … as sa more nepoužíva – ani pri dlhých prídavných menách."
+      2: "Pri as … as sa more nepoužíva a chýba prvé as."
 ---
 
 V lekcii [Comparative adjectives](/lekcie/comparative-adjectives/) sme porovnávali, čo je **väčšie, rýchlejšie, lepšie**. S **as … as** povieme, že dve veci sú **rovnaké** – alebo že jedna **nie je taká** ako druhá.

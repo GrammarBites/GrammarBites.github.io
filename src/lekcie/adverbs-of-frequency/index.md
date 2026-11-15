@@ -26,22 +26,37 @@ test:
     moznosti: ["I go always to school by bus.", "I always go to school by bus.", "Always I go to school by bus."]
     spravna: 1
     vysvetlenie: "Príslovka stojí pred plnovýznamovým slovesom: always go."
+    zle:
+      0: "Always nedávame za bežné sloveso, ale pred neho: always go."
+      2: "Always na začiatku vety tu nepatrí – dávame ho pred sloveso."
   - otazka: "Tom ___ late for school. He's never on time!"
     moznosti: ["always is", "is always", "always"]
     spravna: 1
     vysvetlenie: "So slovesom be stojí príslovka za ním: is always."
+    zle:
+      0: "Pri slovese be stojí príslovka za ním, nie pred ním: is always."
+      2: "Chýba sloveso be. Tom is always late."
   - otazka: "Which adverb means about 50% of the time?"
     moznosti: ["usually", "sometimes", "hardly ever"]
     spravna: 1
     vysvetlenie: "Sometimes je v strede stupnice – nie často, ale ani zriedka."
+    zle:
+      0: "Usually znamená zvyčajne – asi 80 %, teda väčšinou."
+      2: "Hardly ever znamená takmer nikdy – asi 5 %."
   - otazka: "Choose the correct sentence."
     moznosti: ["We don't never watch horror films.", "We never watch horror films.", "We watch never horror films."]
     spravna: 1
     vysvetlenie: "Never je už záporné, preto k nemu nepridávame don't."
+    zle:
+      0: "Dva zápory naraz (don't + never) v angličtine nedávame. Never je už záporné."
+      2: "Never nedávame za bežné sloveso, ale pred neho: never watch."
   - otazka: "___ do you play computer games? – Every evening."
     moznosti: ["How often", "How much", "How long"]
     spravna: 0
     vysvetlenie: "Na to, ako často, sa pýtame How often…?"
+    zle:
+      1: "How much sa pýta na množstvo (koľko). Na frekvenciu (ako často) je iná otázka."
+      2: "How long sa pýta na dĺžku (ako dlho). Odpoveď every evening hovorí, ako často."
 ---
 
 ## Pravidlo

@@ -25,22 +25,37 @@ test:
     moznosti: ["drinks", "is drinking", "drink"]
     spravna: 0
     vysvetlenie: "Every morning = zvyčajne → present simple. Pri he je -s: drinks."
+    zle:
+      1: "Is drinking = práve teraz. Every morning hovorí o zvyku."
+      2: "Chýba -s: My dad = he → drinks."
   - otazka: "Shh! The baby ___ ."
     moznosti: ["sleeps", "is sleeping", "sleep"]
     spravna: 1
     vysvetlenie: "Práve teraz (Shh!) → present continuous: is sleeping."
+    zle:
+      0: "Sleeps je pravidelná činnosť. Shh! prezrádza, že bábätko spí práve teraz."
+      2: "Sleep bez -s a bez is nesedí. Teraz → is sleeping."
   - otazka: "I ___ a new phone. Mine is broken."
     moznosti: ["need", "am needing", "needing"]
     spravna: 0
     vysvetlenie: "Need je stavové sloveso → bez -ing, aj keď ide o teraz: I need."
+    zle:
+      1: "Need je stavové sloveso – s -ing sa nepoužíva, ani keď ide o teraz."
+      2: "Chýba sloveso v správnom tvare. Need sa s -ing nepoužíva: I need."
   - otazka: "___ you understand this exercise?"
     moznosti: ["Are", "Do", "Is"]
     spravna: 1
     vysvetlenie: "Understand je stavové sloveso → present simple: Do you understand?"
+    zle:
+      0: "Are by sa spájalo s -ing. Understand je stavové sloveso → present simple s do."
+      2: "Is patrí k he / she / it a navyše understand sa s -ing nepoužíva."
   - otazka: "Which is correct?"
     moznosti: ["I'm thinking it's a good idea.", "I think it's a good idea.", "I thinking it's a good idea."]
     spravna: 1
     vysvetlenie: "Think vo význame „myslím si (názor)“ je stavové → I think. I'm thinking = premýšľam."
+    zle:
+      0: "I'm thinking znamená „premýšľam“. Keď vyjadrujeme názor, je to I think."
+      2: "Chýba am – a pri názore sa think s -ing aj tak nepoužíva."
 ---
 
 V angličtine máme dva prítomné časy. Navyše sú tu slovesá, ktoré v *-ing* tvare skoro nikdy nepoužijeme – **stavové slovesá**.

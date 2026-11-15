@@ -26,22 +26,37 @@ test:
     moznosti: ["will study", "study", "studied"]
     spravna: 1
     vysvetlenie: "Za if používame prítomný čas: If you study…"
+    zle:
+      0: "Za if will nedávame – časť s if je v prítomnom čase."
+      2: "Studied je minulý čas. Hovoríme o budúcnosti, ale za if je prítomný čas."
   - otazka: "If it's sunny tomorrow, we ___ to the lake."
     moznosti: ["go", "will go", "went"]
     spravna: 1
     vysvetlenie: "Vo výsledku je will + sloveso: we'll go."
+    zle:
+      0: "Go je prítomný čas. Vo výsledku (hlavnej vete) je will."
+      2: "Went je minulý čas. Výsledok v budúcnosti je s will."
   - otazka: "Which sentence is correct?"
     moznosti: ["If she will call, I will answer.", "If she calls, I answer will.", "I'll answer if she calls."]
     spravna: 2
     vysvetlenie: "Výsledok môže byť aj na začiatku – potom čiarku nepíšeme."
+    zle:
+      0: "Za if will nedávame: If she calls…"
+      1: "Will stojí pred slovesom: I will answer, nie I answer will."
   - otazka: "If you don't hurry, you ___ the bus."
     moznosti: ["won't catch", "don't catch", "not catch"]
     spravna: 0
     vysvetlenie: "Zápor od will je won't (will not)."
+    zle:
+      1: "Don't catch je prítomný čas. Výsledok je s will – zápor won't."
+      2: "Chýba will: won't catch."
   - otazka: "I'll text you as soon as I ___ home."
     moznosti: ["will get", "get", "got"]
     spravna: 1
     vysvetlenie: "Aj po when a as soon as je prítomný čas, nie will."
+    zle:
+      0: "Za as soon as will nedávame – je tam prítomný čas."
+      2: "Got je minulý čas. Hovoríme o budúcnosti, ale za as soon as je prítomný čas."
 ---
 
 ## Pravidlo

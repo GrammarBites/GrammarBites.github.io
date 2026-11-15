@@ -25,26 +25,44 @@ test:
     moznosti: ["much", "many", "lot"]
     spravna: 1
     vysvetlenie: "Eggs sa dajú spočítať (počítateľné, množné číslo) → How many."
+    zle:
+      0: "Much patrí k nepočítateľným veciam. Vajíčka sa dajú spočítať."
+      2: "Lot samo nestačí – je to a lot of. Pri otázke How … je many."
   - otazka: "How ___ water do you drink every day?"
     moznosti: ["many", "much", "a lot"]
     spravna: 1
     vysvetlenie: "Water je nepočítateľné → How much."
+    zle:
+      0: "Many patrí k počítateľným veciam. Voda sa spočítať nedá."
+      2: "A lot sa za How nedáva. Pri nepočítateľnom je How much."
   - otazka: "There isn't ___ milk in the fridge."
     moznosti: ["many", "much", "a"]
     spravna: 1
     vysvetlenie: "Milk je nepočítateľné → much."
+    zle:
+      0: "Many patrí k počítateľným veciam. Mlieko sa spočítať nedá."
+      2: "Pred nepočítateľné (milk) a nedávame."
   - otazka: "Which is correct?"
     moznosti: ["I'd like a bread.", "I'd like a loaf of bread.", "I'd like two breads."]
     spravna: 1
     vysvetlenie: "Bread je nepočítateľné. Spočítame ho cez a loaf of: a loaf of bread, two loaves of bread."
+    zle:
+      0: "Bread je nepočítateľné – a bread nie je správne."
+      2: "Bread je nepočítateľné, nemá množné číslo breads."
   - otazka: "Can I have ___ milk in my tea, please?"
     moznosti: ["a few", "a little", "many"]
     spravna: 1
     vysvetlenie: "Milk je nepočítateľné → a little (trochu)."
+    zle:
+      0: "A few patrí k počítateľným veciam (a few apples). Mlieko je nepočítateľné."
+      2: "Many patrí k počítateľným veciam. Mlieko je nepočítateľné."
   - otazka: "I eat ___ fruit."
     moznosti: ["a lot of", "many", "a"]
     spravna: 0
     vysvetlenie: "V kladnej vete je najprirodzenejšie a lot of. Fruit je nepočítateľné, preto nie many ani a."
+    zle:
+      1: "Many patrí k počítateľným veciam. Fruit (ovocie) je tu nepočítateľné."
+      2: "Pred nepočítateľné (fruit) a nedávame."
 ---
 
 Niektoré veci vieme spočítať po kusoch (*one apple, two apples*), iné nie (*cheese, milk*). Podľa toho sa v angličtine mení, či povieme **many** alebo **much**.

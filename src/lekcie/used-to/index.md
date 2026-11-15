@@ -25,22 +25,37 @@ test:
     moznosti: ["use to", "used to", "was used to"]
     spravna: 1
     vysvetlenie: "Kladná veta o minulom zvyku: used to + sloveso."
+    zle:
+      0: "V kladnej vete je used to – s -d."
+      2: "Was used to znamená „bol som zvyknutý“. Minulý zvyk je used to."
   - otazka: "My dad ___ use to have a beard, but now he has one."
     moznosti: ["didn't", "wasn't", "doesn't"]
     spravna: 0
     vysvetlenie: "Zápor: didn't use to."
+    zle:
+      1: "Wasn't sa s use to nespája. Zápor je didn't use to."
+      2: "Doesn't je prítomný čas. Used to je o minulosti."
   - otazka: "Did you ___ go to kindergarten?"
     moznosti: ["used to", "use to", "using to"]
     spravna: 1
     vysvetlenie: "Za did ide use to – bez -d."
+    zle:
+      0: "Za did je use – bez -d. Minulosť už nesie did."
+      2: "Using to nie je správne. Za did je use to."
   - otazka: "Did your grandparents use to live in a village? – Yes, they ___ ."
     moznosti: ["used", "did", "were"]
     spravna: 1
     vysvetlenie: "Krátka odpoveď zopakuje did: Yes, they did."
+    zle:
+      0: "Pýtali sme sa s Did, tak odpovieme did."
+      2: "Were sa sem nehodí. Otázka bola s Did."
   - otazka: "Which is correct?"
     moznosti: ["I used to go to Paris last summer.", "I went to Paris last summer.", "I use to go to Paris last summer."]
     spravna: 1
     vysvetlenie: "Last summer je jedna konkrétna udalosť → past simple: I went. Used to je pre opakované zvyky alebo dlhodobé stavy."
+    zle:
+      0: "Used to je pre opakované zvyky. Last summer je jedna udalosť → went."
+      2: "Use to bez did nie je správne a navyše ide o jednu udalosť → went."
 ---
 
 **Used to** používame na veci, ktoré **kedysi boli pravda, ale teraz už nie sú** – zvyky (čo sme robili pravidelne) a stavy (aké sme boli, čo sme mali).

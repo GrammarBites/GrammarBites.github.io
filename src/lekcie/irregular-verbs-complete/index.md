@@ -19,22 +19,37 @@ test:
     moznosti: ["bited", "bit", "bitten"]
     spravna: 1
     vysvetlenie: "Minulý čas: bite – <b>bit</b> – bitten."
+    zle:
+      0: "Bite je nepravidelné sloveso – bited neexistuje."
+      2: "Bitten je 3. tvar. Yesterday → minulý čas (2. tvar)."
   - otazka: "Have you ___ your homework?"
     moznosti: ["forgot", "forgotten", "forget"]
     spravna: 1
     vysvetlenie: "Have + 3. tvar: forget – forgot – <b>forgotten</b>."
+    zle:
+      0: "Forgot je 2. tvar (minulý čas). Za have je 3. tvar."
+      2: "Forget je základný tvar. Za have je 3. tvar."
   - otazka: "She ___ me her bike for the weekend."
     moznosti: ["lent", "lend", "lended"]
     spravna: 0
     vysvetlenie: "lend – <b>lent</b> – lent = požičať niekomu."
+    zle:
+      1: "Lend je základný tvar. Je to minulosť (požičala) → 2. tvar."
+      2: "Lend je nepravidelné sloveso – lended neexistuje."
   - otazka: "Which pair is correct in American English?"
     moznosti: ["get – got – gotten", "get – gotten – got", "get – getted – got"]
     spravna: 0
     vysvetlenie: "Britská angličtina: got – got. Americká: got – <b>gotten</b>."
+    zle:
+      1: "Poradie je zlé: 2. tvar je got, 3. tvar gotten."
+      2: "Get je nepravidelné – getted neexistuje."
   - otazka: "understand – understood – ___"
     moznosti: ["understanded", "understood", "understand"]
     spravna: 1
     vysvetlenie: "Je to ako stand – stood – stood, teda <b>understood</b>."
+    zle:
+      0: "Understand je nepravidelné – understanded neexistuje."
+      2: "Understand je základný tvar. Hľadáme 3. tvar."
 ---
 
 ## Dá sa vôbec zostaviť úplný zoznam?

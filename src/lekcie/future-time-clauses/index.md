@@ -25,22 +25,37 @@ test:
     moznosti: ["will get", "get", "got"]
     spravna: 1
     vysvetlenie: "Za as soon as je present simple, aj keď hovoríme o budúcnosti: get."
+    zle:
+      0: "Za as soon as will nedávame, aj keď hovoríme o budúcnosti."
+      2: "Got je minulý čas. Za as soon as je prítomný čas."
   - otazka: "Before you ___ out, close the window."
     moznosti: ["go", "will go", "going"]
     spravna: 0
     vysvetlenie: "Za before je present simple: go."
+    zle:
+      1: "Za before will nedávame – je tam prítomný čas."
+      2: "Samotné -ing tu nestačí – za before you je go."
   - otazka: "When she ___ the news, she'll be happy."
     moznosti: ["will hear", "hears", "hear"]
     spravna: 1
     vysvetlenie: "Za when je present simple. She → hears."
+    zle:
+      0: "Za when will nedávame – je tam prítomný čas."
+      2: "Pri she potrebuje sloveso -s: hears."
   - otazka: "After the lesson finishes, we ___ to the canteen."
     moznosti: ["go", "'ll go", "going"]
     spravna: 1
     vysvetlenie: "V hlavnej vete o budúcnosti je will: we'll go."
+    zle:
+      0: "Go je prítomný čas. Hlavná veta o budúcnosti je s will."
+      2: "Samotné -ing tu nestačí. Hlavná veta je s will: we'll go."
   - otazka: "Kým budeš spať, upratám. →"
     moznosti: ["I'll tidy up while you will sleep.", "I'll tidy up while you sleep.", "I tidy up while you'll sleep."]
     spravna: 1
     vysvetlenie: "Za while present simple (you sleep), v hlavnej vete will (I'll tidy up)."
+    zle:
+      0: "Za while will nedávame: while you sleep."
+      2: "Will patrí do hlavnej vety (I'll tidy up), nie za while."
 ---
 
 Keď hovoríme o budúcnosti a spájame dve vety slovami **when, as soon as, before, after, while**, platí to isté pravidlo ako pri [first conditional](/lekcie/first-conditional/): **za týmito slovami nie je will**.

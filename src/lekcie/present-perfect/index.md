@@ -27,22 +27,37 @@ test:
     moznosti: ["have saw", "have seen", "has seen"]
     spravna: 1
     vysvetlenie: "Pri I používame have + 3. tvar: have seen."
+    zle:
+      0: "Saw je 2. tvar (minulý čas). Za have je 3. tvar."
+      2: "Has patrí k he / she / it. Pri I je have."
   - otazka: "My sister ___ a bike race."
     moznosti: ["has won", "have won", "has win"]
     spravna: 0
     vysvetlenie: "Pri he/she/it je has. Sloveso win má 3. tvar won."
+    zle:
+      1: "Have patrí k I / you / we / they. My sister = she → has."
+      2: "Za has je 3. tvar: won, nie win."
   - otazka: "We ___ on TV."
     moznosti: ["hasn't been", "haven't be", "haven't been"]
     spravna: 2
     vysvetlenie: "Zápor pri we je haven't + 3. tvar: haven't been."
+    zle:
+      0: "Hasn't patrí k he / she / it. Pri we je haven't."
+      1: "Za haven't je 3. tvar: been, nie be."
   - otazka: "Tom ___ a racing car."
     moznosti: ["hasn't driven", "haven't driven", "hasn't drove"]
     spravna: 0
     vysvetlenie: "Tom = he, preto hasn't. Drive je nepravidelné: drive – driven."
+    zle:
+      1: "Haven't patrí k I / you / we / they. Tom = he → hasn't."
+      2: "Drove je 2. tvar. Za hasn't je 3. tvar: driven."
   - otazka: "Which sentence is correct?"
     moznosti: ["She've visited London.", "They've visited London.", "They has visited London."]
     spravna: 1
     vysvetlenie: "They + have = They've. Pri she by muselo byť has (She's)."
+    zle:
+      0: "Pri she je has: She's visited. 've patrí k I / you / we / they."
+      2: "Has patrí k he / she / it. Pri they je have (They've)."
 ---
 
 ## Pravidlo

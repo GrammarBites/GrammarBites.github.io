@@ -27,22 +27,37 @@ test:
     moznosti: ["go", "went", "goed"]
     spravna: 1
     vysvetlenie: "Go je nepravidelné sloveso, minulý čas je went."
+    zle:
+      0: "Go je prítomný čas. Last Saturday = minulosť."
+      2: "Go je nepravidelné – goed neexistuje."
   - otazka: "She didn't ___ the homework."
     moznosti: ["did", "do", "does"]
     spravna: 1
     vysvetlenie: "Po didn't je vždy základný tvar: didn't do."
+    zle:
+      0: "Po didn't je základný tvar – minulosť už nesie didn't."
+      2: "Does je prítomný čas a po didn't je základný tvar do."
   - otazka: "___ you see the new film? – Yes, I did."
     moznosti: ["Did", "Do", "Were"]
     spravna: 0
     vysvetlenie: "Otázka v minulom čase: Did + podmet + základný tvar."
+    zle:
+      1: "Do je prítomný čas. Odpoveď Yes, I did prezrádza minulosť."
+      2: "Were patrí k be. Pri see je otázka s Did."
   - otazka: "Where ___ you buy that T-shirt?"
     moznosti: ["did", "were", "do"]
     spravna: 0
     vysvetlenie: "Opytovacie slovo + did + podmet + sloveso: Where did you buy…?"
+    zle:
+      1: "Were patrí k be. Pri buy je otázka s did."
+      2: "Do je prítomný čas. Tričko už kúpil → minulosť, did."
   - otazka: "Which is correct?"
     moznosti: ["I didn't saw him.", "I didn't see him.", "I not saw him."]
     spravna: 1
     vysvetlenie: "Minulosť už vyjadruje didn't, preto sloveso ostáva v základnom tvare: didn't see."
+    zle:
+      0: "Po didn't je základný tvar – nie saw. Minulosť len raz."
+      2: "Zápor sa robí cez didn't: I didn't see."
 ---
 
 Táto lekcia spája celý minulý čas z Unitu 3: oznamovaciu vetu, zápor aj otázky. Ako pridať *-ed* k pravidelným slovesám, nájdeš v lekcii [Past simple: regular verbs](/lekcie/past-simple-regular/), minulý čas slovesa *be* v lekcii [Past simple: be](/lekcie/past-simple-be/).

@@ -72,7 +72,9 @@
         } else {
           q.classList.add("je-zle");
           if (vybrana) vybrana.closest(".moznost").classList.add("moznost--zla");
-          spatna.textContent = (vybrana ? "Nie celkom. " : "Bez odpovede. ") +
+          // Pri zle zvolenej možnosti najprv vysvetlíme, prečo nesedí (zle: v teste lekcie), potom správnu odpoveď.
+          const preco = vybrana && vybrana.dataset.zle ? vybrana.dataset.zle + " " : "";
+          spatna.textContent = (vybrana ? "Nie celkom. " + preco : "Bez odpovede. ") +
             "Správne je: „" + spravnaMoznost.textContent.trim() + "“. " + spatna.dataset.ok;
         }
         spatna.hidden = false;

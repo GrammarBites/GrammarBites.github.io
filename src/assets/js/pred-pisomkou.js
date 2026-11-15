@@ -164,7 +164,8 @@
         if (vybrana) vybrana.closest(".moznost").classList.add("moznost--zla");
         chyby[q.lekcia] = (chyby[q.lekcia] || 0) + 1;
         const L = D.lekcie[q.lekcia];
-        spatna.innerHTML = (vybrana ? "Nie celkom. " : "Bez odpovede. ") +
+        const preco = vybrana && q.z && q.z[Number(vybrana.value)] ? q.z[Number(vybrana.value)] + " " : "";
+        spatna.innerHTML = (vybrana ? "Nie celkom. " + preco : "Bez odpovede. ") +
           `Správne je: „${GB.esc(spravnaMoznost.textContent.trim())}“. ${q.v} ` +
           `<a class="pp-do-lekcie" href="${GB.odkaz(L.url)}">Lekcia: <span lang="en">${GB.esc(L.t)}</span></a>`;
       }

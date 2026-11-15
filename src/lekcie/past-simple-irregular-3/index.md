@@ -26,22 +26,37 @@ test:
     moznosti: ["goed", "went", "go"]
     spravna: 1
     vysvetlenie: "Go je samotár: go → went. Goed neexistuje."
+    zle:
+      0: "Go je nepravidelné – goed neexistuje."
+      2: "Go je základný tvar. Yesterday = minulosť."
   - otazka: "My mum ___ a new bike for me last week."
     moznosti: ["buyed", "bought", "brought"]
     spravna: 1
     vysvetlenie: "buy → bought (kúpila). Pozor, brought je minulý tvar od bring (priniesť)."
+    zle:
+      0: "Buy je nepravidelné – buyed neexistuje."
+      2: "Brought je od bring (priniesť). Kúpila = bought."
   - otazka: "Which verb is in the family <b>sing → sang</b>?"
     moznosti: ["swim → swam", "fly → flew", "keep → kept"]
     spravna: 0
     vysvetlenie: "Pri swim → swam sa samohláska zmení na a, rovnako ako pri sing → sang."
+    zle:
+      1: "Fly → flew patrí do inej rodiny (y → ew)."
+      2: "Keep → kept patrí do rodiny ee → e + t."
   - otazka: "Did you ___ the match on Saturday?"
     moznosti: ["saw", "see", "seed"]
     spravna: 1
     vysvetlenie: "V otázke s did je základný tvar: Did you see…? Minulý tvar nesie did."
+    zle:
+      0: "Po did je základný tvar – minulosť už nesie did."
+      2: "Seed neexistuje ako minulý tvar. Po did je základný tvar see."
   - otazka: "We ___ at home because it was cold."
     moznosti: ["was", "were", "be"]
     spravna: 1
     vysvetlenie: "be → was / were. Pri we, you, they je were."
+    zle:
+      0: "Was patrí k I / he / she / it. Pri we je were."
+      2: "Be je základný tvar. V minulosti je was / were."
 ---
 
 **Pravidelné** slovesá majú v minulom čase koncovku *-ed* (*play → played*). **Nepravidelné** slovesá ju nemajú. Ich minulý tvar sa treba naučiť: *go → went, eat → ate, buy → bought*.

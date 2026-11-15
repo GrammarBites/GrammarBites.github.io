@@ -24,22 +24,37 @@ test:
     moznosti: ["might", "might to", "mights"]
     spravna: 0
     vysvetlenie: "Možno sa ochladí → might + sloveso, bez to a bez -s."
+    zle:
+      1: "Za might nie je to: might get."
+      2: "Might sa nemení – žiadne -s."
   - otazka: "You ___ go to bed so late. You'll be tired."
     moznosti: ["might", "shouldn't", "might not"]
     spravna: 1
     vysvetlenie: "Je to rada (nemal by si) → shouldn't."
+    zle:
+      0: "Might = možno. Tu dávame radu – nemal by si."
+      2: "Might not = možno nie. Tu dávame radu – shouldn't."
   - otazka: "I'm not sure. I ___ go to the party. I haven't decided."
     moznosti: ["will", "might", "should"]
     spravna: 1
     vysvetlenie: "Nie som si istý → might (možno)."
+    zle:
+      0: "Will by znamenalo, že určite pôjdem. Ešte som sa nerozhodol."
+      2: "Should = mal by som (rada). Tu ide o neistotu → might."
   - otazka: "Ask the teacher. She ___ know the answer."
     moznosti: ["might", "mights", "might knows"]
     spravna: 0
     vysvetlenie: "Možno vie → She might know. Might sa nemení."
+    zle:
+      1: "Might sa nemení – žiadne -s."
+      2: "Za might je základný tvar, bez -s: know."
   - otazka: "Which sentence means 'Možno nepríde'?"
     moznosti: ["He won't come.", "He might not come.", "He shouldn't come."]
     spravna: 1
     vysvetlenie: "Might not = možno nie. Won't = určite nie, shouldn't = nemal by."
+    zle:
+      0: "Won't = určite nepríde. Možno nepríde = might not."
+      2: "Shouldn't = nemal by. Možno nepríde = might not."
 ---
 
 Keď niekomu radíme, často povieme aj **prečo** – čo by sa mohlo stať. Na radu použijeme **should**, na to, čo sa **možno** stane, **might**.

@@ -25,26 +25,44 @@ test:
     moznosti: ["which", "who", "where"]
     spravna: 1
     vysvetlenie: "Pilot je človek → who."
+    zle:
+      0: "Which je pre veci a zvieratá. Pilot je človek."
+      2: "Where je pre miesta. Pilot je človek."
   - otazka: "This is the phone ___ my dad gave me."
     moznosti: ["who", "which", "what"]
     spravna: 1
     vysvetlenie: "Telefón je vec → which (alebo that)."
+    zle:
+      0: "Who je pre ľudí. Telefón je vec."
+      2: "What sa ako vzťažné zámeno nepoužíva. Pri veci je which / that."
   - otazka: "The teacher ___ teaches us Maths is very kind."
     moznosti: ["that", "which", "what"]
     spravna: 0
     vysvetlenie: "Pri človeku môže byť who alebo that. Which je len pre veci."
+    zle:
+      1: "Which je len pre veci. Učiteľ je človek."
+      2: "What sa ako vzťažné zámeno nepoužíva. Pri človeku je who / that."
   - otazka: "Which is correct?"
     moznosti: ["The boy who he lives next door is funny.", "The boy who lives next door is funny.", "The boy which lives next door is funny."]
     spravna: 1
     vysvetlenie: "Who už zastupuje podmet – žiadne ďalšie he. A pri človeku je who, nie which."
+    zle:
+      0: "He je navyše – podmet už zastupuje who."
+      2: "Which je pre veci. Chlapec je človek → who."
   - otazka: "Join the sentences: This is my bag. I bought it yesterday."
     moznosti: ["This is my bag that I bought it yesterday.", "This is my bag that I bought yesterday.", "This is my bag who I bought yesterday."]
     spravna: 1
     vysvetlenie: "It nahradilo that, preto ho už nepíšeme. Taška je vec → that / which, nie who."
+    zle:
+      0: "It je navyše – tašku už zastupuje that."
+      2: "Who je pre ľudí. Taška je vec."
   - otazka: "That's the park ___ we play football."
     moznosti: ["which", "who", "where"]
     spravna: 2
     vysvetlenie: "Park je miesto a hovoríme, čo sa tam deje → where (kde)."
+    zle:
+      0: "Which by zastupovalo samotný park. Hovoríme, čo sa tam deje → where."
+      1: "Who je pre ľudí. Park je miesto."
 ---
 
 V slovenčine spájame vety slovom **ktorý, ktorá, ktoré**: *Mám kamaráta, ktorý hovorí troma jazykmi.* V angličtine záleží na tom, či hovoríme o **človeku** alebo o **veci**.

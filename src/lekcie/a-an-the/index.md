@@ -27,22 +27,37 @@ test:
     moznosti: ["a", "an", "the"]
     spravna: 0
     vysvetlenie: "Po Is there… používame a / an. Hotel začína spoluhláskou → a hotel."
+    zle:
+      1: "an dávame pred samohlásku, ale hotel začína spoluhláskou h."
+      2: "the by znamenalo jeden konkrétny hotel, o ktorom už vieme. Pýtame sa na hocijaký hotel."
   - otazka: "There's ___ old church in the square."
     moznosti: ["a", "an", "the"]
     spravna: 1
     vysvetlenie: "Old začína samohláskou → an old church."
+    zle:
+      0: "a dávame pred spoluhlásku, ale old začína samohláskou o."
+      2: "the by znamenalo kostol, o ktorom sme už hovorili. Tu ho spomíname prvýkrát."
   - otazka: "Go along this road. The bank is on ___ left."
     moznosti: ["a", "the", "–"]
     spravna: 1
     vysvetlenie: "Pri polohe vždy the: on the left, on the right, on the corner."
+    zle:
+      0: "a znamená „nejaký“. Ľavá strana je len jedna – pri polohe dávame the."
+      2: "Bez člena to nejde – on the left je pevné spojenie."
   - otazka: "I saw a dog in the park. ___ dog was very big."
     moznosti: ["A", "An", "The"]
     spravna: 2
     vysvetlenie: "Psa sme už spomenuli (a dog), preto teraz the dog."
+    zle:
+      0: "a dog sme už povedali v prvej vete. Keď o tom istom psovi hovoríme znova, je to the."
+      1: "an sa dáva pred samohlásku a dog začína na d. A navyše psa sme už spomenuli → the."
   - otazka: "Excuse me, where's ___ police station? (v meste je len jedna)"
     moznosti: ["a", "the", "an"]
     spravna: 1
     vysvetlenie: "Keď je v meste len jedna, použijeme the: the police station."
+    zle:
+      0: "a znamená „hocijaká“. Keď je v meste len jedna policajná stanica, je to the."
+      2: "an sa dáva pred samohlásku, police začína na p. A keď je jediná, použijeme the."
 ---
 
 Táto lekcia nadväzuje na [určitý člen THE pri názvoch miest](/lekcie/the-definite-article/). Pred podstatnými menami v jednotnom čísle (*a bank, the river*) musí v angličtine stáť člen, aj keď ho v slovenčine nemáme.

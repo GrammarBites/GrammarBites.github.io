@@ -26,22 +26,37 @@ test:
     moznosti: ["–", "am", "is"]
     spravna: 1
     vysvetlenie: "Bez BE to nejde. Pri I je am: I am (I'm) going to…"
+    zle:
+      0: "Bez BE (am / is / are) to nejde – going to vždy potrebuje BE."
+      2: "Is patrí k he / she / it. Pri I je am."
   - otazka: "My sister ___ going to buy a new phone."
     moznosti: ["are", "is", "am"]
     spravna: 1
     vysvetlenie: "My sister = she → is going to."
+    zle:
+      0: "Are patrí k you / we / they. My sister = she."
+      2: "Am patrí len k I. My sister = she."
   - otazka: "We ___ going to watch the match. We're too tired."
     moznosti: ["aren't", "isn't", "don't"]
     spravna: 0
     vysvetlenie: "Zápor: BE + not. Pri we je aren't."
+    zle:
+      1: "Isn't patrí k he / she / it. Pri we je aren't."
+      2: "Don't sa pri going to nepoužíva. Zápor robíme z BE: aren't."
   - otazka: "___ they going to play football after school?"
     moznosti: ["Do", "Are", "Is"]
     spravna: 1
     vysvetlenie: "Otázka: BE ide na začiatok. They → Are."
+    zle:
+      0: "Do sa pri going to nepoužíva. Otázku robíme z BE."
+      2: "Is patrí k he / she / it. Pri they je Are."
   - otazka: "Which is correct?"
     moznosti: ["He going to read.", "He's going to read.", "He's going to reads."]
     spravna: 1
     vysvetlenie: "BE (is) nesmie chýbať a po going to je sloveso v základnom tvare: He's going to read."
+    zle:
+      0: "Chýba BE: He's (He is) going to read."
+      2: "Za going to je sloveso v základnom tvare – bez -s: read."
 ---
 
 Keď hovoríme o **pláne alebo zámere** – o niečom, čo sme sa už rozhodli urobiť – použijeme **be going to**. A tu je to najdôležitejšie: na začiatku je **BE**. Bez neho to nefunguje.

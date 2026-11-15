@@ -24,22 +24,37 @@ test:
     moznosti: ["been", "gone", "go"]
     spravna: 1
     vysvetlenie: "Peter tu nie je, ešte je u zubára → gone."
+    zle:
+      0: "Been by znamenalo, že tam bol a už sa vrátil. Peter je ešte u zubára."
+      2: "Za have / has je 3. tvar (past participle). Go je základný tvar."
   - otazka: "Have you ever ___ to Italy?"
     moznosti: ["gone", "been", "went"]
     spravna: 1
     vysvetlenie: "Skúsenosť (ever) → been."
+    zle:
+      0: "Gone znamená, že tam odišiel a ešte je tam. Pri skúsenosti (ever) je been."
+      2: "Went je minulý čas (2. tvar). Za have je 3. tvar."
   - otazka: "Hi, I'm home! I've ___ to the library. Here are your books."
     moznosti: ["been", "gone", "going"]
     spravna: 0
     vysvetlenie: "Hovorí to doma, už je späť → been."
+    zle:
+      1: "Gone by znamenalo, že je ešte v knižnici. On je však už doma."
+      2: "Za have je 3. tvar (past participle), nie -ing."
   - otazka: "My parents aren't here. They've ___ to a concert."
     moznosti: ["been", "gone", "go"]
     spravna: 1
     vysvetlenie: "Nie sú doma, sú ešte na koncerte → gone."
+    zle:
+      0: "Been by znamenalo, že tam boli a vrátili sa. Lenže ešte nie sú doma."
+      2: "Za have je 3. tvar (past participle), go je základný tvar."
   - otazka: "Which is correct?"
     moznosti: ["I've never gone to Spain.", "I've never been to Spain.", "I've never be to Spain."]
     spravna: 1
     vysvetlenie: "Skúsenosť (never) → been. Tretí tvar slovesa be je been."
+    zle:
+      0: "Gone znamená „odišiel a ešte je tam“. Pri skúsenosti (never) je been."
+      2: "Za have je 3. tvar: be – was/were – been."
 ---
 
 Obe slová sú v [present perfect](/lekcie/present-perfect/) a obe sa po slovensky často preložia ako *bol / išiel*. Rozdiel je v tom, **kde je človek teraz**.

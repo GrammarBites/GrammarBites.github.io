@@ -24,22 +24,37 @@ test:
     moznosti: ["plays", "played", "is playing"]
     spravna: 1
     vysvetlenie: "Po said: present simple → past simple (played)."
+    zle:
+      0: "Po said sa čas posunie o krok späť: plays → played."
+      2: "Is playing je priebehový čas. Pôvodne bolo I play (present simple)."
   - otazka: "„I'm reading a book.“ → She said she ___ a book."
     moznosti: ["was reading", "is reading", "read"]
     spravna: 0
     vysvetlenie: "Present continuous → past continuous (was reading)."
+    zle:
+      1: "Po said sa čas posunie o krok späť: is → was."
+      2: "Read je past simple. Present continuous sa posunie na past continuous."
   - otazka: "„I'll be late.“ → Dad said he ___ late."
     moznosti: ["will be", "would be", "was"]
     spravna: 1
     vysvetlenie: "will → would."
+    zle:
+      0: "Po said sa will posunie o krok späť: would."
+      2: "Was by bol posun z is. Pôvodne bolo will → would."
   - otazka: "„We can't come.“ → They said they ___ come."
     moznosti: ["can't", "couldn't", "didn't can"]
     spravna: 1
     vysvetlenie: "can't → couldn't."
+    zle:
+      0: "Po said sa can't posunie o krok späť: couldn't."
+      2: "Can sa s did nespája. Minulosť je couldn't."
   - otazka: "„I love my cat.“ → Lucy said ___ loved ___ cat."
     moznosti: ["I / my", "she / her", "she / my"]
     spravna: 1
     vysvetlenie: "Lucy = she: I → she, my → her."
+    zle:
+      0: "Lucy hovorí o sebe – keď to prerozprávame, I → she, my → her."
+      2: "My sa tiež mení: Lucy's cat = her cat."
 ---
 
 **Priama reč** (*direct speech*) sú presné slová, ktoré niekto povedal – v úvodzovkách. **Nepriama reč** (*reported speech*) je, keď ich **prerozprávame** niekomu ďalšiemu.

@@ -24,22 +24,37 @@ test:
     moznosti: ["musts", "must", "must to"]
     spravna: 1
     vysvetlenie: "Must je pre všetky osoby rovnaké, bez -s a bez to: She must study."
+    zle:
+      0: "Must sa nemení – žiadne -s."
+      2: "Za must nie je to: must study."
   - otazka: "You ___ shout in the library. It's a rule."
     moznosti: ["must", "mustn't", "don't must"]
     spravna: 1
     vysvetlenie: "Je to zákaz → mustn't (nesmieš)."
+    zle:
+      0: "Must = musíš. Je to však zákaz – nesmieš kričať."
+      2: "Must sa so slovom don't nespája. Zákaz je mustn't."
   - otazka: "___ I clean the board? – Yes, you must."
     moznosti: ["Do", "Must", "Am"]
     spravna: 1
     vysvetlenie: "Otázku utvoríme tak, že must dáme na začiatok: Must I…?"
+    zle:
+      0: "Must si otázku robí samo, do netreba: Must I…?"
+      2: "Am tu nepatrí – otázku robí must: Must I…?"
   - otazka: "Must we wear a uniform? – No, we ___ ."
     moznosti: ["mustn't", "don't have to", "don't must"]
     spravna: 1
     vysvetlenie: "Nemusíme = don't have to. Mustn't by znamenalo, že je to zakázané."
+    zle:
+      0: "Mustn't by znamenalo, že je to zakázané. Myslíme „nemusíme“."
+      2: "Must sa so slovom don't nespája. Nemusíme = don't have to."
   - otazka: "Which is correct?"
     moznosti: ["He must goes home.", "He must go home.", "He must to go home."]
     spravna: 1
     vysvetlenie: "Po must je sloveso v základnom tvare: must go."
+    zle:
+      0: "Za must je základný tvar – bez -s."
+      2: "Za must nie je to: must go."
 ---
 
 **Must** je modálne sloveso. Hovoríme ním, čo **musíme** urobiť (povinnosť, pravidlo) a v zápore, čo **nesmieme** (zákaz).

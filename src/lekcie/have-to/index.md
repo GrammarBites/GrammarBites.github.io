@@ -24,22 +24,37 @@ test:
     moznosti: ["have", "has", "haves"]
     spravna: 1
     vysvetlenie: "My brother = he → has to."
+    zle:
+      0: "Have patrí k I / you / we / they. Pri he je has."
+      2: "Haves neexistuje. Pri he je has."
   - otazka: "It's Sunday. We ___ go to school."
     moznosti: ["don't have to", "doesn't have to", "haven't to"]
     spravna: 0
     vysvetlenie: "Nemusíme (nie je to nutné) → don't have to. Pri we je don't."
+    zle:
+      1: "Doesn't patrí k he / she / it. Pri we je don't."
+      2: "Haven't to nie je správne. Zápor have to robíme cez don't: don't have to."
   - otazka: "___ your sister have to wear glasses?"
     moznosti: ["Do", "Does", "Has"]
     spravna: 1
     vysvetlenie: "Otázka sa tvorí s do / does. Your sister = she → Does."
+    zle:
+      0: "Do patrí k I / you / we / they. Your sister = she → Does."
+      2: "Has na začiatku otázky tu nepatrí – have to robí otázku cez do / does."
   - otazka: "Do you have to tidy your room? – Yes, I ___ ."
     moznosti: ["have", "do", "must"]
     spravna: 1
     vysvetlenie: "Krátka odpoveď zopakuje pomocné sloveso z otázky: Yes, I do."
+    zle:
+      0: "Zopakujeme pomocné sloveso z otázky. Otázka začínala Do."
+      2: "Must tu nepatrí – pýtali sme sa s Do, tak odpovieme Yes, I do."
   - otazka: "Which is correct?"
     moznosti: ["He doesn't has to go.", "He doesn't have to go.", "He don't have to go."]
     spravna: 1
     vysvetlenie: "Za doesn't je vždy základný tvar: doesn't have to. -s je už v does."
+    zle:
+      0: "Za doesn't je základný tvar. -s už je v does, tak have ostáva bez -s."
+      2: "Pri he je doesn't, nie don't."
 ---
 
 Keď niečo **musíme** urobiť – lebo je to pravidlo, povinnosť alebo to od nás niekto chce – použijeme **have to**. Dôležitejšie je však niečo iné: **don't have to** znamená **nemusím** (nie je to nutné).

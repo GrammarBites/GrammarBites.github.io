@@ -25,22 +25,37 @@ test:
     moznosti: ["make", "have", "do"]
     spravna: 1
     vysvetlenie: "Oddych: have a rest."
+    zle:
+      0: "Make a rest sa nepovie. Oddýchnuť si = have a rest."
+      2: "Do a rest sa nepovie. Oddýchnuť si = have a rest."
   - otazka: "Oops! I ___ a mistake."
     moznosti: ["did", "made", "had"]
     spravna: 1
     vysvetlenie: "Chyba: make a mistake (nie do)."
+    zle:
+      0: "Do a mistake je častá chyba. Urobiť chybu = make a mistake."
+      2: "Had a mistake sa nepovie. Je to make a mistake."
   - otazka: "Can I ___ a suggestion? Let's go to the park."
     moznosti: ["make", "have", "take"]
     spravna: 0
     vysvetlenie: "Návrh: make a suggestion."
+    zle:
+      1: "Have a suggestion sa nepovie. Navrhnúť = make a suggestion."
+      2: "Take a suggestion sa nepovie. Navrhnúť = make a suggestion."
   - otazka: "The noun from 'explain' is…"
     moznosti: ["explainment", "explanation", "explaination"]
     spravna: 1
     vysvetlenie: "explain → explanation (pozor na pravopis: bez i)."
+    zle:
+      0: "Explainment neexistuje."
+      2: "Pozor na pravopis: explanation – bez i."
   - otazka: "We need to ___ a plan for the weekend."
     moznosti: ["make", "have", "do"]
     spravna: 0
     vysvetlenie: "Plán: make a plan."
+    zle:
+      1: "Have a plan znamená mať plán. Urobiť plán = make a plan."
+      2: "Do a plan sa nepovie. Je to make a plan."
 ---
 
 V angličtine môžeme mnohé veci povedať dvoma spôsobmi: **slovesom** alebo spojením **have / make + podstatné meno**. Význam je rovnaký.

@@ -26,22 +26,37 @@ test:
     moznosti: ["was", "were", "are"]
     spravna: 1
     vysvetlenie: "My parents = they → were. Last summer = minulosť."
+    zle:
+      0: "Was patrí k I / he / she / it. My parents = they → were."
+      2: "Are je prítomný čas. Last summer = minulosť."
   - otazka: "I ___ tired yesterday, so I went to bed early."
     moznosti: ["was", "were", "am"]
     spravna: 0
     vysvetlenie: "Pri I je was."
+    zle:
+      1: "Were patrí k you / we / they. Pri I je was."
+      2: "Am je prítomný čas. Yesterday = minulosť."
   - otazka: "The film ___ very good. It was boring."
     moznosti: ["weren't", "wasn't", "didn't"]
     spravna: 1
     vysvetlenie: "The film = it → wasn't."
+    zle:
+      0: "Weren't patrí k you / we / they. The film = it → wasn't."
+      2: "Didn't sa pri slovese be nepoužíva. Be si zápor robí samo."
   - otazka: "___ you at the cinema on Saturday? – Yes, we were."
     moznosti: ["Was", "Did", "Were"]
     spravna: 2
     vysvetlenie: "Pri you je were a v otázke ide na začiatok: Were you…?"
+    zle:
+      0: "Was patrí k I / he / she / it. Pri you je were."
+      1: "Did sa pri slovese be nepoužíva. Na začiatok ide were."
   - otazka: "There ___ two dogs in the garden."
     moznosti: ["was", "were", "is"]
     spravna: 1
     vysvetlenie: "Two dogs = množné číslo → There were."
+    zle:
+      0: "Two dogs je množné číslo → were, nie was."
+      2: "Is je prítomný čas a jednotné číslo. Two dogs → were."
 ---
 
 Sloveso **be** (byť) má v prítomnom čase tvary *am, is, are*. V minulom čase má len dva tvary: **was** a **were**.

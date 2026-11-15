@@ -25,22 +25,37 @@ test:
     moznosti: ["cousin", "uncle", "nephew"]
     spravna: 1
     vysvetlenie: "Brat mamy alebo otca = uncle (ujo, strýko)."
+    zle:
+      0: "Cousin je bratranec alebo sesternica – dieťa strýka či tety."
+      2: "Nephew je synovec – syn brata alebo sestry."
   - otazka: "My uncle's daughter is my ___."
     moznosti: ["niece", "aunt", "cousin"]
     spravna: 2
     vysvetlenie: "Dieťa strýka alebo tety = cousin (bratranec, sesternica)."
+    zle:
+      0: "Niece je neter – dcéra môjho brata alebo sestry."
+      1: "Aunt je teta – sestra mamy alebo otca."
   - otazka: "I'm Sam. My sister has got a son. He's my ___."
     moznosti: ["nephew", "cousin", "grandson"]
     spravna: 0
     vysvetlenie: "Syn môjho súrodenca = nephew (synovec). Dcéra = niece."
+    zle:
+      1: "Cousin je dieťa strýka alebo tety. Syn sestry je synovec."
+      2: "Grandson je vnuk – syn môjho dieťaťa."
   - otazka: "I haven't got any brothers or sisters. I'm ___."
     moznosti: ["the eldest", "an only child", "a middle child"]
     spravna: 1
     vysvetlenie: "Bez súrodencov = an only child (jedináčik)."
+    zle:
+      0: "The eldest je najstarší zo súrodencov. Ty nemáš žiadnych."
+      2: "A middle child je prostredné dieťa – má súrodencov."
   - otazka: "Which sentence is correct?"
     moznosti: ["Tom is uncle of Mia.", "Tom is Mia's uncle.", "Tom is Mias uncle."]
     spravna: 1
     vysvetlenie: "Vlastníctvo vyjadríme 's: Mia's uncle = Miin strýko."
+    zle:
+      0: "Takto vlastníctvo v angličtine nevyjadrujeme. Použijeme 's: Mia's uncle."
+      2: "Chýba apostrof: Mia's."
 ---
 
 V rodine má každý viac úloh naraz. Napríklad Kate je *mother* (svojich detí), *wife* (svojho muža), *daughter* (svojich rodičov) aj *sister* (svojho brata). Preto vždy záleží na tom, **ku komu** vzťah hovoríme.

@@ -24,22 +24,37 @@ test:
     moznosti: ["will be", "wills be", "will is"]
     spravna: 0
     vysvetlenie: "will + základný tvar slovesa: will be."
+    zle:
+      1: "Will sa nemení – žiadne -s."
+      2: "Za will je základný tvar be, nie is."
   - otazka: "She ___ come to the party. She's ill."
     moznosti: ["won't", "doesn't will", "willn't"]
     spravna: 0
     vysvetlenie: "Zápor je won't (= will not)."
+    zle:
+      1: "Will sa s does nespája. Zápor je won't."
+      2: "Willn't neexistuje. Zápor je won't."
   - otazka: "Choose the correct question."
     moznosti: ["You will help me?", "Will you help me?", "Do you will help me?"]
     spravna: 1
     vysvetlenie: "V otázke ide will na začiatok: Will you help me?"
+    zle:
+      0: "V otázke ide will pred podmet."
+      2: "Do sa s will nespája."
   - otazka: "Oh no, I've forgotten my pen! – Don't worry, ___ you mine."
     moznosti: ["I lend", "I'll lend", "I'm lend"]
     spravna: 1
     vysvetlenie: "Ponuka pomoci: I'll lend you mine (Požičiam ti svoje)."
+    zle:
+      0: "Lend je prítomný čas. Ponuka pomoci v tej chvíli → I'll lend."
+      2: "I'm lend nie je správne. Ponuka → I'll lend."
   - otazka: "Will you be a famous footballer? – No, I ___."
     moznosti: ["don't", "won't", "willn't"]
     spravna: 1
     vysvetlenie: "Krátka odpoveď: Yes, I will. / No, I won't."
+    zle:
+      0: "Pýtali sme sa s Will, tak odpovieme won't, nie don't."
+      2: "Willn't neexistuje. Zápor je won't."
 ---
 
 S **will** hovoríme o budúcnosti. Dobrá správa: tvar je **rovnaký pre všetky osoby** a po *will* ide vždy **základný tvar** slovesa: *I will go, she will go, they will go*.

@@ -25,22 +25,37 @@ test:
     moznosti: ["must finished", "must be finished", "must is finished"]
     spravna: 1
     vysvetlenie: "Modálne sloveso + be + 3. stĺpec: must be finished."
+    zle:
+      0: "Chýba be: must be finished."
+      2: "Za must je základný tvar be, nie is."
   - otazka: "AV: You can see the castle from here. → PV: The castle ___ from here."
     moznosti: ["can be seen", "can seen", "can be see"]
     spravna: 0
     vysvetlenie: "Can ostáva, pridáme be a sloveso dáme do 3. stĺpca: can be seen."
+    zle:
+      1: "Chýba be: can be seen."
+      2: "Za be je 3. stĺpec: seen, nie see."
   - otazka: "Old batteries ___ thrown in the bin."
     moznosti: ["shouldn't be", "shouldn't", "aren't should"]
     spravna: 0
     vysvetlenie: "Zápor: modálne sloveso + not + be: shouldn't be thrown."
+    zle:
+      1: "Chýba be: shouldn't be thrown."
+      2: "Should sa so slovom aren't nespája. Zápor je shouldn't be."
   - otazka: "___ this jacket be washed in the machine?"
     moznosti: ["Is", "Can", "Does"]
     spravna: 1
     vysvetlenie: "Otázka: modálne sloveso ide na začiatok: Can this jacket be washed…?"
+    zle:
+      0: "Otázku tu robí modálne sloveso, nie is: Can this jacket be washed…?"
+      2: "Does sa pri modálnych slovesách nepoužíva. Na začiatok ide can."
   - otazka: "The concert ___ cancelled. Nobody knows yet."
     moznosti: ["might be", "might is", "might"]
     spravna: 0
     vysvetlenie: "Možno ho zrušia → might be + 3. stĺpec."
+    zle:
+      1: "Za might je základný tvar be, nie is."
+      2: "Chýba be: might be cancelled."
 ---
 
 Trpný rod funguje aj s **modálnymi slovesami** (*can, must, should, might, will*). Je to ešte jednoduchšie ako v časoch – **be** je tu **vždy v základnom tvare**.

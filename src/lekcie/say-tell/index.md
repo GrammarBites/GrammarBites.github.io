@@ -25,22 +25,37 @@ test:
     moznosti: ["said", "told", "say"]
     spravna: 1
     vysvetlenie: "Za slovesom je osoba (me) → told."
+    zle:
+      0: "Said nemá za sebou osobu. Je tu me → told."
+      2: "Say je prítomný čas a navyše je tu osoba (me) → told."
   - otazka: "He ___ that he would be late."
     moznosti: ["said", "told", "told to"]
     spravna: 0
     vysvetlenie: "Za slovesom nie je osoba → said."
+    zle:
+      1: "Told potrebuje za sebou osobu (told me). Tu osoba nie je."
+      2: "Told to sa takto nepoužíva. Bez osoby → said."
   - otazka: "Grandpa always ___ funny stories."
     moznosti: ["says", "tells", "said to"]
     spravna: 1
     vysvetlenie: "Pevné spojenie: tell a story."
+    zle:
+      0: "Says sa so stories nespája. Pevné spojenie je tell a story."
+      2: "Said to sa sem nehodí. Pevné spojenie je tell stories."
   - otazka: "Don't forget to ___ thank you."
     moznosti: ["tell", "say", "told"]
     spravna: 1
     vysvetlenie: "Pevné spojenie: say thank you."
+    zle:
+      0: "Tell thank you sa nepovie. Pevné spojenie je say thank you."
+      2: "Told je minulý tvar a navyše patrí k tell. Správne je say thank you."
   - otazka: "Which sentence is correct?"
     moznosti: ["Say me your name.", "Tell me your name.", "Tell to me your name."]
     spravna: 1
     vysvetlenie: "tell + osoba (bez to) + čo: Tell me your name."
+    zle:
+      0: "Say sa s me hneď za sebou nespája. Povedz mi = Tell me."
+      2: "Za tell nie je to: tell me."
 ---
 
 Po slovensky povieme v oboch prípadoch **povedať**. V angličtine sa *say* a *tell* líšia tým, **čo ide za nimi**.

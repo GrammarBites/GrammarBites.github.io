@@ -25,22 +25,37 @@ test:
     moznosti: ["tall", "taller", "more tall"]
     spravna: 1
     vysvetlenie: "Tall je krátke prídavné meno → taller."
+    zle:
+      0: "Tall je základný tvar. Pri porovnaní s than potrebujeme 2. stupeň."
+      2: "Tall je krátke prídavné meno – pridávame -er, nie more."
   - otazka: "This book is ___ than that one."
     moznosti: ["interestinger", "more interesting", "most interesting"]
     spravna: 1
     vysvetlenie: "Interesting je dlhé prídavné meno → more interesting."
+    zle:
+      0: "Interesting je dlhé prídavné meno – pred dlhé dávame more, nie -er."
+      2: "Most interesting je 3. stupeň (najzaujímavejší). Pri than je 2. stupeň."
   - otazka: "Today is ___ than yesterday."
     moznosti: ["hoter", "hotter", "more hot"]
     spravna: 1
     vysvetlenie: "Krátka samohláska + jedna spoluhláska → zdvojíme: hotter."
+    zle:
+      0: "Pri hot sa zdvojí spoluhláska: hotter."
+      2: "Hot je krátke prídavné meno – pridávame -er, nie more."
   - otazka: "My mark in English is ___ than in Maths."
     moznosti: ["gooder", "better", "more good"]
     spravna: 1
     vysvetlenie: "Good je nepravidelné: good → better."
+    zle:
+      0: "Good je nepravidelné – gooder neexistuje."
+      2: "Good je nepravidelné, more good sa nepoužíva."
   - otazka: "A car is faster ___ a bike."
     moznosti: ["than", "that", "then"]
     spravna: 0
     vysvetlenie: "Pri porovnávaní používame than (ako)."
+    zle:
+      1: "That znamená „to, tamto“ alebo „že“. Pri porovnaní je than."
+      2: "Then znamená „potom“. Pri porovnaní je than – pozor, líšia sa jedným písmenom."
 ---
 
 Keď porovnávame **dve** veci alebo osoby, používame **druhý stupeň** prídavného mena a slovo **than** (ako).

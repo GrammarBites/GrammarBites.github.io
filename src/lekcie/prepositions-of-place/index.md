@@ -24,22 +24,37 @@ test:
     moznosti: ["on", "under", "in"]
     spravna: 1
     vysvetlenie: "pod = under."
+    zle:
+      0: "On = na. Mačka je pod posteľou."
+      2: "In = v, vnútri. Mačka je pod posteľou."
   - otazka: "The school is ___ the park and the shop."
     moznosti: ["next to", "between", "behind"]
     spravna: 1
     vysvetlenie: "Medzi dvoma vecami → between … and …"
+    zle:
+      0: "Next to = vedľa jednej veci. Škola je medzi dvoma vecami."
+      2: "Behind = za. Škola je medzi parkom a obchodom."
   - otazka: "Pred = ?"
     moznosti: ["in front of", "behind", "in"]
     spravna: 0
     vysvetlenie: "pred = in front of. behind = za."
+    zle:
+      1: "Behind = za – presný opak."
+      2: "In = v, vnútri."
   - otazka: "My phone is ___ my bag."
     moznosti: ["on", "in", "between"]
     spravna: 1
     vysvetlenie: "Vnútri tašky → in."
+    zle:
+      0: "On = na. Telefón je vnútri tašky."
+      2: "Between = medzi dvoma vecami."
   - otazka: "Which is correct?"
     moznosti: ["The lamp is next the bed.", "The lamp is next to the bed.", "The lamp is next of the bed."]
     spravna: 1
     vysvetlenie: "Vedľa = next to – vždy s to."
+    zle:
+      0: "Chýba to: next to."
+      2: "Next of nie je správne. Vedľa = next to."
 ---
 
 Na otázku ***Where's the …?*** (Kde je …?) odpovieme vetou s **predložkou miesta**.

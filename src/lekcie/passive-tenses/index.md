@@ -26,22 +26,37 @@ test:
     moznosti: ["is stolen", "was stolen", "has stolen"]
     spravna: 1
     vysvetlenie: "V AV je past simple (stole) → BE v past simple: was + stolen."
+    zle:
+      0: "Is je prítomný čas. V činnom rode je stole (minulosť) → was."
+      2: "Has stolen je činný rod (niekto ukradol). V trpnom chýba been."
   - otazka: "AV: They have repaired the road. → PV: The road ___ ."
     moznosti: ["has been repaired", "has repaired", "was repaired"]
     spravna: 0
     vysvetlenie: "V AV je present perfect (have repaired) → BE v present perfect: has been + repaired."
+    zle:
+      1: "Chýba been. Has repaired by znamenalo, že cesta niečo opravila."
+      2: "Was by bolo pre past simple. V činnom rode je have repaired → has been."
   - otazka: "AV: We will send the photos tomorrow. → PV: The photos ___ tomorrow."
     moznosti: ["will sent", "will be sent", "are sent"]
     spravna: 1
     vysvetlenie: "Future: will be + 3. stĺpec. Be nesmie chýbať."
+    zle:
+      0: "Chýba be: will be sent."
+      2: "Are sent je prítomný čas. V činnom rode je will → will be sent."
   - otazka: "These rooms ___ cleaned every day."
     moznosti: ["must be", "must", "must are"]
     spravna: 0
     vysvetlenie: "Modálne sloveso + be + 3. stĺpec: must be cleaned."
+    zle:
+      1: "Chýba be: must be cleaned."
+      2: "Za must je základný tvar be, nie are."
   - otazka: "The castle ___ in the 14th century."
     moznosti: ["was built", "was build", "is building"]
     spravna: 0
     vysvetlenie: "Minulosť → was + 3. stĺpec (build – built – built)."
+    zle:
+      1: "Za was je 3. stĺpec: built, nie build."
+      2: "Is building znamená „práve stavia“. Hrad postavili v minulosti → was built."
 ---
 
 Trpný rod už vieš tvoriť v prítomnom čase – pozri [Passive voice: present](/lekcie/passive-present/). Dobrá správa: v ostatných časoch to funguje **úplne rovnako**. Platia tie isté 4 kroky a **mení sa iba sloveso BE** – dáme ho do **rovnakého času**, v akom bola veta v činnom rode.

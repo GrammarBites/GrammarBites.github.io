@@ -27,22 +27,37 @@ test:
     moznosti: ["Do", "Does", "Are"]
     spravna: 0
     vysvetlenie: "Pri you je Do: Do you live…?"
+    zle:
+      1: "Does patrí k he / she / it. Pri you je Do."
+      2: "Are by sa hodilo k slovesu be. Live je bežné sloveso → Do."
   - otazka: "Does your sister ___ the guitar?"
     moznosti: ["plays", "play", "playing"]
     spravna: 1
     vysvetlenie: "Po does je sloveso v základnom tvare, bez -s: Does she play…?"
+    zle:
+      0: "Po does je sloveso bez -s – -s už je v does."
+      2: "Po does je základný tvar, nie -ing."
   - otazka: "Do penguins live in the Arctic? – No, ___."
     moznosti: ["they don't", "they doesn't", "they aren't"]
     spravna: 0
     vysvetlenie: "Penguins = they → No, they don't."
+    zle:
+      1: "Doesn't patrí k he / she / it. Penguins = they → don't."
+      2: "Pýtali sme sa s Do, tak odpovieme don't, nie aren't."
   - otazka: "What time ___ Henry leave home?"
     moznosti: ["do", "does", "is"]
     spravna: 1
     vysvetlenie: "Henry = he → does: What time does Henry leave home?"
+    zle:
+      0: "Do patrí k I / you / we / they. Henry = he → does."
+      2: "Is by sa hodilo k slovesu be. Leave je bežné sloveso → does."
   - otazka: "Which question is correct?"
     moznosti: ["Where you live?", "Where do you live?", "Where does you live?"]
     spravna: 1
     vysvetlenie: "Opytovacie slovo + do + you + sloveso: Where do you live?"
+    zle:
+      0: "Chýba do: Where do you live?"
+      2: "Does patrí k he / she / it. Pri you je do."
 ---
 
 Táto lekcia nadväzuje na [oznamovacie a záporné vety v present simple](/lekcie/present-simple/).

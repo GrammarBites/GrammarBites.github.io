@@ -28,22 +28,37 @@ test:
     moznosti: ["is running", "are running", "is runing"]
     spravna: 0
     vysvetlenie: "The dog = it, preto is. Pri run sa zdvojuje n: running."
+    zle:
+      1: "Are patrí k you / we / they. The dog = it → is."
+      2: "Pri run sa n zdvojí: running."
   - otazka: "I ___ my homework at the moment."
     moznosti: ["am doing", "is doing", "doing"]
     spravna: 0
     vysvetlenie: "Pri I používame am. Bez am / is / are veta nie je správna."
+    zle:
+      1: "Is patrí k he / she / it. Pri I je am."
+      2: "Chýba am. Bez am / is / are veta nie je správna."
   - otazka: "The children ___ a horse."
     moznosti: ["is riding", "are rideing", "are riding"]
     spravna: 2
     vysvetlenie: "The children = they, preto are. Pri ride koncové -e zmizne: riding."
+    zle:
+      0: "The children je množné číslo → are."
+      1: "Pri ride koncové e vypadne: riding."
   - otazka: "Tom ___ TV now. He's reading."
     moznosti: ["isn't watching", "aren't watching", "not watching"]
     spravna: 0
     vysvetlenie: "Zápor pri he (Tom) je isn't + sloveso-ing."
+    zle:
+      1: "Aren't patrí k you / we / they. Tom = he → isn't."
+      2: "Chýba isn't. Bez am / is / are to nejde."
   - otazka: "Which sentence is correct?"
     moznosti: ["We aren't swiming.", "We aren't swimming.", "We isn't swimming."]
     spravna: 1
     vysvetlenie: "We + aren't. Pri swim sa zdvojuje m: swimming."
+    zle:
+      0: "Pri swim sa m zdvojí: swimming."
+      2: "Isn't patrí k he / she / it. Pri we je aren't."
 ---
 
 ## Pravidlo

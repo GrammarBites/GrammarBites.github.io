@@ -25,26 +25,44 @@ test:
     moznosti: ["taller", "tallest", "most tall"]
     spravna: 1
     vysvetlenie: "Najviac zo všetkých → tretí stupeň: the tallest."
+    zle:
+      0: "Taller je 2. stupeň (vyšší než…). Najvyšší zo všetkých → tallest."
+      2: "Tall je krátke prídavné meno – pridávame -est, nie most."
   - otazka: "This is the ___ book I have."
     moznosti: ["most interesting", "interestingest", "more interesting"]
     spravna: 0
     vysvetlenie: "Interesting je dlhé prídavné meno → the most interesting."
+    zle:
+      1: "Interesting je dlhé – -est sa k nemu nepridáva."
+      2: "More interesting je 2. stupeň. Pri the … I have je 3. stupeň."
   - otazka: "It's the ___ day of the year."
     moznosti: ["hotest", "hottest", "most hot"]
     spravna: 1
     vysvetlenie: "Krátka samohláska + jedna spoluhláska → zdvojíme: the hottest."
+    zle:
+      0: "Pri hot sa t zdvojí: hottest."
+      2: "Hot je krátke prídavné meno – pridávame -est, nie most."
   - otazka: "She is the ___ singer in the world."
     moznosti: ["goodest", "better", "best"]
     spravna: 2
     vysvetlenie: "Good je nepravidelné: good – better – the best."
+    zle:
+      0: "Good je nepravidelné – goodest neexistuje."
+      1: "Better je 2. stupeň (lepší). Najlepšia na svete → best."
   - otazka: "That was the ___ film I have ever seen. It was terrible!"
     moznosti: ["baddest", "worse", "worst"]
     spravna: 2
     vysvetlenie: "Bad je nepravidelné: bad – worse – the worst."
+    zle:
+      0: "Bad je nepravidelné – baddest neexistuje."
+      1: "Worse je 2. stupeň (horší). Najhorší → worst."
   - otazka: "Which is correct?"
     moznosti: ["He's the funniest in the family.", "He's funniest in the family.", "He's the most funniest in the family."]
     spravna: 0
     vysvetlenie: "Tretí stupeň má the a buď -est, alebo the most – nikdy oboje."
+    zle:
+      1: "Pred 3. stupňom chýba the."
+      2: "Most a -est spolu nikdy nedávame."
 ---
 
 Pri porovnávaní dvoch vecí používame [druhý stupeň](/lekcie/comparative-adjectives/) (*bigger than*). Keď chceme povedať, že niečo je **naj…** zo všetkých, použijeme **tretí stupeň** – vždy s **the**.

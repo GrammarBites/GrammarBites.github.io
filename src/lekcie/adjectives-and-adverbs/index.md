@@ -24,22 +24,37 @@ test:
     moznosti: ["quiet", "quietly", "quieter"]
     spravna: 1
     vysvetlenie: "Ako hovoriť? Opisujeme sloveso speak → príslovka quietly."
+    zle:
+      0: "Quiet je prídavné meno (aký?). Tu sa pýtame, ako hovoriť – potrebujeme príslovku."
+      2: "Quieter je 2. stupeň (tichší). Tu nič neporovnávame, len hovoríme, ako hovoriť."
   - otazka: "It's an ___ test."
     moznosti: ["easy", "easily", "easyly"]
     spravna: 0
     vysvetlenie: "Aký test? Opisujeme podstatné meno test → prídavné meno easy."
+    zle:
+      1: "Easily je príslovka (ako?). Tu opisujeme test – aký test? – potrebujeme prídavné meno."
+      2: "Easyly nie je správny tvar. A tu potrebujeme prídavné meno – aký test?"
   - otazka: "She passed the test ___ ."
     moznosti: ["easy", "easyly", "easily"]
     spravna: 2
     vysvetlenie: "Ako urobila test? → príslovka. Y sa mení na i: easily."
+    zle:
+      0: "Easy je prídavné meno (aký?). Tu sa pýtame, ako urobila test – potrebujeme príslovku."
+      1: "Takéto slovo nie je. Pri y na konci sa y mení na i: easily."
   - otazka: "My brother plays the guitar very ___ ."
     moznosti: ["good", "well", "goodly"]
     spravna: 1
     vysvetlenie: "Good je prídavné meno, príslovka je well."
+    zle:
+      0: "Good je prídavné meno (aký?). Ako hrá? – na to potrebujeme príslovku."
+      2: "Goodly nie je správne. Príslovka od good je nepravidelná."
   - otazka: "Which is correct?"
     moznosti: ["He speaks very well English.", "He speaks English very well.", "He very well speaks English."]
     spravna: 1
     vysvetlenie: "Príslovka ide za sloveso, a ak je tam predmet (English), tak až za neho."
+    zle:
+      0: "Príslovka nesmie stáť medzi slovesom a predmetom: speaks English, nie speaks well English."
+      2: "Very well na začiatku pred speaks tu nepatrí. Príslovka ide až za predmet (English)."
 ---
 
 Po slovensky rozlišujeme **aký?** (opatrný) a **ako?** (opatrne). V angličtine je to rovnako: **prídavné meno** opisuje *podstatné meno*, **príslovka** opisuje *sloveso*.

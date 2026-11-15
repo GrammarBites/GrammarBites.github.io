@@ -24,22 +24,37 @@ test:
     moznosti: ["will", "'m going to", "'m learning"]
     spravna: 1
     vysvetlenie: "Už som sa rozhodol, je to môj zámer → going to."
+    zle:
+      0: "Will používame, keď sa rozhodneme v tej chvíli. Tu som sa rozhodol už skôr → going to."
+      2: "Present continuous je pre dohodnutý plán s časom. Tu je to môj zámer → going to."
   - otazka: "I think robots ___ do most jobs in the future."
     moznosti: ["are doing", "will", "are going"]
     spravna: 1
     vysvetlenie: "Predpoveď, názor (I think) → will."
+    zle:
+      0: "Present continuous je pre dohodnuté plány. Predpoveď s I think → will."
+      2: "Chýba to a sloveso. Predpoveď s I think → will."
   - otazka: "It's cold in here. – OK, I ___ close the window."
     moznosti: ["'ll", "'m going to", "'m closing"]
     spravna: 0
     vysvetlenie: "Rozhodnem sa práve teraz, v tej chvíli → will (I'll)."
+    zle:
+      1: "Going to je zámer, o ktorom som už rozhodol. Tu sa rozhodnem práve teraz → I'll."
+      2: "I'm closing je dohodnutý plán. Tu reagujem v tej chvíli → I'll."
   - otazka: "___ you doing anything on Friday evening?"
     moznosti: ["Will", "Are", "Do"]
     spravna: 1
     vysvetlenie: "Pýtame sa na dohodnuté plány s časom → present continuous: Are you doing…?"
+    zle:
+      0: "Will sa s doing nespája. Na plány s časom je present continuous: Are you doing…?"
+      2: "Do sa s -ing nespája. Otázka je Are you doing…?"
   - otazka: "Look out! That glass ___ fall off the table!"
     moznosti: ["will", "is going to", "is falling"]
     spravna: 1
     vysvetlenie: "Vidíme, že sa to o chvíľu stane (dôkaz je pred nami) → be going to."
+    zle:
+      0: "Will je predpoveď či názor. Tu vidíme dôkaz, že sa to o chvíľu stane → going to."
+      2: "Is falling = práve padá. Pohár ešte nepadá, ale o chvíľu spadne."
 ---
 
 V angličtine máme na budúcnosť viac tvarov. Ktorý použiješ, závisí od toho, **ako isto to vieš**. Ideme od najmenej istého po úplne isté:

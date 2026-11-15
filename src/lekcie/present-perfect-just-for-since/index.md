@@ -28,22 +28,37 @@ test:
     moznosti: ["has just", "just has", "is just"]
     spravna: 0
     vysvetlenie: "Just stojí medzi has a 3. tvarom: He has just gone home."
+    zle:
+      1: "Just stojí až za has: has just gone."
+      2: "Is sa pri present perfect nepoužíva. Je to has + 3. tvar."
   - otazka: "I've known my best friend ___ six years."
     moznosti: ["since", "for", "from"]
     spravna: 1
     vysvetlenie: "Six years je dĺžka času (ako dlho?) → for."
+    zle:
+      0: "Since je pri začiatku (since 2019). Six years je dĺžka → for."
+      2: "From sa v present perfect takto nepoužíva. Dĺžka času → for."
   - otazka: "We've lived in this flat ___ 2019."
     moznosti: ["for", "since", "ago"]
     spravna: 1
     vysvetlenie: "2019 je začiatok (odkedy?) → since."
+    zle:
+      0: "For je pri dĺžke (for six years). 2019 je začiatok → since."
+      2: "Ago patrí do past simple (two years ago), nie za rok v present perfect."
   - otazka: "Chodím na gitaru dva roky. →"
     moznosti: ["I play the guitar for two years.", "I've played the guitar for two years.", "I've played the guitar since two years."]
     spravna: 1
     vysvetlenie: "Dej začal v minulosti a trvá doteraz → present perfect. Dva roky je dĺžka → for."
+    zle:
+      0: "Present simple tu nestačí – dej začal v minulosti a trvá dodnes → present perfect."
+      2: "Two years je dĺžka času → for, nie since."
   - otazka: "She hasn't seen her cousin ___ last summer."
     moznosti: ["since", "for", "during"]
     spravna: 0
     vysvetlenie: "Last summer je bod, kedy to začalo → since."
+    zle:
+      1: "For je pri dĺžke času. Last summer je bod začiatku → since."
+      2: "During znamená počas. Odkedy ju nevidela → since."
 ---
 
 Present perfect používame aj na veci, ktoré sa **práve stali**, a na veci, ktoré **začali v minulosti a trvajú doteraz**. Pomôžu nám tri malé slová: **just**, **for** a **since**.

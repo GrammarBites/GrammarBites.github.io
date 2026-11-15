@@ -24,22 +24,37 @@ test:
     moznosti: ["somebody", "anybody", "nobody"]
     spravna: 0
     vysvetlenie: "Oznamovacia veta → some-: There's somebody in the garden."
+    zle:
+      1: "Any- patrí do záporu a otázky. Toto je oznamovacia veta."
+      2: "Nobody = nikto. Listen! hovorí, že niekto tam je."
   - otazka: "Is there ___ in your bag?"
     moznosti: ["something", "anything", "nothing"]
     spravna: 1
     vysvetlenie: "V otázke používame any-: Is there anything…?"
+    zle:
+      0: "Some- v otázke len pri ponuke. Obyčajná otázka → any-."
+      2: "Nothing = nič. Pýtame sa, či tam niečo je → anything."
   - otazka: "Everybody ___ ice cream."
     moznosti: ["like", "likes", "are liking"]
     spravna: 1
     vysvetlenie: "Po everybody je sloveso ako pri he / she, teda s -s: Everybody likes."
+    zle:
+      0: "Everybody sa správa ako he / she – sloveso má -s."
+      2: "Like sa s -ing nepoužíva a pri everybody je -s: likes."
   - otazka: "I'm bored. There's ___ to do."
     moznosti: ["anything", "nothing", "everything"]
     spravna: 1
     vysvetlenie: "Veta nemá not, zápor nesie samotné slovo: There's nothing to do. (= There isn't anything to do.)"
+    zle:
+      0: "Anything bez not nestačí – potrebovali by sme isn't."
+      2: "Everything = všetko. Nudím sa, nie je čo robiť → nothing."
   - otazka: "Which sentence is correct?"
     moznosti: ["I don't know nothing.", "I don't know anything.", "I don't know something."]
     spravna: 1
     vysvetlenie: "Pri not používame any-: I don't know anything. Dva zápory naraz (don't + nothing) v angličtine nedávame."
+    zle:
+      0: "Dva zápory naraz (don't + nothing) nedávame."
+      2: "Some- sa so záporom nespája. Pri not je any-."
 ---
 
 Po slovensky povieme *niekto, niečo, nikto, nič, všetci, všetko*. Po anglicky si tieto slová poskladáme z dvoch častí ako z kociek: **začiatok** (some-, any-, every-, no-) + **koniec** (-body pre ľudí, -thing pre veci).

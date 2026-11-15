@@ -27,22 +27,37 @@ test:
     moznosti: ["Does", "Is", "Are"]
     spravna: 1
     vysvetlenie: "She → is. Otázka v priebehovom čase začína am / is / are, nie does."
+    zle:
+      0: "Does sa s -ing nespája. Otázku robí is."
+      2: "Are patrí k you / we / they. She → is."
   - otazka: "Are they playing in the garden? – No, ___."
     moznosti: ["they aren't", "they don't", "they isn't"]
     spravna: 0
     vysvetlenie: "Krátka odpoveď opakuje sloveso z otázky: Are…? – No, they aren't."
+    zle:
+      1: "Pýtali sme sa s Are, tak odpovieme aren't, nie don't."
+      2: "Isn't patrí k he / she / it. Pri they je aren't."
   - otazka: "Is it raining? – Yes, ___."
     moznosti: ["it's", "it is", "it does"]
     spravna: 1
     vysvetlenie: "V kladnej krátkej odpovedi nepoužívame skrátený tvar: Yes, it is."
+    zle:
+      0: "V kladnej krátkej odpovedi skrátený tvar nepoužívame."
+      2: "Pýtali sme sa s Is, tak odpovieme is, nie does."
   - otazka: "What ___ you doing?"
     moznosti: ["do", "is", "are"]
     spravna: 2
     vysvetlenie: "Pri you je are: What are you doing?"
+    zle:
+      0: "Do sa s -ing nespája. Pri you je are."
+      1: "Is patrí k he / she / it. Pri you je are."
   - otazka: "Which question is correct?"
     moznosti: ["Where she is going?", "Where is she going?", "Where does she going?"]
     spravna: 1
     vysvetlenie: "Opytovacie slovo + is + podmet + -ing: Where is she going?"
+    zle:
+      0: "Is musí ísť pred podmet: Where is she going?"
+      2: "Does sa s -ing nespája. Otázku robí is."
 ---
 
 Táto lekcia nadväzuje na [oznamovacie a záporné vety](/lekcie/present-continuous/). Ak si ešte nevieš poradiť s *am / is / are + -ing*, začni tam.

@@ -24,22 +24,37 @@ test:
     moznosti: ["wide", "long", "high"]
     spravna: 0
     vysvetlenie: "V odpovedi je wide (široký), takže sa pýtame How wide?"
+    zle:
+      1: "How long sa pýta na dĺžku. Odpoveď hovorí wide (široký)."
+      2: "How high sa pýta na výšku. Odpoveď hovorí wide (široký)."
   - otazka: "How deep is the lake? – It's 20 metres ___ ."
     moznosti: ["high", "deep", "long"]
     spravna: 1
     vysvetlenie: "Odpoveď zopakuje prídavné meno z otázky: deep."
+    zle:
+      0: "High je vysoký. Pýtali sme sa How deep – odpoveď zopakuje deep."
+      2: "Long je dlhý. Pýtali sme sa How deep – odpoveď zopakuje deep."
   - otazka: "___ is that mountain? – It's 2,000 metres high."
     moznosti: ["How long", "How high", "How much"]
     spravna: 1
     vysvetlenie: "Na výšku hory sa pýtame How high?"
+    zle:
+      0: "How long sa pýta na dĺžku. Pri hore sa pýtame na výšku."
+      2: "How much sa pýta na cenu alebo množstvo, nie na výšku."
   - otazka: "How ___ is it to Bratislava? – It's about 250 kilometres."
     moznosti: ["long", "far", "wide"]
     spravna: 1
     vysvetlenie: "Na vzdialenosť sa pýtame How far? (Ako ďaleko?)"
+    zle:
+      0: "How long sa pýta na dĺžku (cesty, filmu). Na vzdialenosť je How far."
+      2: "How wide sa pýta na šírku, nie na vzdialenosť."
   - otazka: "Which answer is correct? How long is the tunnel?"
     moznosti: ["It's 2 kilometres long.", "It has 2 kilometres.", "It's long 2 kilometres."]
     spravna: 0
     vysvetlenie: "Poradie: It's + číslo + jednotka + prídavné meno: It's 2 kilometres long."
+    zle:
+      1: "Has sa na rozmery nepoužíva. Rozmery povieme s It's."
+      2: "Prídavné meno ide až za číslo a jednotku: 2 kilometres long."
 ---
 
 Po slovensky sa pýtame *Aký vysoký je…?* alebo *Koľko meria…?* Po anglicky používame **How + prídavné meno**.

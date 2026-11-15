@@ -42,6 +42,9 @@ test:                                  # 3–5 otázok; spravna = poradie správ
     moznosti: ["has", "have", "am"]
     spravna: 1
     vysvetlenie: "With I we use have."
+    zle:                               # nepovinné: prečo je ktorá nesprávna možnosť zle (číslo = poradie možnosti od 0)
+      0: "Has patrí k he / she / it. Pri I je have."
+      2: "Am sa s been nespája – present perfect je have + 3. tvar."
 koncept: true                          # kým je true, lekcia sa na webe nezobrazí – na zverejnenie zmaž
 ---
 

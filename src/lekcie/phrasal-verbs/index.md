@@ -26,22 +26,37 @@ test:
     moznosti: ["switch on", "switch off", "put on"]
     spravna: 0
     vysvetlenie: "Je tma → svetlo treba zapnúť: switch on."
+    zle:
+      1: "Switch off = vypnúť. Je tma, svetlo treba zapnúť."
+      2: "Put on = obliecť si. Svetlo sa zapína: switch on."
   - otazka: "It's cold outside. ___ your jacket!"
     moznosti: ["Take off", "Put on", "Look for"]
     spravna: 1
     vysvetlenie: "Obliecť si = put on. Take off = vyzliecť si."
+    zle:
+      0: "Take off = vyzliecť si. Je zima – bundu si oblečieme."
+      2: "Look for = hľadať. Bundu si chceme obliecť."
   - otazka: "I can't find my phone. I'm looking ___ it."
     moznosti: ["at", "after", "for"]
     spravna: 2
     vysvetlenie: "Hľadať = look for. Look at = pozerať sa na, look after = starať sa o."
+    zle:
+      0: "Look at = pozerať sa na. Hľadať = look for."
+      1: "Look after = starať sa o. Hľadať = look for."
   - otazka: "Which is correct?"
     moznosti: ["Switch off it, please.", "Switch it off, please.", "Switch it, off please."]
     spravna: 1
     vysvetlenie: "Zámeno it / them ide medzi sloveso a časticu: switch it off."
+    zle:
+      0: "Zámeno it nemôže stáť až za off. Ide do stredu: switch it off."
+      2: "Čiarka tu nepatrí: Switch it off, please."
   - otazka: "Who ___ your dog when you're on holiday?"
     moznosti: ["looks after", "looks up", "looks out"]
     spravna: 0
     vysvetlenie: "Starať sa o niekoho = look after."
+    zle:
+      1: "Look up = vyhľadať (slovo v slovníku)."
+      2: "Look out = dávať pozor (Pozor!)."
 ---
 
 **Frázové sloveso** (phrasal verb) má dve časti: **sloveso + malé slovíčko** (up, down, on, off, out, for…). Spolu vytvoria **nové slovo** s vlastným významom – často úplne iným ako samotné sloveso.

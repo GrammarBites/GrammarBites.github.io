@@ -22,22 +22,37 @@ test:
     moznosti: ["eat", "ate", "eaten"]
     spravna: 1
     vysvetlenie: "Yesterday → minulý čas (past simple): eat – <b>ate</b> – eaten."
+    zle:
+      0: "Eat je základný tvar. Yesterday → minulý čas."
+      2: "Eaten je 3. tvar (have eaten). Yesterday → 2. tvar."
   - otazka: "Have you ever ___ a horse?"
     moznosti: ["rode", "ridden", "rided"]
     spravna: 1
     vysvetlenie: "Have + 3. tvar: ride – rode – <b>ridden</b>."
+    zle:
+      0: "Rode je 2. tvar. Za have je 3. tvar."
+      2: "Ride je nepravidelné – rided neexistuje."
   - otazka: "My sister ___ a new phone last week."
     moznosti: ["buyed", "bought", "brought"]
     spravna: 1
     vysvetlenie: "buy – <b>bought</b> – bought. Pozor: brought je od bring (priniesť)."
+    zle:
+      0: "Buy je nepravidelné – buyed neexistuje."
+      2: "Brought je od bring (priniesť). Kúpila = bought."
   - otazka: "Which verb has the same form three times?"
     moznosti: ["put", "take", "give"]
     spravna: 0
     vysvetlenie: "put – put – put. Takisto cut, hit, cost, hurt, set."
+    zle:
+      1: "Take má tri rôzne tvary: take – took – taken."
+      2: "Give má tri rôzne tvary: give – gave – given."
   - otazka: "Tom isn't here. He has ___ to the shop."
     moznosti: ["went", "been", "gone"]
     spravna: 2
     vysvetlenie: "Odišiel a ešte sa nevrátil → has <b>gone</b>. Has been = bol tam a už je späť."
+    zle:
+      0: "Went je 2. tvar (minulý čas). Za has je 3. tvar."
+      1: "Has been = bol tam a už je späť. Tom tu však nie je, ešte je v obchode."
 ---
 
 V tabuľke hore je **85 nepravidelných slovies**, ktoré potrebuješ na základnej škole. Je to zoznam z pracovných zošitov Project doplnený o slovesá, ktoré sa v učebniciach často objavujú (forget, meet, sleep, choose, lend, let, shoot, shine). Každé má tri tvary:

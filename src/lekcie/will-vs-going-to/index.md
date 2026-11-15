@@ -25,22 +25,37 @@ test:
     moznosti: ["'ll", "'m going to", "going to"]
     spravna: 1
     vysvetlenie: "Rozhodol som sa už skôr (I've decided) → plán → I'm going to. Nezabudni na BE (am)."
+    zle:
+      0: "Will je pre rozhodnutie v tej chvíli. Rozhodol som sa už skôr → going to."
+      2: "Chýba BE (am): I'm going to."
   - otazka: "Someone's at the door! – OK, I ___ open it."
     moznosti: ["'ll", "'m going to", "will to"]
     spravna: 0
     vysvetlenie: "Rozhodnutie v tej chvíli → I'll open it."
+    zle:
+      1: "Going to je pre plán, o ktorom som už rozhodol. Tu reagujem hneď → I'll."
+      2: "Za will nie je to: I'll open."
   - otazka: "I think Slovakia ___ win the match."
     moznosti: ["is going", "will", "wills"]
     spravna: 1
     vysvetlenie: "Môj názor o budúcnosti s I think → will."
+    zle:
+      0: "Chýba to a sloveso. Názor s I think → will."
+      2: "Will sa nemení – žiadne -s."
   - otazka: "___ you going to stay at home at the weekend?"
     moznosti: ["Will", "Do", "Are"]
     spravna: 2
     vysvetlenie: "Otázka s BE going to: BE ide na začiatok → Are you going to…?"
+    zle:
+      0: "Will sa s going to nespája. Otázku robí BE."
+      1: "Do sa s going to nespája. Otázku robí BE: Are…?"
   - otazka: "Will you help me? – No, I ___ . I'm busy."
     moznosti: ["won't", "don't", "willn't"]
     spravna: 0
     vysvetlenie: "Zápor od will je won't (will not)."
+    zle:
+      1: "Pýtali sme sa s Will, tak odpovieme won't, nie don't."
+      2: "Willn't neexistuje. Zápor je won't."
 ---
 
 O budúcnosti môžeme hovoriť s **will** aj s **BE going to**. Nie je to jedno – záleží na tom, **kedy** sme sa rozhodli a či ide o **plán** alebo o **názor**.

@@ -25,22 +25,37 @@ test:
     moznosti: ["mountainy", "mountainous", "mountainful"]
     spravna: 1
     vysvetlenie: "mountain + ous = mountainous (hornatý)."
+    zle:
+      0: "Mountainy neexistuje. Hornatý = mountainous."
+      2: "Mountainful neexistuje. Hornatý = mountainous."
   - otazka: "It's very ___ today. I can't see the trees."
     moznosti: ["fogy", "foggy", "fogous"]
     spravna: 1
     vysvetlenie: "Krátke slovo na spoluhlásku → zdvojenie: fog → foggy."
+    zle:
+      0: "Pri fog sa g zdvojí: foggy."
+      2: "Fogous neexistuje. Hmlistý = foggy."
   - otazka: "fury → ___"
     moznosti: ["furyous", "furious", "furous"]
     spravna: 1
     vysvetlenie: "y sa zmení na i: fury → furious."
+    zle:
+      0: "Y sa pred -ous mení na i: furious."
+      2: "Chýba i: furious."
   - otazka: "I haven't eaten all day. I'm really ___ ."
     moznosti: ["hunger", "hungery", "hungry"]
     spravna: 2
     vysvetlenie: "Po be ide prídavné meno: hunger → hungry (výnimka v pravopise)."
+    zle:
+      0: "Hunger je podstatné meno (hlad). Po am je prídavné meno."
+      1: "Pozor na pravopis: hungry (e vypadne)."
   - otazka: "The roads are ___ . Drive slowly!"
     moznosti: ["icy", "icey", "iceous"]
     spravna: 0
     vysvetlenie: "Koncové e vypadne: ice → icy."
+    zle:
+      1: "Koncové e vypadne: icy."
+      2: "Iceous neexistuje. Ľadový = icy."
 ---
 
 Na výstražných značkách a vo varovaniach často čítame prídavné mená ako *dangerous*. Mnohé vznikajú z podstatného mena pridaním **-ous** alebo **-y**.

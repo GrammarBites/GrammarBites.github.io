@@ -25,22 +25,37 @@ test:
     moznosti: ["some", "any", "a"]
     spravna: 0
     vysvetlenie: "Oznamovacia veta, množné číslo → some."
+    zle:
+      1: "Any patrí do záporu a otázky. Toto je oznamovacia veta."
+      2: "A patrí k jednej veci. Biscuits je množné číslo."
   - otazka: "We haven't got ___ bread."
     moznosti: ["some", "any", "a"]
     spravna: 1
     vysvetlenie: "Zápor → any."
+    zle:
+      0: "Some patrí do oznamovacej vety. Haven't je zápor → any."
+      2: "Bread je nepočítateľné – a pred ním nedávame."
   - otazka: "Have you got ___ brothers or sisters?"
     moznosti: ["some", "any", "an"]
     spravna: 1
     vysvetlenie: "Otázka → any."
+    zle:
+      0: "Some v otázke len pri ponuke alebo prosbe. Toto je obyčajná otázka → any."
+      2: "An patrí k jednej veci. Brothers or sisters je množné číslo."
   - otazka: "Would you like ___ cake?"
     moznosti: ["any", "some", "a"]
     spravna: 1
     vysvetlenie: "Ponuka (Would you like…?) → some, aj keď je to otázka."
+    zle:
+      0: "Any je pri obyčajnej otázke. Would you like…? je ponuka → some."
+      2: "Cake je tu ako množstvo (kúsok koláča) – pri ponuke je some."
   - otazka: "I'd like ___ orange, please."
     moznosti: ["some", "any", "an"]
     spravna: 2
     vysvetlenie: "Jeden pomaranč (počítateľné, jednotné číslo) → an, nie some."
+    zle:
+      0: "Some patrí k množnému číslu alebo nepočítateľným veciam. Jeden pomaranč → an."
+      1: "Any patrí do záporu a otázky. Jeden pomaranč → an."
 ---
 
 **Some** a **any** používame, keď nehovoríme presný počet alebo množstvo – po slovensky *nejaký, trochu, pár* alebo v zápore *žiadny*.

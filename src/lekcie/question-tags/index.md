@@ -24,22 +24,37 @@ test:
     moznosti: ["isn't he", "is he", "doesn't he"]
     spravna: 0
     vysvetlenie: "Kladná veta s is → záporný tag isn't. Your brother → he."
+    zle:
+      1: "Veta je kladná – tag má byť záporný."
+      2: "Vo vete je is – zopakujeme is, nie does."
   - otazka: "You can't swim, ___ ?"
     moznosti: ["can't you", "can you", "do you"]
     spravna: 1
     vysvetlenie: "Záporná veta → kladný tag: can you?"
+    zle:
+      0: "Veta je záporná (can't) – tag má byť kladný."
+      2: "Vo vete je can – zopakujeme can, nie do."
   - otazka: "She lives near the school, ___ ?"
     moznosti: ["isn't she", "doesn't she", "don't she"]
     spravna: 1
     vysvetlenie: "Vo vete nie je pomocné sloveso, present simple pri she → doesn't she?"
+    zle:
+      0: "Vo vete nie je is. Lives je present simple → does."
+      2: "Don't patrí k I / you / we / they. Pri she je doesn't."
   - otazka: "They went to the cinema yesterday, ___ ?"
     moznosti: ["didn't they", "weren't they", "don't they"]
     spravna: 0
     vysvetlenie: "Past simple bez pomocného slovesa → did: didn't they?"
+    zle:
+      1: "Vo vete nie je were. Went je past simple → did."
+      2: "Don't je prítomný čas. Went je minulosť → didn't."
   - otazka: "You haven't seen my keys, ___ ?"
     moznosti: ["haven't you", "have you", "did you"]
     spravna: 1
     vysvetlenie: "Záporná veta s haven't → kladný tag have you?"
+    zle:
+      0: "Veta je záporná (haven't) – tag má byť kladný."
+      2: "Vo vete je haven't – zopakujeme have, nie did."
 ---
 
 Po slovensky často na koniec vety pridáme **však?**, **že?** alebo **nie?**, keď si chceme overiť, či máme pravdu. V angličtine na to slúži **question tag** – malá otázka na konci vety.

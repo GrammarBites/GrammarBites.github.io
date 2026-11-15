@@ -25,22 +25,37 @@ test:
     moznosti: ["to take", "taking", "take"]
     spravna: 1
     vysvetlenie: "Za enjoy ide -ing: enjoys taking."
+    zle:
+      0: "Za enjoy to nepoužívame – je tam -ing."
+      2: "Za enjoy nemôže byť základný tvar – je tam -ing."
   - otazka: "We've decided ___ a dog."
     moznosti: ["getting", "to get", "get"]
     spravna: 1
     vysvetlenie: "Za decide ide to + sloveso: decided to get."
+    zle:
+      0: "Za decide nie je -ing, ale to + sloveso."
+      2: "Za decided chýba to: decided to get."
   - otazka: "Have you finished ___ your homework?"
     moznosti: ["doing", "to do", "do"]
     spravna: 0
     vysvetlenie: "Za finish ide -ing: finished doing."
+    zle:
+      1: "Za finish to nepoužívame – je tam -ing."
+      2: "Za finish nemôže byť základný tvar – je tam -ing."
   - otazka: "He refused ___ the window."
     moznosti: ["opening", "to open", "open"]
     spravna: 1
     vysvetlenie: "Za refuse ide to + sloveso: refused to open."
+    zle:
+      0: "Za refuse nie je -ing, ale to + sloveso."
+      2: "Za refused chýba to: refused to open."
   - otazka: "Grandpa stopped ___ . He doesn't smoke now."
     moznosti: ["smoking", "to smoke", "smoke"]
     spravna: 0
     vysvetlenie: "Stop + -ing = prestať niečo robiť. Stop + to = zastaviť sa, aby som niečo urobil."
+    zle:
+      1: "Stop to smoke = zastavil sa, aby si zafajčil. On však prestal fajčiť."
+      2: "Za stopped nemôže byť základný tvar."
 ---
 
 Keď za sebou idú **dve slovesá**, druhé sloveso má buď tvar **-ing** (*reading*), alebo **to + sloveso** (*to read*). Ktorý tvar to bude, záleží od **prvého slovesa** – treba si ich zapamätať.

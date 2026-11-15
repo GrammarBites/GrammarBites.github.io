@@ -24,22 +24,37 @@ test:
     moznosti: ["last", "yesterday", "this"]
     spravna: 0
     vysvetlenie: "Včera večer / v noci = last night. Yesterday night sa bežne nepoužíva."
+    zle:
+      1: "Yesterday night sa bežne nepovie. Včera večer = last night."
+      2: "This night sa nepovie. Dnes večer = tonight."
   - otazka: "We're going to London ___ month."
     moznosti: ["last", "next", "in next"]
     spravna: 1
     vysvetlenie: "Budúci mesiac = next month, bez predložky in."
+    zle:
+      0: "Last month = minulý mesiac. Hovoríme o budúcnosti."
+      2: "Pred next predložka in nepatrí."
   - otazka: "I'm meeting my friends ___."
     moznosti: ["tonight", "last night", "yesterday evening"]
     spravna: 0
     vysvetlenie: "I'm meeting… je plán do budúcnosti, preto tonight (dnes večer)."
+    zle:
+      1: "Last night = včera večer. Plán (I'm meeting) je do budúcnosti."
+      2: "Yesterday evening je minulosť. Plán je do budúcnosti."
   - otazka: "Which is correct?"
     moznosti: ["I phoned her on last Monday.", "I phoned her last Monday.", "I phoned her in last Monday."]
     spravna: 1
     vysvetlenie: "Pred last, this a next predložku nedávame: last Monday."
+    zle:
+      0: "Pred last predložku on nedávame."
+      2: "Pred last predložku in nedávame."
   - otazka: "Today is Wednesday. Monday was ___."
     moznosti: ["the day after tomorrow", "yesterday", "the day before yesterday"]
     spravna: 2
     vysvetlenie: "Pondelok bol pred dvoma dňami, teda predvčerom = the day before yesterday."
+    zle:
+      0: "The day after tomorrow = pozajtra (piatok)."
+      1: "Yesterday = včera (utorok). Pondelok bol pred dvoma dňami."
 ---
 
 Časové výrazy prezrádzajú, **kedy** sa niečo stalo alebo stane. Podľa nich sa často rozhodneš aj o čase slovesa: *last week* → minulý čas, *next week* → budúcnosť.

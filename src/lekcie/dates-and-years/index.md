@@ -24,22 +24,37 @@ test:
     moznosti: ["the three of May", "the third of May", "the thirdth of May"]
     spravna: 1
     vysvetlenie: "3 → third (3rd). Pri dátume používame radovú číslovku: the third of May."
+    zle:
+      0: "Pri dátume je radová číslovka (tretí), nie základná (tri)."
+      2: "3 je výnimka: third, nie thirdth."
   - otazka: "How do we say <b>12 December</b>?"
     moznosti: ["the twelfth of December", "the twelveth of December", "the twelve of December"]
     spravna: 0
     vysvetlenie: "12th sa píše twelfth – ve sa zmení na f."
+    zle:
+      1: "Pozor na pravopis: ve sa zmení na f – twelfth."
+      2: "Pri dátume je radová číslovka (dvanásty), nie základná (dvanásť)."
   - otazka: "How do we say the year <b>1998</b>?"
     moznosti: ["one thousand nine hundred ninety-eight", "nineteen ninety-eight", "nineteen and ninety-eight"]
     spravna: 1
     vysvetlenie: "Roky do 1999 čítame po dvojčísliach: 19 | 98 → nineteen ninety-eight."
+    zle:
+      0: "Takto sa roky nečítajú – je to príliš dlhé. Delíme na dvojčíslia."
+      2: "Medzi dvojčíslia sa and nedáva: nineteen ninety-eight."
   - otazka: "How do we say the year <b>2007</b>?"
     moznosti: ["twenty seven", "two thousand and seven", "twenty oh seven thousand"]
     spravna: 1
     vysvetlenie: "Roky 2000 – 2009 čítame two thousand and …"
+    zle:
+      0: "Twenty seven by bolo číslo 27. Roky 2000 – 2009 čítame two thousand and…"
+      2: "Takto sa rok nečíta. Správne je two thousand and seven."
   - otazka: "My birthday is ___ 8 April."
     moznosti: ["in", "at", "on"]
     spravna: 2
     vysvetlenie: "Pred dátumom je on: on 8 April. Pred mesiacom alebo rokom je in: in April, in 2026."
+    zle:
+      0: "In patrí k mesiacu a roku (in April). Pred celým dátumom je on."
+      1: "At patrí k času na hodinách (at 5 o'clock). Pred dátumom je on."
 ---
 
 ## Radové číslovky

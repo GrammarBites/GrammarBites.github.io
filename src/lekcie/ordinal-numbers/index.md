@@ -24,22 +24,37 @@ test:
     moznosti: ["twoth", "second", "twond"]
     spravna: 1
     vysvetlenie: "1, 2, 3 sú výnimky: first, second, third."
+    zle:
+      0: "1, 2, 3 sú výnimky – twoth neexistuje."
+      2: "Twond neexistuje. Druhý = second."
   - otazka: "How do we write <b>9th</b> in words?"
     moznosti: ["nineth", "ninth", "nineeth"]
     spravna: 1
     vysvetlenie: "Pri nine vypadne e: ninth."
+    zle:
+      0: "Pri nine vypadne e: ninth."
+      2: "Pri nine vypadne e: ninth."
   - otazka: "How do we say <b>21st</b>?"
     moznosti: ["twenty-first", "twentieth-one", "twenty-oneth"]
     spravna: 0
     vysvetlenie: "Radové je len posledné číslo: twenty-first."
+    zle:
+      1: "Radové je len posledné číslo: twenty-first."
+      2: "One je výnimka – nie oneth, ale first."
   - otazka: "Today is my ___ birthday. I'm twelve."
     moznosti: ["twelve", "twelveth", "twelfth"]
     spravna: 2
     vysvetlenie: "Radová číslovka od twelve: ve sa zmení na f → twelfth."
+    zle:
+      0: "Twelve je základná číslovka (dvanásť). Potrebujeme radovú (dvanáste)."
+      1: "Pozor na pravopis: ve sa zmení na f – twelfth."
   - otazka: "Which abbreviation is correct?"
     moznosti: ["3th", "3rd", "3st"]
     spravna: 1
     vysvetlenie: "Skratka = číslo + posledné dve písmená slova: third → 3rd."
+    zle:
+      0: "Skratka sa riadi posledným písmenami slova: third → 3rd."
+      2: "St patrí k first (1st). Pri third je 3rd."
 ---
 
 **Radové číslovky** (*ordinal numbers*) hovoria o poradí: prvý, druhý, tretí… Po slovensky za číslo píšeme bodku (*3. poschodie*), po anglicky pridáme dve písmená (*3rd floor*).

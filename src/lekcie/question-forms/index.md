@@ -25,22 +25,37 @@ test:
     moznosti: ["Does she be", "Is she", "She is"]
     spravna: 1
     vysvetlenie: "Pri be len prehodíme poradie: Is she…?"
+    zle:
+      0: "Pri be do / does nepoužívame – len prehodíme poradie."
+      2: "To je poradie oznamovacej vety. V otázke ide is pred podmet."
   - otazka: "They have seen the film. → ___ the film?"
     moznosti: ["Did they have seen", "Have they seen", "Do they have seen"]
     spravna: 1
     vysvetlenie: "Present perfect má dve časti – pomocné have ide pred podmet."
+    zle:
+      0: "Did sa s have seen nespája. Pred podmet ide len have."
+      2: "Do sa s have seen nespája. Pred podmet ide len have."
   - otazka: "He plays the guitar. → ___ the guitar?"
     moznosti: ["Does he play", "Does he plays", "Plays he"]
     spravna: 0
     vysvetlenie: "Present simple → does. Za does je základný tvar: play."
+    zle:
+      1: "Za does je sloveso bez -s – -s už je v does."
+      2: "Bežné sloveso pred podmet nepresúvame. Pridáme does."
   - otazka: "Where ___ last summer?"
     moznosti: ["you went", "did you go", "did you went"]
     spravna: 1
     vysvetlenie: "Past simple → did + základný tvar: did you go."
+    zle:
+      0: "Chýba did a poradie je ako v oznamovacej vete."
+      2: "Za did je základný tvar – minulosť už nesie did."
   - otazka: "What ___ you doing now?"
     moznosti: ["do", "are", "does"]
     spravna: 1
     vysvetlenie: "Priebehový čas (doing) má pomocné sloveso be: What are you doing?"
+    zle:
+      0: "Do sa s -ing nespája. Priebehový čas má pomocné sloveso be."
+      2: "Does sa s -ing nespája a pri you je are."
 ---
 
 V slovenčine často stačí zmeniť intonáciu: *Ty máš psa?* V angličtine sa pri otázke **mení poradie slov**. Dobrá správa: existujú len **tri vzory**, ktoré platia pre všetky časy.

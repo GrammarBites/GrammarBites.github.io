@@ -24,22 +24,37 @@ test:
     moznosti: ["have", "had", "would have"]
     spravna: 1
     vysvetlenie: "V časti s if je past simple: If I had…"
+    zle:
+      0: "Have je prítomný čas – to by bola skutočná možnosť. Pri predstave je past simple."
+      2: "Would nepatrí do časti s if. Tam je past simple: had."
   - otazka: "If she lived in London, she ___ to the theatre every week."
     moznosti: ["will see", "would see", "saw"]
     spravna: 1
     vysvetlenie: "V hlavnej vete je would + sloveso."
+    zle:
+      0: "Will patrí do first conditional (skutočná možnosť). Pri predstave je would."
+      2: "Saw je past simple – ten patrí do časti s if. Vo výsledku je would."
   - otazka: "If I ___ you, I'd tell the teacher."
     moznosti: ["am", "were", "would be"]
     spravna: 1
     vysvetlenie: "Pri rade sa ustálene hovorí If I were you…"
+    zle:
+      0: "Am je prítomný čas. Pri predstave (If I were you) je were."
+      2: "Would nepatrí do časti s if. Ustálene je If I were you."
   - otazka: "Would you eat a spider? – No, I ___ ."
     moznosti: ["don't", "wouldn't", "won't"]
     spravna: 1
     vysvetlenie: "Krátka odpoveď zopakuje would: No, I wouldn't."
+    zle:
+      0: "Pýtali sme sa s Would, tak odpovieme wouldn't, nie don't."
+      2: "Won't je od will. Pýtali sme sa s Would → wouldn't."
   - otazka: "Which sentence is about a real possibility?"
     moznosti: ["If it rains tomorrow, we'll stay at home.", "If I were a cat, I'd sleep all day.", "If I had wings, I'd fly."]
     spravna: 0
     vysvetlenie: "Dážď zajtra sa naozaj môže stať → first conditional (will). Ostatné sú iba predstavy."
+    zle:
+      1: "If I were a cat je len predstava – nie som mačka."
+      2: "If I had wings je len predstava – krídla nemám."
 ---
 
 V slovenčine povieme **keby…, tak by…**. V angličtine na to máme **would** a **second conditional** (druhú podmienkovú vetu).

@@ -121,7 +121,7 @@ skripty: ["lekcia.js"]
       <legend><span class="otazka__cislo">{{ qi }}</span> {{ q.otazka | safe }}</legend>
       <div class="moznosti">
         {% for m in q.moznosti %}
-        <label class="moznost"><input type="radio" id="q{{ qi }}-{{ loop.index0 }}" name="q{{ qi }}" value="{{ loop.index0 }}"> <span>{{ m | safe }}</span></label>
+        <label class="moznost"><input type="radio" id="q{{ qi }}-{{ loop.index0 }}" name="q{{ qi }}" value="{{ loop.index0 }}"{% if q.zle and q.zle[loop.index0] %} data-zle="{{ q.zle[loop.index0] }}"{% endif %}> <span>{{ m | safe }}</span></label>
         {% endfor %}
       </div>
       <p class="otazka__spatna" hidden data-ok="{{ q.vysvetlenie }}"></p>

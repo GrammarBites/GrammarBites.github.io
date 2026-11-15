@@ -25,22 +25,37 @@ test:
     moznosti: ["in", "on", "at"]
     spravna: 2
     vysvetlenie: "Pred presným časom je at: at half past eight."
+    zle:
+      0: "In patrí k mesiacu, roku, časti dňa. Pred presným časom je at."
+      1: "On patrí k dňu a dátumu. Pred presným časom je at."
   - otazka: "We don't have school ___ Saturday."
     moznosti: ["on", "in", "at"]
     spravna: 0
     vysvetlenie: "Pred dňom v týždni je on: on Saturday."
+    zle:
+      1: "In patrí k mesiacu a roku. Pred dňom v týždni je on."
+      2: "At patrí k presnému času. Pred dňom je on."
   - otazka: "My grandma was born ___ 1958."
     moznosti: ["at", "in", "on"]
     spravna: 1
     vysvetlenie: "Pred rokom je in: in 1958."
+    zle:
+      0: "At patrí k presnému času. Pred rokom je in."
+      2: "On patrí k dňu a dátumu. Pred rokom je in."
   - otazka: "Which is correct?"
     moznosti: ["in Christmas Day", "at Christmas Day", "on Christmas Day"]
     spravna: 2
     vysvetlenie: "Christmas Day je konkrétny deň, preto on. Ale sviatky ako celok: at Christmas."
+    zle:
+      0: "In patrí k mesiacu a roku. Christmas Day je konkrétny deň."
+      1: "At Christmas (sviatky ako celok) áno, ale Christmas Day je jeden deň → on."
   - otazka: "I usually read a book ___ the evening and go to bed ___ night."
     moznosti: ["in … at", "at … in", "on … at"]
     spravna: 0
     vysvetlenie: "Časti dňa majú in (in the evening), ale night je výnimka: at night."
+    zle:
+      1: "Naopak: in the evening, at night."
+      2: "On sa pri častiach dňa nepoužíva: in the evening."
 ---
 
 Predložky **at, on, in** prezrádzajú, **kedy** sa niečo deje. Platí jednoduché pravidlo: čím **kratší a presnejší** čas, tým skôr **at**; čím **dlhšie obdobie**, tým skôr **in**.

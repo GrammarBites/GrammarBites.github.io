@@ -24,22 +24,37 @@ test:
     moznosti: ["So I am", "So am I", "So do I"]
     spravna: 1
     vysvetlenie: "Vo vete je am → So am I. Poradie: So + sloveso + I."
+    zle:
+      0: "Poradie je obrátené: So + sloveso + I."
+      2: "Vo vete je am, nie do. Zopakujeme am."
   - otazka: "I don't like horror films. – ___ ."
     moznosti: ["Neither do I", "So do I", "Neither don't I"]
     spravna: 0
     vysvetlenie: "Súhlas so zápornou vetou → Neither. Neither už je zápor, preto do, nie don't."
+    zle:
+      1: "So patrí ku kladnej vete. Tu je zápor (don't) → Neither."
+      2: "Neither už je zápor – za ním je kladné do."
   - otazka: "I went to bed late. – ___ ."
     moznosti: ["So went I", "So did I", "So was I"]
     spravna: 1
     vysvetlenie: "Past simple bez pomocného slovesa → did: So did I."
+    zle:
+      0: "Went sa tu neopakuje. Pri past simple je did."
+      2: "Vo vete nie je was. Went je past simple → did."
   - otazka: "I've got two brothers. – ___ ."
     moznosti: ["So do I", "So have I", "So am I"]
     spravna: 1
     vysvetlenie: "Vo vete je have ('ve) → So have I."
+    zle:
+      0: "Vo vete je have ('ve) – zopakujeme have, nie do."
+      2: "Vo vete nie je am. Zopakujeme have."
   - otazka: "I can't ski. – (nesúhlasíš, ty vieš) ___"
     moznosti: ["Oh, I can.", "Neither can I.", "So can I."]
     spravna: 0
     vysvetlenie: "Nesúhlas: opačné pomocné sloveso. Záporná veta → kladná odpoveď: Oh, I can."
+    zle:
+      1: "Neither can I = ani ja neviem. Ty však vieš lyžovať – nesúhlasíš."
+      2: "So can I sa hovorí ku kladnej vete (I can ski). Tu je zápor."
 ---
 
 Po slovensky stačí povedať **aj ja** alebo **ani ja**. V angličtine pri tom použijeme **pomocné sloveso** z vety, ktorú sme počuli – a záleží aj na tom, či bola veta kladná alebo záporná.

@@ -26,22 +26,37 @@ test:
     moznosti: ["plays", "is playing", "play"]
     spravna: 0
     vysvetlenie: "Every afternoon = pravidelne → present simple. Sestra = she → plays."
+    zle:
+      1: "Is playing = práve teraz. Every afternoon hovorí o pravidelnej činnosti."
+      2: "Chýba -s: My sister = she → plays."
   - otazka: "Shh! The baby ___ ."
     moznosti: ["sleeps", "is sleeping", "sleep"]
     spravna: 1
     vysvetlenie: "Shh! = deje sa to práve teraz → present continuous: is sleeping."
+    zle:
+      0: "Sleeps je pravidelná činnosť. Shh! prezrádza, že bábätko spí práve teraz."
+      2: "Sleep bez -s a bez is nesedí. Teraz → is sleeping."
   - otazka: "We usually go to school by bike, but today we ___ ."
     moznosti: ["walk", "are walking", "walks"]
     spravna: 1
     vysvetlenie: "But today = výnimka práve dnes → present continuous: we are walking."
+    zle:
+      0: "Walk je pravidelná činnosť. But today hovorí o výnimke práve dnes."
+      2: "Walks s -s patrí k he / she / it a navyše tu je výnimka dnes → are walking."
   - otazka: "___ your dad work at the weekend? – No, he doesn't."
     moznosti: ["Is", "Does", "Do"]
     spravna: 1
     vysvetlenie: "Pravidelne (at the weekend), dad = he → Does … work?"
+    zle:
+      0: "Is sa spája s -ing. Tu je work bez -ing → Does."
+      2: "Do patrí k I / you / we / they. Dad = he → Does."
   - otazka: "Which is correct?"
     moznosti: ["I'm liking this song.", "I like this song.", "I likes this song."]
     spravna: 1
     vysvetlenie: "Like nemá tvar s -ing ani v prítomnom priebehovom čase: I like this song."
+    zle:
+      0: "Like je stavové sloveso – nepoužíva sa s -ing."
+      2: "Likes s -s patrí k he / she / it. Pri I je like."
 ---
 
 V slovenčine máme jeden prítomný čas: *hrám*. V angličtine máme dva a musíme si vybrať: robím to **pravidelne**, alebo **práve teraz**? Táto lekcia porovnáva [present simple](/lekcie/present-simple/) a [present continuous](/lekcie/present-continuous/).

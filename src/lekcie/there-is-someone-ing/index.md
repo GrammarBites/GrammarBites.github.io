@@ -24,22 +24,37 @@ test:
     moznosti: ["is playing", "playing", "plays"]
     spravna: 1
     vysvetlenie: "There's + kto + -ing: There's a boy playing. Žiadne ďalšie is."
+    zle:
+      0: "Is je už v There's – druhé is je navyše."
+      2: "Plays tu nesedí. Za There's a boy ide -ing: playing."
   - otazka: "There ___ two dogs running in the park."
     moznosti: ["is", "are", "be"]
     spravna: 1
     vysvetlenie: "Two dogs = množné číslo → There are."
+    zle:
+      0: "Two dogs je množné číslo → are, nie is."
+      2: "Be je základný tvar. Pri dvoch psoch je are."
   - otazka: "I can hear ___ singing in the shower."
     moznosti: ["he", "him", "his"]
     spravna: 1
     vysvetlenie: "Za can hear / can see ide him / her / them, nie he / she / they."
+    zle:
+      0: "He je podmet. Za can hear je predmet: him."
+      2: "His znamená jeho (čí?). Za can hear je him."
   - otazka: "Join the sentences: I can see a plane. It's flying very low."
     moznosti: ["I can see a plane it's flying very low.", "I can see a plane flying very low.", "I can see a plane is flying very low."]
     spravna: 1
     vysvetlenie: "It's vypadne, ostane len -ing: I can see a plane flying very low."
+    zle:
+      0: "Dve vety len tak za sebou bez spojenia nejdú. It's vypadne."
+      2: "Is je navyše – ostane len -ing: a plane flying."
   - otazka: "I can smell something ___ . Is it the cake?"
     moznosti: ["burn", "burning", "burns"]
     spravna: 1
     vysvetlenie: "I can smell + čo + -ing: something burning."
+    zle:
+      0: "Burn je základný tvar. Za something ide -ing."
+      2: "Burns tu nesedí. Za I can smell something ide -ing."
 ---
 
 Keď chceme opísať, čo sa **práve deje** okolo nás – na obrázku, z okna, na ulici –, použijeme dve užitočné vety s **-ing**.

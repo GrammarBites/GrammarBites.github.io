@@ -25,22 +25,37 @@ test:
     moznosti: ["sun", "suny", "sunny"]
     spravna: 2
     vysvetlenie: "Sun + y = sunny. Krátka samohláska + jedna spoluhláska → zdvojíme n."
+    zle:
+      0: "Sun je podstatné meno (slnko). Pred day potrebujeme prídavné meno."
+      1: "Pozor na pravopis: n sa zdvojí – sunny."
   - otazka: "Thank you, you were very ___ ."
     moznosti: ["help", "helpful", "helpness"]
     spravna: 1
     vysvetlenie: "Po was / were potrebujeme prídavné meno: helpful."
+    zle:
+      0: "Help je podstatné meno alebo sloveso. Po were je prídavné meno."
+      2: "Helpness neexistuje. Prídavné meno je helpful."
   - otazka: "She's wearing a ___ dress."
     moznosti: ["beauty", "beautyful", "beautiful"]
     spravna: 2
     vysvetlenie: "Pred podstatným menom je prídavné meno. Y sa mení na i: beautiful."
+    zle:
+      0: "Beauty je podstatné meno (krása). Pred dress je prídavné meno."
+      1: "Pozor na pravopis: y sa mení na i – beautiful."
   - otazka: "I was ___ before the test."
     moznosti: ["nerve", "nervous", "nervy"]
     spravna: 1
     vysvetlenie: "Nerve + ous = nervous (nervózny). E na konci vypadne."
+    zle:
+      0: "Nerve je podstatné meno (nerv). Po was je prídavné meno."
+      2: "Nervy nie je správny tvar. Nervózny = nervous."
   - otazka: "Thank you for your ___ ."
     moznosti: ["kind", "kindness", "kindful"]
     spravna: 1
     vysvetlenie: "Za your je podstatné meno: kind + ness = kindness (láskavosť)."
+    zle:
+      0: "Kind je prídavné meno (láskavý). Za your je podstatné meno."
+      2: "Kindful neexistuje. Podstatné meno je kindness."
 ---
 
 Mnohé prídavné mená v angličtine vzniknú z **podstatného mena** pridaním **koncovky** – podobne ako v slovenčine *hluk → hluč**ný***. Keď poznáš koncovky, rozumieš oveľa viac slovám.

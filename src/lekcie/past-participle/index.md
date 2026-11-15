@@ -27,22 +27,37 @@ test:
     moznosti: ["rode", "ridden", "ride"]
     spravna: 1
     vysvetlenie: "Present perfect = have + 3. tvar. ride – rode – ridden."
+    zle:
+      0: "Rode je 2. tvar. Za have je 3. tvar."
+      2: "Ride je základný tvar. Za have je 3. tvar."
   - otazka: "She has ___ a new phone."
     moznosti: ["bought", "buyed", "buy"]
     spravna: 0
     vysvetlenie: "buy – bought – bought: 2. a 3. tvar sú rovnaké (A – B – B)."
+    zle:
+      1: "Buy je nepravidelné – buyed neexistuje."
+      2: "Buy je základný tvar. Za has je 3. tvar."
   - otazka: "Which verb has the pattern <b>A – B – A</b> (3. tvar = základný)?"
     moznosti: ["come – came – come", "go – went – gone", "sit – sat – sat"]
     spravna: 0
     vysvetlenie: "Pri come, become a run je 3. tvar rovnaký ako základný."
+    zle:
+      1: "Go – went – gone má tri rôzne tvary (A – B – C)."
+      2: "Sit – sat – sat je vzor A – B – B."
   - otazka: "Have you ___ my keys? I can't find them."
     moznosti: ["saw", "seen", "see"]
     spravna: 1
     vysvetlenie: "see – saw – seen. Po have je 3. tvar seen."
+    zle:
+      0: "Saw je 2. tvar. Za have je 3. tvar."
+      2: "See je základný tvar. Za have je 3. tvar."
   - otazka: "swim – swam – ___"
     moznosti: ["swum", "swimmed", "swam"]
     spravna: 0
     vysvetlenie: "Rodina i – a – u: swim – swam – swum, ako sing – sang – sung."
+    zle:
+      1: "Swim je nepravidelné – swimmed neexistuje."
+      2: "Swam je 2. tvar. Hľadáme 3. tvar."
 ---
 
 Pre **present perfect** potrebuješ **3. tvar** slovesa (past participle): *I have **seen**, she has **written***. Pri pravidelných slovesách je to jednoduché – 3. tvar je rovnaký ako minulý čas: *play – played – played*. Nepravidelné slovesá treba vedieť ako **trojicu**.

@@ -24,22 +24,37 @@ test:
     moznosti: ["quarter to four", "quarter past four", "quarter past five"]
     spravna: 1
     vysvetlenie: "Pätnásť minút po štvrtej → quarter past four."
+    zle:
+      0: "Quarter to four je 3:45 (štvrť do štyroch)."
+      2: "Quarter past five je 5:15. Je štvrť po štvrtej."
   - otazka: "6:30 – It's ___ ."
     moznosti: ["half past six", "half past seven", "half to seven"]
     spravna: 0
     vysvetlenie: "Pol siedmej = half past six (pol hodiny po šiestej)."
+    zle:
+      1: "Half past seven je 7:30. Po slovensky „pol siedmej“ je však 6:30!"
+      2: "Half to sa v angličtine nepoužíva. Je to vždy half past."
   - otazka: "8:45 – It's ___ ."
     moznosti: ["quarter past nine", "quarter to eight", "quarter to nine"]
     spravna: 2
     vysvetlenie: "Pätnásť minút do deviatej → quarter to nine."
+    zle:
+      0: "Quarter past nine je 9:15."
+      1: "Quarter to eight je 7:45."
   - otazka: "2:20 – It's ___ ."
     moznosti: ["twenty past two", "twenty to two", "twenty past three"]
     spravna: 0
     vysvetlenie: "Dvadsať minút po druhej → twenty past two."
+    zle:
+      1: "Twenty to two je 1:40 (dvadsať minút do druhej)."
+      2: "Twenty past three je 3:20."
   - otazka: "10:35 – It's ___ ."
     moznosti: ["thirty-five past ten", "twenty-five to eleven", "twenty-five to ten"]
     spravna: 1
     vysvetlenie: "Za polovicou počítame minúty do jedenástej: 60 − 35 = 25 → twenty-five to eleven."
+    zle:
+      0: "Po polhodine sa počíta, koľko minút ostáva do celej hodiny – nie past."
+      2: "Twenty-five to ten je 9:35. Do jedenástej → eleven."
 ---
 
 Na otázku ***What time is it?*** (Koľko je hodín?) odpovieme vetou ***It's…***. Na ručičkových hodinách sa pozeráme, **kde je veľká (minútová) ručička**.

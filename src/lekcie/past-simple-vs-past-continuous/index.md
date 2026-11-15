@@ -27,22 +27,37 @@ test:
     moznosti: ["watched", "was watching", "were watching"]
     spravna: 1
     vysvetlenie: "Pozeranie televízie trvalo (dlhý dej) → past continuous. Pri I je was: I was watching."
+    zle:
+      0: "Watched by bol krátky, ukončený dej. Pozeranie trvalo, keď prišiel telefonát → was watching."
+      2: "Were patrí k you / we / they. Pri I je was."
   - otazka: "She was walking home when she ___ an old friend."
     moznosti: ["saw", "was seeing", "sees"]
     spravna: 0
     vysvetlenie: "Stretnutie bol krátky dej, ktorý prerušil chôdzu → past simple: saw."
+    zle:
+      1: "Stretnutie je krátky dej – nepoužívame -ing."
+      2: "Sees je prítomný čas. Príbeh je v minulosti."
   - otazka: "___ we were having lunch, the lights went out."
     moznosti: ["When", "While", "During"]
     spravna: 1
     vysvetlenie: "Za spojkou nasleduje dlhý dej (were having) → while."
+    zle:
+      0: "When sa hodí ku krátkemu deju. Za spojkou je dlhý dej (were having) → while."
+      2: "Za during nie je veta, len podstatné meno (during lunch)."
   - otazka: "What were you doing when the teacher ___ in?"
     moznosti: ["was coming", "came", "comes"]
     spravna: 1
     vysvetlenie: "Učiteľ vošiel – krátky dej → past simple came."
+    zle:
+      0: "Vojsť do triedy je krátky dej, ktorý prerušil iný → past simple."
+      2: "Comes je prítomný čas. Príbeh je v minulosti."
   - otazka: "Which is correct?"
     moznosti: ["When I arrived, they were eating.", "When I was arriving, they ate.", "When I arrived, they eating."]
     spravna: 0
     vysvetlenie: "Príchod je krátky dej (arrived), jedenie bol dlhý dej, ktorý práve prebiehal (were eating)."
+    zle:
+      1: "Naopak: príchod je krátky dej (arrived) a jedenie dlhý (were eating)."
+      2: "Chýba were: they were eating."
 ---
 
 V príbehoch o minulosti často spájame **dva deje**. Jeden trvá dlhšie – je to *pozadie*. Druhý je krátky a ten dlhý **preruší**.

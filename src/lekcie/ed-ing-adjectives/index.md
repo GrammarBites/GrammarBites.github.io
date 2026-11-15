@@ -25,22 +25,32 @@ test:
     moznosti: ["interested", "interesting"]
     spravna: 1
     vysvetlenie: "Hovoríme, aká je kniha (vec) → -ing: interesting."
+    zle:
+      0: "Interested opisuje, ako sa niekto cíti (zaujíma sa). Kniha nič necíti – je zaujímavá."
   - otazka: "I'm ___ . Let's go to bed."
     moznosti: ["tired", "tiring"]
     spravna: 0
     vysvetlenie: "Hovorím, ako sa cítim → -ed: tired."
+    zle:
+      1: "Tiring opisuje vec, ktorá unavuje (namáhavá práca). Ty sa cítiš unavený → -ed."
   - otazka: "The instructions were very ___ . Nobody understood them."
     moznosti: ["confused", "confusing"]
     spravna: 1
     vysvetlenie: "Inštrukcie (vec) spôsobujú zmätok → -ing: confusing."
+    zle:
+      0: "Confused opisuje človeka, ktorý je zmätený. Inštrukcie sú mätúce → -ing."
   - otazka: "Are you ___ in football?"
     moznosti: ["interested", "interesting"]
     spravna: 0
     vysvetlenie: "Pýtame sa, či sa o niečo zaujímaš (tvoj pocit) → interested in."
+    zle:
+      1: "Are you interesting? by znamenalo „Si zaujímavý?“. Pýtame sa na tvoj pocit → -ed."
   - otazka: "'I'm boring' means…"
     moznosti: ["Nudím sa.", "Som nudný."]
     spravna: 1
     vysvetlenie: "I'm boring = som nudný (ostatní sa so mnou nudia). Nudím sa = I'm bored."
+    zle:
+      0: "Nudím sa = I'm bored (môj pocit). I'm boring znamená, že ja nudím druhých."
 ---
 
 Mnohé prídavné mená majú dva tvary – s **-ed** a s **-ing**. Vyzerajú podobne, ale znamenajú niečo iné.

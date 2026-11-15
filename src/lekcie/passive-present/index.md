@@ -26,22 +26,37 @@ test:
     moznosti: ["makes", "is made", "is make"]
     spravna: 1
     vysvetlenie: "Trpný rod: is + 3. tvar (made)."
+    zle:
+      0: "Makes je činný rod – čokoláda nič nerobí, niekto ju vyrába."
+      2: "Za is je 3. stĺpec: made, nie make."
   - otazka: "These bikes ___ in Slovakia."
     moznosti: ["is produced", "are produced", "are produce"]
     spravna: 1
     vysvetlenie: "Bikes = množné číslo → are + 3. tvar: are produced."
+    zle:
+      0: "Bikes je množné číslo → are, nie is."
+      2: "Za are je 3. stĺpec: produced."
   - otazka: "The windows ___ every Friday."
     moznosti: ["are cleaned", "are clean", "cleaned"]
     spravna: 0
     vysvetlenie: "Nesmie chýbať are ani 3. tvar: are cleaned."
+    zle:
+      1: "Clean tu znamená čistý. Potrebujeme 3. stĺpec: cleaned."
+      2: "Chýba be (are). Bez neho to nie je trpný rod."
   - otazka: "___ Spanish spoken in Mexico? – Yes, it is."
     moznosti: ["Does", "Is", "Are"]
     spravna: 1
     vysvetlenie: "Otázka v trpnom rode: is / are na začiatok. Spanish → Is."
+    zle:
+      0: "Does sa v trpnom rode nepoužíva – otázku robí be."
+      2: "Spanish je jeden jazyk → Is, nie Are."
   - otazka: "Active: People grow rice in China. → Passive:"
     moznosti: ["Rice is grown in China.", "Rice grows people in China.", "Rice is grow in China."]
     spravna: 0
     vysvetlenie: "Predmet (rice) ide na začiatok + is + 3. tvar (grown). People netreba – je to jasné."
+    zle:
+      1: "Táto veta hovorí, že ryža pestuje ľudí. Chýba be a 3. stĺpec."
+      2: "Za is je 3. stĺpec: grown, nie grow."
 ---
 
 Väčšinou hovoríme, **kto** niečo robí: *Bees make honey.* (činný rod). Niekedy je však dôležitejšie, **čo sa deje** alebo **s čím** – vtedy použijeme **trpný rod** (passive voice).

@@ -26,22 +26,37 @@ test:
     moznosti: ["Have", "Has", "Did"]
     spravna: 1
     vysvetlenie: "Your brother = he → Has. Did patrí do past simple."
+    zle:
+      0: "Have patrí k I / you / we / they. Your brother = he → Has."
+      2: "Did patrí do past simple. Ever + been → present perfect."
   - otazka: "Have you ever ___ a horror film?"
     moznosti: ["watch", "watched", "watching"]
     spravna: 1
     vysvetlenie: "Za have / has ide 3. tvar slovesa: watched."
+    zle:
+      0: "Za have je 3. tvar, nie základný."
+      2: "Za have je 3. tvar, nie -ing."
   - otazka: "Have they ever won a match? – No, they ___ ."
     moznosti: ["didn't", "haven't", "hasn't"]
     spravna: 1
     vysvetlenie: "Krátka odpoveď zopakuje have: No, they haven't."
+    zle:
+      0: "Pýtali sme sa s Have, tak odpovieme haven't, nie didn't."
+      2: "Hasn't patrí k he / she / it. Pri they je haven't."
   - otazka: "Which is correct?"
     moznosti: ["I haven't never been to Prague.", "I've never been to Prague.", "I've been never to Prague."]
     spravna: 1
     vysvetlenie: "Never už je zápor, preto bez not. Stojí medzi have a 3. tvarom: I've never been."
+    zle:
+      0: "Dva zápory naraz nedávame – never je už záporné."
+      2: "Never stojí medzi have a 3. tvarom: I've never been."
   - otazka: "Has Anna ever eaten snails? – Yes, she ___ ."
     moznosti: ["has", "have", "is"]
     spravna: 0
     vysvetlenie: "Anna = she → Yes, she has."
+    zle:
+      1: "Have patrí k I / you / we / they. Anna = she → has."
+      2: "Pýtali sme sa s Has, tak odpovieme has, nie is."
 ---
 
 V lekcii [Present perfect](/lekcie/present-perfect/) sme hovorili o tom, čo sme už zažili. Teraz sa to naučíme **opýtať**: *Už si niekedy…?*

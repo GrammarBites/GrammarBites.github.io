@@ -24,22 +24,37 @@ test:
     moznosti: ["can't", "couldn't", "didn't can"]
     spravna: 1
     vysvetlenie: "Minulosť od can't je couldn't."
+    zle:
+      0: "Can't je prítomný čas. Keď som mal tri roky = minulosť."
+      2: "Can sa s did nespája. Minulosť je couldn't."
   - otazka: "Yesterday I ___ help my mum in the garden."
     moznosti: ["must", "had to", "musted"]
     spravna: 1
     vysvetlenie: "Must nemá minulý tvar – v minulosti použijeme had to."
+    zle:
+      0: "Must nemá minulý tvar – yesterday si žiada had to."
+      2: "Musted neexistuje. V minulosti je had to."
   - otazka: "It was a holiday, so we ___ go to school."
     moznosti: ["didn't have to", "hadn't to", "mustn't"]
     spravna: 0
     vysvetlenie: "Nebolo to nutné (nemuseli sme) → didn't have to."
+    zle:
+      1: "Hadn't to nie je správne. Zápor je didn't have to."
+      2: "Mustn't = nesmieme. Ísť do školy nebolo zakázané, len to nebolo nutné."
   - otazka: "___ you have to wear a uniform at your old school?"
     moznosti: ["Had", "Did", "Do"]
     spravna: 1
     vysvetlenie: "Otázka s had to: Did you have to…?"
+    zle:
+      0: "Had na začiatku tu nepatrí. Otázka s had to: Did you have to…?"
+      2: "Do je prítomný čas. Pýtame sa na starú školu → Did."
   - otazka: "The music was very loud. We ___ hear the teacher."
     moznosti: ["couldn't", "didn't could", "can't"]
     spravna: 0
     vysvetlenie: "Nemohli sme počuť (v minulosti) → couldn't."
+    zle:
+      1: "Could sa s did nespája. Minulosť je couldn't."
+      2: "Can't je prítomný čas. Hudba hrala v minulosti."
 ---
 
 Modálne slovesá *can* a *must* majú v minulosti iný tvar. Treba si zapamätať len dve veci: **can → could** a **must / have to → had to**.

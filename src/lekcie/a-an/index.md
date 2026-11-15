@@ -25,22 +25,37 @@ test:
     moznosti: ["a", "an", "–"]
     spravna: 1
     vysvetlenie: "Egg začína samohláskou → an egg."
+    zle:
+      0: "a dávame pred spoluhlásku, ale egg začína samohláskou e."
+      2: "Jedno vajíčko (počítateľné, jednotné číslo) potrebuje člen."
   - otazka: "My brother is ___ doctor."
     moznosti: ["a", "an", "–"]
     spravna: 0
     vysvetlenie: "Pri povolaní v angličtine člen je: He's a doctor. Doctor začína spoluhláskou → a."
+    zle:
+      1: "an dávame pred samohlásku, ale doctor začína spoluhláskou d."
+      2: "Po slovensky člen nepovieme, ale v angličtine pri povolaní byť musí: a doctor."
   - otazka: "I don't like ___ milk."
     moznosti: ["a", "an", "–"]
     spravna: 2
     vysvetlenie: "Milk je nepočítateľné podstatné meno, preto bez člena."
+    zle:
+      0: "Milk je nepočítateľné – pred nepočítateľné podstatné meno a nedávame."
+      1: "Milk je nepočítateľné – a / an pred ním nedávame."
   - otazka: "We waited for ___ hour."
     moznosti: ["a", "an", "–"]
     spravna: 1
     vysvetlenie: "V slove hour sa h nevyslovuje, slovo znie ako „aur“ → an hour."
+    zle:
+      0: "Hour sa píše s h, ale h sa nevyslovuje – slovo znie „aur“, teda samohláskou."
+      2: "Jedna hodina (počítateľné, jednotné číslo) potrebuje člen."
   - otazka: "Which is correct?"
     moznosti: ["an big apple", "a big apple", "a apple"]
     spravna: 1
     vysvetlenie: "Člen sa riadi slovom hneď za ním: big začína spoluhláskou → a big apple. Ale: an apple."
+    zle:
+      0: "Člen sa riadi slovom hneď za ním. Big začína spoluhláskou, preto a."
+      2: "Apple začína samohláskou, preto an apple, nie a apple."
 ---
 
 V slovenčine členy nemáme, a preto ich v angličtine ľahko vynecháme. **Neurčitý člen a / an** znamená „jeden, nejaký“. Dávame ho pred jednu vec, o ktorej hovoríme prvýkrát alebo ktorá môže byť ktorákoľvek.

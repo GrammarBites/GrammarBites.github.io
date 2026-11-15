@@ -24,22 +24,37 @@ test:
     moznosti: ["a", "the", "–"]
     spravna: 1
     vysvetlenie: "Pred najvyšším stupňom (oldest) je vždy the."
+    zle:
+      0: "Pred najvyšším stupňom nie je a, ale vždy the."
+      2: "Pred najvyšším stupňom člen musí byť: the oldest."
   - otazka: "Our classroom is on ___ second floor."
     moznosti: ["the", "a", "–"]
     spravna: 0
     vysvetlenie: "Pred radovou číslovkou (second) je the."
+    zle:
+      1: "Pred radovou číslovkou (second) nie je a, ale the."
+      2: "Pred radovou číslovkou člen musí byť: the second floor."
   - otazka: "We had a picnic in ___ Hyde Park."
     moznosti: ["the", "a", "–"]
     spravna: 2
     vysvetlenie: "Názvy parkov sú väčšinou bez the: Hyde Park."
+    zle:
+      0: "Názvy parkov sú väčšinou bez the."
+      1: "Hyde Park je konkrétny park s menom – a sa nedáva."
   - otazka: "We went on a boat trip on ___ River Thames."
     moznosti: ["–", "the", "a"]
     spravna: 1
     vysvetlenie: "Názvy riek majú the: the River Thames, the Danube."
+    zle:
+      0: "Názvy riek majú vždy the."
+      2: "Temža je jedna konkrétna rieka – nie a, ale the."
   - otazka: "Which is correct?"
     moznosti: ["We visited Tower of London.", "We visited the Tower of London.", "We visited a Tower of London."]
     spravna: 1
     vysvetlenie: "Názov obsahuje „of“, preto the: the Tower of London."
+    zle:
+      0: "Názov s of má the: the Tower of London."
+      2: "Tower of London je jedna konkrétna budova – a nie, ale the."
 ---
 
 V slovenčine členy nemáme, preto na **the** ľahko zabudneme, alebo ho naopak dáme tam, kde nepatrí. Táto lekcia ukazuje pravidlá z unitu *Cities*.

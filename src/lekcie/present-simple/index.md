@@ -27,22 +27,37 @@ test:
     moznosti: ["play", "plays", "playes"]
     spravna: 1
     vysvetlenie: "My brother = he, preto pridáme -s: plays."
+    zle:
+      0: "Chýba -s: My brother = he → plays."
+      2: "Pri play stačí -s: plays (es nie)."
   - otazka: "Alison ___ home at ten past eight."
     moznosti: ["leaves", "leave", "leavs"]
     spravna: 0
     vysvetlenie: "Alison = she → leaves."
+    zle:
+      1: "Chýba -s: Alison = she → leaves."
+      2: "Pozor na pravopis: leaves (e ostáva)."
   - otazka: "He ___ his homework after dinner."
     moznosti: ["do", "dos", "does"]
     spravna: 2
     vysvetlenie: "Do má pri he/she/it tvar does (ako go → goes)."
+    zle:
+      0: "Chýba -es: He → does."
+      1: "Dos neexistuje. Pri do pridáme -es: does."
   - otazka: "We ___ in a flat. We live in a house."
     moznosti: ["doesn't live", "don't live", "don't lives"]
     spravna: 1
     vysvetlenie: "Pri we je don't + sloveso bez -s."
+    zle:
+      0: "Doesn't patrí k he / she / it. Pri we je don't."
+      2: "Po don't je sloveso bez -s."
   - otazka: "Which sentence is correct?"
     moznosti: ["She doesn't likes Maths.", "She don't like Maths.", "She doesn't like Maths."]
     spravna: 2
     vysvetlenie: "She → doesn't. Po doesn't nasleduje sloveso bez -s: like."
+    zle:
+      0: "Po doesn't je sloveso bez -s – -s už je v doesn't."
+      1: "Don't patrí k I / you / we / they. Pri she je doesn't."
 ---
 
 ## Pravidlo

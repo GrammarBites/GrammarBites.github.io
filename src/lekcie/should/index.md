@@ -24,22 +24,37 @@ test:
     moznosti: ["should", "should to", "shoulds"]
     spravna: 0
     vysvetlenie: "Za should ide sloveso bez to: should go."
+    zle:
+      1: "Za should nie je to: should go."
+      2: "Should sa nemení – žiadne -s."
   - otazka: "My brother ___ spend so much time on his phone."
     moznosti: ["shouldn't", "doesn't should", "not should"]
     spravna: 0
     vysvetlenie: "Zápor je shouldn't (should not) – bez does."
+    zle:
+      1: "Should sa s does nespája. Zápor je shouldn't."
+      2: "Not should nie je správne poradie. Zápor je shouldn't."
   - otazka: "___ I call the teacher? – Yes, you should."
     moznosti: ["Do", "Should", "Am"]
     spravna: 1
     vysvetlenie: "Otázka: should ide na začiatok: Should I call…?"
+    zle:
+      0: "Should si otázku robí samo, do netreba."
+      2: "Am tu nepatrí – otázku robí should: Should I…?"
   - otazka: "She ___ wear a coat. It's very cold."
     moznosti: ["shoulds", "should", "should to"]
     spravna: 1
     vysvetlenie: "Should je pre všetky osoby rovnaké, aj pri she: She should wear."
+    zle:
+      0: "Should sa nemení ani pri she – žiadne -s."
+      2: "Za should nie je to."
   - otazka: "Which one is advice (rada), not a rule?"
     moznosti: ["You mustn't use phones in the test.", "You should read more books.", "You must wear a seatbelt."]
     spravna: 1
     vysvetlenie: "Should = rada (bolo by dobré). Must / mustn't = povinnosť alebo zákaz."
+    zle:
+      0: "Mustn't je zákaz (pravidlo), nie rada."
+      2: "Must je povinnosť (pravidlo), nie rada."
 ---
 
 Keď chceme niekomu **poradiť**, čo je dobré urobiť a čo nie, použijeme **should** (mal by si) a **shouldn't** (nemal by si).

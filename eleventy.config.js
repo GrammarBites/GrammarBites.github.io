@@ -13,7 +13,8 @@ const slovickaData = JSON.parse(fs.readFileSync("src/_data/slovickaData.json", "
 const escHtml = (t) => String(t ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 function otazkyLekcie(l) {
   const d = l.data;
-  const q = (d.test || []).map((t) => ({ o: t.otazka, m: t.moznosti, s: t.spravna, v: escHtml(t.vysvetlenie), ...(t.nemiesaj ? { n: 1 } : {}) }));
+  const q = (d.test || []).map((t) => ({ o: t.otazka, m: t.moznosti, s: t.spravna, v: escHtml(t.vysvetlenie), ...(t.nemiesaj ? { n: 1 } : {}),
+    ...(t.zle ? { z: t.moznosti.map((_, i) => (t.zle[i] ? escHtml(t.zle[i]) : "")) } : {}) }));
   const x = [];
   const rz = d.roztried && roztriedData[d.roztried];
   if (rz) for (const p of rz.polozky) {

@@ -25,22 +25,37 @@ test:
     moznosti: ["mustn't", "don't have to", "must"]
     spravna: 0
     vysvetlenie: "Je to zakázané → mustn't (nesmieš)."
+    zle:
+      1: "Don't have to = nemusíš. Lenže je to zakázané – nesmieš."
+      2: "Must = musíš. Lenže dotýkať sa obrazov je zakázané."
   - otazka: "It's Saturday. I ___ go to school today."
     moznosti: ["mustn't", "don't have to", "must"]
     spravna: 1
     vysvetlenie: "Nie je to nutné, je víkend → don't have to (nemusím)."
+    zle:
+      0: "Mustn't = nesmiem. Ísť do školy v sobotu nie je zakázané, len to netreba."
+      2: "Must = musím. Je sobota – nie je to nutné."
   - otazka: "You ___ wear a seatbelt in the car."
     moznosti: ["must", "mustn't", "don't have to"]
     spravna: 0
     vysvetlenie: "Je to povinnosť → must (musíš)."
+    zle:
+      1: "Mustn't = nesmieš. Pás je povinnosť, nie zákaz."
+      2: "Don't have to = nemusíš. Pás je však povinný."
   - otazka: "My sister ___ to help in the kitchen. Mum does it."
     moznosti: ["doesn't have", "don't have", "mustn't"]
     spravna: 0
     vysvetlenie: "Nemusí → doesn't have to. Pri she je doesn't."
+    zle:
+      1: "Don't patrí k I / you / we / they. My sister = she → doesn't."
+      2: "Mustn't = nesmie. Pomáhať nie je zakázané, len to netreba – mama to robí."
   - otazka: "Nesmieš to nikomu povedať! →"
     moznosti: ["You don't have to tell anyone!", "You mustn't tell anyone!", "You don't must tell anyone!"]
     spravna: 1
     vysvetlenie: "Nesmieš = mustn't. Don't have to by znamenalo „nemusíš“."
+    zle:
+      0: "Don't have to = nemusíš. Veta však hovorí nesmieš."
+      2: "Must sa so slovom don't nespája. Zápor je mustn't."
 ---
 
 Pravidlá v zoo, v škole aj doma sa dajú povedať tromi výrazmi. Každý znamená niečo iné.

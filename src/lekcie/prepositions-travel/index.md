@@ -25,22 +25,37 @@ test:
     moznosti: ["by", "on", "with"]
     spravna: 0
     vysvetlenie: "Dopravný prostriedok všeobecne → by car (bez the)."
+    zle:
+      1: "On patrí k on foot (pešo). Autom = by car."
+      2: "With car po anglicky nepovieme. Autom = by car."
   - otazka: "I don't have a bike, so I go to school ___ foot."
     moznosti: ["by", "on", "with"]
     spravna: 1
     vysvetlenie: "Pešo = on foot."
+    zle:
+      0: "By foot je častá chyba – pešo sa povie on foot."
+      2: "With foot po anglicky nepovieme. Pešo = on foot."
   - otazka: "Hurry up! Get ___ the train!"
     moznosti: ["in", "on", "at"]
     spravna: 1
     vysvetlenie: "Do vlaku, autobusu nastupujeme: get on."
+    zle:
+      0: "Get in používame pri aute alebo taxíku. Do vlaku a autobusu: get on."
+      2: "Get at nie je správne. Nastúpiť do vlaku = get on."
   - otazka: "We arrived ___ Vienna at midnight."
     moznosti: ["to", "in", "at"]
     spravna: 1
     vysvetlenie: "Mesto → arrive in."
+    zle:
+      0: "Arrive to je častá chyba. Pri meste je arrive in."
+      2: "Arrive at je pri budove alebo mieste (at the station). Pri meste je in."
   - otazka: "The bus to Nitra leaves ___ stop number 4."
     moznosti: ["from", "to", "by"]
     spravna: 0
     vysvetlenie: "Odkiaľ odchádza → leaves from."
+    zle:
+      1: "To znamená kam. Zastávka je odkiaľ autobus odchádza → from."
+      2: "By sa tu nehodí. Odchádza odkiaľ → from."
 ---
 
 Na stanici, pri kupovaní lístka alebo keď rozprávaš, ako ideš do školy, potrebuješ niekoľko malých slov – **predložiek**. Tu sú tie najdôležitejšie.

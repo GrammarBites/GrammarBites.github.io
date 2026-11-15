@@ -24,22 +24,37 @@ test:
     moznosti: ["heavy enough", "too heavy", "enough heavy"]
     spravna: 1
     vysvetlenie: "Je to problém, nedá sa to → too heavy (príliš ťažká)."
+    zle:
+      0: "Heavy enough = dosť ťažká (v poriadku). Lenže ju nevládzem niesť – je to problém."
+      2: "Enough ide za prídavné meno a navyše tu je problém → too heavy."
   - otazka: "My little brother can't go on this ride. He isn't ___ ."
     moznosti: ["tall enough", "enough tall", "too tall"]
     spravna: 0
     vysvetlenie: "Enough ide za prídavné meno: tall enough."
+    zle:
+      1: "Enough ide za prídavné meno: tall enough."
+      2: "Too tall = príliš vysoký. Brat je však malý."
   - otazka: "It's ___ cold to go swimming."
     moznosti: ["enough", "too", "very much"]
     spravna: 1
     vysvetlenie: "Príliš studené na to, aby sme sa kúpali → too cold to…"
+    zle:
+      0: "Enough tu nedáva zmysel – je príliš studeno."
+      2: "Very much sa pred prídavné meno nedáva. Príliš studené → too cold."
   - otazka: "We can't make a cake. We haven't got ___ ."
     moznosti: ["eggs enough", "enough eggs", "too eggs"]
     spravna: 1
     vysvetlenie: "Pri podstatnom mene ide enough pred neho: enough eggs."
+    zle:
+      0: "Pri podstatnom mene ide enough pred neho: enough eggs."
+      2: "Too sa pred podstatné meno takto nedáva. Dosť vajec → enough eggs."
   - otazka: "Your drawing is ___ beautiful! I love it."
     moznosti: ["too", "very", "enough"]
     spravna: 1
     vysvetlenie: "Je to pochvala, nie problém → very (veľmi). Too by znamenalo, že je to až zle."
+    zle:
+      0: "Too by znamenalo, že je to až zle (príliš). Je to pochvala → very."
+      2: "Enough beautiful nie je správne a nehodí sa ku pochvale."
 ---
 
 Keď je niečo **príliš** (a je to problém), použijeme **too**. Keď niečo **nie je dosť** (nestačí to), použijeme **not … enough**.

@@ -24,22 +24,37 @@ test:
     moznosti: ["you", "yourself", "yourselves"]
     spravna: 1
     vysvetlenie: "Hovoríme jednému človeku a robí to sám sebe → yourself."
+    zle:
+      0: "You by znamenalo niekoho iného. Porežeš sám seba → yourself."
+      2: "Yourselves je pre viac ľudí. Hovoríme jednému → yourself."
   - otazka: "My little brother dressed ___ today."
     moznosti: ["himself", "hisself", "him"]
     spravna: 0
     vysvetlenie: "he → himself (tvar hisself neexistuje)."
+    zle:
+      1: "Hisself neexistuje. Správne je himself."
+      2: "Him by znamenalo niekoho iného. Obliekol sám seba → himself."
   - otazka: "The children made the cake by ___ ."
     moznosti: ["themselfs", "theirselves", "themselves"]
     spravna: 2
     vysvetlenie: "they → themselves."
+    zle:
+      0: "Množné číslo je -selves, nie -selfs."
+      1: "Theirselves neexistuje. They → themselves."
   - otazka: "Cítim sa unavený. →"
     moznosti: ["I feel myself tired.", "I feel tired.", "I feel me tired."]
     spravna: 1
     vysvetlenie: "Pri feel sa zvratné zámeno nepoužíva: I feel tired."
+    zle:
+      0: "Pri feel zvratné zámeno nepoužívame, aj keď po slovensky povieme „cítim sa“."
+      2: "Pri feel žiadne zámeno nepridávame: I feel tired."
   - otazka: "We really enjoyed ___ at the party."
     moznosti: ["ourselves", "ourself", "us"]
     spravna: 0
     vysvetlenie: "we → ourselves. Enjoy sa používa so zvratným zámenom."
+    zle:
+      1: "Pri we je množné číslo: ourselves."
+      2: "Us by znamenalo niekoho iného. Pri enjoy je zvratné zámeno."
 ---
 
 **Zvratné zámená** (*reflexive pronouns*) použijeme, keď **ten, kto niečo robí, to robí sám sebe**. Podmet a predmet vety sú tá istá osoba.

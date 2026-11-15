@@ -25,22 +25,37 @@ test:
     moznosti: ["danceed", "danced", "dancied"]
     spravna: 1
     vysvetlenie: "Sloveso končí na -e, pridáme len -d: danced."
+    zle:
+      0: "Dance už končí na e – pridáme len -d."
+      2: "Y tu nepatrí. Dance + d = danced."
   - otazka: "stop → ?"
     moznosti: ["stoped", "stopped", "stopt"]
     spravna: 1
     vysvetlenie: "Krátka samohláska + jedna spoluhláska → spoluhlásku zdvojíme: stopped."
+    zle:
+      0: "Pri stop sa p zdvojí: stopped."
+      2: "Stopt nie je správne. Pravidelné sloveso má -ed: stopped."
   - otazka: "study → ?"
     moznosti: ["studyed", "studied", "studed"]
     spravna: 1
     vysvetlenie: "Spoluhláska + y → y zmeníme na i a pridáme -ed: studied."
+    zle:
+      0: "Spoluhláska + y → y sa mení na i: studied."
+      2: "Chýba i: studied."
   - otazka: "play → ?"
     moznosti: ["plaied", "played", "playd"]
     spravna: 1
     vysvetlenie: "Pred y je samohláska (a), preto len + ed: played."
+    zle:
+      0: "Pred y je samohláska (a), preto y ostáva: played."
+      2: "Chýba e: played."
   - otazka: "Which word ends with the sound [id]?"
     moznosti: ["walked", "played", "wanted"]
     spravna: 2
     vysvetlenie: "Po t a d vyslovujeme [id]: want-id. Walked = [t], played = [d]."
+    zle:
+      0: "Walked vyslovujeme na konci [t] – walkt."
+      1: "Played vyslovujeme na konci [d] – playd."
 ---
 
 Pravidelné slovesá tvoria minulý čas pridaním koncovky **-ed**. Tvar je rovnaký pre všetky osoby: *I walked, she walked, they walked*. Niekedy sa však pri pridaní koncovky mení pravopis.

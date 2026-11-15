@@ -24,22 +24,37 @@ test:
     moznosti: ["is the library", "the library is", "does the library is"]
     spravna: 1
     vysvetlenie: "V nepriamej otázke je slovosled ako vo vete: the library is."
+    zle:
+      0: "To je poradie z otázky. V nepriamej otázke je poradie ako vo vete: podmet + sloveso."
+      2: "Does v nepriamej otázke zmizne."
   - otazka: "„What time does the shop open?“ → He wants to know what time the shop ___ ."
     moznosti: ["does open", "open", "opens"]
     spravna: 2
     vysvetlenie: "Does zmizne, -s sa vráti k slovesu: opens."
+    zle:
+      0: "Does v nepriamej otázke zmizne a -s sa vráti k slovesu."
+      1: "Chýba -s. The shop = it → opens."
   - otazka: "„Do you like sushi?“ → Tom wants to know ___ I like sushi."
     moznosti: ["do", "if", "that"]
     spravna: 1
     vysvetlenie: "Otázka áno / nie → if (alebo whether)."
+    zle:
+      0: "Do v nepriamej otázke zmizne. Pri otázke áno / nie použijeme if."
+      2: "That (že) patrí k oznamovacej vete. Pri otázke áno / nie je if (či)."
   - otazka: "„Where do you live?“ → She asked me where I ___ ."
     moznosti: ["live", "lived", "do live"]
     spravna: 1
     vysvetlenie: "Po asked sa čas posunie o krok späť: live → lived."
+    zle:
+      0: "Po asked sa čas posunie o krok späť: live → lived."
+      2: "Do v nepriamej otázke zmizne."
   - otazka: "Which sentence is correct?"
     moznosti: ["He wants to know where is the toilet.", "He wants to know where the toilet is.", "He wants to know where the toilet is?"]
     spravna: 1
     vysvetlenie: "Slovosled ako vo vete a na konci bodka."
+    zle:
+      0: "To je poradie z otázky. V nepriamej otázke je podmet pred slovesom: the toilet is."
+      2: "Poradie je dobré, ale nepriama otázka končí bodkou, nie otáznikom."
 ---
 
 Keď prerozprávame **otázku**, ktorú niekto položil, vznikne **nepriama otázka** (*indirect question*). Najčastejšie začína slovami ***He wants to know…*** (chce vedieť) alebo ***She asked…*** (pýtala sa).

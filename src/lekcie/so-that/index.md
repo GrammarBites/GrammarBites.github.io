@@ -24,22 +24,37 @@ test:
     moznosti: ["so", "so much", "very"]
     spravna: 0
     vysvetlenie: "Pred prídavným menom (hot) je len so."
+    zle:
+      1: "So much patrí k podstatnému menu (so much traffic). Pred hot je len so."
+      2: "Very sa s that nespája. Pred prídavným menom + that je so."
   - otazka: "There was ___ traffic that we were late."
     moznosti: ["so many", "so much", "so"]
     spravna: 1
     vysvetlenie: "Traffic je nepočítateľné → so much."
+    zle:
+      0: "So many patrí k počítateľným veciam. Traffic je nepočítateľné."
+      2: "Pred podstatným menom samotné so nestačí – je to so much."
   - otazka: "She had ___ books that she needed a new shelf."
     moznosti: ["so much", "so many", "so"]
     spravna: 1
     vysvetlenie: "Books je množné číslo → so many."
+    zle:
+      0: "So much patrí k nepočítateľným veciam. Books sa dajú spočítať."
+      2: "Pred podstatným menom samotné so nestačí – je to so many."
   - otazka: "He talked so quickly ___ nobody understood him."
     moznosti: ["than", "that", "as"]
     spravna: 1
     vysvetlenie: "Následok uvádza that."
+    zle:
+      0: "Than patrí k porovnaniu (bigger than). Následok uvádza that."
+      2: "As patrí k porovnaniu (as … as). Následok uvádza that."
   - otazka: "Which sentence is correct?"
     moznosti: ["It was so much cold that we stayed in.", "It was so cold that we stayed in.", "It was so cold than we stayed in."]
     spravna: 1
     vysvetlenie: "so + prídavné meno + that."
+    zle:
+      0: "Pred prídavným menom (cold) much nedávame – len so."
+      2: "Than patrí k porovnaniu. Následok uvádza that."
 ---
 
 So … that spojí do jednej vety **príčinu** a jej **následok**. Po slovensky povieme *taký …, že* alebo *tak …, že*.

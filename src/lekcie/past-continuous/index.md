@@ -25,22 +25,37 @@ test:
     moznosti: ["were", "was", "is"]
     spravna: 1
     vysvetlenie: "My brother = he → was. Ide o minulosť (at 7 o'clock yesterday), preto nie is."
+    zle:
+      0: "Were patrí k you / we / they. My brother = he → was."
+      2: "Is je prítomný čas. Hovoríme o minulosti (o 7. hodine včera)."
   - otazka: "We ___ sleeping at midnight."
     moznosti: ["was", "were", "did"]
     spravna: 1
     vysvetlenie: "Pri we je were: we were sleeping."
+    zle:
+      0: "Was patrí k I / he / she / it. Pri we je were."
+      2: "Did patrí k past simple. Pri -ing je was / were."
   - otazka: "She wasn't ___ TV. She was reading."
     moznosti: ["watch", "watched", "watching"]
     spravna: 2
     vysvetlenie: "Po was / wasn't nasleduje sloveso s -ing: wasn't watching."
+    zle:
+      0: "Za wasn't je sloveso s -ing."
+      1: "Za wasn't je sloveso s -ing, nie minulý tvar."
   - otazka: "___ your parents working yesterday at 5 pm?"
     moznosti: ["Was", "Were", "Did"]
     spravna: 1
     vysvetlenie: "Otázka: was / were ide na začiatok. Your parents = they → Were."
+    zle:
+      0: "Your parents = they → Were, nie Was."
+      2: "Did sa s -ing nespája. Otázku robí were."
   - otazka: "Was Tom swimming? – No, he ___ ."
     moznosti: ["wasn't", "didn't", "weren't"]
     spravna: 0
     vysvetlenie: "Krátka odpoveď zopakuje was: No, he wasn't."
+    zle:
+      1: "Pýtali sme sa s Was, tak odpovieme wasn't, nie didn't."
+      2: "Weren't patrí k you / we / they. He → wasn't."
 ---
 
 **Past continuous** používame, keď hovoríme, čo **práve prebiehalo** v určitom čase v minulosti. Ako keby sme sa pozreli na fotku z minulosti: *O ôsmej som práve raňajkoval.*

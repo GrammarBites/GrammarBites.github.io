@@ -23,22 +23,37 @@ test:
     moznosti: ["am", "is", "are"]
     spravna: 1
     vysvetlenie: "My brother = he → is."
+    zle:
+      0: "Am patrí len k I. My brother = he → is."
+      2: "Are patrí k you / we / they. My brother = he → is."
   - otazka: "We ___ at school today. It's Sunday!"
     moznosti: ["isn't", "aren't", "not"]
     spravna: 1
     vysvetlenie: "Pri we je are, zápor are not = aren't."
+    zle:
+      0: "Isn't patrí k he / she / it. Pri we je aren't."
+      2: "Not samo nestačí – chýba sloveso be: aren't."
   - otazka: "___ your parents from Košice?"
     moznosti: ["Is", "Are", "Do"]
     spravna: 1
     vysvetlenie: "Your parents = they → Are …? Pri slovese be nepoužívame do."
+    zle:
+      0: "Is patrí k he / she / it. Your parents = they → Are."
+      2: "Pri slovese be do nepoužívame – be si otázku robí samo."
   - otazka: "Are you twelve? – Yes, ___"
     moznosti: ["I'm.", "I am.", "I'm twelve am."]
     spravna: 1
     vysvetlenie: "V kladnej krátkej odpovedi sa nesťahuje: Yes, I am."
+    zle:
+      0: "V kladnej krátkej odpovedi skrátený tvar (I'm) nepoužívame."
+      2: "Krátka odpoveď je len Yes, I am."
   - otazka: "Ako povieš: Mám jedenásť rokov."
     moznosti: ["I have eleven.", "I'm eleven.", "I'm have eleven years."]
     spravna: 1
     vysvetlenie: "Vek vyjadrujeme slovesom be: I'm eleven. (alebo I'm eleven years old.)"
+    zle:
+      0: "I have eleven je doslovný preklad zo slovenčiny. Vek vyjadrujeme slovesom be."
+      2: "Pri veku je len be – have tam nepatrí: I'm eleven."
 ---
 
 Sloveso **be** (byť) je najčastejšie sloveso v angličtine. V prítomnom čase má tri tvary: **am, is, are**.

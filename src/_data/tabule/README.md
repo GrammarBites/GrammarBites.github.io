@@ -19,7 +19,7 @@ Všetky tabule sú na stránke `/tabula/`.
 - `popis` – vysvetlenie pod tabuľou (po slovensky, môže obsahovať `<b>`, `<i>`)
 - `otazka` (nepovinné) – kontrolná otázka; „Ďalej“ sa odomkne až po správnej odpovedi
   `{ "text", "moznosti": [...], "spravna": 0, "napoveda": { "1": "vysvetlenie pre zlú možnosť 1" }, "vysvetlenie" }`
-- `odkazy` (nepovinné) – tlačidlá na konci, napr. na trenažér: `{ "text": "...", "url": "/lekcie/.../#h-pisanie" }`
+- `odkazy` (nepovinné) – tlačidlá na konci, napr. na tréner: `{ "text": "...", "url": "/lekcie/.../#h-pisanie" }`
 
 ## Operácie
 

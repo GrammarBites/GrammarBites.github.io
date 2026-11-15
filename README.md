@@ -17,7 +17,7 @@ src/
   _data/nepravidelneSlovesa.json   ← nepravidelné slovesá po rodinách (pre tréner, učebnica = posledné pole)
   _data/site.js                    ← nastavenia (adresa webu, kľúč kontaktného formulára)
   pred-pisomkou/index.njk          ← „Pred písomkou": 20 náhodných otázok z unitu (berie mini testy lekcií
-                                     a vety z trenažérov Roztrieď a Doplň slovo, plus vety z bloku Nájdi a oprav chybu ako
+                                     a vety z trénerov Roztrieď a Doplň slovo, plus vety z bloku Nájdi a oprav chybu ako
                                      otázku „Ktorá veta je správna?“ – správna, chybná a (ak je v opravChybuData ako 5. prvok) druhá chybná veta; nič sa nepíše zvlášť)
   assets/img/postavy/              ← koza a učiteľ (PNG s priehľadným pozadím)
 sablona/index.md                   ← šablóna novej lekcie s vysvetlivkami

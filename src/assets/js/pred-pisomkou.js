@@ -1,6 +1,6 @@
 // Pred písomkou: zmiešaný test z hotových otázok všetkých lekcií jedného unitu.
 // Adresa: /pred-pisomkou/#project-4/6 (učebnica/unit). Bez # sa ukáže výber unitu.
-// Otázky pripravuje filter predPisomkou v eleventy.config.js (mini testy + vety z trenažérov).
+// Otázky pripravuje filter predPisomkou v eleventy.config.js (mini testy + vety z trénerov).
 (function () {
   const app = document.querySelector("[data-pp]");
   const D = GB.data("data-pred-pisomkou");
@@ -39,8 +39,8 @@
   }
 
   // Z každej lekcie postupne po jednej otázke, aby bol v teste celý unit.
-  // V lekcii idú najprv otázky mini testu spolu s najviac 5 vetami z trenažéra; zvyšné vety
-  // z trenažéra prídu na rad, len keď by inak otázok nebolo dosť.
+  // V lekcii idú najprv otázky mini testu spolu s najviac 5 vetami z trénera; zvyšné vety
+  // z trénera prídu na rad, len keď by inak otázok nebolo dosť.
   function vyberOtazky(u) {
     const rady = zamiesaj(u.lekcie).map((slug) => {
       const L = D.lekcie[slug];

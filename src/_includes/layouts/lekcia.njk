@@ -148,12 +148,12 @@ skripty: ["lekcia.js"]
   </div>
 </aside>
 
-{% set suvisiace = (collections.lekcie | preTemu(hlavnaTema.id) | bezStranky(page.url) | head(3)) if hlavnaTema else [] %}
-{% if suvisiace.length %}
+{% set suvisiaceL = collections.lekcie | suvisiaceLekcie({ url: page.url, rocniky: rocniky, temy: temy, ucebnice: ucebnice, suvisiace: suvisiace }) %}
+{% if suvisiaceL.length %}
 <section class="sekcia">
-  <h2 class="sekcia__nadpis">Ďalšie lekcie: {{ hlavnaTema.nazov }}</h2>
+  <h2 class="sekcia__nadpis">Hodí sa k tejto lekcii</h2>
   <div class="mriezka">
-    {% for l in suvisiace %}{% include "partials/karta.njk" %}{% endfor %}
+    {% for l in suvisiaceL %}{% include "partials/karta.njk" %}{% endfor %}
   </div>
 </section>
 {% endif %}

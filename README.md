@@ -37,6 +37,10 @@ Výklad v lekcii je predvolene schovaný pod tlačidlom „Ukázať výklad“, 
 
 Blok „Nájdi a oprav chybu“ (`opravChybu: true`) je predvolene za blokom „Napíš sám“. Ak má byť pred ním, pridaj do lekcie `opravPredPisanim: true`.
 
+## Súvisiace lekcie („Hodí sa k tejto lekcii“)
+
+Pod lekciou sa ponúknu tri lekcie primerané úrovni: nikdy nie také, ktoré sa preberajú až vo vyššom ročníku než táto lekcia. Prednosť má rovnaký unit, potom spoločná téma a blízky ročník (filter `suvisiaceLekcie` v `eleventy.config.js`). Ak chceš pri niektorej lekcii vybrať lekcie ručne, pridaj do jej údajov `suvisiace: [present-simple, present-simple-otazky]` – tie pôjdu ako prvé.
+
 ## Lokálne spustenie
 
 ```

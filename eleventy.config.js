@@ -133,6 +133,30 @@ export default function (eleventyConfig) {
       (l.data.ucebnice || []).some((u) => u.id === id && (unit === undefined || String(u.unit) === String(unit)))
     )
   );
+  // Súvisiace lekcie primerané úrovni: neponúkne nič, čo sa preberá až vo vyššom ročníku než táto lekcia.
+  // Poradie: ručne vybrané ("suvisiace: [slug, …]" v lekcii) → rovnaký unit → spoločná téma → blízky ročník.
+  eleventyConfig.addFilter("suvisiaceLekcie", (lekcie, ja, pocet = 3) => {
+    const prvy = (d) => Math.min(...((d.rocniky || []).length ? d.rocniky : [99]));
+    const mojRocnik = prvy(ja), mojeTemy = ja.temy || [], mojeUnity = ja.ucebnice || [];
+    const rucne = ja.suvisiace || [];
+    const slug = (l) => l.fileSlug || l.url.split("/").filter(Boolean).pop();
+    const ine = lekcie.filter((l) => l.url !== ja.url);
+    const skore = (l) => {
+      const d = l.data, r = prvy(d);
+      const spolocne = (d.temy || []).filter((t) => mojeTemy.includes(t));
+      let s = spolocne.filter((t) => t !== "ostatne").length * 3 + (spolocne.includes("ostatne") ? 1 : 0);
+      if (mojeTemy[0] && mojeTemy[0] !== "ostatne" && (d.temy || [])[0] === mojeTemy[0]) s += 2;
+      const u = d.ucebnice || [];
+      if (u.some((x) => mojeUnity.some((m) => m.id === x.id && m.unit !== undefined && String(m.unit) === String(x.unit)))) s += 4;
+      else if (u.some((x) => mojeUnity.some((m) => m.id === x.id))) s += 1;
+      return s - Math.abs(mojRocnik - r) * 2;
+    };
+    const vybrane = rucne.map((x) => ine.find((l) => slug(l) === x)).filter(Boolean);
+    const primerane = ine.filter((l) => !vybrane.includes(l) && prvy(l.data) <= mojRocnik)
+      .map((l) => ({ l, s: skore(l) })).filter((x) => x.s > 0)
+      .sort((a, b) => b.s - a.s || (a.l.data.strana ?? 999) - (b.l.data.strana ?? 999) || a.l.data.title.localeCompare(b.l.data.title));
+    return [...vybrane, ...primerane.map((x) => x.l)].slice(0, pocet);
+  });
   eleventyConfig.addFilter("preTemu", (lekcie, id) =>
     lekcie.filter((l) => (l.data.temy || []).includes(id))
   );

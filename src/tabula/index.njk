@@ -7,12 +7,16 @@ skripty: ["tabula.js"]
 ---
 <div class="tabula-app" data-tabula-app>
   <section class="tb-vyber" data-vyber aria-labelledby="h-tabula">
-    <header class="tb-vyber__hlava">
-      <div class="stranka-hlava">
-        <h1 id="h-tabula" class="stranka-hlava__nadpis">Vysvetli mi to na tabuli</h1>
-        <p>Napíš, čomu nerozumieš. Vysvetlím ti to na tabuli krok po kroku – tempom, ktoré si určíš sám.</p>
+    <header class="tb-uvod">
+      <div class="tb-ram">
+        <div class="tb-doska tb-doska--uvod">
+          <h1 id="h-tabula" class="tb-nadpis">Vysvetli mi to na tabuli</h1>
+          <p class="tb-uvod__en tb-pise" lang="en">How can I help you?</p>
+          <p class="tb-uvod__sk tb-pise">Ako ti môžem pomôcť?</p>
+          <p class="tb-uvod__pozn">Napíš, čomu nerozumieš, alebo si vyber tému. Vysvetlím ti to krok po kroku – tempom, ktoré si určíš sám.</p>
+        </div>
       </div>
-      <img class="tb-ucitel" src="/assets/img/postavy/ucitel.png" alt="" width="110" height="184">
+      <img class="tb-uvod__ucitel" src="/assets/img/postavy/ucitel.png" alt="" width="110" height="184">
     </header>
     <form class="hladanie" data-otazka-form role="search">
       <div class="hladanie__pole">
@@ -24,7 +28,7 @@ skripty: ["tabula.js"]
     </form>
     <p class="tb-nic" data-nic hidden>Na toto zatiaľ tabuľu nemám. <a href="/hladat/">Pozri sa do vyhľadávania lekcií</a> alebo vyber niektorú z otázok nižšie.</p>
     <div class="tb-ponuka">
-      <p class="tb-ponuka__nadpis">Na tieto otázky už mám pripravenú tabuľu:</p>
+      <p class="tb-ponuka__nadpis">Alebo si vyber tému – na tieto otázky už mám pripravenú tabuľu:</p>
       <div class="tb-skupiny" data-cipy></div>
     </div>
     <p class="tb-chyba">Niečo ti tu chýba? <a href="/kontakt/">Napíš mi</a> a ja to doplním.</p>

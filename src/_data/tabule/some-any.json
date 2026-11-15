@@ -1,0 +1,84 @@
+{
+  "lekcia": "some-any",
+  "lekciaNazov": "some · any",
+  "nazov": "Kedy some a kedy any?",
+  "otazky": ["Kedy some a kedy any?", "Prečo Would you like some tea?, keď je to otázka?"],
+  "kluce": ["some", "any", "some any", "nejaky", "ziadny", "trochu", "would you like some", "haven't got any"],
+  "kroky": [
+    {
+      "kresli": [
+        { "op": "pis", "id": "z", "text": "I haven't got {some#s} milk." }
+      ],
+      "popis": "Takúto vetu napíše veľa žiakov. <i>Some</i> znamená „nejaký, trochu“ – no v tejto vete nesedí. Prečo?",
+      "otazka": {
+        "text": "Aká je to veta?",
+        "moznosti": ["oznamovacia (kladná)", "záporná", "otázka"],
+        "spravna": 1,
+        "napoveda": { "0": "Pozri sa na haven't – je tam not.", "2": "Na konci nie je otáznik." },
+        "vysvetlenie": "Je to zápor (haven't). A v zápore some nepoužívame."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "znac", "typ": "preskrtni", "ciel": "z.s" },
+        { "op": "pis", "text": "I haven't got {any|modra,podciarkni} milk." },
+        { "op": "stlpce", "stlpce": [
+          { "nadpis": "oznamovacia veta", "riadky": ["{some|zlta}", "I've got some milk."] },
+          { "nadpis": "zápor a otázka", "riadky": ["{any|modra}", "I haven't got any milk.", "Have you got any milk?"] }
+        ] }
+      ],
+      "popis": "Pravidlo je jednoduché: <b>some</b> v <b>oznamovacej</b> (kladnej) vete, <b>any</b> v <b>zápore a otázke</b>."
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "Pozor: v zápore povieme po slovensky „žiadne“…" },
+        { "op": "pis", "text": "Nemám {žiadne|ruzova} mlieko. → I {haven't|modra} got any milk." }
+      ],
+      "popis": "Po slovensky povieme <i>ne</i>mám <i>žiadne</i> – dva zápory. V angličtine stačí <b>jeden</b>: <i>haven't</i>. Slovo <i>any</i> samo zápor nerobí. (Zlaté pravidlo: <b>jeden zápor stačí</b>.)",
+      "otazka": {
+        "text": "Are there ___ eggs in the fridge?",
+        "moznosti": ["some", "any"],
+        "spravna": 1,
+        "napoveda": { "0": "Je to otázka. V otázke je any – až na jednu výnimku, ku ktorej sa dostaneme." },
+        "vysvetlenie": "Otázka → any."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "Výnimka: ponuka a prosba" },
+        { "op": "pis", "text": "Would you like {some|zlta,krouzok} tea?" },
+        { "op": "pis", "text": "Can I have {some|zlta,krouzok} water, please?" }
+      ],
+      "popis": "Je to otázka – a predsa <i>some</i>! Keď niečo <b>ponúkame</b> (<i>Would you like…?</i>) alebo o niečo <b>prosíme</b> (<i>Can I have…?</i>), čakáme odpoveď <i>áno</i>. Vtedy použijeme <i>some</i>.",
+      "otazka": {
+        "text": "Mama ponúka: Would you like ___ cake?",
+        "moznosti": ["some", "any"],
+        "spravna": 0,
+        "napoveda": { "1": "Je to ponuka (Would you like…?). Pri ponuke je výnimka." },
+        "vysvetlenie": "Ponuka → some, aj keď je to otázka."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "A pri jednej veci?" },
+        { "op": "pis", "id": "a", "text": "I'd like {some apple#x}." },
+        { "op": "znac", "typ": "preskrtni", "ciel": "a.x" },
+        { "op": "pis", "text": "I'd like {an|zlta} apple. · I'd like {some|zlta} apples." }
+      ],
+      "popis": "<i>Some / any</i> dávame pred <b>množné číslo</b> (<i>some apples</i>) a pred <b>nepočítateľné</b> veci (<i>some milk</i>). Pri <b>jednej</b> veci je <i>a / an</i>: <i>an apple</i>."
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "nadpis2", "text": "Zapamätaj si:" },
+        { "op": "pis", "text": "{some|zlta} – oznamovacia veta, ponuka, prosba" },
+        { "op": "pis", "text": "{any|modra} – zápor a otázka" }
+      ],
+      "popis": "Hotovo! A pri zápore pamätaj: <i>haven't … any</i> – jeden zápor stačí.",
+      "odkazy": [
+        { "text": "Trenažér: Roztrieď", "url": "/lekcie/some-any/#h-roztried" },
+        { "text": "Nájdi a oprav chybu", "url": "/lekcie/some-any/#h-oprav" },
+        { "text": "Mini test", "url": "/lekcie/some-any/#h-test" }
+      ]
+    }
+  ]
+}

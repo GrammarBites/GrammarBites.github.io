@@ -1,0 +1,79 @@
+{
+  "lekcia": "adjectives-and-adverbs",
+  "lekciaNazov": "Adjectives and adverbs",
+  "nazov": "„quick“, alebo „quickly“?",
+  "otazky": ["Kedy quick a kedy quickly?", "Prečo He plays well, a nie He plays good?"],
+  "kluce": ["adjectives and adverbs", "prislovky", "prislovka", "pridavne meno", "-ly", "ly", "quick", "quickly", "careful", "carefully", "good", "well", "aky", "ako"],
+  "kroky": [
+    {
+      "kresli": [
+        { "op": "pis", "id": "z", "text": "She drives {careful#c}." }
+      ],
+      "popis": "Po slovensky povieme „šoféruje <b>opatrne</b>“, nie „šoféruje opatrná“. V angličtine je to rovnako – len to v tejto vete nie je dodržané.",
+      "otazka": {
+        "text": "Na akú otázku odpovedá slovo vo vete She drives ___.?",
+        "moznosti": ["Aký? / Aká?", "Ako?"],
+        "spravna": 1,
+        "napoveda": { "0": "Opisuje to, ako šoféruje – teda sloveso, nie osobu." },
+        "vysvetlenie": "Ako šoféruje? → opatrne → príslovka."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "znac", "typ": "preskrtni", "ciel": "z.c" },
+        { "op": "pis", "text": "She drives careful{ly|zlta,krouzok}." },
+        { "op": "stlpce", "stlpce": [
+          { "nadpis": "aký? – prídavné meno", "riadky": ["a {careful|modra} driver", "opatrná vodička"] },
+          { "nadpis": "ako? – príslovka", "riadky": ["drives careful{ly|zlta}", "šoféruje opatrne"] }
+        ] }
+      ],
+      "popis": "<b>Aký?</b> → prídavné meno, opisuje <b>osobu alebo vec</b>: <i>a careful driver</i>. <b>Ako?</b> → príslovka, opisuje <b>sloveso</b>: <i>drives carefully</i>. Príslovku väčšinou utvoríme pridaním <b>-ly</b>."
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "Pozor na sloveso be:" },
+        { "op": "pis", "id": "b", "text": "The room is {quiet|modra}. · The room is {quietly#x}." },
+        { "op": "znac", "typ": "preskrtni", "ciel": "b.x" }
+      ],
+      "popis": "Po slovese <b>be</b> (<i>am, is, are, was…</i>) je vždy <b>prídavné meno</b>: <i>The room is quiet.</i> – Izba je <i>aká</i>? Tichá.",
+      "otazka": {
+        "text": "Please speak ___. The baby is sleeping.",
+        "moznosti": ["quiet", "quietly"],
+        "spravna": 1,
+        "napoveda": { "0": "Ako máme hovoriť? Opisuje to sloveso speak." },
+        "vysvetlenie": "Ako hovoriť? → quietly."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "Výnimky:" },
+        { "op": "tabulka", "hlavicka": true, "riadky": [
+          ["aký?", "ako?"],
+          ["good", "{well|ruzova}"],
+          ["fast", "{fast|ruzova}"],
+          ["hard", "{hard|ruzova}"]
+        ] }
+      ],
+      "popis": "Najčastejšia výnimka je <b>good → well</b>: <i>He's a good player. He plays <b>well</b>.</i> <i>Fast</i> a <i>hard</i> sa nemenia: <i>She runs fast. He works hard.</i>",
+      "otazka": {
+        "text": "My sister speaks English very ___.",
+        "moznosti": ["good", "well", "goodly"],
+        "spravna": 1,
+        "napoveda": { "0": "Ako hovorí? Pri good je príslovka iná.", "2": "Takéto slovo neexistuje. Príslovka od good je…" },
+        "vysvetlenie": "good → well: speaks English well."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "nadpis2", "text": "Zapamätaj si:" },
+        { "op": "pis", "text": "aký? → {quick|modra} · ako? → quick{ly|zlta}" },
+        { "op": "pis", "text": "be + {aký?|modra} · good → {well|ruzova}" }
+      ],
+      "popis": "Hotovo! Opýtaj sa po slovensky: <b>aký?</b>, alebo <b>ako?</b> Slovenčina ti tu poradí správne.",
+      "odkazy": [
+        { "text": "Nájdi a oprav chybu", "url": "/lekcie/adjectives-and-adverbs/#h-oprav" },
+        { "text": "Mini test", "url": "/lekcie/adjectives-and-adverbs/#h-test" }
+      ]
+    }
+  ]
+}

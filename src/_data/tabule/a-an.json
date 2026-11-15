@@ -1,0 +1,83 @@
+{
+  "lekcia": "a-an",
+  "lekciaNazov": "A or an?",
+  "nazov": "Prečo „an hour“, ale „a university“?",
+  "otazky": ["Prečo an hour, ale a university?", "Kedy a a kedy an?"],
+  "kluce": ["a an", "a or an", "clen", "neurcity clen", "an apple", "an hour", "a university", "samohlaska", "spoluhlaska", "i'm a teacher"],
+  "kroky": [
+    {
+      "kresli": [
+        { "op": "pis", "text": "{a|zlta} banana · {a|zlta} pizza · {a|zlta} dog" },
+        { "op": "pis", "text": "{an|modra} apple · {an|modra} egg · {an|modra} orange" }
+      ],
+      "popis": "<i>A / an</i> znamená „jeden, nejaký“. <b>an</b> dávame pred slová, ktoré začínajú <b>samohláskou</b> (a, e, i, o, u). Inak je <b>a</b>. Prečo? Skús povedať nahlas <i>a apple</i> – dve samohlásky za sebou sa zle vyslovujú. <i>An apple</i> ide ľahko."
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "Lenže pozor:" },
+        { "op": "pis", "id": "h", "text": "{an#a|modra,krouzok} hour · {a#b|zlta,krouzok} university" }
+      ],
+      "popis": "<i>Hour</i> začína na <i>h</i> (spoluhlásku) – a predsa <i>an</i>. <i>University</i> začína na <i>u</i> (samohlásku) – a predsa <i>a</i>. Ako je to možné?",
+      "otazka": {
+        "text": "Podľa čoho sa teda rozhodujeme?",
+        "moznosti": ["podľa prvého písmena", "podľa toho, ako slovo znie (výslovnosť)"],
+        "spravna": 1,
+        "napoveda": { "0": "Písmeno h je spoluhláska, a predsa an hour. Písmeno to teda nie je." },
+        "vysvetlenie": "Rozhoduje zvuk, nie písmeno."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "tabulka", "riadky": [
+          ["hour", "znie „{aur|modra}“", "→ {an|modra} hour"],
+          ["university", "znie „{ju|zlta}niversity“", "→ {a|zlta} university"]
+        ] }
+      ],
+      "popis": "<b>Rozhoduje výslovnosť, nie písmeno.</b> V slove <i>hour</i> sa <i>h</i> nevyslovuje – slovo znie „aur“, začína samohláskou → <i>an</i>. <i>University</i> znie „juniversity“ – začína zvukom „j“, teda spoluhláskou → <i>a</i>."
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "Člen sa riadi slovom hneď za ním:" },
+        { "op": "pis", "text": "{an|modra} orange · {a|zlta} big orange" }
+      ],
+      "popis": "Ešte jedna vec: rozhoduje slovo, ktoré stojí <b>hneď za</b> <i>a / an</i>. <i>An orange</i>, ale <i>a big orange</i> – lebo <i>big</i> začína spoluhláskou.",
+      "otazka": {
+        "text": "I've got ___ old bike.",
+        "moznosti": ["a", "an"],
+        "spravna": 1,
+        "napoveda": { "0": "Hneď za členom je old – a to začína samohláskou." },
+        "vysvetlenie": "old začína samohláskou → an old bike."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "A ešte jedna častá chyba:" },
+        { "op": "pis", "id": "t", "text": "My mum is {doctor#x}. I'm {teacher#y}." }
+      ],
+      "popis": "Po slovensky povieme „mama je lekárka“ bez člena. Po anglicky pri povolaní člen <b>musí</b> byť.",
+      "otazka": {
+        "text": "My dad is ___ engineer.",
+        "moznosti": ["–", "a", "an"],
+        "spravna": 2,
+        "napoveda": { "0": "Pri povolaní člen musí byť.", "1": "Člen áno – ale engineer začína samohláskou." },
+        "vysvetlenie": "Povolanie + samohláska → an engineer."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "znac", "typ": "preskrtni", "ciel": "t.x" },
+        { "op": "znac", "typ": "preskrtni", "ciel": "t.y" },
+        { "op": "pis", "text": "My mum is {a|zlta} doctor. I'm {a|zlta} teacher." },
+        { "op": "pis", "styl": "nadpis2", "text": "Zapamätaj si:" },
+        { "op": "pis", "text": "{an|modra} + samohláska vo výslovnosti" },
+        { "op": "pis", "text": "{a|zlta} + spoluhláska vo výslovnosti" }
+      ],
+      "popis": "Hotovo! Keď si nie si istý, povedz to nahlas – <i>a / an</i> sa riadi tým, čo počuješ.",
+      "odkazy": [
+        { "text": "Trenažér: Roztrieď", "url": "/lekcie/a-an/#h-roztried" },
+        { "text": "Nájdi a oprav chybu", "url": "/lekcie/a-an/#h-oprav" },
+        { "text": "Mini test", "url": "/lekcie/a-an/#h-test" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "lekcia": "first-conditional",
+  "lekciaNazov": "First conditional",
+  "aj": ["future-time-clauses"],
+  "nazov": "Prečo nie „If it will rain…“?",
+  "otazky": ["Prečo nie If it will rain?", "Kam dať will v podmienkovej vete?"],
+  "kluce": ["first conditional", "prva podmienkova veta", "podmienkove vety", "if", "if it will", "will", "when", "as soon as", "ak bude", "podmienka", "future time clauses", "when i get home"],
+  "kroky": [
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "Ak bude pršať, zostaneme doma." },
+        { "op": "pis", "id": "z", "text": "If it {will rain#w}, we'll stay at home." }
+      ],
+      "popis": "Po slovensky povieme „ak <b>bude</b> pršať“ – a preto veľa žiakov napíše <i>If it will rain</i>. Jedno <i>will</i> je však vo vete navyše.",
+      "otazka": {
+        "text": "Ktoré will je vo vete navyše?",
+        "moznosti": ["to za if (will rain)", "to v druhej časti ('ll stay)"],
+        "spravna": 0,
+        "napoveda": { "1": "Druhá časť je výsledok – tam will patrí. Navyše je to druhé." },
+        "vysvetlenie": "Za if will nedávame."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "znac", "typ": "preskrtni", "ciel": "z.w" },
+        { "op": "pis", "id": "o", "text": "If it {rains#p|zlta,podciarkni}, we{'ll stay#v|modra,podciarkni} at home." },
+        { "op": "stlpce", "stlpce": [
+          { "nadpis": "podmienka", "riadky": ["{If|zlta} + present simple", "If it rains"] },
+          { "nadpis": "výsledok", "riadky": ["{will|modra} + sloveso", "we'll stay at home"] }
+        ] }
+      ],
+      "popis": "Veta má dve časti. <b>Podmienka</b> (časť s <i>if</i>) je v <b>prítomnom čase</b>: <i>If it rains</i>. <b>Výsledok</b> je s <b>will</b>: <i>we'll stay at home</i>. <i>Will</i> je vo vete <b>len raz</b> – vo výsledku."
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "Prečo? Najprv sa musí splniť podmienka:" },
+        { "op": "pis", "text": "{1. it rains|zlta}  →  {2. we'll stay at home|modra}" }
+      ],
+      "popis": "Pomôcka: aby sa v budúcnosti niečo stalo (<i>zostaneme doma</i>), musí sa najprv <b>splniť podmienka</b> (<i>prší</i>). Podmienku si predstavíme, akoby už nastala – preto je v prítomnom čase. Budúcnosť (<i>will</i>) patrí až výsledku.",
+      "otazka": {
+        "text": "If you ___ hard, you'll pass the test.",
+        "moznosti": ["will study", "study"],
+        "spravna": 1,
+        "napoveda": { "0": "Toto je časť s if – podmienka. Tam will nepatrí." },
+        "vysvetlenie": "Podmienka = present simple → If you study hard…"
+      }
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "Poradie sa dá otočiť:" },
+        { "op": "pis", "text": "If it rains{,|ruzova} we'll stay at home." },
+        { "op": "pis", "text": "We'll stay at home if it rains." }
+      ],
+      "popis": "Časť s <i>if</i> môže byť na začiatku aj na konci. Keď je <b>na začiatku</b>, píšeme <b>čiarku</b>. Časti sa však nemenia – <i>will</i> ostáva vo výsledku, prítomný čas v podmienke."
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "To isté platí po when, as soon as, before, after:" },
+        { "op": "pis", "id": "k", "text": "I'll call you when I {will get#w} home." }
+      ],
+      "popis": "Ten istý trik platí aj pri vetách o čase (<i>future time clauses</i>). <i>When</i> povie, <b>kedy</b> sa to stane – a za ním je tiež prítomný čas.",
+      "otazka": {
+        "text": "I'll phone you as soon as I ___ at the station.",
+        "moznosti": ["arrive", "will arrive", "arrived"],
+        "spravna": 0,
+        "napoveda": { "1": "Za as soon as je prítomný čas, rovnako ako za if.", "2": "Hovoríme o budúcnosti, minulý čas tu nepatrí. Za as soon as je prítomný čas." },
+        "vysvetlenie": "as soon as + present simple → as soon as I arrive."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "znac", "typ": "preskrtni", "ciel": "k.w" },
+        { "op": "pis", "text": "I'll call you {when|zlta} I {get|zlta,podciarkni} home." }
+      ],
+      "popis": "<i>When I get home</i> – kedy zavolám? Až prídem domov. Za <b>if, when, as soon as, before, after</b> nikdy nedávaj <i>will</i>."
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "nadpis2", "text": "Zapamätaj si:" },
+        { "op": "pis", "text": "{If / when|zlta} + present simple , {will|modra} + sloveso" },
+        { "op": "pis", "styl": "poznamka", "text": "will je vo vete len raz – vo výsledku" }
+      ],
+      "popis": "Hotovo! Podmienka (alebo čas) v prítomnom čase, výsledok s <i>will</i>. Teraz si to vyskúšaj.",
+      "odkazy": [
+        { "text": "Napíš sám", "url": "/lekcie/first-conditional/#h-pisanie" },
+        { "text": "Nájdi a oprav chybu", "url": "/lekcie/first-conditional/#h-oprav" },
+        { "text": "Lekcia: future time clauses", "url": "/lekcie/future-time-clauses/" }
+      ]
+    }
+  ]
+}

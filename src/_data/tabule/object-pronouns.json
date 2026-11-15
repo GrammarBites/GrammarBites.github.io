@@ -1,0 +1,79 @@
+{
+  "lekcia": "object-pronouns",
+  "lekciaNazov": "Subject & object pronouns",
+  "nazov": "Kedy „I“ a kedy „me“?",
+  "otazky": ["Kedy I a kedy me?", "Prečo I like her, a nie I like she?"],
+  "kluce": ["object pronouns", "subject pronouns", "zamena", "osobne zamena", "me", "him", "her", "us", "them", "i like she", "with me", "podmet", "predmet"],
+  "kroky": [
+    {
+      "kresli": [
+        { "op": "pis", "id": "z", "text": "I like {she#s}." }
+      ],
+      "popis": "Takúto vetu napíše veľa žiakov. Po slovensky by sme ju preložili „Mám rád ona.“ – a to tiež neznie dobre. Povieme „mám ju rád“.",
+      "otazka": {
+        "text": "Čo je zlé na vete „I like she.“?",
+        "moznosti": ["Za like má byť her.", "Na začiatku má byť me.", "Za like má byť to."],
+        "spravna": 0,
+        "napoveda": { "1": "I je správne – je to podmet (kto má rád?).", "2": "Pri like osobu pripájame priamo, bez to." },
+        "vysvetlenie": "Za slovesom je predmet → her."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "znac", "typ": "preskrtni", "ciel": "z.s" },
+        { "op": "pis", "id": "o", "text": "{She#p|zlta} likes {him#m|modra}." },
+        { "op": "stlpce", "stlpce": [
+          { "nadpis": "podmet – kto?", "riadky": ["{she|zlta} – pred slovesom", "She likes him."] },
+          { "nadpis": "predmet – koho? komu?", "riadky": ["{her|modra} – za slovesom", "I like her."] }
+        ] }
+      ],
+      "popis": "Väčšina zámen má <b>dva tvary</b>. <b>Podmet</b> (kto to robí?) stojí <b>pred slovesom</b>: <i>She</i> likes. <b>Predmet</b> (koho? komu?) stojí <b>za slovesom</b>: likes <i>him</i>. Rovnako v slovenčine: <i>on</i> × <i>ho, jeho, mu</i>."
+    },
+    {
+      "kresli": [
+        { "op": "tabulka", "hlavicka": true, "riadky": [
+          ["podmet", "predmet", "po slovensky"],
+          ["I", "{me|modra}", "mňa, mi, ma"],
+          ["he", "{him|modra}", "jeho, ho, mu"],
+          ["she", "{her|modra}", "ju, jej"],
+          ["we", "{us|modra}", "nás, nám"],
+          ["they", "{them|modra}", "ich, im"]
+        ] }
+      ],
+      "popis": "<i>You</i> a <i>it</i> majú oba tvary rovnaké, takže tie si nemusíš pamätať.",
+      "otazka": {
+        "text": "Our teacher often helps ___.",
+        "moznosti": ["we", "us"],
+        "spravna": 1,
+        "napoveda": { "0": "we je podmet – stojí pred slovesom. Tu je zámeno za slovesom helps." },
+        "vysvetlenie": "Za slovesom → predmet → us."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "Po predložke je vždy predmet:" },
+        { "op": "pis", "text": "Come {with|zlta} {me|modra}! · This is {for|zlta} {you|modra}. · Look {at|zlta} {them|modra}!" }
+      ],
+      "popis": "Za predložkami (<i>with, for, at, to, about…</i>) je vždy <b>predmetový tvar</b>: <i>with me</i>, nikdy <i>with I</i>.",
+      "otazka": {
+        "text": "Can you come to the cinema with ___?",
+        "moznosti": ["we", "us"],
+        "spravna": 1,
+        "napoveda": { "0": "Za predložkou with je vždy predmet." },
+        "vysvetlenie": "with + predmet → with us."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "nadpis2", "text": "Zapamätaj si:" },
+        { "op": "pis", "text": "pred slovesom → {I, he, she, we, they|zlta}" },
+        { "op": "pis", "text": "za slovesom a predložkou → {me, him, her, us, them|modra}" }
+      ],
+      "popis": "Hotovo! Pozri sa, kde zámeno stojí – pred slovesom, alebo za ním?",
+      "odkazy": [
+        { "text": "Nájdi a oprav chybu", "url": "/lekcie/object-pronouns/#h-oprav" },
+        { "text": "Mini test", "url": "/lekcie/object-pronouns/#h-test" }
+      ]
+    }
+  ]
+}

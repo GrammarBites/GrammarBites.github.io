@@ -265,7 +265,7 @@
           const b = box(z.ciel); if (!b) return;
           if (z.typ === "podciarkni") { const y = b.y + b.h - 2; d = `M${b.x - 2} ${y}Q${b.x + b.w / 2} ${y + 6} ${b.x + b.w + 3} ${y - 1}`; cls += " tb-z--zlta"; }
           else if (z.typ === "krouzok") { const cx = b.x + b.w / 2, cy = b.y + b.h * 0.56, rx = Math.max(b.w / 2 + 8, 17), ry = Math.max(b.h * 0.4, 15);
-            d = `M${cx - rx} ${cy}A${rx} ${ry} 0 1 1 ${cx + rx * 0.98} ${cy + 3}A${rx} ${ry} 0 0 1 ${cx - rx + 6} ${cy - ry * 0.6}`; cls += " tb-z--zlta"; }
+            d = `M${cx - rx} ${cy}A${rx} ${ry} 0 1 1 ${cx + rx} ${cy}A${rx} ${ry} 0 1 1 ${cx - rx} ${cy}l6 -4`; cls += " tb-z--zlta"; }
           else if (z.typ === "preskrtni") { d = `M${b.x - 4} ${b.y + b.h * 0.62}L${b.x + b.w + 4} ${b.y + b.h * 0.42}`; cls += " tb-z--ruzova"; }
           else return;
         }

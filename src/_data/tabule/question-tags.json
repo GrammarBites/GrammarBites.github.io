@@ -1,0 +1,92 @@
+{
+  "lekcia": "question-tags",
+  "lekciaNazov": "Question tags",
+  "aj": ["so-neither"],
+  "nazov": "Aké slovo dať na koniec? (…, isn't it? · So do I)",
+  "otazky": ["Ako viem, aký question tag dať na koniec?", "Kedy So do I a kedy Neither do I?"],
+  "kluce": ["question tags", "question tag", "vsak", "isn't it", "don't you", "so do i", "neither do i", "so am i", "aj ja", "ani ja", "agreeing", "so neither"],
+  "kroky": [
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "Po slovensky: …, však?" },
+        { "op": "pis", "id": "z", "text": "You like pizza, {isn't it#t}?" }
+      ],
+      "popis": "Po slovensky na koniec stačí pridať <b>však?</b> – vždy to isté slovo. Žiaci preto často dajú na koniec vždy <i>isn't it?</i> Lenže anglický tag sa <b>mení</b> podľa vety.",
+      "otazka": {
+        "text": "Je vo vete „You like pizza.“ sloveso be (is)?",
+        "moznosti": ["áno", "nie"],
+        "spravna": 1,
+        "napoveda": { "0": "Pozri sa znova: You like pizza. Žiadne am / is / are tam nie je." },
+        "vysvetlenie": "Nie je – preto isn't nesedí."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "znac", "typ": "preskrtni", "ciel": "z.t" },
+        { "op": "pis", "styl": "poznamka", "text": "Je vo vete pomocné sloveso? Zopakuj ho:" },
+        { "op": "pis", "id": "a", "text": "Eva {is#v|zlta,krouzok} nice, {isn't#t|zlta} she?" },
+        { "op": "sipka", "od": "a.v", "k": "a.t" }
+      ],
+      "popis": "<b>Pravidlo 1:</b> ak je vo vete pomocné sloveso (<i>is, are, can, have, will, was…</i>), <b>zopakujeme ho</b> v tagu. Na konci je vždy <b>zámeno</b>: <i>Eva → she</i>."
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "Nie je tam? Použi do / does / did:" },
+        { "op": "pis", "id": "b", "text": "You {like#v|modra} pizza, {don't#t|zlta} you?" },
+        { "op": "pis", "text": "He plays the drums, {doesn't|zlta} he?" },
+        { "op": "pis", "text": "We went to the zoo, {didn't|zlta} we?" }
+      ],
+      "popis": "<b>Pravidlo 2:</b> ak pomocné sloveso nevidno (present simple, past simple), použijeme <b>do / does / did</b> – presne ako pri otázke.",
+      "otazka": {
+        "text": "Your parents work here, ___ they?",
+        "moznosti": ["aren't", "don't", "doesn't"],
+        "spravna": 1,
+        "napoveda": { "0": "Vo vete nie je are. Sloveso work je present simple.", "2": "parents = they → pri they je do, nie does." },
+        "vysvetlenie": "present simple, they → don't they?"
+      }
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "Kladná veta → záporný tag, záporná → kladný:" },
+        { "op": "pis", "text": "It's cold, {isn't|ruzova} it? · You aren't hungry, {are|zlta} you?" }
+      ],
+      "popis": "<b>Pravidlo 3:</b> tag je vždy <b>opak</b> vety. Kladná veta → záporný tag (<i>isn't it?</i>). Záporná veta → kladný tag (<i>are you?</i>).",
+      "otazka": {
+        "text": "She can't swim, ___ she?",
+        "moznosti": ["can't", "can", "does"],
+        "spravna": 1,
+        "napoveda": { "0": "Veta je záporná (can't) – tag má byť opačný.", "2": "Vo vete je pomocné sloveso can – to zopakujeme." },
+        "vysvetlenie": "záporná veta s can → can she?"
+      }
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "poznamka", "text": "Ten istý trik: aj ja / ani ja" },
+        { "op": "pis", "id": "s", "text": "I'm tired. – {So#x|zlta} {am#a|zlta,krouzok} I." },
+        { "op": "pis", "text": "I like pizza. – So {do|zlta} I." },
+        { "op": "pis", "text": "I can't swim. – {Neither|modra} {can|zlta} I." }
+      ],
+      "popis": "Pri <b>So … I</b> (aj ja) a <b>Neither … I</b> (ani ja) je to rovnaké: zopakujeme <b>pomocné sloveso</b>, a keď nie je, použijeme <b>do / did</b>. <i>So</i> pri kladnej vete, <i>Neither</i> pri zápornej.",
+      "otazka": {
+        "text": "I didn't sleep well. – ___",
+        "moznosti": ["So did I.", "Neither did I.", "Neither didn't I."],
+        "spravna": 1,
+        "napoveda": { "0": "Veta je záporná (didn't) – „ani ja“.", "2": "Neither už samo znamená zápor. Za ním je kladné sloveso." },
+        "vysvetlenie": "záporná veta → Neither did I (jeden zápor stačí)."
+      }
+    },
+    {
+      "kresli": [
+        { "op": "pis", "styl": "nadpis2", "text": "Zapamätaj si:" },
+        { "op": "pis", "text": "zopakuj {pomocné sloveso|zlta} · inak {do / does / did|modra}" },
+        { "op": "pis", "styl": "poznamka", "text": "Čím sa pýtam, tým odpovedám – platí aj pre tagy a So / Neither." }
+      ],
+      "popis": "Hotovo! Tagy, krátke odpovede aj <i>So do I</i> fungujú na rovnakom princípe: pomocné sloveso sa zrkadlí.",
+      "odkazy": [
+        { "text": "Nájdi a oprav chybu: tagy", "url": "/lekcie/question-tags/#h-oprav" },
+        { "text": "Lekcia: So am I, Neither do I", "url": "/lekcie/so-neither/" },
+        { "text": "Mini test", "url": "/lekcie/question-tags/#h-test" }
+      ]
+    }
+  ]
+}

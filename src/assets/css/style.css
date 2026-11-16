@@ -942,7 +942,8 @@ button.pc-karta:focus-visible { outline: 3px solid var(--yellow); outline-offset
 .tb-s { display: inline-block; }
 .tb-zlta { color: var(--k-zlta); } .tb-ruzova { color: var(--k-ruzova); } .tb-modra { color: var(--k-modra); } .tb-biela { color: var(--krieda); }
 .tb-pise { animation: tb-pis var(--trv, 1s) steps(14, end) var(--d, 0s) both; }
-@keyframes tb-pis { from { clip-path: inset(-20% 100% -20% 0); } to { clip-path: inset(-20% 0 -20% 0); } }
+/* krieda „píše“ zľava doprava; okraj presahuje o kúsok, lebo ručné písmo (Caveat) kreslí ? ! ' za hranu písmena */
+@keyframes tb-pis { from { clip-path: inset(-20% 100% -20% -.2em); } to { clip-path: inset(-20% -.45em -20% -.2em); } }
 .tb-z { fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 0; }
 .tb-z--zlta { stroke: var(--k-zlta); } .tb-z--ruzova { stroke: var(--k-ruzova); stroke-width: 4; } .tb-z--sipka { stroke: var(--k-modra); }
 .tb-z-text { fill: var(--k-modra); font: 700 clamp(17px, 2.6vw, 24px) var(--hand); text-anchor: middle; }

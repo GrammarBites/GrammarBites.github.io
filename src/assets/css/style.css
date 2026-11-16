@@ -843,6 +843,13 @@ button.pc-karta:focus-visible { outline: 3px solid var(--yellow); outline-offset
 .ts__tab td[data-st="sk"] { color: var(--ink-2); font-size: .95rem; }
 .ts__tab tbody tr:nth-child(even) { background: color-mix(in srgb, var(--paper-lo) 35%, transparent); }
 .ts__skola { color: var(--yellow); font-size: .85rem; }
+.ts__pozn { margin: .5rem 0 0; color: var(--ink-2); font-size: .95rem; }
+.ts__tab tbody tr.ts__skupina th { position: static; background: var(--blue-wash); border-top: 2px solid var(--ink); border-bottom: 1px solid var(--ink); padding: .6rem; font-size: 1.05rem; text-align: left; }
+.ts__tab .ts__skupina b { font-family: var(--hand); font-size: 1.45rem; line-height: 1; margin-right: .3rem; }
+.ts__tab .ts__skupina .ts__vzor { color: var(--terra); font-weight: 700; font-size: 1rem; white-space: nowrap; }
+.ts__tab .ts__skupina .ts__pocet { color: var(--ink-2); font-weight: 400; font-size: .9rem; }
+.ts__tab .ts__skupina small { display: block; font-weight: 400; font-size: .9rem; color: var(--ink-2); margin-top: .15rem; }
+.ts--skupiny .ts__tab tbody tr:nth-child(even) { background: none; }
 .ts__tab td.je-zakryta { color: transparent; cursor: pointer; position: relative; user-select: none; }
 .ts__tab td.je-zakryta::after { content: "?"; position: absolute; inset: .25rem .35rem; display: grid; place-items: center; background: var(--blue-wash); border: 2px dashed var(--blue); border-radius: var(--wobbly-2); color: var(--blue); font-weight: 700; }
 .ts__tab td.je-zakryta.je-odkryta { color: inherit; cursor: default; user-select: auto; }
@@ -856,6 +863,7 @@ button.pc-karta:focus-visible { outline: 3px solid var(--yellow); outline-offset
   .ts__tab th span { display: none; }
   .ts__tab thead tr, .ts__tab tbody tr { display: grid; grid-template-columns: 1.15fr 1fr 1fr; }
   .ts__tab thead th:last-child { display: none; }
+  .ts__tab tbody tr.ts__skupina th { grid-column: 1 / -1; } .ts__tab .ts__skupina th span { display: inline; }
   .ts__tab td { border-bottom: 0; overflow-wrap: anywhere; }
   .ts__tab td[data-st="sk"] { grid-column: 1 / -1; font-size: .85rem; padding-top: 0; min-height: 1.9rem; border-bottom: 1px solid var(--line); }
   .ts__tab td[data-st="sk"]::before { content: "= "; }
@@ -868,6 +876,7 @@ button.pc-karta:focus-visible { outline: 3px solid var(--yellow); outline-offset
   .ts__tab { font-size: 10pt; background: none; }
   .ts__tab th { position: static; background: #eee; }
   .ts__tab tr { break-inside: avoid; }
+  .ts__tab tr.ts__skupina { break-after: avoid; } .ts__tab tbody tr.ts__skupina th { background: #ddd; }
   .ts__tab td[data-st="p"], .ts__tab td[data-st="pp"] { color: #000; }
 }
 

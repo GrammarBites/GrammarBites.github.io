@@ -251,6 +251,11 @@ export default function (eleventyConfig) {
     return `${nazov} · ${intro}Unit ${rozsah}`;
   });
   // nepravidelné slovesá z danej učebnice (tréner), bez prázdnych rodín
+  // Skupiny (rodiny) pre tabuľku nepravidelných slovies: p = podľa minulého tvaru (5. ročník), pp = podľa všetkých troch tvarov
+  eleventyConfig.addFilter("skupinySlovies", (data) => {
+    const skrat = (r) => ({ id: r.id, nazov: r.nazov, vzor: r.vzor, ...(r.tip ? { tip: r.tip } : {}), slovesa: r.slovesa.map((x) => x[0]) });
+    return { p: (data.rodiny || []).map(skrat), pp: (data.rodinyPP || []).map(skrat) };
+  });
   eleventyConfig.addFilter("slovesaPreKnihu", (rodiny, kniha) =>
     (rodiny || [])
       .map((r) => ({ id: r.id, nazov: r.nazov, vzor: r.vzor, slovesa: r.slovesa.filter((s) => !kniha || (s[4] || []).includes(kniha)).map((s) => s.slice(0, 4)) }))

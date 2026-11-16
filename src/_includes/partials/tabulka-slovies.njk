@@ -20,6 +20,14 @@
         </div>
       </fieldset>
       <fieldset class="ts__zakry">
+        <legend>Poradie</legend>
+        <div class="trener__cipy" data-poradia>
+          <button type="button" class="trener__cip" data-poradie="" aria-pressed="true">podľa abecedy</button>
+          <button type="button" class="trener__cip" data-poradie="skupiny" aria-pressed="false">podľa skupín (rodín)</button>
+        </div>
+        <p class="ts__pozn" data-pozn-skupiny hidden>Slovesá v jednej skupine sa menia rovnako – stačí si zapamätať vzor a učia sa ľahšie.</p>
+      </fieldset>
+      <fieldset class="ts__zakry">
         <legend>Skúšaj sa – zakry stĺpce (aj viac naraz)</legend>
         <div class="trener__cipy">
           <button type="button" class="trener__cip" data-zakry="z" aria-pressed="false">základný tvar</button>
@@ -48,7 +56,7 @@
         <tbody>
         {% for s in zoznam %}
           {% set p = (s.pSkola or s.p) if jeSkola else s.p %}{% set pp = (s.ppSkola or s.pp) if jeSkola else s.pp %}
-          <tr data-hladat="{{ s.z }} {{ s.p }} {{ s.pp }} {{ s.sk }}" data-hladat5="{{ s.z }} {{ s.p }} {{ s.sk }}"{% if s.r5 %} data-r5{% endif %}{% if s.skola %} data-skola{% endif %}{% if not jeSkola and s.skola %} class="je-skola"{% endif %}>
+          <tr data-z="{{ s.z }}" data-p="{{ s.p }}" data-pp="{{ s.pp }}" data-hladat="{{ s.z }} {{ s.p }} {{ s.pp }} {{ s.sk }}" data-hladat5="{{ s.z }} {{ s.p }} {{ s.sk }}"{% if s.r5 %} data-r5{% endif %}{% if s.skola %} data-skola{% endif %}{% if not jeSkola and s.skola %} class="je-skola"{% endif %}>
             <td data-st="z" lang="en"><b>{{ s.z }}</b>{% if not jeSkola and s.skola %} <span class="ts__skola" title="je aj v školskom zozname">★</span>{% endif %}</td>
             <td data-st="p" lang="en">{{ p }}</td>
             <td data-st="pp" lang="en">{{ pp }}</td>
@@ -61,5 +69,6 @@
     <p class="ts__nic" data-nic-rocnik hidden>Toto sloveso je v tabuľke, ale nie v zozname tohto ročníka. <button type="button" class="tlacidlo tlacidlo--tiche" data-rocnik-vsetky>Ukázať všetky</button></p>
     <p class="ts__nic" data-nic hidden>Také sloveso v tabuľke nie je. Možno je pravidelné (-ed)? Skús <a href="/lekcie/past-simple-regular/">pravidelné slovesá</a>.</p>
   </div>
+  <script type="application/json" id="data-skupiny-slovies">{{ nepravidelneSlovesa | skupinySlovies | json | safe }}</script>
   <script src="/assets/js/tabulka-slovies.js?v={{ site.verzia }}" defer></script>
 </section>

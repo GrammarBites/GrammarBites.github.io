@@ -1,4 +1,5 @@
-// Vyhľadávanie v lekciách a v obsahu učebníc (SK aj EN, bez ohľadu na diakritiku)
+// Vyhľadávanie v lekciách a v obsahu učebníc (SK aj EN, bez ohľadu na diakritiku).
+// Preklepy a skloňovanie (trpni rod, presnt perfekt, predložkami) opraví podľa slov, ktoré na webe naozaj sú (GBFuzzy z chat-motor.js).
 (function () {
   const N = GB.normalizuj;
   const lekcie = GB.data("data-lekcie") || [];
@@ -51,6 +52,38 @@
   }
   const indexL = lekcie.map((l) => ({ l, t: textLekcie(l) }));
 
+  // ---------- oprava preklepov ----------
+  // Slovo, ktoré na webe nie je (ani ako začiatok slova – to môže byť ešte len rozpísané),
+  // sa nahradí najpodobnejším slovom z lekcií, učebníc a slovníka synoným.
+  const F = window.GBFuzzy;
+  const slovaWebu = new Set();
+  const pridajSlova = (t) => N(t).split(/[^a-z0-9'-]+/).forEach((w) => { if (w.length > 1) slovaWebu.add(w); });
+  indexL.forEach(({ t }) => Object.values(t).forEach(pridajSlova));
+  ucebnice.forEach((k) => k.units.forEach((u) => { pridajSlova(u.nazov); u.gramatika.forEach(pridajSlova); }));
+  skupiny.forEach((g) => g.forEach(pridajSlova));
+  const zoznamSlov = [...slovaWebu];
+  const bezApo = (w) => w.replace(/['-]/g, "");
+  function oprav(q) {
+    if (!F) return q;
+    let zmena = false;
+    const von = q.split(" ").map((w) => {
+      if (w.length < 4 || /\d/.test(w) || slovaWebu.has(w) || zoznamSlov.some((x) => x.startsWith(w))) return w;
+      let naj = 0, najW = w;
+      for (const x of zoznamSlov) {
+        if (Math.abs(x.length - w.length) > 4) continue;
+        const p = F.podobnost(bezApo(w), bezApo(x));
+        if (p > naj || (p === naj && p && x.length < najW.length)) { naj = p; najW = x; }
+      }
+      if (naj >= 0.68) { zmena = true; return najW; }
+      return w;
+    }).join(" ");
+    return zmena ? von : q;
+  }
+
+  // Otázka vlastnými slovami (kedy…, prečo…, rozdiel…) → ponuka Magickej tabule
+  const tipTabula = document.querySelector("[data-tabula-tip]");
+  const jeOtazka = (q) => /\?|\b(kedy|preco|rozdiel|nerozumiem|nechapem|alebo|ako sa|ako poviem|co znamena)\b/.test(q);
+
   function hodnot(t, terms, tokens) {
     let s = 0;
     for (const term of terms) for (const w of [5, 4, 3, 2, 1]) if (zhoda(t[w], term)) s += w * (term === terms[0] ? 2 : 1);
@@ -67,13 +100,14 @@
     const rocnik = fR.value ? Number(fR.value) : f.rocnik;
     const kniha = fU.value || f.kniha;
     const tema = fT.value;
-    const terms = zvysok ? rozsir(zvysok) : [];
-    const tokens = zvysok ? zvysok.split(" ").filter((x) => x.length > 1) : [];
+    const opravene = zvysok ? oprav(zvysok) : "";
+    const terms = opravene ? rozsir(opravene) : [];
+    const tokens = opravene ? opravene.split(" ").filter((x) => x.length > 1) : [];
 
     // Lekcie
     let vysl = indexL
       .filter(({ l }) => !rocnik || l.rocniky.includes(rocnik))
-      .filter(({ l }) => !kniha || l.ucebnice.some((u) => u.id === kniha && (!f.unit || u.unit === f.unit)))
+      .filter(({ l }) => !(kniha || f.unit) || l.ucebnice.some((u) => (!kniha || u.id === kniha) && (!f.unit || u.unit === f.unit)))
       .filter(({ l }) => !tema || l.temy.some((t) => t.id === tema))
       .map(({ l, t }) => ({ l, s: terms.length ? hodnot(t, terms, tokens) : 1 }))
       .filter((x) => x.s > 0)
@@ -100,11 +134,16 @@
     outU.innerHTML = unity.map(unitHTML).join("");
 
     const hladaSa = surove || rocnik || kniha || tema;
+    if (tipTabula) {
+      tipTabula.hidden = !jeOtazka(surove);
+      if (!tipTabula.hidden) tipTabula.querySelector("a").href = GB.odkaz("tabula/") + "?otazka=" + encodeURIComponent(pole.value.trim());
+    }
     nic.hidden = !!(vysl.length || unity.length);
     suhrn.textContent = !hladaSa
       ? `Všetky lekcie (${vysl.length}). Začni písať a výsledky sa hneď ukážu.`
       : `${vysl.length === 1 ? "1 lekcia" : vysl.length >= 2 && vysl.length <= 4 ? vysl.length + " lekcie" : vysl.length + " lekcií"}` +
-        (unity.length ? ` · ${unity.length} ${unity.length === 1 ? "unit" : unity.length <= 4 ? "unity" : "unitov"} v učebniciach` : "");
+        (unity.length ? ` · ${unity.length} ${unity.length === 1 ? "unit" : unity.length <= 4 ? "unity" : "unitov"} v učebniciach` : "") +
+        (opravene !== zvysok ? ` · hľadám „${opravene}“` : "");
   }
 
   function kartaHTML(l) {

@@ -17,9 +17,10 @@ window.GBTabulaChat = function ({ app, recepty, otvor }) {
     const posledny = r.kroky[r.kroky.length - 1] || {};
     const z = []; let zap = false;
     (posledny.kresli || []).forEach((o) => {
-      if (o.op !== "pis") return;
-      if (o.styl === "nadpis2") { zap = true; return; }
-      if (zap) z.push(pis(o.text));
+      if (o.op === "pis" && o.styl === "nadpis2") { zap = true; return; }
+      if (!zap) return;
+      if (o.op === "pis") z.push(pis(o.text));
+      if (o.op === "stlpce") (o.stlpce || []).forEach((st) => z.push(`${pis(st.nadpis || "")}: ${(st.riadky || []).map(pis).join(" · ")}`));
     });
     return { id, n: r.nazov, ln: r.lekciaNazov || id, q: r.otazky || [r.nazov], k: r.kluce || [], aj: r.aj || [],
       z, p: (posledny.popis || "").replace(/^Hotovo!\s*/, "").replace(/\s*Teraz si to vyskúšaj( sám)?\.$/, ""),
@@ -140,6 +141,12 @@ window.GBTabulaChat = function ({ app, recepty, otvor }) {
     GB.udalost("tabula/otazka", "Tabuľa: otázka");
     pridaj("ja", esc(t)); pole.value = ""; reaguj(t);
   });
+  // otázka poslaná z vyhľadávania: /tabula/?otazka=...
+  try {
+    const q = new URLSearchParams(location.search).get("otazka");
+    if (q && !location.hash) { pole.value = q; setTimeout(() => form.requestSubmit(), 300); }
+  } catch (e) {}
+
   const apo = app.querySelector("[data-apostrof]");
   if (apo) apo.addEventListener("click", () => {
     const s = pole.selectionStart ?? pole.value.length;

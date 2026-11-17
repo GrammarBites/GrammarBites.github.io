@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Vyhľadávanie
-skripty: ["hladat.js"]
+skripty: ["chat-motor.js", "hladat.js"]
 ---
 <header class="stranka-hlava">
   <h1 class="stranka-hlava__nadpis">Vyhľadávanie</h1>
@@ -37,6 +37,7 @@ skripty: ["hladat.js"]
 </form>
 
 <p class="vysledky__suhrn" role="status" aria-live="polite" data-suhrn></p>
+<p class="hladat-tabula" data-tabula-tip hidden>Máš otázku? <a href="/tabula/">Opýtaj sa Magickej tabule</a> – vysvetlí ti to krok po kroku.</p>
 <div class="vysledky" data-vysledky></div>
 <section class="vysledky-unity" data-unity-sekcia hidden>
   <h2 class="sekcia__nadpis sekcia__nadpis--male">V učebniciach</h2>

@@ -1,7 +1,8 @@
 // Magická tabuľa – chat bez AI: porozumie otázke žiaka (preklepy, chýbajúca diakritika, skloňovanie, synonymá)
 // a nájde k nej tabuľu alebo lekciu. Nič nevymýšľa – odpovedá len obsahom webu.
 // Typické chyby, ktoré žiak môže napísať priamo ako vetu, sú v zozname CHYBY nižšie (dajú sa dopĺňať).
-function vytvorMotor(DATA) {
+// Spoločné pomôcky na „chápavé“ hľadanie (používa ich chat Magickej tabule aj vyhľadávanie v hlavičke)
+window.GBFuzzy = (function () {
   const norm = (t) => String(t || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
     .replace(/[’`´]/g, "'").replace(/\s+/g, " ").trim();
   // slovo -> kľúč na porovnávanie (bez apostrofov a spojovníkov: don't = dont)
@@ -44,12 +45,18 @@ function vytvorMotor(DATA) {
         // k/c a podobné zámeny na začiatku sú bežné (kontinuus, kondicional), inak chceme rovnaké prvé písmeno
         const zac = q[0] === t[0] || ("kc".includes(q[0]) && "kc".includes(t[0])) || L >= 7;
         const dv = zac ? Math.min(vzdialenost(q, t, max), vzdialenost(koren(q), koren(t), max)) : 9;
-        if (dv <= max) s = dv === 1 ? 0.8 : dv === 2 ? 0.68 : 0.55;
+        if (dv <= max) s = dv === 0 ? 0.85 : dv === 1 ? 0.8 : dv === 2 ? 0.68 : 0.55;
       }
       if (!s && q.length >= 5 && t.length > q.length && t.startsWith(q)) s = 0.7; // pasiv -> pasivum
     }
     pamat.set(kk, s); return s;
   }
+
+  return { norm, kluc, koren, slova, podobnost };
+})();
+
+function vytvorMotor(DATA) {
+  const { norm, koren, slova, podobnost } = window.GBFuzzy;
 
   // ---------- zoznam "dokumentov": tabule + lekcie ----------
   const docs = [];

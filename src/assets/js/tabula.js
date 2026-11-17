@@ -182,7 +182,7 @@
     const recepty = GB.data("data-tabule") || {};
     const $ = (s) => app.querySelector(s);
     const el = {
-      vyber: $("[data-vyber]"), form: $("[data-otazka-form]"), pole: $("[data-otazka-pole]"), cipy: $("[data-cipy]"), nic: $("[data-nic]"),
+      vyber: $("[data-vyber]"), cipy: $("[data-cipy]"),
       tabula: $("[data-tabula]"), ram: $("[data-ram]"), plocha: $("[data-plocha]"), nadpis: $("[data-nadpis]"), cap: $("[data-popis]"),
       spat: $("[data-spat]"), dalej: $("[data-dalej]"), stav: $("[data-stav]"), znova: $("[data-znova]"), cela: $("[data-cela]"), ina: $("[data-ina]"), zvuk: $("[data-zvuk]"),
     };
@@ -220,26 +220,8 @@
         `<button type="button" class="tb-cip" data-id="${x.id}">${esc((x.otazky || [x.nazov])[0])}</button>`).join("")}</div></section>`;
     }).join("");
     el.cipy.addEventListener("click", (e) => { const b = e.target.closest("[data-id]"); if (b) otvor(b.dataset.id, true); });
-    el.form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const q = GB.normalizuj(el.pole.value);
-      if (!q) return;
-      const slova = q.split(/[^a-z0-9'-]+/).filter((w) => w.length > 1);
-      let naj = null, max = 0;
-      zoznam.forEach((x) => {
-        const kluce = [x.nazov, ...(x.otazky || []), ...(x.kluce || [])].map(GB.normalizuj);
-        let s = 0;
-        kluce.forEach((k) => { if (q.includes(k)) s += 3; });
-        slova.forEach((w) => { if (kluce.some((k) => k.split(/[^a-z0-9'-]+/).includes(w))) s += 1; });
-        if (s > max) { max = s; naj = x.id; }
-      });
-      GB.udalost("tabula/otazka", "Tabuľa: otázka");
-      if (naj && max >= 2) { el.nic.hidden = true; otvor(naj, true); }
-      else {
-        el.nic.hidden = false;
-        el.nic.querySelector("a").href = GB.odkaz("hladat/") + (GB.preview ? "" : "") + "?q=" + encodeURIComponent(el.pole.value);
-      }
-    });
+    // otázka napísaná vlastnými slovami → chat (tabula-chat.js)
+    if (window.GBTabulaChat && window.vytvorMotor) GBTabulaChat({ app, recepty, otvor: (id, h) => otvor(id, h) });
 
     // ---------- otvorenie tabule ----------
     function otvor(id, zapisHash) {

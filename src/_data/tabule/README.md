@@ -11,7 +11,8 @@ Všetky tabule sú na stránke `/tabula/`.
 - `skupina` – pod ktorým nadpisom sa otázka ukáže na stránke /tabula/: `pritomny`, `minuly`, `buducnost`, `otazky`, `vety`, `mnozstvo`, `pridavne`, `cas` (názvy a poradie sú v `SKUPINY` v `src/assets/js/tabula.js`; bez skupiny ide tabuľa do „Ďalšie“)
 - `otazky` – 1–2 otázky, ktoré sa ukážu ako tlačidlá na stránke /tabula/
 - `aj` (nepovinné) – ďalšie lekcie, pri ktorých sa má ukázať tlačidlo tabule, napr. `["passive-tenses"]`
-- `kluce` – slová, podľa ktorých sa tabuľa nájde, keď žiak napíše vlastnú otázku (bez diakritiky)
+- `kluce` – slová, podľa ktorých chat Magickej tabule nájde tabuľu, keď žiak napíše vlastnú otázku (bez diakritiky; preklepy a skloňovanie chat zvládne sám).
+  Chat odpovie zhrnutím z bloku „Zapamätaj si:“ v poslednom kroku a ponúkne celú tabuľu. Typické chybné vety (napr. *she dont*) sú v `CHYBY` v `src/assets/js/chat-motor.js`.
 - `kroky` – zoznam krokov
 
 ## Krok

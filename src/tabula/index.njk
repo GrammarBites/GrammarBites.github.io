@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: Magická tabuľa
 titleSk: Magická tabuľa
 popis: "Napíš, čomu nerozumieš, a vysvetlím ti to na Magickej tabuli krok po kroku."
-skripty: ["tabula.js"]
+skripty: ["chat-motor.js", "tabula-chat.js", "tabula.js"]
 ---
 <div class="tabula-app" data-tabula-app>
   <section class="tb-vyber" data-vyber aria-labelledby="h-tabula">
@@ -18,15 +18,16 @@ skripty: ["tabula.js"]
       </div>
       <img class="tb-uvod__ucitel" src="/assets/img/postavy/ucitel.png" alt="" width="110" height="184">
     </header>
-    <form class="hladanie" data-otazka-form role="search">
+    <div class="tc-log" data-chat aria-live="polite" aria-label="Rozhovor" hidden></div>
+    <form class="hladanie tc-vstup" data-otazka-form autocomplete="off">
       <div class="hladanie__pole">
         <label for="tb-q" class="sr">Čomu nerozumieš?</label>
-        <svg width="22" height="22" aria-hidden="true"><use href="#lupa"/></svg>
-        <input id="tb-q" data-otazka-pole type="search" placeholder="Napr. prečo she plays a nie she play?" autocomplete="off">
+        <input id="tb-q" data-otazka-pole type="text" maxlength="160" enterkeyhint="send" placeholder="Napíš svoju otázku…">
+        <button type="button" class="tlacidlo tlacidlo--tiche tlacidlo--male tc-apo" data-apostrof aria-label="Vložiť apostrof" title="Vložiť apostrof">'</button>
       </div>
-      <button type="submit" class="tlacidlo">Vysvetli mi to</button>
+      <button type="submit" class="tlacidlo">Opýtať sa</button>
     </form>
-    <p class="tb-nic" data-nic hidden>Na toto zatiaľ tabuľu nemám. <a href="/hladat/">Pozri sa do vyhľadávania lekcií</a> alebo vyber niektorú z otázok nižšie.</p>
+    <p class="tc-tip">Píš pokojne aj bez dĺžňov a s preklepmi. Môžeš napísať aj celú vetu, pri ktorej si nie si istý.</p>
     <div class="tb-ponuka">
       <p class="tb-ponuka__nadpis">Alebo si vyber tému – na tieto otázky už mám pripravenú tabuľu:</p>
       <div class="tb-skupiny" data-cipy></div>
@@ -57,3 +58,5 @@ skripty: ["tabula.js"]
   </section>
 </div>
 <script type="application/json" id="data-tabule">{{ tabule | json | safe }}</script>
+<script type="application/json" id="data-lekcie-chat">{{ collections.lekcie | indexChatu | json | safe }}</script>
+<script type="application/json" id="data-slovnik">{{ slovnik.skupiny | json | safe }}</script>

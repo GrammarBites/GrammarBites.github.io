@@ -279,6 +279,20 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("bezLomky", (u) => String(u).replace(/^\//, ""));
 
   // Údaje pre vyhľadávanie a Grammar Bite dňa
+  // Lekcie pre chat Magickej tabule – len to, čo chat potrebuje
+  eleventyConfig.addFilter("indexChatu", (lekcie) =>
+    lekcie.map((l) => ({
+      id: l.url.replace(/\/$/, "").split("/").pop(),
+      t: l.data.title,
+      sk: l.data.nazovSk || "",
+      p: l.data.popis || "",
+      k: (l.data.klucoveSlova || []).map(String),
+      tip: (l.data.bite && l.data.bite.tip) || "",
+      pr: (l.data.bite && l.data.bite.priklad) || "",
+      video: !!l.data.video,
+    }))
+  );
+
   eleventyConfig.addFilter("indexLekcii", (lekcie) =>
     lekcie.map((l) => ({
       url: l.url.replace(/^\//, ""),

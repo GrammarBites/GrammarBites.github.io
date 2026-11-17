@@ -913,7 +913,35 @@ button.pc-karta:focus-visible { outline: 3px solid var(--yellow); outline-offset
 .tb-vyber__hlava { display: flex; align-items: end; justify-content: space-between; gap: 16px; }
 .tb-vyber__hlava img { width: 110px; flex: none; margin-bottom: -6px; transform: scaleX(-1); }
 .tabula-app .hladanie { grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
-.tb-nic { font-weight: 700; color: #8f3522; background: var(--terra-wash); padding: 10px 14px; border-radius: 10px; }
+/* chat Magickej tabule */
+.tc-log { display: flex; flex-direction: column; gap: 12px; padding: 4px 0 0; }
+.tc-log[hidden] { display: none; }
+.tc-sprava { display: flex; gap: 8px; align-items: flex-end; animation: tc-vstup .25s ease-out both; }
+@keyframes tc-vstup { from { opacity: 0; transform: translateY(6px); } }
+.tc-sprava--ja { justify-content: flex-end; }
+.tc-kto { width: 38px; height: 38px; flex: none; object-fit: cover; object-position: top; border-radius: 50%; background: var(--paper-hi); border: 2px solid var(--ink); }
+.tc-bublina { min-width: 0; max-width: min(88%, 620px); padding: 10px 14px; background: var(--paper-hi); border: 2px solid var(--ink); border-radius: 18px 22px 20px 6px; box-shadow: 2px 3px 0 var(--line); overflow-wrap: anywhere; }
+.tc-sprava--ja .tc-bublina { background: var(--blue); color: var(--paper-hi); border-radius: 22px 18px 6px 20px; font-weight: 600; }
+.tc-bublina > :first-child { margin-top: 0; } .tc-bublina > :last-child { margin-bottom: 0; }
+.tc-bublina p { margin: 8px 0; }
+.tc-pochopil { font-size: .88rem; color: var(--ink-2); background: var(--yellow-wash); border-radius: 10px; padding: 4px 10px; }
+.tc-pochopil b { color: var(--ink); }
+.tc-doska { background: var(--doska); color: var(--krieda); border: 5px solid #855634; border-radius: 8px; padding: 10px 14px 12px; margin: 8px 0; font: 600 1.45rem/1.25 var(--hand); }
+.tc-doska .tc-doska__nadpis { margin: 0 0 6px; padding-bottom: 4px; font: 700 1.6rem/1.1 var(--hand); color: var(--k-zlta); border-bottom: 2px dashed rgba(244, 241, 230, .25); }
+.tc-doska div + div { margin-top: 4px; }
+.tc-priklad { padding: 8px 12px; background: var(--green-wash); border-left: 4px solid var(--green); border-radius: 6px; font-weight: 600; }
+.tc-akcie { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.tc-akcie .tlacidlo { text-align: left; }
+.tc-koza { float: right; width: 74px; height: auto; margin: -4px -4px 4px 8px; }
+.tc-pise { display: inline-flex; gap: 5px; padding: 6px 2px; }
+.tc-pise i { width: 8px; height: 8px; border-radius: 50%; background: var(--ink-2); animation: tc-bod 1s infinite; }
+.tc-pise i:nth-child(2) { animation-delay: .15s; } .tc-pise i:nth-child(3) { animation-delay: .3s; }
+@keyframes tc-bod { 0%, 60%, 100% { opacity: .25; } 30% { opacity: 1; } }
+.tc-ako { margin-top: 10px; font-size: .82rem; color: var(--ink-2); }
+.tc-ako summary { cursor: pointer; }
+.tc-ako td { padding: 1px 10px 1px 0; }
+.tc-apo { flex: none; min-width: 44px; justify-content: center; font-size: 1.3rem; }
+.tc-tip { margin: -12px 0 0; font-size: .9rem; color: var(--ink-2); }
 .tb-ponuka { display: grid; gap: 10px; }
 .tb-ponuka__nadpis { font-weight: 800; color: var(--ink-2); }
 .tb-cipy { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -1028,6 +1056,7 @@ button.pc-karta:focus-visible { outline: 3px solid var(--yellow); outline-offset
   .tb-ovladanie [data-dalej], .tb-ovladanie [data-znova] { flex: 1; justify-content: center; }
 }
 @media (prefers-reduced-motion: reduce) {
+  .tc-sprava, .tc-pise i { animation: none; }
   .tb-pise { animation: none; } .tk, .tb-koza, .tb-scena p, .tk-text, .tg, .tg-t { transition: none !important; } .tb-moznost--zle { animation: none; }
 }
 

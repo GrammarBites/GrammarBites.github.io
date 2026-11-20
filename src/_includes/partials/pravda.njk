@@ -1,5 +1,5 @@
 {# Tréner Pravda, alebo nepravda? V lekcii: pravdaNepravda: <kľúč> (údaje v src/_data/pravdaData.json).
-   Žiak vidí tabuľku (plán týždňa s ✓ / ✗) a pri každej vete vyberie True / False. Beží na skripte trénera Roztrieď. #}
+   Žiak vidí tabuľku (plán týždňa s ✓ / ✗, alebo bez znakov pri "znaky": false, napr. rozvrh) a pri každej vete vyberie True / False. Beží na skripte trénera Roztrieď. #}
 {% set pn = pravdaData[pravdaNepravda] %}
 {% set pnId = "pn-" + pravdaNepravda %}
 {% set pnData = { "kose": [{ "id": "t", "nazov": "True", "popis": "pravda ✓" }, { "id": "f", "nazov": "False", "popis": "nepravda ✗" }], "polozky": pn.polozky } %}
@@ -11,11 +11,11 @@
     <table>
       <tbody>
       {% for r in pn.tabulka.riadky %}
-      <tr><td lang="en" class="f-okrova">{{ r[0] }}</td><td lang="en" class="f-zelena">{{ r[1] }}</td><td class="pn-plan__znak {{ 'pn-plan__znak--ano' if r[2] else 'pn-plan__znak--nie' }}">{{ "✓" if r[2] else "✗" }}</td></tr>
+      <tr><td lang="en" class="f-okrova">{{ r[0] }}</td><td lang="en" class="f-zelena">{{ r[1] }}</td>{% if pn.tabulka.znaky !== false %}<td class="pn-plan__znak {{ 'pn-plan__znak--ano' if r[2] else 'pn-plan__znak--nie' }}">{{ "✓" if r[2] else "✗" }}</td>{% endif %}</tr>
       {% endfor %}
       </tbody>
     </table>
-    <p class="pn-plan__legenda"><span class="pn-plan__znak--ano">✓</span> = robí to · <span class="pn-plan__znak--nie">✗</span> = nerobí to</p>
+    {% if pn.tabulka.znaky !== false %}<p class="pn-plan__legenda"><span class="pn-plan__znak--ano">✓</span> = robí to · <span class="pn-plan__znak--nie">✗</span> = nerobí to</p>{% endif %}
   </div>
   <div class="trener roztried pravda" data-roztried="{{ pnId }}" data-lekcia="{{ page.fileSlug }}-pravda">
     <div class="trener__karta rz-karta" data-karta>

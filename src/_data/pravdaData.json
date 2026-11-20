@@ -1,5 +1,5 @@
 {
-  "_info": "Tréner Pravda, alebo nepravda? Kľúč = hodnota 'pravdaNepravda' v lekcii. tabulka = plán (riadky: [deň, činnosť, true = robí / false = nerobí]); polozky: t = veta, k = 't' (pravda) alebo 'f' (nepravda), v = vysvetlenie, sk = preklad (nepovinné).",
+  "_info": "Tréner Pravda, alebo nepravda? Kľúč = hodnota 'pravdaNepravda' v lekcii. tabulka = plán (riadky: [deň, činnosť, true = robí / false = nerobí]; pri \"znaky\": false len [deň, obsah], napr. rozvrh); polozky: t = veta, k = 't' (pravda) alebo 'f' (nepravda), v = vysvetlenie, sk = preklad (nepovinné).",
   "mia-week": {
     "uvod": "Toto je Miin týždenný plán. Mia hovorí o sebe – <i>I</i> = Mia.",
     "tabulka": {
@@ -104,6 +104,115 @@
         "k": "f",
         "sk": "Nepomáham mame.",
         "v": "Pri <b>help my mum</b> je ✓ – Mia mame pomáha (v piatok)."
+      }
+    ]
+  },
+  "rozvrh-4a": {
+    "uvod": "Toto je rozvrh triedy 4.A. Hovoria žiaci zo 4.A – <i>we</i> = 4.A.",
+    "tabulka": {
+      "nadpis": "Class 4.A – timetable",
+      "znaky": false,
+      "riadky": [
+        [
+          "Monday",
+          "maths, English"
+        ],
+        [
+          "Tuesday",
+          "science, art"
+        ],
+        [
+          "Wednesday",
+          "English, music"
+        ],
+        [
+          "Thursday",
+          "maths, PE"
+        ],
+        [
+          "Friday",
+          "music, PE"
+        ]
+      ]
+    },
+    "polozky": [
+      {
+        "t": "We've got English on Monday.",
+        "k": "t",
+        "sk": "V pondelok máme angličtinu.",
+        "v": "V pondelok je v rozvrhu <b>maths, English</b> → pravda."
+      },
+      {
+        "t": "We've got PE on Monday.",
+        "k": "f",
+        "sk": "V pondelok máme telesnú.",
+        "v": "V pondelok je maths a English. Telesnú (PE) máme vo <b>štvrtok</b> a v <b>piatok</b>."
+      },
+      {
+        "t": "We've got art on Tuesday.",
+        "k": "t",
+        "sk": "V utorok máme výtvarnú.",
+        "v": "V utorok je v rozvrhu <b>science, art</b> → pravda."
+      },
+      {
+        "t": "We've got music on Wednesday.",
+        "k": "t",
+        "sk": "V stredu máme hudobnú.",
+        "v": "V stredu je v rozvrhu <b>English, music</b> → pravda."
+      },
+      {
+        "t": "We've got science on Wednesday.",
+        "k": "f",
+        "sk": "V stredu máme prírodovedu.",
+        "v": "Prírodovedu (science) máme v <b>utorok</b>, nie v stredu."
+      },
+      {
+        "t": "We've got maths on Thursday.",
+        "k": "t",
+        "sk": "Vo štvrtok máme matematiku.",
+        "v": "Vo štvrtok je v rozvrhu <b>maths, PE</b> → pravda."
+      },
+      {
+        "t": "We've got art on Friday.",
+        "k": "f",
+        "sk": "V piatok máme výtvarnú.",
+        "v": "V piatok je music a PE. Výtvarnú (art) máme v <b>utorok</b>."
+      },
+      {
+        "t": "We've got PE on Friday.",
+        "k": "t",
+        "sk": "V piatok máme telesnú.",
+        "v": "V piatok je v rozvrhu <b>music, PE</b> → pravda."
+      },
+      {
+        "t": "On Wednesday we've got maths.",
+        "k": "f",
+        "sk": "V stredu máme matematiku.",
+        "v": "V stredu je English a music. Matematiku máme v <b>pondelok</b> a vo <b>štvrtok</b>."
+      },
+      {
+        "t": "What have we got on Thursday? – We've got maths and PE.",
+        "k": "t",
+        "sk": "Čo máme vo štvrtok? – Máme matematiku a telesnú.",
+        "v": "Vo štvrtok je naozaj <b>maths, PE</b> → pravda."
+      },
+      {
+        "t": "What have we got on Tuesday? – We've got English.",
+        "k": "f",
+        "sk": "Čo máme v utorok? – Máme angličtinu.",
+        "v": "V utorok je <b>science</b> a <b>art</b>. Angličtinu máme v pondelok a v stredu."
+      },
+      {
+        "t": "When have we got music? – On Monday.",
+        "k": "f",
+        "sk": "Kedy máme hudobnú? – V pondelok.",
+        "v": "Hudobnú (music) máme v <b>stredu</b> a v <b>piatok</b>, nie v pondelok."
+      },
+      {
+        "t": "When have we got science? – On Tuesday.",
+        "k": "t",
+        "sk": "Kedy máme prírodovedu? – V utorok.",
+        "v": "Science je v rozvrhu len v <b>utorok</b> → pravda."
       }
     ]
   }

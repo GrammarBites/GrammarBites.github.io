@@ -18,6 +18,7 @@ bite:
   tip: "What = Čo? → odpovieš predmetom. When = Kedy? → odpovieš dňom: on Monday."
   priklad: "What have we got on Monday? – We've got English. · When have we got PE? – We've got PE on Thursday."
 roztried: what-when-our-their
+pravdaNepravda: rozvrh-4a
 opravChybu: true
 test:
   - otazka: "___ have we got on Monday? – We've got maths."

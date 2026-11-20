@@ -1,4 +1,4 @@
-// Tréner Roztrieď: ku každej vete vyber správnu možnosť (some / any, for / since…). 10 viet v kole, po každej vysvetlenie.
+// Tréner Roztrieď: ku každej vete vyber správnu možnosť (some / any, for / since…). Používa ho aj tréner Pravda / nepravda (partials/pravda.njk). 10 viet v kole, po každej vysvetlenie.
 // Údaje: src/_data/roztriedData.json. Rekord sa pamätá len v tomto prehliadači.
 (function () {
   const start = () => document.querySelectorAll("[data-roztried]").forEach(init);
@@ -6,6 +6,8 @@
   const zamiesaj = (a) => { a = [...a]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 
   function init(box) {
+    if (box.dataset.spustene) return; // skript môže byť na stránke dvakrát (Roztrieď aj Pravda/nepravda)
+    box.dataset.spustene = "1";
     const id = box.dataset.roztried, lekcia = box.dataset.lekcia || id;
     const data = GB.data("data-roztried-" + id);
     if (!data || !data.polozky || !data.polozky.length) return;
@@ -26,6 +28,7 @@
     const vypln = (p) => (p.o !== undefined ? p.o : kose[p.k].vlozit !== undefined ? kose[p.k].vlozit : kose[p.k].nazov);
     // veta ako HTML; doplnene = null → prázdna medzera
     function vetaHtml(p, doplnene, trieda) {
+      if (!p.t.includes("___")) return GB.esc(p.t); // veta bez medzery (Pravda / nepravda)
       const [pred, po] = GB.esc(p.t).split("___");
       if (doplnene === null) return `${pred}<span class="rz-medzera" aria-label="medzera">___</span>${po}`;
       if (doplnene === "") return `${pred.replace(/\s+$/, "")}<span class="rz-nic ${trieda}" title="bez predložky">∅</span>${po.replace(/^(\s)/, "$1")}`;

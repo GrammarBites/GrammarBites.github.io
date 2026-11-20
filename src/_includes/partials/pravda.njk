@@ -1,0 +1,44 @@
+{# Tréner Pravda, alebo nepravda? V lekcii: pravdaNepravda: <kľúč> (údaje v src/_data/pravdaData.json).
+   Žiak vidí tabuľku (plán týždňa s ✓ / ✗) a pri každej vete vyberie True / False. Beží na skripte trénera Roztrieď. #}
+{% set pn = pravdaData[pravdaNepravda] %}
+{% set pnId = "pn-" + pravdaNepravda %}
+{% set pnData = { "kose": [{ "id": "t", "nazov": "True", "popis": "pravda ✓" }, { "id": "f", "nazov": "False", "popis": "nepravda ✗" }], "polozky": pn.polozky } %}
+<section class="blok blok--trener" aria-labelledby="h-pravda">
+  <h2 id="h-pravda" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Tréner: Pravda, alebo nepravda?</h2>
+  <p class="blok__uvod">{{ pn.uvod | safe }} Pri každej vete vyber <b>True</b> (pravda), alebo <b>False</b> (nepravda). Po každej odpovedi uvidíš, prečo je to tak.</p>
+  <div class="pn-plan">
+    <p class="pn-plan__nadpis" lang="en">{{ pn.tabulka.nadpis }}</p>
+    <table>
+      <tbody>
+      {% for r in pn.tabulka.riadky %}
+      <tr><td lang="en" class="f-okrova">{{ r[0] }}</td><td lang="en" class="f-zelena">{{ r[1] }}</td><td class="pn-plan__znak {{ 'pn-plan__znak--ano' if r[2] else 'pn-plan__znak--nie' }}">{{ "✓" if r[2] else "✗" }}</td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    <p class="pn-plan__legenda"><span class="pn-plan__znak--ano">✓</span> = robí to · <span class="pn-plan__znak--nie">✗</span> = nerobí to</p>
+  </div>
+  <div class="trener roztried pravda" data-roztried="{{ pnId }}" data-lekcia="{{ page.fileSlug }}-pravda">
+    <div class="trener__karta rz-karta" data-karta>
+      <div class="trener__hore">
+        <span class="trener__stav" data-stav></span>
+        <span class="trener__seria" data-skore>body 0</span>
+      </div>
+      <p class="rz-veta" data-veta lang="en"></p>
+      <p class="trener__vyznam" data-sk hidden></p>
+      <div class="rz-kose" data-moznosti role="group" aria-label="Pravda alebo nepravda"></div>
+      <p class="trener__spatna" data-spatna role="status" aria-live="polite" hidden></p>
+      <button type="button" class="tlacidlo" data-dalej hidden>Ďalej →</button>
+    </div>
+    <div class="trener__koniec" data-koniec hidden>
+      <img src="/assets/img/postavy/koza-oslavuje.png" alt="" width="100" data-obr-dobre hidden>
+      <img src="/assets/img/postavy/koza-premysla.png" alt="" width="100" data-obr-zle hidden>
+      <div>
+        <p class="trener__vysledok" data-vysledok></p>
+        <div class="trener__chyby" data-chyby></div>
+        <div class="trener__tlacidla"><button type="button" class="tlacidlo" data-dalsie>Ďalšie kolo</button></div>
+      </div>
+    </div>
+  </div>
+  <script type="application/json" id="data-roztried-{{ pnId }}">{{ pnData | json | safe }}</script>
+  <script src="/assets/js/roztried.js?v={{ site.verzia }}" defer></script>
+</section>

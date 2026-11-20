@@ -1,0 +1,110 @@
+{
+  "_info": "Tréner Pravda, alebo nepravda? Kľúč = hodnota 'pravdaNepravda' v lekcii. tabulka = plán (riadky: [deň, činnosť, true = robí / false = nerobí]); polozky: t = veta, k = 't' (pravda) alebo 'f' (nepravda), v = vysvetlenie, sk = preklad (nepovinné).",
+  "mia-week": {
+    "uvod": "Toto je Miin týždenný plán. Mia hovorí o sebe – <i>I</i> = Mia.",
+    "tabulka": {
+      "nadpis": "Mia's week",
+      "riadky": [
+        [
+          "Monday",
+          "have a music lesson",
+          true
+        ],
+        [
+          "Tuesday",
+          "go swimming",
+          false
+        ],
+        [
+          "Wednesday",
+          "visit my grandma",
+          true
+        ],
+        [
+          "Thursday",
+          "watch TV",
+          false
+        ],
+        [
+          "Friday",
+          "help my mum",
+          true
+        ]
+      ]
+    },
+    "polozky": [
+      {
+        "t": "I have a music lesson every Monday.",
+        "k": "t",
+        "sk": "Každý pondelok mám hodinu hudby.",
+        "v": "V pondelok má Mia <b>have a music lesson</b> a pri tom je ✓ → pravda."
+      },
+      {
+        "t": "I go swimming every Tuesday.",
+        "k": "f",
+        "sk": "Každý utorok chodím plávať.",
+        "v": "V utorok je pri <b>go swimming</b> ✗ – Mia v utorok nepláva."
+      },
+      {
+        "t": "I visit my grandma every Wednesday.",
+        "k": "t",
+        "sk": "Každú stredu navštevujem babku.",
+        "v": "V stredu je pri <b>visit my grandma</b> ✓ → pravda."
+      },
+      {
+        "t": "I watch TV every Thursday.",
+        "k": "f",
+        "sk": "Každý štvrtok pozerám telku.",
+        "v": "Vo štvrtok je pri <b>watch TV</b> ✗ – Mia telku nepozerá."
+      },
+      {
+        "t": "I help my mum every Friday.",
+        "k": "t",
+        "sk": "Každý piatok pomáham mame.",
+        "v": "V piatok je pri <b>help my mum</b> ✓ → pravda."
+      },
+      {
+        "t": "I help my mum every Monday.",
+        "k": "f",
+        "sk": "Každý pondelok pomáham mame.",
+        "v": "V pondelok má Mia hodinu hudby. Mame pomáha v <b>piatok</b>."
+      },
+      {
+        "t": "I visit my grandma every Friday.",
+        "k": "f",
+        "sk": "Každý piatok navštevujem babku.",
+        "v": "Babku navštevuje v <b>stredu</b>. V piatok pomáha mame."
+      },
+      {
+        "t": "I don't watch TV.",
+        "k": "t",
+        "sk": "Nepozerám telku.",
+        "v": "Pri <b>watch TV</b> je ✗ → Mia telku nepozerá. <b>I don't watch TV</b> je pravda."
+      },
+      {
+        "t": "I don't go swimming.",
+        "k": "t",
+        "sk": "Nechodím plávať.",
+        "v": "Pri <b>go swimming</b> je ✗ → <b>I don't go swimming</b> je pravda."
+      },
+      {
+        "t": "I don't visit my grandma.",
+        "k": "f",
+        "sk": "Nenavštevujem babku.",
+        "v": "Pri <b>visit my grandma</b> je ✓ – Mia babku navštevuje (v stredu)."
+      },
+      {
+        "t": "I don't have a music lesson.",
+        "k": "f",
+        "sk": "Nemám hodinu hudby.",
+        "v": "Pri <b>have a music lesson</b> je ✓ – Mia ju má (v pondelok)."
+      },
+      {
+        "t": "I don't help my mum.",
+        "k": "f",
+        "sk": "Nepomáham mame.",
+        "v": "Pri <b>help my mum</b> je ✓ – Mia mame pomáha (v piatok)."
+      }
+    ]
+  }
+}

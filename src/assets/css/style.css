@@ -1138,3 +1138,14 @@ button.pc-karta:focus-visible { outline: 3px solid var(--yellow); outline-offset
 .farebne-vety { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
 .farebne-vety li { padding: 12px 16px; background: var(--paper-hi); border: 1.5px solid var(--line); border-radius: 10px; font-size: 1.25rem; line-height: 1.45; }
 .farebne-vety li small { display: block; font-size: 1rem; color: var(--ink-2); }
+
+/* ---------- Tréner Pravda, alebo nepravda? (partials/pravda.njk) ---------- */
+.pn-plan { max-width: 520px; margin: 0 auto 16px; padding: 12px 16px; background: var(--paper-hi); border: 2px solid var(--ink); border-radius: var(--wobbly-2); }
+.pn-plan__nadpis { font-family: var(--hand); font-size: 1.8rem; font-weight: 700; text-align: center; margin: 0 0 6px; }
+.pn-plan table { width: 100%; border-collapse: collapse; font-size: 1.1rem; }
+.pn-plan td { padding: 6px 8px; border-bottom: 1.5px solid var(--line); }
+.pn-plan tr:last-child td { border-bottom: 0; }
+.pn-plan__znak { width: 2em; text-align: center; font-size: 1.5rem; font-weight: 800; }
+.pn-plan__znak--ano { color: #23794a; font-weight: 800; }
+.pn-plan__znak--nie { color: #b8452c; font-weight: 800; }
+.pn-plan__legenda { margin: 8px 0 0; font-size: .9rem; color: var(--ink-2); text-align: center; }

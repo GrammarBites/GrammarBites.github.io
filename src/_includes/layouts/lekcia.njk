@@ -105,6 +105,7 @@ skripty: ["lekcia.js"]
 {% if opravChybu and opravPredPisanim %}{% set pismeno = dalsiePismeno %}{% include "partials/oprav-chybu.njk" %}{% set dalsiePismeno = {"C": "D", "D": "E", "E": "F", "F": "G", "G": "H"}[dalsiePismeno] %}{% endif %}
 {% if pisanie %}{% set pismeno = dalsiePismeno %}{% include "partials/pisanie.njk" %}{% set dalsiePismeno = "F" if dalsiePismeno == "E" else "E" %}{% endif %}
 {% if roztried %}{% set pismeno = dalsiePismeno %}{% include "partials/roztried.njk" %}{% set dalsiePismeno = {"C": "D", "D": "E", "E": "F", "F": "G"}[dalsiePismeno] %}{% endif %}
+{% if pravdaNepravda %}{% set pismeno = dalsiePismeno %}{% include "partials/pravda.njk" %}{% set dalsiePismeno = {"C": "D", "D": "E", "E": "F", "F": "G"}[dalsiePismeno] %}{% endif %}
 {% if slovicka %}{% set pismeno = dalsiePismeno %}{% include "partials/slovicka.njk" %}{% set dalsiePismeno = {"C": "D", "D": "E", "E": "F", "F": "G"}[dalsiePismeno] %}{% endif %}
 {% if hraSlovesa %}{% set pismeno = dalsiePismeno %}{% include "partials/hra-slovesa.njk" %}{% set dalsiePismeno = {"C": "D", "D": "E", "E": "F", "F": "G"}[dalsiePismeno] %}{% endif %}
 

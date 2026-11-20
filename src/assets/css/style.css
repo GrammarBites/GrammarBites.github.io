@@ -1124,3 +1124,17 @@ button.pc-karta:focus-visible { outline: 3px solid var(--yellow); outline-offset
 .blok--vyklad, .vyklad-skryty, .zosit, .zosit > * { min-width: 0; }
 .zosit { overflow-wrap: break-word; }
 .oc-pozn { padding: 4px 12px; background: var(--yellow-wash); border-radius: 8px; font-weight: 700; color: var(--ink-2); }
+
+/* ---------- Farebné kódovanie (lekcie pre 4. ročník; rovnaké farby ako vo videu a infografike) ---------- */
+.f-cervena, .f-modra, .f-zelena, .f-okrova, .f-fialova, .f-ruzova { font-weight: 700; }
+.f-cervena { color: #b8452c; }  /* otázkové slovo: What, When / Čo, Kedy */
+.f-modra   { color: #2a62a0; }  /* have we got, We've got / máme */
+.f-zelena  { color: #23794a; }  /* predmet */
+.f-okrova  { color: #9a6200; }  /* deň: on Monday */
+.f-fialova { color: #7046a0; }  /* our */
+.f-ruzova  { color: #b4306c; }  /* their */
+.farby-legenda { display: flex; flex-wrap: wrap; gap: 6px 18px; padding: 10px 14px; background: var(--paper-hi); border: 1.5px solid var(--line); border-radius: 10px; }
+.farby-legenda span::before { content: "●"; margin-right: 4px; }
+.farebne-vety { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.farebne-vety li { padding: 12px 16px; background: var(--paper-hi); border: 1.5px solid var(--line); border-radius: 10px; font-size: 1.25rem; line-height: 1.45; }
+.farebne-vety li small { display: block; font-size: 1rem; color: var(--ink-2); }

@@ -5,7 +5,24 @@
     "kratko": "F&F 2",
     "farba": "yellow",
     "popis": "Učebnica pre 4. ročník.",
-    "units": []
+    "units": [
+      { "id": "intro", "nazov": "Starter: Welcome back!", "gramatika": ["This is my cousin.", "There is … / There are …"] },
+      { "id": "1", "nazov": "Our new things", "gramatika": ["This / That is …", "These / Those are …"] },
+      { "id": "2", "nazov": "They're happy now!", "gramatika": ["We're / They're …", "Are they …?"] },
+      { "id": "3", "nazov": "I can ride a bike!", "gramatika": ["She can / can't …", "Can he …?", "Prepositions of place"] },
+      { "id": "4", "nazov": "Have you got a milkshake?", "gramatika": ["Have you got …?", "I have / haven't …", "Has he got …?"] },
+      { "id": "5", "nazov": "We've got English!", "gramatika": ["What / When have we got …?", "We've got …", "our / their"] },
+      { "id": "6", "nazov": "Let's play after school!", "gramatika": ["I visit …", "I don't have …"] },
+      { "id": "7", "nazov": "Let's buy presents!", "gramatika": ["What does he like?", "He likes / doesn't like …"] },
+      { "id": "8", "nazov": "What's the time?", "gramatika": ["What's the time?", "It's … o'clock.", "He … at … o'clock."] },
+      { "id": "9", "nazov": "Where does she work?", "gramatika": ["Where does he work?", "He works in a …", "Does she work in a …?"] },
+      { "id": "10", "nazov": "It's hot today!", "gramatika": ["What's the weather like?", "It's …", "Put on / Don't put on …"] },
+      { "id": "11", "nazov": "What are you wearing?", "gramatika": ["Present continuous: What are you wearing?", "I'm / He's wearing …"] },
+      { "id": "12", "nazov": "You're sleeping!", "gramatika": ["Present continuous: What are you / they doing?", "What's he / she doing?"] },
+      { "id": "13", "nazov": "Look at all the animals!", "gramatika": ["Comparatives: This cow is bigger than that cow."] },
+      { "id": "14", "nazov": "Look at the photos!", "gramatika": ["Past simple: I was / wasn't …", "You were / weren't …"] },
+      { "id": "15", "nazov": "Well done!", "gramatika": ["Past simple: There were some / weren't any …", "Irregular plurals"] }
+    ]
   },
   {
     "id": "project-2",

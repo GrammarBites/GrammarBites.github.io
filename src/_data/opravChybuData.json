@@ -3489,5 +3489,6 @@
         "Thank you for your invitement."
       ]
     ]
-  }
+  },
+  "what-when-have-we-got": {"vety": [["What we have got on Monday?", "What {have we} got on Monday?", "V otázke je najprv <b>have</b>, potom <b>we</b>: What <b>have we</b> got…?", "", "What have got we on Monday?"], ["We got English.", "We{'ve} got English.", "Máme = <b>We've got</b>. Nezabudni na 've (= have).", "", "We has got English."], ["We've got art in Friday.", "We've got art {on} Friday.", "Pred dňom v týždni je <b>on</b>: on Friday.", "", "We've got art at Friday."], ["What have we got PE? – On Thursday.", "{When} have we got PE? – On Thursday.", "Odpoveď je deň (on Thursday) → pýtame sa <b>When</b> = Kedy?", "", "Who have we got PE? – On Thursday."], ["We are in 4.A. This is their classroom.", "We are in 4.A. This is {our} classroom.", "My (we) → <b>our</b> = naša.", "", "We are in 4.A. This is we classroom."], ["Tom and Anna are here. These are they bags.", "Tom and Anna are here. These are {their} bags.", "Tom a Anna = oni → <b>their</b> = ich.", "", "Tom and Anna are here. These are our bags."]]}
 }

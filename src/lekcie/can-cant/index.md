@@ -15,7 +15,7 @@ bite:
   priklad: "I can skate. · Can he ride a bike? – No, he can't."
 roztried: can-cant
 pravdaNepravda: what-can-tom-do
-video: video.mp4
+video: video.mp4?v=2
 poster: poster.jpg
 infografika: infografika.jpg
 infografikaPdf: infografika.pdf

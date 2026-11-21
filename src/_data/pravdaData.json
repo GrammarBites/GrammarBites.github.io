@@ -564,5 +564,109 @@
         "v": "Pri Billym kokteil v tabuľke nie je – má fries, chicken (a cheese sandwich ✗)."
       }
     ]
+  },
+  "birthday-likes": {
+    "uvod": "Billy a Rosy majú narodeniny. V tabuľke vidíš, čo majú radi (✓) a čo nie (✗). <i>He</i> = Billy, <i>she</i> = Rosy.",
+    "tabulka": {
+      "nadpis": "What do they like?",
+      "legenda": [
+        "má to rád",
+        "nemá to rád"
+      ],
+      "riadky": [
+        [
+          "Billy",
+          "chocolate",
+          true
+        ],
+        [
+          "Billy",
+          "balloons",
+          false
+        ],
+        [
+          "Billy",
+          "cake",
+          true
+        ],
+        [
+          "Rosy",
+          "sweets",
+          true
+        ],
+        [
+          "Rosy",
+          "cake",
+          false
+        ],
+        [
+          "Rosy",
+          "balloons",
+          true
+        ]
+      ]
+    },
+    "polozky": [
+      {
+        "t": "Billy likes chocolate.",
+        "k": "t",
+        "sk": "Billy má rád čokoládu.",
+        "v": "Billy – chocolate ✓ → pravda."
+      },
+      {
+        "t": "Billy likes balloons.",
+        "k": "f",
+        "sk": "Billy má rád balóny.",
+        "v": "Billy – balloons ✗ → Billy doesn't like balloons."
+      },
+      {
+        "t": "He doesn't like cake.",
+        "k": "f",
+        "sk": "Nemá rád tortu.",
+        "v": "Billy – cake ✓ → he likes cake."
+      },
+      {
+        "t": "Rosy likes sweets.",
+        "k": "t",
+        "sk": "Rosy má rada cukríky.",
+        "v": "Rosy – sweets ✓ → pravda."
+      },
+      {
+        "t": "She doesn't like cake.",
+        "k": "t",
+        "sk": "Nemá rada tortu.",
+        "v": "Rosy – cake ✗ → pravda."
+      },
+      {
+        "t": "Rosy doesn't like balloons.",
+        "k": "f",
+        "sk": "Rosy nemá rada balóny.",
+        "v": "Rosy – balloons ✓ → she likes balloons."
+      },
+      {
+        "t": "What does Billy like? – He likes cake.",
+        "k": "t",
+        "sk": "Čo má Billy rád? – Má rád tortu.",
+        "v": "Billy – cake ✓ → pravda."
+      },
+      {
+        "t": "What does Rosy like? – She likes cake.",
+        "k": "f",
+        "sk": "Čo má Rosy rada? – Má rada tortu.",
+        "v": "Rosy – cake ✗. Rosy má rada sweets a balloons."
+      },
+      {
+        "t": "Billy and Rosy like cake.",
+        "k": "f",
+        "sk": "Billy a Rosy majú radi tortu.",
+        "v": "Billy áno (✓), ale Rosy nie (✗)."
+      },
+      {
+        "t": "Billy doesn't like balloons, but Rosy likes balloons.",
+        "k": "t",
+        "sk": "Billy nemá rád balóny, ale Rosy áno.",
+        "v": "Billy – balloons ✗, Rosy – balloons ✓ → pravda."
+      }
+    ]
   }
 }

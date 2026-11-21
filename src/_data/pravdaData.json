@@ -215,5 +215,354 @@
         "v": "Science je v rozvrhu len v <b>utorok</b> → pravda."
       }
     ]
+  },
+  "preklad-this-that": {
+    "uvod": "Sedí slovenský preklad s anglickou vetou? Pozor na <i>blízko / ďaleko</i> a na <i>jednu vec / viac vecí</i>.",
+    "polozky": [
+      {
+        "t": "This is a computer. = Toto je počítač.",
+        "k": "t",
+        "v": "This = toto (blízko), is = je → pravda."
+      },
+      {
+        "t": "That is a board. = Toto je tabuľa.",
+        "k": "f",
+        "v": "That = <b>tamto</b> (ďaleko). Správne: Tamto je tabuľa."
+      },
+      {
+        "t": "These are tables. = Toto sú stoly.",
+        "k": "t",
+        "v": "These = toto/tieto (blízko, viac vecí) → pravda."
+      },
+      {
+        "t": "Those are pegs. = Toto je vešiak.",
+        "k": "f",
+        "v": "Those are = <b>tamto sú</b>, viac vecí. Správne: Tamto sú vešiaky."
+      },
+      {
+        "t": "This is my pencil case. = Toto je môj peračník.",
+        "k": "t",
+        "v": "This = toto, is = je → pravda."
+      },
+      {
+        "t": "Those are computers. = Tamto sú počítače.",
+        "k": "t",
+        "v": "Those = tamto/tamtie (ďaleko, viac vecí) → pravda."
+      },
+      {
+        "t": "These are pegs. = Tamto sú vešiaky.",
+        "k": "f",
+        "v": "These = <b>toto/tieto</b> (blízko). Správne: Toto sú vešiaky."
+      },
+      {
+        "t": "That is a classroom. = Tamto je trieda.",
+        "k": "t",
+        "v": "That = tamto, is = je → pravda."
+      },
+      {
+        "t": "This is a table. = Toto sú stoly.",
+        "k": "f",
+        "v": "This is = <b>toto je</b> – jedna vec. Správne: Toto je stôl."
+      },
+      {
+        "t": "Those are boards. = Tamto je tabuľa.",
+        "k": "f",
+        "v": "Those are = <b>tamto sú</b> – viac vecí. Správne: Tamto sú tabule."
+      }
+    ]
+  },
+  "pocity": {
+    "uvod": "V tabuľke vidíš, ako sa kto cíti. Prečítaj otázku aj odpoveď a rozhodni, či odpoveď sedí s tabuľkou.",
+    "tabulka": {
+      "nadpis": "How do they feel?",
+      "znaky": false,
+      "riadky": [
+        [
+          "Tom and Ben",
+          "happy"
+        ],
+        [
+          "The babies",
+          "hungry"
+        ],
+        [
+          "Mia and Lucy",
+          "cold"
+        ],
+        [
+          "Grandma and Grandpa",
+          "tired"
+        ],
+        [
+          "Max and Sam",
+          "thirsty"
+        ]
+      ]
+    },
+    "polozky": [
+      {
+        "t": "Are Tom and Ben happy? – Yes, they are.",
+        "k": "t",
+        "sk": "Sú Tom a Ben šťastní? – Áno, sú.",
+        "v": "V tabuľke: Tom and Ben – <b>happy</b> → pravda."
+      },
+      {
+        "t": "Are the babies hungry? – Yes, they are.",
+        "k": "t",
+        "sk": "Sú bábätká hladné? – Áno, sú.",
+        "v": "The babies – <b>hungry</b> → pravda."
+      },
+      {
+        "t": "Are Mia and Lucy hot? – Yes, they are.",
+        "k": "f",
+        "sk": "Je Mii a Lucy horúco? – Áno.",
+        "v": "Mia a Lucy sú <b>cold</b> (je im zima), nie hot."
+      },
+      {
+        "t": "Are Grandma and Grandpa tired? – No, they aren't.",
+        "k": "f",
+        "sk": "Sú babka a dedko unavení? – Nie.",
+        "v": "V tabuľke sú <b>tired</b> → správne je Yes, they are."
+      },
+      {
+        "t": "Are Max and Sam thirsty? – Yes, they are.",
+        "k": "t",
+        "sk": "Sú Max a Sam smädní? – Áno, sú.",
+        "v": "Max and Sam – <b>thirsty</b> → pravda."
+      },
+      {
+        "t": "Are Tom and Ben sad? – No, they aren't.",
+        "k": "t",
+        "sk": "Sú Tom a Ben smutní? – Nie, nie sú.",
+        "v": "Tom a Ben sú <b>happy</b>, nie sad → No, they aren't je pravda."
+      },
+      {
+        "t": "Are the babies thirsty? – Yes, they are.",
+        "k": "f",
+        "sk": "Sú bábätká smädné? – Áno.",
+        "v": "Bábätká sú <b>hungry</b> (hladné), nie thirsty."
+      },
+      {
+        "t": "Are Mia and Lucy cold? – No, they aren't.",
+        "k": "f",
+        "sk": "Je Mii a Lucy zima? – Nie.",
+        "v": "Mia a Lucy sú <b>cold</b> → správne je Yes, they are."
+      },
+      {
+        "t": "Are Max and Sam happy? – No, they aren't.",
+        "k": "t",
+        "sk": "Sú Max a Sam šťastní? – Nie.",
+        "v": "Max a Sam sú <b>thirsty</b>, nie happy → pravda."
+      },
+      {
+        "t": "Are Grandma and Grandpa hungry? – Yes, they are.",
+        "k": "f",
+        "sk": "Sú babka a dedko hladní? – Áno.",
+        "v": "Babka a dedko sú <b>tired</b> (unavení), nie hungry."
+      }
+    ]
+  },
+  "what-can-tom-do": {
+    "uvod": "Toto je Tom. V tabuľke vidíš, čo vie a čo nevie. Vety hovoria o Tomovi – <i>he</i> = Tom.",
+    "tabulka": {
+      "nadpis": "What can Tom do?",
+      "legenda": [
+        "vie to",
+        "nevie to"
+      ],
+      "riadky": [
+        [
+          "Tom",
+          "ride a bike",
+          true
+        ],
+        [
+          "Tom",
+          "ride a horse",
+          false
+        ],
+        [
+          "Tom",
+          "play tennis",
+          true
+        ],
+        [
+          "Tom",
+          "skate",
+          false
+        ],
+        [
+          "Tom",
+          "play football",
+          true
+        ]
+      ]
+    },
+    "polozky": [
+      {
+        "t": "He can ride a bike.",
+        "k": "t",
+        "sk": "Vie bicyklovať.",
+        "v": "Pri <b>ride a bike</b> je ✓ → pravda."
+      },
+      {
+        "t": "He can ride a horse.",
+        "k": "f",
+        "sk": "Vie jazdiť na koni.",
+        "v": "Pri <b>ride a horse</b> je ✗ → Tom to nevie."
+      },
+      {
+        "t": "He can't skate.",
+        "k": "t",
+        "sk": "Nevie korčuľovať.",
+        "v": "Pri <b>skate</b> je ✗ → he can't skate je pravda."
+      },
+      {
+        "t": "He can't play tennis.",
+        "k": "f",
+        "sk": "Nevie hrať tenis.",
+        "v": "Pri <b>play tennis</b> je ✓ → Tom tenis hrať vie."
+      },
+      {
+        "t": "He can play football.",
+        "k": "t",
+        "sk": "Vie hrať futbal.",
+        "v": "Pri <b>play football</b> je ✓ → pravda."
+      },
+      {
+        "t": "Can he skate? – Yes, he can.",
+        "k": "f",
+        "sk": "Vie korčuľovať? – Áno.",
+        "v": "Pri <b>skate</b> je ✗ → správne je No, he can't."
+      },
+      {
+        "t": "Can he play tennis? – Yes, he can.",
+        "k": "t",
+        "sk": "Vie hrať tenis? – Áno, vie.",
+        "v": "Pri <b>play tennis</b> je ✓ → pravda."
+      },
+      {
+        "t": "Can he ride a horse? – No, he can't.",
+        "k": "t",
+        "sk": "Vie jazdiť na koni? – Nie, nevie.",
+        "v": "Pri <b>ride a horse</b> je ✗ → pravda."
+      },
+      {
+        "t": "Can he ride a bike? – No, he can't.",
+        "k": "f",
+        "sk": "Vie bicyklovať? – Nie.",
+        "v": "Pri <b>ride a bike</b> je ✓ → správne je Yes, he can."
+      },
+      {
+        "t": "He can't play football.",
+        "k": "f",
+        "sk": "Nevie hrať futbal.",
+        "v": "Pri <b>play football</b> je ✓ → Tom futbal hrať vie."
+      }
+    ]
+  },
+  "lunch": {
+    "uvod": "Rosy a Billy majú obed. V tabuľke vidíš, čo kto má (✓) a čo nemá (✗). <i>She</i> = Rosy, <i>he</i> = Billy.",
+    "tabulka": {
+      "nadpis": "Lunch time!",
+      "legenda": [
+        "má to",
+        "nemá to"
+      ],
+      "riadky": [
+        [
+          "Rosy",
+          "a pizza",
+          true
+        ],
+        [
+          "Rosy",
+          "a salad",
+          false
+        ],
+        [
+          "Rosy",
+          "a milkshake",
+          true
+        ],
+        [
+          "Billy",
+          "fries",
+          true
+        ],
+        [
+          "Billy",
+          "chicken",
+          true
+        ],
+        [
+          "Billy",
+          "a cheese sandwich",
+          false
+        ]
+      ]
+    },
+    "polozky": [
+      {
+        "t": "Has Rosy got a pizza? – Yes, she has.",
+        "k": "t",
+        "sk": "Má Rosy pizzu? – Áno, má.",
+        "v": "Rosy – <b>a pizza</b> ✓ → pravda."
+      },
+      {
+        "t": "Has Rosy got a salad? – Yes, she has.",
+        "k": "f",
+        "sk": "Má Rosy šalát? – Áno.",
+        "v": "Rosy – <b>a salad</b> ✗ → správne je No, she hasn't."
+      },
+      {
+        "t": "Has she got a milkshake? – Yes, she has.",
+        "k": "t",
+        "sk": "Má (Rosy) kokteil? – Áno, má.",
+        "v": "Rosy – <b>a milkshake</b> ✓ → pravda."
+      },
+      {
+        "t": "Has Billy got fries? – No, he hasn't.",
+        "k": "f",
+        "sk": "Má Billy hranolky? – Nie.",
+        "v": "Billy – <b>fries</b> ✓ → správne je Yes, he has."
+      },
+      {
+        "t": "Has he got chicken? – Yes, he has.",
+        "k": "t",
+        "sk": "Má (Billy) kura? – Áno, má.",
+        "v": "Billy – <b>chicken</b> ✓ → pravda."
+      },
+      {
+        "t": "Has Billy got a cheese sandwich? – No, he hasn't.",
+        "k": "t",
+        "sk": "Má Billy syrový sendvič? – Nie, nemá.",
+        "v": "Billy – <b>a cheese sandwich</b> ✗ → pravda."
+      },
+      {
+        "t": "Rosy has got a salad.",
+        "k": "f",
+        "sk": "Rosy má šalát.",
+        "v": "Pri Rosy je <b>a salad</b> ✗ – šalát nemá."
+      },
+      {
+        "t": "Billy has got chicken and fries.",
+        "k": "t",
+        "sk": "Billy má kura a hranolky.",
+        "v": "Billy – chicken ✓, fries ✓ → pravda."
+      },
+      {
+        "t": "Has Rosy got a pizza and a milkshake? – Yes, she has.",
+        "k": "t",
+        "sk": "Má Rosy pizzu aj kokteil? – Áno, má.",
+        "v": "Rosy – pizza ✓, milkshake ✓ → pravda."
+      },
+      {
+        "t": "Has Billy got a milkshake? – Yes, he has.",
+        "k": "f",
+        "sk": "Má Billy kokteil? – Áno.",
+        "v": "Pri Billym kokteil v tabuľke nie je – má fries, chicken (a cheese sandwich ✗)."
+      }
+    ]
   }
 }

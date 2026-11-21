@@ -6,6 +6,7 @@
 <section class="blok blok--trener" aria-labelledby="h-pravda">
   <h2 id="h-pravda" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Tréner: Pravda, alebo nepravda?</h2>
   <p class="blok__uvod">{{ pn.uvod | safe }} Pri každej vete vyber <b>True</b> (pravda), alebo <b>False</b> (nepravda). Po každej odpovedi uvidíš, prečo je to tak.</p>
+  {% if pn.tabulka %}
   <div class="pn-plan">
     <p class="pn-plan__nadpis" lang="en">{{ pn.tabulka.nadpis }}</p>
     <table>
@@ -15,8 +16,9 @@
       {% endfor %}
       </tbody>
     </table>
-    {% if pn.tabulka.znaky !== false %}<p class="pn-plan__legenda"><span class="pn-plan__znak--ano">✓</span> = robí to · <span class="pn-plan__znak--nie">✗</span> = nerobí to</p>{% endif %}
+    {% if pn.tabulka.znaky !== false %}<p class="pn-plan__legenda"><span class="pn-plan__znak--ano">✓</span> = {{ pn.tabulka.legenda[0] if pn.tabulka.legenda else "robí to" }} · <span class="pn-plan__znak--nie">✗</span> = {{ pn.tabulka.legenda[1] if pn.tabulka.legenda else "nerobí to" }}</p>{% endif %}
   </div>
+  {% endif %}
   <div class="trener roztried pravda" data-roztried="{{ pnId }}" data-lekcia="{{ page.fileSlug }}-pravda">
     <div class="trener__karta rz-karta" data-karta>
       <div class="trener__hore">

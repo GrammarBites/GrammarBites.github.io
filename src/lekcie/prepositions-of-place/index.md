@@ -3,9 +3,10 @@ title: "Prepositions of place: in, on, under…"
 nazovSk: Predložky miesta – kde to je? in, on, under, next to, between, behind, in front of
 popis: "The goat is in the box. The book is on the table. The cat is under the bed. Where's the goat? Predložky miesta a tréner, v ktorom hľadáš kozu v izbe."
 date: 2026-11-09T22:00:00
-rocniky: [5]
+rocniky: [4, 5]
 ucebnice:
   - { id: vlastne }
+  - { id: family-and-friends-2, unit: "3" }
 temy: [ostatne]
 klucoveSlova: [prepositions of place, predložky miesta, in, on, under, next to, between, behind, in front of, kde, where, where is, where's, izba, room, furniture, nábytok, tréner]
 izba: true

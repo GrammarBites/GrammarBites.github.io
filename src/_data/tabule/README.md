@@ -8,7 +8,7 @@ Všetky tabule sú na stránke `/tabula/`.
 
 - `lekcia`, `lekciaNazov` – kam vedie odkaz „Lekcia“
 - `nazov` – nadpis na tabuli
-- `skupina` – pod ktorým nadpisom sa otázka ukáže na stránke /tabula/: `pritomny`, `minuly`, `buducnost`, `otazky`, `vety`, `mnozstvo`, `pridavne`, `cas` (názvy a poradie sú v `SKUPINY` v `src/assets/js/tabula.js`; bez skupiny ide tabuľa do „Ďalšie“)
+- `skupina` – pod ktorým nadpisom sa otázka ukáže na stránke /tabula/: `pritomny`, `minuly`, `buducnost`, `otazky`, `vety`, `mnozstvo`, `pridavne`, `cas`, `stvrtaci` (4. ročník – Family and Friends 2, ide prvá) (názvy a poradie sú v `SKUPINY` v `src/assets/js/tabula.js`; bez skupiny ide tabuľa do „Ďalšie“)
 - `otazky` – 1–2 otázky, ktoré sa ukážu ako tlačidlá na stránke /tabula/
 - `aj` (nepovinné) – ďalšie lekcie, pri ktorých sa má ukázať tlačidlo tabule, napr. `["passive-tenses"]`
 - `kluce` – slová, podľa ktorých chat Magickej tabule nájde tabuľu, keď žiak napíše vlastnú otázku (bez diakritiky; preklepy a skloňovanie chat zvládne sám).
@@ -61,7 +61,7 @@ Polohy `x`, `od`, `do`, `k` sú čísla 0–100 (zľava doprava). Každá značk
 ## Značky v texte
 
 `{slovo}` – bez zmeny, `{slovo#id}` – slovo, na ktoré sa dá neskôr odkázať (`blok.id`),
-`{slovo|zlta}` – farba (`zlta`, `ruzova`, `modra`), `{slovo#id|zlta,krouzok}` – farba aj značka hneď pri písaní.
+`{slovo|zlta}` – farba (`zlta`, `ruzova`, `modra`; pre farebné kódovanie lekcií 4. ročníka aj `zelena`, `oranzova`, `fialova`, `cervena`), `{slovo#id|zlta,krouzok}` – farba aj značka hneď pri písaní.
 
 ## Hlas (doplní sa neskôr)
 

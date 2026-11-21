@@ -1,0 +1,191 @@
+{
+  "lekcia": "have-you-got",
+  "lekciaNazov": "Have you got …? · Has he got …?",
+  "nazov": "Have, alebo has?",
+  "skupina": "stvrtaci",
+  "otazky": [
+    "Kedy have a kedy has?",
+    "Prečo Yes, I have – bez got?"
+  ],
+  "kluce": [
+    "have got",
+    "has got",
+    "have you got",
+    "has he got",
+    "haven't",
+    "hasn't",
+    "mas",
+    "ma",
+    "have alebo has",
+    "have he got"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "{Have#a} he got a pizza?",
+          "id": "z"
+        }
+      ],
+      "popis": "Takúto otázku napíše veľa žiakov. Pozri sa na prvé slovo.",
+      "otazka": {
+        "text": "Čo je zlé na otázke „Have he got a pizza?“",
+        "moznosti": [
+          "Pri he má byť has.",
+          "Chýba do.",
+          "Got má byť na začiatku."
+        ],
+        "spravna": 0,
+        "vysvetlenie": "he → has.",
+        "napoveda": {
+          "1": "Pri have got do nepotrebujeme.",
+          "2": "Got ostáva v strede."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.a"
+        },
+        {
+          "op": "pis",
+          "text": "{Has|ruzova} {he|modra} got {a pizza|zelena}?"
+        },
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "{have|fialova}",
+              "riadky": [
+                "I, you, we, they",
+                "{Have|fialova} you got …?"
+              ]
+            },
+            {
+              "nadpis": "{has|ruzova}",
+              "riadky": [
+                "he, she, it",
+                "{Has|ruzova} she got …?"
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "Pri <b>I, you, we, they</b> je <b>have</b>. Pri <b>he, she, it</b> je <b>has</b>.",
+      "otazka": {
+        "text": "___ she got a milkshake?",
+        "moznosti": [
+          "Has",
+          "Have"
+        ],
+        "spravna": 0,
+        "vysvetlenie": "she → has.",
+        "napoveda": {
+          "1": "Have patrí k I a you."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "{You#c|modra} {have#d|fialova} got fries.",
+          "id": "v"
+        },
+        {
+          "op": "pis",
+          "text": "{Have#e|fialova} {you|modra} got fries?",
+          "id": "q"
+        },
+        {
+          "op": "sipka",
+          "od": "v.d",
+          "k": "q.e",
+          "text": "have ide dopredu"
+        }
+      ],
+      "popis": "V otázke ide <b>have / has</b> na začiatok: <b>Have you</b> got …? <b>Has she</b> got …?"
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "Yes, I have {got#g}.",
+          "id": "w"
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "w.g"
+        },
+        {
+          "op": "pis",
+          "text": "Yes, I {have|fialova}. · No, I {haven't|cervena}."
+        },
+        {
+          "op": "pis",
+          "text": "Yes, she {has|ruzova}. · No, she {hasn't|cervena}."
+        }
+      ],
+      "popis": "Krátka odpoveď je <b>bez got</b>: Yes, I have. No, she hasn't.",
+      "otazka": {
+        "text": "Has he got chicken? – Yes, ___",
+        "moznosti": [
+          "he has.",
+          "he has got.",
+          "he have."
+        ],
+        "spravna": 0,
+        "vysvetlenie": "Krátka odpoveď: Yes, he has.",
+        "napoveda": {
+          "1": "V krátkej odpovedi got nedávame.",
+          "2": "Pri he je has."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "Zapamätaj si:",
+          "styl": "nadpis2"
+        },
+        {
+          "op": "pis",
+          "text": "I, you → {have|fialova}"
+        },
+        {
+          "op": "pis",
+          "text": "he, she → {has|ruzova}"
+        },
+        {
+          "op": "pis",
+          "text": "Yes, I {have|fialova}. – bez got"
+        }
+      ],
+      "popis": "Hotovo! Opýtaj sa kamaráta: Have you got …?",
+      "odkazy": [
+        {
+          "text": "Tréner: Roztrieď",
+          "url": "/lekcie/have-you-got/#h-roztried"
+        },
+        {
+          "text": "Tréner: Pravda, alebo nepravda?",
+          "url": "/lekcie/have-you-got/#h-pravda"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/have-you-got/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/have-you-got/#h-test"
+        }
+      ]
+    }
+  ]
+}

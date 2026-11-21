@@ -1,0 +1,206 @@
+{
+  "lekcia": "likes-doesnt-like",
+  "lekciaNazov": "like · likes · don't like · doesn't like",
+  "nazov": "Prečo „He likes“, ale „He doesn't like“?",
+  "skupina": "stvrtaci",
+  "otazky": [
+    "Prečo He likes, ale He doesn't like?",
+    "Kedy do a kedy does?"
+  ],
+  "kluce": [
+    "like",
+    "likes",
+    "don't like",
+    "doesn't like",
+    "doesn't likes",
+    "he like",
+    "what does he like",
+    "mam rad",
+    "ma rad",
+    "nema rad"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "He {like#a} chocolate.",
+          "id": "z"
+        }
+      ],
+      "popis": "Takúto vetu napíše veľa žiakov. Pri <i>he</i> a <i>she</i> nám niečo chýba.",
+      "otazka": {
+        "text": "Čo je zlé na vete „He like chocolate.“?",
+        "moznosti": [
+          "Pri he treba likes.",
+          "Chýba don't.",
+          "Má byť liking."
+        ],
+        "spravna": 0,
+        "vysvetlenie": "he → like + s = likes.",
+        "napoveda": {
+          "1": "Veta je kladná, don't tam nepatrí.",
+          "2": "Tvar liking sa tu nepoužíva."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.a"
+        },
+        {
+          "op": "pis",
+          "text": "{He|modra} {like|fialova}{s|ruzova} {chocolate|zelena}."
+        },
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "{I, you, we, they|modra}",
+              "riadky": [
+                "I {like|fialova} cake."
+              ]
+            },
+            {
+              "nadpis": "{he, she|modra}",
+              "riadky": [
+                "She {like|fialova}{s|ruzova} cake."
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "Pri <b>he</b> a <b>she</b> pridáme k slovesu <b>-s</b>: like → like<b>s</b>.",
+      "otazka": {
+        "text": "My sister ___ sweets.",
+        "moznosti": [
+          "likes",
+          "like"
+        ],
+        "spravna": 0,
+        "vysvetlenie": "Sestra = she → likes.",
+        "napoveda": {
+          "1": "Pri she treba -s."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "She doesn't {likes#b} cake.",
+          "id": "w"
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "w.b"
+        },
+        {
+          "op": "pis",
+          "text": "{She|modra} {doesn't|cervena} {like|fialova} {cake|zelena}."
+        },
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "I, you",
+              "riadky": [
+                "I {don't|cervena} like"
+              ]
+            },
+            {
+              "nadpis": "he, she",
+              "riadky": [
+                "He {doesn't|cervena} like"
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "V zápore je pri he a she <b>doesn't</b>. To <b>-s</b> už je v <i>does</i>, preto <b>like</b> ostane <b>bez -s</b>.",
+      "otazka": {
+        "text": "He ___ balloons.",
+        "moznosti": [
+          "doesn't like",
+          "don't like",
+          "doesn't likes"
+        ],
+        "spravna": 0,
+        "vysvetlenie": "he → doesn't like.",
+        "napoveda": {
+          "1": "Don't patrí k I / you.",
+          "2": "Po doesn't je like bez -s."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "What {do|oranzova} {you|modra} {like|fialova}?"
+        },
+        {
+          "op": "pis",
+          "text": "What {does|oranzova} {he|modra} {like|fialova}?"
+        }
+      ],
+      "popis": "V otázke je pri <b>I, you</b> slovo <b>do</b>, pri <b>he, she</b> slovo <b>does</b>. Like je v otázke vždy bez -s.",
+      "otazka": {
+        "text": "What ___ Billy like?",
+        "moznosti": [
+          "does",
+          "do"
+        ],
+        "spravna": 0,
+        "vysvetlenie": "Billy = he → does.",
+        "napoveda": {
+          "1": "Do patrí k I / you."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "Zapamätaj si:",
+          "styl": "nadpis2"
+        },
+        {
+          "op": "pis",
+          "text": "he, she → {like|fialova}{s|ruzova}"
+        },
+        {
+          "op": "pis",
+          "text": "{doesn't|cervena} {like|fialova} – bez -s"
+        },
+        {
+          "op": "pis",
+          "text": "What {does|oranzova} he like?"
+        }
+      ],
+      "popis": "Hotovo! Povedz, čo máš rád ty a čo tvoj kamarát.",
+      "odkazy": [
+        {
+          "text": "Tréner: Roztrieď",
+          "url": "/lekcie/likes-doesnt-like/#h-roztried"
+        },
+        {
+          "text": "Tréner: Pravda, alebo nepravda?",
+          "url": "/lekcie/likes-doesnt-like/#h-pravda"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/likes-doesnt-like/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/likes-doesnt-like/#h-test"
+        }
+      ]
+    }
+  ]
+}

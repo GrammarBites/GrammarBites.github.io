@@ -1,0 +1,212 @@
+{
+  "lekcia": "were-theyre",
+  "lekciaNazov": "We're · They're · Are they …?",
+  "nazov": "Prečo „They're hungry“?",
+  "skupina": "stvrtaci",
+  "otazky": [
+    "Prečo They're hungry, a nie They hungry?",
+    "Ako sa opýtam Are they …?"
+  ],
+  "kluce": [
+    "we're",
+    "they're",
+    "we are",
+    "they are",
+    "are they",
+    "aren't",
+    "pocity",
+    "feelings",
+    "they hungry",
+    "my sme",
+    "oni su",
+    "hungry",
+    "happy"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "They {hungry#a}.",
+          "id": "z"
+        }
+      ],
+      "popis": "Takúto vetu napíše veľa žiakov. Po slovensky by to bolo „Oni hladní.“ – niečo tam chýba.",
+      "otazka": {
+        "text": "Čo chýba vo vete „They hungry.“?",
+        "moznosti": [
+          "Sloveso are (sú).",
+          "Slovo very.",
+          "-s na konci."
+        ],
+        "spravna": 0,
+        "vysvetlenie": "Oni SÚ hladní → They are hungry.",
+        "napoveda": {
+          "1": "Very (veľmi) tam byť nemusí.",
+          "2": "-s tu nepomôže. Chýba sloveso sú."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "{They|fialova} {are|oranzova} {hungry|zelena}."
+        },
+        {
+          "op": "pis",
+          "text": "{They're|fialova} {hungry|zelena}."
+        }
+      ],
+      "popis": "V angličtine musí byť vo vete sloveso. Tu je to <b>are</b> = sú. Často ho skrátime: <b>They are → They're</b>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "my sme",
+              "riadky": [
+                "{We|modra} {are|oranzova} = {We're|modra}",
+                "We're happy."
+              ]
+            },
+            {
+              "nadpis": "oni sú",
+              "riadky": [
+                "{They|fialova} {are|oranzova} = {They're|fialova}",
+                "They're sad."
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "<b>We're</b> = my sme (aj ja som v skupine). <b>They're</b> = oni sú (ja v skupine nie som).",
+      "otazka": {
+        "text": "Tom and I are cold. = ___ cold.",
+        "moznosti": [
+          "We're",
+          "They're"
+        ],
+        "spravna": 0,
+        "vysvetlenie": "Tom a ja = my → We're.",
+        "napoveda": {
+          "1": "Ty si v skupine (Tom a JA) → we."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "{They|fialova} {are#c|oranzova} {happy|zelena}.",
+          "id": "v"
+        },
+        {
+          "op": "pis",
+          "text": "{Are#d|oranzova} {they|fialova} {happy|zelena}?",
+          "id": "q"
+        },
+        {
+          "op": "sipka",
+          "od": "v.c",
+          "k": "q.d",
+          "text": "are ide dopredu"
+        }
+      ],
+      "popis": "Otázku urobíme tak, že <b>are</b> presunieme <b>na začiatok</b>: They are happy. → <b>Are they</b> happy?",
+      "otazka": {
+        "text": "Ako sa opýtam „Sú smädní?“",
+        "moznosti": [
+          "Are they thirsty?",
+          "They are thirsty?",
+          "They thirsty?"
+        ],
+        "spravna": 0,
+        "vysvetlenie": "Are ide na začiatok: Are they thirsty?",
+        "napoveda": {
+          "1": "V otázke musí are ísť dopredu.",
+          "2": "Chýba are."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "Yes, they {are|oranzova}."
+        },
+        {
+          "op": "pis",
+          "text": "No, they {aren't|cervena}."
+        },
+        {
+          "op": "pis",
+          "text": "Na konci krátkej odpovede nie je skratka: Yes, {they're#x}.",
+          "styl": "poznamka"
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "x"
+        }
+      ],
+      "popis": "Odpovedáme krátko: <b>Yes, they are.</b> alebo <b>No, they aren't.</b> (aren't = are not).",
+      "otazka": {
+        "text": "Are they hot? – No, ___",
+        "moznosti": [
+          "they aren't.",
+          "they are.",
+          "they're."
+        ],
+        "spravna": 0,
+        "vysvetlenie": "Nie → No, they aren't.",
+        "napoveda": {
+          "1": "Pri No treba zápor aren't.",
+          "2": "Pri No treba zápor a na konci nedávame skratku."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "Zapamätaj si:",
+          "styl": "nadpis2"
+        },
+        {
+          "op": "pis",
+          "text": "{We're|modra} = we {are|oranzova}"
+        },
+        {
+          "op": "pis",
+          "text": "{They're|fialova} = they {are|oranzova}"
+        },
+        {
+          "op": "pis",
+          "text": "{Are|oranzova} they …? – Yes, they {are|oranzova}."
+        }
+      ],
+      "popis": "Hotovo! Povedz, ako sa cítiš ty a tvoji kamaráti: We're …",
+      "odkazy": [
+        {
+          "text": "Tréner: Roztrieď",
+          "url": "/lekcie/were-theyre/#h-roztried"
+        },
+        {
+          "text": "Tréner: Pravda, alebo nepravda?",
+          "url": "/lekcie/were-theyre/#h-pravda"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/were-theyre/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/were-theyre/#h-test"
+        }
+      ]
+    }
+  ]
+}

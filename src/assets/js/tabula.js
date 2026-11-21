@@ -7,7 +7,7 @@
   const esc = (t) => (window.GB ? GB.esc(t) : String(t));
 
   // ---------- Značky v texte: {slovo}, {slovo#id}, {slovo|zlta}, {slovo#id|ruzova,krouzok} ----------
-  const FARBY = ["zlta", "ruzova", "modra", "biela"];
+  const FARBY = ["zlta", "ruzova", "modra", "biela", "zelena", "oranzova", "fialova", "cervena"]; // posledné štyri: farebné kódovanie lekcií 4. ročníka
   function rozparsuj(text) {
     const tokeny = []; const re = /\{([^#|}]+)(?:#([\w-]+))?(?:\|([\w,]+))?\}/g;
     let pos = 0, m;
@@ -210,7 +210,7 @@
 
     // ---------- výber otázky ----------
     // otázky sú zoskupené podľa témy ("skupina" v recepte); poradie a názvy skupín sú v SKUPINY
-    const SKUPINY = [["pritomny", "Prítomný čas"], ["minuly", "Minulý a predprítomný čas"], ["buducnost", "Budúcnosť a podmienkové vety"], ["otazky", "Otázky"],
+    const SKUPINY = [["stvrtaci", "4. ročník – Family and Friends 2"], ["pritomny", "Prítomný čas"], ["minuly", "Minulý a predprítomný čas"], ["buducnost", "Budúcnosť a podmienkové vety"], ["otazky", "Otázky"],
       ["vety", "Slovesá a vety"], ["mnozstvo", "Členy, množstvo a zámená"], ["pridavne", "Prídavné mená a príslovky"], ["cas", "Hodiny a predložky"], ["", "Ďalšie"]];
     const znama = (x) => SKUPINY.some(([k]) => k && k === x.skupina);
     el.cipy.innerHTML = SKUPINY.map(([kluc, nazov]) => {

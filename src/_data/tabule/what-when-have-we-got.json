@@ -1,0 +1,193 @@
+{
+  "lekcia": "what-when-have-we-got",
+  "lekciaNazov": "What / When have we got? · our / their",
+  "nazov": "What, alebo When?",
+  "skupina": "stvrtaci",
+  "otazky": [
+    "Kedy What a kedy When?",
+    "Kedy our a kedy their?"
+  ],
+  "kluce": [
+    "what",
+    "when",
+    "have we got",
+    "we've got",
+    "our",
+    "their",
+    "rozvrh",
+    "predmety",
+    "co mame",
+    "kedy mame",
+    "nas",
+    "ich"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "{What#a} have we got PE? – On Thursday.",
+          "id": "z"
+        }
+      ],
+      "popis": "Pozri sa na odpoveď: <i>On Thursday</i> = vo štvrtok. Pasuje k nej otázka?",
+      "otazka": {
+        "text": "Pasuje otázka k odpovedi „On Thursday“?",
+        "moznosti": [
+          "Nie, na deň sa pýtame When.",
+          "Áno, je to správne.",
+          "Nie, má byť Where."
+        ],
+        "spravna": 0,
+        "vysvetlenie": "Odpoveď je deň → When = Kedy?",
+        "napoveda": {
+          "1": "What = Čo? Na to by sme odpovedali predmetom.",
+          "2": "Where = Kde? Pýtame sa na deň."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.a"
+        },
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "{What|cervena} = Čo?",
+              "riadky": [
+                "odpoveď: {predmet|zelena}",
+                "We've got {English|zelena}."
+              ]
+            },
+            {
+              "nadpis": "{When|cervena} = Kedy?",
+              "riadky": [
+                "odpoveď: {deň|oranzova}",
+                "{On Thursday|oranzova}."
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "Najprv si pozri, <b>čo chceš vedieť</b>. Predmet → <b>What</b>. Deň → <b>When</b>.",
+      "otazka": {
+        "text": "___ have we got on Monday? – Maths.",
+        "moznosti": [
+          "What",
+          "When"
+        ],
+        "spravna": 0,
+        "vysvetlenie": "Odpoveď je predmet → What.",
+        "napoveda": {
+          "1": "When by sa pýtalo na deň."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "What {we have#b} got?",
+          "id": "w"
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "w.b"
+        },
+        {
+          "op": "pis",
+          "text": "{What|cervena} {have we got|modra} {on Monday|oranzova}?"
+        },
+        {
+          "op": "pis",
+          "text": "{We've got|modra} = We have got = máme",
+          "styl": "poznamka"
+        }
+      ],
+      "popis": "V otázke je najprv <b>have</b>, potom <b>we</b>: What <b>have we</b> got? V odpovedi: <b>We've got</b> …"
+    },
+    {
+      "kresli": [
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "{we|fialova} → {our|fialova}",
+              "riadky": [
+                "náš, naša, naše",
+                "This is {our|fialova} classroom."
+              ]
+            },
+            {
+              "nadpis": "{they|ruzova} → {their|ruzova}",
+              "riadky": [
+                "ich",
+                "That is {their|ruzova} teacher."
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "Keď niečo patrí <b>nám</b>, povieme <b>our</b>. Keď patrí <b>im</b>, povieme <b>their</b>.",
+      "otazka": {
+        "text": "Tom and Anna have got bags. These are ___ bags.",
+        "moznosti": [
+          "their",
+          "our",
+          "they"
+        ],
+        "spravna": 0,
+        "vysvetlenie": "Tom a Anna = oni → their.",
+        "napoveda": {
+          "1": "Our = náš. Tašky patria Tomovi a Anne.",
+          "2": "They = oni. Keď niečo patrí im, je to their."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "Zapamätaj si:",
+          "styl": "nadpis2"
+        },
+        {
+          "op": "pis",
+          "text": "{What|cervena} → {predmet|zelena}"
+        },
+        {
+          "op": "pis",
+          "text": "{When|cervena} → {on + deň|oranzova}"
+        },
+        {
+          "op": "pis",
+          "text": "{our|fialova} = náš · {their|ruzova} = ich"
+        }
+      ],
+      "popis": "Hotovo! Pozri sa do rozvrhu a opýtaj sa: What have we got on Friday?",
+      "odkazy": [
+        {
+          "text": "Tréner: Roztrieď",
+          "url": "/lekcie/what-when-have-we-got/#h-roztried"
+        },
+        {
+          "text": "Tréner: Pravda, alebo nepravda?",
+          "url": "/lekcie/what-when-have-we-got/#h-pravda"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/what-when-have-we-got/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/what-when-have-we-got/#h-test"
+        }
+      ]
+    }
+  ]
+}

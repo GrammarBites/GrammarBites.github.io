@@ -1,0 +1,196 @@
+{
+  "lekcia": "this-that-these-those",
+  "lekciaNazov": "This · That · These · Those",
+  "nazov": "Toto alebo tamto?",
+  "skupina": "stvrtaci",
+  "otazky": [
+    "Kedy this a kedy these?",
+    "Kedy this a kedy that?"
+  ],
+  "kluce": [
+    "this",
+    "that",
+    "these",
+    "those",
+    "toto",
+    "tamto",
+    "tieto",
+    "tamtie",
+    "blizko",
+    "daleko",
+    "these is",
+    "this are",
+    "ukazovacie zamena"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "These {is#b} tables.",
+          "id": "z"
+        }
+      ],
+      "popis": "Takúto vetu napíše veľa žiakov. Pozri sa na ňu – je v nej chyba.",
+      "otazka": {
+        "text": "Čo je zlé na vete „These is tables.“?",
+        "moznosti": [
+          "Pri these má byť are.",
+          "Namiesto tables má byť table.",
+          "These má byť na konci."
+        ],
+        "spravna": 0,
+        "vysvetlenie": "These = viac vecí → are.",
+        "napoveda": {
+          "1": "Stolov je viac, takže tables je dobre.",
+          "2": "These stojí na začiatku – to je správne."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.b"
+        },
+        {
+          "op": "pis",
+          "text": "{These|modra} {are|oranzova} {tables|zelena}."
+        },
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "jedna vec",
+              "riadky": [
+                "{is|oranzova} – This is a table."
+              ]
+            },
+            {
+              "nadpis": "viac vecí (-s)",
+              "riadky": [
+                "{are|oranzova} – These are table{s|zelena}."
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "Keď je vec <b>jedna</b>, píšeme <b>is</b>. Keď je vecí <b>viac</b>, píšeme <b>are</b> a vec dostane na konci <b>-s</b>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "{blízko|modra} – môžem sa dotknúť",
+              "riadky": [
+                "{this|modra} – toto",
+                "{these|modra} – tieto"
+              ]
+            },
+            {
+              "nadpis": "{ďaleko|cervena} – ukazujem prstom",
+              "riadky": [
+                "{that|cervena} – tamto",
+                "{those|cervena} – tamtie"
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "Ešte sa pozri, či je vec <b>blízko</b>, alebo <b>ďaleko</b>. Blízko: <i>this, these</i>. Ďaleko: <i>that, those</i>.",
+      "otazka": {
+        "text": "Peračník držím v ruke. ___ is my pencil case.",
+        "moznosti": [
+          "This",
+          "That",
+          "These"
+        ],
+        "spravna": 0,
+        "vysvetlenie": "Jedna vec blízko → This.",
+        "napoveda": {
+          "1": "That je pre vec ďaleko. Peračník máš v ruke.",
+          "2": "These je pre viac vecí."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "tabulka",
+          "hlavicka": true,
+          "riadky": [
+            [
+              "",
+              "jedna vec + {is|oranzova}",
+              "viac vecí + {are|oranzova}"
+            ],
+            [
+              "{blízko|modra}",
+              "{this|modra}",
+              "{these|modra}"
+            ],
+            [
+              "{ďaleko|cervena}",
+              "{that|cervena}",
+              "{those|cervena}"
+            ]
+          ]
+        }
+      ],
+      "popis": "Stačí si odpovedať na dve otázky: <b>Je to blízko, alebo ďaleko?</b> a <b>Je to jedna vec, alebo viac vecí?</b>",
+      "otazka": {
+        "text": "Vešiaky sú pri dverách, ďaleko. ___ are our pegs.",
+        "moznosti": [
+          "Those",
+          "These",
+          "That"
+        ],
+        "spravna": 0,
+        "vysvetlenie": "Viac vecí ďaleko → Those are.",
+        "napoveda": {
+          "1": "These je pre veci blízko.",
+          "2": "That je len pre jednu vec."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "Zapamätaj si:",
+          "styl": "nadpis2"
+        },
+        {
+          "op": "pis",
+          "text": "{this|modra} / {that|cervena} + {is|oranzova}"
+        },
+        {
+          "op": "pis",
+          "text": "{these|modra} / {those|cervena} + {are|oranzova}"
+        }
+      ],
+      "popis": "Hotovo! Ukáž na niečo v triede a povedz to po anglicky.",
+      "odkazy": [
+        {
+          "text": "Tréner: Roztrieď",
+          "url": "/lekcie/this-that-these-those/#h-roztried"
+        },
+        {
+          "text": "Tréner: Pravda, alebo nepravda?",
+          "url": "/lekcie/this-that-these-those/#h-pravda"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/this-that-these-those/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/this-that-these-those/#h-test"
+        }
+      ]
+    }
+  ]
+}

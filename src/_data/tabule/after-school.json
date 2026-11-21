@@ -1,0 +1,157 @@
+{
+  "lekcia": "after-school",
+  "lekciaNazov": "I visit … every Tuesday · I don't …",
+  "nazov": "Prečo „I don't watch TV“?",
+  "skupina": "stvrtaci",
+  "otazky": [
+    "Prečo I don't watch TV, a nie I not watch TV?",
+    "Ako použijem every?"
+  ],
+  "kluce": [
+    "don't",
+    "i not",
+    "every",
+    "every monday",
+    "nerobim",
+    "po skole",
+    "after school",
+    "zapor",
+    "i dont"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "I {not#a} watch TV.",
+          "id": "z"
+        }
+      ],
+      "popis": "Po slovensky povieme „Ja nepozerám…“. Veľa žiakov preto napíše <i>I not watch</i>.",
+      "otazka": {
+        "text": "Čo je zlé na vete „I not watch TV.“?",
+        "moznosti": [
+          "Samotné not nestačí, treba don't.",
+          "Not má byť na konci.",
+          "Má byť no."
+        ],
+        "spravna": 0,
+        "vysvetlenie": "Zápor robí don't: I don't watch TV.",
+        "napoveda": {
+          "1": "Not na koniec nepatrí.",
+          "2": "No sa takto nepoužíva."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.a"
+        },
+        {
+          "op": "pis",
+          "text": "{I|modra} {don't|cervena} {watch TV|zelena}."
+        },
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "✓ robím",
+              "riadky": [
+                "{I|modra} {go swimming|zelena}."
+              ]
+            },
+            {
+              "nadpis": "✗ nerobím",
+              "riadky": [
+                "{I|modra} {don't|cervena} {go swimming|zelena}."
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "<b>don't</b> (= do not) dáme <b>medzi I a činnosť</b>. Po slovensky je to predpona <b>ne-</b>: <b>ne</b>pozerám.",
+      "otazka": {
+        "text": "Nepomáham mame. = I ___ help my mum.",
+        "moznosti": [
+          "don't",
+          "not",
+          "doesn't"
+        ],
+        "spravna": 0,
+        "vysvetlenie": "I → don't.",
+        "napoveda": {
+          "1": "Samotné not nestačí.",
+          "2": "Doesn't patrí k he / she."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "I go swimming {every Mondays#b}.",
+          "id": "w"
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "w.b"
+        },
+        {
+          "op": "pis",
+          "text": "{I|modra} {go swimming|zelena} {every Monday|oranzova}."
+        }
+      ],
+      "popis": "<b>every</b> = každý. Po <i>every</i> je <b>jeden deň bez -s</b> a nedávame pred to <i>on</i>.",
+      "otazka": {
+        "text": "I visit my grandma ___ .",
+        "moznosti": [
+          "every Tuesday",
+          "on every Tuesday",
+          "every Tuesdays"
+        ],
+        "spravna": 0,
+        "vysvetlenie": "every + jeden deň → every Tuesday.",
+        "napoveda": {
+          "1": "Pred every nedávame on.",
+          "2": "Po every je deň bez -s."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "Zapamätaj si:",
+          "styl": "nadpis2"
+        },
+        {
+          "op": "pis",
+          "text": "✓ {I|modra} + {činnosť|zelena} + {every Monday|oranzova}"
+        },
+        {
+          "op": "pis",
+          "text": "✗ {I|modra} + {don't|cervena} + {činnosť|zelena}"
+        }
+      ],
+      "popis": "Hotovo! Povedz, čo robíš po škole a čo nerobíš.",
+      "odkazy": [
+        {
+          "text": "Tréner: Pravda, alebo nepravda?",
+          "url": "/lekcie/after-school/#h-pravda"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/after-school/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/after-school/#h-test"
+        }
+      ]
+    }
+  ]
+}

@@ -901,7 +901,7 @@ button.pc-karta:focus-visible { outline: 3px solid var(--yellow); outline-offset
 /* =========================================================
    Tabuľa – vysvetlenie krok po kroku (tabula.js)
    ========================================================= */
-.tabula-app { display: grid; gap: 24px; min-width: 0; --krieda: #f4f1e6; --k-zlta: #f5d66a; --k-ruzova: #f7a1bb; --k-modra: #a9d6ee; --doska: #223d31; }
+.tabula-app { display: grid; gap: 24px; min-width: 0; --krieda: #f4f1e6; --k-zlta: #f5d66a; --k-ruzova: #f7a1bb; --k-modra: #a9d6ee; --k-zelena: #a8e6a1; --k-oranzova: #ffbf73; --k-fialova: #d3b5ff; --k-cervena: #ff9585; --doska: #223d31; }
 .tb-vyber { display: grid; gap: 20px; }
 /* úvodná tabuľa: užšia tabuľa a vedľa nej stojí učiteľ (ukazuje na tabuľu) */
 .tb-uvod { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; }
@@ -972,6 +972,9 @@ button.pc-karta:focus-visible { outline: 3px solid var(--yellow); outline-offset
 .tb-poznamka { font-size: clamp(1.3rem, 3vw, 1.65rem); font-weight: 600; line-height: 1.25; color: var(--k-modra); }
 .tb-s { display: inline-block; }
 .tb-zlta { color: var(--k-zlta); } .tb-ruzova { color: var(--k-ruzova); } .tb-modra { color: var(--k-modra); } .tb-biela { color: var(--krieda); }
+/* kriedy pre farebné kódovanie lekcií 4. ročníka (zelená = vec/činnosť, oranžová = is/are, deň…, fialová, červená = zápor/ďaleko) */
+.tb-zelena { color: var(--k-zelena); } .tb-oranzova { color: var(--k-oranzova); } .tb-fialova { color: var(--k-fialova); } .tb-cervena { color: var(--k-cervena); }
+.tk-text.tb-zelena { fill: var(--k-zelena); } .tk-text.tb-oranzova { fill: var(--k-oranzova); } .tk-text.tb-fialova { fill: var(--k-fialova); } .tk-text.tb-cervena { fill: var(--k-cervena); }
 .tb-pise { animation: tb-pis var(--trv, 1s) steps(14, end) var(--d, 0s) both; }
 /* krieda „píše“ zľava doprava; okraj presahuje o kúsok, lebo ručné písmo (Caveat) kreslí ? ! ' za hranu písmena */
 @keyframes tb-pis { from { clip-path: inset(-20% 100% -20% -.2em); } to { clip-path: inset(-20% -.45em -20% -.2em); } }

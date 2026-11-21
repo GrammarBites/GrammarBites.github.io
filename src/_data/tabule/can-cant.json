@@ -1,0 +1,201 @@
+{
+  "lekcia": "can-cant",
+  "lekciaNazov": "can · can't · Can he …?",
+  "nazov": "Prečo „He can“, a nie „He cans“?",
+  "skupina": "stvrtaci",
+  "otazky": [
+    "Prečo He can skate, a nie He cans skate?",
+    "Ako sa opýtam Can she …?"
+  ],
+  "kluce": [
+    "can",
+    "can't",
+    "cannot",
+    "cans",
+    "can to",
+    "viem",
+    "neviem",
+    "vie",
+    "can he",
+    "can she",
+    "schopnost"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "He {cans#a} skate.",
+          "id": "z"
+        }
+      ],
+      "popis": "Pri <i>he</i> a <i>she</i> sme zvyknutí dávať -s. Pri <b>can</b> je to inak.",
+      "otazka": {
+        "text": "Čo je zlé na vete „He cans skate.“?",
+        "moznosti": [
+          "Can nikdy nemá -s.",
+          "Chýba to.",
+          "Má byť skates."
+        ],
+        "spravna": 0,
+        "vysvetlenie": "Can je stále rovnaké: he can.",
+        "napoveda": {
+          "1": "Po can nedávame to.",
+          "2": "Činnosť po can je bez -s."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.a"
+        },
+        {
+          "op": "pis",
+          "text": "{He|modra} {can|fialova} {skate|zelena}."
+        },
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "{can|fialova} = viem, vie",
+              "riadky": [
+                "I {can|fialova} · he {can|fialova} · she {can|fialova}"
+              ]
+            },
+            {
+              "nadpis": "{can't|cervena} = neviem, nevie",
+              "riadky": [
+                "I {can't|cervena} · he {can't|cervena} · she {can't|cervena}"
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "<b>can</b> sa nikdy nemení – pri každej osobe je rovnaké. Zápor je <b>can't</b>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "I can {to#b} ride a bike.",
+          "id": "w"
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "w.b"
+        },
+        {
+          "op": "pis",
+          "text": "{I|modra} {can|fialova} {ride a bike|zelena}."
+        }
+      ],
+      "popis": "Po <b>can</b> ide hneď činnosť – <b>bez to</b> a <b>bez -ing</b>.",
+      "otazka": {
+        "text": "She can ___ tennis.",
+        "moznosti": [
+          "play",
+          "to play",
+          "playing"
+        ],
+        "spravna": 0,
+        "vysvetlenie": "Po can → play.",
+        "napoveda": {
+          "1": "Po can nedávame to.",
+          "2": "Po can nedávame -ing."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "{She#c|modra} {can#d|fialova} {play tennis|zelena}.",
+          "id": "v"
+        },
+        {
+          "op": "pis",
+          "text": "{Can#e|fialova} {she|modra} {play tennis|zelena}?",
+          "id": "q"
+        },
+        {
+          "op": "sipka",
+          "od": "v.d",
+          "k": "q.e",
+          "text": "can ide dopredu"
+        }
+      ],
+      "popis": "Otázku urobíme tak, že <b>can</b> dáme <b>na začiatok</b>: <b>Can she</b> play tennis?"
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "Yes, she {can|fialova}."
+        },
+        {
+          "op": "pis",
+          "text": "No, he {can't|cervena}."
+        }
+      ],
+      "popis": "Odpovedáme krátko a znova s <b>can</b>.",
+      "otazka": {
+        "text": "Can he ride a horse? (✗ nevie)",
+        "moznosti": [
+          "No, he can't.",
+          "No, he doesn't.",
+          "No, he isn't."
+        ],
+        "spravna": 0,
+        "vysvetlenie": "Pýtame sa s can → odpovedáme can't.",
+        "napoveda": {
+          "1": "Na otázku s can odpovedáme can / can't.",
+          "2": "Na otázku s can odpovedáme can / can't."
+        }
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "Zapamätaj si:",
+          "styl": "nadpis2"
+        },
+        {
+          "op": "pis",
+          "text": "{can|fialova} / {can't|cervena}: bez -s, bez to"
+        },
+        {
+          "op": "pis",
+          "text": "{Can|fialova} she …?"
+        },
+        {
+          "op": "pis",
+          "text": "Yes, she {can|fialova}. / No, she {can't|cervena}."
+        }
+      ],
+      "popis": "Hotovo! Povedz, čo vieš: I can …",
+      "odkazy": [
+        {
+          "text": "Tréner: Roztrieď",
+          "url": "/lekcie/can-cant/#h-roztried"
+        },
+        {
+          "text": "Tréner: Pravda, alebo nepravda?",
+          "url": "/lekcie/can-cant/#h-pravda"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/can-cant/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/can-cant/#h-test"
+        }
+      ]
+    }
+  ]
+}

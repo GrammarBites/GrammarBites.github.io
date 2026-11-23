@@ -19,7 +19,8 @@ eleventyComputed:
 <section class="sekcia rocnik-unit"{% if s.nadpis %} aria-labelledby="h-{{ s.id }}"{% endif %}>
   {% if s.nadpis %}
   <h2 id="h-{{ s.id }}" class="sekcia__nadpis sekcia__nadpis--male">{{ s.nadpis }}</h2>
-  {% if s.tema %}<p class="rocnik-unit__tema"><a href="{{ s.odkaz }}">{{ s.tema }}</a></p>{% endif %}
+  {# názov unitu: pri jednej lekcii vedie rovno na lekciu (nie na stránku učebnice), pri viacerých je len text – lekcie sú v kartách pod ním #}
+  {% if s.tema %}<p class="rocnik-unit__tema">{% if s.lekcie.length == 1 %}<a href="{{ s.lekcie[0].url }}">{{ s.tema }}</a>{% else %}{{ s.tema }}{% endif %}</p>{% endif %}
   {% endif %}
   <div class="mriezka">
     {% for l in s.lekcie %}{% include "partials/karta.njk" %}{% endfor %}

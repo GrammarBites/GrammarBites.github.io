@@ -1123,5 +1123,100 @@
         "v": "the band – <b>playing music</b> → pravda."
       }
     ]
+  },
+  "zvierata-velkost": {
+    "uvod": "V tabuľke vidíš, aké veľké sú zvieratá na farme (výška v centimetroch). Rozhodni, či porovnanie sedí.",
+    "tabulka": {
+      "nadpis": "How tall are they?",
+      "znaky": false,
+      "riadky": [
+        [
+          "horse",
+          "160 cm"
+        ],
+        [
+          "cow",
+          "140 cm"
+        ],
+        [
+          "donkey",
+          "110 cm"
+        ],
+        [
+          "sheep",
+          "80 cm"
+        ],
+        [
+          "goat",
+          "70 cm"
+        ],
+        [
+          "goose",
+          "50 cm"
+        ]
+      ]
+    },
+    "polozky": [
+      {
+        "t": "The horse is taller than the cow.",
+        "k": "t",
+        "sk": "Kôň je vyšší ako krava.",
+        "v": "160 cm > 140 cm → pravda."
+      },
+      {
+        "t": "The goose is bigger than the goat.",
+        "k": "f",
+        "sk": "Hus je väčšia ako koza.",
+        "v": "Hus má 50 cm, koza 70 cm → hus je <b>menšia</b>."
+      },
+      {
+        "t": "The sheep is smaller than the donkey.",
+        "k": "t",
+        "sk": "Ovca je menšia ako somár.",
+        "v": "80 cm < 110 cm → pravda."
+      },
+      {
+        "t": "The cow is shorter than the sheep.",
+        "k": "f",
+        "sk": "Krava je nižšia ako ovca.",
+        "v": "140 cm > 80 cm → krava je <b>vyššia</b>."
+      },
+      {
+        "t": "The goat is smaller than the sheep.",
+        "k": "t",
+        "sk": "Koza je menšia ako ovca.",
+        "v": "70 cm < 80 cm → pravda."
+      },
+      {
+        "t": "The donkey is taller than the horse.",
+        "k": "f",
+        "sk": "Somár je vyšší ako kôň.",
+        "v": "110 cm < 160 cm → somár je <b>nižší</b>."
+      },
+      {
+        "t": "The goose is shorter than the goat.",
+        "k": "t",
+        "sk": "Hus je nižšia ako koza.",
+        "v": "50 cm < 70 cm → pravda."
+      },
+      {
+        "t": "The horse is smaller than the goose.",
+        "k": "f",
+        "sk": "Kôň je menší ako hus.",
+        "v": "Kôň je <b>väčší</b> – 160 cm."
+      },
+      {
+        "t": "The cow is bigger than the donkey.",
+        "k": "t",
+        "sk": "Krava je väčšia ako somár.",
+        "v": "140 cm > 110 cm → pravda."
+      },
+      {
+        "t": "The sheep is taller than the cow.",
+        "k": "f",
+        "sk": "Ovca je vyššia ako krava.",
+        "v": "80 cm < 140 cm → ovca je <b>nižšia</b>."
+      }
+    ]
   }
 }

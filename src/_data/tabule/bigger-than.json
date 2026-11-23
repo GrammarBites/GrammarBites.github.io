@@ -1,0 +1,152 @@
+{
+  "lekcia": "bigger-than",
+  "lekciaNazov": "bigger · smaller · taller · shorter than",
+  "nazov": "Ako poviem „väčší ako“?",
+  "skupina": "stvrtaci",
+  "otazky": [
+    "Ako poviem väčší ako?",
+    "Prečo than, a nie that?"
+  ],
+  "kluce": [
+    "bigger",
+    "bigger than",
+    "bigger that",
+    "than",
+    "that",
+    "vacsi ako",
+    "mensi ako",
+    "vyssi",
+    "nizsi",
+    "er",
+    "more tall",
+    "biger",
+    "porovnavanie",
+    "stupnovanie"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "The cow is bigger {that#a} the goat."
+        }
+      ],
+      "popis": "Slová <i>that</i> a <i>than</i> vyzerajú podobne. Veľa žiakov si ich pomýli.",
+      "otazka": {
+        "text": "Čo je zlé na vete „The cow is bigger that the goat.“?",
+        "moznosti": [
+          "Má byť than (= ako).",
+          "Má byť more big.",
+          "Chýba -s."
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Pri big pridávame -er, nie more.",
+          "2": "-s tu nechýba."
+        },
+        "vysvetlenie": "ako = than."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.a"
+        },
+        {
+          "op": "pis",
+          "text": "{The cow|modra} {is|oranzova} {bigg|fialova}{er|ruzova} {than|cervena} {the goat|zelena}."
+        },
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "{than|cervena} = ako · {that|cervena} = tamto"
+        }
+      ],
+      "popis": "Pri porovnávaní: vlastnosť + <b>-er</b> + <b>than</b> (= ako)."
+    },
+    {
+      "kresli": [
+        {
+          "op": "tabulka",
+          "hlavicka": true,
+          "riadky": [
+            [
+              "",
+              "+ -er"
+            ],
+            [
+              "small",
+              "small{er|ruzova} – menší"
+            ],
+            [
+              "tall",
+              "tall{er|ruzova} – vyšší"
+            ],
+            [
+              "short",
+              "short{er|ruzova} – nižší"
+            ],
+            [
+              "big",
+              "bi{gg|cervena}{er|ruzova} – väčší"
+            ]
+          ]
+        }
+      ],
+      "popis": "Väčšinou len pridáme <b>-er</b>. Pri <i>big</i> sa g zdvojí: bi<b>gg</b>er.",
+      "otazka": {
+        "text": "The horse is ___ than the goat.",
+        "moznosti": [
+          "taller",
+          "more tall",
+          "tall"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Pri krátkych slovách pridávame -er.",
+          "2": "Pri porovnaní treba -er."
+        },
+        "vysvetlenie": "tall + er = taller."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "… {is|oranzova} {tall|fialova}{er|ruzova} {than|cervena} …"
+        },
+        {
+          "op": "pis",
+          "text": "big → bi{gg|cervena}{er|ruzova}"
+        }
+      ],
+      "popis": "Hotovo! Porovnaj seba a kamaráta: I'm taller than …",
+      "odkazy": [
+        {
+          "text": "Tréner: Roztrieď",
+          "url": "/lekcie/bigger-than/#h-roztried"
+        },
+        {
+          "text": "Tréner: Pravda, alebo nepravda?",
+          "url": "/lekcie/bigger-than/#h-pravda"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/bigger-than/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/bigger-than/#h-test"
+        }
+      ]
+    }
+  ]
+}

@@ -1152,3 +1152,10 @@ button.pc-karta:focus-visible { outline: 3px solid var(--yellow); outline-offset
 .pn-plan__znak--ano { color: #23794a; font-weight: 800; }
 .pn-plan__znak--nie { color: #b8452c; font-weight: 800; }
 .pn-plan__legenda { margin: 8px 0 0; font-size: .9rem; color: var(--ink-2); text-align: center; }
+
+/* ---------- Veľké opakovanie po troch unitoch (F&F 2) ---------- */
+.pred-pisomkou--velke { background: #fff3c8; border-color: #c99a1d; }
+.pred-pisomkou--velke .pred-pisomkou__znak { background: #c99a1d; color: #fff; }
+.pp-kniha__opak { margin: 18px 0 8px; font-size: 1.15rem; }
+.pp-unit--velke { background: #fff3c8; }
+.unit__prehlad { display: inline-block; margin-top: 8px; font-weight: 700; }

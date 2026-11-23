@@ -38,6 +38,7 @@ const lekcieUnitu = (lekcie, id, unit) =>
     .filter((l) => (l.data.ucebnice || []).some((u) => u.id === id && String(u.unit) === String(unit)))
     .sort((a, b) => (a.data.strana ?? 999) - (b.data.strana ?? 999) || a.date - b.date);
 const POCET_PRED_PISOMKOU = 20;
+const POCET_OPAKOVANIE = 30; // veľké opakovanie po troch unitoch
 
 const opravChybuData = JSON.parse(fs.readFileSync("src/_data/opravChybuData.json", "utf8"));
 
@@ -200,6 +201,14 @@ export default function (eleventyConfig) {
     return skupiny;
   });
   // Pred písomkou: koľko otázok dostane žiak z daného unitu (najviac 20; 0 = tlačidlo sa neukáže)
+  // veľké opakovanie, ktoré sa končí týmto unitom (napr. F&F 2 · Unit 3 → { id: "1-3", … }), inak null
+  eleventyConfig.addFilter("opakovaniePo", (lekcie, id, unit) => {
+    const k = ucebnice.find((x) => x.id === id);
+    const o = k && (k.opakovania || []).find((x) => x.units[x.units.length - 1] === String(unit));
+    if (!o) return null;
+    const spolu = o.units.flatMap((u) => lekcieUnitu(lekcie, id, u)).reduce((n, l) => { const q = otazkyLekcie(l); return n + q.q.length + q.x.length; }, 0);
+    return spolu ? { id: o.id, units: o.units, pocet: Math.min(POCET_OPAKOVANIE, spolu), prehlad: o.prehlad || "" } : null;
+  });
   eleventyConfig.addFilter("pocetPredPisomkou", (lekcie, id, unit) => {
     const spolu = lekcieUnitu(lekcie, id, unit).reduce((n, l) => { const o = otazkyLekcie(l); return n + o.q.length + o.x.length; }, 0);
     return Math.min(POCET_PRED_PISOMKOU, spolu);
@@ -219,7 +228,15 @@ export default function (eleventyConfig) {
         const spolu = sOtazkami.reduce((n, l) => n + vsetky[l.fileSlug].q.length + vsetky[l.fileSlug].x.length, 0);
         units.push({ id: String(u.id), nazov: u.nazov, lekcie: sOtazkami.map((l) => l.fileSlug), pocet: Math.min(POCET_PRED_PISOMKOU, spolu) });
       }
-      if (units.length) knihy.push({ id: k.id, nazov: k.nazov, farba: k.farba, units });
+      // veľké opakovanie po niekoľkých unitoch (napr. F&F 2: po troch) – v zozname učebníc pole "opakovania"
+      const opakovania = [];
+      for (const o of k.opakovania || []) {
+        const sl = units.filter((u) => o.units.includes(u.id)).flatMap((u) => u.lekcie);
+        if (!sl.length) continue;
+        const spolu = sl.reduce((n, s) => n + vsetky[s].q.length + vsetky[s].x.length, 0);
+        opakovania.push({ id: o.id, nazov: `Opakovanie: Units ${o.id.replace("-", "–")}`, units: o.units, lekcie: sl, pocet: Math.min(POCET_OPAKOVANIE, spolu), velke: true, prehlad: o.prehlad || "" });
+      }
+      if (units.length) knihy.push({ id: k.id, nazov: k.nazov, farba: k.farba, units, opakovania });
     }
     return { pocet: POCET_PRED_PISOMKOU, knihy, lekcie: vsetky };
   });

@@ -28,6 +28,18 @@ skripty: ["pred-pisomkou.js"]
         </a></li>
         {% endfor %}
       </ul>
+      {% if k.opakovania.length %}
+      <h3 class="pp-kniha__opak">Veľké opakovanie pred písomkou</h3>
+      <ul class="pp-unity">
+        {% for u in k.opakovania %}
+        <li><a class="pp-unit pp-unit--velke" href="#{{ k.id }}/{{ u.id }}">
+          <span class="unit__cislo" aria-hidden="true">{{ u.id | replace("-", "–") }}</span>
+          <span class="pp-unit__text"><b>Units {{ u.id | replace("-", "–") }}</b>
+          <span>{{ u.pocet }} otázok · {{ u.lekcie.length }} lekcií</span></span>
+        </a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
     </section>
     {% endfor %}
   </section>

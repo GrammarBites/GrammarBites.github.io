@@ -27,6 +27,10 @@ eleventyComputed:
   {% if s.kniha and (collections.lekcie | pocetPredPisomkou(s.kniha, s.unit)) %}
   <p class="rocnik-unit__pp"><a class="pred-pisomkou" href="/pred-pisomkou/#{{ s.kniha }}/{{ s.unit }}"><span class="pred-pisomkou__znak" aria-hidden="true">✓</span><span><b>Pred písomkou</b><br>{{ collections.lekcie | pocetPredPisomkou(s.kniha, s.unit) }} náhodných otázok z gramatiky · {{ s.nadpis }}</span></a></p>
   {% endif %}
+  {% set opak = (collections.lekcie | opakovaniePo(s.kniha, s.unit)) if s.kniha else null %}
+  {% if opak %}
+  <p class="rocnik-unit__pp"><a class="pred-pisomkou pred-pisomkou--velke" href="/pred-pisomkou/#{{ s.kniha }}/{{ opak.id }}"><span class="pred-pisomkou__znak" aria-hidden="true">★</span><span><b>Veľké opakovanie: Units {{ opak.id | replace("-", "–") }}</b><br>{{ opak.pocet }} otázok z troch unitov pred veľkou písomkou</span></a></p>
+  {% endif %}
 </section>
 {% endfor %}
 {% else %}

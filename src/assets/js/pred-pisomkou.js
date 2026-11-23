@@ -34,7 +34,7 @@
   function najdi(hash) {
     const [knihaId, unitId] = decodeURIComponent(hash.replace(/^#/, "")).split("/");
     const kniha = D.knihy.find((k) => k.id === knihaId);
-    const u = kniha && kniha.units.find((x) => x.id === unitId);
+    const u = kniha && (kniha.units.find((x) => x.id === unitId) || (kniha.opakovania || []).find((x) => x.id === unitId));
     return u ? { kniha, unit: u } : null;
   }
 
@@ -49,9 +49,10 @@
     });
     const von = [];
     const videne = new Set();
-    while (von.length < D.pocet && rady.some((r) => r.length)) {
+    const kolko = u.pocet || D.pocet;
+    while (von.length < kolko && rady.some((r) => r.length)) {
       for (const r of rady) {
-        if (von.length >= D.pocet) break;
+        if (von.length >= kolko) break;
         const q = r.shift();
         if (!q) continue;
         const kluc = q.k ? GB.normalizuj(q.k) : GB.normalizuj(bezTagov(q.o));
@@ -92,18 +93,21 @@
 
   function otvor(u) {
     unit = u;
-    const cislo = u.unit.id === "intro" ? "Introduction" : `Unit ${u.unit.id}`;
+    const cislo = u.unit.velke ? `Opakovanie Units ${u.unit.id.replace("-", "–")}` : u.unit.id === "intro" ? "Introduction" : `Unit ${u.unit.id}`;
     const nazov = `${u.kniha.nazov} · ${cislo}`;
     el.nadpis.textContent = nazov;
     el.omrvinka.textContent = nazov;
     document.title = `Pred písomkou: ${nazov} · Grammar Bites`;
     const n = u.unit.pocet;
-    el.uvod.textContent = (u.unit.id === "intro" ? "" : u.unit.nazov + (/[.?!…]$/.test(u.unit.nazov) ? " " : ". ")) +
+    el.uvod.innerHTML = u.unit.velke
+      ? `Veľké opakovanie pred písomkou: ${n} ${tvar(n, "náhodná otázka", "náhodné otázky", "náhodných otázok")} z gramatiky troch unitov (${u.unit.units.map((x) => "Unit " + x).join(", ")}). Nič sa neukladá – skúšaj, koľkokrát chceš.` +
+        (u.unit.prehlad ? ` <a href="${GB.odkaz(u.unit.prehlad)}">Prehľad na zopakovanie (PDF na tlač)</a>` : "")
+      : GB.esc((u.unit.id === "intro" ? "" : u.unit.nazov + (/[.?!…]$/.test(u.unit.nazov) ? " " : ". ")) +
       `${n} ${tvar(n, "náhodná otázka", "náhodné otázky", "náhodných otázok")} z gramatiky celého unitu. Nič sa neukladá – skúšaj, koľkokrát chceš.` +
-      (n < D.pocet ? ` (K tomuto unitu je zatiaľ len ${n} ${tvar(n, "otázka", "otázky", "otázok")}.)` : "");
+      (n < D.pocet ? ` (K tomuto unitu je zatiaľ len ${n} ${tvar(n, "otázka", "otázky", "otázok")}.)` : ""));
     el.lekcie.innerHTML = "Otázky sú z lekcií: " + u.unit.lekcie.map((s) =>
       `<a class="stitok" href="${GB.odkaz(D.lekcie[s].url)}" lang="en">${GB.esc(D.lekcie[s].t)}</a>`).join(" ");
-    el.naUnit.href = GB.odkaz(`ucebnice/${u.kniha.id}/`) + `#unit-${u.unit.id}`;
+    el.naUnit.href = GB.odkaz(`ucebnice/${u.kniha.id}/`) + `#unit-${u.unit.velke ? u.unit.units[0] : u.unit.id}`;
     vykresli();
     el.vyber.hidden = true;
     el.obal.hidden = false;

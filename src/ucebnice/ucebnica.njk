@@ -37,6 +37,11 @@ eleventyComputed:
     {% if pocetPP %}
     <a class="pred-pisomkou" href="/pred-pisomkou/#{{ k.id }}/{{ u.id }}"><span class="pred-pisomkou__znak" aria-hidden="true">✓</span><span><b>Pred písomkou</b><br>{{ pocetPP }} {% if pocetPP >= 5 %}náhodných otázok{% else %}náhodné otázky{% endif %} – len gramatika</span></a>
     {% endif %}
+    {% set opak = collections.lekcie | opakovaniePo(k.id, u.id) %}
+    {% if opak %}
+    <a class="pred-pisomkou pred-pisomkou--velke" href="/pred-pisomkou/#{{ k.id }}/{{ opak.id }}"><span class="pred-pisomkou__znak" aria-hidden="true">★</span><span><b>Veľké opakovanie: Units {{ opak.id | replace("-", "–") }}</b><br>{{ opak.pocet }} otázok z troch unitov pred veľkou písomkou</span></a>
+    {% if opak.prehlad %}<a class="unit__prehlad" href="/{{ opak.prehlad }}">Prehľad gramatiky Units {{ opak.id | replace("-", "–") }} na tlač (PDF)</a>{% endif %}
+    {% endif %}
     {% else %}
     <p class="unit__nic">Lekcie k tomuto unitu pripravujeme.</p>
     {% endif %}

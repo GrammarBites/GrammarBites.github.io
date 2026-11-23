@@ -763,5 +763,96 @@
         "v": "Domov ide o <b>druhej</b> (2 o'clock)."
       }
     ]
+  },
+  "kto-kde-pracuje": {
+    "uvod": "V tabuľke vidíš, kde kto pracuje. Prečítaj otázku aj odpoveď a rozhodni, či odpoveď sedí s tabuľkou.",
+    "tabulka": {
+      "nadpis": "Where do they work?",
+      "znaky": false,
+      "riadky": [
+        [
+          "Mr Green (he)",
+          "hospital"
+        ],
+        [
+          "Mrs Brown (she)",
+          "shop"
+        ],
+        [
+          "Mr Black (he)",
+          "police station"
+        ],
+        [
+          "Miss White (she)",
+          "school"
+        ],
+        [
+          "Mr Red (he)",
+          "airport"
+        ]
+      ]
+    },
+    "polozky": [
+      {
+        "t": "Where does Mr Green work? – He works in a hospital.",
+        "k": "t",
+        "sk": "Kde pracuje pán Green? – V nemocnici.",
+        "v": "Mr Green – <b>hospital</b> → pravda."
+      },
+      {
+        "t": "Where does Mrs Brown work? – She works in a school.",
+        "k": "f",
+        "sk": "Kde pracuje pani Brown? – V škole.",
+        "v": "Mrs Brown pracuje v <b>obchode</b> (shop)."
+      },
+      {
+        "t": "Does Mr Black work in a police station? – Yes, he does.",
+        "k": "t",
+        "sk": "Pracuje pán Black na polícii? – Áno.",
+        "v": "Mr Black – <b>police station</b> → pravda."
+      },
+      {
+        "t": "Does Miss White work in a hospital? – Yes, she does.",
+        "k": "f",
+        "sk": "Pracuje slečna White v nemocnici? – Áno.",
+        "v": "Miss White pracuje v <b>škole</b> → No, she doesn't."
+      },
+      {
+        "t": "Does Mr Red work in an airport? – Yes, he does.",
+        "k": "t",
+        "sk": "Pracuje pán Red na letisku? – Áno.",
+        "v": "Mr Red – <b>airport</b> → pravda."
+      },
+      {
+        "t": "Does Mrs Brown work in a shop? – No, she doesn't.",
+        "k": "f",
+        "sk": "Pracuje pani Brown v obchode? – Nie.",
+        "v": "Mrs Brown – <b>shop</b> → Yes, she does."
+      },
+      {
+        "t": "Does Mr Green work in a school? – No, he doesn't.",
+        "k": "t",
+        "sk": "Pracuje pán Green v škole? – Nie.",
+        "v": "Mr Green pracuje v nemocnici → No, he doesn't je pravda."
+      },
+      {
+        "t": "Where does Miss White work? – She works in a school.",
+        "k": "t",
+        "sk": "Kde pracuje slečna White? – V škole.",
+        "v": "Miss White – <b>school</b> → pravda."
+      },
+      {
+        "t": "Where does Mr Red work? – He works in a fire station.",
+        "k": "f",
+        "sk": "Kde pracuje pán Red? – Na hasičskej stanici.",
+        "v": "Mr Red pracuje na <b>letisku</b> (airport)."
+      },
+      {
+        "t": "Does Mr Black work in an airport? – No, he doesn't.",
+        "k": "t",
+        "sk": "Pracuje pán Black na letisku? – Nie.",
+        "v": "Mr Black pracuje na polícii → No, he doesn't je pravda."
+      }
+    ]
   }
 }

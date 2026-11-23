@@ -1,0 +1,158 @@
+{
+  "lekcia": "where-does-she-work",
+  "lekciaNazov": "Where does she work? · Does he work in a …?",
+  "nazov": "Prečo „Where does he work?“ – bez -s?",
+  "skupina": "stvrtaci",
+  "otazky": [
+    "Prečo Where does he work?, a nie Where does he works?",
+    "Kedy works a kedy work?"
+  ],
+  "kluce": [
+    "where does",
+    "does he works",
+    "works",
+    "does she work",
+    "kde pracuje",
+    "pracuje",
+    "doesn't",
+    "hospital",
+    "airport",
+    "yes she does"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "Where does he {works#a}?"
+        }
+      ],
+      "popis": "Pri <i>he</i> sme sa naučili pridávať -s. Prečo je táto otázka zle?",
+      "otazka": {
+        "text": "Čo je zlé na otázke „Where does he works?“",
+        "moznosti": [
+          "Po does je work bez -s.",
+          "Chýba is.",
+          "Má byť do namiesto does."
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Is tu nepatrí.",
+          "2": "Pri he je does – to je dobre."
+        },
+        "vysvetlenie": "-s je už v does → work."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.a"
+        },
+        {
+          "op": "pis",
+          "text": "{Where|cervena} {does|oranzova} {he|modra} {work|zelena}?"
+        },
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "veta",
+              "riadky": [
+                "{He|modra} {work|zelena}{s|ruzova} in a shop."
+              ]
+            },
+            {
+              "nadpis": "otázka",
+              "riadky": [
+                "{Does|oranzova} he {work|zelena} …?"
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "<b>-s</b> je buď pri slovese (He work<b>s</b>), alebo v <b>does</b>. Nikdy nie na oboch miestach naraz.",
+      "otazka": {
+        "text": "My mum ___ in a hospital.",
+        "moznosti": [
+          "works",
+          "work"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Vo vete (bez does) pri she treba -s."
+        },
+        "vysvetlenie": "Veta bez does → works."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "{Does|oranzova} {she|modra} {work|zelena} in a shop?"
+        },
+        {
+          "op": "pis",
+          "text": "Yes, she {does|oranzova}. · No, she {doesn't|cervena}."
+        }
+      ],
+      "popis": "Otázka áno/nie začína <b>Does</b>. Krátko odpovieme <b>Yes, she does</b> alebo <b>No, she doesn't</b>.",
+      "otazka": {
+        "text": "Does he work in an airport? (✗)",
+        "moznosti": [
+          "No, he doesn't.",
+          "No, he don't.",
+          "No, he isn't."
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Pri he je doesn't.",
+          "2": "Pýtame sa does → odpovedáme doesn't."
+        },
+        "vysvetlenie": "No, he doesn't."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "He {work|zelena}{s|ruzova} in a shop."
+        },
+        {
+          "op": "pis",
+          "text": "{Where|cervena} {does|oranzova} he {work|zelena}?"
+        },
+        {
+          "op": "pis",
+          "text": "-s len raz: v slovese, alebo v does"
+        }
+      ],
+      "popis": "Hotovo! Povedz, kde pracuje tvoja mama alebo otec.",
+      "odkazy": [
+        {
+          "text": "Tréner: Roztrieď",
+          "url": "/lekcie/where-does-she-work/#h-roztried"
+        },
+        {
+          "text": "Tréner: Pravda, alebo nepravda?",
+          "url": "/lekcie/where-does-she-work/#h-pravda"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/where-does-she-work/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/where-does-she-work/#h-test"
+        }
+      ]
+    }
+  ]
+}

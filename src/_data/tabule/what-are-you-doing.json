@@ -1,0 +1,174 @@
+{
+  "lekcia": "what-are-you-doing",
+  "lekciaNazov": "What are you doing? · I'm dancing",
+  "nazov": "Čo práve robíš? – What are you doing?",
+  "skupina": "stvrtaci",
+  "otazky": [
+    "Ako sa opýtam, čo niekto práve robí?",
+    "Prečo She's eating, a nie She eating?"
+  ],
+  "kluce": [
+    "what are you doing",
+    "doing",
+    "co robis",
+    "co prave robis",
+    "she eating",
+    "dancing",
+    "danceing",
+    "present continuous",
+    "ing",
+    "theyre talking"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "{She#a} eating the cake."
+        }
+      ],
+      "popis": "Po slovensky povieme „Je tortu.“ Veľa žiakov napíše len <i>She eating</i>.",
+      "otazka": {
+        "text": "Čo chýba vo vete „She eating the cake.“?",
+        "moznosti": [
+          "'s (is) za She.",
+          "Slovo do.",
+          "-s pri eat."
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Do tu nepatrí.",
+          "2": "Pri -ing nedávame -s."
+        },
+        "vysvetlenie": "She's eating."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "krouzok",
+          "ciel": "z.a"
+        },
+        {
+          "op": "pis",
+          "text": "{She|modra}{'s|oranzova} {eat|fialova}{ing|ruzova} {the cake|zelena}."
+        },
+        {
+          "op": "tabulka",
+          "hlavicka": true,
+          "riadky": [
+            [
+              "osoba",
+              "+ -ing"
+            ],
+            [
+              "I",
+              "I{'m|oranzova} dancing"
+            ],
+            [
+              "he, she",
+              "She{'s|oranzova} eating"
+            ],
+            [
+              "you, we, they",
+              "They{'re|oranzova} talking"
+            ]
+          ]
+        }
+      ],
+      "popis": "Rovnako ako pri <i>wearing</i>: pred -ing je vždy pomocník <b>'m / 's / 're</b>.",
+      "otazka": {
+        "text": "We ___ watching a video.",
+        "moznosti": [
+          "'re",
+          "'s",
+          "'m"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "'s je pri he / she.",
+          "2": "'m je len pri I."
+        },
+        "vysvetlenie": "We're watching."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "{What|cervena} {are|oranzova} {you|modra} {do|fialova}{ing|ruzova}?"
+        },
+        {
+          "op": "pis",
+          "text": "{I|modra}{'m|oranzova} {danc|fialova}{ing|ruzova}."
+        }
+      ],
+      "popis": "<b>doing</b> = robiť práve teraz. Odpovieme činnosťou s -ing.",
+      "otazka": {
+        "text": "What's he doing? – He's ___ music.",
+        "moznosti": [
+          "playing",
+          "play",
+          "plays"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Po he's treba -ing.",
+          "2": "Po he's treba -ing."
+        },
+        "vysvetlenie": "He's playing music."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "sleep → sleep{ing|ruzova} · eat → eat{ing|ruzova}"
+        },
+        {
+          "op": "pis",
+          "text": "danc{e|cervena} → danc{ing|ruzova}"
+        }
+      ],
+      "popis": "Väčšinou len pridáme <b>-ing</b>. Ak sloveso končí na <b>-e</b>, to <i>e</i> zmizne."
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "{What|cervena} {are|oranzova} you {do|fialova}{ing|ruzova}?"
+        },
+        {
+          "op": "pis",
+          "text": "{'m|oranzova} / {'s|oranzova} / {'re|oranzova} + {…|fialova}{ing|ruzova}"
+        }
+      ],
+      "popis": "Hotovo! Povedz, čo práve robíš: I'm …ing.",
+      "odkazy": [
+        {
+          "text": "Tréner: Roztrieď",
+          "url": "/lekcie/what-are-you-doing/#h-roztried"
+        },
+        {
+          "text": "Tréner: Pravda, alebo nepravda?",
+          "url": "/lekcie/what-are-you-doing/#h-pravda"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/what-are-you-doing/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/what-are-you-doing/#h-test"
+        }
+      ]
+    }
+  ]
+}

@@ -1032,5 +1032,96 @@
         "v": "Grandma – <b>a blue skirt</b> → pravda."
       }
     ]
+  },
+  "svadba-co-robia": {
+    "uvod": "Na svadbe. V tabuľke vidíš, čo kto práve robí. Rozhodni, či veta sedí s tabuľkou.",
+    "tabulka": {
+      "nadpis": "At the wedding",
+      "znaky": false,
+      "riadky": [
+        [
+          "Grandma (she)",
+          "eating the cake"
+        ],
+        [
+          "Mum and Aunt Jane (they)",
+          "talking"
+        ],
+        [
+          "the band (they)",
+          "playing music"
+        ],
+        [
+          "Milly (she)",
+          "dancing"
+        ],
+        [
+          "Tim (he)",
+          "sleeping"
+        ]
+      ]
+    },
+    "polozky": [
+      {
+        "t": "Grandma's eating the cake.",
+        "k": "t",
+        "sk": "Babka je tortu.",
+        "v": "Grandma – <b>eating the cake</b> → pravda."
+      },
+      {
+        "t": "Mum and Aunt Jane are dancing.",
+        "k": "f",
+        "sk": "Mama a teta Jane tancujú.",
+        "v": "Mama a teta Jane sa <b>rozprávajú</b> (talking)."
+      },
+      {
+        "t": "The band is playing music.",
+        "k": "t",
+        "sk": "Kapela hrá hudbu.",
+        "v": "the band – <b>playing music</b> → pravda."
+      },
+      {
+        "t": "What's Milly doing? – She's sleeping.",
+        "k": "f",
+        "sk": "Čo robí Milly? – Spí.",
+        "v": "Milly <b>tancuje</b> (dancing). Spí Tim."
+      },
+      {
+        "t": "What's Tim doing? – He's sleeping.",
+        "k": "t",
+        "sk": "Čo robí Tim? – Spí.",
+        "v": "Tim – <b>sleeping</b> → pravda."
+      },
+      {
+        "t": "Milly's dancing.",
+        "k": "t",
+        "sk": "Milly tancuje.",
+        "v": "Milly – <b>dancing</b> → pravda."
+      },
+      {
+        "t": "Grandma's talking.",
+        "k": "f",
+        "sk": "Babka sa rozpráva.",
+        "v": "Babka <b>je tortu</b> (eating the cake)."
+      },
+      {
+        "t": "What are Mum and Aunt Jane doing? – They're talking.",
+        "k": "t",
+        "sk": "Čo robia mama a teta Jane? – Rozprávajú sa.",
+        "v": "Mum and Aunt Jane – <b>talking</b> → pravda."
+      },
+      {
+        "t": "Tim's eating the cake.",
+        "k": "f",
+        "sk": "Tim je tortu.",
+        "v": "Tim <b>spí</b> (sleeping)."
+      },
+      {
+        "t": "What's the band doing? – They're playing music.",
+        "k": "t",
+        "sk": "Čo robí kapela? – Hrá hudbu.",
+        "v": "the band – <b>playing music</b> → pravda."
+      }
+    ]
   }
 }

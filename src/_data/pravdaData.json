@@ -945,5 +945,92 @@
         "v": "Thursday – <b>windy</b> → pravda."
       }
     ]
+  },
+  "kto-co-nosi": {
+    "uvod": "V tabuľke vidíš, čo má kto dnes na sebe. Prečítaj otázku aj odpoveď a rozhodni, či sedí s tabuľkou.",
+    "tabulka": {
+      "nadpis": "What are they wearing?",
+      "znaky": false,
+      "riadky": [
+        [
+          "Milly (she)",
+          "red trousers, black boots"
+        ],
+        [
+          "Joe (he)",
+          "jeans, a yellow shirt"
+        ],
+        [
+          "Grandma (she)",
+          "a blue skirt, a red scarf"
+        ],
+        [
+          "Tim (he)",
+          "green gloves, a brown scarf"
+        ]
+      ]
+    },
+    "polozky": [
+      {
+        "t": "What's Milly wearing? – She's wearing red trousers.",
+        "k": "t",
+        "sk": "Čo má Milly na sebe? – Červené nohavice.",
+        "v": "Milly – <b>red trousers</b> → pravda."
+      },
+      {
+        "t": "What's Joe wearing? – He's wearing a blue skirt.",
+        "k": "f",
+        "sk": "Čo má Joe na sebe? – Modrú sukňu.",
+        "v": "Joe má <b>jeans a yellow shirt</b>. Modrú sukňu má Grandma."
+      },
+      {
+        "t": "Grandma's wearing a red scarf.",
+        "k": "t",
+        "sk": "Babka má červený šál.",
+        "v": "Grandma – <b>a red scarf</b> → pravda."
+      },
+      {
+        "t": "Tim's wearing black boots.",
+        "k": "f",
+        "sk": "Tim má čierne čižmy.",
+        "v": "Čierne čižmy má <b>Milly</b>. Tim má green gloves a brown scarf."
+      },
+      {
+        "t": "Joe's wearing a yellow shirt.",
+        "k": "t",
+        "sk": "Joe má žltú košeľu.",
+        "v": "Joe – <b>a yellow shirt</b> → pravda."
+      },
+      {
+        "t": "What's Tim wearing? – He's wearing green gloves.",
+        "k": "t",
+        "sk": "Čo má Tim na sebe? – Zelené rukavice.",
+        "v": "Tim – <b>green gloves</b> → pravda."
+      },
+      {
+        "t": "Milly's wearing jeans.",
+        "k": "f",
+        "sk": "Milly má džínsy.",
+        "v": "Džínsy má <b>Joe</b>. Milly má red trousers."
+      },
+      {
+        "t": "Grandma's wearing black boots.",
+        "k": "f",
+        "sk": "Babka má čierne čižmy.",
+        "v": "Grandma má <b>a blue skirt a red scarf</b>."
+      },
+      {
+        "t": "Tim's wearing a brown scarf.",
+        "k": "t",
+        "sk": "Tim má hnedý šál.",
+        "v": "Tim – <b>a brown scarf</b> → pravda."
+      },
+      {
+        "t": "What's Grandma wearing? – She's wearing a blue skirt.",
+        "k": "t",
+        "sk": "Čo má babka na sebe? – Modrú sukňu.",
+        "v": "Grandma – <b>a blue skirt</b> → pravda."
+      }
+    ]
   }
 }

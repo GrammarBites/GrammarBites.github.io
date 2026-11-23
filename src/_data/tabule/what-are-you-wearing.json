@@ -1,0 +1,176 @@
+{
+  "lekcia": "what-are-you-wearing",
+  "lekciaNazov": "What are you wearing? · I'm wearing …",
+  "nazov": "Prečo „I'm wearing“, a nie „I wearing“?",
+  "skupina": "stvrtaci",
+  "otazky": [
+    "Prečo I'm wearing, a nie I wearing?",
+    "Kedy 'm, 's a are?"
+  ],
+  "kluce": [
+    "wearing",
+    "i wearing",
+    "im wearing",
+    "hes wearing",
+    "what are you wearing",
+    "mam na sebe",
+    "oblecenie",
+    "clothes",
+    "a jeans",
+    "present continuous",
+    "ing"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "{I#a} wearing a scarf."
+        }
+      ],
+      "popis": "Po slovensky povieme „Mám na sebe šál.“ Veľa žiakov preto napíše len <i>I wearing</i>.",
+      "otazka": {
+        "text": "Čo chýba vo vete „I wearing a scarf.“?",
+        "moznosti": [
+          "'m (am) za I.",
+          "Slovo the.",
+          "-s na konci."
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "The tam nechýba.",
+          "2": "-s tu nepomôže."
+        },
+        "vysvetlenie": "I'm wearing."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "krouzok",
+          "ciel": "z.a"
+        },
+        {
+          "op": "pis",
+          "text": "{I|modra}{'m|oranzova} {wear|fialova}{ing|ruzova} {a scarf|zelena}."
+        },
+        {
+          "op": "pis",
+          "styl": "poznamka",
+          "text": "I'm = I {am|oranzova}"
+        }
+      ],
+      "popis": "Tvar s <b>-ing</b> potrebuje pred sebou pomocníka: <b>am / is / are</b>. Bez neho veta nefunguje."
+    },
+    {
+      "kresli": [
+        {
+          "op": "tabulka",
+          "hlavicka": true,
+          "riadky": [
+            [
+              "osoba",
+              "+ wearing"
+            ],
+            [
+              "I",
+              "I{'m|oranzova} ({am|oranzova})"
+            ],
+            [
+              "he, she",
+              "He{'s|oranzova} ({is|oranzova})"
+            ],
+            [
+              "you, we, they",
+              "You {are|oranzova}"
+            ]
+          ]
+        }
+      ],
+      "popis": "Pomocník sa mení podľa osoby. <b>wearing</b> ostáva stále rovnaké.",
+      "otazka": {
+        "text": "Joe ___ wearing jeans.",
+        "moznosti": [
+          "is",
+          "am",
+          "are"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Am je len pri I.",
+          "2": "Are je pri you, we, they."
+        },
+        "vysvetlenie": "Joe = he → is."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "{What|cervena} {are|oranzova} {you|modra} {wear|fialova}{ing|ruzova}?"
+        },
+        {
+          "op": "pis",
+          "text": "{What|cervena}{'s|oranzova} {she|modra} {wear|fialova}{ing|ruzova}?"
+        }
+      ],
+      "popis": "V otázke ide pomocník hneď za <b>What</b>: What <b>are</b> you …? What<b>'s</b> she …?",
+      "otazka": {
+        "text": "What ___ Milly wearing?",
+        "moznosti": [
+          "'s",
+          "are",
+          "am"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Milly = she → is.",
+          "2": "Am je len pri I."
+        },
+        "vysvetlenie": "What's Milly wearing?"
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "{I|modra}{'m|oranzova} {wear|fialova}{ing|ruzova} …"
+        },
+        {
+          "op": "pis",
+          "text": "{He|modra}{'s|oranzova} / {She|modra}{'s|oranzova} {wear|fialova}{ing|ruzova} …"
+        },
+        {
+          "op": "pis",
+          "text": "{What|cervena} {are|oranzova} you {wear|fialova}{ing|ruzova}?"
+        }
+      ],
+      "popis": "Hotovo! Povedz, čo máš dnes na sebe: I'm wearing …",
+      "odkazy": [
+        {
+          "text": "Tréner: Roztrieď",
+          "url": "/lekcie/what-are-you-wearing/#h-roztried"
+        },
+        {
+          "text": "Tréner: Pravda, alebo nepravda?",
+          "url": "/lekcie/what-are-you-wearing/#h-pravda"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/what-are-you-wearing/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/what-are-you-wearing/#h-test"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "lekcia": "was-were",
+  "lekciaNazov": "was · wasn't · were · weren't",
+  "nazov": "Was, alebo were?",
+  "skupina": "stvrtaci",
+  "otazky": [
+    "Kedy was a kedy were?",
+    "Prečo They were, a nie They was?"
+  ],
+  "kluce": [
+    "was",
+    "were",
+    "wasn't",
+    "weren't",
+    "they was",
+    "he were",
+    "bol",
+    "boli",
+    "minulost",
+    "past simple be"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "They {was#a} wet."
+        }
+      ],
+      "popis": "Takúto vetu napíše veľa žiakov. Pozri sa na slovo za <i>They</i>.",
+      "otazka": {
+        "text": "Čo je zlé na vete „They was wet.“?",
+        "moznosti": [
+          "Pri they má byť were.",
+          "Má byť wets.",
+          "Chýba not."
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Wet sa nemení.",
+          "2": "Veta je kladná."
+        },
+        "vysvetlenie": "they → were."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.a"
+        },
+        {
+          "op": "pis",
+          "text": "{They|modra} {were|ruzova} {wet|fialova}."
+        },
+        {
+          "op": "tabulka",
+          "hlavicka": true,
+          "riadky": [
+            [
+              "teraz",
+              "vtedy"
+            ],
+            [
+              "am, is",
+              "{was|oranzova}"
+            ],
+            [
+              "are",
+              "{were|ruzova}"
+            ]
+          ]
+        }
+      ],
+      "popis": "V minulosti sa <b>am</b> a <b>is</b> menia na <b>was</b>, <b>are</b> sa mení na <b>were</b>.",
+      "otazka": {
+        "text": "Billy ___ naughty.",
+        "moznosti": [
+          "was",
+          "were"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Billy = he. Teraz by bolo is → was."
+        },
+        "vysvetlenie": "he → was."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "I, he, she, it",
+              "riadky": [
+                "{was|oranzova} · {wasn't|cervena}"
+              ]
+            },
+            {
+              "nadpis": "you, we, they",
+              "riadky": [
+                "{were|ruzova} · {weren't|cervena}"
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "Zápor: <b>wasn't</b> (= was not), <b>weren't</b> (= were not).",
+      "otazka": {
+        "text": "The babies ___ sad.",
+        "moznosti": [
+          "weren't",
+          "wasn't"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Bábätká = they → weren't."
+        },
+        "vysvetlenie": "they → weren't."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "I, he, she → {was|oranzova}"
+        },
+        {
+          "op": "pis",
+          "text": "you, we, they → {were|ruzova}"
+        }
+      ],
+      "popis": "Hotovo! Povedz, aký si bol ako malý: I was …",
+      "odkazy": [
+        {
+          "text": "Tréner: Roztrieď",
+          "url": "/lekcie/was-were/#h-roztried"
+        },
+        {
+          "text": "Tréner: Pravda, alebo nepravda?",
+          "url": "/lekcie/was-were/#h-pravda"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/was-were/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/was-were/#h-test"
+        }
+      ]
+    }
+  ]
+}

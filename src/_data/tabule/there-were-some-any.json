@@ -1,0 +1,151 @@
+{
+  "lekcia": "there-were-some-any",
+  "lekciaNazov": "There were some … · There weren't any …",
+  "nazov": "Some, alebo any? Prečo children?",
+  "skupina": "stvrtaci",
+  "otazky": [
+    "Kedy some a kedy any?",
+    "Prečo children, a nie childs?"
+  ],
+  "kluce": [
+    "there were",
+    "there weren't",
+    "some",
+    "any",
+    "childs",
+    "mans",
+    "children",
+    "men",
+    "women",
+    "boli tam",
+    "neboli tam"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "There were some {childs#a}."
+        }
+      ],
+      "popis": "Pri množnom čísle pridávame -s. Pri niektorých slovách je to inak.",
+      "otazka": {
+        "text": "Čo je zlé na vete „There were some childs.“?",
+        "moznosti": [
+          "Má byť children.",
+          "Má byť any.",
+          "Má byť was."
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Veta je kladná, some je dobre.",
+          "2": "Detí je viac → were."
+        },
+        "vysvetlenie": "child → children."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.a"
+        },
+        {
+          "op": "tabulka",
+          "hlavicka": true,
+          "riadky": [
+            [
+              "jeden",
+              "viac"
+            ],
+            [
+              "man",
+              "m{e|ruzova}n"
+            ],
+            [
+              "woman",
+              "wom{e|ruzova}n"
+            ],
+            [
+              "child",
+              "child{ren|ruzova}"
+            ]
+          ]
+        }
+      ],
+      "popis": "Tieto tri slová majú zvláštne množné číslo – <b>bez -s</b>."
+    },
+    {
+      "kresli": [
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "✓ boli tam",
+              "riadky": [
+                "There {were|ruzova} {some|oranzova} men."
+              ]
+            },
+            {
+              "nadpis": "✗ neboli tam",
+              "riadky": [
+                "There {weren't|cervena} {any|oranzova} men."
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "Pri <b>were</b> je <b>some</b>, pri <b>weren't</b> je <b>any</b>.",
+      "otazka": {
+        "text": "There weren't ___ teachers.",
+        "moznosti": [
+          "any",
+          "some"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Pri weren't je any."
+        },
+        "vysvetlenie": "weren't → any."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "{were|ruzova} + {some|oranzova} · {weren't|cervena} + {any|oranzova}"
+        },
+        {
+          "op": "pis",
+          "text": "men · women · children"
+        }
+      ],
+      "popis": "Hotovo! Povedz, kto bol včera v triede.",
+      "odkazy": [
+        {
+          "text": "Tréner: Roztrieď",
+          "url": "/lekcie/there-were-some-any/#h-roztried"
+        },
+        {
+          "text": "Tréner: Pravda, alebo nepravda?",
+          "url": "/lekcie/there-were-some-any/#h-pravda"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/there-were-some-any/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/there-were-some-any/#h-test"
+        }
+      ]
+    }
+  ]
+}

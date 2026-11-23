@@ -1218,5 +1218,180 @@
         "v": "80 cm < 140 cm → ovca je <b>nižšia</b>."
       }
     ]
+  },
+  "fotky-minulost": {
+    "uvod": "Na fotkách z minulého leta. V tabuľke vidíš, aký kto bol (✓) a aký nebol (✗).",
+    "tabulka": {
+      "nadpis": "Last summer",
+      "legenda": [
+        "bol / boli",
+        "nebol / neboli"
+      ],
+      "riadky": [
+        [
+          "Billy",
+          "naughty",
+          true
+        ],
+        [
+          "Billy",
+          "wet",
+          false
+        ],
+        [
+          "Rosy",
+          "kind",
+          true
+        ],
+        [
+          "Rosy",
+          "sad",
+          false
+        ],
+        [
+          "the babies",
+          "hungry",
+          true
+        ],
+        [
+          "the babies",
+          "happy",
+          false
+        ]
+      ]
+    },
+    "polozky": [
+      {
+        "t": "Billy was naughty.",
+        "k": "t",
+        "sk": "Billy bol zlobivý.",
+        "v": "Billy – naughty ✓ → pravda."
+      },
+      {
+        "t": "Billy was wet.",
+        "k": "f",
+        "sk": "Billy bol mokrý.",
+        "v": "Billy – wet ✗ → Billy wasn't wet."
+      },
+      {
+        "t": "Rosy was kind.",
+        "k": "t",
+        "sk": "Rosy bola milá.",
+        "v": "Rosy – kind ✓ → pravda."
+      },
+      {
+        "t": "Rosy was sad.",
+        "k": "f",
+        "sk": "Rosy bola smutná.",
+        "v": "Rosy – sad ✗ → Rosy wasn't sad."
+      },
+      {
+        "t": "The babies were hungry.",
+        "k": "t",
+        "sk": "Bábätká boli hladné.",
+        "v": "the babies – hungry ✓ → pravda."
+      },
+      {
+        "t": "The babies were happy.",
+        "k": "f",
+        "sk": "Bábätká boli šťastné.",
+        "v": "the babies – happy ✗ → They weren't happy."
+      },
+      {
+        "t": "Billy wasn't wet.",
+        "k": "t",
+        "sk": "Billy nebol mokrý.",
+        "v": "Billy – wet ✗ → pravda."
+      },
+      {
+        "t": "Rosy wasn't kind.",
+        "k": "f",
+        "sk": "Rosy nebola milá.",
+        "v": "Rosy – kind ✓ → Rosy was kind."
+      },
+      {
+        "t": "The babies weren't happy.",
+        "k": "t",
+        "sk": "Bábätká neboli šťastné.",
+        "v": "the babies – happy ✗ → pravda."
+      },
+      {
+        "t": "The babies weren't hungry.",
+        "k": "f",
+        "sk": "Bábätká neboli hladné.",
+        "v": "the babies – hungry ✓ → They were hungry."
+      }
+    ]
+  },
+  "kto-bol-v-skole": {
+    "uvod": "Kto bol včera v škole? V tabuľke vidíš počty ľudí (0 = nikto).",
+    "tabulka": {
+      "nadpis": "At school yesterday",
+      "znaky": false,
+      "riadky": [
+        [
+          "in the classroom",
+          "teachers: 3, children: 0"
+        ],
+        [
+          "in the playground",
+          "men: 5, women: 4, children: 20"
+        ],
+        [
+          "in the gym",
+          "men: 0, women: 0"
+        ]
+      ]
+    },
+    "polozky": [
+      {
+        "t": "In the classroom there were some teachers.",
+        "k": "t",
+        "sk": "V triede boli nejakí učitelia.",
+        "v": "classroom – teachers: 3 → pravda."
+      },
+      {
+        "t": "In the classroom there were some children.",
+        "k": "f",
+        "sk": "V triede boli nejaké deti.",
+        "v": "classroom – children: 0 → There weren't any children."
+      },
+      {
+        "t": "In the playground there were some men.",
+        "k": "t",
+        "sk": "Na ihrisku boli nejakí muži.",
+        "v": "playground – men: 5 → pravda."
+      },
+      {
+        "t": "In the playground there weren't any women.",
+        "k": "f",
+        "sk": "Na ihrisku neboli žiadne ženy.",
+        "v": "playground – women: 4 → There were some women."
+      },
+      {
+        "t": "In the gym there weren't any men.",
+        "k": "t",
+        "sk": "V telocvični neboli žiadni muži.",
+        "v": "gym – men: 0 → pravda."
+      },
+      {
+        "t": "In the gym there were some women.",
+        "k": "f",
+        "sk": "V telocvični boli nejaké ženy.",
+        "v": "gym – women: 0 → There weren't any women."
+      },
+      {
+        "t": "In the playground there were some children.",
+        "k": "t",
+        "sk": "Na ihrisku boli nejaké deti.",
+        "v": "playground – children: 20 → pravda."
+      },
+      {
+        "t": "In the classroom there weren't any children.",
+        "k": "t",
+        "sk": "V triede neboli žiadne deti.",
+        "v": "classroom – children: 0 → pravda."
+      }
+    ]
   }
 }

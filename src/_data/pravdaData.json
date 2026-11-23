@@ -854,5 +854,96 @@
         "v": "Mr Black pracuje na polícii → No, he doesn't je pravda."
       }
     ]
+  },
+  "pocasie-oblecenie": {
+    "uvod": "V tabuľke vidíš počasie v jednotlivé dni. Rozhodni, či veta sedí s počasím a či je rada rozumná.",
+    "tabulka": {
+      "nadpis": "Weather this week",
+      "znaky": false,
+      "riadky": [
+        [
+          "Monday",
+          "sunny"
+        ],
+        [
+          "Tuesday",
+          "raining"
+        ],
+        [
+          "Wednesday",
+          "snowing"
+        ],
+        [
+          "Thursday",
+          "windy"
+        ],
+        [
+          "Friday",
+          "hot"
+        ]
+      ]
+    },
+    "polozky": [
+      {
+        "t": "On Monday it's sunny.",
+        "k": "t",
+        "sk": "V pondelok je slnečno.",
+        "v": "Monday – <b>sunny</b> → pravda."
+      },
+      {
+        "t": "On Tuesday it's snowing.",
+        "k": "f",
+        "sk": "V utorok sneží.",
+        "v": "V utorok <b>prší</b> (raining)."
+      },
+      {
+        "t": "On Wednesday it's snowing.",
+        "k": "t",
+        "sk": "V stredu sneží.",
+        "v": "Wednesday – <b>snowing</b> → pravda."
+      },
+      {
+        "t": "On Thursday it's hot.",
+        "k": "f",
+        "sk": "Vo štvrtok je horúco.",
+        "v": "Vo štvrtok <b>fúka vietor</b> (windy)."
+      },
+      {
+        "t": "On Friday it's hot.",
+        "k": "t",
+        "sk": "V piatok je horúco.",
+        "v": "Friday – <b>hot</b> → pravda."
+      },
+      {
+        "t": "Tuesday: It's raining. Put on your sun hat.",
+        "k": "f",
+        "sk": "Utorok: Prší. Daj si slnečný klobúk.",
+        "v": "Prší → slnečný klobúk nepomôže. Lepšie: Put on your raincoat."
+      },
+      {
+        "t": "Wednesday: It's snowing. Put on your gloves.",
+        "k": "t",
+        "sk": "Streda: Sneží. Daj si rukavice.",
+        "v": "Sneží → rukavice sú dobrá rada → pravda."
+      },
+      {
+        "t": "Friday: It's hot. Don't put on your coat.",
+        "k": "t",
+        "sk": "Piatok: Je horúco. Neobliekaj si kabát.",
+        "v": "Horúco → kabát netreba → pravda."
+      },
+      {
+        "t": "Monday: It's sunny. Don't put on your sun hat.",
+        "k": "f",
+        "sk": "Pondelok: Je slnečno. Nedávaj si klobúk.",
+        "v": "Slnečno → klobúk sa hodí: Put on your sun hat."
+      },
+      {
+        "t": "What's the weather like on Thursday? – It's windy.",
+        "k": "t",
+        "sk": "Aké je počasie vo štvrtok? – Fúka vietor.",
+        "v": "Thursday – <b>windy</b> → pravda."
+      }
+    ]
   }
 }

@@ -1,0 +1,200 @@
+{
+  "lekcia": "weather-put-on",
+  "lekciaNazov": "What's the weather like? · Put on … · Don't put on …",
+  "nazov": "Prečo „It's raining“?",
+  "skupina": "stvrtaci",
+  "otazky": [
+    "Prečo It's raining, a nie Is raining?",
+    "Ako poviem neotváraj / neobliekaj?"
+  ],
+  "kluce": [
+    "weather",
+    "pocasie",
+    "its raining",
+    "is raining",
+    "its cold",
+    "put on",
+    "don't put on",
+    "dont open",
+    "not open",
+    "prikaz",
+    "zakaz",
+    "imperative",
+    "prsi",
+    "snezi"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "{Is#a} raining."
+        }
+      ],
+      "popis": "Po slovensky povieme jedným slovom „Prší.“ Veľa žiakov preto napíše <i>Is raining</i>.",
+      "otazka": {
+        "text": "Čo chýba vo vete „Is raining.“?",
+        "moznosti": [
+          "Na začiatku chýba It.",
+          "Na konci chýba today.",
+          "Nič, je to správne."
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Today tam byť nemusí.",
+          "2": "V angličtine musí byť podmet – It."
+        },
+        "vysvetlenie": "It's raining."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.a"
+        },
+        {
+          "op": "pis",
+          "text": "{It's|modra} {raining|oranzova}."
+        },
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "po slovensky",
+              "riadky": [
+                "Prší.",
+                "Je zima."
+              ]
+            },
+            {
+              "nadpis": "po anglicky",
+              "riadky": [
+                "{It's|modra} raining.",
+                "{It's|modra} cold."
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "V anglickej vete musí byť vždy <b>podmet</b>. Pri počasí je to <b>It</b>: <b>It's</b> (= It is) raining, <b>It's</b> cold.",
+      "otazka": {
+        "text": "Fúka vietor. = ___",
+        "moznosti": [
+          "It's windy.",
+          "Is windy.",
+          "Windy."
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Chýba It.",
+          "2": "Chýba It's."
+        },
+        "vysvetlenie": "It's windy."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "text": "{What's the weather like?|cervena}"
+        },
+        {
+          "op": "pis",
+          "text": "{It's|modra} {sunny|oranzova}."
+        }
+      ],
+      "popis": "Na počasie sa pýtame: <b>What's the weather like?</b> – Aké je počasie?"
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "w",
+          "text": "{Not#b} open the window."
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "w.b"
+        },
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "✓ urob to",
+              "riadky": [
+                "{Put on|fialova} {your coat|zelena}.",
+                "{Open|fialova} {the window|zelena}."
+              ]
+            },
+            {
+              "nadpis": "✗ nerob to",
+              "riadky": [
+                "{Don't|cervena} {put on|fialova} your coat.",
+                "{Don't|cervena} {open|fialova} the window."
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "Príkaz začína rovno <b>činnosťou</b> (bez <i>you</i>). Zákaz začína <b>Don't</b> + činnosť – po slovensky predpona <b>ne-</b>.",
+      "otazka": {
+        "text": "Neobliekaj si kabát! = ___ put on your coat!",
+        "moznosti": [
+          "Don't",
+          "Not",
+          "You don't"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Samotné not nestačí.",
+          "2": "Zákaz je bez you."
+        },
+        "vysvetlenie": "Don't put on your coat!"
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "Počasie: {It's|modra} {raining|oranzova}."
+        },
+        {
+          "op": "pis",
+          "text": "Urob: {Put on|fialova} …!"
+        },
+        {
+          "op": "pis",
+          "text": "Nerob: {Don't|cervena} {put on|fialova} …!"
+        }
+      ],
+      "popis": "Hotovo! Pozri sa von oknom: What's the weather like?",
+      "odkazy": [
+        {
+          "text": "Tréner: Roztrieď",
+          "url": "/lekcie/weather-put-on/#h-roztried"
+        },
+        {
+          "text": "Tréner: Pravda, alebo nepravda?",
+          "url": "/lekcie/weather-put-on/#h-pravda"
+        },
+        {
+          "text": "Nájdi a oprav chybu",
+          "url": "/lekcie/weather-put-on/#h-oprav"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/weather-put-on/#h-test"
+        }
+      ]
+    }
+  ]
+}

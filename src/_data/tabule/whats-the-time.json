@@ -1,0 +1,210 @@
+{
+  "lekcia": "whats-the-time",
+  "lekciaNazov": "What's the time? · He gets up at six o'clock",
+  "nazov": "Prečo „He gets up“?",
+  "skupina": "stvrtaci",
+  "otazky": [
+    "Prečo He gets up, a nie He get up?",
+    "Ako poviem čas – o'clock a at?"
+  ],
+  "kluce": [
+    "o'clock",
+    "what's the time",
+    "kolko je hodin",
+    "at seven",
+    "gets up",
+    "he get up",
+    "haves",
+    "has dinner",
+    "goes to bed",
+    "cas",
+    "hodiny",
+    "moj den"
+  ],
+  "kroky": [
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "z",
+          "text": "He {get#a} up at six o'clock."
+        }
+      ],
+      "popis": "Takúto vetu napíše veľa žiakov. Pri <i>he</i> a <i>she</i> niečo chýba.",
+      "otazka": {
+        "text": "Čo je zlé na vete „He get up at six o'clock.“?",
+        "moznosti": [
+          "Pri he treba gets.",
+          "Chýba is.",
+          "Má byť in six o'clock."
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Is tu nepatrí – sloveso je get up.",
+          "2": "Pred časom je at, to je dobre."
+        },
+        "vysvetlenie": "he → get + s = gets."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "z.a"
+        },
+        {
+          "op": "pis",
+          "text": "{He|modra} {get|zelena}{s|ruzova} {up|zelena} {at six o'clock|oranzova}."
+        },
+        {
+          "op": "stlpce",
+          "stlpce": [
+            {
+              "nadpis": "I, you, we, they",
+              "riadky": [
+                "get up",
+                "go to bed",
+                "have dinner"
+              ]
+            },
+            {
+              "nadpis": "he, she",
+              "riadky": [
+                "get{s|ruzova} up",
+                "go{es|ruzova} to bed",
+                "{has|ruzova} dinner"
+              ]
+            }
+          ]
+        }
+      ],
+      "popis": "Pri <b>he</b> a <b>she</b> pridáme <b>-s</b>. Pri <i>go</i> je to <b>-es</b> a <i>have</i> sa mení na <b>has</b>.",
+      "otazka": {
+        "text": "Rosy ___ dinner at seven o'clock.",
+        "moznosti": [
+          "has",
+          "haves",
+          "have"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Haves neexistuje. Have sa mení na has.",
+          "2": "Rosy = she → has."
+        },
+        "vysvetlenie": "she → has."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "mriezka",
+          "id": "g",
+          "velke": true
+        },
+        {
+          "op": "hodiny",
+          "do": "g",
+          "cas": "7:00",
+          "popis": "It's seven {o'clock|oranzova}.",
+          "alt": "Hodiny ukazujú sedem hodín."
+        },
+        {
+          "op": "hodiny",
+          "do": "g",
+          "cas": "9:00",
+          "popis": "It's nine {o'clock|oranzova}.",
+          "alt": "Hodiny ukazujú deväť hodín."
+        }
+      ],
+      "popis": "Celú hodinu povieme <b>o'clock</b>. Veľká ručička je na <b>12</b>, malá ukazuje hodinu.",
+      "otazka": {
+        "text": "Malá ručička je na 3, veľká na 12. It's ___ .",
+        "moznosti": [
+          "three o'clock",
+          "twelve o'clock",
+          "three hours"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Hodinu ukazuje malá ručička – je na 3.",
+          "2": "Hours nepoužívame. Celá hodina = o'clock."
+        },
+        "vysvetlenie": "It's three o'clock."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "id": "w",
+          "text": "I go to bed {in#b} nine o'clock."
+        },
+        {
+          "op": "znac",
+          "typ": "preskrtni",
+          "ciel": "w.b"
+        },
+        {
+          "op": "pis",
+          "text": "{I|modra} {go to bed|zelena} {at nine o'clock|oranzova}."
+        }
+      ],
+      "popis": "Keď hovoríme, <b>o koľkej</b> niečo robíme, dáme pred čas <b>at</b>: at nine o'clock = o deviatej.",
+      "otazka": {
+        "text": "I have breakfast ___ seven o'clock.",
+        "moznosti": [
+          "at",
+          "in",
+          "on"
+        ],
+        "spravna": 0,
+        "napoveda": {
+          "1": "Pred čas na hodinách dávame at.",
+          "2": "On je pred dňom (on Monday). Pred časom je at."
+        },
+        "vysvetlenie": "at + čas."
+      }
+    },
+    {
+      "kresli": [
+        {
+          "op": "pis",
+          "styl": "nadpis2",
+          "text": "Zapamätaj si:"
+        },
+        {
+          "op": "pis",
+          "text": "It's seven {o'clock|oranzova}."
+        },
+        {
+          "op": "pis",
+          "text": "{at|oranzova} + čas = o …"
+        },
+        {
+          "op": "pis",
+          "text": "he, she → get{s|ruzova}, go{es|ruzova}, {has|ruzova}"
+        }
+      ],
+      "popis": "Hotovo! Povedz, o koľkej vstávaš: I get up at …",
+      "odkazy": [
+        {
+          "text": "Tréner: hodiny",
+          "url": "/lekcie/whats-the-time/#h-hodiny"
+        },
+        {
+          "text": "Tréner: Roztrieď",
+          "url": "/lekcie/whats-the-time/#h-roztried"
+        },
+        {
+          "text": "Tréner: Pravda, alebo nepravda?",
+          "url": "/lekcie/whats-the-time/#h-pravda"
+        },
+        {
+          "text": "Mini test",
+          "url": "/lekcie/whats-the-time/#h-test"
+        }
+      ]
+    }
+  ]
+}

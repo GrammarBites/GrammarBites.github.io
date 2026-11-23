@@ -40,9 +40,9 @@
     try { pamat = Object.assign(pamat, JSON.parse(localStorage.getItem(KLUC)) || {}); } catch (e) {}
     const uloz = () => { try { localStorage.setItem(KLUC, JSON.stringify(pamat)); } catch (e) {} };
 
-    let uroven = 1, rezim = "mix", ulohy = [], ix = 0, body = 0, q = null, hotovo = false;
+    let uroven = Number(box.dataset.uroven || 1), rezim = "mix", ulohy = [], ix = 0, body = 0, q = null, hotovo = false;
     let nast = { h: 12, m: 0 }; // nastavené používateľom
-    const krokMin = () => (uroven === 1 ? 15 : 5);
+    const krokMin = () => (uroven === 2 ? 5 : 15);
 
     // ---------- kreslenie ciferníka ----------
     const NS = "http://www.w3.org/2000/svg";
@@ -117,7 +117,7 @@
     const nahodny = (a) => a[Math.floor(Math.random() * a.length)];
     function zamiesaj(a) { a = [...a]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
     function nahodnyCas(pouzite) {
-      const minuty = uroven === 1 ? [0, 15, 30, 45] : [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55];
+      const minuty = uroven === 0 ? [0] : uroven === 1 ? [0, 15, 30, 45] : [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55];
       for (let i = 0; i < 50; i++) {
         let m = nahodny(minuty);
         if (uroven === 2 && i < 30 && [0, 15, 30, 45].includes(m) && Math.random() < 0.6) continue; // viac päťminútových
@@ -130,6 +130,10 @@
       const spravna = povedz(h, m), set = new Set([spravna]), out = [];
       const pridaj = (hh, mm) => { const t = povedz(h12(hh), mm); if (!set.has(t)) { set.add(t); out.push(t); } };
       // typické chyby: past ↔ to, hodina o jednu vedľa (pol štvrtej ≠ half past four), vymenené ručičky
+      if (uroven === 0) { // 4. ročník: len celé hodiny – susedné hodiny a vymenené ručičky
+        pridaj(h + 1, 0); pridaj(h - 1, 0); pridaj(h + 2, 0);
+        return zamiesaj(out).slice(0, 3);
+      }
       if (m !== 0 && m !== 30) pridaj(m < 30 ? h - 1 : h + 1, 60 - m); // past ↔ to
       pridaj(m > 30 ? h - 1 : h + 1, m); // „slovenská“ hodina (pol štvrtej → half past four)
       pridaj(m > 30 ? h + 1 : h - 1, m);
@@ -223,14 +227,14 @@
       const n = ulohy.length, dobre = body / n >= 0.8;
       if (body > rekord()) pamat[`rekord${uroven}`] = body;
       uloz();
-      el.vysledok.textContent = `Máš ${body} z ${n} bodov. ` + (body === n ? (uroven === 1 ? "Výborne! Skús úroveň 2 – po päť minút." : "Výborne, hodiny ovládaš!") : dobre ? "Skvelá práca!" : "Skús ďalšie kolo.");
+      el.vysledok.textContent = `Máš ${body} z ${n} bodov. ` + (body === n ? (uroven === 0 ? "Výborne! Skús úroveň 1 – aj štvrť a pol." : uroven === 1 ? "Výborne! Skús úroveň 2 – po päť minút." : "Výborne, hodiny ovládaš!") : dobre ? "Skvelá práca!" : "Skús ďalšie kolo.");
       el.dobre.hidden = !dobre; el.zle.hidden = dobre;
       if (GB.udalost) GB.udalost(`hodiny/u${uroven}/${body}-z-${n}`, `Hodiny ${uroven}: ${body}/${n}`);
       el.dalsie.focus({ preventScroll: true });
     }
 
     // ---------- výber ----------
-    const UROVNE = [[1, "1 · o'clock, quarter, half"], [2, "2 · po päť minút"]];
+    const UROVNE = [[0, "0 · len o'clock"], [1, "1 · o'clock, quarter, half"], [2, "2 · po päť minút"]];
     const REZIMY = [["mix", "Všetko"], ["citaj", "Prečítaj čas"], ["nastav", "Nastav hodiny"]];
     function cipy(kam, zoznam, akt, nastav) {
       kam.textContent = "";

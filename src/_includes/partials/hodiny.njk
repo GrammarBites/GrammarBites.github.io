@@ -1,8 +1,8 @@
-{# Tréner hodín. V lekcii: hodiny: true #}
+{# Tréner hodín. V lekcii: hodiny: true (začína úrovňou 1), alebo hodiny: oclock (začína úrovňou 0 – len celé hodiny, 4. ročník) #}
 <section class="blok blok--trener" aria-labelledby="h-hodiny">
   <h2 id="h-hodiny" class="blok__nadpis"><span class="blok__pismeno">{{ pismeno }}</span> Tréner: What time is it?</h2>
   <p class="blok__uvod">10 úloh v jednom kole. Raz prečítaš čas z ručičkových hodín, inokedy hodiny nastavíš sám – potiahni ručičky prstom alebo myšou, prípadne použi tlačidlá pod hodinami.</p>
-  <div class="trener hodiny" data-hodiny>
+  <div class="trener hodiny" data-hodiny{% if hodiny == "oclock" %} data-uroven="0"{% endif %}>
     <fieldset class="trener__vyber">
       <legend>Úroveň</legend>
       <div class="trener__cipy" data-urovne></div>

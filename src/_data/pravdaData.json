@@ -668,5 +668,100 @@
         "v": "Billy – balloons ✗, Rosy – balloons ✓ → pravda."
       }
     ]
+  },
+  "toms-day": {
+    "uvod": "Toto je Tomov deň. V tabuľke vidíš, o koľkej čo robí. <i>He</i> = Tom.",
+    "tabulka": {
+      "nadpis": "Tom's day",
+      "znaky": false,
+      "riadky": [
+        [
+          "get up",
+          "7 o'clock"
+        ],
+        [
+          "have breakfast",
+          "8 o'clock"
+        ],
+        [
+          "go to school",
+          "8 o'clock"
+        ],
+        [
+          "go home",
+          "2 o'clock"
+        ],
+        [
+          "have dinner",
+          "6 o'clock"
+        ],
+        [
+          "go to bed",
+          "9 o'clock"
+        ]
+      ]
+    },
+    "polozky": [
+      {
+        "t": "He gets up at seven o'clock.",
+        "k": "t",
+        "sk": "Vstáva o siedmej.",
+        "v": "get up – 7 o'clock → pravda."
+      },
+      {
+        "t": "He gets up at six o'clock.",
+        "k": "f",
+        "sk": "Vstáva o šiestej.",
+        "v": "Tom vstáva o <b>siedmej</b> (7 o'clock)."
+      },
+      {
+        "t": "He has breakfast at eight o'clock.",
+        "k": "t",
+        "sk": "Raňajkuje o ôsmej.",
+        "v": "have breakfast – 8 o'clock → pravda."
+      },
+      {
+        "t": "He goes to school at nine o'clock.",
+        "k": "f",
+        "sk": "Ide do školy o deviatej.",
+        "v": "Do školy ide o <b>ôsmej</b> (8 o'clock)."
+      },
+      {
+        "t": "He goes home at two o'clock.",
+        "k": "t",
+        "sk": "Ide domov o druhej.",
+        "v": "go home – 2 o'clock → pravda."
+      },
+      {
+        "t": "He has dinner at seven o'clock.",
+        "k": "f",
+        "sk": "Večeria o siedmej.",
+        "v": "Večeria o <b>šiestej</b> (6 o'clock)."
+      },
+      {
+        "t": "He goes to bed at nine o'clock.",
+        "k": "t",
+        "sk": "Ide spať o deviatej.",
+        "v": "go to bed – 9 o'clock → pravda."
+      },
+      {
+        "t": "He has dinner at six o'clock.",
+        "k": "t",
+        "sk": "Večeria o šiestej.",
+        "v": "have dinner – 6 o'clock → pravda."
+      },
+      {
+        "t": "He goes to bed at eight o'clock.",
+        "k": "f",
+        "sk": "Ide spať o ôsmej.",
+        "v": "Spať ide o <b>deviatej</b> (9 o'clock)."
+      },
+      {
+        "t": "He goes home at three o'clock.",
+        "k": "f",
+        "sk": "Ide domov o tretej.",
+        "v": "Domov ide o <b>druhej</b> (2 o'clock)."
+      }
+    ]
   }
 }

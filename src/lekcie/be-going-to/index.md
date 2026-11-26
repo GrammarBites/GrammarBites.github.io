@@ -63,11 +63,23 @@ Keď hovoríme o **pláne alebo zámere** – o niečom, čo sme sa už rozhodli
 
 ## Vzorec
 
+Každá oznamovacia veta s be going to má štruktúru:
+
 <div class="vzorec">
-<span class="vzorec__cast vzorec__cast--if"><b>BE</b> (am / is / are)</span>
+<span class="vzorec__cast vzorec__cast--if"><b>Kto / čo?</b></span>
 <span class="vzorec__ciarka">+</span>
-<span class="vzorec__cast vzorec__cast--will"><b>going to</b> + sloveso (základný tvar)</span>
+<span class="vzorec__cast vzorec__cast--will"><b>BE</b> <small>am / is / are</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast"><b>going to</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>sloveso</b> <small>základný tvar</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
 </div>
+
+- <em><b>She</b> · <b>is</b> · <b>going to</b> · <b>read</b> · a book.</em>
+
+Prvé štyri časti vo vete **nikdy nesmú chýbať** – a hlavne nezabudni na **BE**!
 
 - *I **am** going to watch a film.* – Idem si pozrieť film. / Pozriem si film.
 - *We **are** going to play basketball on Wednesday.* – V stredu budeme hrať basketbal.
@@ -83,11 +95,42 @@ Keď hovoríme o **pláne alebo zámere** – o niečom, čo sme sa už rozhodli
 </tbody>
 </table>
 
+V zápore je štruktúra rovnaká, len za BE pridáme **not**:
+
+<div class="vzorec">
+<span class="vzorec__cast vzorec__cast--if"><b>Kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--will"><b>BE + not</b> <small>am not / isn't / aren't</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast"><b>going to</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>sloveso</b> <small>základný tvar</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
+</div>
+
+- <em><b>We</b> · <b>aren't</b> · <b>going to</b> · <b>play</b> · tennis.</em>
+
 *Going to* sa nemení nikdy – mení sa iba **BE**. Je to to isté *am / is / are*, ktoré poznáš z [present continuous](/lekcie/present-continuous/).
 
 ## Otázka a krátka odpoveď
 
-**BE** dáme na začiatok vety – žiadne *do / does*.
+**BE** dáme na začiatok vety – žiadne *do / does*. Každá otázka s be going to má štruktúru:
+
+<div class="vzorec">
+<span class="vzorec__cast vzorec__cast--will"><b>BE</b> <small>Am / Is / Are</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--if"><b>kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast"><b>going to</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>sloveso</b> <small>základný tvar</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
+<span class="vzorec__ciarka">?</span>
+</div>
+
+- <em><b>Are</b> · <b>you</b> · <b>going to</b> · <b>watch</b> · TV?</em>
 
 <table class="chyby tvary">
 <thead><tr><th scope="col">otázka</th><th scope="col">áno</th><th scope="col">nie</th></tr></thead>
@@ -97,6 +140,8 @@ Keď hovoríme o **pláne alebo zámere** – o niečom, čo sme sa už rozhodli
 <tr><td><b>Are</b> they going to come?</td><td>Yes, they <b>are</b>.</td><td>No, they <b>aren't</b>.</td></tr>
 </tbody>
 </table>
+
+S opytovacím slovom: **What / Where / When + BE + kto/čo + going to + sloveso + zvyšok?**
 
 - *What **are** you going to do after school?* – Čo budeš robiť po škole?
 

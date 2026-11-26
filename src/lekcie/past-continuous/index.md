@@ -64,11 +64,21 @@ test:
 
 ## Vzorec
 
+Každá oznamovacia veta v past continuous má štruktúru:
+
 <div class="vzorec">
-<span class="vzorec__cast vzorec__cast--if"><b>was / were</b></span>
+<span class="vzorec__cast vzorec__cast--if"><b>Kto / čo?</b></span>
 <span class="vzorec__ciarka">+</span>
-<span class="vzorec__cast vzorec__cast--will">sloveso + <b>-ing</b></span>
+<span class="vzorec__cast vzorec__cast--will"><b>be</b> <small>was / were</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>sloveso + -ing</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
 </div>
+
+- <em><b>She</b> · <b>was</b> · <b>reading</b> · a book.</em>
+
+Prvé tri časti (**kto/čo + was/were + sloveso s -ing**) vo vete **nikdy nesmú chýbať**. V zápore je štruktúra rovnaká, len namiesto *was / were* je **wasn't / weren't**: *They · weren't · watching · TV.*
 
 <table class="chyby tvary">
 <thead><tr><th scope="col">osoba</th><th scope="col">veta</th><th scope="col">zápor</th></tr></thead>
@@ -87,7 +97,20 @@ Je to vlastne [present continuous](/lekcie/present-continuous/) posunutý do min
 
 ## Otázka a krátka odpoveď
 
-**Was / Were** dáme na začiatok vety – žiadne *did*.
+**Was / Were** dáme na začiatok vety – žiadne *did*. Každá otázka v past continuous má štruktúru:
+
+<div class="vzorec">
+<span class="vzorec__cast vzorec__cast--will"><b>Be</b> <small>Was / Were</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--if"><b>kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>sloveso + -ing</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
+<span class="vzorec__ciarka">?</span>
+</div>
+
+- <em><b>Was</b> · <b>he</b> · <b>reading</b> · a book?</em>
 
 <table class="chyby tvary">
 <thead><tr><th scope="col">otázka</th><th scope="col">áno</th><th scope="col">nie</th></tr></thead>
@@ -100,7 +123,7 @@ Je to vlastne [present continuous](/lekcie/present-continuous/) posunutý do min
 
 Pozor: na otázku *Were **you**…?* odpovieme o sebe – *Yes, **I was**.*
 
-Otázka s opytovacím slovom:
+Otázka s opytovacím slovom – opytovacie slovo dáme na začiatok, potom ide rovnaká štruktúra (*What + were + you + doing + …?*):
 
 - *What **were** you doing at 7 o'clock?* – Čo si robil o siedmej?
 - *Where **was** she going?* – Kam išla?

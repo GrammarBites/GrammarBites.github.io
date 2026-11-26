@@ -61,13 +61,21 @@ S **will** hovoríme o budúcnosti. Dobrá správa: tvar je **rovnaký pre všet
 
 ## Oznamovacia veta
 
+Každá oznamovacia veta s will má štruktúru:
+
 <div class="vzorec">
-<span class="vzorec__cast vzorec__cast--if"><b>osoba</b></span>
+<span class="vzorec__cast vzorec__cast--if"><b>Kto / čo?</b></span>
 <span class="vzorec__ciarka">+</span>
-<span class="vzorec__cast vzorec__cast--will"><b>will ('ll)</b></span>
+<span class="vzorec__cast vzorec__cast--will"><b>will</b> <small>skrátene 'll</small></span>
 <span class="vzorec__ciarka">+</span>
-<span class="vzorec__cast">sloveso</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>sloveso</b> <small>základný tvar</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
 </div>
+
+- <em><b>She</b> · <b>will</b> · <b>help</b> · you.</em>
+
+Prvé tri časti (**kto/čo + will + sloveso**) vo vete **nikdy nesmú chýbať**.
 
 - *I **will** be a vet.* = *I'**ll** be a vet.* – Budem veterinár.
 - *She **will** help you.* – Pomôže ti.
@@ -76,14 +84,39 @@ V hovorenej reči skoro vždy skracujeme: *I'll, you'll, he'll, she'll, it'll, w
 
 ## Zápor
 
-**won't** = *will not*
+**won't** = *will not*. Štruktúra ostáva rovnaká:
+
+<div class="vzorec">
+<span class="vzorec__cast vzorec__cast--if"><b>Kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--will"><b>won't</b> <small>will not</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>sloveso</b> <small>základný tvar</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
+</div>
+
 
 - *It **won't** rain tomorrow.* – Zajtra nebude pršať.
 - *I **won't** go out today.* – Dnes nepôjdem von.
 
 ## Otázka a krátka odpoveď
 
-*Will* ide **na začiatok** vety (alebo hneď za opytovacie slovo):
+*Will* ide **na začiatok** vety (alebo hneď za opytovacie slovo). Každá otázka s will má štruktúru:
+
+<div class="vzorec">
+<span class="vzorec__cast vzorec__cast--will"><b>Will</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--if"><b>kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>sloveso</b> <small>základný tvar</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
+<span class="vzorec__ciarka">?</span>
+</div>
+
+S opytovacím slovom: **Where / What / When + will + kto/čo + sloveso + zvyšok?**
+
 
 - ***Will** you come to my party?* – *Yes, I **will**.* / *No, I **won't**.*
 - *Where **will** you live?* – Kde budeš bývať?

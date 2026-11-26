@@ -73,11 +73,22 @@ Otázku utvoríme tak, že **am / is / are presunieme pred podmet**. Sloveso s *
 <p><mark>Is</mark> he eating?<br><mark>Are</mark> they swimming?</p></div>
 </div>
 
+Každá áno/nie otázka v present continuous má štruktúru:
+
 <div class="vzorec">
-<span class="vzorec__cast vzorec__cast--if"><b>Am / Is / Are</b> + podmet</span>
+<span class="vzorec__cast vzorec__cast--will"><b>be</b> <small>Am / Is / Are</small></span>
 <span class="vzorec__ciarka">+</span>
-<span class="vzorec__cast vzorec__cast--will"><b>sloveso + -ing</b> ?</span>
+<span class="vzorec__cast vzorec__cast--if"><b>Kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>sloveso + -ing</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
+<span class="vzorec__ciarka">?</span>
 </div>
+
+- <em><b>Is</b> · <b>the goat</b> · <b>eating</b> · a book?</em>
+
+Prvé tri časti (**be + kto/čo + sloveso s -ing**) v otázke **nikdy nesmú chýbať**. Je to tá istá štruktúra ako v [oznamovacej vete](/lekcie/present-continuous/), len *am / is / are* sa presunie dopredu.
 
 ## Krátke odpovede
 
@@ -94,12 +105,19 @@ Na áno/nie otázku odpovedáme krátko: **Yes / No + podmet + am / is / are**.
 
 ## Otázky s What, Where, Who
 
-Opytovacie slovo dáme **na začiatok**, potom pokračujeme ako pri áno/nie otázke.
+Opytovacie slovo dáme **na začiatok**, potom ide rovnaká štruktúra ako pri áno/nie otázke:
 
 <div class="vzorec">
 <span class="vzorec__cast vzorec__cast--if"><b>What / Where / Who</b></span>
 <span class="vzorec__ciarka">+</span>
-<span class="vzorec__cast vzorec__cast--will"><b>am / is / are</b> + podmet + <b>-ing</b> ?</span>
+<span class="vzorec__cast vzorec__cast--will"><b>be</b> <small>am / is / are</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--if"><b>Kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>sloveso + -ing</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
+<span class="vzorec__ciarka">?</span>
 </div>
 
 - *<b>What</b> are you doing?* – *I'm reading.* (Čo robíš?)

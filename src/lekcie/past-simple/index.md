@@ -64,7 +64,19 @@ Táto lekcia spája celý minulý čas z Unitu 3: oznamovaciu vetu, zápor aj ot
 
 ## Oznamovacia veta
 
-Tvar je **rovnaký pre všetky osoby**: *I went, she went, they went*.
+Tvar je **rovnaký pre všetky osoby**: *I went, she went, they went*. Každá oznamovacia veta v past simple má štruktúru:
+
+<div class="vzorec">
+<span class="vzorec__cast vzorec__cast--if"><b>Kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>sloveso v minulom čase</b> <small>-ed alebo 2. tvar</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
+</div>
+
+- <em><b>We</b> · <b>went</b> · to the mountains.</em>
+
+Prvé dve časti (**kto/čo + sloveso v minulom čase**) vo vete **nikdy nesmú chýbať**.
 
 <div class="pravidla">
 <div class="pravidlo"><p class="pravidlo__nazov">pravidelné slovesá: + ed</p>
@@ -91,11 +103,19 @@ Nepravidelné slovesá sa treba naučiť naspamäť. Ľahšie to pôjde po rodin
 
 ## Zápor – didn't
 
+Každá záporná veta v past simple má štruktúru:
+
 <div class="vzorec">
-<span class="vzorec__cast vzorec__cast--if"><b>didn't</b> (did not)</span>
+<span class="vzorec__cast vzorec__cast--if"><b>Kto / čo?</b></span>
 <span class="vzorec__ciarka">+</span>
-<span class="vzorec__cast vzorec__cast--will"><b>základný tvar</b> slovesa</span>
+<span class="vzorec__cast vzorec__cast--will"><b>didn't</b> <small>did not</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>základný tvar slovesa</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
 </div>
+
+- <em><b>I</b> · <b>didn't</b> · <b>go</b> · to school.</em>
 
 - *I didn't go to school.* – Nešiel som do školy.
 - *She didn't like the film.* – Ten film sa jej nepáčil.
@@ -104,11 +124,20 @@ Nepravidelné slovesá sa treba naučiť naspamäť. Ľahšie to pôjde po rodin
 
 ## Otázka – Did…?
 
+Každá otázka v past simple má štruktúru:
+
 <div class="vzorec">
-<span class="vzorec__cast vzorec__cast--if"><b>Did</b> + podmet</span>
+<span class="vzorec__cast vzorec__cast--will"><b>Did</b></span>
 <span class="vzorec__ciarka">+</span>
-<span class="vzorec__cast vzorec__cast--will"><b>základný tvar</b> ?</span>
+<span class="vzorec__cast vzorec__cast--if"><b>kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>základný tvar slovesa</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
+<span class="vzorec__ciarka">?</span>
 </div>
+
+- <em><b>Did</b> · <b>you</b> · <b>see</b> · the match?</em>
 
 <table class="chyby tvary">
 <thead><tr><th scope="col">otázka</th><th scope="col">áno</th><th scope="col">nie</th></tr></thead>
@@ -123,7 +152,20 @@ Nepravidelné slovesá sa treba naučiť naspamäť. Ľahšie to pôjde po rodin
 
 ## Otázky s Where, What, When…
 
-Opytovacie slovo dáme **na začiatok**, potom pokračujeme ako pri otázke s *did*:
+Opytovacie slovo dáme **na začiatok**, potom ide rovnaká štruktúra ako pri otázke s *did*:
+
+<div class="vzorec">
+<span class="vzorec__cast vzorec__cast--if"><b>Where / What / When / Who</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--will"><b>did</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--if"><b>kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>základný tvar slovesa</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
+<span class="vzorec__ciarka">?</span>
+</div>
 
 - ***Where** did you go?* – Kam si išiel?
 - ***What** did you eat?* – Čo si jedol?

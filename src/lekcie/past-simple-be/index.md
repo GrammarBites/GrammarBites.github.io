@@ -74,11 +74,27 @@ Sloveso **be** (byť) má v prítomnom čase tvary *am, is, are*. V minulom čas
 
 ## Oznamovacia veta
 
+Každá oznamovacia veta s was / were má štruktúru:
+
+<div class="vzorec">
+<span class="vzorec__cast vzorec__cast--if"><b>Kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--will"><b>be</b> <small>was / were</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>zvyšok vety</b> <small>kde? aký? kedy?</small></span>
+</div>
+
+- <em><b>I</b> · <b>was</b> · <b>at home yesterday</b>.</em>
+
+**Žiadna časť nesmie chýbať:** ~~I at home yesterday.~~ → *I **was** at home yesterday.*
+
 - *I was at home yesterday.* – Včera som bol doma.
 - *My friends were at the zoo last Sunday.* – Kamaráti boli minulú nedeľu v zoo.
 - *It was sunny.* – Bolo slnečno.
 
 ## Zápor
+
+Štruktúra ostáva rovnaká: **kto/čo + wasn't / weren't + zvyšok vety**.
 
 - *It wasn't cold.* – Nebola zima.
 - *We weren't at school on Monday.* – V pondelok sme neboli v škole.
@@ -87,7 +103,18 @@ Pri slovese *be* sa v zápore nepoužíva *didn't*: ~~I didn't be~~ → *I wasn'
 
 ## Otázka a krátka odpoveď
 
-**Was / were** dáme na začiatok vety.
+**Was / were** dáme na začiatok vety. Každá otázka s was / were má štruktúru:
+
+<div class="vzorec">
+<span class="vzorec__cast vzorec__cast--will"><b>Be</b> <small>Was / Were</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--if"><b>kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>zvyšok vety</b></span>
+<span class="vzorec__ciarka">?</span>
+</div>
+
+- <em><b>Were</b> · <b>you</b> · <b>at the party</b>?</em>
 
 <table class="chyby tvary">
 <thead><tr><th scope="col">otázka</th><th scope="col">áno</th><th scope="col">nie</th></tr></thead>

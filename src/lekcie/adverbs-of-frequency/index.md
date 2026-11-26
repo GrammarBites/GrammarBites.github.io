@@ -10,7 +10,6 @@ ucebnice:
 temy: [prislovky, pritomne-casy]
 klucoveSlova: [always, usually, often, sometimes, rarely, hardly ever, never, how often, ako často, postavenie vo vete, slovosled, present simple]
 video: video.mp4
-videoFormat: na-sirku
 poster: poster.jpg
 infografika: infografika.jpg
 infografikaPdf: infografika.pdf

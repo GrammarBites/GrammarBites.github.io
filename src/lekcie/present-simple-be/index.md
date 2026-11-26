@@ -73,6 +73,20 @@ Skrátené tvary (*I'm, she's, they're*) používame hlavne v reči a v správac
 
 ## Oznamovacia veta
 
+Každá oznamovacia veta so slovesom be má štruktúru:
+
+<div class="vzorec">
+<span class="vzorec__cast vzorec__cast--if"><b>Kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--will"><b>be</b> <small>am / is / are</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>zvyšok vety</b> <small>kde? aký? koľko?</small></span>
+</div>
+
+- <em><b>My sister</b> · <b>is</b> · <b>at school</b>.</em>
+
+**Žiadna časť nesmie chýbať.** Po slovensky niekedy *je* vynecháme, po anglicky nikdy: ~~My sister at school.~~ → *My sister **is** at school.*
+
 - *I'm twelve.* – Mám dvanásť rokov.
 - *My sister is at school.* – Moja sestra je v škole.
 - *We're best friends.* – Sme najlepší kamaráti.
@@ -82,7 +96,7 @@ Skrátené tvary (*I'm, she's, they're*) používame hlavne v reči a v správac
 
 ## Zápor
 
-Za *am / is / are* pridáme **not**.
+Za *am / is / are* pridáme **not**. Štruktúra ostáva rovnaká: **kto/čo + am not / isn't / aren't + zvyšok vety**.
 
 <table class="chyby tvary">
 <thead><tr><th scope="col">dlhý tvar</th><th scope="col">krátky tvar</th><th scope="col">príklad</th></tr></thead>
@@ -97,7 +111,16 @@ Pri *I* nie je tvar ~~amn't~~, len **I'm not**.
 
 ## Otázka a krátka odpoveď
 
-**Am / is / are** dáme pred podmet. Pomocné *do* pri slovese *be* nepotrebujeme.
+**Am / is / are** dáme pred podmet. Pomocné *do* pri slovese *be* nepotrebujeme. Každá otázka so slovesom be má štruktúru:
+
+<div class="vzorec">
+<span class="vzorec__cast vzorec__cast--will"><b>Be</b> <small>Am / Is / Are</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--if"><b>kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>zvyšok vety</b></span>
+<span class="vzorec__ciarka">?</span>
+</div>
 
 - *She is happy.* → ***Is** she happy?*
 
@@ -116,7 +139,18 @@ V **kladnej** krátkej odpovedi sa tvar nesťahuje: *Yes, I am.* – nie ~~Yes, 
 
 ## Otázky s otázkovým slovom
 
-Otázkové slovo ide na úplný začiatok, za ním *am / is / are*:
+Otázkové slovo ide na úplný začiatok, za ním ide rovnaká štruktúra ako pri áno/nie otázke:
+
+<div class="vzorec">
+<span class="vzorec__cast vzorec__cast--if"><b>Where / How old / What / Who</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--will"><b>be</b> <small>am / is / are</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--if"><b>kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
+<span class="vzorec__ciarka">?</span>
+</div>
 
 - *Where **are** you from?* – *I'm from Martin.* – Odkiaľ si? – Som z Martina.
 - *How old **is** your brother?* – *He's nine.* – Koľko rokov má tvoj brat? – Má deväť.

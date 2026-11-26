@@ -339,13 +339,6 @@
         "She was runned in the park."
       ],
       [
-        "What were you do at nine o'clock?",
-        "What were you {doing} at nine o'clock?",
-        "Po <b>were you</b> ide sloveso s -ing: <b>doing</b>.",
-        "",
-        "What was you doing at nine o'clock?"
-      ],
-      [
         "I were reading a book.",
         "I {was} reading a book.",
         "K <b>I</b> patrí <b>was</b>, nie were.",
@@ -360,18 +353,25 @@
         "My sister was cook dinner."
       ],
       [
-        "Were you working? – Yes, I wasn't.",
-        "Were you working? – Yes, I {was}.",
-        "Kladná odpoveď: <b>Yes, I was.</b> Záporná: No, I wasn't.",
-        "",
-        "Were you working? – Yes, I weren't."
-      ],
-      [
         "He was writeing a letter.",
         "He was {writing} a letter.",
         "Pri <b>write</b> sa pred -ing vypustí <b>e</b>: writing.",
         "",
         "He was writting a letter."
+      ],
+      [
+        "They was watching TV.",
+        "They {were} watching TV.",
+        "<b>They</b> → <b>were</b>, nie was.",
+        "",
+        "They were watch TV."
+      ],
+      [
+        "She didn't sleeping.",
+        "She {wasn't} sleeping.",
+        "Zápor robí <b>wasn't</b>, nie didn't.",
+        "",
+        "She weren't sleeping."
       ]
     ]
   },
@@ -3490,19 +3490,558 @@
       ]
     ]
   },
-  "what-when-have-we-got": {"vety": [["We got English.", "We{'ve} got English.", "Máme = <b>We've got</b>. Nezabudni na 've (= have).", "", "We has got English."], ["We've got art in Friday.", "We've got art {on} Friday.", "Pred dňom v týždni je <b>on</b>: on Friday.", "", "We've got art at Friday."], ["What have we got PE? – On Thursday.", "{When} have we got PE? – On Thursday.", "Odpoveď je deň (on Thursday) → pýtame sa <b>When</b> = Kedy?", "", "Who have we got PE? – On Thursday."], ["We are in 4.A. This is their classroom.", "We are in 4.A. This is {our} classroom.", "My (we) → <b>our</b> = naša.", "", "We are in 4.A. This is we classroom."], ["Tom and Anna are here. These are they bags.", "Tom and Anna are here. These are {their} bags.", "Tom a Anna = oni → <b>their</b> = ich.", "", "Tom and Anna are here. These are our bags."]]},
-  "after-school": {"vety": [["I don't swimming.", "I don't {go swimming}.", "Po <b>don't</b> ide celá činnosť: <b>go swimming</b>.", "", "I don't swim go."], ["I don't a music lesson.", "I don't {have} a music lesson.", "Hodinu hudby <b>máme</b>: have a music lesson → I don't <b>have</b> a music lesson.", "", "I not have a music lesson."], ["I do homework my every day.", "I do {my homework} every day.", "Správne poradie: do <b>my homework</b>.", "", "I my homework do every day."]]},
-  "this-that-these-those": {"vety": [["This are my pencils.", "{These} are my pencils.", "Viac vecí (pencils) blízko → <b>These</b> are.", "", "This is my pencils."], ["Those is a computer.", "{That} is a computer.", "Jedna vec (a computer) ďaleko → <b>That</b> is.", "", "Those are a computer."], ["These are new table.", "These are new {tables}.", "Pri viacerých veciach dávame <b>-s</b>: tables.", "", "This are new table."], ["That is a new pegs.", "That is a new {peg}.", "That is = jedna vec → <b>a peg</b> (bez -s).", "", "Those is a new pegs."]]},
-  "were-theyre": {"vety": [["We hungry.", "We{'re} hungry.", "Chýba sloveso byť: We <b>are</b> / We<b>'re</b> hungry.", "", "We is hungry."], ["They is sad.", "They {are} sad.", "Pri they je <b>are</b>: They are / They're sad.", "", "They am sad."], ["Are they hot? – No, they not.", "Are they hot? – No, they {aren't}.", "Zápor je <b>aren't</b> (= are not).", "", "Are they hot? – No, they isn't."], ["Is they thirsty?", "{Are} they thirsty?", "Pri they je <b>Are</b> they …?", "", "Do they thirsty?"]]},
-  "can-cant": {"vety": [["She cans play tennis.", "She {can} play tennis.", "Can nemá nikdy -s: She <b>can</b>.", "", "She can plays tennis."], ["I can skating.", "I can {skate}.", "Po can je činnosť bez -ing: can <b>skate</b>.", "", "I can to skate."], ["He don't can ride a horse.", "He {can't} ride a horse.", "Zápor je <b>can't</b>, nie don't can.", "", "He not can ride a horse."], ["Can he ride a bike? – Yes, he does.", "Can he ride a bike? – Yes, he {can}.", "Na otázku s Can odpovedáme <b>can</b>.", "", "Can he ride a bike? – Yes, he is."]]},
-  "have-you-got": {"vety": [["Has you got a salad?", "{Have} you got a salad?", "Pri <b>you</b> je have.", "", "Is you got a salad?"], ["Have she got chicken?", "{Has} she got chicken?", "Pri <b>she</b> je has.", "", "Do she got chicken?"], ["Has he got fries? – Yes, he has got.", "Has he got fries? – Yes, he {has}.", "Krátka odpoveď je bez got: Yes, he <b>has</b>.", "", "Has he got fries? – Yes, he have."], ["Have you got a pizza? – No, I hasn't.", "Have you got a pizza? – No, I {haven't}.", "Pri I je <b>haven't</b>.", "", "Have you got a pizza? – No, I don't."]]},
-  "likes-doesnt-like": {"vety": [["My sister like sweets.", "My sister {likes} sweets.", "Sestra = she → <b>likes</b> (-s).", "", "My sister liking sweets."], ["I doesn't like cake.", "I {don't} like cake.", "Pri I je <b>don't</b>.", "", "I not like cake."], ["He don't like balloons.", "He {doesn't} like balloons.", "Pri he je <b>doesn't</b>.", "", "He not likes balloons."], ["What does he likes?", "What does he {like}?", "Po does je like <b>bez -s</b>.", "", "What do he likes?"]]},
-  "whats-the-time": {"vety": [["My dad get up at six o'clock.", "My dad {gets} up at six o'clock.", "Otec = he → <b>gets</b> up.", "", "My dad getting up at six o'clock."], ["She go to bed at nine o'clock.", "She {goes} to bed at nine o'clock.", "Pri she: go → <b>goes</b>.", "", "She gos to bed at nine o'clock."], ["It's seven clock.", "It's seven {o'clock}.", "Celá hodina = <b>o'clock</b>.", "", "It's seven hours."], ["I have breakfast on eight o'clock.", "I have breakfast {at} eight o'clock.", "Pred časom je <b>at</b>.", "", "I have breakfast in eight o'clock."]]},
-  "where-does-she-work": {"vety": [["My mum work in a hospital.", "My mum {works} in a hospital.", "Mama = she → <b>works</b>.", "", "My mum working in a hospital."], ["Where does he works?", "Where does he {work}?", "Po does je work <b>bez -s</b>.", "", "Where do he works?"], ["Where do she work?", "Where {does} she work?", "Pri she je <b>does</b>.", "", "Where is she work?"], ["Does he work in a school? – Yes, he works.", "Does he work in a school? – Yes, he {does}.", "Krátka odpoveď: Yes, he <b>does</b>.", "", "Does he work in a school? – Yes, he is."], ["She works in a airport.", "She works in {an} airport.", "Pred samohláskou je <b>an</b>: an airport.", "", "She works in airport."]]},
-  "weather-put-on": {"vety": [["Is raining.", "{It's} raining.", "Pri počasí je vždy <b>It's</b>.", "", "It raining."], ["It cold today.", "{It's} cold today.", "Chýba 's (= is): <b>It's</b> cold.", "", "Is cold today."], ["Not open the window.", "{Don't} open the window.", "Zákaz: <b>Don't</b> + činnosť.", "", "No open the window."], ["You put on your coat!", "{Put on} your coat!", "Príkaz začína rovno činnosťou, bez you: <b>Put on</b> …", "", "You puts on your coat!"], ["What is weather like?", "What's {the} weather like?", "Správne: What's <b>the</b> weather like?", "", "What weather is like?"]]},
-  "what-are-you-wearing": {"vety": [["I wearing a red scarf.", "I{'m} wearing a red scarf.", "Chýba 'm (am): <b>I'm</b> wearing.", "", "I wear a red scarf now."], ["She's wear black boots.", "She's {wearing} black boots.", "Po she's ide <b>wearing</b>.", "", "She wearing black boots."], ["What is you wearing?", "What {are} you wearing?", "Pri you je <b>are</b>.", "", "What you are wearing?"], ["He's wearing a jeans.", "He's wearing {jeans}.", "Jeans je množné číslo → <b>bez a</b>.", "", "He's wearing an jeans."], ["Tom are wearing a shirt.", "Tom {is} wearing a shirt.", "Tom = he → <b>is</b> (Tom's).", "", "Tom am wearing a shirt."]]},
-  "what-are-you-doing": {"vety": [["She eating the cake.", "She{'s} eating the cake.", "Chýba 's (is): <b>She's</b> eating.", "", "She eat the cake."], ["What you are doing?", "What {are you} doing?", "V otázke: What <b>are you</b> doing?", "", "What do you doing?"], ["I'm danceing.", "I'm {dancing}.", "dance → <b>dancing</b> (-e zmizne).", "", "I'm dance."], ["They's talking.", "They{'re} talking.", "Pri they je <b>'re</b> (are).", "", "They'm talking."], ["He's watch a video.", "He's {watching} a video.", "Po he's ide <b>-ing</b>: watching.", "", "He watch a video."]]},
-  "bigger-than": {"vety": [["The cow is bigger that the goat.", "The cow is bigger {than} the goat.", "ako = <b>than</b>.", "", "The cow is bigger then the goat."], ["The horse is more tall than the goat.", "The horse is {taller} than the goat.", "tall + er = <b>taller</b>.", "", "The horse is tall than the goat."], ["The cow is biger than the sheep.", "The cow is {bigger} than the sheep.", "big → bi<b>gg</b>er.", "", "The cow is more big than the sheep."], ["The horse taller than the goat.", "The horse {is} taller than the goat.", "Chýba <b>is</b>.", "", "The horse are taller than the goat."]]},
-  "was-were": {"vety": [["They was wet.", "They {were} wet.", "They → <b>were</b>.", "", "They is wet."], ["He were naughty.", "He {was} naughty.", "He → <b>was</b>.", "", "He are naughty."], ["She not was wet.", "She {wasn't} wet.", "Zápor: <b>wasn't</b>.", "", "She weren't wet."], ["The babies wasn't sad.", "The babies {weren't} sad.", "Bábätká = they → <b>weren't</b>.", "", "The babies not were sad."]]},
-  "there-were-some-any": {"vety": [["There weren't some men.", "There weren't {any} men.", "Pri weren't je <b>any</b>.", "", "There weren't a men."], ["There were some childs.", "There were some {children}.", "child → <b>children</b>.", "", "There were some childrens."], ["There was some women.", "There {were} some women.", "women = viac → <b>were</b>.", "", "There is some women."], ["There were two mans.", "There were two {men}.", "man → <b>men</b>.", "", "There were two mens."]]}
+  "what-when-have-we-got": {
+    "vety": [
+      [
+        "We got English.",
+        "We{'ve} got English.",
+        "Máme = <b>We've got</b>. Nezabudni na 've (= have).",
+        "",
+        "We has got English."
+      ],
+      [
+        "We've got art in Friday.",
+        "We've got art {on} Friday.",
+        "Pred dňom v týždni je <b>on</b>: on Friday.",
+        "",
+        "We've got art at Friday."
+      ],
+      [
+        "What have we got PE? – On Thursday.",
+        "{When} have we got PE? – On Thursday.",
+        "Odpoveď je deň (on Thursday) → pýtame sa <b>When</b> = Kedy?",
+        "",
+        "Who have we got PE? – On Thursday."
+      ],
+      [
+        "We are in 4.A. This is their classroom.",
+        "We are in 4.A. This is {our} classroom.",
+        "My (we) → <b>our</b> = naša.",
+        "",
+        "We are in 4.A. This is we classroom."
+      ],
+      [
+        "Tom and Anna are here. These are they bags.",
+        "Tom and Anna are here. These are {their} bags.",
+        "Tom a Anna = oni → <b>their</b> = ich.",
+        "",
+        "Tom and Anna are here. These are our bags."
+      ]
+    ]
+  },
+  "after-school": {
+    "vety": [
+      [
+        "I don't swimming.",
+        "I don't {go swimming}.",
+        "Po <b>don't</b> ide celá činnosť: <b>go swimming</b>.",
+        "",
+        "I don't swim go."
+      ],
+      [
+        "I don't a music lesson.",
+        "I don't {have} a music lesson.",
+        "Hodinu hudby <b>máme</b>: have a music lesson → I don't <b>have</b> a music lesson.",
+        "",
+        "I not have a music lesson."
+      ],
+      [
+        "I do homework my every day.",
+        "I do {my homework} every day.",
+        "Správne poradie: do <b>my homework</b>.",
+        "",
+        "I my homework do every day."
+      ]
+    ]
+  },
+  "this-that-these-those": {
+    "vety": [
+      [
+        "This are my pencils.",
+        "{These} are my pencils.",
+        "Viac vecí (pencils) blízko → <b>These</b> are.",
+        "",
+        "This is my pencils."
+      ],
+      [
+        "Those is a computer.",
+        "{That} is a computer.",
+        "Jedna vec (a computer) ďaleko → <b>That</b> is.",
+        "",
+        "Those are a computer."
+      ],
+      [
+        "These are new table.",
+        "These are new {tables}.",
+        "Pri viacerých veciach dávame <b>-s</b>: tables.",
+        "",
+        "This are new table."
+      ],
+      [
+        "That is a new pegs.",
+        "That is a new {peg}.",
+        "That is = jedna vec → <b>a peg</b> (bez -s).",
+        "",
+        "Those is a new pegs."
+      ]
+    ]
+  },
+  "were-theyre": {
+    "vety": [
+      [
+        "We hungry.",
+        "We{'re} hungry.",
+        "Chýba sloveso byť: We <b>are</b> / We<b>'re</b> hungry.",
+        "",
+        "We is hungry."
+      ],
+      [
+        "They is sad.",
+        "They {are} sad.",
+        "Pri they je <b>are</b>: They are / They're sad.",
+        "",
+        "They am sad."
+      ],
+      [
+        "Are they hot? – No, they not.",
+        "Are they hot? – No, they {aren't}.",
+        "Zápor je <b>aren't</b> (= are not).",
+        "",
+        "Are they hot? – No, they isn't."
+      ],
+      [
+        "Is they thirsty?",
+        "{Are} they thirsty?",
+        "Pri they je <b>Are</b> they …?",
+        "",
+        "Do they thirsty?"
+      ]
+    ]
+  },
+  "can-cant": {
+    "vety": [
+      [
+        "She cans play tennis.",
+        "She {can} play tennis.",
+        "Can nemá nikdy -s: She <b>can</b>.",
+        "",
+        "She can plays tennis."
+      ],
+      [
+        "I can skating.",
+        "I can {skate}.",
+        "Po can je činnosť bez -ing: can <b>skate</b>.",
+        "",
+        "I can to skate."
+      ],
+      [
+        "He don't can ride a horse.",
+        "He {can't} ride a horse.",
+        "Zápor je <b>can't</b>, nie don't can.",
+        "",
+        "He not can ride a horse."
+      ],
+      [
+        "Can he ride a bike? – Yes, he does.",
+        "Can he ride a bike? – Yes, he {can}.",
+        "Na otázku s Can odpovedáme <b>can</b>.",
+        "",
+        "Can he ride a bike? – Yes, he is."
+      ]
+    ]
+  },
+  "have-you-got": {
+    "vety": [
+      [
+        "Has you got a salad?",
+        "{Have} you got a salad?",
+        "Pri <b>you</b> je have.",
+        "",
+        "Is you got a salad?"
+      ],
+      [
+        "Have she got chicken?",
+        "{Has} she got chicken?",
+        "Pri <b>she</b> je has.",
+        "",
+        "Do she got chicken?"
+      ],
+      [
+        "Has he got fries? – Yes, he has got.",
+        "Has he got fries? – Yes, he {has}.",
+        "Krátka odpoveď je bez got: Yes, he <b>has</b>.",
+        "",
+        "Has he got fries? – Yes, he have."
+      ],
+      [
+        "Have you got a pizza? – No, I hasn't.",
+        "Have you got a pizza? – No, I {haven't}.",
+        "Pri I je <b>haven't</b>.",
+        "",
+        "Have you got a pizza? – No, I don't."
+      ]
+    ]
+  },
+  "likes-doesnt-like": {
+    "vety": [
+      [
+        "My sister like sweets.",
+        "My sister {likes} sweets.",
+        "Sestra = she → <b>likes</b> (-s).",
+        "",
+        "My sister liking sweets."
+      ],
+      [
+        "I doesn't like cake.",
+        "I {don't} like cake.",
+        "Pri I je <b>don't</b>.",
+        "",
+        "I not like cake."
+      ],
+      [
+        "He don't like balloons.",
+        "He {doesn't} like balloons.",
+        "Pri he je <b>doesn't</b>.",
+        "",
+        "He not likes balloons."
+      ],
+      [
+        "What does he likes?",
+        "What does he {like}?",
+        "Po does je like <b>bez -s</b>.",
+        "",
+        "What do he likes?"
+      ]
+    ]
+  },
+  "whats-the-time": {
+    "vety": [
+      [
+        "My dad get up at six o'clock.",
+        "My dad {gets} up at six o'clock.",
+        "Otec = he → <b>gets</b> up.",
+        "",
+        "My dad getting up at six o'clock."
+      ],
+      [
+        "She go to bed at nine o'clock.",
+        "She {goes} to bed at nine o'clock.",
+        "Pri she: go → <b>goes</b>.",
+        "",
+        "She gos to bed at nine o'clock."
+      ],
+      [
+        "It's seven clock.",
+        "It's seven {o'clock}.",
+        "Celá hodina = <b>o'clock</b>.",
+        "",
+        "It's seven hours."
+      ],
+      [
+        "I have breakfast on eight o'clock.",
+        "I have breakfast {at} eight o'clock.",
+        "Pred časom je <b>at</b>.",
+        "",
+        "I have breakfast in eight o'clock."
+      ]
+    ]
+  },
+  "where-does-she-work": {
+    "vety": [
+      [
+        "My mum work in a hospital.",
+        "My mum {works} in a hospital.",
+        "Mama = she → <b>works</b>.",
+        "",
+        "My mum working in a hospital."
+      ],
+      [
+        "Where does he works?",
+        "Where does he {work}?",
+        "Po does je work <b>bez -s</b>.",
+        "",
+        "Where do he works?"
+      ],
+      [
+        "Where do she work?",
+        "Where {does} she work?",
+        "Pri she je <b>does</b>.",
+        "",
+        "Where is she work?"
+      ],
+      [
+        "Does he work in a school? – Yes, he works.",
+        "Does he work in a school? – Yes, he {does}.",
+        "Krátka odpoveď: Yes, he <b>does</b>.",
+        "",
+        "Does he work in a school? – Yes, he is."
+      ],
+      [
+        "She works in a airport.",
+        "She works in {an} airport.",
+        "Pred samohláskou je <b>an</b>: an airport.",
+        "",
+        "She works in airport."
+      ]
+    ]
+  },
+  "weather-put-on": {
+    "vety": [
+      [
+        "Is raining.",
+        "{It's} raining.",
+        "Pri počasí je vždy <b>It's</b>.",
+        "",
+        "It raining."
+      ],
+      [
+        "It cold today.",
+        "{It's} cold today.",
+        "Chýba 's (= is): <b>It's</b> cold.",
+        "",
+        "Is cold today."
+      ],
+      [
+        "Not open the window.",
+        "{Don't} open the window.",
+        "Zákaz: <b>Don't</b> + činnosť.",
+        "",
+        "No open the window."
+      ],
+      [
+        "You put on your coat!",
+        "{Put on} your coat!",
+        "Príkaz začína rovno činnosťou, bez you: <b>Put on</b> …",
+        "",
+        "You puts on your coat!"
+      ],
+      [
+        "What is weather like?",
+        "What's {the} weather like?",
+        "Správne: What's <b>the</b> weather like?",
+        "",
+        "What weather is like?"
+      ]
+    ]
+  },
+  "what-are-you-wearing": {
+    "vety": [
+      [
+        "I wearing a red scarf.",
+        "I{'m} wearing a red scarf.",
+        "Chýba 'm (am): <b>I'm</b> wearing.",
+        "",
+        "I wear a red scarf now."
+      ],
+      [
+        "She's wear black boots.",
+        "She's {wearing} black boots.",
+        "Po she's ide <b>wearing</b>.",
+        "",
+        "She wearing black boots."
+      ],
+      [
+        "What is you wearing?",
+        "What {are} you wearing?",
+        "Pri you je <b>are</b>.",
+        "",
+        "What you are wearing?"
+      ],
+      [
+        "He's wearing a jeans.",
+        "He's wearing {jeans}.",
+        "Jeans je množné číslo → <b>bez a</b>.",
+        "",
+        "He's wearing an jeans."
+      ],
+      [
+        "Tom are wearing a shirt.",
+        "Tom {is} wearing a shirt.",
+        "Tom = he → <b>is</b> (Tom's).",
+        "",
+        "Tom am wearing a shirt."
+      ]
+    ]
+  },
+  "what-are-you-doing": {
+    "vety": [
+      [
+        "She eating the cake.",
+        "She{'s} eating the cake.",
+        "Chýba 's (is): <b>She's</b> eating.",
+        "",
+        "She eat the cake."
+      ],
+      [
+        "What you are doing?",
+        "What {are you} doing?",
+        "V otázke: What <b>are you</b> doing?",
+        "",
+        "What do you doing?"
+      ],
+      [
+        "I'm danceing.",
+        "I'm {dancing}.",
+        "dance → <b>dancing</b> (-e zmizne).",
+        "",
+        "I'm dance."
+      ],
+      [
+        "They's talking.",
+        "They{'re} talking.",
+        "Pri they je <b>'re</b> (are).",
+        "",
+        "They'm talking."
+      ],
+      [
+        "He's watch a video.",
+        "He's {watching} a video.",
+        "Po he's ide <b>-ing</b>: watching.",
+        "",
+        "He watch a video."
+      ]
+    ]
+  },
+  "bigger-than": {
+    "vety": [
+      [
+        "The cow is bigger that the goat.",
+        "The cow is bigger {than} the goat.",
+        "ako = <b>than</b>.",
+        "",
+        "The cow is bigger then the goat."
+      ],
+      [
+        "The horse is more tall than the goat.",
+        "The horse is {taller} than the goat.",
+        "tall + er = <b>taller</b>.",
+        "",
+        "The horse is tall than the goat."
+      ],
+      [
+        "The cow is biger than the sheep.",
+        "The cow is {bigger} than the sheep.",
+        "big → bi<b>gg</b>er.",
+        "",
+        "The cow is more big than the sheep."
+      ],
+      [
+        "The horse taller than the goat.",
+        "The horse {is} taller than the goat.",
+        "Chýba <b>is</b>.",
+        "",
+        "The horse are taller than the goat."
+      ]
+    ]
+  },
+  "was-were": {
+    "vety": [
+      [
+        "They was wet.",
+        "They {were} wet.",
+        "They → <b>were</b>.",
+        "",
+        "They is wet."
+      ],
+      [
+        "He were naughty.",
+        "He {was} naughty.",
+        "He → <b>was</b>.",
+        "",
+        "He are naughty."
+      ],
+      [
+        "She not was wet.",
+        "She {wasn't} wet.",
+        "Zápor: <b>wasn't</b>.",
+        "",
+        "She weren't wet."
+      ],
+      [
+        "The babies wasn't sad.",
+        "The babies {weren't} sad.",
+        "Bábätká = they → <b>weren't</b>.",
+        "",
+        "The babies not were sad."
+      ]
+    ]
+  },
+  "there-were-some-any": {
+    "vety": [
+      [
+        "There weren't some men.",
+        "There weren't {any} men.",
+        "Pri weren't je <b>any</b>.",
+        "",
+        "There weren't a men."
+      ],
+      [
+        "There were some childs.",
+        "There were some {children}.",
+        "child → <b>children</b>.",
+        "",
+        "There were some childrens."
+      ],
+      [
+        "There was some women.",
+        "There {were} some women.",
+        "women = viac → <b>were</b>.",
+        "",
+        "There is some women."
+      ],
+      [
+        "There were two mans.",
+        "There were two {men}.",
+        "man → <b>men</b>.",
+        "",
+        "There were two mens."
+      ]
+    ]
+  },
+  "past-continuous-otazky": {
+    "vety": [
+      [
+        "What were you do at nine o'clock?",
+        "What were you {doing} at nine o'clock?",
+        "Po <b>were you</b> ide sloveso s -ing: <b>doing</b>.",
+        "",
+        "What was you doing at nine o'clock?"
+      ],
+      [
+        "Were you working? – Yes, I wasn't.",
+        "Were you working? – Yes, I {was}.",
+        "Kladná odpoveď: <b>Yes, I was.</b> Záporná: No, I wasn't.",
+        "",
+        "Were you working? – Yes, I weren't."
+      ],
+      [
+        "Did you sleeping at ten?",
+        "{Were you} sleeping at ten?",
+        "Otázku robí <b>was / were</b>, nie did: <b>Were you sleeping?</b>",
+        "",
+        "Was you sleeping at ten?"
+      ],
+      [
+        "Where she was going?",
+        "Where {was she} going?",
+        "V otázke ide <b>was</b> pred podmet: <b>Where was she going?</b>",
+        "",
+        "Where did she going?"
+      ],
+      [
+        "Was they playing football?",
+        "{Were they} playing football?",
+        "<b>They</b> → <b>Were</b>.",
+        "",
+        "Were they play football?"
+      ],
+      [
+        "Was he reading? – Yes, he did.",
+        "Was he reading? – Yes, he {was}.",
+        "Pýtali sme sa s <b>Was</b>, tak odpovieme <b>was</b>.",
+        "",
+        "Was he reading? – Yes, he were."
+      ]
+    ]
+  }
 }

@@ -1,15 +1,15 @@
 ---
 title: Past continuous
-nazovSk: Minulý priebehový čas – was / were + -ing
-popis: "At 8 o'clock I was having breakfast. They weren't watching TV. Was he reading? – Yes, he was. Čo práve prebiehalo v určitom čase v minulosti."
+nazovSk: Minulý priebehový čas – oznamovacie a záporné vety
+popis: "At 8 o'clock I was having breakfast. They weren't watching TV. Čo práve prebiehalo v určitom čase v minulosti: was / were + sloveso s -ing."
 date: 2026-11-05T10:00:00
 rocniky: [6, 7, 9]
 strana: 33
 ucebnice:
   - { id: project-3, unit: "3" }
   - { id: project-5, unit: "1" }
-temy: [minule-casy, otazky]
-klucoveSlova: [past continuous, past progressive, minulý priebehový čas, priebehový, was, were, wasn't, weren't, ing, -ing, was doing, were doing, what were you doing, minulý čas, 3A, what was happening, otázka, zápor]
+temy: [minule-casy]
+klucoveSlova: [past continuous, past progressive, minulý priebehový čas, priebehový, was, were, wasn't, weren't, ing, -ing, was doing, were doing, minulý čas, 3A, zápor]
 video: video.mp4
 poster: poster.jpg
 infografika: infografika.jpg
@@ -17,8 +17,8 @@ infografikaPdf: infografika.pdf
 koza: koza-zvedava
 otazkaKozy: "What were you doing at 8 o'clock?"
 bite:
-  tip: "was / were + sloveso s -ing. Otázka: Was / Were na začiatok. Odpoveď: Yes, I was. / No, they weren't."
-  priklad: "At 8 o'clock I was having breakfast. · Were they playing? – Yes, they were."
+  tip: "was / were + sloveso s -ing. Zápor: wasn't / weren't + sloveso s -ing."
+  priklad: "At 8 o'clock I was having breakfast. · They weren't watching TV."
 opravChybu: true
 test:
   - otazka: "At 7 o'clock my brother ___ playing computer games."
@@ -42,20 +42,21 @@ test:
     zle:
       0: "Za wasn't je sloveso s -ing."
       1: "Za wasn't je sloveso s -ing, nie minulý tvar."
-  - otazka: "___ your parents working yesterday at 5 pm?"
-    moznosti: ["Was", "Were", "Did"]
-    spravna: 1
-    vysvetlenie: "Otázka: was / were ide na začiatok. Your parents = they → Were."
+  - otazka: "Which sentence is correct?"
+    moznosti: ["They was running in the park.", "They were run in the park.", "They were running in the park."]
+    spravna: 2
+    vysvetlenie: "They → were + sloveso s -ing: They were running."
     zle:
-      0: "Your parents = they → Were, nie Was."
-      2: "Did sa s -ing nespája. Otázku robí were."
-  - otazka: "Was Tom swimming? – No, he ___ ."
-    moznosti: ["wasn't", "didn't", "weren't"]
+      0: "Was patrí k I / he / she / it. Pri they je were."
+      1: "Za were je sloveso s -ing: running."
+  - otazka: "I ___ my homework at 6 pm. I was playing football."
+    moznosti: ["wasn't doing", "weren't doing", "didn't doing"]
     spravna: 0
-    vysvetlenie: "Krátka odpoveď zopakuje was: No, he wasn't."
+    vysvetlenie: "Pri I je wasn't + sloveso s -ing."
     zle:
-      1: "Pýtali sme sa s Was, tak odpovieme wasn't, nie didn't."
-      2: "Weren't patrí k you / we / they. He → wasn't."
+      1: "Weren't patrí k you / we / they. Pri I je wasn't."
+      2: "Didn't sa s -ing nespája. Zápor robí wasn't."
+
 ---
 
 **Past continuous** používame, keď hovoríme, čo **práve prebiehalo** v určitom čase v minulosti. Ako keby sme sa pozreli na fotku z minulosti: *O ôsmej som práve raňajkoval.*
@@ -95,40 +96,6 @@ Prvé tri časti (**kto/čo + was/were + sloveso s -ing**) vo vete **nikdy nesm�
 
 Je to vlastne [present continuous](/lekcie/present-continuous/) posunutý do minulosti: namiesto *am / is / are* použijeme *was / were*. Pravidlá pre *-ing* (*make → making, swim → swimming*) sú rovnaké. A *was / were* už poznáš z lekcie [Past simple: be](/lekcie/past-simple-be/).
 
-## Otázka a krátka odpoveď
-
-**Was / Were** dáme na začiatok vety – žiadne *did*. Každá otázka v past continuous má štruktúru:
-
-<div class="vzorec">
-<span class="vzorec__cast vzorec__cast--will"><b>Be</b> <small>Was / Were</small></span>
-<span class="vzorec__ciarka">+</span>
-<span class="vzorec__cast vzorec__cast--if"><b>kto / čo?</b></span>
-<span class="vzorec__ciarka">+</span>
-<span class="vzorec__cast vzorec__cast--ing"><b>sloveso + -ing</b></span>
-<span class="vzorec__ciarka">+</span>
-<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
-<span class="vzorec__ciarka">?</span>
-</div>
-
-- <em><b>Was</b> · <b>he</b> · <b>reading</b> · a book?</em>
-
-<table class="chyby tvary">
-<thead><tr><th scope="col">otázka</th><th scope="col">áno</th><th scope="col">nie</th></tr></thead>
-<tbody>
-<tr><td><b>Was</b> he reading?</td><td>Yes, he <b>was</b>.</td><td>No, he <b>wasn't</b>.</td></tr>
-<tr><td><b>Were</b> you sleeping?</td><td>Yes, I <b>was</b>.</td><td>No, I <b>wasn't</b>.</td></tr>
-<tr><td><b>Were</b> they playing?</td><td>Yes, they <b>were</b>.</td><td>No, they <b>weren't</b>.</td></tr>
-</tbody>
-</table>
-
-Pozor: na otázku *Were **you**…?* odpovieme o sebe – *Yes, **I was**.*
-
-Otázka s opytovacím slovom – opytovacie slovo dáme na začiatok, potom ide rovnaká štruktúra (*What + were + you + doing + …?*):
-
-- *What **were** you doing at 7 o'clock?* – Čo si robil o siedmej?
-- *Where **was** she going?* – Kam išla?
-- *Who **were** you talking to?* – S kým si sa rozprával?
-
 ## Kedy ho použijeme?
 
 Keď povieme presný čas v minulosti a pýtame sa, čo sa vtedy **práve dialo**:
@@ -136,6 +103,8 @@ Keď povieme presný čas v minulosti a pýtame sa, čo sa vtedy **práve dialo*
 - *at 8 o'clock yesterday* – včera o ôsmej
 - *at this time last week* – minulý týždeň v tomto čase
 - *at midnight* – o polnoci
+
+Otázky typu *Was he reading? – Yes, he was.* a *What were you doing?* nájdeš v lekcii [Past continuous – otázky](/lekcie/past-continuous-otazky/).
 
 Porovnaj: *I **played** football yesterday.* (hral som – celá udalosť, [past simple](/lekcie/past-simple/)) × *At 5 pm I **was playing** football.* (o piatej som bol práve uprostred hry).
 
@@ -146,8 +115,6 @@ Porovnaj: *I **played** football yesterday.* (hral som – celá udalosť, [past
 <tbody>
 <tr><td>I was <s>play</s>.</td><td>I was <b>playing</b>.</td></tr>
 <tr><td>They <s>was</s> running.</td><td>They <b>were</b> running.</td></tr>
-<tr><td>Were you <s>sleep</s>?</td><td>Were you <b>sleeping</b>?</td></tr>
-<tr><td><s>Did you</s> sleeping?</td><td><b>Were you</b> sleeping?</td></tr>
 <tr><td>She <s>not was</s> working.</td><td>She <b>wasn't</b> working.</td></tr>
 </tbody>
 </table>

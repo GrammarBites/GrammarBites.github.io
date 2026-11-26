@@ -74,6 +74,22 @@ Predprítomný čas (present perfect) používame, keď hovoríme o **skúsenost
 
 ## Oznamovacia veta
 
+Každá oznamovacia veta v present perfect má štruktúru:
+
+<div class="vzorec">
+<span class="vzorec__cast vzorec__cast--if"><b>Kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--will"><b>have</b> <small>has pri he / she / it</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>3. tvar slovesa</b> <small>past participle</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
+</div>
+
+- <em><b>She</b> · <b>has</b> · <b>won</b> · a race.</em>
+
+Prvé tri časti (**kto/čo + have/has + 3. tvar**) vo vete **nikdy nesmú chýbať**.
+
 <div class="pravidla">
 <div class="pravidlo"><p class="pravidlo__nazov">I / you / we / they + have</p>
 <p>I <mark>have seen</mark> a UFO.<br>They<mark>'ve visited</mark> London.</p></div>
@@ -85,7 +101,19 @@ Skrátené tvary: **I've, you've, we've, they've** · **he's, she's, it's**
 
 ## Záporná veta
 
-Zápor tvoríme pomocou **not** za *have / has*. V hovorenej reči používame skrátené tvary.
+Zápor tvoríme pomocou **not** za *have / has*. V hovorenej reči používame skrátené tvary. Štruktúra ostáva rovnaká:
+
+<div class="vzorec">
+<span class="vzorec__cast vzorec__cast--if"><b>Kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--will"><b>haven't</b> <small>hasn't pri he / she / it</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>3. tvar slovesa</b> <small>past participle</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
+</div>
+
+- <em><b>He</b> · <b>hasn't</b> · <b>driven</b> · a car.</em>
 
 <div class="pravidla">
 <div class="pravidlo"><p class="pravidlo__nazov">haven't = have not</p>

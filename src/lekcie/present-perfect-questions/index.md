@@ -63,11 +63,24 @@ V lekcii [Present perfect](/lekcie/present-perfect/) sme hovorili o tom, čo sme
 
 ## Otázka
 
+Každá otázka v present perfect má štruktúru:
+
 <div class="vzorec">
-<span class="vzorec__cast vzorec__cast--if"><b>Have / Has</b> + podmet</span>
+<span class="vzorec__cast vzorec__cast--will"><b>Have / Has</b></span>
 <span class="vzorec__ciarka">+</span>
-<span class="vzorec__cast vzorec__cast--will">(ever) + <b>3. tvar</b> slovesa … ?</span>
+<span class="vzorec__cast vzorec__cast--if"><b>kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">ever <small>(ak ho treba)</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>3. tvar slovesa</b> <small>past participle</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
+<span class="vzorec__ciarka">?</span>
 </div>
+
+- <em><b>Have</b> · <b>you</b> · ever · <b>eaten</b> · sushi?</em>
+
+*Have / Has*, **kto/čo** a **3. tvar** v otázke **nikdy nesmú chýbať**. S opytovacím slovom: **Where / What / How many + have/has + kto/čo + 3. tvar + zvyšok?** (*Where have you been?*)
 
 - *Have you ever **eaten** sushi?* – Jedol si už niekedy sushi?
 - *Has she ever **been** to London?* – Bola už niekedy v Londýne?

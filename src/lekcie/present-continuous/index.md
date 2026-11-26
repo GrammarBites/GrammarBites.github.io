@@ -77,6 +77,22 @@ Prítomný priebehový čas (present continuous) používame, keď hovoríme o t
 
 ## Oznamovacia veta
 
+Každá oznamovacia veta v present continuous má štruktúru:
+
+<div class="vzorec">
+<span class="vzorec__cast vzorec__cast--if"><b>Kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--will"><b>be</b> <small>am / is / are</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>sloveso + -ing</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
+</div>
+
+- <em><b>The goat</b> · <b>is</b> · <b>eating</b> · a book.</em>
+
+Prvé tri časti (**kto/čo + be + sloveso s -ing**) vo vete **nikdy nesmú chýbať**. Zvyšok vety pridáme, len ak ho treba: *I'm waiting.* je celá veta.
+
 <div class="pravidla">
 <div class="pravidlo"><p class="pravidlo__nazov">I + am</p>
 <p>I<mark>'m waiting</mark> for a bus.<br>I <mark>am writing</mark> a story.</p></div>
@@ -90,7 +106,7 @@ Skrátené tvary: **I'm** · **he's, she's, it's** · **you're, we're, they're**
 
 ## Záporná veta
 
-Zápor tvoríme pomocou **not** za *am / is / are*.
+Zápor tvoríme pomocou **not** za *am / is / are*. Štruktúra ostáva rovnaká: **kto/čo + am not / isn't / aren't + sloveso s -ing + zvyšok vety**.
 
 <div class="pravidla">
 <div class="pravidlo"><p class="pravidlo__nazov">am not → I'm not</p>

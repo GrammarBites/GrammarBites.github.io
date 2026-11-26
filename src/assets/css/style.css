@@ -346,6 +346,9 @@ a.stitok:hover { border-color: currentColor; }
 .vzorec__cast { padding: 8px 16px; border: 2px solid var(--ink); border-radius: var(--wobbly); font-weight: 600; }
 .vzorec__cast--if { background: var(--blue-wash); }
 .vzorec__cast--will { background: var(--terra-wash); }
+.vzorec__cast--ing { background: var(--yellow-wash); }
+.vzorec__cast--volitelne { border-style: dashed; font-weight: 400; color: var(--muted, #6b6460); }
+.vzorec__cast small { display: block; font-size: .78em; font-weight: 400; }
 .vzorec__ciarka { font-family: var(--hand); font-size: 2.2rem; font-weight: 700; color: var(--terra); line-height: 1; }
 
 .chyby { border-collapse: collapse; width: 100%; font-size: .98rem; line-height: 1.5; background: var(--paper-hi); }

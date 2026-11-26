@@ -76,9 +76,9 @@ Otázku utvoríme tak, že **am / is / are presunieme pred podmet**. Sloveso s *
 Každá áno/nie otázka v present continuous má štruktúru:
 
 <div class="vzorec">
-<span class="vzorec__cast vzorec__cast--will"><b>be</b> <small>Am / Is / Are</small></span>
+<span class="vzorec__cast vzorec__cast--will"><b>Be</b> <small>Am / Is / Are</small></span>
 <span class="vzorec__ciarka">+</span>
-<span class="vzorec__cast vzorec__cast--if"><b>Kto / čo?</b></span>
+<span class="vzorec__cast vzorec__cast--if"><b>kto / čo?</b></span>
 <span class="vzorec__ciarka">+</span>
 <span class="vzorec__cast vzorec__cast--ing"><b>sloveso + -ing</b></span>
 <span class="vzorec__ciarka">+</span>
@@ -112,7 +112,7 @@ Opytovacie slovo dáme **na začiatok**, potom ide rovnaká štruktúra ako pri 
 <span class="vzorec__ciarka">+</span>
 <span class="vzorec__cast vzorec__cast--will"><b>be</b> <small>am / is / are</small></span>
 <span class="vzorec__ciarka">+</span>
-<span class="vzorec__cast vzorec__cast--if"><b>Kto / čo?</b></span>
+<span class="vzorec__cast vzorec__cast--if"><b>kto / čo?</b></span>
 <span class="vzorec__ciarka">+</span>
 <span class="vzorec__cast vzorec__cast--ing"><b>sloveso + -ing</b></span>
 <span class="vzorec__ciarka">+</span>

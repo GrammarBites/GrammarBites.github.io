@@ -71,6 +71,20 @@ Prítomný jednoduchý čas (present simple) používame, keď hovoríme o tom, 
 
 ## Oznamovacia veta
 
+Každá oznamovacia veta v present simple má štruktúru:
+
+<div class="vzorec">
+<span class="vzorec__cast vzorec__cast--if"><b>Kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>sloveso</b> <small>+ s pri he / she / it</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
+</div>
+
+- <em><b>She</b> · <b>lives</b> · in a flat.</em>
+
+Prvé dve časti (**kto/čo + sloveso**) vo vete **nikdy nesmú chýbať**. Zvyšok vety pridáme, len ak ho treba: *I swim.* je celá veta.
+
 <div class="pravidla">
 <div class="pravidlo"><p class="pravidlo__nazov">I / you / we / they + sloveso</p>
 <p>I <mark>get up</mark> at seven.<br>They <mark>live</mark> in a flat.</p></div>
@@ -93,7 +107,19 @@ Prítomný jednoduchý čas (present simple) používame, keď hovoríme o tom, 
 
 ## Záporná veta
 
-Zápor tvoríme pomocou **don't / doesn't** a slovesa v základnom tvare.
+Zápor tvoríme pomocou **don't / doesn't** a slovesa v základnom tvare. Každá záporná veta v present simple má štruktúru:
+
+<div class="vzorec">
+<span class="vzorec__cast vzorec__cast--if"><b>Kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--will"><b>don't</b> <small>doesn't pri he / she / it</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>sloveso</b> <small>BEZ -s!</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
+</div>
+
+- <em><b>He</b> · <b>doesn't</b> · <b>take</b> · the bus.</em>
 
 <div class="pravidla">
 <div class="pravidlo"><p class="pravidlo__nazov">I / you / we / they + don't</p>

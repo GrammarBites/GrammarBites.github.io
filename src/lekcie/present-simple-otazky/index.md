@@ -66,11 +66,22 @@ Táto lekcia nadväzuje na [oznamovacie a záporné vety v present simple](/lekc
 
 Otázku utvoríme tak, že na začiatok dáme **Do** alebo **Does**. Sloveso potom ostane v **základnom tvare** (bez -s).
 
+Každá áno/nie otázka v present simple má štruktúru:
+
 <div class="vzorec">
-<span class="vzorec__cast vzorec__cast--if"><b>Do / Does</b> + podmet</span>
+<span class="vzorec__cast vzorec__cast--will"><b>Do / Does</b></span>
 <span class="vzorec__ciarka">+</span>
-<span class="vzorec__cast vzorec__cast--will"><b>sloveso</b> ?</span>
+<span class="vzorec__cast vzorec__cast--if"><b>kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>sloveso</b> <small>BEZ -s!</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
+<span class="vzorec__ciarka">?</span>
 </div>
+
+- <em><b>Does</b> · <b>she</b> · <b>play</b> · tennis?</em>
+
+Prvé tri časti (**Do/Does + kto/čo + sloveso**) v otázke **nikdy nesmú chýbať**.
 
 <div class="pravidla">
 <div class="pravidlo"><p class="pravidlo__nazov">I / you / we / they → Do</p>
@@ -96,12 +107,19 @@ Na áno/nie otázku odpovedáme krátko. Zopakujeme **do / does**, nie celé slo
 
 ## Otázky s What, Where, When…
 
-Opytovacie slovo dáme **na začiatok**, potom pokračujeme ako pri áno/nie otázke.
+Opytovacie slovo dáme **na začiatok**, potom ide rovnaká štruktúra ako pri áno/nie otázke:
 
 <div class="vzorec">
 <span class="vzorec__cast vzorec__cast--if"><b>What / Where / When / What time / How</b></span>
 <span class="vzorec__ciarka">+</span>
-<span class="vzorec__cast vzorec__cast--will"><b>do / does</b> + podmet + sloveso ?</span>
+<span class="vzorec__cast vzorec__cast--will"><b>do / does</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--if"><b>kto / čo?</b></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--ing"><b>sloveso</b> <small>bez -s</small></span>
+<span class="vzorec__ciarka">+</span>
+<span class="vzorec__cast vzorec__cast--volitelne">zvyšok vety <small>(ak ho treba)</small></span>
+<span class="vzorec__ciarka">?</span>
 </div>
 
 - *<b>Where</b> do you live?* – *In Martin.* (Kde bývaš?)

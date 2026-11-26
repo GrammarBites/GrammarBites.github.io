@@ -10,6 +10,8 @@ ucebnice:
   - { id: project-5, unit: "1" }
 temy: [minule-casy, otazky]
 klucoveSlova: [past continuous, otázky, questions, short answers, krátke odpovede, yes no questions, was, were, wasn't, weren't, -ing, what were you doing, where was, who, 3A, priebehový, minulý čas]
+video: video.mp4
+poster: poster.jpg
 infografika: infografika.jpg
 infografikaPdf: infografika.pdf
 koza: koza-premysla

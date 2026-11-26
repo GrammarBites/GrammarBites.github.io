@@ -102,6 +102,9 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/tabula/zvuk/**/*.mp3");
   eleventyConfig.addPassthroughCopy({ "src/favicon.svg": "favicon.svg" });
   eleventyConfig.addPassthroughCopy({ "src/.nojekyll": ".nojekyll" });
+  // overenie vlastníctva v Google Search Console (súbor musí zostať na webe)
+  eleventyConfig.addPassthroughCopy({ "src/googlef36dd43b6f840306.html": "googlef36dd43b6f840306.html" });
+  eleventyConfig.ignores.add("src/googlef36dd43b6f840306.html");
 
   // ---------- Kolekcie ----------
   eleventyConfig.addCollection("lekcie", (api) =>
